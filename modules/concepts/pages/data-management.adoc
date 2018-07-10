@@ -12,7 +12,7 @@ It is impossible to end up with a document write that partially succeeds, for ex
 Couchbase is strongly consistent at the document level.
 Cross document transactions typically can be avoided by consolidating often-accessed information into a single document, or addressed using other techniques.
 // There used to be a document called Transactional Logic
-//      in the 3.0 docs, I would like to link to that here if we bring it forward.
+// in the 3.0 docs, I would like to link to that here if we bring it forward.
 
 == Strong Consistency and durability
 
