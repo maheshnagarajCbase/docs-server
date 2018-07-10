@@ -112,6 +112,8 @@ In traditional relational database modeling, you would create tables that contai
 Just like the example above, a hotel may contain many reviews which are stored in a separate table and referenced by the [.param]`hotel_id`.
 In case of JSON documents, you use key-values pairs, or even nested key-value pairs and don’t have to break "hotels" and "hotel reviews" apart.
 
+Given the boundary-less nature of the document model, there are several considerations to have in mind when you design your JSON document:
+
 [#ul_dxd_xpz_bw]
 * Whether you want to use a type field at the highest level of your JSON document in order to group and filter object types, for instance the above example includes a "type" attribute that has the value "hotel".
 * What particular keys, ids, prefixes or conventions do you want to use for items, for instance ‘Hotel::Medway_Youth_Hostel.’

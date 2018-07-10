@@ -13,6 +13,8 @@ an integer instead of a string), then `NULL` is returned as the result.
 [#section_kqy_hj4_qz]
 == CONTAINS_TOKEN(input_obj, token_expr [, options ])
 
+_Since Couchbase Server 4.6.2_
+
 *Description*:: Checks whether or not the specified search token `token_expr` is a substring of the input object `input_obj`.
 
 *Arguments*::
@@ -64,6 +66,8 @@ LIMIT 4;
 
 [#section_iwm_3j4_qz]
 == CONTAINS_TOKEN_LIKE(input_obj, token_expr [, options ])
+
+_Since Couchbase Server 4.6.2_
 
 *Description*:: Checks whether or not the specified search token `token_expr` is a substring of the input object `input_obj`.
 
@@ -117,6 +121,8 @@ LIMIT 4;
 [#section_fxc_yj4_qz]
 == CONTAINS_TOKEN_REGEXP(input_obj, token_expr [, options ])
 
+_Since Couchbase Server 4.6.2_
+
 *Description*:: Checks whether or not the specified search token `token_expr` is a substring of the input object `input_obj`.
 
 *Arguments*::
@@ -168,6 +174,8 @@ LIMIT 4;
 
 [#fn-str-title]
 == HAS_TOKEN(input_obj, token_expr [, options ])
+
+_Since Couchbase Server 4.6.2_
 
 Alias for <<section_kqy_hj4_qz,CONTAINS_TOKEN()>>.
 

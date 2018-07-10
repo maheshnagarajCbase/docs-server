@@ -19,6 +19,8 @@ The amount of freed disk space is displayed when the compaction completes.
 
 Below are a list of parameters for the compact command.
 
+*Required*
+
 --archive <archive_dir>
 
 * The location of the archive directory.

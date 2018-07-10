@@ -6,9 +6,13 @@ Couchbase Server provides bucket security using bucket authentication and remova
 
 == Bucket Authentication
 
+Couchbase Server authenticates buckets using the SASL password.
+
 For more information, see xref:security-authentication.adoc#topic_ztr_rnm_lq[Authentication].
 
 == Removal of Unprotected Buckets
+
+To safeguard security in the production phase, delete the buckets created by the Couchbase Server as a part of the installation process.
 
 This applies to:
 

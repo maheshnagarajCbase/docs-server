@@ -31,6 +31,8 @@ Items may be ejected from memory when additional memory is needed to perform inc
 These items have already been persisted to disk and require no additional I/O.
 The managed cache ensures that reads and writes are handled at a very fast rate, while removing the typical load and performance spikes that would otherwise cause a traditional RDBMS to produce erratic performance.
 
+// <p>For information about cluster and bucket RAM quotas and how allocation of memory to services is governed, see  <xref href="cluster-ram-quotas.dita"></xref>.</p>
+
 [#ram-quota]
 == RAM quotas
 

@@ -1720,6 +1720,8 @@ For better performance, create a new index as follows:
 CREATE INDEX `idx_absid` ON `travel-sample`(abs(`id`));
 ----
 
+When index `idx_absid` is used, the query pushes the predicate `abs(id) = 10` to index scan.
+
 [#table_yfm_nwm_nx]
 |===
 | Span for | Low | High | Inclusion

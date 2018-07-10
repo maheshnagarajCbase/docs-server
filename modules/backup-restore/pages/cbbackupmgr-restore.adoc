@@ -28,6 +28,8 @@ If the failed node is not removed in 180 seconds then the restore will fail, but
 
 Below is a list of required and optional parameters for the restore command.
 
+*Required*
+
 --archive <archive_dir>
 
 * The directory containing the backup repository to restore data from.
@@ -48,6 +50,8 @@ See the Host Formats section below for hostname specification details.
 --password <password>
 
 * The password for cluster authentication.
+
+*Optional*
 
 --start <backup>
 

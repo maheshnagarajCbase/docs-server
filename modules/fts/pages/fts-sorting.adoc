@@ -49,6 +49,8 @@ Here is a full query example that performs a query string query and demonstrates
 [#fts-advanced-sort-options]
 == Advanced Sort Options
 
+You can exercise finer control over sort behavior using objects in the `sort` field.
+
 [#ul_xhg_wzz_yx]
 * `by` Sort results on `id`, `score`, or a `field` in the full text index.
 * `field` the name of the field to sort on, if you specify `"by" : "field"`.
@@ -90,6 +92,8 @@ All hotels with no "Overall" ratings will be sorted at the end.
    ]
 }
 ----
+
+Finally, note that you can combine simple and advanced sort options freely in the `sort` array.
 
 ----
 {

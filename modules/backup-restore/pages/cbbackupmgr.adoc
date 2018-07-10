@@ -21,6 +21,10 @@ cbbackupmgr <command> --help
 
 For backup strategies see xref:cbbackupmgr-strategies.adoc[Enterprise Backup Strategies].
 
+// <p>Formatted and hyper-linked version of the latest cbbackupmgr documentation can be viewed at
+// http://couchbase.com/docs/cbbackupmgr.html.
+// </p>
+
 == Options
 
 --version

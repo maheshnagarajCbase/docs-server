@@ -20,6 +20,8 @@ Couchbase Server stores the hostnames in a configuration file on the disk.
 
 == Provide Hostname on Initial Setup
 
+In the first screen, provide either a hostname or IP address under [.uicontrol]*Configure Server Hostname*.
+
 The provided hostname survives node restart.
 
 [#image_cwm_4rd_dt]
@@ -27,12 +29,16 @@ image::admin/picts/cluster-setup-host.png[,720,align=left]
 
 == Provide Hostname while Adding a Node
 
+If a new node is being added to an existing 2.0.1 or earlier Couchbase Server cluster, first set up the hostname for the new node in the setup wizard.
+
 Add a new node to a cluster by providing either a hostname or IP address under *Add Server > Server IP Address*.
 
 [#image_yxs_y3f_zs]
 image::upgrade-online-02.png[,500,align=left]
 
 == Provide Hostname via REST API
+
+Provide a hostname for a node a hostname with the REST request at the [.path]_/node/controller/rename endpoint_.
 
 Provide the hostname before adding a node to a cluster.
 If the node is already part of a cluster, Couchbase Server rejects the request and returns an error:

@@ -79,6 +79,10 @@ In such case, N1QL will generate more optimized spans for the index scan.
 [#section_460]
 == Release 4.6.0
 
+Couchbase Server 4.6 delivers some exciting capabilities for cross datacenter replication, security, query, tools, and application development.
+This release also adds support for Microsoft Windows 10 Anniversary Edition and Mac OS Sierra.
+For more information, see xref:install:install-platforms.adoc[Supported Platforms].
+
 *Cross Datacenter Replication*
 
 Cross Datacenter Replication with Timestamp-based Conflict Resolution::
@@ -219,10 +223,18 @@ For details, see xref:fts:fts-sorting.adoc#topic_l2x_pkx_vx[Sorting Query Result
 
 *CBImport and CBExport Tools [Developer Preview]*
 
+This release introduces tools to import and export data to and from Couchbase Server.
+`cbimport` imports data from a CSV file or a JSON document, and `cbexport` exports data as a JSON document.
+For details, see xref:tools:cbimport.adoc[cbimport] and xref:tools:cbexport.adoc[cbexport].
+
 *Data Structures for Simplified Application Development*
 
 Couchbase is extending the programming model with the new Datastructure SDK feature, further simplifies application development.
 Building on Couchbase Server 4.5’s support for sub-document level changes, Couchbase has now added support for lists, maps, sets, and queues to libraries for Java, .NET, Node.js, and PHP among other platforms.
+
+Datastructure is built on standard JSON giving developers access to the complete set of Couchbase’s best-in-class data access options, including N1QL and Full Text Search.
+The new structures and other services work seamlessly with the same underlying data representation.
+For example, a Java developer can use the Java Collections Framework with the list interface and still use SQL standard query to access the same data from N1QL.
 
 *Big Data Connectors for Spark and Kafka*
 

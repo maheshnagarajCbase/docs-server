@@ -77,6 +77,8 @@ Instead, click on the radio button [.uicontrol]*Join a cluster now*; and proceed
 
 // End of first-level bulleted list item
 
+// Start of new first-level bulleted list
+
 * [.uicontrol]* Join a cluster now *
 +
 [#image_r3t_htm_zv]

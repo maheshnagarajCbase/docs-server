@@ -38,6 +38,8 @@ The backup is then marked as a partial backup in the backup archive and needs to
 
 Below are a list of required and optional parameters for the backup command.
 
+*Required*
+
 --archive <archive_dir>
 
 * The location of the backup archive directory.
@@ -58,6 +60,8 @@ See the Host Formats section below for hostname specification details.
 --password <password>
 
 * The password for cluster authentication.
+
+*Optional*
 
 --resume
 

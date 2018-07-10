@@ -25,6 +25,8 @@ For example, you can create a global secondary index, also referred to as _index
     WHERE type="beer" USING GSI;
 ----
 
+GSI processes mutations in the bucket by coordinating with the following processes:
+
 Projector and Router::
 This process is responsible for processing incoming mutations on the bucket.
 It resides on the nodes that run data service and thus contains active vBuckets.

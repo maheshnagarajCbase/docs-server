@@ -16,6 +16,18 @@ Cross document transactions typically can be avoided by consolidating often-acce
 
 == Strong Consistency and durability
 
+// I would like to add a simpler intro on the topic of strong consistency,
+// maybe remove the amount of details that are here now into their own  topic.
+// Couchbase Server is a strongly consistent system that provides
+// Read-Your-Writes consistency: when an item is written successfully, Couchbase guarantees that
+// the next read of that item will return exactly the value that was just written to any reader
+// instead of potentially returning an earlier value.
+// There is one active copy of the data that is
+// definitively up-to-date.
+// For example, if user Alice enters "A" into a document 1234 and then
+// changes its value to "B", if Bob then accesses that document he will always see "B" and never
+// "A".
+
 When talking about the http://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed[CAP Theorem], distributed data management systems are generally considered to be either CP or AP, that is, evaluators focus on a tradeoff in either consistency (C) or availability (A).
 It's important to understand that the CAP Theorem is only relevant in so far as it describes how a system behaves during a network partition and how it recovers afterwards; when a system is working normally, no sacrifices need to be made.
 

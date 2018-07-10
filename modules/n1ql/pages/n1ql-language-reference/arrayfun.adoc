@@ -42,6 +42,8 @@ If the input value is MISSING, it returns MISSING.
 If the array size is 0, that is, the array does not contain any elements, it returns NULL.
 Any non-number elements in the array are ignored.
 
+// <codeblock spectitle="Syntax"></codeblock>
+
 .Example
 ----
 SELECT ARRAY_AVG([0,1,1,2,3,5]) AS array_average;
@@ -130,6 +132,8 @@ LIMIT 1;
 This function returns a new array with distinct elements of input array.
 If the input argument is MISSING, it returns MISSING.
 If the argument is a non-array value, it returns NULL.
+
+// <codeblock spectitle="Syntax"></codeblock>
 
 .Example
 ----
@@ -779,6 +783,8 @@ SELECT ARRAY_SYMDIFFN([1, 2], [1, 2, 4], [1, 3]) AS symm_diffn;
 This function returns a new array with the set union of the input arrays.
 It requires a minimum of two arguments.
 It returns MISSING if any of the arguments are MISSING, and returns NULL if one of the arguments is not an array.
+
+// <codeblock spectitle="Syntax"></codeblock>
 
 .Examples
 ----

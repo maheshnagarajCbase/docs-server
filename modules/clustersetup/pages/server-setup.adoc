@@ -8,6 +8,9 @@ WARNING: Never stop or restart Couchbase Server before you first remove that nod
 
 == Limits
 
+Couchbase Server specifies limits and limitations that may affect server usage and implementation.
+Depending on the size of the documents passed to the view engine, the performance of Couchbase Server may be affected.
+
 [cols="64,50,139"]
 |===
 | Limit | Default Value | Description

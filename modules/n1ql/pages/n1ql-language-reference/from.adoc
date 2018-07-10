@@ -159,6 +159,8 @@ If the namespace is omitted, the default namespace in the current session is use
 This is the name or identifier of an independent keyspace that can serve as a data source or bucket of one or more documents.
 Such keyspace is not dependent on any of the xref:n1ql-language-reference/subqueries.adoc#section_onz_3tj_mz[Variables in Scope of a Subquery].
 
+The following example Q1 uses the keyspace `pass:c[`travel-sample`]`.
+
 ----
 Example Q1:
 
