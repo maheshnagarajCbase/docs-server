@@ -18,6 +18,8 @@ Shows the status of the current cluster rebalancing.
 
 == Options
 
+None
+
 == Examples
 
 Shows the rebalancing status:

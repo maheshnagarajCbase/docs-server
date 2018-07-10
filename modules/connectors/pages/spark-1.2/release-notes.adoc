@@ -6,6 +6,9 @@ Release notes for the 1.2 version of the Spark connector.
 
 == Couchbase Spark Connector 1.2.1 GA (June 2016)
 
+Version 1.2.1 is the second stable release of the 1.2.x series.
+It fortifies support for Spark 1.6 and brings the following enhancements and bug fixes:
+
 *Spark Core*
 
 * The underlying SDK has been updated to 2.3.0
@@ -25,6 +28,9 @@ This allows for more flexibility in working with types in the first place.
 * https://www.couchbase.com/issues/browse/SPARKC-55[SPARKC-55]: The `FromNow` option now works, allowing you to start streaming from the current point in time without getting all the previous mutations first.
 
 == Couchbase Spark Connector 1.2.0 GA (May 2016)
+
+Version 1.2.0 is the first stable release of the 1.2.x series.
+It brings support for Spark 1.6 and the following enhancements and bugfixes:
 
 *Spark Core*
 

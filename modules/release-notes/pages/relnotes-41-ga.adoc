@@ -10,6 +10,8 @@ This maintenance release has several bug fixes related to DCP, indexing, queryin
 
 *Fixed issues in 4.1.2*
 
+Here are the notable fixes in the 4.1.2 release:
+
 [cols="20,81"]
 |===
 | Issue | Description

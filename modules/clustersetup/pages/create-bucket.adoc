@@ -6,6 +6,8 @@ Full Administrators and Cluster Administrators can use the Couchbase Web Console
 
 == Create a New Bucket using the Couchbase Web Console
 
+Go to *Data Buckets > Create New Data Bucket*.
+
 A dialog containing the configuration for your new bucket appears.
 Remember that when you create a new bucket and save the configuration, the node status indicator will be yellow until all of the vBuckets are created across the cluster.
 Once this is finished, the indicator turns green.
@@ -46,6 +48,8 @@ image::admin/picts/bucket-full-ejection.png[,600,align=left]
 Access Control is configured using the Couchbase Web Console and is set for two ports: Standard port and Dedicated port:
 
 image::admin-access-control.png[,600,align=left]
+
+More details about standard and dedicated ports are provided in xref:security:security-pw-auth.adoc#standardport[Authentication for Applications].
 
 == Replicas
 

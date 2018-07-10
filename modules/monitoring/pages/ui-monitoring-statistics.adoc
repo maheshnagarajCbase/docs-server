@@ -143,6 +143,8 @@ The vBucket statistics provide information for all vBucket types within the clus
 Within the statistic display the table of statistics is organized in four columns, showing the Active, Replica and Pending states for each individual statistic.
 The last column provides the total value for each statistic.
 
+image::admin/picts/web-console-server-stats-vbucket.png[,720]
+
 The *Active* column displays the information for vBuckets within the Active state.
 The *Replica* column displays the statistics for vBuckets within the Replica state (that is currently being replicated).
 The *Pending* columns shows statistics for vBuckets in the Pending state, that is while data is being exchanged during rebalancing.
@@ -189,6 +191,8 @@ The *Disk Queues* statistics section displays the information for data being pla
 Disk queues are used within Couchbase Server to store the information written to RAM on disk for persistence.
 Information is displayed for each of the disk queue states, Active, Replica, and Pending.
 
+image::admin/picts/web-console-server-stats-diskqueues.png[,720]
+
 The *Active* column displays the information for the Disk Queues within the Active state.
 The *Replica* column displays the statistics for the Disk Queues within the Replica state (that is currently being replicated).
 The *Pending* columns shows statistics for the disk Queues in the Pending state, that is while data is being exchanged during rebalancing.
@@ -221,6 +225,8 @@ The displayed statistics are:
 The TAP queues statistics are designed to show information about the TAP queue activity, both internally, between cluster nodes and clients.
 The statistics information is therefore organized as a table with columns showing the statistics for TAP queues used for replication, rebalancing, and clients.
 
+image::admin/picts/web-console-server-stats-tapqueues.png[,720]
+
 The statistics in this section are detailed below:
 
 [#table_dkh_x1l_yx,cols="1,3"]
@@ -250,6 +256,8 @@ The statistics in this section are detailed below:
 == Memcached Buckets
 
 For Memcached buckets, Web Console displays a separate group of statistics:
+
+image::admin/picts/web-console-server-stats-memcached.png[,720]
 
 The Memcached statistics are:
 
@@ -327,6 +335,8 @@ The Outgoing XDCR shows the XDCR operations that are supporting cross datacenter
 
 You can monitor the current status for all active replications in the *Ongoing Replications* section under the *XDCR* tab:
 
+image::admin/picts/xdcr_ongoing.png[,720]
+
 The  *Ongoing Replications* section shows the following information:
 
 |===
@@ -363,6 +373,8 @@ Under the *Data Buckets* tab, you can click on a named Couchbase bucket and find
 Couchbase Web Console displays statistics for the particular bucket; on this page you can find two drop-down areas: *Outgoing XDCR* and *Incoming XDCR Operations*.
 Both provides statistics about ongoing replication for the particular bucket.
 Under the*Outgoing XDCR* panel if you have multiple replication streams you will see statistics for each stream.
+
+image::admin/picts/outbound_xdcr_2.2.png[outbound xdcr stats 2.2,720]
 
 The statistics shown are:
 
@@ -440,6 +452,8 @@ All of the statistics in Web Console are based on statistics via the REST API or
 
 The *Incoming XDCR Operations* section shows the XDCR operations that are coming into to the current cluster from a remote cluster.
 
+image::admin/picts/inbound_xdcr_web_console.png[,720]
+
 The statistics shown are:
 
 [#table_o1v_4lq_yx,cols="1,3"]
@@ -465,6 +479,8 @@ XDCR uses this information for conflict resolution.
 
 The *View Stats* show information about individual design documents within the selected bucket.
 One block of stats will be shown for each production-level design document.
+
+image::admin/picts/web-console-server-stats-views.png[,720]
 
 The statistics shown are:
 

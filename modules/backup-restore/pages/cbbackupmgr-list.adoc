@@ -17,9 +17,14 @@ The flags for this command are used to see various sections of the backup archiv
 
 == Options
 
+Below are the required and optional parameters for the list command.
+*Required*
+
 --archive <archive_dir>
 
 * The location of the backup archive to list.
+
+*Optional*
 
 --repo <repo_name>
 

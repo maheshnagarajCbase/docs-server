@@ -71,6 +71,11 @@ SCRAM-SHA* authentication::
 SCRAM is short for Salted Challenge Response Authentication Mechanism.
 This mechanism proves to the server that the user knows a secret derived from the user's password and proves to the client that the server knows a secret derived from the user's password.
 
+Couchbase offers the SHA-1 hash function for SCRAM in compliance with the SCRAM RFC.
+Since the SCRAM protocol requires that SHA1 be always supported, it is usually the weakest link compared to stronger SHA hashes such as SHA2.
+For example, on SuSe, the SCRAM protocol only supports SHA1 hash.
+As a security best practice, use SCRAM along with TLS to harden your client-server authentication.
+
 You must upgrade all drivers used by applications that will connect to upgraded database to a version that supports SCRAM-SHA.
 The minimum driver versions that support SCRAM-SHA are:
 

@@ -21,7 +21,11 @@ Once a backup repository is created its configuration cannot be changed.
 
 == #Anonymous Section#
 
+Options
+
 Below are a list of required and optional parameters for the config command.
+
+*Required*
 
 --archive <archive_dir>
 
@@ -31,6 +35,8 @@ If it does not already exist, an attempt will be made to create it.
 --repo <repo_name>
 
 * The name of the new backup repository.
+
+*Optional*
 
 --exclude-buckets <bucket_list>
 

@@ -128,6 +128,9 @@ If you decide to install sample data, the installer creates one Couchbase bucket
 
 *Step 3: Create default bucket*
 
+[#image_st3_cqy_dt]
+image::setup-03.png[,720,align=left]
+
 For the default bucket, look also at the [.uicontrol]*What's this?* pop-ups and configure the following:
 
 Bucket Settings:: Bucket Name: The name of the Default bucket is pre-set.
@@ -170,12 +173,16 @@ Product Registration:: Register your product with your information.
 [#image_ox5_2sy_dt]
 image::setup-05.png[,720,align=left]
 
+To secure the server, you must create an administrative account and then use these credentials to join other servers and form a cluster.
+
 . Provide the administrative credentials: username and password
 . Click [.uicontrol]*Next*.
 
 *Couchbase Server is now running and ready to use.*
 
 The starting screen for the new Couchbase Server will appear.
+
+image:setup-06.png[,720,align=left]
 
 Check the installation for example, whether you have properly installed the travel-sample application under [.uicontrol]*Data buckets*.
 

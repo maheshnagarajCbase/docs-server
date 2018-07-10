@@ -28,6 +28,8 @@ To list all buckets in a cluster:
 couchbase-cli bucket-list -c 127.0.0.1:8091 -u Administrator -p password
 ----
 
+*Response:*
+
 ----
 default
   bucketType: membase

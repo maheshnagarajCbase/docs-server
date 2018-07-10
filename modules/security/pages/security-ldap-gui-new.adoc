@@ -50,11 +50,16 @@ image::pict/manage-user-remove.png[,350,align=left]
 
 If you click on an administrative role, the pop-up will explain what this user can manage in the Couchbase system:
 
+[#image_yqx_4lv_4v]
+image::pict/bucket-admin-default.png[]
+
 NOTE: Full administrators in Couchbase can manage user roles using the Couchbase CLI tools (as described in xref:cli:alter-role.adoc#reference_wm2_4j1_hv[[.cmd]`admin-role-manage`]) or REST API (as described in xref:rest-api:rbac.adoc#topic_d3q_mt3_fw[Role Based Admin Access (RBAC)]).
 
 NOTE: Full administrators in Couchbase can manage certificates using the Couchbase CLI tools (as described in xref:cli:cbcli/ssl-manage.adoc#cbcli-xdcr-ssl[[.cmd]`ssl-manage`]) or REST API (as described in xref:rest-api:rest-security.adoc#reference_ytt_hdx_hv[Security API] ).
 
 == Test LDAP Settings
+
+To test the LDAP settings:
 
 . Sign out of the Couchbase Web Console.
 . Try to log in with the new administrative credentials.
