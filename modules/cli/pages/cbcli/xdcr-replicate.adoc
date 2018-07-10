@@ -81,13 +81,13 @@ Default is 2.
 | The number of outgoing nozzles per target node.
 Default is 2.
 
-| `--log-level=[Error|Info|Debug|Trace]`
+| `--log-level=[Error\|Info\|Debug\|Trace]`
 | Logging level.
 
 | `--stats-interval=[MS]`
 | The interval (in milliseconds) for statistics updates.
 
-| `--xdcr-replication-mode=[xmem|capi]`
+| `--xdcr-replication-mode=[xmem\|capi]`
 | Replication protocol, either `capi` or `xmem`.
 
 | `--filter-expression-mode=[REGEX]`

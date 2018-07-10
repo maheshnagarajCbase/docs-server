@@ -34,10 +34,10 @@ The following are the command options:
 | `--ldap-roadmins=`
 | Setting up a read-only LDAP administrator.
 
-| `--ldap-enabled=[0|1]`
+| `--ldap-enabled=[0\|1]`
 | Enables the LDAP protocol for authentication (yes=1, no=0).
 
-| `--ldap-default=[admin | roadmins | none]`
+| `--ldap-default=[admin \| roadmins \| none]`
 | Sets the default LDAP accounts.
 |===
 
