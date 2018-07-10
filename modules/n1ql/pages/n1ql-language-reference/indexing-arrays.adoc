@@ -57,6 +57,7 @@ WITH options:: Use the WITH clause to specify additional options and is fully su
 
 See the http://developer.couchbase.com/documentation/server/4.1/n1ql/n1ql-language-reference/createindex.html[CREATE INDEX] statement for more details on the syntax.
 
+[#query-predicate-format]
 *Format of Query Predicate in SELECT, UPDATE, or DELETE*
 
 The query predicate, which must appear in the WHERE clause of a SELECT, UPDATE, or DELETE statement, must have the exact matching format as the variable in the array index key, including the name of the variable [.var]`x`.

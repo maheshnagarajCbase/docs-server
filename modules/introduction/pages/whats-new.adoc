@@ -14,6 +14,7 @@ Couchbase Server version 4.5.1 includes several N1QL improvements in the followi
 
 See xref:release-notes:relnotes.adoc#release-451[Release Notes 4.5.1] for information on the changes in behavior and the fixed and known issues for this release.
 
+[#451-high-perf-data-access-query]
 *Higher Performance Data Access and Query*
 
 New N1QL "pretty" Setting::
@@ -51,6 +52,7 @@ For example, the following query shows the optimized plan to efficiently lookup 
 EXPLAIN SELECT x FROM default WHERE x in ["5", $1];
 ----
 
+[#451-transition-from-rdbms-nosql]
 *Simplified Transitioning from RDBMS to NoSQL*
 
 New String Function SUFFIXES() for Efficient Pattern Matching::
@@ -128,6 +130,7 @@ With version 4.5, Couchbase Server advances in the following major categories:
 
 See xref:release-notes:relnotes.adoc#release-450[Release 4.5.0] for information on the changes in behavior and the fixed and known issues for this release.
 
+[#high-perf-data-access-query]
 *Higher Performance Data Access & Query*
 
 Higher performance directly translates to better user experience and significant cost savings as each added node delivers better throughput.
@@ -177,6 +180,7 @@ The new `JOIN ON KEY` … `FOR` keyword allows developers to specify JOIN operat
 With the extended syntax, N1QL also makes better use of indexes to perform the JOIN operation faster across the two sides, and substantially lowers JOIN latencies.
 For more information, see xref:n1ql:n1ql-language-reference/from.adoc#index-join[Index Joins].
 
+[#transition-from-rdbms-nosql]
 *Simplified Transitioning from RDBMS to NoSQL*
 
 The query language N1QL, introduced in Couchbase Server 4.0, enabled developers and admins to use their SQL skills to access and query JSON data.
@@ -222,6 +226,7 @@ The xref:fts:fts-whats-new.adoc#topic_jzy_p5v_vv[What's New?] page lists the FTS
 
 For more information on search service and full-text search, see xref:fts:full-text-intro.adoc[Full Text Search Reference].
 
+[#mgmt-and-security]
 *Enhanced Management & Security Controls*
 
 Taming big data can be a challenge.

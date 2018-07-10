@@ -203,6 +203,7 @@ returns this result set:
 The JOIN clause enables you to create new input objects by combining two or more source objects.
 N1QL supports two types of joins: <<lookup-join,lookup joins>> and <<index-join,index joins>>.
 
+[#lookup-join]
 *Lookup Joins*
 
 Lookup joins allow only left-to-right JOINs, which means each qualified document from the left hand side (LHS) of the JOIN operator is required to produce primary keys of documents on the right hand side (RHS).
@@ -343,6 +344,7 @@ If LEFT or LEFT OUTER is specified, then a left outer join is performed.
 At least one joined object is produced for each left hand source object.
 If the right hand source object is NULL or MISSING, then the joined object's right-hand side value is also NULL or MISSING (omitted), respectively.
 
+[#index-join]
 *Index Joins*
 
 When using lookup joins, right-to-left JOINs with RHS documents containing primary key references to LHS documents cannot be joined efficiently using any index.

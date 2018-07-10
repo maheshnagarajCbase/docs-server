@@ -628,6 +628,7 @@ For example:
 
 For information on passing a single user name credential to the cbq shell, see <<cbq-single-cred>>.
 
+[#pass-cred-shell-cmd]
 *Passing Credentials Using the SET Shell Command*
 
 // The query REST API defines two types of credentials: local per bucket and admin.
@@ -645,6 +646,7 @@ To do so, set the [.param]`-creds` query parameter for the session using the fol
 \SET -creds travel-sample:b1, session:s1;
 ----
 
+[#pass-cred-rest-api]
 *Passing Credentials Using Query REST API*
 
 You can use query REST API to pass credentials from clients.

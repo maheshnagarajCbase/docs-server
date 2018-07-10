@@ -73,6 +73,7 @@ The position is zero-based, i.e.
 the first position is 0.
 If position is negative, it is counted from the end of the string; -1 is the last position in the string.
 
+[#fn-str-suffixes]
 *SUFFIXES(expression)*
 
 _Since Couchbase Server 4.5_

@@ -168,6 +168,7 @@ You can unsubscribe from the mailing list at any time using the `Unsubscribe` li
 
 Product Registration:: Register your product with your information.
 
+[#setpass]
 *Step 5: Configure server*
 
 [#image_ox5_2sy_dt]

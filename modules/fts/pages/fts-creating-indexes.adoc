@@ -177,6 +177,7 @@ The downside of storing the information is the extra size and time it takes to b
 Field is the name of the name-value pair in the JSON.
 In our example, the [.param]`description` property is at the top level but if you need to map name-value pairs that are embedded in complex structures, you need to use a <<topic_cmy_jzk_1v/child-mapping,child mapping>> instead.
 
+[#child-mapping]
 *Insert Child Mapping*
 
 Child Mappings are similar to field mappings, but instead of indexing simple values, they enable you to index embedded structures in a JSON document.
@@ -358,6 +359,7 @@ When you define your index mapping, you can override this value in a number of p
 
 The name of a Date/Time parser that will be used to parse a date stored as a string.
 
+[#def-field-all]
 *Default Field *
 
 The default field is searched when a user query does not limit the scope of a search to a particular field.
