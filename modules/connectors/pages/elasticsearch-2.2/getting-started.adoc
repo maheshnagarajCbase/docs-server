@@ -509,7 +509,7 @@ Start esNodeJsQueryAgent in a separate terminal, as follows:
 $ node esNodeJsQueryAgent.js
 ----
 
-A repsonse is provided, confirming that the program has been added as a connection to http://localhost:9200, which is the Elasticsearch port.
+A repsonse is provided, confirming that the program has been added as a connection to \http://localhost:9200, which is the Elasticsearch port.
 
 Now, bring up couchbaseESqueryDemo.html in a browser.
 The layout appears as follows:
