@@ -50,9 +50,9 @@ The command sequence creates a new directory, clones the GitHub repository that 
 
 . If you already have a configured instance of Couchbase Server, edit the [.path]_config.batinc_ file in the root of the cloned repository and change the `username` and `password` fields to match the credentials you entered when you set up Couchbase Server.
 // You can also
-// 					configure the application to use a remote instance of Couchbase or
-// 					multidimensional scaling (MDS) by editing the <codeph>endPoint</codeph>,
-// 						<codeph>n1qlService</codeph> and <codeph>hostname</codeph> fields.
+// configure the application to use a remote instance of Couchbase or
+// multidimensional scaling (MDS) by editing the <codeph>endPoint</codeph>,
+// <codeph>n1qlService</codeph> and <codeph>hostname</codeph> fields.
 . To provision the travel-sample application and setup a cluster from the instance of Couchbase Server that you downloaded and installed, enter the following command from the [.path]_~/try-cb_ directory:
 +
 [source,bash]

@@ -20,7 +20,7 @@ These requests are used as follows:
 * [.cmd]`vbucket-details`: Uses the option VBID or vBucket ID to provide details about a specific vBucket.
 * [.cmd]`vbucket-seqno`: Uses the option VBID or vBucket ID to provide details connected to the vBucket's sequence number.
 // This has to be
-//             verified, it's just my guess.
+// verified, it's just my guess.
 
 == Description
 

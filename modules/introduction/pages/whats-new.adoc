@@ -32,15 +32,15 @@ This enhancement significantly improves the response times seen by applications 
 +
 This optimization is applicable to usage of DISTINCT in various scenarios such as query projections, UNION queries, and part of INTERSECT, INTERSECT ALL, EXCEPT, EXCEPT ALL etc.
 // For more information, see
-//                 <xref href="https://issues.couchbase.com/browse/MB-19953" format="html"
-//                 scope="external">MB-19953</xref>.
+// <xref href="https://issues.couchbase.com/browse/MB-19953" format="html"
+// scope="external">MB-19953</xref>.
 
 Efficient Memory Usage for Processing Projections::
 Processing projections in queries is a memory intensive operation, especially when using the wildcard character *.
 N1QL has optimized the memory allocation and memory usage algorithm to consume considerably less memory and thus process data more efficiently.
 // For more information, see <xref
-//               href="https://issues.couchbase.com/browse/MB-20392" format="html" scope="external"
-//               >MB-20392</xref>.
+// href="https://issues.couchbase.com/browse/MB-20392" format="html" scope="external"
+// >MB-20392</xref>.
 
 Optimization for Processing IN Operator with Parameters::
 N1QL has optimized and improved the usage of available secondary indexes when the IN clause is used with parameters.
