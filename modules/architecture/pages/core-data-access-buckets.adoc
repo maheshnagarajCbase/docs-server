@@ -8,6 +8,7 @@ Couchbase Server supports three different types of bucket, the properties of whi
 
 == Bucket Types
 
+[#couchbase-bucket-types]
 Three types of bucket are provided:
 
 * *Couchbase buckets*: These allow data to be automatically replicated for high availability, using the xref:high-availability-replication-architecture.adoc[Database Change Protocol (DCP)]; and dynamically scaled across multiple servers, by means of xref:xdcr:xdcr-intro.adoc[Cross Datacenter Replication (XDCR)].

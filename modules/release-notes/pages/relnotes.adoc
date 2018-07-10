@@ -11,6 +11,7 @@ Couchbase Server 5.1.1 was released in June 2018.
 This is the first maintenance release in the 5.1.x series of Couchbase Server and includes important bug fixes applicable to all prior 5.x releases.
 We recommend that you upgrade to the 5.1.1 release and deploy these important bug fixes.
 
+[#upgrading-to-511]
 *Upgrading to Version 5.1.1*
 
 Since most Couchbase Server upgrade procedures involve rebalance, some care must be taken when upgrading from a version prior to 5.1.1 to avoid being affected by https://issues.couchbase.com/browse/MB-29959[MB-29959].
@@ -32,6 +33,7 @@ For instructions, see xref:install:upgrade-strategies.adoc#offline[Performing th
 Which method is best for your cluster will depend on your architecture and organization’s requirements (for example, SLAs, extra hardware/cluster availability, and so on).
 Once a cluster is upgraded to 5.1.1 or later, this guidance no longer applies and any supported upgrade method may be used going forward.
 
+[#fixed-issues-511]
 *Fixed Issues*
 
 *Cross Datacenter Replication (XDCR)*
@@ -99,6 +101,7 @@ The following sections list the fixed issues, known issues, and deprecated items
 * Support for Debian 9 has been added.
 * Certificate-based authentication now supports multiple prefixes.
 
+[#v510-known-issues]
 *Known Issues*
 
 [#table_knownissues_v510,cols="25,66"]
@@ -110,6 +113,7 @@ The following sections list the fixed issues, known issues, and deprecated items
 Consequently, if you want to use CURL, you must pass "`--http1.1`" as one of the parameters when using CURL to execute the query via the REST API.
 |===
 
+[#v510-fixed-issues]
 *Fixed Issues*
 
 *Cross Datacenter Replication (XDCR)*
