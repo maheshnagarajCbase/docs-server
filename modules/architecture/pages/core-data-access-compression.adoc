@@ -67,18 +67,12 @@ The following behavior-changes should be noted:
 
 * When a bucket formerly in Passive mode has been switched to Off mode, any compressed document that Couchbase Server receives for that bucket is stored in memory in uncompressed form.
 If the server needs to send from the bucket a document that is currently compressed, the server decompresses the document before sending: however, to preserve memory-efficiency, the document remains compressed in memory.
-+
-{blank}
 
 * When a bucket has been switched from Passive to Active mode, it periodically runs a task that compresses uncompressed documents.
-+
-{blank}
 
 * When a bucket formerly in Active mode is switched to Off mode, this disables the task that was periodically run to compress uncompressed documents.
 Compressed documents can continue to be received for the bucket, and are decompressed for storage in memory.
 Compressed documents within the bucket are decompressed before sending: however, to ensure continued memory-efficiency, the document remains compressed in memory.
-+
-{blank}
 
 [#enabling-compression]
 == Enabling Compression
@@ -86,15 +80,9 @@ Compressed documents within the bucket are decompressed before sending: however,
 Couchbase Server allows authorized users to configure compression by means of the following.
 
 * The Couchbase Web Console, the Couchbase CLI, and the Couchbase REST API, which allow buckets each to be assigned a compression mode; and which allow _Cross Data-Center Replication_ (XDCR) to handle compressed documents.
-+
-{blank}
 
 * The `cbbackup`, `cbrestore`, and associated tools, which allow compressed documents to be requested in the backup stream.
-+
-{blank}
 
 * The Couchbase SDK, which can elect to send and receive compressed documents.
-+
-{blank}
 
 For information on roles that allow modification of bucket-settings, see xref:security:security-authorization.adoc[Authorization].

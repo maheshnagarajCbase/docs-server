@@ -49,8 +49,11 @@ Arguments::
 index_name;;
 [Optional]  The unique name that identifies the index.
 If a name is not specified, the default name of `#primary` is applied.
++
 Valid GSI index names can contain any of the following characters: A-Z a-z 0-9 # _, and must start with a letter [A-Z a-z].
++
 The minimum length of an index name is 1 character and there is no maximum length set for an index name.
++
 When querying, if the index name contains a '#' or '_' character, you must enclose the index name within backticks.
 +
 IMPORTANT: Unnamed primary indexes are dropped by using the `DROP PRIMARY INDEX` statement, and named primary indexes are dropped by using the `DROP INDEX` statement.
@@ -62,6 +65,7 @@ You can add an optional namespace name to the keyspace name in this way:
 ----
 namespace-name : keyspace-name
 ----
++
 For example, `main:customer` indicates the `customer` keyspace in the main namespace.
 If the namespace name is omitted, the default namespace in the current session is used.
 USING GSI | USING VIEW;;
@@ -73,6 +77,7 @@ WITH options;; The `WITH` clause specifies additional options for the `GSI` type
 A single primary index of type `GSI` can only be placed on a single node that runs the indexing service.
 The `nodes` option allows you to specify the node that the index is placed on.
 If `nodes` is not specified, one of the nodes running the index service is randomly selected to host the index.
++
 Multiple nodes can be specified to distribute replicas of an index amongst multiple nodes.
 +
 If specifying both [.var]`nodes` and [.var]`num_replica`, the number of nodes in the array must be one greater than the specified number of replicas otherwise the index creation will fail.
@@ -84,10 +89,13 @@ When `defer_build` is set to true, the `CREATE PRIMARY INDEX` operation queues t
 Index building requires an expensive scan operation.
 Deferring building of the index with multiple indexes can optimize the expensive scan operation.
 You can defer building multiple indexes and, using `BUILD INDEX` statement, multiple indexes to be built efficiently with one efficient scan of keyspace data.
++
 When `defer_build` is set to `false`, the `CREATE PRIMARY INDEX` operation queues the task for building the index and immediately kicks off the building of the index of type `GSI`.
 "num_replica": num_replica_num::: [.var]`num_replica` specifies the number of replicas of the index to create.
++
 The indexer will automatically distribute these indexes amongst index nodes in the cluster for load-balancing and high availability purposes.
 When creating an index with replicas in this manner, the indexer will attempt to distribute the replicas based on the server groups in use in the cluster where possible.
++
 If [.var]`num_replica_num` is not less than the number of index nodes in the cluster, then the index creation will fail.
 +
 [caption=Attention]

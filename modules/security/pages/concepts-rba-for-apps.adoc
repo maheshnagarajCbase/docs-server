@@ -88,8 +88,6 @@ The `alias names` are used in commands and are accessible only by N1QL queries.
 | image:introduction/images/no.png[]
 |===
 
-{blank}
-
 == Data Reader
 
 The *Data Reader* role allows data to be read from a specified bucket.
@@ -124,8 +122,6 @@ Note that the role does _not_ permit the running of N1QL queries (such as SELECT
 | image:introduction/images/no.png[]
 |===
 
-{blank}
-
 == Data Writer
 
 The *Data Writer* role allows information to be written to and read from a specified bucket.
@@ -152,8 +148,6 @@ The *Data Writer* role allows information to be written to and read from a speci
 | image:introduction/images/no.png[]
 | image:introduction/images/no.png[]
 |===
-
-{blank}
 
 == Data DCP Reader
 
@@ -206,8 +200,6 @@ The *Data DCP Reader* role allows DCP streams to be read.
 | image:introduction/images/no.png[]
 |===
 
-{blank}
-
 == Data Backup
 
 The *Data Backup* role allows data to be backed up and restored.
@@ -253,8 +245,6 @@ The *Data Backup* role allows data to be backed up and restored.
 | image:introduction/images/no.png[]
 |===
 
-{blank}
-
 == Data Monitoring
 
 The *Data Monitoring* role allows all bucket-statistics to be read.
@@ -276,8 +266,6 @@ The *Data Monitoring* role allows all bucket-statistics to be read.
 | image:introduction/images/no.png[]
 |===
 
-{blank}
-
 == Views Reader
 
 The *Views Reader* role allows all views to be read.
@@ -298,8 +286,6 @@ The *Views Reader* role allows all views to be read.
 | image:introduction/images/no.png[]
 | image:introduction/images/no.png[]
 |===
-
-{blank}
 
 == FTS Searcher
 
@@ -334,8 +320,6 @@ The role *FTS Searcher* allows _Full Text Search_ indexes to be searched by user
 | image:introduction/images/no.png[]
 |===
 
-{blank}
-
 == Query Select
 
 The *Query Select* role allows the SELECT statement to be executed on a specified bucket.
@@ -362,8 +346,6 @@ The *Query Select* role allows the SELECT statement to be executed on a specifie
 | image:introduction/images/no.png[]
 | image:introduction/images/no.png[]
 |===
-
-{blank}
 
 == Query Update
 
@@ -392,8 +374,6 @@ The *Query Update* role allows the UPDATE statement to be executed on a specifie
 | image:introduction/images/no.png[]
 |===
 
-{blank}
-
 == Query Insert
 
 The *Query Insert* role allows the INSERT statement to be executed on a specified bucket.
@@ -420,8 +400,6 @@ The *Query Insert* role allows the INSERT statement to be executed on a specifie
 | image:introduction/images/no.png[]
 | image:introduction/images/no.png[]
 |===
-
-{blank}
 
 == Query Delete
 
@@ -450,8 +428,6 @@ The *Query Delete* role allows the DELETE statement to be executed on a specifie
 | image:introduction/images/no.png[]
 |===
 
-{blank}
-
 == Query Manage Index
 
 The *Query Manage Index* role allows indexes to be managed for a specified bucket.
@@ -478,8 +454,6 @@ The *Query Manage Index* role allows indexes to be managed for a specified bucke
 | image:introduction/images/no.png[]
 | image:introduction/images/no.png[]
 |===
-
-{blank}
 
 == Query System Catalog
 
@@ -518,8 +492,6 @@ This role is designed for troubleshooters, who need to debug queries.
 | image:introduction/images/no.png[]
 | image:introduction/images/no.png[]
 |===
-
-{blank}
 
 == Query External Access
 
@@ -594,5 +566,3 @@ All of the system keyspaces support SELECT operations and are divided into the b
 
 [#image_kyx_jzx_cbb]
 image::pict/concepts-rba-for-apps_table_SELECT.png[]
-
-{blank}

@@ -124,8 +124,6 @@ For more information, see <<xdcr-adv>> section.
 
 XDCR advanced settings are internal settings available for configuration and those can be updated.
 
-{blank}
-
 [#table_wdz_skq_cz,cols="1,4"]
 |===
 | Option | Description

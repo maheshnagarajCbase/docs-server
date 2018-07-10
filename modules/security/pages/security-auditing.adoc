@@ -12,21 +12,13 @@ The records created by the Couchbase Auditing facililty capture information on _
 
 * _Who_: The administrator performing actions.
 To access the system, each administrator has authenticated, either locally or by means of LDAP: and is therefore identifiable throughout their session.
-+
-{blank}
 
 * _What_: The action performed.
 30 different kinds of action are tracked by Couchbase Server.
-+
-{blank}
 
 * _When_: The UTC time stamp that corresponds to each recorded action.
-+
-{blank}
 
 * _How_: The success or failure of the action.
-+
-{blank}
 
 Audit records are created by Couchbase Server-processes, which run asynchronously.
 Each record is stored as a JSON file, which can be retrieved and inspected.

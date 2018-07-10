@@ -54,7 +54,9 @@ expr;;
 [Optional] A string expression of input objects.
 For details, see xref:n1ql-language-reference/index.adoc#n1ql-lang-ref[N1QL Expressions].
 from-term;; [Optional] The [.var]`from-term` defines the input objects for the query and it can be either a keyspace identifier or an expression.
++
 When using nested subqueries, the [.var]`from-term` of the outermost parent query can only have a <<concept_rnt_zfk_np/section_ekc_ftt_nz,keyspace identifier>>, a subquery, or a <<concept_rnt_zfk_np/section_fkc_ftt_nz,constant expression>> since the [.var]`from-term` needs to independently produce input documents for the query.
++
 However, the subqueries can use generic variable expressions, which may be dependent on the xref:n1ql-language-reference/subqueries.adoc#section_onz_3tj_mz[Variables in Scope of a Subquery].
 For details, see xref:n1ql-language-reference/subqueries.adoc#topic_9[Subqueries].
 join-clause;; [Optional] To create new input objects by combining two or more source objects either via a <<concept_rnt_zfk_np/lookup-join,Lookup JOIN>> or an <<concept_rnt_zfk_np/index-join,Index JOIN>>.
@@ -173,10 +175,6 @@ Getting the input contents` SELECT * `produces the following result:
 [ { } ]
 ----
 
-{blank}
-
-{blank}
-
 [#section_yp1_dpf_bcb]
 == Omitted FROM Clause
 
@@ -246,7 +244,7 @@ The simplest type of `FROM` clause specifies a keyspace:
 SELECT * FROM `travel-sample`;
 ----
 
-This returns every value in the ``travel-sample`` keyspace.
+This returns every value in the `pass:c[`travel-sample`]` keyspace.
 
 The keyspace can be prefixed with an optional namespace (pool):
 
@@ -264,7 +262,7 @@ If the namespace is omitted, the default namespace in the current session is use
 This is the name or identifier of an independent keyspace that can serve as a data source or keyspace of one or more documents.
 Such keyspaces are not dependent on any of the xref:n1ql-language-reference/subqueries.adoc#section_onz_3tj_mz[Variables in Scope of a Subquery].
 
-Select 4 unique landmarks from the keyspace ``travel-sample``.
+Select 4 unique landmarks from the keyspace `pass:c[`travel-sample`]`.
 
 ----
 SELECT t1.city
@@ -294,7 +292,7 @@ This results in:
 *Keyspace Example 2: Cities that have landmarks and airports.
 (non-correlated)*
 
-The following non-correlated subquery uses the keyspace ``travel-sample`` independent of the same keyspace used in the outer query:
+The following non-correlated subquery uses the keyspace `pass:c[`travel-sample`]` independent of the same keyspace used in the outer query:
 
 ----
 SELECT DISTINCT t1.city
@@ -396,6 +394,7 @@ This is a very powerful functionality as it enables usage of various N1QL functi
 * When the `from-term` is an expression, `USE KEYS` or `USE INDEX` clauses are not allowed.
 * When using a `JOIN` clause, `NEST` clause, or `UNNEST` clause, the left-side keyspace can be an expression or subquery, but the right-side keyspace must be a keyspace identifier.
 *Independent Constant Expression*:: 
++
 This includes any N1QL expressions of JSON scalar values, static JSON literals, objects, or N1QL functions.
 For example:
 +
@@ -409,10 +408,12 @@ Note that functions such as xref:n1ql-language-reference/curl.adoc#topic_8_8[CUR
 However, other N1QL functions can also be used in the expressions.
 
 *Variable N1QL Expression*:: 
++
 This includes expressions that refers to any xref:n1ql-language-reference/subqueries.adoc#section_onz_3tj_mz[variables in scope] for the query.
 This is applicable to only subqueries because the outermost level query cannot use any variables in its own `FROM` clause.
 This makes the subquery correlated with outer queries, as explained in the xref:n1ql-language-reference/subqueries.adoc#topic_9[Subqueries] section.
 *Subquery and Subquery Expressions*:: 
++
 A subquery itself can appear as a `from-term` expression.
 In this case, the subquery results are fed as data source to the outer query.
 Further, subqueries can occur as a subquery or as constituent part of a bigger N1QL expression.
@@ -507,7 +508,9 @@ LETTING max_country_alt = max(geo.alt);
 ----
 +
 A more realistic example of needing subquery in the `FROM` clause arises in more complicated scenarios, such as when multiple levels of aggregates (sort orders and limits) are required, or when the subquery results of one keyspace may need to be JOINed with another keyspace.
++
 *Subquery Example 2: For each country, find the number of airports at different altitudes and their corresponding cities.*
++
 In this case, the inner query finds the first level of grouping of different altitudes by country and corresponding number of cities.
 Then the outer query builds on the inner query results to count the number of different altitude groups for each country and the total number of cities.
 +
@@ -561,8 +564,10 @@ GROUP BY country;
 See xref:n1ql-language-reference/subqueries.adoc#topic_9[Subqueries] for details and examples.
 
 *Nested Path Expressions*:: 
++
 Expressions used in the `from-term` can have nested paths, including constant or variable or subquery expressions.
 Similarly, variable expressions are allowed in only subqueries (not in outermost parent queries).
++
 Further, the nested-path variable expression in a subquery `from-term` must resolve to variables/aliases in scope, and not to any keyspace identifiers.
 Otherwise, it results in a syntax error.
 +
@@ -590,8 +595,6 @@ This results in:
   }
 ]
 ----
-+
-{blank}
 +
 *Nested Example 2: Usage of a nested path over a constant expression.*
 +
@@ -675,11 +678,15 @@ alias (Optionally, `AS` alias);;
 [Optional] To assign another name.
 For details, see <<concept_rnt_zfk_np/as,AS Keyword>>.
 `ON KEYS` on-keys-clause;; [Required] String or expression representing the primary keys of the documents for the second keyspace.
++
 The `ON KEYS` expression produces one or more document keys for the right-hand side document.
++
 The `ON KEYS` expression can produce an array of document keys.
 
 Return Values:: If `LEFT` or `LEFT OUTER` is specified, then a left outer join is performed.
++
 At least one joined object is produced for each left-hand source object.
++
 If the right-hand source object is `NULL` or `MISSING`, then the joined object's right-hand side value is also `NULL` or `MISSING` (omitted), respectively.
 
 Limitations:: Lookup JOINs cannot be chained together.
@@ -891,8 +898,6 @@ This results in:
 NOTE: `ON KEYS` is required after each `JOIN`.
 It specifies the primary keys for the second keyspace in the join.
 
-{blank}
-
 [#index-join-clause]
 == Index JOIN Clause
 
@@ -1019,6 +1024,7 @@ Arguments::
 join-type;; [Optional; default is `INNER`]
 `INNER`::: For each result object produced, both the left-hand and right-hand source objects must be non-`MISSING` and non-`NULL`.
 `LEFT` or `LEFT OUTER`::: A left-outer unnest is performed, and at least one result object is produced for each left source object.
++
 For each joined object produced, only the left-hand source objects must be non-`MISSING` and non-`NULL`.
 path;; [Required] The first path element after each `UNNEST` must reference some preceding path.
 alias (optionally, `AS` alias);;
@@ -1185,16 +1191,20 @@ Arguments::
 join-type;; [Optional; default is `INNER`]
 `INNER`::: For each result object produced, both the left-hand and right-hand source objects must be non-`MISSING` and non-`NULL`.
 `LEFT` or `LEFT OUTER`::: A left-outer unnest is performed, and at least one result object is produced for each left source object.
++
 For each joined object produced, only the left-hand source objects must be non-`MISSING` and non-`NULL`.
 path;; [Required] The first path element after each `UNNEST` must reference some preceding path.
 alias (optionally, `AS` alias);;
 [Required] To assign a name for the unnested item.
 For details, see <<concept_rnt_zfk_np/as,AS Keyword>>.
 on-keys-clause;; [Required] String or expression representing the primary keys of the documents for the second keyspace.
++
 The `ON KEYS` expression produces one or more document keys for the right-hand side document.
++
 The `ON KEYS` expression can produce an array of document keys.
 
 Return Values:: If the right-hand source object is `NULL`, `MISSING`, empty, or a non-array value, then the result object's right-side value is `MISSING` (omitted).
++
 Nests can be chained with other `NEST`, `JOIN`, and `UNNEST` clauses.
 By default, an `INNER NEST` is performed.
 This means that for each result object produced, both the left and right source objects must be non-missing and non-null.
@@ -1220,7 +1230,7 @@ If there is no matching right source object, then the right source object is as 
 
 *NEST Example 1: Join two keyspaces producing an output for each left input.*
 
-Show 1 set of routes for 1 airline in the ``travel-sample`` keyspace.
+Show 1 set of routes for 1 airline in the `pass:c[`travel-sample`]` keyspace.
 
 ----
 SELECT *

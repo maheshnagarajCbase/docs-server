@@ -75,5 +75,3 @@ The default is set to 5.
 The default is set to `Info`.
 It is advised to leave this setting as the default unless Couchbase Support directs you to change it.
 |===
-
-{blank}
