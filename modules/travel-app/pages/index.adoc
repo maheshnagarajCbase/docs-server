@@ -54,9 +54,9 @@ The command sequence creates a new directory, clones the GitHub repository that 
 
 . If you already have a configured instance of Couchbase Server, edit the [.path]_config.json_ file in the root of the cloned repository and change the `username` and `password` fields to match the credentials you entered when you set up Couchbase Server.
 // You can also
-// 					configure the application to use a remote instance of Couchbase or
-// 					multidimensional scaling (MDS) by editing the <codeph>endPoint</codeph>,
-// 						<codeph>n1qlService</codeph> and <codeph>hostname</codeph> fields.
+// configure the application to use a remote instance of Couchbase or
+// multidimensional scaling (MDS) by editing the <codeph>endPoint</codeph>,
+// <codeph>n1qlService</codeph> and <codeph>hostname</codeph> fields.
 . Enter the following command:
 +
 [source,bash]
