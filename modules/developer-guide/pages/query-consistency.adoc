@@ -23,11 +23,18 @@ In the above example, the `user:12345` may not be reflected in the query results
 
 == Forcing query to wait until the index has been updated
 
+It is possible to ensure that prior mutations are always considered and indexed when performing the query.
+This option works by instructing the query service to wait for all pending mutations to be indexed.
+The option is off by default to increase performance: in write heavy environments, many pending writes may be active and therefore waiting for them all to be indexed can slow down the execution time of the server.
+This option is called `consistency`
+
 ----
 from couchbase.n1ql import CONSISTENCY_REQUEST
 query = N1QLQuery(
     'SELECT names, emails FROM default WHERE $1 IN names', 'Brass')
 query.consistency = CONSISTENCY_REQUEST
 ----
+
+Examples for setting this option in the SDKs:
 
 https://github.com/couchbaselabs/devguide-examples/blob/master/c/query-consistency.cc[C] | https://github.com/couchbaselabs/devguide-examples/blob/master/python/query-consistency.py[Python] | Java | .NET | node.js

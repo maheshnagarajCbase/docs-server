@@ -79,6 +79,9 @@ New security features include:
 
 == Cross Datacenter Replication (XDCR) – Filtering
 
+XDCR can be used for many purposes, but for some users XDCR is a means of making data available to geographically distributed locations with low latency.
+In this case, filtering will make XDCR more efficient.
+
 Here are different scenarios were filtering with XDCR will be useful:
 
 * Delivering data relevant to geography.

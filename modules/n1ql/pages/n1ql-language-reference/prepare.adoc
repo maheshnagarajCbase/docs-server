@@ -34,6 +34,19 @@ For example, see xref:sdks:dotnet-2.2/prepared-statements.adoc[Using prepared st
 
 == EXECUTE statement
 
+// <p><i>execute:</i></p>
+// <codeblock> EXECUTE mexpr [ USING mexpr [ , mexpr ]* ] </codeblock>
+// <p><i>mexpr</i></p>
+// <codeblock>expression | rcvexpr | first</codeblock>
+// <p><i>rcvexpr</i></p>
+// <codeblock> &lt;- mexpr </codeblock>
+// <p><i>first</i></p>
+// <codeblock>'FIRST' cursor</codeblock>
+// <p><i>cursor</i></p>
+// <codeblock>query | execute </codeblock>
+// <p><i>query </i></p>
+// <codeblock>select | dml-stmt </codeblock>
+
 The EXECUTE statement executes a prepared statement.
 When specified, the name should identify a prepared statement.
 An error is returned if the name does not identify a prepared statement.
@@ -41,6 +54,8 @@ When specified, the [.param]`encoded_plan` should be the result of a prepared st
 An error is returned if the [.param]`encoded_plan` cannot be converted to a prepared statement.
 
 == Examples
+
+*Prepared statement without a name*
 
 The following example shows how to prepare the statement without specifying a name.
 
@@ -180,6 +195,8 @@ The following example specifies a [.param]`name` for the prepared statement and 
         // and so on
         ...
 ----
+
+The following example uses the [.param]`name` and [.param]`encoded_plan` from the example above to run the prepared statement.
 
 .Request
  $ curl -v http://localhost:8093/query/service -H "Content-Type: application/json" -d  \

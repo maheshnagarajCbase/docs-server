@@ -182,6 +182,8 @@ If, however, you want to perform a query that selects recipes containing carrots
 ?startkey=["carrot",0]&endkey=["carrot",20]
 ----
 
+The above example works due to the sorting mechanism in a view that outputs in the information sequentially, fortunately nicely sorted with carrots first and a sequential number.
+
 More complex queries though are more difficult.
 What if you want to select recipes with carrots and rice, still preparable in under 20 minutes?
 

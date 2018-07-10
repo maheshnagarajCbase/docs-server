@@ -11,6 +11,8 @@ This maintenance release has several bug fixes related to DCP, indexing, queryin
 
 *Fixed issues in 4.1.2*
 
+Here are the notable fixes in the 4.1.2 release:
+
 [cols="20,81"]
 |===
 | Issue | Description
@@ -132,6 +134,8 @@ Couchbase Server 4.1.1, released in April 2016, is a first maintenance release f
 It further fortifies Couchbase Server 4.1.0 and includes some critical bug fixes.
 
 *Fixed issues in 4.1.1*
+
+Here are the notable fixes in the 4.1.1 release:
 
 [cols="20,81"]
 |===

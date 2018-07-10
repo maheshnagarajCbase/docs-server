@@ -11,6 +11,10 @@ counter(docid, value)
 counter(docid, -value)
 ----
 
+A document may be used as a counter if its value is a simple ASCII number, like `42`.
+Couchbase allows you to atomically increment and decrement these values using a special [.api]`counter` command.
+The example below (in Python) shows how to use counters:
+
 ----
 >>> cb.counter('counter_id', delta=20, initial=100).value
 100L
@@ -19,6 +23,9 @@ counter(docid, -value)
 >>> cb.counter('counter_id', delta=-50).value
 51L
 ----
+
+A counter can be created by using the [.api]`counter()` function with an [.param]`initial` value.
+The initial value is the value the counter uses if the counter ID does not yet exist.
 
 Once created, the counter can be incremented or decremented atomically by a given amount or _delta_.
 Specifying a positive delta increments the value and specifying a negative one decrements it.
@@ -42,3 +49,5 @@ if should_increment_value(value):
 ----
 
 == Counter in other SDKs
+
+https://github.com/couchbaselabs/devguide-examples/blob/master/c/counter.cc[C] | https://github.com/couchbaselabs/devguide-examples/blob/master/python/counter.py[Python] | https://github.com/couchbaselabs/devguide-examples/blob/master/java/src/main/java/com/couchbase/devguide/Counter.java[Java] | .NET | https://github.com/couchbaselabs/devguide-examples/blob/master/go/counter.go[Go] | https://github.com/couchbaselabs/devguide-examples/blob/master/nodejs/counter.js[node.js]

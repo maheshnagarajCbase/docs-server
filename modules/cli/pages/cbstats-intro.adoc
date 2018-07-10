@@ -14,6 +14,10 @@ cbstats [host]:dataport [command] [options]
 
 == Description
 
+The [.cmd]`cbstats` tool is a per-node, per-bucket operation.
+That means that the IP address of a node in the cluster and a named bucket must be specified.
+If a named bucket is not provided, the server applies the setting to any default bucket that exists at the specified node.
+
 Use of the tool [.cmd]`cbstats` is explained in xref:monitoring:monitoring-cli.adoc#topic_x3j_lwg_1t[Monitor using the [.cmd]`cbstats` utility].
 
 The tool is found in the following locations:

@@ -83,6 +83,18 @@ An example output from a successful certificate regeneration:
 SUCCESS: regenerate certificate to './newRegen.pem'
 ----
 
+// <dl>
+// <dlentry>
+// <dt>Set up a cluster CA certificate</dt>
+// <dd><codeblock>couchbase-cli ssl-manage -c 192.168.0.1:8091:8091 \
+// -\-upload-cluster-ca=./root/ca.pem \
+// -u Administrator -p password </codeblock></dd>
+// <dd><codeblock>couchbase-cli ssl-manage -c 192.168.0.1:8091 \
+// -\-upload-cluster-ca=/tmp/test.pem \
+// -u Administrator -p password</codeblock></dd>
+// </dlentry>
+// </dl>
+
 Download a cluster certificate and view it:::
 +
 ----

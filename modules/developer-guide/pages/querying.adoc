@@ -284,6 +284,11 @@ For example:
 
 These searches can be performed using the `ANY`, `EVERY`, and `WITHIN` operators.
 
+// [TODO.
+// FILL IN THIS SECTION.
+// travel-sample doesn’t provide a good data
+// set to demonstrate this sort of query….]
+
 == Aggregate functions
 
 You can also run analysis on records within the bucket.
@@ -319,6 +324,8 @@ def airports_in_city(city):
   return cb.n1ql_query(query_string)
 ----
 
+The approach above is both unwieldy and insecure (subject to SQL injection attacks).
+
 N1QL allows the use of placeholders to declare dynamic query parameters.
 Here's a version of the above using placeholders:
 
@@ -347,6 +354,8 @@ query_string = (
 )
 ----
 
+Then to issue the actual query:
+
 ----
 query = N1QLQuery(
     query_string,
@@ -354,10 +363,17 @@ query = N1QLQuery(
     altitude=500, min_lat=-50, max_lat=50, min_lon=-180, max_lon=0)
 ----
 
+A similar approach can be used in other SDKs.
+The links below show using dynamic queries in our SDKs:
+
 https://github.com/couchbaselabs/devguide-examples/blob/master/c/query-placeholders.cc[C] | https://github.com/couchbaselabs/devguide-examples/blob/master/python/query-placeholders.py[Python] | https://github.com/couchbaselabs/devguide-examples/blob/master/java/src/main/java/com/couchbase/devguide/QueryPlaceholders.java[Java] | .NET | https://github.com/couchbaselabs/devguide-examples/blob/master/go/query-placeholders.go[Go] | https://github.com/couchbaselabs/devguide-examples/blob/master/nodejs/query-placeholders.js[node.js]
 
 [#prepare-stmts]
 == Query optimization using prepared (optimized) statements
+
+When a N1QL query string is sent to the server, the server will inspect the string and parse it, planning which indexes to query.
+Once this is done, it generates a _query plan_.
+The computation for the plan adds some additional processing time and overhead for the query.
 
 Often-used queries can be _prepared_ so that its _plan_ is generated only once.
 Subsequent queries using the same query string will use the pre-generated _plan_ instead, saving on the overhead and processing of the plan each time.
@@ -381,3 +397,8 @@ For more information on how to optimize queries using prepared statements, see x
 
 [#covering-idx]
 == Query optimization using covering indexes
+
+Indexes help improve the performance of a query.
+When an index includes the actual values of all the fields specified in the query, the index covers the query and eliminates the need to fetch the actual values from the Data Service.
+An index, in this case, is called a covering index and the query is called a covered query.
+For more information, see xref:indexes:covering-indexes.adoc[Covering indexes].

@@ -20,6 +20,11 @@ Common requirements that Couchbase Server was designed to satisfy include:
 
 Couchbase Server's flexible data model and dynamic schemas enable frequent improvements to applications without downtime or schema migrations.
 
+Couchbase documents are JSON, a self-describing format capable of representing rich structures and relationships.
+Unlike a traditional RDBMS, the schema in Couchbase Server is a logical construct entirely defined in the application code and captured in the structure of the stored documents.
+Since there is no explicit schema to maintain, developers can add new objects and properties at any time just by pushing new application code that stores new JSON, without having to also having to make the same changes to the schemas.
+Because of this, applications can evolve quickly and seamlessly.
+
 == Powerful query language
 
 Couchbase Server can be queried by using N1QL, an expressive, powerful, and complete SQL dialect for querying, transforming, and manipulating JSON data.

@@ -18,6 +18,8 @@ Stop the current rebalancing process.
 
 == Options
 
+None
+
 == Examples
 
 Stops the current cluster rebalancing:

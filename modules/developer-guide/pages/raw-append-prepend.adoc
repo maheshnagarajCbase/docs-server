@@ -61,9 +61,14 @@ Note that since the [.api]`append()` method is done atomically, there is no need
 
 == SDK Examples
 
+Examples of using [.api]`prepend` and [.api]`append` in Couchbase SDKs:
+
 C | Python | Java | .NET | Go | node.js | PHP
 
 == Performance considerations
+
+Users of the [.api]`append` and [.api]`prepend`  methods should ensure that the resulting documents do not become too large.
+Couchbase has a hard document size limit of 20MB.
 
 Using append and [.api]`prepend` on larger documents may cause performance degradation and memory fragmentation at the server level, as for each [.api]`append` operation the server must allocate memory for the new document size and then append the fragment to the new memory.
 The performance impact may be significant when document sizes reach beyond 100KB.

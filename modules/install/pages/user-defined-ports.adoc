@@ -45,6 +45,8 @@ NOTE: In order to set up multiple nodes per machine, you need to assign unique v
 
 == How to Map User-Defined Ports to the Default Ports
 
+This chart shows how certain user-defined ports are mapped to the default ports:
+
 ----
 {rest_port, 9000}                    8091 Web administration port
 {mccouch_port, 8999}                 11213 Default value for mccouch

@@ -32,5 +32,7 @@ An audit record for a successful login is shown:
 }
 ----
 
+In this example, a user named `bjones` has successfully logged into a Couchbase cluster using the domain IP address `172.23.107.165.`
+
 NOTE: When an audit log reaches its maximum size (20MB), the log rollover is triggered automatically and doesn't have to be set up in advance.
 The log file name will be same as with the time based rollover.

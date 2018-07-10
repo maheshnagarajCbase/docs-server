@@ -7,3 +7,6 @@ The basic server setup activities are starting, stopping, adding nodes, and remo
 WARNING: Never stop or restart Couchbase Server before you first remove that node from a cluster.
 
 == Limits
+
+Couchbase Server specifies limits and limitations that may affect server usage and implementation.
+Depending on the size of the documents passed to the view engine, the performance of Couchbase Server may be affected.

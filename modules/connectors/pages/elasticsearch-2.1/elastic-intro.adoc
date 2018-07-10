@@ -35,6 +35,8 @@ Or you could use views to calculate the average alcohol percentage of all beers 
 Providing full-text search for Couchbase documents with Elasticsearch complements this functionality by enabling you to provide text-based search results.
 The following figure shows the different elements in a system using Couchbase Server and Elasticsearch:
 
+image::elasticsearch-2.1/images/elastic_components.png[,720]
+
 Your website or web application interacts with Couchbase Server via a Couchbase SDK.
 SDKs are available for a variety of popular web programming languages.
 Each SDK provides APIs for establishing a connection with the server and for communicating reads, writes, and other functions with the server.

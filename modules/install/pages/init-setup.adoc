@@ -58,6 +58,8 @@ If you select this option, the following setup fields will be displayed:
 
 == Step 2: Install Sample Buckets
 
+A screen appears where you can select the sample data buckets you want to load.
+
 [#image_c1r_ztc_3w]
 image::setup-02.png[,720,align=left]
 
@@ -113,6 +115,8 @@ Product Registration:: Register your product with your information.
 
 [#image_jcq_j5c_3w]
 image::setup-05.png[,720,align=left]
+
+To secure the server, you must create an administrative account and then use these credentials to join other servers and form a cluster.
 
 . Provide the administrative credentials: username and password
 . Click [.uicontrol]*Next*.
