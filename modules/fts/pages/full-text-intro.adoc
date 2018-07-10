@@ -11,17 +11,11 @@ _Full Text Search_ provides extensive capabilities for natural-language querying
 These include:
 
 * _Language-aware_ searching; allowing users to search for, say, the word `beauties`, and additionally obtain results for `beauty` and `beautiful`.
-+
-{blank}
 
 * _Scoring_ of results, according to relevancy; allowing users to obtain result-sets that only contain documents awarded the highest scores.
 This keeps result-sets manageably small, even when the total number of documents returned is extremely large.
-+
-{blank}
 
 * _Fast indexes_, which support a wide range of possible text-searches.
-+
-{blank}
 
 Full Text Search is powered by http://www.blevesearch.com/[Bleve], an open source search and indexing library written in _Go_.
 Full Text Search uses Bleve for the indexing of documents, and also makes available Bleve’s extensive range of _query types_.

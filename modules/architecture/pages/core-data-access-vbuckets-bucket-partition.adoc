@@ -25,8 +25,6 @@ The following diagram shows how the Key to Server mapping (vBucket mapping) work
 [#fig_ks5_dsm_xs]
 image::vbucket-partition-1.png[,600]
 
-{blank}
-
 . By hashing the key, the client calculates the vBucket which owns KEY.
 In this example, the hash resolves to vBucket 8 (vB8).
 . The client examines the vBucket map to determine that Server C hosts vB8.

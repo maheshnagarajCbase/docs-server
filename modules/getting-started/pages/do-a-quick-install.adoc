@@ -21,20 +21,14 @@ Then, left-click on the corresponding [.uicontrol]*Download* or btn:[Install] bu
 * On *Mac*, the `Docker.dmg` package is now downloaded.
 When the download has completed, open the package by double left-clicking on the icon.
 An interactive screen is then displayed: follow the instruction it provides, and drag-and-drop Docker into your Applications folder.
-+
-{blank}
 
 * On *Windows*, when you left-click on the [.uicontrol]*Download*, button, a `.msi` file is downloaded.
 When the download has completed, open the file, and proceed as directed with installation.
-+
-{blank}
 
 * On *Linux*, a list of Docker-supported distributions is displayed.
 From this list, pick the entry that corresponds to your current platform.
 You now see an instruction-page, provided by Docker.
 Follow these instructions, to perform installation.
-+
-{blank}
 
 *Note:* For installation, you may need  supervisor privileges on your machine (obtained, for example, by means of the `sudo` command, on MacOS and Linux).
 
@@ -99,17 +93,11 @@ However, if you don't want to wait, you can learn more about Couchbase Server in
 
 * xref:install:install-intro.adoc[Installing On-Premises] explains how to install Couchbase Server directly onto your host, without the use of Docker or any other virtual environment.
 This kind of direct install is the one you will certainly use for production-deployments, and possibly for additional development and testing activities.
-+
-{blank}
 
 * xref:install:init-setup.adoc[Initialize the Cluster] provides a detailed explanation of how to custom-configure Couchbase Server at start-up.
 This is the procedure you will certainly use in production; as well as for testing different configurations.
 The available options include use of the Couchbase Web Console UI, the Couchbase REST API, and the Couchbase Command Line Interface.
-+
-{blank}
 
 * xref:install:startup-shutdown.adoc[Couchbase Server Startup and Shutdown] tells you how to start and stop the server, using commands specific to your underlying platform.
-+
-{blank}
 
 Optionally, when you have inspected these other destinations, you can return to the current page, and continue working through the _Getting Started_ sequence.

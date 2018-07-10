@@ -10,21 +10,13 @@ The Couchbase Full Administrator can assign a _role_ to a defined user; the role
 The following Couchbase Server-resources are always access-controlled:
 
 * *Clusters*
-+
-{blank}
 
 * *XDCR Cluster References*
-+
-{blank}
 
 * *FTS Index Aliases*
-+
-{blank}
 
 * *System Catalogs*.
 Including:
-+
-{blank}
 +
 The following diagnostics are provided:
 +
@@ -59,13 +51,9 @@ NOTE: These are only available using REST APIs.
 
 
 |===
-+
-{blank}
 
 * *Buckets*.
 Note that buckets have three independently access-controllable features, each of which should be considered an individual resource-type:
-+
-{blank}
  ** *Settings*: Includes
 Bucket Type:: 
 Ejection Method:: 
@@ -76,24 +64,12 @@ Flush::
 compact:: 
 delete:: 
 
-{blank}
-
  ** *Statistics*: Includes _ops_, _gets_, _sets_, and _deletes_ per second.
 Also includes information on memory-usage, disk-related activity, and status on indexing, querying, and XDCR activity.
 
-{blank}
-
  ** *Data*: Includes _data_ and _meta-data_ for all objects within a bucket.
-
-{blank}
-
-{blank}
 
 * *XDCR Bucket Replication*
 
-{blank}
-
 * *Indexes*.
 Including _Views_, _Secondary_ Global Secondary Indexes, and FTS _pindexes_.
-
-{blank}

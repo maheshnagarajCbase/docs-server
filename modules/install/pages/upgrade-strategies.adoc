@@ -25,6 +25,7 @@ There are three options for rolling online upgrades:
 Swap Rebalance::
 This method entails introducing new nodes into a Couchbase Server cluster as you remove an equal number of nodes to be upgraded.
 It uses a feature called Swap Rebalance to move data efficiently from the existing nodes to the new nodes, without involving other nodes in the cluster.
++
 As long as you swap an equal number of nodes (e.g.
 one for one, two for two, etc.), a Swap Rebalance will be triggered.
 This also keeps the cluster capacity consistent so as to not interfere with the load running on the cluster.
@@ -37,12 +38,14 @@ Since this will reduce the capacity of the cluster, it is important to ensure th
 This process involves removing one running node from the cluster and rebalancing.
 That node can then be upgraded and used in the Swap Rebalance upgrade procedure above.
 When the last node has been upgraded, it can be rebalanced back into the cluster to return to full capacity.
++
 Like a swap rebalance upgrade, this style will require multiple rebalances to complete.
 
 [[graceful]]Graceful Failover and Delta Recovery::
 This option involves performing a rolling online upgrade using a xref:clustersetup:setup-failover-graceful.adoc#topic_ysk_ycm_zs[Graceful Failover] followed by xref:clustersetup:rejoin-cluster.adoc#story-h2-2[Delta Recovery] instead of the full addition and removal of nodes in a Swap Rebalance.
 It is typically faster and less resource intensive because data does not need to be completely moved between nodes, rather the replicas are synchronized and activated during the failover and the data resynchronized when the node returns following the upgrade.
 Another advantage compared to the other online upgrades is that this method preserves the global secondary indexes and doesn’t need to rebuild them.
++
 The primary downside to this option is decreased high availability as replicas are used for faster failover and not recreated until the node is returned.
 This option is not available when choosing to upgrade with net-new systems (as in the case of many cloud deployments) since those new nodes would not have the previous nodes’ data in place.
 Use Option #1 when upgrading with net-new systems.
