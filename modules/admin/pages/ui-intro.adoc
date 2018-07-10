@@ -17,8 +17,6 @@ The *Cluster Overview* screen contains three sections: Cluster, Buckets, and Ser
 
 The [.uicontrol]*Cluster* section provides information on the RAM and disk usage information for your cluster.
 
-{blank}
-
 [#table_qtx_1pj_yx,cols="1,3"]
 |===
 | Option | Description

@@ -282,6 +282,4 @@ This chart shows how certain user-defined ports are mapped to the default ports:
 {ssl_proxy_upstream_port,11003}      11215 	Internal outgoing SSL proxy
 ----
 
-{blank}
-
 IMPORTANT: All default ports are reserved and cannot be used for other purposes.

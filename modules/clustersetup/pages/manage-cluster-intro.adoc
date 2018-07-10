@@ -51,8 +51,6 @@ If you decide to install sample data, the installer creates one Couchbase bucket
 
 After you create sample data buckets, the [.uicontrol]*Create Default Bucket* panel appears where you can create a new default data bucket.
 
-{blank}
-
 *Step 3 of 5: Create Default Bucket (optional)*
 
 [#image_vjc_tfk_3v]
@@ -64,13 +62,9 @@ See xref:bucket-setup.adoc#topic_jbt_4jn_vs[Bucket setup] for more information.
 
 If you wish to set up the default bucket then accept all defaults in this panel.
 
-{blank}
-
 Couchbase Server will create a new data bucket named `default`; you can use this test bucket to learn more about Couchbase Server and in test environments.
 It is worth noting that the `default` bucket is unauthenticated, which is not recommended for production purposes due to possible security risks.
 You can instead choose to skip the creation of the default bucket and create your own buckets at a later stage.
-
-{blank}
 
 To create a `default` bucket as part of the setup click [.uicontrol]*Next*, otherwise to skip this step click [.uicontrol]*Skip*.
 

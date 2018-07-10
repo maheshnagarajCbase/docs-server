@@ -157,8 +157,6 @@ SET schedule[0] = {"day" : 7, "special_flights" :
 WHERE type = "route" AND destinationairport = "CDG" AND sourceairport = "TLV";
 ----
 
-{blank}
-
 ----
 cbq> CREATE INDEX inested ON `travel-sample`
 ( DISTINCT ARRAY (DISTINCT ARRAY y FOR y IN x.special_flights END) FOR x IN schedule END) 

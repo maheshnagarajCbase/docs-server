@@ -1,8 +1,6 @@
 [#topic_uvg_4x1_4v]
 = Response Object Schema
 
-{blank}
-
 == Status
 
 The status object returns the number of successful and failed pindex queries.
