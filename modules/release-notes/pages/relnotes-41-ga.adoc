@@ -259,8 +259,6 @@ Although the index is successfully created, the error message is unclear.
 
 The following table lists the known issues in the 4.1 release:
 
-{blank}
-
 == Release Notes for Couchbase Server 4.1
 
 *Known issues*

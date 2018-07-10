@@ -29,8 +29,6 @@ The following diagram shows the N1QL query engine components - listener, query p
 [#fig_nqy_b4h_zs]
 image::n1ql-query-engine-components.png[,500]
 
-{blank}
-
 Listener:: N1QL query engine listener is responsible for receiving the concurrent query requests.
 
 Query processor::

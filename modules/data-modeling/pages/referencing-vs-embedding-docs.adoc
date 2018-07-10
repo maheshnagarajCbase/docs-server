@@ -42,8 +42,6 @@ Operations that require an update to beer and a brewery document cannot take adv
 For example, if brewery document is embedded in beer document and there could be many beers embedding the same brewery, you must search and update all the beers that embed the targeted brewery.
 However, this cannot be done in a single consistent operation.
 
-{blank}
-
 .Embedded versus referenced documents
 [#fig_zzl_yrt_dt]
 image::embed-vs-reference-ref-docs.png[,600]

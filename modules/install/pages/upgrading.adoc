@@ -47,6 +47,7 @@ Community Edition to Enterprise Edition::
 If you are performing an [.term]_online upgrade_, you can rebalance nodes upgraded to Enterprise Edition into a Community Edition cluster.
 Be sure to use the same version when upgrading from the Couchbase Server Community Edition to  Couchbase Server Enterprise edition.
 Version differences can result in a failed upgrade.
++
 If you are performing an [.term]_offline upgrade_ from Community Edition to Enterprise Edition, shut down the entire cluster and uninstall Couchbase Server Community Edition from each machine.
 Then install Couchbase Server Enterprise Edition on these machines.
 The data files will be retained, and the cluster can be restarted.

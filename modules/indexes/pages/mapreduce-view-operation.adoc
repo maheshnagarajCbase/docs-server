@@ -47,8 +47,6 @@ The request returns a JSON document with the current update settings:
    }
 ----
 +
-{blank}
-+
 To update the settings, use POST with a data payload that includes the updated values.
 For example, to update the time interval to 10 seconds and document changes to 7000 each: [.input]`POST http://nodename:8091/settings/viewUpdateDaemon updateInterval=10000&updateMinChanges=7000`
 +

@@ -51,8 +51,6 @@ If you decide to install sample data, the installer creates one Couchbase bucket
 
 After you create sample data buckets, the [.uicontrol]*Create Default Bucket* panel appears where you create a new default data bucket.
 
-{blank}
-
 *Step 3 of 5: Create Default Bucket*
 
 [#image_vjc_tfk_3v]

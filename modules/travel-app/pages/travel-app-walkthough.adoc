@@ -302,7 +302,7 @@ SELECT * FROM default b JOIN default a ON KEYS b.joinField
 
 The data model for the travel application includes an `airlineid` field in each `route` document.
 That `airlineid` field is used as a foreign key identifier and corresponds to the key for an `airline` document.
-To select the airline name `a.name`, the query uses the following clause: `JOIN `travel-sample` a ON KEYS r.airlineid`.
+To select the airline name `a.name`, the query uses the following clause: `pass:c[JOIN `travel-sample` a ON KEYS r.airlineid]`.
 
 One of the most powerful features available in the Couchbase Query API is the ability to `UNNEST` or flatten,the results returned in the `SELECT` statement.
 In the data model for the travel application, each route document contains a nested collection of schedule documents.

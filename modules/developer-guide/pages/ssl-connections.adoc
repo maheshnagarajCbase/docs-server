@@ -46,8 +46,6 @@ cb = Bucket('couchbases://10.0.0.31/default?certpath=/tmp/couchbase-ssl-certific
 print cb.server_nodes
 ----
 +
-{blank}
-+
 https://github.com/couchbaselabs/devguide-examples/blob/master/c/connecting-ssl.c[C] | Java | .NET | Go | Node.js
 
 == Performance considerations

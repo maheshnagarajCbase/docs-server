@@ -36,8 +36,6 @@ This certificate can be regenerated or replaced.
 +
 The following is an example URL of a secure connection using the Safari web browser:
 +
-{blank}
-+
 [#image_tp1_2r1_mp]
 image::ui-ssl-ip.png[,420]
 
