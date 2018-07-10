@@ -6,7 +6,7 @@ Only Full Administrators can set up a cluster by defining file locations and hos
 
 == Cluster Setup with Couchbase Web Console
 
-The default location of the Couchbase Web Console is `http://<hostname>:8091`
+The default location of the Couchbase Web Console is `+http://<hostname>:8091+`
 
 . Open the Couchbase Web Console.
 +

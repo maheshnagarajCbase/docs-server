@@ -25,7 +25,7 @@ couchbase-cli setting-cluster -c localhost -u Admin -p Pass --cluster-name="New 
 
 or
 
-curl -u Admin:Pass -X POST http://localhost:8091/pools/default -d clusterName="New Cluster Name"
+curl -u Admin:Pass -X POST \http://localhost:8091/pools/default -d clusterName="New Cluster Name"
 |===
 
 == Cluster RAM Quota
@@ -50,7 +50,7 @@ couchbase-cli setting-cluster -c localhost -u Admin -p Pass --cluster-ramsize=60
 
 or
 
-curl -u Admin:Pass -X POST http://localhost:8091/pools/default -d memoryQuota=600
+curl -u Admin:Pass -X POST \http://localhost:8091/pools/default -d memoryQuota=600
 
 | Index RAM Quota
 | This setting controls the buffer cache size of the index storage layer.
@@ -64,7 +64,7 @@ couchbase-cli setting-cluster -c localhost -u Admin -p Pass --cluster-index-rams
 
 or
 
-curl -u Admin:Pass -X POST http://localhost:8091/pools/default -d indexMemoryQuota=300
+curl -u Admin:Pass -X POST \http://localhost:8091/pools/default -d indexMemoryQuota=300
 
 | Full Text RAM Quota
 | This setting controls the RAM quota for Full Text search.
@@ -86,7 +86,7 @@ The default is 4 and you can adjust it in the UI or with the REST API.
 
 Example:
 
-curl -X POST -u Admin:Pass http://localhost:8091/settings/indexes -d indexerThreads=3
+curl -X POST -u Admin:Pass \http://localhost:8091/settings/indexes -d indexerThreads=3
 
 | Max Rollback Points
 | Maximum number of the committed rollback points.
@@ -94,7 +94,7 @@ The default is 5 and you can adjust it in the UI or with the REST API.
 
 Example:
 
-curl -X POST -u Admin:Pass http://localhost:8091/settings/indexes -d maxRollbackPoints=6
+curl -X POST -u Admin:Pass \http://localhost:8091/settings/indexes -d maxRollbackPoints=6
 
 | Indexer Log Level
 | Adjust the logging level from least to most verbose, the options are `Silent`, `Fatal`, `Error`, `Warn`, `Info`, `Verbose`, `Timing`, `Debug`, and `Trace`, with the default being `Debug`.

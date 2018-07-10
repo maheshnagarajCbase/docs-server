@@ -116,7 +116,7 @@ When specifying a host for the _restore_ command the following formats are expec
 
 * <addr>:<port>
 
-* http://<addr>:<port>
+* \http://<addr>:<port>
 
 It is recommended to use the Couchbase://<addr> format for standard installations.
 The other two formats allow an option to take a port number which is needed for non-default installations where the admin port has been set up on a port other that 8091.

@@ -137,7 +137,7 @@ cbq> \HELP;
 
 `--engine`
 | <[.var]`url`>
-| http://localhost:8091
+| \http://localhost:8091
 | The connection string consists of a protocol scheme followed by a host, including a port number to connect to the query service (8093) or the Couchbase cluster (8091).
 
 The cbq shell supports [.path]_http://_, [.path]_https://_, [.path]_couchbase://_ and [.path]_couchbases://_ protocol schemes.
@@ -190,7 +190,7 @@ You must explicitly connect to a query service using the [.cmd]`\CONNECT` shell 
 | [.var]`value`
 | None
 | Sets the query timeout parameter.
-| $ ./cbq -e http://localhost:8091 --timeout="1s"
+| $ ./cbq -e \http://localhost:8091 --timeout="1s"
 
 | `-u`
 
@@ -201,7 +201,7 @@ You must explicitly connect to a query service using the [.cmd]`\CONNECT` shell 
 When used by itself, without the -p option to specify the password, you will be prompted for the password.
 
 This option requires administration credentials and you cannot switch the credentials during a session.
-| $ ./cbq -e http://localhost:8091 -u=Administrator Enter Password:
+| $ ./cbq -e \http://localhost:8091 -u=Administrator Enter Password:
 
 | `-p`
 
@@ -213,7 +213,7 @@ You cannot use this option by itself.
 It must be used with the -u option to specify the user name.
 
 This option requires administration credentials and you cannot switch the credentials during a session.
-| $ ./cbq -e http://localhost:8091 -u=Administrator -p=password
+| $ ./cbq -e \http://localhost:8091 -u=Administrator -p=password
 
 | `-c`
 
@@ -226,7 +226,7 @@ You can specify credentials for different buckets by separating them with a comm
 Shell command: <<cbq-set,\SET>> `-creds`
 
 REST API: `-creds` parameter
-| $ ./cbq -e http://localhost:8091 -c=beer-sample:password,Administrator:password
+| $ ./cbq -e \http://localhost:8091 -c=beer-sample:password,Administrator:password
 
 | `-v`
 
@@ -312,7 +312,7 @@ The cbq shell supports [.path]_http://_, [.path]_https://_, [.path]_couchbase://
 When using the [.path]_couchbase://_ or [.path]_couchbases://_ protocol schemes, you need not specify the port when connecting to the Couchbase cluster.
 
 Command Line Option: `-e` or `--engine`
-| cbq> \CONNECT http://localhost:8093;
+| cbq> \CONNECT \http://localhost:8093;
 
 | [.cmd]`\DISCONNECT`
 | None
@@ -481,7 +481,7 @@ cbq> \CONNECT url;
 
 The [.var]`url` is made up of two components: the URL and a port number.
 The URL can be any valid IP address or URL.
-The URL is optional and if it is not specified, the default URL `http://localhost:8091` is used.
+The URL is optional and if it is not specified, the default URL `+http://localhost:8091+` is used.
 An error is thrown if the URL is invalid.
 
 The port number to connect to the query service is 8093 and to the Couchbase cluster is 8091.

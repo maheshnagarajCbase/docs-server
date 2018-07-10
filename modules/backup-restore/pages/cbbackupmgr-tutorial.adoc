@@ -6,7 +6,7 @@ This tutorial gives examples of how to use all of the commands in the 'cbbackupm
 
 This tutorial shows how to take backups and restore data using [.cmd]`cbbackupmgr`.
 This tutorial uses a cluster that contains both the travel-sample and beer-sample buckets installed and requires you to modify some of the documents in the travel-sample bucket.
-To make it easier to set up a cluster and edit/get documents, we provide scripts at http://github.com/couchbaselabs/backup-tutorial.
+To make it easier to set up a cluster and edit/get documents, we provide scripts at \http://github.com/couchbaselabs/backup-tutorial.
 You can look for scripts corresponding to your version of Couchbase Server.
 We recommend that you download these scripts as  some of the scripts in this Github repository are referenced later in the tutorial.
 

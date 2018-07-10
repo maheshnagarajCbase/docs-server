@@ -42,7 +42,7 @@ Configuration of the Couchbase Server application::
 * Ensure that applications are deployed to the same Vnet.
 * Use privateIPs (10.0.x.x) for websites, VM applications or cloud services.
  ** SSL based client-server communications
- ** SSL based view access: https://couchbase_server:18092/…
+ ** SSL based view access: \https://couchbase_server:18092/…
 
 Configuration of storage::
 * Mount data disks and stripe across with RAID 0.

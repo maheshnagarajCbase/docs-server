@@ -4,7 +4,7 @@
 [abstract]
 The Couchbase Web Console is the main tool for managing the Couchbase environment.
 
-The Couchbase Web Console is accessed by navigating to `http://<host>:8091/` in a web browser, where `<host>` is the IP address or hostname of a node running Couchbase Server.
+The Couchbase Web Console is accessed by navigating to `+http://<host>:8091/+` in a web browser, where `<host>` is the IP address or hostname of a node running Couchbase Server.
 
 When you start the Couchbase Web Console, the introductory screen opens with the tab [.uicontrol]*Cluster Overview* selected by default.
 
