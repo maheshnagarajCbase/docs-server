@@ -73,7 +73,7 @@ NOTE: Those with more than one administrator role will have all of the privilege
 | W, R, S
 | W, R, S
 
-| ------Bucket [ * | [.var]`particular_bucket` ]
+| ------Bucket [ * \| [.var]`particular_bucket` ]
 | W, R, S
 | W, R, S
 
@@ -111,7 +111,7 @@ NOTE: Those with more than one administrator role will have all of the privilege
 | R
 | R
 
-| ------Bucket [ * | [.var]`particular_bucket` ]
+| ------Bucket [ * \| [.var]`particular_bucket` ]
 | R
 | R
 
@@ -149,7 +149,7 @@ NOTE: Those with more than one administrator role will have all of the privilege
 | W, R
 | W, R
 
-| ------Bucket [ * | [.var]`particular_bucket` ]
+| ------Bucket [ * \| [.var]`particular_bucket` ]
 | W, R
 | W, R
 
@@ -187,7 +187,7 @@ NOTE: Those with more than one administrator role will have all of the privilege
 | none
 | none
 
-| ------Bucket [ * | [.var]`particular_bucket` ]****
+| ------Bucket [ * \| [.var]`particular_bucket` ]****
 | W, R
 | W, R
 
@@ -225,7 +225,7 @@ NOTE: Those with more than one administrator role will have all of the privilege
 | none
 | none
 
-| ------Bucket [ * | [.var]`particular_bucket` ]
+| ------Bucket [ * \| [.var]`particular_bucket` ]
 | none
 | none
 
@@ -263,7 +263,7 @@ NOTE: Those with more than one administrator role will have all of the privilege
 | none
 | none
 
-| ------Bucket [ * | [.var]`particular_bucket` ]
+| ------Bucket [ * \| [.var]`particular_bucket` ]
 | none
 | none
 
