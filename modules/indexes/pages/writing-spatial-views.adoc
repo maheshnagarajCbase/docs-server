@@ -92,4 +92,4 @@ function(doc, meta) {
 ----
 
 To execute the spatial query, use the design document format that uses the embedded spatial 	function.
-For example, a design document named _main_ that resides within the bucket _places_ is executed with this URL: `+http://[localhost]:8092/places/_design/main/_spatial/points+`.
+For example, a design document named _main_ that resides within the bucket _places_ is executed with this URL: `http://[localhost]:8092/places/_design/main/_spatial/points`.
