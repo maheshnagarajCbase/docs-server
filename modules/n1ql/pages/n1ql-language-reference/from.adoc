@@ -25,7 +25,7 @@ For more details about user roles, see xref:security:security-authorization.adoc
 == Syntax
 
 ----
-FROM from-keyspace [ [ AS ] alias1 ] [ USE KEYS use-clause ]  
+FROM from-keyspace [ [ AS ] alias1 ] [ USE KEYS use-clause ]
                     | "(" SELECT ")" [ [ AS ] alias2 ]
                     | expr [ [ AS ] alias3 ]
                     | from-term ( join-clause | nest-clause | unnest-clause )
@@ -68,7 +68,7 @@ unnest-clause;;
 For details, see <<concept_rnt_zfk_np/unnest,UNNEST Clause>>.
 
 ----
-from-term::= keyspace-ref [ [ AS ] alias ] [ use-keys-clause ]  
+from-term::= keyspace-ref [ [ AS ] alias ] [ use-keys-clause ]
                         | "(" select ")" [ AS ] alias
                         | expr [ AS ] alias
                         | from-term ( join-clause | nest-clause | unnest-clause )
@@ -297,9 +297,9 @@ The following non-correlated subquery uses the keyspace `pass:c[`travel-sample`]
 ----
 SELECT DISTINCT t1.city
 FROM `travel-sample` t1
-WHERE t1.type = "landmark"  
+WHERE t1.type = "landmark"
 AND   t1.city IN (SELECT RAW city
-                  FROM `travel-sample` 
+                  FROM `travel-sample`
                   WHERE type = "airport")
 LIMIT 3;
 ----
@@ -328,9 +328,9 @@ The following correlated subquery uses the keyspace alias from an outer query:
 ----
 SELECT t1.city, t1.name
 FROM `travel-sample` t1
-WHERE t1.type = "landmark"  
+WHERE t1.type = "landmark"
 AND   (SELECT RAW t2
-       FROM SPLIT(t1.name) t2 
+       FROM SPLIT(t1.name) t2
        WHERE t2 = "museum")[0] IS NOT NULL
 LIMIT 3;
 ----
@@ -361,7 +361,7 @@ The following subquery example uses different keyspaces in the outer and inner q
 ----
 SELECT DISTINCT t1.city
 FROM `travel-sample` t1
-WHERE t1.type = "landmark" 
+WHERE t1.type = "landmark"
 AND   t1.city IN (SELECT RAW b1.city
                   FROM `beer-sample` b1
                   WHERE b1.type = "brewery")
@@ -424,14 +424,14 @@ Further, subqueries can occur as a subquery or as constituent part of a bigger N
 The following shows a simple case of using a subquery in the `FROM` clause:
 +
 ----
-SELECT t1.country, t1.max_country_alt, 
-       ARRAY x.city FOR x IN t1.c 
+SELECT t1.country, t1.max_country_alt,
+       ARRAY x.city FOR x IN t1.c
        WHEN x.alt = t1.max_country_alt END
 FROM (SELECT  country, array_agg({"alt": geo.alt , city}) c,
    max_country_alt
-      FROM `travel-sample` 
+      FROM `travel-sample`
       WHERE type = "airport"
-      GROUP BY country 
+      GROUP BY country
 LETTING max_country_alt = max(geo.alt) ) t1;
 ----
 +
@@ -469,13 +469,13 @@ LETTING max_country_alt = max(geo.alt) ) t1;
 The same query as above, but use N1QL's power to express it without a subquery.
 +
 ----
-SELECT  country, 
-        (ARRAY x.city FOR x IN array_agg({"alt": geo.alt, city}) 
+SELECT  country,
+        (ARRAY x.city FOR x IN array_agg({"alt": geo.alt, city})
         WHEN x.alt = max_country_alt END) AS max_alt_city,
         max_country_alt
-FROM `travel-sample` 
+FROM `travel-sample`
 WHERE type = "airport"
-GROUP BY country 
+GROUP BY country
 LETTING max_country_alt = max(geo.alt);
 ----
 +
@@ -518,10 +518,10 @@ Then the outer query builds on the inner query results to count the number of di
 SELECT t1.country, num_alts, total_cities
 FROM (SELECT country, geo.alt AS alt,
              count(city) AS num_cities
-      FROM `travel-sample` 
+      FROM `travel-sample`
       WHERE type = "airport"
       GROUP BY country, geo.alt) t1
-GROUP BY t1.country 
+GROUP BY t1.country
 LETTING num_alts = count(t1.alt), total_cities = sum(t1.num_cities);
 ----
 +
@@ -551,12 +551,12 @@ This is equivalent to blending the results of the following two queries by count
 +
 ----
 SELECT country,count(city) AS num_cities
-FROM `travel-sample` 
+FROM `travel-sample`
 WHERE type = "airport"
 GROUP BY country;
 
 SELECT country, count(distinct geo.alt) AS num_alts
-FROM `travel-sample` 
+FROM `travel-sample`
 WHERE type = "airport"
 GROUP BY country;
 ----
@@ -578,7 +578,7 @@ See xref:n1ql-language-reference/subqueries.adoc#nested-path-expr[Nested Paths i
 +
 ----
 SELECT x.geo.alt
-FROM (SELECT geo from `travel-sample` 
+FROM (SELECT geo from `travel-sample`
       WHERE type = "airport") AS x
 LIMIT 2;
 ----
@@ -599,7 +599,7 @@ This results in:
 *Nested Example 2: Usage of a nested path over a constant expression.*
 +
 ----
-SELECT x.b FROM 
+SELECT x.b FROM
          [{"a" : 1, "b" : {"c" : 2}},
           {"a" : 3, "b" : {"d" : 4}}] AS x
 LIMIT 2;
@@ -697,12 +697,12 @@ List all airlines and non-stop routes from SFO in the `travel-sample` keyspace.
 
 ----
 SELECT DISTINCT airline.name, airline.callsign, route.destinationairport, route.stops, route.airline
-FROM `travel-sample` route 
-  JOIN `travel-sample` airline 
-  ON KEYS route.airlineid 
-WHERE route.type = "route" 
-AND airline.type = "airline" 
-AND route.sourceairport = "SFO" 
+FROM `travel-sample` route
+  JOIN `travel-sample` airline
+  ON KEYS route.airlineid
+WHERE route.type = "route"
+AND airline.type = "airline"
+AND route.sourceairport = "SFO"
 AND route.stops = 0
 LIMIT 4;
 ----
@@ -748,13 +748,13 @@ List the schedule of flights from Boston to San Francisco on JETBLUE in the `tra
 
 ----
 SELECT DISTINCT airline.name, route.schedule
-FROM `travel-sample` route 
-  JOIN `travel-sample` airline 
-  ON KEYS route.airlineid 
-WHERE route.type = "route" 
-AND airline.type = "airline" 
+FROM `travel-sample` route
+  JOIN `travel-sample` airline
+  ON KEYS route.airlineid
+WHERE route.type = "route"
+AND airline.type = "airline"
 AND route.sourceairport = "BOS"
-AND route.destinationairport = "SFO" 
+AND route.destinationairport = "SFO"
 AND airline.callsign = "JETBLUE";
 ----
 
@@ -907,12 +907,12 @@ Consider the above _Lookup Example #1_ with route and airline documents where [.
 
 ----
 SELECT DISTINCT airline.name, airline.callsign, route.destinationairport, route.stops, route.airline
-FROM `travel-sample` route 
-  JOIN `travel-sample` airline 
-  ON KEYS route.airlineid 
-WHERE route.type = "route" 
-AND airline.type = "airline" 
-AND route.sourceairport = "SFO" 
+FROM `travel-sample` route
+  JOIN `travel-sample` airline
+  ON KEYS route.airlineid
+WHERE route.type = "route"
+AND airline.type = "airline"
+AND route.sourceairport = "SFO"
 LIMIT 4;
 ----
 
@@ -927,15 +927,15 @@ Using [.term]_index joins_, the same query can be written as:
 ----
 Required Index:
   CREATE INDEX route_airlineid ON `travel-sample`(airlineid) WHERE type="route";
-                 
+
 Optional index:
   CREATE INDEX route_sourceairport ON `travel-sample`(sourceairport) WHERE type="route";
 
 Resulting in:
-  SELECT * FROM `travel-sample` airline 
+  SELECT * FROM `travel-sample` airline
     JOIN `travel-sample` route
     ON KEY route.airlineid FOR airline
-  WHERE route.type="route" 
+  WHERE route.type="route"
   AND airline.type="airline"
   AND route.sourceairport = "SFO";
 ----
@@ -944,10 +944,10 @@ If you generalize the same query, it looks like the following:
 
 ----
 CREATE INDEX on-key-for-index-name rhs-expression (lhs-expression-key);
-                 
+
 SELECT projection-list FROM lhs-expression
   JOIN rhs-expression
-  ON KEY rhs-expression.lhs-expression-key FOR lhs-expression      
+  ON KEY rhs-expression.lhs-expression-key FOR lhs-expression
 [ WHERE predicates ] ;
 ----
 
@@ -991,11 +991,11 @@ The following example counts the number of distinct "AA" airline routes for each
 CREATE INDEX route_airlineid ON `travel-sample`(airlineid) WHERE type="route";
 
 SELECT Count(DISTINCT route.sourceairport) AS DistinctAirports
-FROM `travel-sample` airline 
-  JOIN `travel-sample` route 
-  ON KEY route.airlineid FOR airline 
-WHERE route.type = "route" 
-AND airline.type = "airline" 
+FROM `travel-sample` airline
+  JOIN `travel-sample` route
+  ON KEY route.airlineid FOR airline
+WHERE route.type = "route"
+AND airline.type = "airline"
 AND airline.iata = "AA";
 ----
 
@@ -1158,8 +1158,8 @@ This collection of objects can be used as input for other query operations.
 
 ----
 SELECT RAW reviews.author
-FROM `travel-sample` 
-UNNEST reviews 
+FROM `travel-sample`
+UNNEST reviews
 WHERE `travel-sample`.type = "hotel"
 AND reviews.ratings.Rooms < 2
 LIMIT 4;
@@ -1398,7 +1398,7 @@ If an array occurs along a path, you can use array subscripts to select one elem
 
 ----
 SELECT public_likes
-FROM `travel-sample` 
+FROM `travel-sample`
 WHERE type = "hotel"
 LIMIT 4;
 ----
@@ -1444,7 +1444,7 @@ Remember that array counting starts with `0`, so `2` points to the third item.
 
 ----
 SELECT public_likes[2]
-FROM `travel-sample` 
+FROM `travel-sample`
 WHERE type = "hotel"
 LIMIT 4;
 ----

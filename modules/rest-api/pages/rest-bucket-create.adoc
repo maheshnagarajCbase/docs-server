@@ -151,10 +151,10 @@ In the event these items are later requested, they are retrieved from disk.
 Curl request syntax:
 
 ----
-curl -X POST -u [admin]:[password] 
-  -d name=[new-bucket-name] -d ramQuotaMB=[value] -d authType=[none | sasl] 
-  -d replicaNumber=[value] 
-  -d proxyPort=[proxy-port]   
+curl -X POST -u [admin]:[password]
+  -d name=[new-bucket-name] -d ramQuotaMB=[value] -d authType=[none | sasl]
+  -d replicaNumber=[value]
+  -d proxyPort=[proxy-port]
   http://[localhost]:8091/pools/default/buckets
 ----
 
@@ -166,7 +166,7 @@ Curl request example:
 curl -X POST -u Administrator:password \
   -d 'name=newbucket' -d 'ramQuotaMB=20'0 -d 'authType=none' \
   -d 'replicaNumber=2' \
-  -d 'proxyPort=11215' \   
+  -d 'proxyPort=11215' \
   http://10.5.2.54:8091/pools/default/buckets
 ----
 
@@ -176,18 +176,18 @@ Set the parameter [.param]`conflictResolutionType` to `lww` during bucket creati
 For example, use the following command to create a bucket on the source cluster:
 
 ----
-curl -X POST -u Administrator:asdasd http://<ip_address>:8091/pools/default/buckets 
--d name=newBucketSource -d conflictResolutionType=lww 
--d authType=sasl -d ramQuotaMB=4096 
+curl -X POST -u Administrator:asdasd http://<ip_address>:8091/pools/default/buckets
+-d name=newBucketSource -d conflictResolutionType=lww
+-d authType=sasl -d ramQuotaMB=4096
 -d saslPassword=passw0rd -d bucketType=couchbase
 ----
 
 Use the following command to create a bucket on the destination cluster:
 
 ----
-curl -X POST -u Administrator:asdasd http://<ip_address>:8091/pools/default/buckets 
--d name=newBucketDestination -d conflictResolutionType=lww 
--d authType=sasl -d ramQuotaMB=4096 
+curl -X POST -u Administrator:asdasd http://<ip_address>:8091/pools/default/buckets
+-d name=newBucketDestination -d conflictResolutionType=lww
+-d authType=sasl -d ramQuotaMB=4096
 -d saslPassword=passw0rd -d bucketType=couchbase
 ----
 

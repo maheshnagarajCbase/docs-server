@@ -81,7 +81,7 @@ The JSON document attributes can represent both basic types such as number, stri
 In the examples below, [.var]`a1` and [.var]`a2` represent attributes that have a numeric and string value respectively, [.var]`a3` represents an embedded document, and [.var]`a4` represents an array of embedded documents.
 +
 ----
-{  
+{
    "a1":number,
    "a2":"string",
    "a3":{

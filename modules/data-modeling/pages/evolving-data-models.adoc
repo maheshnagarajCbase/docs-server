@@ -19,7 +19,7 @@ As a developer, you can simply adapt queries for the older and newer versions of
 
 .Query:
 ----
-SELECT * FROM `beer-sample` 
+SELECT * FROM `beer-sample`
     WHERE type="beer" AND (
     (`bottling` IS NOT MISSING AND `bottling`=["can","glass"]) OR
     (`bottling` IS MISSING AND canned=true AND glassed=true)
