@@ -69,18 +69,18 @@ A sample entity may be a "hotel" you represent for a travel web site that provid
 The "hotel" entity may contain many attributes such as name and address, and may contain embedded structured like reviews that can represent individual reviews users have submitted for a given hotel.
 
 ----
-{  
+{
    "type":"hotel",
    "address":"Capstone Road, ME7 3JE",
    "city":"Medway",
    "country":"United Kingdom",
    "hotel_name":"Medway Youth Hostel",
-   "reviews":[  
-      {  
+   "reviews":[
+      {
          "author_id":"author::Ozella_Sipes",
          "content":"This was our 2nd trip here and we enjoyed it as much or more than last year. ",
          "date":"2013-06-22 18:33:50 +0300",
-         "ratings":{  
+         "ratings":{
             "Cleanliness":5,
             "Location":4,
             "Overall":4,
@@ -89,11 +89,11 @@ The "hotel" entity may contain many attributes such as name and address, and may
             "Value":4
          }
       },
-      {  
+      {
          "author_id":"author::Barton_Marks",
          "content":"We found the hotel de la Monnaie through Interval and we thought we'd give it a try while we attended a conference in New Orleans. This place was a perfect location and it definitely beat staying downtown at the Hilton with the rest of the attendees",
          "date":"2015-03-02 19:56:13 +0300",
-         "ratings":{  
+         "ratings":{
             "Business service (e.g., internet access)":4,
             "Check in / front desk":4,
             "Cleanliness":4,

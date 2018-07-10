@@ -21,8 +21,8 @@ For example, you can create a global secondary index, also referred to as _index
 
 [source,json]
 ----
- CREATE INDEX Index1_beer_name 
- ON `beer-sample`(name) 
+ CREATE INDEX Index1_beer_name
+ ON `beer-sample`(name)
  WHERE type="beer" USING GSI;
 ----
 
@@ -93,11 +93,11 @@ The following example shows how to place two indexes on two separate nodes (node
 
 [source,json]
 ----
- CREATE INDEX Index1_beer_name 
- ON `beer-sample`(name) 
+ CREATE INDEX Index1_beer_name
+ ON `beer-sample`(name)
  WHERE type="beer" USING GSI WITH {"nodes":["nodeA:8091"]};
- 
- CREATE INDEX Index2_beer_name 
+
+ CREATE INDEX Index2_beer_name
  ON `beer-sample`(name)
  WHERE type="beer" USING GSI WITH {"nodes":["nodeB:8091"]};
 ----
@@ -119,13 +119,13 @@ The following example illustrates partitioning the` beer_name `index into segmen
 
 [source,json]
 ----
- CREATE INDEX Index1_beer_name1 
- ON `beer-sample`(name) 
+ CREATE INDEX Index1_beer_name1
+ ON `beer-sample`(name)
  WHERE type="beer" AND name BETWEEN "A" AND "C"
  USING GSI WITH {"nodes":["nodeA:8091"]};
-    
- CREATE INDEX Index1_beer_name2 
- ON `beer-sample`(name) 
+
+ CREATE INDEX Index1_beer_name2
+ ON `beer-sample`(name)
  WHERE type="beer" AND name BETWEEN "D" AND "F"
  USING GSI WITH {"nodes":["nodeB:8091"]};
  ...
@@ -135,9 +135,9 @@ The first query below uses` Index1_beer_name1 `index to return the result which 
 
 [source,json]
 ----
- SELECT * FROM `beer-sample` 
+ SELECT * FROM `beer-sample`
  WHERE type="beer" AND name = "Blackberry";
-     
- SELECT * FROM `beer-sample` 
+
+ SELECT * FROM `beer-sample`
  WHERE type="beer" AND name = "Downtown Brown";
 ----

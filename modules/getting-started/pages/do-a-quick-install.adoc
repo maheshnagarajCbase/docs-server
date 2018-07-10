@@ -45,20 +45,20 @@ During the download process, you see output like the following, in your console:
  $ docker run -t --name db -p 8091-8094:8091-8094 -p 11210:11210 couchbase/server:sandbox
  Unable to find image 'couchbase/server:sandbox' locally
  sandbox: Pulling from couchbase/server
- 862a3e9af0ae: Pull complete 
- 6498e51874bf: Pull complete 
- 159ebdd1959b: Pull complete 
- 0fdbedd3771a: Pull complete 
- 7a1f7116d1e3: Pull complete 
- b46618b72574: Pull complete 
- 67ea61a8c297: Pull complete 
- 969bb5073704: Pull complete 
- ef8eeaf0285d: Pull complete 
- 1a797cd531fd: Pull complete 
- 2667ee2d486a: Pull complete 
- d12025fc6fb6: Pull complete 
- fc670031c36d: Pull complete 
- da07033be0a7: Pull complete 
+ 862a3e9af0ae: Pull complete
+ 6498e51874bf: Pull complete
+ 159ebdd1959b: Pull complete
+ 0fdbedd3771a: Pull complete
+ 7a1f7116d1e3: Pull complete
+ b46618b72574: Pull complete
+ 67ea61a8c297: Pull complete
+ 969bb5073704: Pull complete
+ ef8eeaf0285d: Pull complete
+ 1a797cd531fd: Pull complete
+ 2667ee2d486a: Pull complete
+ d12025fc6fb6: Pull complete
+ fc670031c36d: Pull complete
+ da07033be0a7: Pull complete
  Digest: sha256:02231569d6ac86c0f5a05bd53665e76472ccd515de460bb56f6e621c868b6305
  Status: Downloaded newer image for couchbase/sandbox:5.0.0-beta
 
