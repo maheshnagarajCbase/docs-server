@@ -22,7 +22,7 @@ Verify container start:: The docker run command above will return a container ID
  $ docker logs 1163fd8df
  Starting Couchbase Server -- Web UI available at http://<ip>:8091
 
-Connect to the Couchbase Web Console:: From the host, connect your browser to `http://localhost:8091`, and you should see the Couchbase Server welcome screen.
+Connect to the Couchbase Web Console:: From the host, connect your browser to `+http://localhost:8091+`, and you should see the Couchbase Server welcome screen.
 
 Configure::
 * Click [.uicontrol]*Setup*.
@@ -35,4 +35,4 @@ image::docker-02.png[]
 
 Connect via SDK::
 At this point, you are ready to connect to your Couchbase Server node from one of the Couchbase Client SDKs.
-You should run the SDK on the host and point it to `http://localhost:8091/pools`.
+You should run the SDK on the host and point it to `+http://localhost:8091/pools+`.

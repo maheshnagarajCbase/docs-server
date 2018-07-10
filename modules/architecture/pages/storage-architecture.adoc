@@ -23,7 +23,7 @@ With ForestDB, each index is represented as a separate ForestDB file in the file
 Unlike Couchstore, ForestDB uses a B+trie structure to quickly access item through its index key.
 B+trie provides a more efficient tree structure compared to B+trees and ensures a shallower tree hierarchy to better scale large item counts and very large index keys.
 ForestDB, like Couchstore, uses an append-only write model for each file for efficient writes which also requires compaction for cleanup.
-For more information on ForestDB and B+Trie, see https://github.com/couchbase/forestdb/wiki.html[https://github.com/couchbase/forestdb].
+For more information on ForestDB and B+Trie, see https://github.com/couchbase/forestdb/wiki.html[\https://github.com/couchbase/forestdb].
 
 == Couchstore versus ForestDB
 

@@ -6,8 +6,8 @@ N1QL provides a REST API for submitting N1QL queries and statements to the N1QL 
 
 The REST endpoints are:
 
-* `http://node:8093/query/service` (for unsecure access)
-* `https://node:18093/query/service` (for secure access)
+* `+http://node:8093/query/service+` (for unsecure access)
+* `+https://node:18093/query/service+` (for secure access)
 
 where [.var]`node` is the host name or IP address of a computer running the N1QL query engine.
 
