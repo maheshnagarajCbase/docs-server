@@ -23,7 +23,7 @@ Indexes cannot be built concurrently on a given bucket unless the `defer_build` 
 The following error is reported if a second index creation operation is kicked off before the completion of the ongoing index creation.
 
 ----
-"errors": [{"code": 12014, 
+"errors": [{"code": 12014,
     "msg": "error: Build Already In Progress. Bucket BUCKET_NAME. Index INDEX_NAME. Index state: pending"}]
 ----
 ====
@@ -116,8 +116,8 @@ CREATE INDEX id_ix on `beer-sample`(meta().id);
 The [.api]`meta()` function in a query is given an expression; if this resolves to a keyspace alias, the requested field (id or CAS) is returned.
 
 ----
-SELECT b.name, meta(b).id 
-FROM `beer-sample` b 
+SELECT b.name, meta(b).id
+FROM `beer-sample` b
 WHERE meta(b).id > "g" limit 1;
 ----
 

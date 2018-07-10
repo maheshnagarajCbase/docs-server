@@ -39,6 +39,6 @@ The following are the command options:
 == Examples
 
 ----
-couchbase-cli setting-cluster -c 192.168.0.1:8091 -u Administrator -p password \ 
+couchbase-cli setting-cluster -c 192.168.0.1:8091 -u Administrator -p password \
 --cluster-name MyCluster --cluster-ramsize 256
 ----

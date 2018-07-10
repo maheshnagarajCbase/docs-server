@@ -83,7 +83,7 @@ ep_chk_remover_stime:               5
 ep_commit_num:                      682
 ep_commit_time:                     0
 ep_commit_time_total:               0
-ep_config_file:                     
+ep_config_file:
 ep_conflict_resolution_type:        seqno
 ep_couch_bucket:                    default
 ep_data_traffic_enabled:            0
@@ -115,7 +115,7 @@ ep_getl_default_timeout:            15
 ep_getl_max_timeout:                30
 ep_ht_locks:                        5
 ep_ht_size:                         3079
-ep_initfile:                        
+ep_initfile:
 ep_io_num_read:                     0
 ep_io_num_write:                    0
 ep_io_read_bytes:                   0
@@ -174,7 +174,7 @@ ep_pending_ops:                     0
 ep_pending_ops_max:                 0
 ep_pending_ops_max_duration:        0
 ep_pending_ops_total:               0
-ep_postInitfile:                    
+ep_postInitfile:
 ep_queue_size:                      0
 ep_rollback_count:                  0
 ep_startup_time:                    1418937974

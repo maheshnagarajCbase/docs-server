@@ -137,10 +137,10 @@ In the event these items are later requested, they are retrieved from disk.
 Curl request syntax:
 
 ----
-curl -X POST -u [admin]:[password] 
-  -d name=[new-bucket-name] -d ramQuotaMB=[value] -d authType=[none | sasl] 
-  -d replicaNumber=[value] 
-  -d proxyPort=[proxy-port]   
+curl -X POST -u [admin]:[password]
+  -d name=[new-bucket-name] -d ramQuotaMB=[value] -d authType=[none | sasl]
+  -d replicaNumber=[value]
+  -d proxyPort=[proxy-port]
   http://[localhost]:8091/pools/default/buckets
 ----
 
@@ -151,7 +151,7 @@ Curl request example:
 ----
 curl -X POST -u Administrator:password \
 
-  -d 'proxyPort=11215' \   
+  -d 'proxyPort=11215' \
   http://10.5.2.54:8091/pools/default/buckets
 ----
 

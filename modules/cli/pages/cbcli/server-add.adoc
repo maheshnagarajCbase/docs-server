@@ -10,8 +10,8 @@ The basic syntax is:
 
 ----
 couchbase-cli server-add -c [host]:8091 -u [admin] -p [password]
-    --server-add=[host]:8091 
-    --server-add-username=[Administrator] 
+    --server-add=[host]:8091
+    --server-add-username=[Administrator]
     --server-add-password=[password]
     --services=[data|index|query]
     --group-name=[groupName]
@@ -72,8 +72,8 @@ However, for the development environment, more than one service can be enabled o
 Adds a node to a cluster but does not rebalance:
 
 ----
-couchbase-cli server-add -c 192.168.0.1:8091 \ 
---server-add=192.168.0.2:8091 --server-add-username=Administrator \ 
+couchbase-cli server-add -c 192.168.0.1:8091 \
+--server-add=192.168.0.2:8091 --server-add-username=Administrator \
 --server-add-password=password --services=data
 ----
 
@@ -86,7 +86,7 @@ If a Couchbase Server service is not provided, the default (data service) is ena
 
 ----
 couchbase-cli server-add -c 10.3.2.204:8091 -u Administrator -p password \
---server-add=10.3.4.246:8091 --server-add-username=Administrator \ 
+--server-add=10.3.4.246:8091 --server-add-username=Administrator \
 --server-add-password=password --services=data,index
 ----
 

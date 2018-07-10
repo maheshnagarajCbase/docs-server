@@ -59,7 +59,7 @@ route_5966                         ←This is the key, which also acts as a prim
     "stops": "0",
     "equipment": "737",
     "schedule": [
-        {"day": 1, "utc": "13:25:00", "flight": "AA788"}, 
+        {"day": 1, "utc": "13:25:00", "flight": "AA788"},
         {"day": 4, "utc": "13:25:00", "flight": "AA419"},
         {"day": 5, "utc": "13:25:00", "flight": "AA519"}
     ]

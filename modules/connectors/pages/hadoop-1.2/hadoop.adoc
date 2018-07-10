@@ -168,7 +168,7 @@ shell> sqoop import --username mybucket --password mypassword --verbose \
 ----
 
 ----
-shell> sqoop import --username mybucket --password-file passwordfile \ 
+shell> sqoop import --username mybucket --password-file passwordfile \
     --verbose --connect http://10.2.1.55:8091/pools --table DUMP
 ----
 

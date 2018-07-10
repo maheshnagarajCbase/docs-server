@@ -20,8 +20,8 @@ There can only be zero or one index key output per document key.
 For example, you can create a global secondary index, also referred to as _index_, on name that indexes beer name attributes for documents of type "beer" using the following CREATE INDEX statement in N1QL.
 
 ----
-    CREATE INDEX Index1_beer_name 
-    ON `beer-sample`(name) 
+    CREATE INDEX Index1_beer_name
+    ON `beer-sample`(name)
     WHERE type="beer" USING GSI;
 ----
 
@@ -80,10 +80,10 @@ This ensures that the index service has an index available for faster query exec
 The following example shows how to place two indexes on two separate nodes (nodeA and nodeB) that have identical definitions using the WITH clause.
 
 ----
-     CREATE INDEX Index1_beer_name 
-     ON `beer-sample`(name) 
+     CREATE INDEX Index1_beer_name
+     ON `beer-sample`(name)
      WHERE type="beer" USING GSI WITH {"nodes":["nodeA:8091"]};
-     CREATE INDEX Index2_beer_name 
+     CREATE INDEX Index2_beer_name
      ON `beer-sample`(name)
      WHERE type="beer" USING GSI WITH {"nodes":["nodeB:8091"]};
 ----
@@ -104,13 +104,13 @@ The following example illustrates partitioning the beer_name index into segments
 Index1_beer_name1 specifies names that are between "A" and "C", while Index1_beer_name2 specifies names between "C" and "F", and so on.
 
 ----
-    CREATE INDEX Index1_beer_name1 
-    ON `beer-sample`(name) 
+    CREATE INDEX Index1_beer_name1
+    ON `beer-sample`(name)
     WHERE type="beer" AND name BETWEEN "A" AND "C"
     USING GSI WITH {"nodes":["nodeA:8091"]};
-    
-    CREATE INDEX Index1_beer_name2 
-    ON `beer-sample`(name) 
+
+    CREATE INDEX Index1_beer_name2
+    ON `beer-sample`(name)
     WHERE type="beer" AND name BETWEEN "C" AND "F"
     USING GSI WITH {"nodes":["nodeB:8091"]};
     ...
@@ -119,9 +119,9 @@ Index1_beer_name1 specifies names that are between "A" and "C", while Index1_bee
 The first query below uses Index1_beer_name1 index to return the result which only engages nodeA as the index is created on nodeA, while the second query scans Index_beer_name2 index which is on nodeB.
 
 ----
-     SELECT * FROM `beer-sample` 
+     SELECT * FROM `beer-sample`
      WHERE type="beer" AND name = "Blackberry";
-     
-     SELECT * FROM `beer-sample` 
+
+     SELECT * FROM `beer-sample`
      WHERE type="beer" AND name = "Downtown Brown";
 ----

@@ -31,6 +31,6 @@ You can pause or resume replication with filtering expression without restrictio
 == Test a replication filter
 
 ----
-regular exp - airline* 
+regular exp - airline*
 test key -airline_SFO
 ----

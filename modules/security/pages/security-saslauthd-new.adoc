@@ -106,13 +106,13 @@ ldap_servers: ldaps://ad.example.net
  $ cat /etc/saslauthd.conf
         # ldap_servers: ldap:<URI>:<PORT> or ldaps:<URI>:<PORT> for TLS protected connection
         ldap_servers: ldap://my.company.com:389
-        # Specifies the distinguished name to which the search is relative. 
-        # The search includes the base # or objects below. It also includes Domain Components (dc) 
+        # Specifies the distinguished name to which the search is relative.
+        # The search includes the base # or objects below. It also includes Domain Components (dc)
         # such as in dc=company and dc=com.
         # The administrative users created in LDAP with the attribute uid are placed under the user's
         # organizational unit ou under the two domain components (example and com).
         OU=InteractiveUsers,DC=my,DC=company,DC=com
-        # Specifies the search filter. The values for these configuration options correspond to the 
+        # Specifies the search filter. The values for these configuration options correspond to the
         # values specific to the test
         ldap_filter: (samAccountName=%u)
         # Optional: specify a user to perform ldap queries
@@ -153,7 +153,7 @@ If the connection is properly working, the user `couchbase` must have access to 
 [root@localhost ~]# service saslauthd restart
      Stopping saslauthd:                             [  OK  ]
      Starting saslauthd:                             [  OK  ]
-            
+
      [root@localhost ~]# chkconfig  saslauthd on
      [root@localhost ~]# chkconfig --list saslauthd
      saslauthd   	0:off   1:off   2:on	3:on	4:on	5:on	6:off

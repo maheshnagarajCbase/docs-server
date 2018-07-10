@@ -38,7 +38,7 @@ The examples below demonstrate how to configure and connect your SDK to a Couchb
 [source,python]
 ----
 #!/usr/bin/env python
-                        
+
 from couchbase.bucket import Bucket
 
 # Note the `couchbases` in the scheme. This is required for SSL connections!

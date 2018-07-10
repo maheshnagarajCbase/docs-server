@@ -11,7 +11,7 @@ A non-sudo, non-root installation still runs Couchbase Server and all Couchbase 
 . After downloading the Couchbase Server RPM, go to the directory where it is located and extract it:
 +
 ----
-rpm2cpio couchbase-server-enterprise_version.rpm 
+rpm2cpio couchbase-server-enterprise_version.rpm
 | cpio --extract --make-directories --no-absolute-filenames
 ----
 +
@@ -28,7 +28,7 @@ cd opt/couchbase.
  ** Extract `openssl098e` RPM:
 +
 ----
-rpm2cpio openssl098e-0.9.8e-17.el6.centos.2.x86_64.rpm 
+rpm2cpio openssl098e-0.9.8e-17.el6.centos.2.x86_64.rpm
 | cpio --extract --make-directories --no-absolute-filenames
 ----
 

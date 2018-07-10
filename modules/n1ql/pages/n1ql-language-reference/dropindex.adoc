@@ -7,7 +7,7 @@ You can drop unnamed primary indexes using the DROP PRIMARY INDEX statement.
 _drop-index:_
 
 ----
- DROP INDEX named_keyspace_ref.index_name 
+ DROP INDEX named_keyspace_ref.index_name
  [USING GSI | VIEW];
 ----
 

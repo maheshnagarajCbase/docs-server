@@ -34,9 +34,9 @@ Example:
 List all purchases in April 2014 having at least one product costing over $500.
 
 ----
- SELECT purchases.purchaseId, l.product 
- FROM purchases UNNEST purchases.lineItems l 
+ SELECT purchases.purchaseId, l.product
+ FROM purchases UNNEST purchases.lineItems l
  WHERE DATE_PART_STR(purchases.purchasedAt,"month") = 4
-      AND DATE_PART_STR(purchases.purchasedAt,"year") = 2014 
+      AND DATE_PART_STR(purchases.purchasedAt,"year") = 2014
       AND EXISTS (SELECT product.productId FROM product USE KEYS l.product WHERE product.unitPrice > 500);
 ----

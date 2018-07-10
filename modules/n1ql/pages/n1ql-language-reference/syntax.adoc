@@ -36,7 +36,7 @@ from-clause [let-clause] [where-clause] [group-by-clause] select-clause
 _select-clause:_
 
 ----
-SELECT ( [ALL | DISTINCT]  ( result-expression [, result-expression]*) | 
+SELECT ( [ALL | DISTINCT]  ( result-expression [, result-expression]*) |
     (RAW | ELEMENT) expression)
 ----
 
@@ -145,7 +145,7 @@ expression
 _group-by-clause:_
 
 ----
-GROUP BY expression [ , expression ]* [ letting-clause ] 
+GROUP BY expression [ , expression ]* [ letting-clause ]
     [having-clause] ] | [letting-clause]
 ----
 

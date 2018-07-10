@@ -64,7 +64,7 @@ couchbase-cli ssl-manage -c 10.3.4.187:8091 -u Administrator -p password \
 An example output from a successful certificate retrieval:
 
 ----
-SUCCESS: retrieve certificate to './newCert.pem' 
+SUCCESS: retrieve certificate to './newCert.pem'
 Certificate matches what seen on GUI
 ----
 

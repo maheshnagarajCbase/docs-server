@@ -32,7 +32,7 @@ The travel app uses the data model and binds the input field for the `from` airp
 .Angular typeahead directive from /public/index.html file
 [source,markup]
 ----
-<input type="text" 
+<input type="text"
     placeholder="find airport"
     typeahead="data.airportname for data in findAirports($viewValue)"
     typeahead-min-length="3"
@@ -134,14 +134,14 @@ The button is defined within the `travelForm` form element in the [.path]_index.
 .travelForm form element from /public/index.html file
 [source,markup]
 ----
-<form class="form-horizontal" role="form" 
+<form class="form-horizontal" role="form"
        name="travelForm" ng-submit="findFlights()" novalidate>
 ----
 
 .Find Flights button element from /public/index.html file
 [source,markup]
 ----
-<button class="btn btn-primary pull-right btn-sm" 
+<button class="btn btn-primary pull-right btn-sm"
          type="submit" ng-disabled="travelForm.$invalid">Find Flights</button>
 ----
 
@@ -261,13 +261,13 @@ module.exports.findAll = function (from, to, leave,done) {
 The Query can be seen in the terminal window that is running the node.js application:
 
 ----
-QUERY: 
-SELECT a.name, s.flight, s.utc, r.sourceairport, r.destinationairport, r.equipment 
-FROM `travel-sample` r 
-UNNEST r.schedule s 
-JOIN `travel-sample` a 
-ON KEYS r.airlineid 
-WHERE r.sourceairport='SEA' AND r.destinationairport='MCO' AND s.day=6 
+QUERY:
+SELECT a.name, s.flight, s.utc, r.sourceairport, r.destinationairport, r.equipment
+FROM `travel-sample` r
+UNNEST r.schedule s
+JOIN `travel-sample` a
+ON KEYS r.airlineid
+WHERE r.sourceairport='SEA' AND r.destinationairport='MCO' AND s.day=6
 ORDER BY a.name
 ----
 
@@ -279,11 +279,11 @@ Here's an example of a query that finds flights between Seattle-Tacoma Internati
 
 [source,sql]
 ----
-SELECT a.name, s.flight, s.utc, r.sourceairport, r.destinationairport, r.equipment 
-FROM `travel-sample` r 
+SELECT a.name, s.flight, s.utc, r.sourceairport, r.destinationairport, r.equipment
+FROM `travel-sample` r
 UNNEST r.schedule s
-JOIN `travel-sample` a ON KEYS r.airlineid 
-WHERE r.sourceairport='SEA' AND r.destinationairport='MCO' AND s.day=6 
+JOIN `travel-sample` a ON KEYS r.airlineid
+WHERE r.sourceairport='SEA' AND r.destinationairport='MCO' AND s.day=6
 ORDER BY a.name
 ----
 
@@ -294,7 +294,7 @@ The following example shows two documents that demonstrate that requirement and 
 ----
 "keyA" is the Couchbase KV key for Doc A.
 Doc A: { some fields }
- 
+
 Doc B: { some fields "joinField": "keyA" }
 
 SELECT * FROM default b JOIN default a ON KEYS b.joinField

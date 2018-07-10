@@ -37,7 +37,7 @@ To validate the user input, implement these validation techniques:
 == Example
 
 ----
- {"user": "will","password":"0asd21$1%", 
+ {"user": "will","password":"0asd21$1%",
   "created":"2012-06-12", "password":"password"}
 ----
 

@@ -18,9 +18,9 @@ For example, the following spatial view written in JavaScript emits GeoJSON with
       var geojson = {};
       geojson.type = "Point";
       geojson.coordinates = [doc.geo.lon, doc.geo.lat];
-    
+
       var date = Date.parse(doc.updated)/1000;
-    
+
       //By convention, the GeoJSON object must be the first element
       emit([geojson, date], doc.name);
      }

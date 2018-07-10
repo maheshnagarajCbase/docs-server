@@ -12,8 +12,8 @@ The basic syntax is:
 couchbase-cli cluster-edit -c [host]:8091 -u [admin] -p [password]
    --cluster-username=USER
    --cluster-index-ramsize=RAMSIZEMB
-   --cluster-password=PASSWORD   
-   --cluster-port=PORT   
+   --cluster-password=PASSWORD
+   --cluster-port=PORT
    --cluster-ramsize=RAMSIZEMB
    --services=data,index,query
 ----

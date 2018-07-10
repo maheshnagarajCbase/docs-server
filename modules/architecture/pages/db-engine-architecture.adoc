@@ -268,7 +268,7 @@ You can use the [.cmd]`cbstats` command with the [.param]`raw workload` option t
 
 ----
 # cbstats 10.5.2.54:11210 -b default raw workload
-     
+
      ep_workload:LowPrioQ_AuxIO:InQsize:   3
      ep_workload:LowPrioQ_AuxIO:OutQsize:  0
      ep_workload:LowPrioQ_NonIO:InQsize:   33

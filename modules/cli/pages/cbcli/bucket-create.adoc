@@ -15,9 +15,9 @@ couchbase-cli bucket-create -c [host]:8091 -u [admin] -p [password]
        --bucket-type=[type]
        --bucket-port=[port]
        --bucket-ramsize=[size]
-       --bucket-priority=high 
+       --bucket-priority=high
        --bucket-replica=[replicas]
-       --enable-flush=[0 | 1] 
+       --enable-flush=[0 | 1]
        --wait
 ----
 
@@ -81,24 +81,24 @@ On the other hand, if you choose to select a dedicated port that supports ASCII 
 To create a new dedicated port couchbase bucket:
 
 ----
-couchbase-cli bucket-create -c 192.168.0.1:8091 -u Administrator -p password \ 
---bucket=test_bucket --bucket-type=couchbase --bucket-port=11222 \ 
+couchbase-cli bucket-create -c 192.168.0.1:8091 -u Administrator -p password \
+--bucket=test_bucket --bucket-type=couchbase --bucket-port=11222 \
 --bucket-ramsize=200 --bucket-replica=1
 ----
 
 To create a Couchbase bucket and wait for bucket ready:
 
 ----
-couchbase-cli bucket-create -c 192.168.0.1:8091 -u Administrator -p password \ 
---bucket=test_bucket --bucket-type=couchbase --bucket-port=11222 \ 
+couchbase-cli bucket-create -c 192.168.0.1:8091 -u Administrator -p password \
+--bucket=test_bucket --bucket-type=couchbase --bucket-port=11222 \
 --bucket-ramsize=200 --bucket-replica=1 --wait
 ----
 
 To create a new sasl memcached bucket:
 
 ----
-couchbase-cli bucket-create -c 192.168.0.1:8091 -u Administrator -p password \ 
---bucket=test_bucket --bucket-type=memcached --bucket-password=password \ 
+couchbase-cli bucket-create -c 192.168.0.1:8091 -u Administrator -p password \
+--bucket=test_bucket --bucket-type=memcached --bucket-password=password \
 --bucket-ramsize=200 --enable-flush=1 --enable-index-replica=1
 ----
 
@@ -106,14 +106,14 @@ To create a new couchbase bucket with a high priority:
 
 ----
 couchbase-cli bucket-create -c 192.168.0.1:8091 -u Administrator -p password \
---bucket=test_bucket --bucket-type=couchbase --bucket-port=11222 \ 
+--bucket=test_bucket --bucket-type=couchbase --bucket-port=11222 \
 --bucket-ramsize=200 --bucket-replica=1 --bucket-priority=high
 ----
 
 To create a new sasl bucket and set the eviction policy to `valueOnly`:
 
 ----
-couchbase-cli bucket-create -c 192.168.0.1:8091 -u Administrator -p password \ 
+couchbase-cli bucket-create -c 192.168.0.1:8091 -u Administrator -p password \
 --bucket=test_bucket --bucket-password=password --bucket-ramsize=200 \
 --bucket-eviction-policy=valueOnly --enable-flush=1
 ----

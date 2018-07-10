@@ -26,35 +26,35 @@ Syntax:
 
 ----
  // Setup Services
-curl -u username=[admin]&password=[password] -v -X POST 
-http://[localhost]:8091/node/controller/setupServices 
+curl -u username=[admin]&password=[password] -v -X POST
+http://[localhost]:8091/node/controller/setupServices
 -d services=[data | index | query]
 ----
 
 ----
-// Initialize Node 
-curl -v -X POST 
-http://[localhost]:8091/nodes/self/controller/settings 
+// Initialize Node
+curl -v -X POST
+http://[localhost]:8091/nodes/self/controller/settings
 -d path=[location] -d index_path=[location]
 ----
 
 ----
 // Setup Administrator username and password
-curl -v -X POST 
-http://[localhost]:8091/settings/web 
+curl -v -X POST
+http://[localhost]:8091/settings/web
 -d password=[password] -d username=[admin-name]
 ----
 
 ----
-// Setup Bucket 
-curl -v -X POST 
-http://[localhost]:8091/pools/default/buckets 
+// Setup Bucket
+curl -v -X POST
+http://[localhost]:8091/pools/default/buckets
 -d ramQuotaMB=[value]
 ----
 
 ----
 // Setup Index RAM Quota
-curl -u username=[admin]&password=[password] -X POST 
+curl -u username=[admin]&password=[password] -X POST
 http://[localhost]:8091/pools/default -d memoryQuota=[value]
 -d indexMemoryQuota=[value]
 ----
@@ -73,7 +73,7 @@ http://192.168.42.101:8091/node/controller/setupServices \
 ----
 // Initialize Node
 curl -v -X POST \
-http://192.168.42.101:8091/nodes/self/controller/settings \ 
+http://192.168.42.101:8091/nodes/self/controller/settings \
 -d 'path=%2Fopt%2Fcouchbase%2Fvar%2Flib%2Fcouchbase%2Fdata&index_path= \
 %2Fopt%2Fcouchbase%2Fvar%2Flib%2Fcouchbase%2Fdata'
 ----
@@ -81,14 +81,14 @@ http://192.168.42.101:8091/nodes/self/controller/settings \
 ----
 // Setup Administrator username and password
 curl -v -X POST \
-http://192.168.42.101:8091/settings/web \ 
+http://192.168.42.101:8091/settings/web \
 -d 'password=password&username=Administrator&port=SAME'
 ----
 
 ----
 // Setup Bucket
 curl -u Administrator:password -v -X POST \
-http://192.168.42.101:8091/pools/default/buckets \ 
+http://192.168.42.101:8091/pools/default/buckets \
 -d 'flushEnabled=1&threadsNumber=3&replicaIndex=0&replicaNumber=0&evictionPolicy= \
 valueOnly&ramQuotaMB=597&bucketType=membase&name=default&authType=sasl&saslPassword='
 ----
@@ -96,6 +96,6 @@ valueOnly&ramQuotaMB=597&bucketType=membase&name=default&authType=sasl&saslPassw
 ----
 // Setup Index RAM Quota
 curl -u Administrator:password -X POST  \
-http://127.0.0.1:8091/pools/default \ 
+http://127.0.0.1:8091/pools/default \
 -d 'memoryQuota=5000' -d 'indexMemoryQuota=269'
 ----

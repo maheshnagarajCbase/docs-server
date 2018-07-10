@@ -18,7 +18,7 @@ POST /pools/default
 Curl request syntax:
 
 ----
-curl -X POST -u [admin]:[password] 
+curl -X POST -u [admin]:[password]
     http://[localhost]:[port]/pools/default
     -d indexMemoryQuota=[quota-number]
 ----

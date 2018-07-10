@@ -47,8 +47,8 @@ If successful Couchbase Server returns any auto-failover settings for the cluste
 
 ----
 {
-    "count": 0, 
-    "enabled": false, 
+    "count": 0,
+    "enabled": false,
     "timeout": 120
 }
 ----

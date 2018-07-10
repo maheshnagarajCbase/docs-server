@@ -21,7 +21,6 @@ For value eviction only the deleted keys will be stored, while in case of full e
 The algorithm calculates the almost exact probability of false positives, including the number of hash functions (`k`), size of the bit array (`m`), and the number of inserted elements (`n`):
 
 ----
-    
       k = m/n (ln 2)
 ----
 

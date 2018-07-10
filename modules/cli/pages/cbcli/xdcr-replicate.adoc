@@ -9,7 +9,7 @@ Options to manage XDCR replications.
 The basic syntax is:
 
 ----
-couchbase-cli xdcr-replicate -c [host]:[port] -u [admin] -p [password]         
+couchbase-cli xdcr-replicate -c [host]:[port] -u [admin] -p [password]
     [options]
 ----
 
@@ -100,7 +100,7 @@ To start a replication stream:
 
 ----
 couchbase-cli xdcr-replicate -c 192.168.0.1:8091 -u Administrator -p password \
---create --xdcr-cluster-name=test \ 
+--create --xdcr-cluster-name=test \
 --xdcr-from-bucket=default --xdcr-to-bucket=default1
 ----
 
@@ -115,7 +115,7 @@ To start a replication stream with the memcached protocol and a regular expressi
 
 ----
 couchbase-cli xdcr-replicate -c 192.168.0.1:8091 -u Administrator -p password \
---create --xdcr-cluster-name=test \ 
---xdcr-from-bucket=default --xdcr-to-bucket=default1 \ 
+--create --xdcr-cluster-name=test \
+--xdcr-from-bucket=default --xdcr-to-bucket=default1 \
 --xdcr-replication-mode=xmem --filter-expression-mode="192.168.1.\d{1,3}"
 ----

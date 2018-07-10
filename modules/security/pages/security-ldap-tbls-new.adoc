@@ -32,7 +32,7 @@ ln -s /var/run/saslauthd/ /var/run/sasl2
 * If the suggested solution doesn't work, install the server and test it again.
 
 ----
-.... 
+....
       "dial unix /var/run/saslauthd/mux: permission denied"
 ----
 

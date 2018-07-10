@@ -13,8 +13,8 @@ To disable, specify 0 (default).
 
 ----
 couchbase-cli xdcr-setup -c localhost:port -u [localadmin] -p [localpassword]
-  --create --xdcr-cluster-name=[remoteclustername] 
-  --xdcr-hostname=[remotehost]:[port] 
+  --create --xdcr-cluster-name=[remoteclustername]
+  --xdcr-hostname=[remotehost]:[port]
   --xdcr-username=[remoteadmin] --xdcr-password=[remotepassword]
   --xdcr-demand-encryption=[0|1]   // 1 to enable, 0 to disable (default)
   --xdcr-certificate=[localpath]/[certificateFile].pem
@@ -79,7 +79,7 @@ To require XDCR data encryption, execute `couchbase-cli xdcr-setup` with `--xdcr
 
 ----
 couchbase-cli xdcr-setup -c 10.3.4.186:8091 -u Administrator -p password \
---create --xdcr-cluster-name=Omaha --xdcr-hostname=10.3.4.187:8091 \ 
+--create --xdcr-cluster-name=Omaha --xdcr-hostname=10.3.4.187:8091 \
 --xdcr-username=Peyton --xdcr-password=Manning --xdcr-demand-encryption=1 \
 --xdcr-certificate=./new.pem
 ----
@@ -90,8 +90,8 @@ To disable XDCR data encryption, execute `couchbase-cli xdcr-setup` with `--xdcr
 
 ----
 couchbase-cli xdcr-setup -c 10.3.4.186:8091 -u Administrator -p password \
---create --xdcr-cluster-name=Omaha --xdcr-hostname=10.3.4.187:8091 \ 
---xdcr-username=Peyton --xdcr-password=Manning \ 
+--create --xdcr-cluster-name=Omaha --xdcr-hostname=10.3.4.187:8091 \
+--xdcr-username=Peyton --xdcr-password=Manning \
 --xdcr-demand-encryption=0
 ----
 
@@ -100,6 +100,6 @@ couchbase-cli xdcr-setup -c 10.3.4.186:8091 -u Administrator -p password \
 The following is an example of results for a successful XDCR configuration.
 
 ----
-SUCCESS: init/edit test 
+SUCCESS: init/edit test
 <<replication reference created>>
 ----

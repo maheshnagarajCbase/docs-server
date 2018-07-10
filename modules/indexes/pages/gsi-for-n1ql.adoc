@@ -35,7 +35,7 @@ For example, create two indexes productName_index1 and productName_index2, using
 +
 ----
       CREATE INDEX productName_index1 ON bucket_name(productName, ProductID) WHERE type="product" USING GSI WITH {"nodes":["node1:8091"]};
-      
+
       CREATE INDEX productName_index2 ON bucket_name(productName, ProductID) WHERE type="product" USING GSI WITH {"nodes":["node2:8091"]};
 ----
 +
@@ -45,7 +45,7 @@ You can also create indexes by partitioning your indexes as shown in the followi
 +
 ----
      CREATE INDEX productName_index1 ON bucket_name(productName, ProductID) WHERE type="product" AND productName BETWEEN "A" AND "K" USING GSI WITH {"nodes":["node1:8091"]};
-     
+
      CREATE INDEX productName_index2 ON bucket_name(productName, ProductID) WHERE type="product" AND productName BETWEEN "K" AND "Z" USING GSI WITH {"nodes":["node2:8091"]};
 ----
 
@@ -71,13 +71,13 @@ Queries will load balance across the indexes and if one of the indexes become un
 You can create more than 2 copies of the index for better redundancy and load balancing.
 
 ----
-CREATE INDEX productName_index1 ON bucket_name(productName, ProductID) 
-     WHERE type="product" 
-     USING GSI 
+CREATE INDEX productName_index1 ON bucket_name(productName, ProductID)
+     WHERE type="product"
+     USING GSI
      WITH {"nodes":["node1:8091"]};
-    
-CREATE INDEX productName_index2 ON bucket_name(productName, ProductID) 
-     WHERE type="product" 
-     USING GSI 
+
+CREATE INDEX productName_index2 ON bucket_name(productName, ProductID)
+     WHERE type="product"
+     USING GSI
      WITH {"nodes":["node2:8091"]};
 ----

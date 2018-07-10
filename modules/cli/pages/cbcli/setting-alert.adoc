@@ -86,6 +86,6 @@ The following are the command options:
 Allow email alert with email encryption:
 
 ----
-couchbase-cli setting-alert -c 192.168.0.1:8091 -u Administrator -p password \ 
+couchbase-cli setting-alert -c 192.168.0.1:8091 -u Administrator -p password \
 --enable-email-alert 1 --enable-email-encrypt 1
 ----
