@@ -26,7 +26,7 @@ ForestDB offers multiple options for its writes.
 ForestDB can be configured to use an append-only write model for each file for efficient writes which also requires regular compaction for cleanup.
 ForestDB can also be configured to use "circular reuse" which allows incoming writes to reuse the existing orphaned space within the file instead of simply just append only writes.
 In the "circular reuse" mode, competition is still needed but with much less frequency (typically once a week).
-For more information on ForestDB and B+Trie, see https://github.com/couchbase/forestdb/wiki.html[https://github.com/couchbase/forestdb].
+For more information on ForestDB and B+Trie, see https://github.com/couchbase/forestdb/wiki.html[\https://github.com/couchbase/forestdb].
 
 == Couchstore Versus ForestDB
 

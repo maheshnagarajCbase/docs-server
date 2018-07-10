@@ -54,7 +54,7 @@ NOTE: Use the Couchbase network port `11207` for data communication between the 
 
 *SSL/TLS Based View Access*
 
-A new port `18092` is established for view access: `https://couchbase_server:18092`
+A new port `18092` is established for view access: `+https://couchbase_server:18092+`
 
 *Supported Ciphers*
 

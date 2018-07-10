@@ -6,7 +6,7 @@ Set up a cluster by defining file locations and hostnames.
 
 == Cluster Setup with Couchbase Web Console
 
-The default location of the Couchbase Web Console is `http://<hostname>:8091`
+The default location of the Couchbase Web Console is `+http://<hostname>:8091+`
 
 . Open the Couchbase Web Console.
 +
