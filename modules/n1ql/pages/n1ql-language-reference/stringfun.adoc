@@ -72,7 +72,6 @@ Example
 The following example shows the use of a LOWER string function.
 
 ----
- 
     SELECT product
      FROM product
        UNNEST product.categories as categories

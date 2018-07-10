@@ -84,7 +84,7 @@ Here is the above query, executed in Python:
 ....
 >>> for row in cb.n1ql_query('SELECT type FROM `travel-sample` LIMIT 4'):
 ...   print row
-... 
+...
 {u'type': u'airline'}
 {u'type': u'airline'}
 {u'type': u'airline'}
@@ -292,7 +292,7 @@ The following query returns the number of types in the _travel-sample_ bucket:
 ----
 >>> for row in cb.n1ql_query("SELECT DISTINCT(type) FROM `travel-sample`"):
 ...   print row
-... 
+...
 {u'type': u'route'}
 {u'type': u'airport'}
 {u'type': u'airline'}

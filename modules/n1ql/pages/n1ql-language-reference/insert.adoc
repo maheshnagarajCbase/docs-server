@@ -81,8 +81,8 @@ _returning-clause:_Returns the data you inserted as specified in the result_expr
 This statement inserts the value Odwalla for the key ID into the products document.
 
 ----
-INSERT INTO product (KEY, VALUE) VALUES ("odwalla-juice1", 
-      { "productId": "odwalla-juice1", "unitPrice": 4.40, "type": "product", "color":"green"}) RETURNING * 
+INSERT INTO product (KEY, VALUE) VALUES ("odwalla-juice1",
+      { "productId": "odwalla-juice1", "unitPrice": 4.40, "type": "product", "color":"green"}) RETURNING *
 
 "results": [
         {

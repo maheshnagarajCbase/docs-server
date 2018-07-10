@@ -13,19 +13,19 @@ It consists of two tables, Employee and Employers.
 Name is the primary key.
 
 ----
-EMPLOYEE 
+EMPLOYEE
 Name | SSN | Wage
------------------------------------------------------------------------ 
+-----------------------------------------------------------------------
 Jamie | 234 | 123
 Steve | 123 | 456
-  
+
 SCHEMA:
-Name -> String of width 100 
-SSN -> Number of width 9 
-Wage -> Number of width 10  
+Name -> String of width 100
+SSN -> Number of width 9
+Wage -> Number of width 10
 
 EMPLOYERS:
------------------------------------------------------------------------ 
+-----------------------------------------------------------------------
  Name_Key  | Company   | Start | End
  Jamie     | Yahoo     | 2005  | 2006
  Jamie     | Oracle    | 2006  | 2012
@@ -71,7 +71,6 @@ SELECT Name, Company
 
 .Result:
 ----
- 
 	Name | Company
 	----------------
 	Jamie | Oracle
@@ -121,23 +120,23 @@ When using N1QL, each document can also regard itself as a data source and run a
 Such nested elements are addressed using the dot (.) operator to descend a level and the square bracket ( [ ] ) operator to index into an array element.
 
 ----
-  SELECT FullTime FROM HRData.Status  
+  SELECT FullTime FROM HRData.Status
 {
-     'FullTime': true 
+     'FullTime': true
 }
 ----
 
 The selected fields can also be renamed using the AS operator, just like in SQL:
 
 ----
-SELECT firstjob FROM HRData.History[0] AS firstjob  
+SELECT firstjob FROM HRData.History[0] AS firstjob
 {
      'firstjob': ['Yahoo', 2005, 2006]
 }
 
-SELECT firstjob[2] FROM HRData.History[0] AS firstjob  
+SELECT firstjob[2] FROM HRData.History[0] AS firstjob
 {
-     'firstjob[2]': 2006 
+     'firstjob[2]': 2006
 }
 ----
 

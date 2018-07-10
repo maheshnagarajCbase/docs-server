@@ -36,7 +36,7 @@ Initially set to `false`.
 == Syntax
 
 ----
-# curl -X POST -u [admin]:[password] http://[localhost]:8091/settings/replications/[replication_id] 
+# curl -X POST -u [admin]:[password] http://[localhost]:8091/settings/replications/[replication_id]
 -d pauseRequested=[true | false]
 ----
 

@@ -34,7 +34,7 @@ curl -u [admin]:[password] http://[localhost]:8091/settings/autoFailover -d [par
 Curl request example:
 
 ----
-curl -i -u Administrator:password \ 
+curl -i -u Administrator:password \
   http://10.5.2.54:8091/settings/autoFailover \
   -d 'enabled=true&timeout=600'
 ----

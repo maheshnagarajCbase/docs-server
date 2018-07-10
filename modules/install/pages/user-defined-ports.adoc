@@ -26,13 +26,13 @@ Therefore, you must perform multiple non-root (sudo or non-sudo) installations i
 The following are the user-defined ports to add, replace, or append to the [.path]_/opt/couchbase/etc/couchbase/static_config_ file.
 
 ----
-{rest_port, 9000}.                                   
-{mccouch_port, 8999}.                         
+{rest_port, 9000}.
+{mccouch_port, 8999}.
 {memcached_port, 12000}.
 {memcached_dedicated_port, 11999}.
 {moxi_port, 12001}.
 {short_name, "ns_1"}.
-{ssl_rest_port,11000}.                       
+{ssl_rest_port,11000}.
 {ssl_capi_port,11001}.
 {ssl_proxy_downstream_port,11002}.
 {ssl_proxy_upstream_port,11003}.
@@ -46,12 +46,12 @@ NOTE: In order to set up multiple nodes per machine, you need to assign unique v
 == How to Map User-Defined Ports to the Default Ports
 
 ----
-{rest_port, 9000}                    8091 Web administration port                                   
-{mccouch_port, 8999}                 11213 Default value for mccouch                         
+{rest_port, 9000}                    8091 Web administration port
+{mccouch_port, 8999}                 11213 Default value for mccouch
 {memcached_port, 12000}              11211 Client interface (proxy)
 {memcached_dedicated_port, 11999}    11211 Client interface (proxy)
 {moxi_port, 12001}                   11210 Internal/external bucket port
-{ssl_rest_port,11000}                18091 Internal REST HTTPS for SSL                                      
+{ssl_rest_port,11000}                18091 Internal REST HTTPS for SSL
 {ssl_capi_port,11001}                18092 Internal CAPI HTTPS for SSL
 {ssl_proxy_downstream_port,11002}    11214 Incoming SSL proxy
 {ssl_proxy_upstream_port,11003}      11215 Internal outgoing SSL proxy

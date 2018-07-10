@@ -10,7 +10,7 @@ To install on Ubuntu 12.04, Ubuntu 14.04 and Debian 7 using `apt-get`:
 This will install the package source and the Couchbase public keys:
 +
 ----
-curl -O http://packages.couchbase.com/releases/couchbase-release/couchbase-release-1.0-1-amd64.deb   
+curl -O http://packages.couchbase.com/releases/couchbase-release/couchbase-release-1.0-1-amd64.deb
      sudo dpkg -i couchbase-release-1.0-1-amd64.deb
 ----
 
@@ -18,7 +18,7 @@ curl -O http://packages.couchbase.com/releases/couchbase-release/couchbase-relea
 +
 ----
 sudo apt-get update
-sudo apt-get install couchbase-server 
+sudo apt-get install couchbase-server
         OR
 sudo apt-get install couchbase-server-community
 ----

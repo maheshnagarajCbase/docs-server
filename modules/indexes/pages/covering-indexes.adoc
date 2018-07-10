@@ -261,7 +261,7 @@ Select *
 *SELECT in INSERT statements*
 
 ----
-INSERT into `travel-sample`(KEY k, value state) 
+INSERT into `travel-sample`(KEY k, value state)
    SELECT country as k, state from `beer-sample` b WHERE state = 'CA';
 ----
 

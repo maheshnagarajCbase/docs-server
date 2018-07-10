@@ -4,7 +4,7 @@
 _select-clause:_
 
 ----
-SELECT ( [ALL | DISTINCT]  ( result-expression [, result-expression]*) | 
+SELECT ( [ALL | DISTINCT]  ( result-expression [, result-expression]*) |
     (RAW | ELEMENT) expression)
 ----
 

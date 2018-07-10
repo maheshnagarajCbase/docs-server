@@ -10,7 +10,7 @@ To install on RHEL/CentOS version 6 or 7 using `yum`:
 This will install the package source and the Couchbase public keys:
 +
 ----
-curl -O http://packages.couchbase.com/releases/couchbase-release/couchbase-release-1.0-1-x86_64.rpm 
+curl -O http://packages.couchbase.com/releases/couchbase-release/couchbase-release-1.0-1-x86_64.rpm
      sudo rpm -i couchbase-release-1.0-1-x86_64.rpm
 ----
 
@@ -18,7 +18,7 @@ curl -O http://packages.couchbase.com/releases/couchbase-release/couchbase-relea
 +
 ----
 sudo yum update
-sudo yum install couchbase-server 
+sudo yum install couchbase-server
         OR
 sudo yum install couchbase-server-community
 ----

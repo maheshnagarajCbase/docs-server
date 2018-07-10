@@ -11,8 +11,8 @@ exists-expression | in-expression | within-expression | ANY | EVERY | ARRAY | FI
 == ANY
 
 ----
- ANY variable ( IN  | WITHIN ) expression 
-     [  ,  variable ( IN | WITHIN ) expression  ]* 
+ ANY variable ( IN  | WITHIN ) expression
+     [  ,  variable ( IN | WITHIN ) expression  ]*
      SATISFIES condition  END
 ----
 
@@ -45,7 +45,7 @@ The expression after the ANY clause allows us to assign an identifier to an elem
 .Query:
 ----
  SELECT fname, children
-    FROM tutorial 
+    FROM tutorial
         WHERE ANY child IN tutorial.children SATISFIES child.age > 10  END
 ----
 
@@ -63,8 +63,8 @@ NOTE: The SOME and ANY operators perform the same function and can be used inter
 == EVERY
 
 ----
-EVERY variable ( IN  | WITHIN ) expression 
-   [  ,  variable ( IN | WITHIN ) expression  ]* 
+EVERY variable ( IN  | WITHIN ) expression
+   [  ,  variable ( IN | WITHIN ) expression  ]*
    SATISFIES condition  END
 ----
 
@@ -101,9 +101,9 @@ The expression after the EVERY clause allows us to assign a name to an element i
 .Query:
 ----
  SELECT fname, children
-    FROM tutorial 
-        WHERE EVERY child 
-        IN tutorial.children 
+    FROM tutorial
+        WHERE EVERY child
+        IN tutorial.children
         SATISFIES child.age > 10  END
 ----
 
@@ -132,8 +132,8 @@ It evaluates to an array of the operand expression, that satisfies the WHEN clau
 _first-expression:_
 
 ----
-FIRST expression FOR variable ( IN |  WITHIN ) 
-  expression [ ,  variable ( IN | WITHIN ) expression]* 
+FIRST expression FOR variable ( IN |  WITHIN )
+  expression [ ,  variable ( IN | WITHIN ) expression]*
   [ ( WHEN  condition) ] END
 ----
 

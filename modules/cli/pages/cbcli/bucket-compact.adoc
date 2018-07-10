@@ -9,7 +9,7 @@ Compacts the bucket data and map-reduce view index data.
 The basic syntax is:
 
 ----
-couchbase-cli bucket-compact -c [host]:8091 -u [admin] -p [password] 
+couchbase-cli bucket-compact -c [host]:8091 -u [admin] -p [password]
     --bucket=[bucket-name]
     --data-only
     --view-only
@@ -43,14 +43,14 @@ The following are the command options:
 To compact a bucket for both data and view:
 
 ----
-couchbase-cli bucket-compact -c 192.168.0.1:8091 -u Administrator -p password \ 
+couchbase-cli bucket-compact -c 192.168.0.1:8091 -u Administrator -p password \
         --bucket=test_bucket
 ----
 
 To compact a bucket for data only:
 
 ----
-couchbase-cli bucket-compact -c 192.168.0.1:8091 -u Administrator -p password \ 
+couchbase-cli bucket-compact -c 192.168.0.1:8091 -u Administrator -p password \
         --bucket=test_bucket \
         --data-only
 ----
@@ -58,7 +58,7 @@ couchbase-cli bucket-compact -c 192.168.0.1:8091 -u Administrator -p password \
 To compact a bucket for view only:
 
 ----
-couchbase-cli bucket-compact -c 192.168.0.1:8091 -u Administrator -p password \ 
+couchbase-cli bucket-compact -c 192.168.0.1:8091 -u Administrator -p password \
         --bucket=test_bucket \
         --view-only
 ----

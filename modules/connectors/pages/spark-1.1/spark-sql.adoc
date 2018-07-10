@@ -145,7 +145,7 @@ The following code describes how to create a DF directly, with setting all the o
 val df = sql.read
   // Define the source, required
   .format("com.couchbase.spark.sql.DefaultSource")
-  
+
   // Either set the schema filter for inference. Like this
   .option("schemaFilter", N1QLRelation.filterToExpression(EqualTo("type", "airline")))
   // Or directly as a string
@@ -154,7 +154,7 @@ val df = sql.read
   .schema(StructType(
     StructField("name", StringType):: Nil
   ))
-  
+
   .load()
 ----
 

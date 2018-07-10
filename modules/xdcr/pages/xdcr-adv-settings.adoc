@@ -27,7 +27,7 @@ The default is two and the value range is 1-100.
 The setting `XDCR Target Nozzles per Node` affects the level of concurrency as follows:
 +
 ----
-Number of concurrent workers writing to the target cluster  = 
+Number of concurrent workers writing to the target cluster  =
 XDCR Target Nozzles per Node * <Number of Nodes in Target Cluster>
 ----
 
