@@ -262,6 +262,8 @@ If the namespace is omitted, the default namespace in the current session is use
 This is the name or identifier of an independent keyspace that can serve as a data source or keyspace of one or more documents.
 Such keyspaces are not dependent on any of the xref:n1ql-language-reference/subqueries.adoc#section_onz_3tj_mz[Variables in Scope of a Subquery].
 
+*Keyspace Example 1: Use the `travel-sample` keyspace.*
+
 Select 4 unique landmarks from the keyspace `pass:c[`travel-sample`]`.
 
 ----
@@ -999,6 +1001,8 @@ AND airline.type = "airline"
 AND airline.iata = "AA";
 ----
 
+This results in:
+
 ----
 [
   {
@@ -1071,6 +1075,8 @@ This results in:
 ]
 ----
 
+Another way to get similar results is by using a Collection Operator to find array items that meet our criteria:
+
 ----
 SELECT ARRAY item FOR item IN schedule WHEN item.day = 1 END AS Monday_flights
 FROM `travel-sample`
@@ -1078,6 +1084,8 @@ WHERE type = "route"
 AND ANY item IN schedule SATISFIES item.day = 1 END
 LIMIT 3;
 ----
+
+However, without the `UNNEST` clause, the unflattened list results in 3 sets of flights instead of only 3 individual flights:
 
 ----
 [
@@ -1182,6 +1190,8 @@ This results in:
 Nesting is conceptually the inverse of unnesting.
 Nesting performs a join across two keyspaces.
 But instead of producing a cross-product of the left and right inputs, a single result is produced for each left input, while the corresponding right inputs are collected into an array and nested as a single array-valued field in the result object.
+
+*Syntax*
 
 ----
 [ join-type ] NEST from-path [ [ AS ] alias ] on-keys-clause
@@ -1402,6 +1412,8 @@ FROM `travel-sample`
 WHERE type = "hotel"
 LIMIT 4;
 ----
+
+This results in:
 
 ----
 [
