@@ -42,6 +42,7 @@ Cluster Administrator:: The [.term]_Cluster Administrator_ role has permissions 
 Bucket Administrator::
 The [.term]_Bucket Administrator_ role has permissions to manage bucket settings.
 This role can be assigned globally to all buckets (denoted by *), or to a particular bucket.
++
 For XDCR operations, the Bucket Administrators can start/stop replication for the buckets they administer.
 However, they cannot set up the XDCR cluster references.
 

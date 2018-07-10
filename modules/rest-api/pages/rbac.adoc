@@ -61,6 +61,7 @@ Get list of available roles::
 ----
 GET /settings/rbac/roles
 ----
++
 Returns array of objects like this one:
 +
 ----
@@ -95,6 +96,7 @@ Set names and roles for specified user IDs <user_id>::
 ----
 PUT /settings/rbac/users/<user_id>
 ----
++
 In this example, John Doe is assigned to be the Cluster Administrator and a Bucket Administrator for the default bucket, while Alice Smith is assigned to be the Replication Administrator:
 
  $ curl -X PUT --data "name=John Doe&roles=cluster_admin,bucket_admin[default]" \
@@ -113,6 +115,7 @@ Delete users::
 ----
 DELETE /settings/rbac/users/<user_id>
 ----
++
 In this example, Alice Smith was deleted as the Replication Administrator and the other user, John Doe, remains as a Cluster administrator.
 
  $ curl -X DELETE http://Administrator:asdasd@127.0.0.1:8091/settings/rbac/users/alicesmith
@@ -125,6 +128,7 @@ Check multiple permissions::
 ----
 POST /pools/default/checkPermissions
 ----
++
 Example:
 
  $ curl -X POST --data 'cluster.bucket[default].stats!read,cluster.bucket[default]!write' \

@@ -33,6 +33,7 @@ Specify the name of the keyspace or bucket to create an index on
 ----
 index_key ::= expr | array_expr
 ----
++
 Refers to the an attribute name or a scalar function or an ARRAY expression on the attribute.
 This constitutes an index-key for the index.
 

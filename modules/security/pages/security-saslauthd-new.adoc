@@ -75,7 +75,9 @@ ldap_servers: ldaps://10.1.1.25 ldaps://10.1.1.15
 Step 2: Set up `ldap_search_base`::
 Specify the distinguished name to which the search is relative.
 The search includes the base or objects below.
++
 It also includes Domain Components (`dc`) such as in `dc=company` and `dc=com`.
++
 The administrative users created in LDAP with the attribute `uid` are placed under the user's organizational unit `ou` under the two domain components (`example` and `com`).
 +
 ----
@@ -90,6 +92,7 @@ For example, to filter on email specify `ldap_filter: (mail=%n)`.
 ----
 ldap_filter: (uid=%u)
 ----
++
 Configure LDAP options `/etc/saslauthd.conf`:
 +
 ----

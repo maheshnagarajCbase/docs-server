@@ -22,13 +22,9 @@ During configuration, note that for current test-purposes:
 
 * You need only activate the *Data* service.
 Other services are not required.
-+
-{blank}
 
 * You require a single bucket: which is the _beer-sample_ bucket.
 This bucket will be used to provide data to Elasticsearch, during the test.
-+
-{blank}
 
 Start Couchbase Server, using the instructions provided at xref:install:startup-shutdown.adoc[Couchbase Server Startup and Shutdown].
 
@@ -53,11 +49,7 @@ $ apt-get install oracle-java8-installer
 $ apt install oracle-java8-set-default
 ----
 +
-{blank}
-+
 During this process, when requested, accept the license-terms by selecting *Ok* or *Yes*.
-+
-{blank}
 +
 Once installation is complete, verify that Java has been successfully installed; by checking its version, with `java -version`; and its location, with `which java`.
 
@@ -96,21 +88,13 @@ $ bin/plugin install https://github.com/couchbaselabs/\
 > elasticsearch-transport-couchbase-2.2.4.0-update1.zip
 ----
 +
-{blank}
-+
 Respond to the installation-prompts as appropriate.
-+
-{blank}
 +
 When installation is successful, the message `Installed transport-couchbase into /usr/share/elasticsearch/plugins/transport/couchbase` is displayed.
 
 == Configure and Start Elasticsearch
 
 . In preparation for configuration-file editing, install your preferred console-based text-editor into the virtual machine environment.
-+
-{blank}
-+
-{blank}
 +
 For example, download _emacs_, using the following command; then, as installation proceeds, respond to system-prompts as appropriate.
 +
@@ -126,11 +110,7 @@ $ apt-get install emacs
 emacs /etc/elasticsearch/elasticsearch.yml
 ----
 +
-{blank}
-+
 Add the following to the end of the file, specifying an appropriate administrator-username and password for accessing Elasticsearch:
-+
-{blank}
 +
 [source,bash]
 ----
@@ -138,8 +118,6 @@ couchbase.password: [password]
 couchbase.username: [username]
 couchbase.maxConcurrentRequests: 1024
 ----
-+
-{blank}
 +
 Then save the file, and exit back to the command-prompt.
 
@@ -165,8 +143,6 @@ $ curl -XPUT http://localhost:9200/_template/couchbase -d \
 > @plugins/transport-couchbase/couchbase_template.json
 ----
 +
-{blank}
-+
 When successful, the configuration-routine provides the following response: `{"acknowledged":true}`.
 
 . Instantiate an elasticsearch index to be applied by Elasticsearch to data from a particular Couchbase bucket (in this case, _beer-sample_, which you previously used in your set-up of Couchbase Server):
@@ -175,8 +151,6 @@ When successful, the configuration-routine provides the following response: `{"a
 ----
 $ curl -XPUT http://localhost:9200/beer-sample
 ----
-+
-{blank}
 +
 When index-creation is successful, a further `{"acknowledged":true}` response is provided.
 
@@ -195,17 +169,11 @@ Installing and configuring the plug-in on other platforms is virtually the same 
 Note that:
 
 * The plug-in should be installed in the Elasticsearch install directory, with `bin/plugin install` \...etc.
-+
-{blank}
 
 * Certain commands differ across platforms.
 For example, on CentOS, to install the Elasticsearch package use `yum` (rather than `dpkg`, as used on Ubuntu).
-+
-{blank}
 
 * For MacOS, to use wget: first, install `brew`; then, install `wget` with `brew install wget`.
-+
-{blank}
 
 == Elasticsearch 2.1.1
 

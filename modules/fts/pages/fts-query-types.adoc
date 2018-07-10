@@ -18,8 +18,6 @@ This depends on term vectors, which are consulted to determine phrase distance.
 +
 Although this is not an exact match, it is usually the search behavior users want.
 +
-{blank}
-+
 For example, a match phrase query for "location for functions" might match "locate the function" if the standard `en` analyzer is used.
 This is because the stemmer tokenizes "location" and "locate" to "locati", and "functions" and "function" to "function." Stop word removal will remove "for" and "the" but the distance between the tokens will be the same.
 
@@ -107,8 +105,6 @@ Required, Optional, and Exclusion:: When your query string includes multiple ite
 +
 You can change this by prefixing your items with a `+` or ‘`-`’`.` `*` ‘`+`’ Prefixing with plus places that item in the MUST portion of the boolean query.
 `*` ‘`-`’ Prefixing with a minus places that item in the MUST NOT portion of the boolean query.
-+
-{blank}
 +
 Example: `+description:water -light beer` will perform a boolean query that MUST satisfy the match query for the term "`water`" in the description field, MUST NOT satisfy the match query for the term "`light`" in the default field, and SHOULD satisfy the match query for the term "`beer`" in the default field.
 Result documents satisfying the SHOULD clause will score higher than those that do not.

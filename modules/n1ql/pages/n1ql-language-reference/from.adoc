@@ -19,8 +19,6 @@ Couchbase Server version 4.6.2 adds support for generic  <<section_fkc_ftt_nz,ex
 [#image_uy5_kzt_pz]
 image::n1ql-language-reference/images/from-term.png[]
 
-{blank}
-
 ----
 FROM from-term
 ----
@@ -169,7 +167,7 @@ FROM `travel-sample` t1
 WHERE t1.type = "landmark" LIMIT 4;
 ----
 
-The following non-correlated subquery example Q2 uses the keyspace ``travel-sample`` independent of the same keyspace used in the outer query:
+The following non-correlated subquery example Q2 uses the keyspace `pass:c[`travel-sample`]` independent of the same keyspace used in the outer query:
 
 ----
 Example Q2: Find cities that have landmarks and airports.
@@ -264,6 +262,7 @@ LETTING max_country_alt = max(geo.alt);
 ----
 +
 A more realistic example of needing subquery in the FROM clause arises in more complicated scenarios such as when multiple levels of aggregates (sort orders and limits) are required, or when the subquery results of one keyspace may need to be JOINed with another keyspace.
++
 For example, the following example Q4 finds for each country, total number of airports at different altitudes, and the total number of corresponding cities with those airports.
 In this case, the inner query finds first level of grouping of different altitudes by country, and corresponding number of cities.
 Then the outer query builds on the inner query results to count number of different altitude groups for each country, and the total number of cities.
@@ -318,6 +317,7 @@ See xref:n1ql-language-reference/subqueries.adoc#topic_9[Subqueries] for details
 *Nested Path Expressions*::
 Expressions used in the `from-term` can have nested paths, including constant or variable or subquery expressions.
 Similarly, variable expressions are allowed only subqueries and not in outermost parent queries.
++
 Further, the nested path variable expression in subquery `from-term` must resolve to variables/aliases in scope, and not to any keyspace/bucket identifiers.
 Otherwise, it results in a syntax error.
 Note that, when an expression cannot be resolved to any variables in scope, it is considered keyspace identifier.

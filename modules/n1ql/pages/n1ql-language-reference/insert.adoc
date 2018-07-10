@@ -24,8 +24,6 @@ INSERT INTO `travel-sample` ( KEY, VALUE )
 RETURNING META().id as docid, *;
 ----
 
-{blank}
-
 .Results
 ----
 {
@@ -173,7 +171,7 @@ image::n1ql-language-reference/images/identifier.png[]
 [#fig_tsr_2ln_zw]
 image::n1ql-language-reference/images/unescaped-identifier.png[]
 
-`escaped-identifier::= `JSON-string``
+`pass:c[escaped-identifier::= `JSON-string`]`
 
 .Railroad Diagram: escaped-identifier
 [#fig_nld_3ln_zw]
@@ -198,9 +196,9 @@ For more information on aliases, see xref:n1ql-language-reference/identifiers.ad
 
 Here are some examples of keyspace, namespace, and an alias:
 
-* Keyspace - ``travel-sample``
-* Namespace and keyspace - `default:`travel-sample``
-* Keyspace with alias - `default:`travel-sample` AS t`
+* Keyspace - `pass:c[`travel-sample`]`
+* Namespace and keyspace - `pass:c[default:`travel-sample`]`
+* Keyspace with alias - `pass:c[default:`travel-sample` AS t]`
 
 insert-values::
 Specifies one or more documents to be inserted using the keyspace (PRIMARY KEY, VALUE) clause.
@@ -272,8 +270,6 @@ RETURNING META().id as docid;
     }
 ----
 +
-{blank}
-+
 .Query
 ----
 INSERT INTO `travel-sample` (KEY, VALUE) 
@@ -297,8 +293,6 @@ RETURNING *;
 ]
 ----
 +
-{blank}
-+
 .Query
 ----
 INSERT INTO `travel-sample` (KEY, VALUE) 
@@ -320,8 +314,6 @@ RETURNING *;
   }
   ]
 ----
-+
-{blank}
 +
 You can also insert a NULL JSON document, such as:
 +
@@ -1052,8 +1044,6 @@ VALUES ( "1026",
           } ) 
 RETURNING *;
 ----
-
-{blank}
 
 .Results
 ----

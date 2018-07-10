@@ -40,50 +40,34 @@ image::admin/picts/cluster-setup-01.png[,480,align=left]
 +
 The displayed fields for [.uicontrol]*Start a New Cluster* are as follows:
 +
-{blank}
-+
 // Second-level bulleted list
 [#ul_yqx_w5m_zv]
  ** [.uicontrol]*RAM Available*: The total RAM available on this node.
-+
-{blank}
 
  ** [.uicontrol]*Services*: The available Couchbase services for this node; which are [.uicontrol]*Data*, [.uicontrol]*Index*, [.uicontrol]*Query*, and [.uicontrol]*Full Text*.
 Since you are starting a new cluster, the Data service (which is essential for the cluster) has already been allocated, and its checkbox disabled.
 If this is a development system, you may add up to three services.
 Note that on a production system, it is recommended that only _one_ service ever be allocated per node: therefore, if this is indeed a production-system, you are advised not to add another service to this node.
-+
-{blank}
 
  ** [.uicontrol]*Data RAM Quota*: The RAM-allocation for the Data service.
 This should be 256 MB or more.
 A default quota is provided.
-+
-{blank}
 
  ** [.uicontrol]*Full Text RAM Quota*: The RAM-allocation for the Full Text service.
 This should be 256 MB or more.
 If this service is selected, a default quota is provided.
-+
-{blank}
 
  ** [.uicontrol]*Index RAM Quota*: The RAM-allocation for the Index service.
 This should be 256 MB or more.
 If this service is selected, a default quota is provided.
-+
-{blank}
 
  ** [.uicontrol]*Total Per Server*: The total RAM used on this node by the Data and any additional services.
 For good performance, this should be less than %80 of the total available RAM on this node.
 A default total of %60 is provided.
 If there are multiple nodes in your cluster, the RAM-total you specify here will also be allocated to each other node.
-+
-{blank}
 
  ** [.uicontrol]*Index Storage Setting*: If the Index service has been selected, either [.uicontrol]*Standard Global Secondary Indexes* or [.uicontrol]*Memory-Optimized Global Secondary Indexes* can be chosen here, by means of radio buttons.
 See xref:architecture:global-secondary-indexes.adoc#concept_e5c_kf4_vs[Global Secondary Indexes (GSIs)], for details.
-+
-{blank}
 
 Note that no RAM-allocation option is provided for the Query service, since none is required.
 Note also that interactive [.uicontrol]*What's this?* elements are provided throughout the screen, in adjacency to certain fields: by hovering over any of these elements with the mouse-cursor, you cause pop-up help-information to be displayed.
@@ -102,23 +86,15 @@ If you elect to [.uicontrol]*Join a cluster now*, interactive fields are display
 +
 // Start of new second-level bulleted list
  ** [.uicontrol]*IP Address* of the cluster you are joining.
-+
-{blank}
 
  ** [.uicontrol]*Username* of the Couchbase Server administrator who is managing the cluster you are joining.
-+
-{blank}
 
  ** [.uicontrol]*Password* of the Couchbase Server administrator who is managing the cluster you are joining.
-+
-{blank}
 
  ** [.uicontrol]*Services* available.
 Each (including Data) can be selected by means of an associated checkbox.
 Select one to three services for a development environment.
 You are recommended only to set _one_ service for a production environment.
-+
-{blank}
 
 // End of first-level bulleted item
 
@@ -130,8 +106,6 @@ Whether you are starting a new cluster, or joining one existing, configure disk 
  ** [.uicontrol]*Database Path*: The interactive text-field should contain the location where the database files will be stored.
 The following default is provided: [.path]_/Users/user_name/Library/Application Support/Couchbase/var/lib/couchbase/data_.
 The read-only [.uicontrol]*Free* field shows the current amount of free space for this location.
-+
-{blank}
 
  ** [.uicontrol]*Indices Path*: The interactive text-field should contain the location where indices will be stored.
 The following default is provided: [.path]_/Users/user_name/Library/Application Support/Couchbase/var/lib/couchbase/data_.

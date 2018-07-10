@@ -13,6 +13,7 @@ NOTE: Couchbase Server 4.x N1QL supports regular expressions supported by The Go
 == REGEXP_CONTAINS(expression, pattern)
 
 *Arguments*:: *expression*: string, or any N1QL expression that evaluates to a string
++
 *pattern*: string representing a supported regular expression
 
 *Return Value*:: Returns True if the string value contains the regular expression pattern.
@@ -43,6 +44,7 @@ LIMIT 2;
 == REGEXP_LIKE(expression, pattern)
 
 *Arguments*:: *expression*: string, or any N1QL expression that evaluates to a string
++
 *pattern*: string representing a supported regular expression
 
 *Return Value*:: Returns True if the string value contains the regular expression pattern.
@@ -79,6 +81,7 @@ LIMIT 4;
 == REGEXP_POSITION(expression, pattern)
 
 *Arguments*:: *expression*: string, or any N1QL expression that evaluates to a string
++
 *pattern*: string representing a supported regular expression
 
 *Return Value*::
@@ -122,8 +125,11 @@ LIMIT 2;
 == REGEXP_REPLACE(expression, pattern, repl [, n])
 
 *Arguments*:: *expression*: string, or any N1QL expression that evaluates to a string
++
 *pattern*: string representing a supported regular expression
++
 *repl*: string, or any N1QL expression that evaluates to a string
++
 *n*: the maximum number of times to find and replace the matching pattern
 
 *Return Value*::

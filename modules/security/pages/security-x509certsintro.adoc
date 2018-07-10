@@ -48,6 +48,7 @@ N-Tier Hierarchy:: Typically, in many production deployments, a hierarchy will h
 +
 [#image_t1g_ymk_y5]
 image::pict/ca_n_tier.png[,570,align=left]
++
 In a multi-tier hierarchy, the root CA issues certificates to the intermediate CAs, which in turn generate intermediate certificates used to sign the client certificates such as a cluster certificate:
 * Trusted root CA > Intermediate CA > Cluster certificate
 * Trusted root CA > Intermediate CA 1 > Intermediate CA 2\....
@@ -95,7 +96,6 @@ The HTTPS specification mandates that HTTPS clients must be capable of verifying
 This requirement can potentially affect how you generate your X.509 certificates.
 The HTTPS specification defines a generic mechanism for verifying the server identity, known as the HTTPS URL integrity check, which is the standard mechanism used by Web browsers.
 
-
 *HTTPS URL integrity check*
 
 The basic idea of the URL integrity check is that the server certificate's identity must match the server hostname.
@@ -123,7 +123,6 @@ This certificate identity matches any three-component host name in the domain `c
 NOTE: As a best practice, try to avoid using the wildcard character in the domain name.
 Be sure never to do this accidentally by forgetting to type the dot (.) delimiter in front of the domain name.
 For example, if you specified *couchbase.com, your certificate could be used in any domain that ends with the string `couchbase`.
-{blank}
 
 *Couchbase Cluster Certificate*
 
@@ -184,6 +183,7 @@ NOTE: If your CA authority supports automatic generation of certificates, you ca
 Before you start configuring X.509 certificates for your nodes, assess your needs.
 
 Where will you put the configured CA, intermediate, and node keys?:: All the keys and certificates are generated in a directory named SSLCA, which can be located anywhere on your machine.
++
 The generated private node key (`pkey.key`) and chain certificate (`chain.pem`) must be posted in a specific place that is in the certificate trust path (such as [.path]_/Users/<username>/Library/Application\ Support/Couchbase/var/lib/couchbase/inbox/_ on MacOSX).
 
 Do you have one or more nodes in the cluster?::
@@ -194,6 +194,7 @@ The node public key (`pkey.pem`) is included in the chain file.
 Do you have one or more intermediate CAs in your trust path?::
 With only one CA, create one directory named `int`.
 If you have multiple intermediate CAs, be sure to name them in a way that will allow you to stack them properly in the chain file, such as `int1`, `int2`, and so on.
++
 This order will show that the intermediate CA closest to the node (which signed the node certificate) has the higher number, or in the sample below `int2`.
 +
 For example:
@@ -503,6 +504,7 @@ curl -X POST http://Administrator:password@<node-name>:8091/node/controller/relo
 ----
 
 See also::: CLI: xref:cli:cbcli/ssl-manage.adoc#cbcli-xdcr-ssl[[.cmd]`ssl-manage`]
++
 REST API: xref:rest-api:rest-uploads-ca.adoc#reference_jm5_j2x_hv[Upload and Regenerate Certificate]
 
 [#rotate-x509]

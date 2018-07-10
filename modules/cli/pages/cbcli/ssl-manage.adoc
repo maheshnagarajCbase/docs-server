@@ -104,6 +104,7 @@ couchbase-cli ssl-manage -c 192.168.0.1:8091 -u Administrator -p password \
 ----
 SUCCESS: regenerate certificate to '/tmp/test.pem'
 ----
++
 If you configured Couchbase Cluster to use X.509 certificates, and you want to go back to the self-signed certificates, you can do this by regenerating the self-signed cluster certificate `test.pem`.
 
 *CLI for Managing X.509 Certificates*

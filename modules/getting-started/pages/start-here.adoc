@@ -14,24 +14,14 @@ At the conclusion of the sequence, you'll have attained an excellent starting-po
 The steps are as follows:
 
 . Do a Quick Install
-+
-{blank}
 
 . Look at the Results
-+
-{blank}
 
 . Run Your First N1QL Query
-+
-{blank}
 
 . Run Hello World!
-+
-{blank}
 
 . Choose Your Next Steps
-+
-{blank}
 
 If, at any stage, you decide that you wish to depart from the sequence, and make an immediate deep-dive into a specific topic, you can do so: by means of links to _Other Destinations_.
 

@@ -31,6 +31,7 @@ Within options:
 * _trim_ is a boolean to trim spaces around unsplit string values (default: true)
 
 *Return Value*:: A boolean, representing whether the search expression exists within the input object.
+
 This returns `true` if the substring exists within the input string, otherwise `false` is returned.
 
 *Examples*::
@@ -82,6 +83,7 @@ Within options:
 * _trim_ is a boolean to trim spaces around unsplit string values (default: true)
 
 *Return Value*:: A boolean, representing whether the search expression exists within the input object.
+
 This returns `true` if the substring exists within the input string, otherwise `false` is returned.
 
 *Examples*::
@@ -133,6 +135,7 @@ Within options:
 * _trim_ is a boolean to trim spaces around unsplit string values (default: true)
 
 *Return Value*:: A boolean, representing whether the search expression exists within the input object.
+
 This returns `true` if the substring exists within the input string, otherwise `false` is returned.
 
 *Examples*::
@@ -179,6 +182,8 @@ It recursively enumerates all tokens in a JSON value and returns an array of val
 *Arguments*::
 *input_string*;; A valid JSON object, this can be anything: constant literal, simple JSON value, JSON key name or the whole document itself.
 +
+The following table lists the rules for each JSON type:
++
 [#table_gy4_jhg_gy]
 |===
 | JSON Type | Return Value
@@ -209,7 +214,6 @@ It recursively enumerates all tokens in a JSON value and returns an array of val
 | object
 | For each name-value pair, name+TOKENS(value)
 |===
-
 
 *options*;;
 A JSON object indicating the options passed to the `TOKENS()` function.

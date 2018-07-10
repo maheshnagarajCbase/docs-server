@@ -21,11 +21,7 @@ image::elasticsearch-2.2/images/couchbaseConsoleInitial.png[,540,align=left]
 [#XDCRoption]
 image::elasticsearch-2.2/images/selectXDCR.png[,86,align=left]
 +
-{blank}
-+
 This brings up the [.uicontrol]*XDCR* interface, as follows:
-+
-{blank}
 +
 [#XDCRui]
 image::elasticsearch-2.2/images/xdcrInitial.png[,540,align=left]
@@ -35,16 +31,10 @@ image::elasticsearch-2.2/images/xdcrInitial.png[,540,align=left]
 [#createClusterRef]
 image::elasticsearch-2.2/images/selectCreateClusterReference.png[,204,align=left]
 +
-{blank}
-+
 The following dialog now appears:
-+
-{blank}
 +
 [#createClusterRefDialog]
 image::elasticsearch-2.2/images/createClusterReferenceDialog.png[,320,align=left]
-+
-{blank}
 +
 Enter appropriate data into the fields of this dialog, and then left-click on the [.uicontrol]*Save* button.
 The [.uicontrol]*Cluster Name* can be any name of your choice, to refer to your Elasticsearch cluster.
@@ -52,11 +42,7 @@ The [.uicontrol]*IP/hostname* should be the port-number 9091, appended to the wo
 The [.uicontrol]*Username* and [.uicontrol]*Password* are those you have established for your Elasticsearch cluster, in the `elasticsearch.yml` configuration-file.
 You do not need to enable TLS encryption.
 +
-{blank}
-+
 The Couchbase Web Console now appears as follows:
-+
-{blank}
 +
 [#createClusterReferenceCreated]
 image::elasticsearch-2.2/images/clusterReferenceCreated.png[,520,align=left]
@@ -67,41 +53,25 @@ The following dialog appears:
 [#createReplicationDialog]
 image::elasticsearch-2.2/images/createReplicationDialog.png[,380,align=left]
 +
-{blank}
-+
 Enter appropriate data into the fields of this dialog.
 The [.uicontrol]*Bucket* should be the bucket whose data you intend to replicate to Elasticsearch (previously designated as _beer-sample_).
 The [.uicontrol]*Cluster* should be the Elasticsearch cluster you previously created; which you now select from the drop-down menu:
 +
-{blank}
-+
 [#pickRemoteCluster]
 image::elasticsearch-2.2/images/pickRemoteCluster.png[,220,align=left]
 +
-{blank}
-+
 The [.uicontrol]*Bucket* should be the name of the Elasticsearch index you specified to handle data replicated from Couchbase: which was _beer-sample_.
-+
-{blank}
 +
 Next, left-click on [.uicontrol]*Advanced settings*.
 The following dialog appears:
 +
-{blank}
-+
 [#advancedSettings]
 image::elasticsearch-2.2/images/advancedSettings.png[,380,align=left]
 +
-{blank}
-+
 Since replication from Couchbase to Elasticsearch is supported only by Version 1 of the XDCR Protocol, you must change the value of the [.uicontrol]*XDCR Protocol* correspondingly, by accessing the pull-down menu, as follows:
-+
-{blank}
 +
 [#selectVersion1]
 image::elasticsearch-2.2/images/selectVersion1.png[,220,align=left]
-+
-{blank}
 +
 Left-click on the btn:[Replicate] button, at the lower-right of the dialog.
 
@@ -218,8 +188,6 @@ As indicated by the output shown above, responses to Elasticsearch queries conta
 
 * _Search-performance_.
 The `took` parameter indicates the number of milliseconds required for the search; while fields within the `_shards` object indicate how many Elasticsearch shards were available for search, how many were accessed successfully, and how many unsuccessfully.
-+
-{blank}
 
 * _Items matched_.
 The `total` field indicates the total number of items.
@@ -232,15 +200,11 @@ The contents of the `_id` field, returned from an Elasticsearch query, can be us
 Ensure Couchbase is running; then, proceed as follows:
 
 . Access the Couchbase Web Console, at http://localhost:8091:/[].
-+
-{blank}
 
 . Left-click on the Data Buckets tab, near the top:
 +
 [#dataBucketsTab]
 image::elasticsearch-2.2/images/dataBucketsTab.png[,120,align=left]
-+
-{blank}
 +
 This brings up the [.uicontrol]*Couchbase Buckets* screen.
 
@@ -249,11 +213,7 @@ This brings up the [.uicontrol]*Couchbase Buckets* screen.
 [#beerSampleLine]
 image::elasticsearch-2.2/images/beerSampleLine.png[,480,align=left]
 +
-{blank}
-+
 This brings up the [.uicontrol]*Documents* screen for the beer-sample bucket:
-+
-{blank}
 +
 [#beerSampleDocuments]
 image::elasticsearch-2.2/images/beerSampleDocuments.png[,480,align=left]
@@ -263,12 +223,8 @@ image::elasticsearch-2.2/images/beerSampleDocuments.png[,480,align=left]
 [#beerSampleDocumentsLookUpField]
 image::elasticsearch-2.2/images/beerSampleDocumentsLookUpField.png[,320,align=left]
 +
-{blank}
-+
 Then, left-click on the btn:[Lookup Id] button.
 This brings up a display containing the document associated with the specified ID:
-+
-{blank}
 +
 [#beerSampleDocumentsLookUpResults]
 image::elasticsearch-2.2/images/beerSampleDocumentsLookUpResults.png[,480,align=left]
@@ -286,30 +242,18 @@ The annotations to this diagram are as follows:
 
 . The html interface allows the user to select a beer-style.
 On selection, a `getJSON` call passes the style, in the form of a key-value pair, to the node.js program _esNodeJsQueryAgent_.
-+
-{blank}
 
 . The node.js routine performs an Elasticsearch query on the existing _beer-sample_ index: the returned documents each contain an ID corresponding to a particular beer, which is described by the specified style.
-+
-{blank}
 
 . The documents are passed back to the client-side, where the IDs are retrieved.
 Each is displayed for the user.
-+
-{blank}
 
 . The client passes each ID to the node.js program _cbNodeJsQueryAgent_.
-+
-{blank}
 
 . The program cbNodeJsQueryAgent duly queries Couchbase.
 Couchbase returns, for each ID, a document containing detailed information on the beer specified by the ID.
-+
-{blank}
 
 . Each document is returned to the client-side routine, which displays the results for the user.
-+
-{blank}
 
 == Access Source-Files
 

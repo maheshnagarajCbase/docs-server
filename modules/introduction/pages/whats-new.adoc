@@ -145,6 +145,7 @@ It retains only distinct array elements in unspecified order.
 Result includes values that are in only one of the arrays.
 * `ARRAY_SYMDIFFN(arr1, arr2)` - This function returns symmetric difference of multiple input arrays.
 Result includes values that are in odd number of the input arrays.
+
 The following Array functions are updated to take variable number of arguments:
 [#ul_tjc_w4k_pz]
 * `ARRAY_APPEND()`
@@ -218,14 +219,10 @@ For details, see xref:fts:fts-sorting.adoc#topic_l2x_pkx_vx[Sorting Query Result
 
 *CBImport and CBExport Tools [Developer Preview]*
 
-{blank}
-
 *Data Structures for Simplified Application Development*
 
 Couchbase is extending the programming model with the new Datastructure SDK feature, further simplifies application development.
 Building on Couchbase Server 4.5’s support for sub-document level changes, Couchbase has now added support for lists, maps, sets, and queues to libraries for Java, .NET, Node.js, and PHP among other platforms.
-
-{blank}
 
 *Big Data Connectors for Spark and Kafka*
 
@@ -239,11 +236,14 @@ For details, see xref:connectors:spark-2.0/spark-intro.adoc#concept_l11_ppm_pp[S
 Kafka Connector 3.1::
 The Couchbase Kafka Connector makes it easier to build scalable and reliable streaming data services between Apache Kafka and other systems.
 As of version 3.0, it has been re-written to leverage *Kafka Connect*, which standardizes the management of the connector, enables end-to-end monitoring, and supports dashboard tools such as http://docs.confluent.io/3.0.0/control-center/docs/index.html#control-center[Confluent Control Center].
++
 *Kafka Streams* make it easier to write http://docs.confluent.io/3.1.1/streams/[stream-based applications].
 You can now use Couchbase as a *Kafka Source* or *Kafka Sink* based on the new Kafka Connect protocol (supported on Kafka 0.9 or newer).
 With filtering capability you can build an intelligent stream processing environment easily.
++
 Configuration and management of the Connector is made easier with a couple powerful changes, including *Dynamic Topology* support for rebalance and failover scenarios.
 *SSL support* can now easily be enabled simply by setting a configuration property.
++
 Various important efficiency improvements make better use of connections and resources with the Connector.
 [#ul_dkc_w4k_pz]
 * The Connector now has *node partition distribution awareness*, allowing the cluster map to send DCP stream partitions to Kafka tasks, reducing socket connections.
