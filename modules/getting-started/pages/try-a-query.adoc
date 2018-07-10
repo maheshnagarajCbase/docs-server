@@ -270,6 +270,8 @@ As you can see, a single document was found to match your specified criterion: w
 
 == Next
 
+// Substitute, for 5.0 beta1
+
 In the final stage of this _Getting Started_ sequence, xref:choose-your-next-steps.adoc[Choose Your Next Steps] suggestions are provided as to locations you can visit next.
 
 == Other Destinations

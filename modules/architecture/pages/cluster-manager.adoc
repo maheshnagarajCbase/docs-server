@@ -84,6 +84,9 @@ If the cluster manager is not sending out its basic heartbeats to other nodes th
 * *Data Service* - The health of the Data service is monitored by inspecting the xref:high-availability-replication-architecture.adoc#concept_hj1_njj_vs[DCP traffic] coming out of the node.
 If the memcached process is not sending data or no-ops (internal keep-alives) along its connections then it is considered unhealthy.
 
+This monitoring is then used to more accurately inform the decision about whether to automatically failover a node.
+By using specific service monitoring, the chance for 'false positives' is greatly reduced, although it is still vulnerable to an unstable network.
+
 [#RZA]
 == Smart Data Placement with Rack and Zone Awareness
 

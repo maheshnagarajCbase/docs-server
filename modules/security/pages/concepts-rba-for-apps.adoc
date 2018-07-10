@@ -562,6 +562,8 @@ This brings the total number of system keyspaces up to 12:
 | 
 |===
 
+*SELECT Operations on System Keyspaces*
+
 All of the system keyspaces support SELECT operations and are divided into the below security levels:
 
 [#image_kyx_jzx_cbb]

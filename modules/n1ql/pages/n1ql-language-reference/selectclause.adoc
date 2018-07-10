@@ -15,6 +15,8 @@ For more details about user roles, see xref:security:security-authorization.adoc
 [#section_Syntax]
 == Syntax
 
+In the below SELECT statement, the SELECT clause is boldfaced:
+
 ----
 SELECT select_clause
 [FROM from_clause]
