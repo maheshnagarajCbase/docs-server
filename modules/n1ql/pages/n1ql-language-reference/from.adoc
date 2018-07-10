@@ -325,8 +325,6 @@ If LEFT or LEFT OUTER is specified, then a left outer join is performed.
 At least one joined object is produced for each left hand source object.
 If the right hand source object is NULL or MISSING, then the joined object's right-hand side value is also NULL or MISSING (omitted), respectively.
 
-{blank}
-
 *Unnests*
 
 If a document or object contains a nested array, UNNEST conceptually performs a join of the nested array with its parent object.

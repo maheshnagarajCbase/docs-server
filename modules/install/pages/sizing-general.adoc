@@ -24,7 +24,9 @@ Frequently one of the most crucial areas to size correctly.
 Cached documents allow the reads to be served at very low latency and consistently high throughput.
 
 Disk:: The requirements of your disk subsystem are broken down into two components: size and I/O.
++
 Disk size refers to the amount disk storage space that needed to hold your entire data set.
++
 Disk I/O is a combination of your sustained read/write rate, the need for compacting the database files and anything else that requires disk access.
 
 CPU:: CPU refers to the number of cores required to run your workload.

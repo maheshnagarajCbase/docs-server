@@ -15,6 +15,7 @@ IMPORTANT: The full Couchbase administrator can connect to Couchbase Server at a
 Full Couchbase administrator::
 The full (built-in) Couchbase administrator is configured during installation.
 This administrator can configure one read-only Couchbase administrator and access all Couchbase Server functions, including the ability to enable LDAP and configure additional LDAP administrators.
++
 Passwords for full Couchbase administrators must follow security best practices.
 See xref:security-passwords.adoc#topic_iyx_5ps_lq[Couchbase passwords] for more details.
 

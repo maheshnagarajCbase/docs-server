@@ -24,8 +24,6 @@ The views engine uses the existing index as the basis of the query and marks the
 [#fig_xnn_lcc_bt]
 image::views-consistency-update-after.png[,400]
 +
-{blank}
-+
 The indexing engine is an asynchronous process; this means querying an index may produce results you did not expect.
 For example, if you update a document and then immediately run a query on that document, you may not get the new information in the emitted view data.
 +

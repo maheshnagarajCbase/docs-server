@@ -16,6 +16,7 @@ Dropdown list on the top left:: Allows you to select the data bucket to view.
 Create Development Spatial View:: Enables you to create a new spatial function either within the current design document or a new document.
 
 Create Development View:: Enables you to create a new view either within the current design document or a new document.
++
 You can switch between Production Views and Development Views.
 
 Views screen:: The final section provides a list of the design documents and each defined view within each document.

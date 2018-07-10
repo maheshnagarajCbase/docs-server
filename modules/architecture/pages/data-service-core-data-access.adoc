@@ -62,8 +62,6 @@ You can retrieve values by key using the Data Service.
 If you know the key used to store a particular value, then you can use the memcached protocol (or an appropriate memcached compatible client-library) to retrieve the value stored against a specific key.
 You can also perform bulk retrieve operations.
 +
-{blank}
-+
 There are two main ways to retrieve data without referencing keys:
 
 * Use N1QL to submit a SQL-like query to retrieve your data.
