@@ -95,6 +95,7 @@ The query workbench has three main sections: <<query-workbench-metadata,Metadata
 [#fig_vwg_vrp_4t]
 image::query-workbench-ui.png[,6in]
 
+[#query-workbench-metadata]
 *Metadata panel* (on the left side of the web page)
 
 The metadata panel lists all the buckets available on the datastore.
@@ -112,6 +113,7 @@ You can expand the buckets in the metadata panel to view the schema for the JSON
 This information is inferred by examining a random sample of documents in the bucket.
 The tool also learns the field names when you expand a bucket and uses this information to support auto-completion in the N1QL query panel.
 
+[#query-workbench-n1ql]
 *N1QL query panel* (located at the top of the web page)
 
 The N1QL query panel is the query area where you can type a N1QL query.
@@ -146,6 +148,7 @@ The syntax for the command is:
 describe <bucket_name> [ limit <sample size> ]
 ----
 
+[#query-workbench-results]
 *Results panel* (located at the bottom of the web page)
 
 The results panel displays the results of a query or the error message in case the query failed in your chosen format.

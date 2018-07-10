@@ -67,6 +67,7 @@ You can make N1QL requests in your applications or run N1QL queries against your
 
 To learn how to send N1QL queries from an application, read the N1QL topic in the xref:sdks:intro.adoc#concept_yqn_tjg_ps[SDK] for the language you are using.
 
+[#run-cbq]
 To run [.cmd]`cbq` from a node in your Couchbase installation:
 
 . Open a command window on a Couchbase Server node that has the query service enabled.
