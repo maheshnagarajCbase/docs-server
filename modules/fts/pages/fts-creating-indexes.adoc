@@ -197,6 +197,7 @@ The downside of storing the information is the extra size and time it takes to b
 Field is the name of the name-value pair in the JSON.
 In our example, the [.param]`description` property is at the top level but if you need to map name-value pairs that are embedded in complex structures, you need to use a <<topic_cmy_jzk_1v/child-mapping,child mapping>> instead.
 
+[#child-mapping]
 *Insert Child Mapping*
 
 Child Mappings are similar to field mappings, but instead of indexing simple values, they enable you to index embedded structures in a JSON document.
@@ -382,6 +383,7 @@ The name of a Date/Time parser that will be used to parse a date stored as a str
 
 NOTE: Full text search and Bleve expect dates to be in the format specified by https://www.ietf.org/rfc/rfc3339.txt[RFC-3339], which is a specific profile of ISO-8601 that is more restrictive.
 
+[#def-field-all]
 *Default Field *
 
 The default field is searched when a user query does not limit the scope of a search to a particular field.

@@ -56,6 +56,7 @@ After you install Couchbase Server, you can start using N1QL right away; either 
 
 == Try the Interactive Query Shell
 
+[#run-cbq]
 To run the interactive query shell, `cbq`, bring up a console window on your machine, and enter the following against the prompt:
 
 [source,bash]

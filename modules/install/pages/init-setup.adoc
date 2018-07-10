@@ -233,6 +233,7 @@ Then, check the checkbox whereby you agree to accept terms and conditions.
 When you have finished entering information, click on the btn:[Next] button.
 This dismisses the [.uicontrol]*Notifications* screen, and displays the [.uicontrol]*Configure Server* screen.
 
+[#setpass]
 [.uicontrol]* Step 5: Configure server *
 
 To create a cluster, you must assign yourself administrative credentials: these will be used on all nodes in the cluster you are creating.
@@ -246,6 +247,7 @@ Then, click on the btn:[Next] button.
 
 This concludes the Couchbase Server initialization-process.
 
+[#explore]
 [.uicontrol]* Step 6: Explore Couchbase Server *
 
 Couchbase Server is now running and ready to use.
