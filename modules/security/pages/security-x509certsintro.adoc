@@ -222,7 +222,7 @@ openssl genrsa -out ca.key 2048
 ----
 Generating RSA private key, 2048 bit long modulus
 ............................................................................................+++
-....+++ 
+....+++
 e is 65537 (0x10001)
 ----
 
@@ -241,8 +241,8 @@ openssl genrsa -out int.key 2048
 
 ----
 Generating RSA private key, 2048 bit long modulus
-..........................................+++ 
-.....+++ 
+..........................................+++
+.....+++
 e is 65537 (0x10001
 ----
 
@@ -281,8 +281,8 @@ openssl x509 -req -in int.csr -CA ../root/ca.pem -CAkey ../root/ca.key -CAcreate
 The response will be similar to the following:
 +
 ----
-Signature ok        
-subject=/C=UA/O=My Company/CN=My Company Intermediate CA       
+Signature ok
+subject=/C=UA/O=My Company/CN=My Company Intermediate CA
 Getting CA Private Key
 ----
 
@@ -371,7 +371,7 @@ openssl verify -untrusted ../int/int.pem pkey.pem
 The response should be similar to the following:
 +
 ----
-pkey.pem: /C=UA/O=My Company/CN=My Company Intermediate CA                   
+pkey.pem: /C=UA/O=My Company/CN=My Company Intermediate CA
 error 20 at 1 depth lookup:unable to get local issuer certificate
 ----
 +
@@ -544,7 +544,7 @@ openssl genrsa -out ca.key 2048
   *** Renew the root CA using the existing `ca.key`:
 +
 ----
-openssl req -new -key ca.key -out newcsr.csr 
+openssl req -new -key ca.key -out newcsr.csr
                         openssl x509 -req -days 3650 -sha256 -in newcsr.csr -signkey newca.key -out newca.pem
 ----
 

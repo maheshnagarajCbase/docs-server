@@ -22,8 +22,8 @@ CREATE INDEX id_ix on `beer-sample`(meta().id);
 The meta() function in a query is given an expression; if this resolves to a keyspace alias, the requested field (id or CAS) is returned.
 +
 ----
-SELECT b.name, meta(b).id 
-FROM `beer-sample` b 
+SELECT b.name, meta(b).id
+FROM `beer-sample` b
 WHERE meta(b).id > "g" limit 1;
 ----
 

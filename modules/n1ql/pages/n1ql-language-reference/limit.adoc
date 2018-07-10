@@ -13,10 +13,10 @@ It indicates that the actual number of mutations will be less than or equal to t
 
 .Query
 ----
-SELECT t.name, t.address, t.city, t.country, t.url 
-FROM `travel-sample` t 
-WHERE type="hotel" 
-  AND t.vacancy = true 
+SELECT t.name, t.address, t.city, t.country, t.url
+FROM `travel-sample` t
+WHERE type="hotel"
+  AND t.vacancy = true
 LIMIT 2;
 ----
 

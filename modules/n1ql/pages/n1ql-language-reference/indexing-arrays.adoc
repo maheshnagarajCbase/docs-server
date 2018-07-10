@@ -8,11 +8,11 @@ You can now create an index of array elements ranging from plain scalar values t
 == N1QL Syntax
 
 ----
-CREATE INDEX [ index_name ] 
+CREATE INDEX [ index_name ]
         ON named_keyspace_ref ( expression || distinct_array_expression, … )
         [ WHERE filter_expressions ]
         [ USING GSI ]
-        [ WITH { "nodes": [ "node_name" ], 
+        [ WITH { "nodes": [ "node_name" ],
                 "defer_build": true | false
               }
         ];
@@ -35,7 +35,7 @@ Specify the name of the keyspace or bucket to create an index on
 [.var]`distinct_array_expression`::
 +
 ----
-distinct_array_expression ::= 
+distinct_array_expression ::=
 [ ALL ] DISTINCT ARRAY var_expression FOR variable1 ( IN | WITHIN ) expression1
                                       [ , variable2 ( IN | WITHIN ) expression2 ]
                                       [ ( WHEN condition ) ] END
@@ -105,7 +105,7 @@ The following samples use the `travel-sample` bucket.
 Create an index on all schedules:
 
 ----
-CREATE INDEX isched 
+CREATE INDEX isched
         ON `travel-sample` ( DISTINCT ARRAY v FOR v IN schedule END );
 ----
 
@@ -121,7 +121,7 @@ The following query finds the list of scheduled 'AA' flights:
 Create an index on flight IDs scheduled in the first 4 days of the week:
 
 ----
-CREATE INDEX iflight_day 
+CREATE INDEX iflight_day
        ON `travel-sample` ( DISTINCT ARRAY v.flight FOR v IN schedule WHEN v.day < 4 END )
        WHERE type = "route" ;
 ----
@@ -131,7 +131,7 @@ CREATE INDEX iflight_day
 Create an index on scheduled flight IDs and number of stops:
 
 ----
-CREATE INDEX iflight_stops 
+CREATE INDEX iflight_stops
        ON `travel-sample` ( stops, DISTINCT ARRAY v.flight FOR v IN schedule END )
        WHERE type = "route" ;
 ----
@@ -149,17 +149,17 @@ Use the DISTINCT ARRAY clause in a nested fashion to index specific attributes o
 For example,
 
 ----
-cbq> UPDATE `travel-sample` 
-SET schedule[0] = {"day" : 7, "special_flights" : 
-                    [ {"flight" : "AI444", "utc" : "4:44:44"}, 
-                      {"flight" : "AI333", "utc" : "3:33:33" } 
-                    ] } 
+cbq> UPDATE `travel-sample`
+SET schedule[0] = {"day" : 7, "special_flights" :
+                    [ {"flight" : "AI444", "utc" : "4:44:44"},
+                      {"flight" : "AI333", "utc" : "3:33:33" }
+                    ] }
 WHERE type = "route" AND destinationairport = "CDG" AND sourceairport = "TLV";
 ----
 
 ----
 cbq> CREATE INDEX inested ON `travel-sample`
-( DISTINCT ARRAY (DISTINCT ARRAY y FOR y IN x.special_flights END) FOR x IN schedule END) 
+( DISTINCT ARRAY (DISTINCT ARRAY y FOR y IN x.special_flights END) FOR x IN schedule END)
 WHERE type = "route";
 ----
 
@@ -172,7 +172,7 @@ Let's use the following sample document with Doc_Id "foo" to explain the limitat
 "foo": {
           "a":1,
           "b":[1,2],
-          "c":{"ca":[1,2,3], "cb":4},  
+          "c":{"ca":[1,2,3], "cb":4},
           "d":[{"da":5,"db":6},
           {"da":7,"db":8}],
           "e":[{"ea":9,"eb":[10,11,12]},

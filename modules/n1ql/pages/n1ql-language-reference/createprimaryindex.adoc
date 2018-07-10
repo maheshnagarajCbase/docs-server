@@ -23,7 +23,7 @@ Indexes cannot be built concurrently on a given bucket unless the `defer_build` 
 The following error is reported if a second index creation operation is kicked off before the completion of the ongoing index creation.
 
 ----
-"errors": {"code": 12014, 
+"errors": {"code": 12014,
    "msg": "error: Build Already In Progress. Bucket BUCKET_NAME. Index INDEX_NAME. Index state: pending"}
 ----
 
@@ -105,7 +105,7 @@ SELECT * FROM system:indexes WHERE name="beer-sample-primary-index";
 ----
 
 ----
-CREATE PRIMARY INDEX `beer-sample-primary-index` ON `beer-sample` USING GSI 
+CREATE PRIMARY INDEX `beer-sample-primary-index` ON `beer-sample` USING GSI
     WITH {"defer_build":true};
 SELECT * FROM system:indexes WHERE name="beer-sample-primary-index";
 ----

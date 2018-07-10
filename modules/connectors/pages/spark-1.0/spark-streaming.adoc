@@ -17,14 +17,14 @@ You can then utilize them through all the common DStream methods.
 [source,scala]
 ----
 System.setProperty("com.couchbase.dcpEnabled", "true")
- 
+
 val conf = new SparkConf().setMaster("local[*]").setAppName("StreamingSample")
 val ssc = new StreamingContext(conf, Seconds(5))
- 
+
 ssc
 .couchbaseStream()
 .print()
- 
+
 ssc.start()
 ssc.awaitTermination()
 ----

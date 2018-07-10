@@ -140,7 +140,7 @@ GET http://localhost:8093/admin/prepareds
 +
 .N1QL
 ----
-SELECT projection-list-expression FROM system:prepareds 
+SELECT projection-list-expression FROM system:prepareds
               [ WHERE predicate-expression ]
 ---- To get a list of all known prepared statements, use:
 +
@@ -153,7 +153,7 @@ GET http://localhost:8093/admin/prepareds/prepared-statement-name
 +
 .Example
 ----
-SELECT * FROM system:prepareds 
+SELECT * FROM system:prepareds
     WHERE name = "p1";
 
 {
@@ -169,7 +169,7 @@ SELECT * FROM system:prepareds
     "elapsedTime.95pct": "3.879s",
     "elapsedTime.99pct": "15.183s",
     "elapsedTime.average": "1.15s",
-    "elapsedTime.median": "5.75s"        
+    "elapsedTime.median": "5.75s"
 }
 ----
 
@@ -182,7 +182,7 @@ DELETE http://localhost:8093/admin/prepareds/prepared-statement-name
 +
 .N1QL
 ----
-DELETE FROM system:prepareds 
+DELETE FROM system:prepareds
 WHERE name = "p1";
 ---- The DELETE command can be used to delete a prepared statement.
 +
@@ -261,7 +261,7 @@ Purging the Completed Requests:: To purge the completed requests for a given tim
 +
 .N1QL
 ----
-DELETE FROM system:completed_requests requests 
+DELETE FROM system:completed_requests requests
        WHERE requests.Time LIKE "2015-09-09%";
 ----
 

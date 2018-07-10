@@ -30,18 +30,24 @@ In this tutorial we will use a backup archive located at [.path]_/data/backup_.
 The backup archive is automatically created if the directory specified is empty.
 Below is an example of how to create a backup repository called "cluster" which backs up all data and index definitions from all buckets in the target cluster.
 
- $ cbbackupmgr config --archive /data/backup --repo cluster 
-  
- Backup repository `cluster` created successfully in archive `/data/backup`
+[source,console]
+----
+$ cbbackupmgr config --archive /data/backup --repo cluster
+
+Backup repository `cluster` created successfully in archive `/data/backup`
+----
 
 One of the most important aspects of backup repository creation is that you can configure that backup repository in many different ways to change the way backups in each backup repository are taken.
 Let's say you want a separate backup of only the index definitions in the travel-sample bucket.
 To do this you can create a separate backup repository called "single" using the following command:
 
- $ cbbackupmgr config --archive /data/backup --repo single \ 
- --include-buckets travel-sample --disable-data 
-  
- Backup repository `single` created successfully in archive `/data/backup`
+[source,console]
+----
+$ cbbackupmgr config --archive /data/backup --repo single \
+--include-buckets travel-sample --disable-data
+
+Backup repository `single` created successfully in archive `/data/backup`
+----
 
 The _config_ sub-command provides many options in order to customize how you backup your data.
 For more information about the available options and how they are used, see xref:cbbackupmgr-config.adoc[cbbackupmgr config].
@@ -53,12 +59,15 @@ The easiest way to do this is to use the _list_ sub-command.
 This sub-command is used to examine a backup archive and gives information about how much data is stored in it.
 To see the entire backup archive, run the following command:
 
- $ cbbackupmgr list --archive /data/backup 
-  
- Size      Items          Name 
- 0B        -              / 
- 0B        -              + cluster 
- 0B        -              + single
+[source,console]
+----
+$ cbbackupmgr list --archive /data/backup
+
+Size      Items          Name
+0B        -              /
+0B        -              + cluster
+0B        -              + single
+----
 
 The list sub-command returns a directory print out of all of the backup repositories and backups in your backup archive.
 Since there are no backups yet you can just see your archives list in the output of this command.
@@ -70,15 +79,18 @@ Since the backup repository contains all of the configuration information for ho
 Below is an example of how to take a backup on the "cluster" backup repository.
 Let's assume that your cluster is running on localhost.
 
- $ cbbackupmgr backup --archive /data/backup --repo cluster \ 
- --host couchbase://127.0.0.1 --username Administrator --password password 
-  
- Backing up to 2016-03-22T10_26_08.933579821-07_00 
- Copied all data in 6s (Avg. 6.67MB/Sec)        38894 items / 40.02MB 
- travel-sample           [==================================] 100.00% 
- beer-sample             [==================================] 100.00% 
-  
- Backup successfully completed
+[source,console]
+----
+$ cbbackupmgr backup --archive /data/backup --repo cluster \
+--host couchbase://127.0.0.1 --username Administrator --password password
+
+Backing up to 2016-03-22T10_26_08.933579821-07_00
+Copied all data in 6s (Avg. 6.67MB/Sec)        38894 items / 40.02MB
+travel-sample           [==================================] 100.00%
+beer-sample             [==================================] 100.00%
+
+Backup successfully completed
+----
 
 When the backup command is executed, by default it prints out a progress bar which is helpful to understand how long your backup will take to complete and the rate of data movement.
 While the backup is running, the progress bar gives an estimated time to completion, and when the backup completes, but this changes to the average backup rate.
@@ -87,47 +99,53 @@ If the backup completes successfully, the tool prints the message "Backup comple
 
 Let's also run the backup on the "single" backup repository to see how the two backup runs differ.
 
- $ cbbackupmgr backup --archive /data/backup --repo single \ 
- --host couchbase://127.0.0.1 --username Administrator --password password 
-  
- Backing up to 2016-03-22T10_33_20.812668465-07_00 
- Copied all data in 1s (Avg. 480B/Sec)                 0 items / 480B 
- travel-sample           [==================================] 100.00%
+[source,console]
+----
+$ cbbackupmgr backup --archive /data/backup --repo single \
+--host couchbase://127.0.0.1 --username Administrator --password password
+
+Backing up to 2016-03-22T10_33_20.812668465-07_00
+Copied all data in 1s (Avg. 480B/Sec)                 0 items / 480B
+travel-sample           [==================================] 100.00%
+----
 
 Since the "single" backup repository is only configured to back up index definitions for the travel-sample bucket you do not see a progress bar for the beer-sample bucket.
 You can also see that the backup executed quicker since there was considerably less data to actually back up.
 
 Now that you have backups in your backup archive let's take a look at how the state of our backup archive has changed by using the _list_ sub-command.
 
- $ cbbackupmgr list --archive /data/backup 
-  
- Size      Items          Name 
- 154.25MB  -              / 
- 154.21MB  -              + cluster 
- 154.21MB  -                  + 2016-03-22T10_26_08.933579821-07_00 
- 55.85MB   -                      + beer-sample 
- 298B      0                          bucket-config.json 
- 55.84MB   7303                       + data 
- 55.84MB   7303                           shard_0.fdb 
- 2B        0                          full-text.json 
- 10.07KB   8                          gsi.json 
- 784B      1                          views.json 
- 98.36MB   -                      + travel-sample 
- 300B      0                          bucket-config.json 
- 98.35MB   31591                      + data 
- 98.35MB   31591                          shard_0.fdb 
- 2B        0                          full-text.json 
- 10.07KB   8                          gsi.json 
- 1.72KB    1                          views.json 
- 40.08KB   -              + single 
- 40.08KB   -                  + 2016-03-22T10_33_20.812668465-07_00 
- 40.08KB   -                      + travel-sample 
- 300B      0                          bucket-config.json 
- 28.00KB   0                          + data 
- 28.00KB   0                              shard_0.fdb 
- 2B        0                          full-text.json 
- 10.07KB   8                          gsi.json 
- 1.72KB    1                          views.json
+[source,console]
+----
+$ cbbackupmgr list --archive /data/backup
+
+Size      Items          Name
+154.25MB  -              /
+154.21MB  -              + cluster
+154.21MB  -                  + 2016-03-22T10_26_08.933579821-07_00
+55.85MB   -                      + beer-sample
+298B      0                          bucket-config.json
+55.84MB   7303                       + data
+55.84MB   7303                           shard_0.fdb
+2B        0                          full-text.json
+10.07KB   8                          gsi.json
+784B      1                          views.json
+98.36MB   -                      + travel-sample
+300B      0                          bucket-config.json
+98.35MB   31591                      + data
+98.35MB   31591                          shard_0.fdb
+2B        0                          full-text.json
+10.07KB   8                          gsi.json
+1.72KB    1                          views.json
+40.08KB   -              + single
+40.08KB   -                  + 2016-03-22T10_33_20.812668465-07_00
+40.08KB   -                      + travel-sample
+300B      0                          bucket-config.json
+28.00KB   0                          + data
+28.00KB   0                              shard_0.fdb
+2B        0                          full-text.json
+10.07KB   8                          gsi.json
+1.72KB    1                          views.json
+----
 
 Now that you have some backups defined, the output of the [.cmd]`list` sub-command is much more useful.
 You can see that the "cluster" backup repository contains one backup with a name corresponding to the time the backup was taken.
@@ -140,64 +158,70 @@ In order to simulate some changes on the cluster you can run the [.path]_02-modi
 If you do not have this script then you need to modify two documents and add two new documents to the travel-sample bucket.
 After you modify some data, run the backup sub-command on the "cluster" backup repository again.
 
- $ cbbackupmgr backup --archive /data/backup --repo cluster \ 
- --host couchbase://127.0.0.1 --username Administrator --password password 
-  
- Backing up to 2016-03-22T14_00_38.668068342-07_00 
- Copied all data in 3s (Avg. 18.98KB/Sec)           4 items / 56.95KB 
- travel-sample           [==================================] 100.00% 
- beer-sample             [==================================] 100.00% 
-  
-    Backup successfully completed
+[source,console]
+----
+$ cbbackupmgr backup --archive /data/backup --repo cluster \
+--host couchbase://127.0.0.1 --username Administrator --password password
+
+Backing up to 2016-03-22T14_00_38.668068342-07_00
+Copied all data in 3s (Avg. 18.98KB/Sec)           4 items / 56.95KB
+travel-sample           [==================================] 100.00%
+beer-sample             [==================================] 100.00%
+
+   Backup successfully completed
+----
 
 In this backup notice that since you updated 2 items and created two items, this is all that needs to be backed up during this run.
 Now list the backup archive using the list sub-command.
 You can see that the backup archive looks something like this:
 
- $ cbbackupmgr list --archive /data/backup 
-  
- Size      Items          Name 
- 254.31MB  -              / 
- 254.28MB  -              + cluster 
- 154.19MB  -                  + 2016-03-22T10_26_08.933579821-07_00 
- 55.84MB   -                      + beer-sample 
- 298B      0                          bucket-config.json 
- 55.83MB   7303                       + data 
- 55.83MB   7303                           shard_0.fdb 
- 2B        0                          full-text.json 
- 9.99KB    8                          gsi.json 
- 784B      1                          views.json 
- 98.35MB   -                      + travel-sample 
- 300B      0                          bucket-config.json 
- 98.34MB   31591                      + data 
- 98.34MB   31591                          shard_0.fdb 
- 2B        0                          full-text.json 
- 9.99KB    8                          gsi.json 
- 1.72KB    1                          views.json 
- 100.08MB  -                  + 2016-03-22T14_00_38.668068342-07_00 
- 50.03MB   -                      + beer-sample 
- 298B      0                          bucket-config.json 
- 50.02MB   0                          + data 
- 50.02MB   0                              shard_0.fdb 
- 2B        0                          full-text.json 
- 9.99KB    8                          gsi.json 
- 784B      1                          views.json 
- 50.05MB   -                      + travel-sample 
- 300B      0                          bucket-config.json 
- 50.04MB   4                          + data 
- 50.04MB   4                              shard_0.fdb 
- 2B        0                          full-text.json 
- 9.99KB    8                          gsi.json 
- 1.72KB    1                          views.json 
- 40.08KB   -              + single 
- 40.08KB   -                  + 2016-03-22T10_33_20.812668465-07_00 
- 40.08KB   -                      + travel-sample 
- 300B      0                          bucket-config.json 
- 28.00KB   0                          + data 
- 28.00KB   0                              shard_0.fdb 
- 2B        0                          full-text.json 
- 10.07KB   8                          gsi.json 
- 1.72KB    1                          views.json
+[source,console]
+----
+$ cbbackupmgr list --archive /data/backup
+
+Size      Items          Name
+254.31MB  -              /
+254.28MB  -              + cluster
+154.19MB  -                  + 2016-03-22T10_26_08.933579821-07_00
+55.84MB   -                      + beer-sample
+298B      0                          bucket-config.json
+55.83MB   7303                       + data
+55.83MB   7303                           shard_0.fdb
+2B        0                          full-text.json
+9.99KB    8                          gsi.json
+784B      1                          views.json
+98.35MB   -                      + travel-sample
+300B      0                          bucket-config.json
+98.34MB   31591                      + data
+98.34MB   31591                          shard_0.fdb
+2B        0                          full-text.json
+9.99KB    8                          gsi.json
+1.72KB    1                          views.json
+100.08MB  -                  + 2016-03-22T14_00_38.668068342-07_00
+50.03MB   -                      + beer-sample
+298B      0                          bucket-config.json
+50.02MB   0                          + data
+50.02MB   0                              shard_0.fdb
+2B        0                          full-text.json
+9.99KB    8                          gsi.json
+784B      1                          views.json
+50.05MB   -                      + travel-sample
+300B      0                          bucket-config.json
+50.04MB   4                          + data
+50.04MB   4                              shard_0.fdb
+2B        0                          full-text.json
+9.99KB    8                          gsi.json
+1.72KB    1                          views.json
+40.08KB   -              + single
+40.08KB   -                  + 2016-03-22T10_33_20.812668465-07_00
+40.08KB   -                      + travel-sample
+300B      0                          bucket-config.json
+28.00KB   0                          + data
+28.00KB   0                              shard_0.fdb
+2B        0                          full-text.json
+10.07KB   8                          gsi.json
+1.72KB    1                          views.json
+----
 
 == Restoring a Backup
 
@@ -208,17 +232,20 @@ The backup name will always be a timestamp.
 For example, let's say you want to restore the 2016-03-22T10_26_08.933579821-07_00 from the "cluster" backup repository.
 In order to do this, run the following command:
 
- $ cbbackupmgr restore --archive /tmp/backup --repo cluster \ 
- --host http://127.0.0.1:8091 --username Administrator --password password \ 
- --start 2016-03-22T14_00_16.892277632-07_00 \ 
- --end 2016-03-22T14_00_16.892277632-07_00 --force-updates 
-  
- (1/1) Restoring backup 2016-03-22T14_00_16.892277632-07_00 
- Copied all data in 2s (Avg. 19.96MB/Sec)       38894 items / 39.91MB 
- travel-sample           [==================================] 100.00% 
- beer-sample             [==================================] 100.00% 
-  
- Restore completed successfully
+[source,console]
+----
+$ cbbackupmgr restore --archive /tmp/backup --repo cluster \
+--host http://127.0.0.1:8091 --username Administrator --password password \
+--start 2016-03-22T14_00_16.892277632-07_00 \
+--end 2016-03-22T14_00_16.892277632-07_00 --force-updates
+
+(1/1) Restoring backup 2016-03-22T14_00_16.892277632-07_00
+Copied all data in 2s (Avg. 19.96MB/Sec)       38894 items / 39.91MB
+travel-sample           [==================================] 100.00%
+beer-sample             [==================================] 100.00%
+
+Restore completed successfully
+----
 
 In the command above, notice the use of the [.param]`--start` and [.param]`--end` flags to specify the range of backups you want to restore.
 Since you are only restoring one backup, specify the same value for both [.param]`--start` and [.param]`--end`.
@@ -238,42 +265,42 @@ In order to do this, use the _merge_ sub-command to merge two or more backups to
 Since there are two backups in the "cluster" backup repository, you can merge these backups together using the following command:
 
 ----
-$cbbackupmgr merge --archive /data/backup --repo cluster \ 
---start 2016-03-22T14_00_16.892277632-07_00 \ 
---end 2016-03-22T14_00_38.668068342-07_00 
- 
+$cbbackupmgr merge --archive /data/backup --repo cluster \
+--start 2016-03-22T14_00_16.892277632-07_00 \
+--end 2016-03-22T14_00_38.668068342-07_00
+
 Merge completed successfully
 ----
 
 After merging the backups together you can use the list sub-command to see the effect of the merge sub-command on the backup archive.
 
- $ cbbackupmgr list --archive /data/backup 
- Size      Items          Name 
- 154.41MB  -              / 
- 154.37MB  -              + cluster 
- 154.37MB  -                  + 2016-03-22T14_00_38.668068342-07_00 
- 55.84MB   -                      + beer-sample 
- 298B      0                          bucket-config.json 
- 55.83MB   7303                       + data 
- 55.83MB   7303                           shard_0.fdb 
- 2B        0                          full-text.json 
- 9.99KB    8                          gsi.json 
- 784B      1                          views.json 
- 98.53MB   -                      + travel-sample 
- 300B      0                          bucket-config.json 
- 98.52MB   31593                      + data 
- 98.52MB   31593                          shard_0.fdb 
- 2B        0                          full-text.json 
- 9.99KB    8                          gsi.json 
- 1.72KB    1                          views.json 
- 40.08KB   -              + single 
- 40.08KB   -                  + 2016-03-22T10_33_20.812668465-07_00 
- 40.08KB   -                      + travel-sample 
- 300B      0                          bucket-config.json 
- 28.00KB   0                          + data 
- 28.00KB   0                              shard_0.fdb 
- 2B        0                          full-text.json 
- 10.07KB   8                          gsi.json 
+ $ cbbackupmgr list --archive /data/backup
+ Size      Items          Name
+ 154.41MB  -              /
+ 154.37MB  -              + cluster
+ 154.37MB  -                  + 2016-03-22T14_00_38.668068342-07_00
+ 55.84MB   -                      + beer-sample
+ 298B      0                          bucket-config.json
+ 55.83MB   7303                       + data
+ 55.83MB   7303                           shard_0.fdb
+ 2B        0                          full-text.json
+ 9.99KB    8                          gsi.json
+ 784B      1                          views.json
+ 98.53MB   -                      + travel-sample
+ 300B      0                          bucket-config.json
+ 98.52MB   31593                      + data
+ 98.52MB   31593                          shard_0.fdb
+ 2B        0                          full-text.json
+ 9.99KB    8                          gsi.json
+ 1.72KB    1                          views.json
+ 40.08KB   -              + single
+ 40.08KB   -                  + 2016-03-22T10_33_20.812668465-07_00
+ 40.08KB   -                      + travel-sample
+ 300B      0                          bucket-config.json
+ 28.00KB   0                          + data
+ 28.00KB   0                              shard_0.fdb
+ 2B        0                          full-text.json
+ 10.07KB   8                          gsi.json
  1.72KB    1                          views.json
 
 You can see from the list command that there is now a single backup in the "cluster" backup repository.
@@ -289,9 +316,12 @@ For more information on how the merge command works as well as information on ot
 If you no longer need a backup repository, you can use the [.cmd]`remove` sub-command to remove the backup repository.
 Below is an example showing how to remove the "cluster" backup repository.
 
- $ cbbackupmgr remove --archive /data/backup --repo cluster 
-  
- Backup repository `cluster` deleted successfully from archive `/data/backup`
+[source,console]
+----
+$ cbbackupmgr remove --archive /data/backup --repo cluster
+
+Backup repository `cluster` deleted successfully from archive `/data/backup`
+----
 
 If you now run the list sub-command you will see that the "cluster" backup repository no longer exists.
 For more information on the remove sub-command, see xref:cbbackupmgr-remove.adoc[cbbackupmgr remove].

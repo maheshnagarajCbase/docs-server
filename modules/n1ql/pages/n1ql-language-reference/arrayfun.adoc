@@ -8,9 +8,9 @@ You can use array functions to evaluate arrays, perform computations on elements
 Returns new array with value appended.
 
 ----
-SELECT ARRAY_APPEND(t.public_likes, "Valerie Smith") 
-FROM `travel-sample` t 
-WHERE type="hotel" 
+SELECT ARRAY_APPEND(t.public_likes, "Valerie Smith")
+FROM `travel-sample` t
+WHERE type="hotel"
 LIMIT 1;
 [
   {
@@ -38,9 +38,9 @@ Returns arithmetic mean (average) of all the non-NULL number values in the array
 Returns new array with the concatenation of the input arrays.
 
 ----
-SELECT ARRAY_CONCAT(t.public_likes, ["John McHill", "Dave Smith"]) 
-FROM `travel-sample` t 
-WHERE type="hotel" 
+SELECT ARRAY_CONCAT(t.public_likes, ["John McHill", "Dave Smith"])
+FROM `travel-sample` t
+WHERE type="hotel"
 LIMIT 1;
 [
   {
@@ -65,9 +65,9 @@ LIMIT 1;
 Returns true if the array contains value.
 
 ----
-SELECT ARRAY_CONTAINS(t.public_likes, "Vallie Ryan") 
-FROM `travel-sample` t 
-WHERE type="hotel" 
+SELECT ARRAY_CONTAINS(t.public_likes, "Vallie Ryan")
+FROM `travel-sample` t
+WHERE type="hotel"
 LIMIT 1;
 [
   {
@@ -82,8 +82,8 @@ Returns count of all the non-NULL values in the array, or zero if there are no s
 
 ----
 SELECT ARRAY_COUNT(t.reviews) AS total_reviews
-FROM `travel-sample` t 
-WHERE type="hotel" 
+FROM `travel-sample` t
+WHERE type="hotel"
 LIMIT 1;
 [
   {
@@ -102,8 +102,8 @@ Returns the first non-NULL value in the array, or NULL.
 
 ----
 SELECT ARRAY_IFNULL(t.public_likes)
-FROM `travel-sample` t 
-WHERE type="hotel" 
+FROM `travel-sample` t
+WHERE type="hotel"
 LIMIT 2;
 [
   {
@@ -126,9 +126,9 @@ array array_insert( array-name, position, value)
 
 .Example
 ----
-SELECT ARRAY_INSERT(schedule, 2, "jsmith")[2]  
-FROM `travel-sample` 
-WHERE type = "route"  
+SELECT ARRAY_INSERT(schedule, 2, "jsmith")[2]
+FROM `travel-sample`
+WHERE type = "route"
 LIMIT 1;
        {
          "requestID": "c0e073ed-5eca-451d-bcc2-57e2e01ab93d",
@@ -182,9 +182,9 @@ Returns the number of elements in the array.
 
 .Example
 ----
-SELECT ARRAY_LENGTH(t.public_likes) AS total_likes 
-FROM `travel-sample` t 
-WHERE type="hotel" 
+SELECT ARRAY_LENGTH(t.public_likes) AS total_likes
+FROM `travel-sample` t
+WHERE type="hotel"
 LIMIT 1;
 [
   {
@@ -198,9 +198,9 @@ LIMIT 1;
 Returns the largest non-NULL, non-MISSING array element, in N1QL collation order.
 
 ----
-SELECT ARRAY_MAX(t.public_likes) 
-FROM `travel-sample` t 
-WHERE type="hotel" 
+SELECT ARRAY_MAX(t.public_likes)
+FROM `travel-sample` t
+WHERE type="hotel"
 LIMIT 1;
 [
   {
@@ -214,9 +214,9 @@ LIMIT 1;
 Returns smallest non-NULL, non-MISSING array element, in N1QL collation order.
 
 ----
-SELECT ARRAY_MIN(t.public_likes) 
-FROM `travel-sample` t 
-WHERE type="hotel" 
+SELECT ARRAY_MIN(t.public_likes)
+FROM `travel-sample` t
+WHERE type="hotel"
 LIMIT 1;
 [
   {
@@ -245,9 +245,9 @@ SELECT ARRAY_POSITION(t.public_likes, "Brian Kilback") FROM `travel-sample` t WH
 Returns new array with value pre-pended.
 
 ----
-SELECT ARRAY_PREPEND("Dave Smith",t.public_likes) 
-FROM `travel-sample` t 
-WHERE type="hotel" 
+SELECT ARRAY_PREPEND("Dave Smith",t.public_likes)
+FROM `travel-sample` t
+WHERE type="hotel"
 LIMIT 1;
 [
   {
@@ -271,9 +271,9 @@ LIMIT 1;
 Returns new array with value appended, if value is not already present, otherwise returns the unmodified input array.
 
 ----
-SELECT ARRAY_PUT(t.public_likes, "Dave Smith") 
-FROM `travel-sample` t 
-WHERE type="hotel" 
+SELECT ARRAY_PUT(t.public_likes, "Dave Smith")
+FROM `travel-sample` t
+WHERE type="hotel"
 LIMIT 1;
 [
   {
@@ -304,9 +304,9 @@ If step is negative, decrements until the smallest number greater than end.
 Returns new array with all occurrences of value removed.
 
 ----
-SELECT ARRAY_REMOVE(t.public_likes, "Vallie Ryan") 
-FROM `travel-sample` t 
-WHERE type="hotel" 
+SELECT ARRAY_REMOVE(t.public_likes, "Vallie Ryan")
+FROM `travel-sample` t
+WHERE type="hotel"
 LIMIT 1;
 [
   {
@@ -333,9 +333,9 @@ Returns new array with all occurrences of value1 replaced with value2.
 If n is given, at most n replacements are performed.
 
 ----
-SELECT ARRAY_REPLACE(t.public_likes, "Vallie Ryan", "Valerie Ryan") 
-FROM `travel-sample` t 
-WHERE type="hotel" 
+SELECT ARRAY_REPLACE(t.public_likes, "Vallie Ryan", "Valerie Ryan")
+FROM `travel-sample` t
+WHERE type="hotel"
 LIMIT 1;
 [
   {
@@ -358,9 +358,9 @@ LIMIT 1;
 Returns new array with all elements in reverse order.
 
 ----
-SELECT ARRAY_REVERSE(t.public_likes) 
-FROM `travel-sample` t 
-WHERE type="hotel" 
+SELECT ARRAY_REVERSE(t.public_likes)
+FROM `travel-sample` t
+WHERE type="hotel"
 LIMIT 1;
 [
   {
@@ -383,9 +383,9 @@ LIMIT 1;
 Returns new array with elements sorted in N1QL collation order.
 
 ----
-SELECT ARRAY_SORT(t.public_likes) 
-FROM `travel-sample` t 
-WHERE type="hotel" 
+SELECT ARRAY_SORT(t.public_likes)
+FROM `travel-sample` t
+WHERE type="hotel"
 LIMIT 1;
 [
   {

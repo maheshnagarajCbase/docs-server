@@ -37,7 +37,7 @@ The following are the command options:
 To set incremental node recovery type for a server:
 
 ----
-couchbase-cli recovery -c 192.168.0.1:8091 -u Administrator -p password \   	
+couchbase-cli recovery -c 192.168.0.1:8091 -u Administrator -p password \
 --server-recovery=192.168.0.2	--recovery-type=delta
 ----
 
@@ -51,17 +51,17 @@ The following example shows a failover, readd, recovery and rebalance operations
 . The rebalancing operation is implemented.
 
 ----
-couchbase-cli failover -c 192.168.0.1:8091 -u Administrator -p password \   	
+couchbase-cli failover -c 192.168.0.1:8091 -u Administrator -p password \
 --server-failover=192.168.0.2
 ----
 
 ----
-couchbase-cli server-readd -c 192.168.0.1:8091 -u Administrator -p password \    	
+couchbase-cli server-readd -c 192.168.0.1:8091 -u Administrator -p password \
 --server-add=192.168.0.2
 ----
 
 ----
-couchbase-cli recovery -c 192.168.0.1:8091 -u Administrator -p password \    	
+couchbase-cli recovery -c 192.168.0.1:8091 -u Administrator -p password \
 --server-recovery=192.168.0.2 --recovery-type=delta
 ----
 

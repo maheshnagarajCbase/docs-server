@@ -69,7 +69,7 @@ At the SSH command prompt, type the following, and then press Enter:
 The setup process, which configures Couchbase Server and sets the data location and other details, is run separately.
 . Make a file system on your Amazon Elastic Block Store (EBS) volume:
 
-  $ sudo mkfs -t ext4      
+  $ sudo mkfs -t ext4
              /dev/*the_connection_you_attached_the_volume_to_for_example_sdf*
 
 . Make a directory and mount the file system:
@@ -78,8 +78,8 @@ The setup process, which configures Couchbase Server and sets the data location 
 
 . Edit your file system configuration to enumerate the volume on startup:
 
-  $ sudo su 
-             $ sudo echo '/dev/sdf /data/db auto noatime,noexec,nodiratime 0 0' >> /etc/fstab   
+  $ sudo su
+             $ sudo echo '/dev/sdf /data/db auto noatime,noexec,nodiratime 0 0' >> /etc/fstab
              $ exit
 
 . Mount the volume:
@@ -101,7 +101,7 @@ For the complete list of ports used for Couchbase Server, see xref:install-ports
 To do so, access the Couchbase Server setup service through the Web-based administration console, which is initially exposed on port 8091.
 If you have not configured a public IP address, or if you want to automate the process, you can use the command-line tools to perform the setup operation as follows:
 
-  $ /opt/couchbase/bin/couchbase-cli cluster-init -c localhost:8091 \ --cluster-init-username=Administrator \ 
+  $ /opt/couchbase/bin/couchbase-cli cluster-init -c localhost:8091 \ --cluster-init-username=Administrator \
              --cluster-init-password=password \
              --cluster-init-port=8091 \
              --cluster-init-ramsize=8000

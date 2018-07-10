@@ -13,7 +13,7 @@ In NoSQL databases, they might consist of these actions:
 == Example
 
 ----
- {"user": "will","type":"Private", "password":"0asd21$1%", 
+ {"user": "will","type":"Private", "password":"0asd21$1%",
   "created":"2012-06-12", "password":"password"}T
 ----
 

@@ -110,7 +110,7 @@ The default is two and the value range is 1-100.
 The setting `XDCR Target Nozzles per Node` affects the level of concurrency as follows:
 +
 ----
-Number of concurrent workers writing to the target cluster  = 
+Number of concurrent workers writing to the target cluster  =
               XDCR Target Nozzles per Node * <Number of Nodes in Target Cluster>
 ----
 
@@ -191,7 +191,7 @@ You can pause or resume replication with filtering expression without restrictio
 For example, if you have installed the `Travel-Sample` bucket and want to replicate a subset of data to a remote cluster, use the regular expression provided below to test it out:
 
 ----
-regular exp - airline* 
+regular exp - airline*
           test key -airline_SFO
 ----
 

@@ -77,7 +77,7 @@ couchbase-cli ssl-manage -c 192.168.0.1:8091 -u Administrator -p password \
 An example output from a successful certificate retrieval:
 +
 ----
-SUCCESS: retrieve certificate to './newCert.pem' 
+SUCCESS: retrieve certificate to './newCert.pem'
       Certificate matches what is seen on GUI
 ----
 
@@ -124,7 +124,7 @@ couchbase-cli ssl-manage -c 192.168.0.1:8091 -u Administrator -p password \
 ----
 +
 ----
-couchbase-cli ssl-manage -c testNode:8091 -u Administrator -p password \          
+couchbase-cli ssl-manage -c testNode:8091 -u Administrator -p password \
         --cluster-cert-info
 ----
 
@@ -148,9 +148,9 @@ couchbase-cli ssl-manage -c 192.168.0.1:8091 -u Administrator -p password \
       AQH/MA0GCSqGSIb3DQEBCwUAA4IBAQCP1WvsSYFAfeBC\nH4iwrZsDCTxw0nuqzoHOI+kU3TzgW75gabTFa5RKXP1anceNHbLBIUUg
       gOwB5Ns/\nlq4zkDeFrQEsR0kytqSzkAypHsKVCNMDfZvqyR22OVtCY9f4I2Dl+ZjUjUTnAe+C\nb39Ei+4B/oVD6w7K/tgo/iku3W
       T777rpZhuiNtU/IFIvlYtMu5+H4Fa6k46eUvav\nulUEyTbqdEcikVR6Vq1WMHR0GB2Ju6AYxTF6pkQHYVZjHcEwVOiTDyNI0MFjFS3
-      Z\nzQE2dZw5tkTBVNynHNqTbwgLyj/b9UZxCT3SE14lO2Xky2HWhSgI3wkck6919doK\nL4PK3qn8\n-----END CERTIFICATE-----\n", 
+      Z\nzQE2dZw5tkTBVNynHNqTbwgLyj/b9UZxCT3SE14lO2Xky2HWhSgI3wkck6919doK\nL4PK3qn8\n-----END CERTIFICATE-----\n",
        "type": "generated"
-              }, 
+              },
               "warnings": []
               }
 ----

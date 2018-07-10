@@ -32,7 +32,7 @@ couchbase-cli bucket-list -c 127.0.0.1:8091 -u Administrator -p password
 default
   bucketType: membase
   authType: sasl
-  saslPassword: 
+  saslPassword:
   numReplicas: 1
   ramQuota: 8923381760
   ramUsed: 3568984

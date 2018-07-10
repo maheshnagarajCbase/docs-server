@@ -34,6 +34,6 @@ The following are the command options:
 Allow notification:
 
 ----
-couchbase-cli setting-notification -c 192.168.0.1:8091 -u Administrator -p password \    
+couchbase-cli setting-notification -c 192.168.0.1:8091 -u Administrator -p password \
 --enable-notification 1
 ----

@@ -6,7 +6,7 @@ DELETE immediately removes the specified document from your keyspace.
 _delete:_
 
 ----
-DELETE FROM keyspace-ref [use-keys-clause] [where-clause] 
+DELETE FROM keyspace-ref [use-keys-clause] [where-clause]
     [limit-clause] [returning-clause]
 ----
 
@@ -80,8 +80,8 @@ DELETE FROM product p USE KEYS "product10" RETURNING p
             "color": "sky blue",
             "dateAdded": "2014-05-06T15:52:18Z",
             "dateModified": "2014-05-06T15:52:18Z",
-            "description": "This product is available on 
-                \u003ca target=\"_blank\" 
+            "description": "This product is available on
+                \u003ca target=\"_blank\"
                 href=\"http://www.amazon.com/gp/product/
                 B005HNKFSM/ref=s9_hps_bw_g198_ir011?pf_rd_m=ATVPDKIKX0DER\
                 u0026pf_rd_s=merchandised-search-5\u0026pf_

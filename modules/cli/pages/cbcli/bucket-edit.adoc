@@ -62,7 +62,7 @@ This option does not apply to memcached-style buckets since you cannot change th
 To edit a bucket for RAM size:
 
 ----
-couchbase-cli bucket-edit -c 192.168.0.1:8091 -u Administrator -p password \ 
+couchbase-cli bucket-edit -c 192.168.0.1:8091 -u Administrator -p password \
 --bucket=test_bucket --bucket-ramsize=200
 ----
 
@@ -76,7 +76,7 @@ couchbase-cli bucket-edit -c 192.168.0.1:8091 -u Administrator -p password \
 To modify a dedicated port bucket and set the eviction policy to `fullEviction`:
 
 ----
-couchbase-cli bucket-edit -c 192.168.0.1:8091 -u Administrator -p password \ 
---bucket=test_bucket --bucket-ramsize=400 \ 
+couchbase-cli bucket-edit -c 192.168.0.1:8091 -u Administrator -p password \
+--bucket=test_bucket --bucket-ramsize=400 \
 --bucket-eviction-policy=fullEviction --enable-flush=1
 ----

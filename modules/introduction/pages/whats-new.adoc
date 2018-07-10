@@ -70,8 +70,8 @@ Additional array levels are supported by chaining the FOR clauses.
 ----
 UPDATE default
 SET i.subitems = ( ARRAY OBJECT_ADD(s, 'new', 'new_value' )
-  FOR s IN i.subitems END ) 
-    FOR s IN ARRAY_FLATTEN(ARRAY i.subitems 
+  FOR s IN i.subitems END )
+    FOR s IN ARRAY_FLATTEN(ARRAY i.subitems
       FOR i IN items END, 1) END;
 ----
 +
@@ -107,7 +107,7 @@ For example, the following query is valid in 4.5.1 and implicitly assigns names 
 SELECT {type, name} AS myobj FROM `travel-sample` LIMIT 1;
 [
   {
-   "myobj": 
+   "myobj":
      {
        "type": "airport"
        "name": "airport_123"

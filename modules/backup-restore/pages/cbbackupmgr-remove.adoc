@@ -31,28 +31,31 @@ The _remove_ command is used to remove a backup repository from disk.
 Below is an example of how to run the remove command.
 The [.path]_/data/backup_ directory is used as the archive directory and the backup repository is named "example".
 
- $ cbbackupmgr list --archive /data/backup 
-  
- Size      Items          Name 
- 91.52MB   -              / 
- 91.52MB   -              + example 
- 91.52MB   -                  + 2016-02-12T12:45:33.329408761-08:00 
- 91.52MB   -                      + travel-sample 
- 322B      0                          bucket-config.json 
- 91.51MB   31569                      + data 
- 91.51MB   31569                          shard_0.fdb 
- 2B        0                          full-text.json 
- 10.00KB   8                          gsi.json 
- 1.72KB    1                          views.json 
-  
- $ cbbackupmgr remove --archive /data/backup --repo example 
-  
- Backup repository `example` deleted successfully from archive `/tmp/backup` 
-  
- $ cbbackupmgr list --archive /data/backup 
-  
- Size      Items          Name 
- 0B        -              /
+[source,console]
+----
+$ cbbackupmgr list --archive /data/backup
+
+Size      Items          Name
+91.52MB   -              /
+91.52MB   -              + example
+91.52MB   -                  + 2016-02-12T12:45:33.329408761-08:00
+91.52MB   -                      + travel-sample
+322B      0                          bucket-config.json
+91.51MB   31569                      + data
+91.51MB   31569                          shard_0.fdb
+2B        0                          full-text.json
+10.00KB   8                          gsi.json
+1.72KB    1                          views.json
+
+$ cbbackupmgr remove --archive /data/backup --repo example
+
+Backup repository `example` deleted successfully from archive `/tmp/backup`
+
+$ cbbackupmgr list --archive /data/backup
+
+Size      Items          Name
+0B        -              /
+----
 
 == Discussion
 

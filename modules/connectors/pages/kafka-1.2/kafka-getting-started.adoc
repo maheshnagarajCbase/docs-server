@@ -46,7 +46,7 @@ Here's an example of a filter class that allows only instances of `MutationMessa
 [source,java]
 ----
 package example;
-                    
+
 import com.couchbase.client.core.message.dcp.MutationMessage;
 import com.couchbase.kafka.DCPEvent;
 import com.couchbase.kafka.filter.Filter;
@@ -64,7 +64,7 @@ Here's an example of an encoder class that takes the document value and converts
 [source,java]
 ----
 package example;
-                    
+
 import com.couchbase.client.core.message.dcp.MutationMessage;
 import com.couchbase.client.deps.io.netty.util.CharsetUtil;
 import com.couchbase.kafka.DCPEvent;
@@ -75,7 +75,7 @@ public class SampleEncoder extends AbstractEncoder {
     public SampleEncoder(final VerifiableProperties properties) {
         super(properties);
     }
-    
+
     @Override
     public byte[] toBytes(final DCPEvent dcpEvent) {
         MutationMessage message = (MutationMessage)dcpEvent.message();
@@ -89,7 +89,7 @@ With those classes in place, you can set up a Couchbase-Kafka bridge:
 [source,java]
 ----
 package example;
-                    
+
 import com.couchbase.kafka.CouchbaseKafkaConnector;
 import com.couchbase.kafka.CouchbaseKafkaEnvironment;
 import com.couchbase.kafka.DefaultCouchbaseKafkaEnvironment;

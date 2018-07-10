@@ -37,28 +37,31 @@ The _compact_ command is used to compact backups in order to free disk space and
 Below is an example of how to run the compaction command.
 The /data/backup directory is used as the archive directory and the backup repository is named "example".
 
- $ cbbackupmgr config --archive=/data/backup --repo=example 
-  
- $ cbbackupmgr backup --archive /data/backup --repo example \ 
- --host 127.0.0.1:8091 --username Administrator --password password 
-  
- $ cbbackupmgr list --archive /data/backup 
- Size      Items          Name 
- 91.52MB   -              / 
- 91.52MB   -              + example 
- 91.52MB   -                  + 2016-02-12T12_45_33.329408761-08_00 
- 91.52MB   -                      + travel-sample 
- 322B      0                          bucket-config.json 
- 91.51MB   31569                      + data 
- 91.51MB   31569                          shard_0.fdb 
- 2B        0                          full-text.json 
- 10.00KB   8                          gsi.json 
- 1.72KB    1                          views.json 
-  
- $ cbbackupmgr compact --archive /data/backup --repo example \ 
- --backup 2016-02-12T12_45_33.329408761-08_00 
-  
- Compaction succeeded, 58589184 bytes freed
+[source,console]
+----
+$ cbbackupmgr config --archive=/data/backup --repo=example
+
+$ cbbackupmgr backup --archive /data/backup --repo example \
+--host 127.0.0.1:8091 --username Administrator --password password
+
+$ cbbackupmgr list --archive /data/backup
+Size      Items          Name
+91.52MB   -              /
+91.52MB   -              + example
+91.52MB   -                  + 2016-02-12T12_45_33.329408761-08_00
+91.52MB   -                      + travel-sample
+322B      0                          bucket-config.json
+91.51MB   31569                      + data
+91.51MB   31569                          shard_0.fdb
+2B        0                          full-text.json
+10.00KB   8                          gsi.json
+1.72KB    1                          views.json
+
+$ cbbackupmgr compact --archive /data/backup --repo example \
+--backup 2016-02-12T12_45_33.329408761-08_00
+
+Compaction succeeded, 58589184 bytes freed
+----
 
 == Discussion
 

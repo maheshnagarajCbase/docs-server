@@ -17,9 +17,9 @@ FROM from-term
 where _from-term_ has the following syntax:
 
 ----
-from-path [ ( [ AS ] alias ) ] [ use-keys-clause ] | 
-from-term join-clause | 
-from-term nest-clause | 
+from-path [ ( [ AS ] alias ) ] [ use-keys-clause ] |
+from-term join-clause |
+from-term nest-clause |
 from-term unnest-clause
 ----
 
@@ -174,10 +174,10 @@ Here is the result set:
 
 ----
 [
-    {"name" : "John Smith", "phone" : "+1-650-555-1234", 
+    {"name" : "John Smith", "phone" : "+1-650-555-1234",
       "address" : { ... } },
-    {"name" : "Jane Brown", "phone" : "+1-650-555-5678", 
-      "address" : { ... } }     
+    {"name" : "Jane Brown", "phone" : "+1-650-555-5678",
+      "address" : { ... } }
 ]
 ----
 
@@ -192,8 +192,8 @@ returns this result set:
 
 ----
 [
-  { "street" : "101 Main St.", "zip" : "94040" },         
-  { "street" : "3500 Wilshire Blvd.", "zip" : "90210" }     
+  { "street" : "101 Main St.", "zip" : "94040" },
+  { "street" : "3500 Wilshire Blvd.", "zip" : "90210" }
 ]
 ----
 
@@ -361,12 +361,12 @@ Using the new [.term]_index joins_, the same query can be written as:
 ----
 Required Index:
 CREATE INDEX beer_brewery_id ON `beer-sample`(brewery_id) WHERE type="beer";
-                 
+
 Optional index:
 CREATE INDEX brewery_state ON `beer-sample`(state) WHERE type="brewery";
-                 
-SELECT * FROM  `beer-sample` brewery JOIN `beer-sample` beer 
-    ON KEY  beer.brewery_id  FOR brewery 
+
+SELECT * FROM  `beer-sample` brewery JOIN `beer-sample` beer
+    ON KEY  beer.brewery_id  FOR brewery
     WHERE  beer.type="beer" AND brewery.type="brewery" AND brewery.state="California";
 ----
 
@@ -374,9 +374,9 @@ If you generalize the same query, it looks like the following:
 
 ----
 CREATE INDEX on-key-for-index-name rhs-expression (lhs-expression-key);
-                 
+
 SELECT projection-list FROM lhs-expression JOIN rhs-expression
-    ON KEY rhs-expression.lhs-expression-key FOR lhs-expression      
+    ON KEY rhs-expression.lhs-expression-key FOR lhs-expression
    [ WHERE predicates ] ;
 ----
 
@@ -488,14 +488,14 @@ Here is the result set:
 
 ----
  [
-    { "name" : "Acme Inc.", "street" : "101 Main St.", 
+    { "name" : "Acme Inc.", "street" : "101 Main St.",
         "zip" : "94040" },
-    { "name" : "Acme Inc.", "street" : "300 Broadway", 
+    { "name" : "Acme Inc.", "street" : "300 Broadway",
 	"zip" : "10011" },
     { "name" : "Roadster Corp.", "street" : "3500 Wilshire Blvd.",
         "zip" : "90210" },
-    { "name" : "Roadster Corp.", "street" : "4120 Alamo Dr.", 
-	"zip" : "75019" }     
+    { "name" : "Roadster Corp.", "street" : "4120 Alamo Dr.",
+	"zip" : "75019" }
 ]
 ----
 
@@ -514,11 +514,11 @@ Here is the result set:
 {"id": "7983345",
  "name": "Takayama Pale Ale",
  "brewer": "Hida Takayama Brewing Corp.",
- "reviews" : [ 
+ "reviews" : [
    {"reviewerName" : "Takeshi Kitano",
          "publication" : "Outdoor Japan Magazine","date": "3/2013"},
    {"reviewerName" : "Moto Ohtake", "publication" : "Japan Beer Times",
-         "date" : "7/2013"} 
+         "date" : "7/2013"}
             ]
 }
 ----
@@ -561,7 +561,7 @@ Recall our invoice objects:
      "customer_key": ...,
      "invoice_date": ...,
      "invoice_item_keys": [ ... ],
-     "total": ...     
+     "total": ...
  }
 ----
 
@@ -573,7 +573,7 @@ And our invoice_item objects:
          "product_key": ...,
          "unit_price": ...,
          "quantity": ...,
-         "item_subtotal": ...     
+         "item_subtotal": ...
 }
 ----
 

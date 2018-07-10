@@ -8,9 +8,9 @@ You can specify an object or an expression that evaluates to an object.
 
 .Example
 ----
-SELECT object_length(`travel-sample`.schedule[0]) 
-FROM `travel-sample` 
-WHERE type = "route"  
+SELECT object_length(`travel-sample`.schedule[0])
+FROM `travel-sample`
+WHERE type = "route"
 LIMIT 1;
 
 "results" : [
@@ -26,9 +26,9 @@ This function returns an array containing the attribute names of the object, in 
 
 .Example
 ----
-SELECT object_names(`travel-sample`.schedule[0]) 
-FROM `travel-sample` 
-WHERE type = "route" 
+SELECT object_names(`travel-sample`.schedule[0])
+FROM `travel-sample`
+WHERE type = "route"
 LIMIT 1;
 
 "results" : [
@@ -53,10 +53,10 @@ In the example below, one of the elements in the special_flights array does not 
 .Example
 ----
 SELECT object_pairs(schedule[0].special_flights[*])
-FROM `travel-sample` 
-WHERE type = "route" 
-    AND destinationairport = "CDG" 
-    AND sourceairport = "TLV" 
+FROM `travel-sample`
+WHERE type = "route"
+    AND destinationairport = "CDG"
+    AND sourceairport = "TLV"
 LIMIT 1;
 {
     "requestID": "60ec6e75-80a1-4e74-a481-a1e87fafa2e5",
@@ -113,10 +113,10 @@ In the example below, one of the elements in the special_flights array does not 
 .Example
 ----
 SELECT object_inner_pairs(schedule[0].special_flights[*])
-FROM `travel-sample` 
-WHERE type = "route" 
-    AND destinationairport = "CDG" 
-    AND sourceairport = "TLV" 
+FROM `travel-sample`
+WHERE type = "route"
+    AND destinationairport = "CDG"
+    AND sourceairport = "TLV"
 LIMIT 1;
 {
     "requestID": "719f4ae0-f139-4f2f-a3b2-549451073721",
@@ -172,11 +172,11 @@ In the example below, one of the elements in the special_flights array does not 
 
 .Example
 ----
-SELECT object_values(schedule[0].special_flights[*]) 
-FROM `travel-sample` 
-WHERE type = "route" 
-    AND destinationairport = "CDG" 
-    AND sourceairport = "TLV" 
+SELECT object_values(schedule[0].special_flights[*])
+FROM `travel-sample`
+WHERE type = "route"
+    AND destinationairport = "CDG"
+    AND sourceairport = "TLV"
 LIMIT 1;
 {
     "requestID": "1d3b3170-690c-4603-b9b5-ab01062fb19a",
@@ -223,11 +223,11 @@ In the example below, one of the elements in the special_flights array does not 
 
 .Example
 ----
-SELECT object_inner_values(schedule[0].special_flights[*]) 
-FROM `travel-sample` 
-WHERE type = "route" 
-    AND destinationairport = "CDG" 
-    AND sourceairport = "TLV" 
+SELECT object_inner_values(schedule[0].special_flights[*])
+FROM `travel-sample`
+WHERE type = "route"
+    AND destinationairport = "CDG"
+    AND sourceairport = "TLV"
 LIMIT 1;
 {
     "requestID": "9a980c9b-dc1d-4911-8a5f-8f250dbb8ba3",
@@ -280,9 +280,9 @@ object_add(object, new_attr_key, new_attr_value)
 
 .Example
 ----
-SELECT object_add(schedule[0], "day_new", 1) 
-FROM `travel-sample` 
-WHERE type = "route"  
+SELECT object_add(schedule[0], "day_new", 1)
+FROM `travel-sample`
+WHERE type = "route"
 LIMIT 1;
 
 "results" : [
@@ -315,9 +315,9 @@ Note that:
 
 .Example
 ----
-SELECT object_put(schedule[0], "day", 1)  
-FROM `travel-sample` 
-WHERE type = "route"  
+SELECT object_put(schedule[0], "day", 1)
+FROM `travel-sample`
+WHERE type = "route"
 LIMIT 1;
 
 "results" : [
@@ -326,7 +326,7 @@ LIMIT 1;
          "day": 1,
          "flight": "AF552",
          "utc": "14:41:00"
-         }    
+         }
     }
 ]
 ----
@@ -346,9 +346,9 @@ Note that:
 
 .Example
 ----
-SELECT object_remove(schedule[0], "day")  
-FROM `travel-sample` 
-WHERE type = "route"  
+SELECT object_remove(schedule[0], "day")
+FROM `travel-sample`
+WHERE type = "route"
 LIMIT 1;
 
 "results" : [
@@ -371,23 +371,23 @@ For all other cases, it returns NULL.
 .Examples
 ----
 SELECT object_unwrap( {"name": "value"} );
-          
+
 "results" : [
     {
         "$1": "value"
     }
 ]
-          
+
 SELECT object_unwrap( {"name": "MISSING" } );
-            
+
 "results" : [
     {
         "$1": "MISSING"
     }
 ]
-          
+
 SELECT object_unwrap( { "name": "value", "name2": "value2" } );
-           
+
 "results" : [
     {
         "$1": null

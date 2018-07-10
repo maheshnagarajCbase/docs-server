@@ -46,7 +46,7 @@ This is a log rotation time interval (in Days, Hours, or Minutes), after which t
 The following CLI syntax is used to configure Couchbase auditing for administrators:
 
 ----
-couchbase-cli 
+couchbase-cli
           setting-audit  OPTIONS
           --audit-log-rotate-interval=[MINUTES]     //log rotation interval
           --audit-log-path=[PATH]                   //target log directory

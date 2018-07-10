@@ -15,12 +15,12 @@ The returning clause specifies the function META().id to return the key of the i
 
 .Query
 ----
-INSERT INTO `travel-sample` ( KEY, VALUE ) 
-  VALUES 
-  ( 
-    "k001", 
-    { "id": "01", "type": "airline"} 
-  ) 
+INSERT INTO `travel-sample` ( KEY, VALUE )
+  VALUES
+  (
+    "k001",
+    { "id": "01", "type": "airline"}
+  )
 RETURNING META().id as docid, *;
 ----
 
@@ -209,9 +209,9 @@ It can be a string or an expression that produces a string.
 For example, you can specify a key using the following expression: `"airline" || TOSTRING(1234)` as shown in the following example:
 
 ----
-INSERT INTO `travel-sample` ( KEY, VALUE ) 
-                    VALUES ( "airline" || TOSTRING(1234), 
-                    { "callsign": "" } ) 
+INSERT INTO `travel-sample` ( KEY, VALUE )
+                    VALUES ( "airline" || TOSTRING(1234),
+                    { "callsign": "" } )
                     RETURNING META().id;
 ----
 
@@ -222,9 +222,9 @@ The KEY cannot be MISSING or NULL, or duplicate of an existing key.
 If you don’t require the document key to be in a specific format, you can use the function xref:n1ql-language-reference/metafun.adoc#topic_8_8[UUID()] to generate a unique key as shown in the following example:
 
 ----
-INSERT INTO `travel-sample` ( KEY, VALUE ) 
-            VALUES ( UUID(), 
-                    { "callsign": "" } ) 
+INSERT INTO `travel-sample` ( KEY, VALUE )
+            VALUES ( UUID(),
+                    { "callsign": "" } )
 RETURNING META().id;
 ----
 
@@ -239,11 +239,11 @@ Take a look at some examples:
 +
 .Query
 ----
-INSERT INTO `travel-sample` (KEY, VALUE) 
-    VALUES ( "airline::432", 
-              { "callsign": "", 
-                "country" : "USA", 
-                "type" : "airline"} ) 
+INSERT INTO `travel-sample` (KEY, VALUE)
+    VALUES ( "airline::432",
+              { "callsign": "",
+                "country" : "USA",
+                "type" : "airline"} )
 RETURNING META().id as docid;
 ----
 +
@@ -272,11 +272,11 @@ RETURNING META().id as docid;
 +
 .Query
 ----
-INSERT INTO `travel-sample` (KEY, VALUE) 
-    VALUES ( "airline::1432", 
-            { "callsign": NULL, 
-              "country" : "USA", 
-              "type" : "airline"} ) 
+INSERT INTO `travel-sample` (KEY, VALUE)
+    VALUES ( "airline::1432",
+            { "callsign": NULL,
+              "country" : "USA",
+              "type" : "airline"} )
 RETURNING *;
 ----
 +
@@ -295,11 +295,11 @@ RETURNING *;
 +
 .Query
 ----
-INSERT INTO `travel-sample` (KEY, VALUE) 
-    VALUES ( "airline::142", 
-            { "callsign": MISSING, 
-              "country" : "USA", 
-              "type" : "airline"} ) 
+INSERT INTO `travel-sample` (KEY, VALUE)
+    VALUES ( "airline::142",
+            { "callsign": MISSING,
+              "country" : "USA",
+              "type" : "airline"} )
 RETURNING *;
 ----
 +
@@ -318,9 +318,9 @@ RETURNING *;
 You can also insert a NULL JSON document, such as:
 +
 ----
-INSERT INTO `travel-sample` (KEY, VALUE) 
-    VALUES ( "1021", 
-              { } ) 
+INSERT INTO `travel-sample` (KEY, VALUE)
+    VALUES ( "1021",
+              { } )
               RETURNING *;
 ----
 +
@@ -334,9 +334,9 @@ The following example queries the travel-sample bucket for documents of type "ai
 
 .Query
 ----
-INSERT INTO `travel-sample` (KEY UUID(), VALUE _country) 
-    SELECT _country FROM `travel-sample` _country 
-      WHERE type = "airport" AND airportname = "Heathrow" 
+INSERT INTO `travel-sample` (KEY UUID(), VALUE _country)
+    SELECT _country FROM `travel-sample` _country
+      WHERE type = "airport" AND airportname = "Heathrow"
 RETURNING *;
 ----
 
@@ -368,11 +368,11 @@ Consider the following examples.
 +
 .Query
 ----
-INSERT INTO `travel-sample` (KEY, VALUE) 
-    VALUES ( "airline_24444", 
-            { "callsign": "USA-AIR", 
-              "country" : "USA", 
-              "type" : "airline"}) 
+INSERT INTO `travel-sample` (KEY, VALUE)
+    VALUES ( "airline_24444",
+            { "callsign": "USA-AIR",
+              "country" : "USA",
+              "type" : "airline"})
 RETURNING META().id as docid, country;
 ----
 +
@@ -390,11 +390,11 @@ The following example uses the UUID() function to generate the key, and shows th
 +
 .Query
 ----
-INSERT INTO `travel-sample` (KEY, VALUE) 
-    VALUES ( UUID(), 
-            { "callsign": [ "USA-AIR", "America-AIR" ], 
-              "country" : "USA", 
-              "type" : "airline"} ) 
+INSERT INTO `travel-sample` (KEY, VALUE)
+    VALUES ( UUID(),
+            { "callsign": [ "USA-AIR", "America-AIR" ],
+              "country" : "USA",
+              "type" : "airline"} )
 RETURNING META().id as docid, callsign[ARRAY_LENGTH(callsign)-1];
 ----
 +
@@ -444,16 +444,16 @@ The following example inserts a new document with key"1025" and type "airline" i
 +
 .Query
 ----
-INSERT INTO `travel-sample` (KEY,VALUE) 
-  VALUES ( "1025", 
+INSERT INTO `travel-sample` (KEY,VALUE)
+  VALUES ( "1025",
             {     "callsign": "MY-AIR",
                   "country": "United States",
                   "iata": "Z1",
                   "icao": "AQZ",
                   "id": "1011",
                   "name": "80-My Air",
-                  "type": "airline" 
-            } ) 
+                  "type": "airline"
+            } )
 RETURNING *;
 ----
 +
@@ -491,10 +491,10 @@ RETURNING *;
 Performing Bulk Inserts:: Use the INSERT statement to batch insert multiple documents using the following syntax:
 +
 ----
-INSERT INTO keyspace (KEY, VALUE) 
-  VALUES ( "1", { "value": "one" } ), 
-  VALUES ( "2", { "value": "two" } ), 
-  …, 
+INSERT INTO keyspace (KEY, VALUE)
+  VALUES ( "1", { "value": "one" } ),
+  VALUES ( "2", { "value": "two" } ),
+  …,
   VALUES ( "n", { "value": "n" } );
 ----
 +
@@ -502,8 +502,8 @@ The following example inserts two documents with keys "airline_4444" and "airlin
 +
 .Query
 ----
-INSERT INTO `travel-sample` (KEY,VALUE) 
-VALUES ( "airline_4444", 
+INSERT INTO `travel-sample` (KEY,VALUE)
+VALUES ( "airline_4444",
     { "callsign": "MY-AIR",
       "country": "United States",
       "iata": "Z1",
@@ -517,7 +517,7 @@ VALUES ( "4445", { "callsign": "AIR-X",
       "icao": "ARX",
       "name": "10-AirX",
       "id": "4445",
-      "type": "airline"} ) 
+      "type": "airline"} )
 RETURNING *;
 ----
 +
@@ -570,8 +570,8 @@ It then inserts the result of the select statement (a well-formed JSON document)
 +
 .Query
 ----
-INSERT INTO `travel-sample` (key UUID(), value _country) 
-    SELECT _country FROM `travel-sample` _country 
+INSERT INTO `travel-sample` (key UUID(), value _country)
+    SELECT _country FROM `travel-sample` _country
       WHERE type = "airport" AND airportname = "Heathrow";
 ----
 +
@@ -597,10 +597,10 @@ The result shows the META().id generated as a result of this concatenation (high
 +
 .Query
 ----
-INSERT INTO `travel-sample` (KEY k1||"::"||clock_str(), value t) 
-    SELECT DISTINCT t.country AS k1,t 
-      FROM `travel-sample` t 
-      WHERE type = "airport" LIMIT 5 
+INSERT INTO `travel-sample` (KEY k1||"::"||clock_str(), value t)
+    SELECT DISTINCT t.country AS k1,t
+      FROM `travel-sample` t
+      WHERE type = "airport" LIMIT 5
 RETURNING META().id as docid, *;
 ----
 +
@@ -649,8 +649,8 @@ RETURNING META().id as docid, *;
 Using Insert to Copy Bucket Data to Another Bucket:: Use the INSERT statement to create a copy of bucket_1 under a new name bucket_2 using:
 +
 ----
-INSERT INTO bucket_2(key _k, value _v) 
-    SELECT META().id _k, _v 
+INSERT INTO bucket_2(key _k, value _v)
+    SELECT META().id _k, _v
       FROM bucket_1 _v;
 ----
 
@@ -667,14 +667,14 @@ For brevity, we SELECT only 4 documents.
 
 .Query
 ----
-INSERT INTO `travel-sample` (KEY UUID()) 
-    SELECT x.name, x.city, "landmark_hotels" AS type 
-      FROM `travel-sample` x 
-      WHERE x.type = "hotel" and x.city WITHIN 
-        ( SELECT DISTINCT t.city 
-            FROM `travel-sample` t 
-            WHERE t.type = "landmark" ) 
-      LIMIT 4 
+INSERT INTO `travel-sample` (KEY UUID())
+    SELECT x.name, x.city, "landmark_hotels" AS type
+      FROM `travel-sample` x
+      WHERE x.type = "hotel" and x.city WITHIN
+        ( SELECT DISTINCT t.city
+            FROM `travel-sample` t
+            WHERE t.type = "landmark" )
+      LIMIT 4
 RETURNING *;
 ----
 
@@ -721,12 +721,12 @@ Inserting Values Using Functions:: The following example uses multiple functions
 .Query
 ----
 cbq> \set -$faa_code "blr" ;
-cbq> INSERT INTO `travel-sample` (KEY, VALUE) 
-      VALUES ("airport_" || UUID(), 
-             { "type" : "airport", 
-               "tz" : "India Standard Time", 
-               "country" : "India", 
-               "faa" : UPPER($faa_code)} )  
+cbq> INSERT INTO `travel-sample` (KEY, VALUE)
+      VALUES ("airport_" || UUID(),
+             { "type" : "airport",
+               "tz" : "India Standard Time",
+               "country" : "India",
+               "faa" : UPPER($faa_code)} )
 RETURNING *;
 ----
 
@@ -768,13 +768,13 @@ The INSERT statement has some of the attribute values preset, and takes the docu
 +
 .Query
 ----
-cbq> PREPARE ins_india FROM 
-      INSERT INTO `travel-sample` (KEY, VALUE) 
-        VALUES ( $key, 
-                { "type" : "airport", 
-                  "tz" : "India Standard Time", 
-                  "country" : "India", 
-                  "faa" : $faa_code} )  
+cbq> PREPARE ins_india FROM
+      INSERT INTO `travel-sample` (KEY, VALUE)
+        VALUES ( $key,
+                { "type" : "airport",
+                  "tz" : "India Standard Time",
+                  "country" : "India",
+                  "faa" : $faa_code} )
 RETURNING *;
 ----
 +
@@ -907,13 +907,13 @@ $ curl -v http://localhost:8093/query/service -d 'prepared="ins_india"&$key="air
 > Accept: */*
 > Content-Length: 57
 > Content-Type: application/x-www-form-urlencoded
-> 
+>
 * upload completely sent off: 57 out of 57 bytes
 < HTTP/1.1 200 OK
 < Content-Length: 542
 < Content-Type: application/json; version=1.5.0
 < Date: Wed, 10 Aug 2016 23:12:55 GMT
-< 
+<
 {
     "requestID": "adb2f0ec-8d55-490e-a4ce-2b09737c7b23",
     "signature": {
@@ -951,13 +951,13 @@ For example, the following REST API throws error because of spaces before $faa_c
  > Accept: */*
  > Content-Length: 59
  > Content-Type: application/x-www-form-urlencoded
- > 
+ >
  * upload completely sent off: 59 out of 59 bytes
  < HTTP/1.1 200 OK
  < Content-Length: 490
  < Content-Type: application/json; version=1.5.0
  < Date: Wed, 10 Aug 2016 23:12:41 GMT
- < 
+ <
  {
      "requestID": "13fa81a2-84a6-4db4-b51f-474be4b86006",
      "signature": {
@@ -1030,18 +1030,18 @@ Then, it inserts the documents into the specified keyspace (shown by the operato
 
 .Query
 ----
-EXPLAIN INSERT INTO `travel-sample` (KEY,VALUE) 
-VALUES ( "1025", 
+EXPLAIN INSERT INTO `travel-sample` (KEY,VALUE)
+VALUES ( "1025",
           { "callsign": "SKY-AIR",
             "country": "United States",
             "id": "1025",
             "type": "airline"
           } ),
-VALUES ( "1026", 
+VALUES ( "1026",
           { "callsign": "F1-AIR",
             "country": "United States",
             "id": "1014"
-          } ) 
+          } )
 RETURNING *;
 ----
 
@@ -1115,8 +1115,8 @@ In this example, the Query Engine first executes the SELECT statement and then u
 
 .Query
 ----
-EXPLAIN INSERT INTO `travel-sample` (key UUID(), value _country) 
-    SELECT _country FROM `travel-sample` _country 
+EXPLAIN INSERT INTO `travel-sample` (key UUID(), value _country)
+    SELECT _country FROM `travel-sample` _country
       WHERE type = "airport" AND airportname = "Heathrow";
 ----
 

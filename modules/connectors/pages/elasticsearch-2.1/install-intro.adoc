@@ -55,7 +55,7 @@ DONE Installed transport-couchbase
 . Set the user name and password for the plug-in:
 +
 ----
-echo "couchbase.password: password" >> config/elasticsearch.yml; 
+echo "couchbase.password: password" >> config/elasticsearch.yml;
 echo "couchbase.username: Administrator" >> config/elasticsearch.yml
 ----
 
@@ -136,9 +136,9 @@ internalSettings -d xdcrMaxConcurrentReps=8
 When Couchbase Server successfully updates this setting, it sends a response similar to this:
 +
 ----
-HTTP/1.1 200 OK 
+HTTP/1.1 200 OK
 Server: Couchbase Server 3.0.0-1209-rel
-Pragma: no-cache Date: Wed, 28 Nov 2012 18:20:22 GMT 
+Pragma: no-cache Date: Wed, 28 Nov 2012 18:20:22 GMT
 Content-Type: application/json Content-Length: 188
 Cache-Control: no-cache
 ----

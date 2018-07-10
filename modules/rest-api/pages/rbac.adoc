@@ -80,16 +80,19 @@ GET /settings/rbac/users
 The list does not include built-in users.
 +
 In the following example, the output of the command shows that John Doe was assigned to the role of the Bucket Administrator for the default bucket, while Alice Smith is the Replication Administrator.
++
+[source,console]
+----
+$ curl -X GET http://Administrator:asdasd@127.0.0.1:8091/settings/rbac/users
 
- $ curl -X GET http://Administrator:asdasd@127.0.0.1:8091/settings/rbac/users
-             
-      [{"name":"John Doe","id":"johndoe","roles":[
-      {"role":"admin"}
-      ,
-       {"role":"bucket_admin","bucket_name":"default"}
-       ]},{"name":"alice-smith","id":"alicesmith","roles":[
-       {"role":"replication_admin"}
-       ]}]
+     [{"name":"John Doe","id":"johndoe","roles":[
+     {"role":"admin"}
+     ,
+      {"role":"bucket_admin","bucket_name":"default"}
+      ]},{"name":"alice-smith","id":"alicesmith","roles":[
+      {"role":"replication_admin"}
+      ]}]
+----
 
 Set names and roles for specified user IDs <user_id>::
 +
@@ -98,17 +101,20 @@ PUT /settings/rbac/users/<user_id>
 ----
 +
 In this example, John Doe is assigned to be the Cluster Administrator and a Bucket Administrator for the default bucket, while Alice Smith is assigned to be the Replication Administrator:
++
+[source,console]
+----
+$ curl -X PUT --data "name=John Doe&roles=cluster_admin,bucket_admin[default]" \
+       http://Administrator:asdasd@127.0.0.1:8091/settings/rbac/users/johndoe
 
- $ curl -X PUT --data "name=John Doe&roles=cluster_admin,bucket_admin[default]" \
-        http://Administrator:asdasd@127.0.0.1:8091/settings/rbac/users/johndoe
-        
-        [{"name":"John Doe","id":"johndoe,"roles":[
-        {"role":"cluster_admin"}
-        ,
-        {"role":"bucket_admin","bucket_name":"default"}
-        ]},{"name":"Alice Smith","id":"alicesmith","roles":[
-        {"role":"replication_admin"}
-        ]}]
+       [{"name":"John Doe","id":"johndoe,"roles":[
+       {"role":"cluster_admin"}
+       ,
+       {"role":"bucket_admin","bucket_name":"default"}
+       ]},{"name":"Alice Smith","id":"alicesmith","roles":[
+       {"role":"replication_admin"}
+       ]}]
+----
 
 Delete users::
 +
@@ -120,7 +126,7 @@ In this example, Alice Smith was deleted as the Replication Administrator and th
 
  $ curl -X DELETE http://Administrator:asdasd@127.0.0.1:8091/settings/rbac/users/alicesmith
        [{"name":"John Doe","id":"johndoe,"roles":[
-        {"role":"cluster_admin"}     
+        {"role":"cluster_admin"}
         ]}]
 
 Check multiple permissions::
@@ -163,11 +169,11 @@ His role is set as admin.
           rbacPermissionList().cluster_indexes_write('ritam123','password',host=self.master_ip,servers=self.servers, \
           cluster=self.cluster,httpCode= \
           [200, 201],user_role='admin’) - \
-          This is the actual call to function, note the httpCode this is expected httpCode to be returned. 
+          This is the actual call to function, note the httpCode this is expected httpCode to be returned.
           2016-06-13 03:35:28,487 - root - INFO -  ----- Permission set is ------------\
           {'indexes': "settings/indexes;POST;{'indexerThreads':5}", 'max_paralled_index': \
           "settings/maxParallelIndexers;POST;{'globalValue':'8'}"} - \
-          You can the the REST API for cluster_index write permission. 
+          You can the the REST API for cluster_index write permission.
           {u'indexerThreads': 5}
           <type 'dict'>
             indexerThreads=5

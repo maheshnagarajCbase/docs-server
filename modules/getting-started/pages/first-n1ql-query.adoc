@@ -149,7 +149,7 @@ The `IS NOT MISSING` clause on the `brewery_id `field tells N1QL to return only 
 
 [source,sql]
 ----
-cbq> SELECT * FROM `beer-sample` WHERE brewery_id IS NOT MISSING 
+cbq> SELECT * FROM `beer-sample` WHERE brewery_id IS NOT MISSING
      AND type="beer" LIMIT 1;
 ----
 
@@ -157,7 +157,7 @@ The following query returns the `brewery_id` and `name` fields from 5 beer docum
 
 [source,sql]
 ----
-cbq> SELECT brewery_id, name FROM `beer-sample` 
+cbq> SELECT brewery_id, name FROM `beer-sample`
      WHERE brewery_id IS NOT MISSING AND type="beer" LIMIT 5;
 ----
 
@@ -166,7 +166,7 @@ It orders them alphabetically by the `brewery_id` field and does not include any
 
 [source,sql]
 ----
-cbq> SELECT DISTINCT brewery_id FROM `beer-sample` 
+cbq> SELECT DISTINCT brewery_id FROM `beer-sample`
      WHERE brewery_id IS NOT MISSING ORDER BY brewery_id LIMIT 5;
 ----
 

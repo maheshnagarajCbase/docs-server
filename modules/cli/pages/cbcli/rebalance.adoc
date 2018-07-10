@@ -56,22 +56,22 @@ The following are the command options:
 Removes a node from a cluster and rebalances:
 
 ----
-couchbase-cli rebalance -c 192.168.0.1:8091 -u Administrator -p password \ 
+couchbase-cli rebalance -c 192.168.0.1:8091 -u Administrator -p password \
 --server-remove=192.168.0.2:8091
 ----
 
 Adds a node to a cluster and rebalances:
 
 ----
-couchbase-cli rebalance -c 192.168.0.1:8091 -u Administrator -p password \  
---server-add=192.168.0.2:8091 --server-add-username=Administrator \ 
+couchbase-cli rebalance -c 192.168.0.1:8091 -u Administrator -p password \
+--server-add=192.168.0.2:8091 --server-add-username=Administrator \
 --server-add-password=password
 ----
 
 Removes and adds nodes from/to a cluster and rebalances:
 
 ----
-couchbase-cli rebalance -c 192.168.0.1:8091 -u Administrator -p password \  
+couchbase-cli rebalance -c 192.168.0.1:8091 -u Administrator -p password \
 --server-remove=192.168.0.2 --server-add=192.168.0.4 \
 --server-add-username=Administrator --server-add-password=password
 ----

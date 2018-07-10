@@ -20,8 +20,8 @@ There can only be zero or one index key output per document key.
 For example, you can create a global secondary index, also referred to as _index_, on name that indexes beer name attributes for documents of type "beer" using the following CREATE INDEX statement in N1QL.
 
 ----
-    CREATE INDEX Index1_beer_name 
-    ON `beer-sample`(name) 
+    CREATE INDEX Index1_beer_name
+    ON `beer-sample`(name)
     WHERE type="beer" USING GSI;
 ----
 
