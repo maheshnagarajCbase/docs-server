@@ -25,13 +25,13 @@ The following are the command options:
 |===
 | Options | Description
 
-| `[add | remove]`
+| `[add \| remove]`
 | To add or remove UID from a role
 
 | `--rolename=`
 | `admin:full,``admin:readonly`, `admin:cluster`,` admin:replication`, `admin:bucket`, `admin:view`
 
-| `--bucketname=[* | bucketname]`
+| `--bucketname=[* \| bucketname]`
 | A valid option for `bucketadmin` and `viewadmin`.
 Default is `*`.
 

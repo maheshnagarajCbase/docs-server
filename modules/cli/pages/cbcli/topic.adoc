@@ -28,7 +28,7 @@ The following are the command options:
 | `--authentication-source=`
 | ‘ldap’
 
-| `--enable-source=[0|1]`
+| `--enable-source=[0\|1]`
 | Enables/disables the authentication source (yes=1, no=0).
 |===
 
