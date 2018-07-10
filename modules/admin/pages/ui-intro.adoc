@@ -15,6 +15,9 @@ The Cluster Overview screen contains three sections: Cluster, Buckets, and Serve
 
 The [.uicontrol]*Cluster* section provides information on the RAM and disk usage information for your cluster.
 
+[#image_w5k_jwp_ht]
+image::ui-cluster.png[,720,align=left]
+
 For the RAM information, you are provided with a graphical representation of your RAM situation, including:
 
 * `Total in Cluster`
@@ -52,6 +55,8 @@ This figure shows the amount of space available on the configured path after non
 
 The quantity of disk space in use by data other than Couchbase information.
 
+For memory, it is comprised of the memory consumed by all other Couchbase Server processes (`beam.smp`, memcached, etc.), other processes, and that used by the operating system for disk cache.
+
 * `In Use`
 
 The amount of disk space being used to store actively information on disk.
@@ -63,6 +68,8 @@ The free space available for storing objects on disk.
 == Buckets
 
 The [.uicontrol]*Buckets* section provides two graphs showing the `Operations per second` and `Disk fetches per second`.
+
+image::web-console-cluster-overview-buckets.png[,720]
 
 The `Operations per second` provides information on the level of activity on the cluster in terms of storing or retrieving objects from the data store.
 

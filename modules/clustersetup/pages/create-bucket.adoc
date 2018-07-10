@@ -82,6 +82,8 @@ image::admin/picts/bucket-auto-compact.png[,600,align=left]
 
 The Flush option deletes every object in a bucket and is disabled (unchecked) by default.
 
+It is used *exclusively* for one purpose: to enable your application to use the flush method and *delete every object in the bucket*.
+
 Use the Flush option sparingly.
 It is highly recommended that you never run with this option enabled in production unless you absolutely must.
 It can be as dangerous as it sounds.

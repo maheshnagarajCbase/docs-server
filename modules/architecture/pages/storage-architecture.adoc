@@ -66,3 +66,13 @@ After compaction, the orphaned references are removed and a continuous file is c
 .Compaction in Couchbase Server
 [#fig_hrv_3x3_ws]
 image::compaction.png[,350]
+
+// Compaction process can be run automatically by the system or manually by an
+// administrator.
+// You can also configure auto-compaction to trigger compaction based on
+// fragmentation percentage or time interval and can be configured separately for views, indexes, or
+// data files.<fig id="fig_ex1_5x3_ws">
+// <title>Configuring auto-compaction</title>
+// <image placement="break" href="images/auto-compaction-config.png" width="600"
+// id="image_fx1_5x3_ws"/>
+// </fig>

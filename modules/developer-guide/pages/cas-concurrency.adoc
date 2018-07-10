@@ -20,6 +20,10 @@ When applications provide the CAS, server will check the application-provided ve
 
 == Demonstration
 
+The following demonstrates how the server handles CAS.
+A use case for employing the CAS is when adding a new field to an existing document.
+At the application level, this requires the following steps:
+
 [#ul_ehb_nts_zs]
 . Read entire document.
 . Perform modification locally.

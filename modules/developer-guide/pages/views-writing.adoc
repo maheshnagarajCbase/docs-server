@@ -490,6 +490,9 @@ In the above function, the array of data values is iterated over and added up, w
 For `reduce()` functions, they should be both transparent and standalone.
 For example, the `_sum` function did not rely on global variables or parsing of existing data and didn’t need to call itself; hence it is also transparent.
 
+To handle incremental MapReduce functionality (that is, updating an existing view), each function must also be able to handle and consume the functions own output.
+In an incremental situation, the function must be handled both the new records, and previously computed reductions:
+
 ----
 f(keys, values) = f(keys, [ f(keys, values) ])
 ----
@@ -497,6 +500,11 @@ f(keys, values) = f(keys, [ f(keys, values) ])
 The following diagram shows previous reductions that are included within the array of information and are re-supplied to the reduce function as an element of the array of values supplied to the reduce function.
 
 image::custom-rereduce.png[,600]
+
+The input of a reduce function can be not only the raw data from the map phase, but also the output of a previous reduce phase.
+This is called `rereduce`, and can be identified by the third argument to the `reduce()`.
+When the `rereduce` argument is true, both the `key` and `values` arguments are arrays, with the corresponding element in each containing the relevant key and value.
+The `key[1]` is the key related to the value of `value[1]`.
 
 An example of this can be seen by considering an expanded version of the `sum` function showing the supplied values for the first iteration of the view index building:
 

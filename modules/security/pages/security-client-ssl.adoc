@@ -46,6 +46,8 @@ A new port `18092` is established for view access: `https://couchbase_server:180
 
 == Supported ciphers
 
+Couchbase Server uses the ciphers that are accepted by default by OpenSSL.
+
 The default is to have high-security ciphers built in with openSSL.
 For example, on the MAC OS these are:
 
@@ -58,6 +60,8 @@ You can override this selection by setting the environment variable before start
 `COUCHBASE_SSL_CIPHER_LIST`= <[.var]`list of ciphers to accept`>
 
 Set the variable to `COUCHBASE_SSL_CIPHER_LIST= MEDIUM, HIGH` to include only medium- and high-security ciphers for your installation.
+
+For example, on the MAC OS these are:
 
 * SEED-SHA\...YES
 * AES256-SHA\...YES

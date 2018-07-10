@@ -71,6 +71,8 @@ To obtain information about nodes in a Couchbase cluster, use the `/pools/defaul
 
 == CLI tools and parameters
 
+The following tools parameters have been deprecated, removed, or are not supported.
+
 .Deprecated tools
 [#table_t42_phq_54,cols="59,59,20,20"]
 |===

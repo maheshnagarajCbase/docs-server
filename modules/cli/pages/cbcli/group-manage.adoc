@@ -74,6 +74,8 @@ couchbase-cli group-manage -c 192.168.0.1:8091 -u myAdminName -p myAdminPassword
 --create --group-name=myGroupName
 ----
 
+Two servers are added to a server group using the `group-manage` command.
+
 ----
 couchbase-cli group-manage -c 192.168.0.1:8091 -u myAdminName -p myAdminPassword \
 --group-name=myNewGroup --add-servers="10.1.1.1:8091;10.1.1.2:8091"

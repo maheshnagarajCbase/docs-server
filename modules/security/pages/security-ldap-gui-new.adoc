@@ -47,6 +47,8 @@ However, if a user ID was not entered in the UI either as the full or read-only 
 
 == Test LDAP settings
 
+To test the LDAP settings:
+
 . Sign out of the Couchbase Web Console.
 . Try to log in with the new administrative credentials.
  ** If you enter the credentials of the full administrator, the screen will provide full access to all functions available through the Couchbase Web Console (see the [.uicontrol]*LDAP Auth Setup* screen above).

@@ -6,6 +6,9 @@ Release notes for the 1.0 version of the Spark connector.
 
 == Couchbase Spark Connector 1.0.1 GA (December 2015)
 
+Version 1.0.1 is the first bugfix release of the 1.0.x series.
+It brings stability improvements and minor enhancements:
+
 *Spark Core*
 
 * https://www.couchbase.com/issues/browse/SPARKC-39[SPARKC-39]: Javac compatibility has been set to 1.7.

@@ -45,6 +45,8 @@ This is specified as the `ReplicateTo` option in most SDKs.
 . The [.term]_persistence_ of the modification: how many persisted copies of the modified record must exist.
 Often found as a `PersistTo` option.
 
+Examples of these settings include:
+
 [#ul_h5y_z4s_zs]
 * Ensure the modification is stored (on disk) on the active (master) node.
 * Ensure the modification exists (in memory) on at least one replica.

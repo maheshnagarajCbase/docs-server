@@ -23,6 +23,8 @@ Views screen:: The final section provides a list of the design documents and eac
 
 == Development views
 
+When viewing [.uicontrol]*Development Views*, you can perform the following actions:
+
 Compact::
 Compact the view index with an associated design document.
 This action compacts the view index and recovers space used to store the view index on the disk.
@@ -42,6 +44,8 @@ Edit:: Clicking on [.uicontrol]*Edit* or clicking the view name opens the view e
 Delete:: Deletes an individual view.
 
 == Production views
+
+When viewing [.uicontrol]*Production Views* you can perform the following operations on each design document:
 
 Compact::
 Compact the view index with an associated design document.

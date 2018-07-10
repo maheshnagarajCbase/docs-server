@@ -6,7 +6,13 @@ How Couchbase SDKs connect to the cluster, and what an application developer or 
 
 == Basic connection overview
 
+Couchbase is a distributed network system with many services.
+Couchbase SDKs simplify the connection process to the system by providing a convenient and unified access point which allows applications to use these services across one or more nodes without knowing which services are on which nodes and without needing to know the precise details of the cluster topology or membership.
+
 == How Couchbase SDKs connect to the cluster
+
+Couchbase SDKs connect to the cluster using a two step process.
+The first step is the initial connection to the cluster known as bootstrapping, and the second step is connecting to individual services.
 
 NOTE: The term [.term]_connection_ is used loosely here to indicate a logical connection.
 It is often the case that the SDK will use the same physical (TCP) connection for both initial bootstrapping and subsequent service access.

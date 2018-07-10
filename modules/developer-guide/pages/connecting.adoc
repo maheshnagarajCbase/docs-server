@@ -43,7 +43,11 @@ cb = Bucket('couchbase://10.0.0.31/default')
 cb.upsert('docid', {'new': 'document', 'fields': []})
 ----
 
+https://github.com/couchbaselabs/devguide-examples/blob/master/nodejs/connecting.js[node.js] | https://github.com/couchbaselabs/devguide-examples/blob/master/java/src/main/java/com/couchbase/devguide/ConnectionBase.java[Java] | https://github.com/couchbaselabs/devguide-examples/blob/master/go/connecting.go[Go] | .NET | https://github.com/couchbaselabs/devguide-examples/blob/master/c/connecting.c[C] | https://github.com/couchbaselabs/devguide-examples/blob/master/python/connecting.py[Python]
+
 == Connecting from the command line
+
+You may direct the _cbc_ command line utility to a cluster by specifying the connection string via the -U option, for example:
 
  $ cbc cat airport_4542 -U couchbase://10.0.0.31/travel-sample
 
@@ -80,3 +84,5 @@ NOTE: See xref:connection-advanced.adoc#concept_oml_lpm_zs[Advanced connection d
 ----
 couchbase://cbnode3.mybiz.com/default?operation_timeout=5.5&config_total_timeout=15&http_poolsize=0
 ----
+
+Additional options may be found in the connection string reference for your SDK.

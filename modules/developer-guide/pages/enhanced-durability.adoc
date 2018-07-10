@@ -16,6 +16,11 @@ The core issue with CAS-based checking is that a different CAS on a replica may 
 
 == Sequence number based durability
 
+In Couchbase 4.0, an enhanced mode of durability, based on _sequence numbering_ is available.
+To this effect, an application may opt to enable receiving sequence data for each mutation.
+This provides the SDK with an ever-increasing sequence number for a given mutation.
+The sequence number data contains:
+
 [#ul_cff_vmg_lt]
 * A random identifier representing (called a [.underline]#UUID#) the current cluster state.
 This state is changed whenever something happens to the cluster (for example, a failover).
@@ -32,6 +37,11 @@ Unlike CAS-based polling, it is simple to distinguish various failure cases:
 * If the UUID is different than the one available at the client, it means the mutation has been lost.
 
 == Enabling enhanced durability via the SDK
+
+Enhanced durability can be enabled and used transparently via the SDK.
+Enhanced durability is disabled by default as it adds an overhead of 16 bytes per operation.
+An example for the Python client is presented below.
+Consult your SDK's documentation to see how to enable enhanced durability for your SDK:
 
 ----
 from couchbase.bucket import Bucket

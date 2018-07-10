@@ -65,6 +65,9 @@ You can also reset the counter using the REST API:
         http://localhost:8091/settings/autoFailover/resetCount
 ----
 
+Once the counter has been reset, the Cluster Manager could failover another node of the cluster.
+So again, reset the counter only if the criteria for automatic failover are met.
+
 == When Not to Use Automatic Failover
 
 Automatic failover is appropriate in most environments.

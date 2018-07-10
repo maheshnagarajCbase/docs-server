@@ -23,6 +23,8 @@ The update methods differ in behavior in respect to the existing state of the do
 * _replace_ will only replace the document if the given ID already exists within the database.
 * _upsert_ will always replace the document, ignoring whether the ID has already existed or not.
 
+Since Couchbase’s KV store may be thought of as a distributed hashmap or dictionary, the following code samples are explanatory of Couchbase’ update operations
+
 [source,python]
 ----
 KV_STORE = {}
@@ -55,6 +57,9 @@ A valid document ID must:
 NOTE: Note the difference between bytes and characters.
 Most non-Latin characters occupy more than a single byte
 
+You are free to choose any ID for your document, so long as they conform to the above restrictions.
+Unlike some other database, Couchbase does not automatically generate IDs for you (but see [counter pattern]).
+
 == Updating documents via an SDK
 
 Couchbase SDKs feature APIs reflecting the different ways to update documents.
@@ -67,9 +72,15 @@ cb.insert('docid', {'property': 'value'})
 cb.replace('docid', {'property': 'value'})
 ----
 
+Examples of these operations in other SDKs:
+
 https://github.com/couchbaselabs/devguide-examples/blob/master/nodejs/updating.js[node.js] | https://github.com/couchbaselabs/devguide-examples/blob/master/java/src/main/java/com/couchbase/devguide/Updating.java[Java] | https://github.com/couchbaselabs/devguide-examples/blob/master/go/updating.go[Go] | .NET | https://github.com/couchbaselabs/devguide-examples/blob/master/c/updating.c[C] | https://github.com/couchbaselabs/devguide-examples/blob/master/python/updating.py[Python]
 
 == Document format
+
+Most SDKs will automatically convert the document to JSON before storing it on the server (and will return an error if the document cannot be converted to JSON).
+Additional options are available if you wish to store non-JSON data.
+Refer to the documentation of the SDK you are using for more details on how to store JSON and non-JSON values.
 
 == Additional options
 
@@ -84,9 +95,15 @@ See xref:cas-concurrency.adoc#concept_iq4_bts_zs[CAS] for a description on how t
 
 == Return values
 
+If an update completed successfully, a success indicator along with the document’s current xref:cas-concurrency.adoc#concept_iq4_bts_zs[CAS] value is returned.
+
 == SDK-specific documentation
 
+SDK-Specific documentation about creating documents may be found below: Python, Ruby, C, node.js, .NET, Java, Go
+
 == Updating documents via the command line
+
+Documents may be updated using the xref:cli-overview.adoc#concept_lg3_dhm_zs[cbc] utility.
 
 NOTE: The following examples assume the cbc command is being executed on one of the cluster nodes.
 If run on another machine, refer to the xref:connecting.adoc#concept_fbg_xjm_zs[documentation] to see how to specify the cluster address.

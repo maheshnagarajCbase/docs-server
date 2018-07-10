@@ -49,3 +49,5 @@ print cb.server_nodes
 https://github.com/couchbaselabs/devguide-examples/blob/master/c/connecting-ssl.c[C] | Java | .NET | Go | Node.js
 
 == Performance considerations
+
+SSL encryption naturally adds overhead: it increases the amount of data being transferred (as data must be wrapped in encrypted 'envelope', which contains additional information) and also adds processing overhead to encrypt and decrypt the data.

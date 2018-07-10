@@ -49,6 +49,9 @@ Now, insert the document into Couchbase using the _cbc_ utility:
 
  $ cbc create --mode insert mnunberg < mnunberg.json
 
+`mnunberg` is the document’s ID.
+The command pipes the document's content to the [.cmd]`cbc` command’s standard input.
+
 == Reading documents by ID
 
 Documents can be retrieved using their IDs.
@@ -99,6 +102,8 @@ For example, take the file above and add a `likes` field:
     "likes": ["doge", "pastries", "couchbase"]
     ....
 ....
+
+Then use the [.cmd]`cbc` tool to update the document in Couchbase:
 
  $ cbc create --mode replace mnunberg < mnunberg.json
 

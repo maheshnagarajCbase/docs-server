@@ -96,6 +96,8 @@ When `defer_build` is set to `false`, the CREATE PRIMARY INDEX operation queues 
 
 == #Anonymous Section#
 
+Examples
+
 The following example creates a primary index on the [.param]`beer-sample` bucket.
 After the index creation statement comes back, `system:indexes` is queried for the status of the index.
 
@@ -103,6 +105,8 @@ After the index creation statement comes back, `system:indexes` is queried for t
 CREATE PRIMARY INDEX `beer-sample-primary-index` ON `beer-sample` USING GSI;
 SELECT * FROM system:indexes WHERE name="beer-sample-primary-index";
 ----
+
+The following example creates the same primary index using the `defer_build` option coupled with the BUILD INDEX statement.
 
 ----
 CREATE PRIMARY INDEX `beer-sample-primary-index` ON `beer-sample` USING GSI

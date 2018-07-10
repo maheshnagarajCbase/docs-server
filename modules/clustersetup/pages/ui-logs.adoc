@@ -12,7 +12,12 @@ Two sub-tabs are available: Logs and Collect Information.
 The Logs tab displays available logs by the Event, Module Code, Server Node, and Time.
 It enables you to identify activity and errors within the Couchbase cluster.
 
+[#image_hwn_lnn_ht]
+image::admin/picts/logs-tab.png[,720,align=left]
+
 == Collect Information
 
 The Collection Information tab enables you to collect logs and diagnostic information from either all nodes or selected nodes in a cluster.
 You can also upload the collected logs directly to Couchbase Support with your data (customer name, ticket number) for easy tracking.
+
+image::ui-log-collect-info.png[,720]
