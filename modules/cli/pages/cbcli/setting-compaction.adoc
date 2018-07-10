@@ -43,10 +43,10 @@ The following are the command options:
 | `--compaction-period-to=HH:MM`
 | Allow compaction to run before this time.
 
-| `--enable-compaction-abort=[0|1]`
+| `--enable-compaction-abort=[0\|1]`
 | Abort compaction if running outside of the accepted interval (yes=1, no=0).
 
-| `--enable-compaction-parallel=[0|1]`
+| `--enable-compaction-parallel=[0\|1]`
 | Allow view and data file compaction at the same time (yes=1, no=0).
 |===
 
@@ -55,7 +55,7 @@ The following are the command options:
 |===
 | Options | Description
 
-| `--gsi-compaction-mode=[append|circular]`
+| `--gsi-compaction-mode=[append\|circular]`
 | Sets the gsi compaction mode.
 
 | `--compaction-gsi-percentage=PERC`
@@ -73,7 +73,7 @@ The following are the command options:
 | `--compaction-gsi-period-to=HH:MM`
 | Allow compaction to run before this time.
 
-| `--enable-gsi-compaction-abort=[0|1]`
+| `--enable-gsi-compaction-abort=[0\|1]`
 | Abort gsi compaction if when run outside of the accepted interaval (Circular mode only).
 |===
 

@@ -30,7 +30,7 @@ Parameters include:
 | POST
 | [.path]_/settings/autoFailover_
 | Enables and disables automatic failover.
-To enable or disable failover, use the `enabled=[true|false]` parameter.
+To enable or disable failover, use the `enabled=[true\|false]` parameter.
 To specify the number of seconds that a node must be down before initiating failover, use the `timeout` parameter.
 
 | POST

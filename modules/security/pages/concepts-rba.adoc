@@ -71,7 +71,7 @@ Replication (XDCR) Administrator:: The [.term]_Replication Administrator_ role c
 | W, R, S
 | W, R, S
 
-| ------Bucket [ * | [.var]`particular_bucket` ]
+| ------Bucket [ * \| [.var]`particular_bucket` ]
 | W, R, S
 | W, R, S
 
@@ -109,7 +109,7 @@ Replication (XDCR) Administrator:: The [.term]_Replication Administrator_ role c
 | R
 | R
 
-| ------Bucket [ * | [.var]`particular_bucket` ]
+| ------Bucket [ * \| [.var]`particular_bucket` ]
 | R
 | R
 
@@ -147,7 +147,7 @@ Replication (XDCR) Administrator:: The [.term]_Replication Administrator_ role c
 | W, R
 | W, R
 
-| ------Bucket [ * | [.var]`particular_bucket` ]
+| ------Bucket [ * \| [.var]`particular_bucket` ]
 | W, R
 | W, R
 
@@ -185,7 +185,7 @@ Replication (XDCR) Administrator:: The [.term]_Replication Administrator_ role c
 | none
 | none
 
-| ------Bucket [ * | [.var]`particular_bucket` ]****
+| ------Bucket [ * \| [.var]`particular_bucket` ]****
 | W, R
 | W, R
 
@@ -223,7 +223,7 @@ Replication (XDCR) Administrator:: The [.term]_Replication Administrator_ role c
 | none
 | none
 
-| ------Bucket [ * | [.var]`particular_bucket` ]
+| ------Bucket [ * \| [.var]`particular_bucket` ]
 | none
 | none
 
@@ -261,7 +261,7 @@ Replication (XDCR) Administrator:: The [.term]_Replication Administrator_ role c
 | none
 | none
 
-| ------Bucket [ * | [.var]`particular_bucket` ]
+| ------Bucket [ * \| [.var]`particular_bucket` ]
 | none
 | none
 

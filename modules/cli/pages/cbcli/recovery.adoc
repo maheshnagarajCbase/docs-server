@@ -28,7 +28,7 @@ The following are the command options:
 | `--server-recovery=[host]:[port]`
 | Server to recover.
 
-| `--recovery-type=[delta|full]`
+| `--recovery-type=[delta\|full]`
 | Type of recovery to be performed for the node: `delta` or `full`.
 |===
 
