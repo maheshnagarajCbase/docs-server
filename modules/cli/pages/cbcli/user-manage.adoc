@@ -44,6 +44,6 @@ The following are the command options:
 == Examples
 
 ----
-couchbase-cli user-manage -c 192.168.0.1:8091 -u Administrator -p password \ 
+couchbase-cli user-manage -c 192.168.0.1:8091 -u Administrator -p password \
         --ro-username=Administrator1 --ro-password=password1
 ----

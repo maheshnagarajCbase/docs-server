@@ -38,7 +38,7 @@ Divide left value by right and return the remainder.
 _arithmetic-term:_
 
 ----
-expression + expression | expression - expression | 
+expression + expression | expression - expression |
   expression * expression | expression / expression |
   expression % expression | - expression
 ----

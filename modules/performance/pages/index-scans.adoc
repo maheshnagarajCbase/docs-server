@@ -850,7 +850,6 @@ EXPLAIN SELECT meta().id FROM `travel-sample` WHERE name = "American Airlines";
 
 .Result snippet
 ----
-        
       "spans": [
           {
               "Range": {
@@ -887,8 +886,8 @@ This example pushes the predicate `+name >= "American Airlines" AND name <= "Uni
 
 .Explain plan
 ----
-EXPLAIN SELECT meta().id FROM `travel-sample` 
-  WHERE name >= "American Airlines" 
+EXPLAIN SELECT meta().id FROM `travel-sample`
+  WHERE name >= "American Airlines"
     AND name <= "United Airlines";
 ----
 
@@ -999,9 +998,9 @@ EXPLAIN SELECT meta().id FROM `travel-sample` WHERE name LIKE "%American%";
 == Example 19: AND Predicate with Composite Index
 
 ----
-SELECT meta().id FROM `travel-sample` 
-WHERE sourceairport = "SFO" 
-  AND destinationairport = "JFK" 
+SELECT meta().id FROM `travel-sample`
+WHERE sourceairport = "SFO"
+  AND destinationairport = "JFK"
   AND stops BETWEEN 0 AND 2;
 ----
 
@@ -1041,9 +1040,9 @@ The index selected has keys (sourceairport, destinationairport, stops) and the s
 
 .Explain plan
 ----
-EXPLAIN SELECT meta().id FROM `travel-sample` 
-WHERE sourceairport = "SFO" 
-  AND destinationairport = "JFK" 
+EXPLAIN SELECT meta().id FROM `travel-sample`
+WHERE sourceairport = "SFO"
+  AND destinationairport = "JFK"
   AND stops BETWEEN 0 AND 2;
 ----
 
@@ -1072,9 +1071,9 @@ WHERE sourceairport = "SFO"
 == Example 20: AND Predicate with Composite Index
 
 ----
-SELECT meta().id from `travel-sample` 
-WHERE sourceairport IN ["SFO", "SJC"] 
-  AND destinationairport = "JFK" 
+SELECT meta().id from `travel-sample`
+WHERE sourceairport IN ["SFO", "SJC"]
+  AND destinationairport = "JFK"
   AND stops = 0;
 ----
 
@@ -1126,9 +1125,9 @@ The index selected has keys (sourceairport, destinationairport, stops) and the s
 
 .Explain plan
 ----
-EXPLAIN SELECT meta().id FROM `travel-sample` 
-WHERE sourceairport IN ["SFO", "SJC"] 
-  AND destinationairport = "JFK" 
+EXPLAIN SELECT meta().id FROM `travel-sample`
+WHERE sourceairport IN ["SFO", "SJC"]
+  AND destinationairport = "JFK"
   AND stops = 0;
 ----
 
@@ -1224,8 +1223,8 @@ The spans are then stitched in that order to create a composite span as follows.
 
 .Explain plan
 ----
-EXPLAIN SELECT meta().id FROM `travel-sample` 
-WHERE sourceairport = "SFO" 
+EXPLAIN SELECT meta().id FROM `travel-sample`
+WHERE sourceairport = "SFO"
   AND destinationairport = "JFK";
 ----
 
@@ -1252,9 +1251,9 @@ WHERE sourceairport = "SFO"
 == Example 22: Composite AND Predicate with Unbounded High of Trailing Key
 
 ----
-SELECT meta().id FROM `travel-sample` 
-WHERE sourceairport = "SFO" 
-  AND destinationairport = "JFK" 
+SELECT meta().id FROM `travel-sample`
+WHERE sourceairport = "SFO"
+  AND destinationairport = "JFK"
   AND stops >= 0;
 ----
 
@@ -1318,9 +1317,9 @@ The spans are then stitched in that order to create a composite span as follows:
 
 .Explain plan
 ----
-EXPLAIN SELECT meta().id FROM `travel-sample` 
-WHERE sourceairport = "SFO" 
-  AND destinationairport = "JFK" 
+EXPLAIN SELECT meta().id FROM `travel-sample`
+WHERE sourceairport = "SFO"
+  AND destinationairport = "JFK"
   AND stops >= 0;
 ----
 
@@ -1556,9 +1555,9 @@ EXPLAIN SELECT meta().id FROM `travel-sample` WHERE id IN [$1, 10, $2];
 == Example 27: ANY Predicate
 
 ----
-SELECT meta().id FROM `travel-sample` 
-WHERE type = "route" 
-  AND ANY v IN schedule SATISFIES v.day = 0 
+SELECT meta().id FROM `travel-sample`
+WHERE type = "route"
+  AND ANY v IN schedule SATISFIES v.day = 0
 END;
 ----
 
@@ -1576,9 +1575,9 @@ This example pushes the predicate `v.day = 0` to ARRAY index scan.
 
 .Explain plan
 ----
-EXPLAIN SELECT meta().id FROM `travel-sample` 
-WHERE type = "route" 
-  AND ANY v IN schedule SATISFIES v.day = 0 
+EXPLAIN SELECT meta().id FROM `travel-sample`
+WHERE type = "route"
+  AND ANY v IN schedule SATISFIES v.day = 0
 END;
 ----
 
@@ -1603,9 +1602,9 @@ END;
 == Example 28: ANY Predicate
 
 ----
-SELECT meta().id FROM `travel-sample` 
-WHERE type = "route" 
-  AND ANY v IN schedule SATISFIES v.day IN [1,2,3] 
+SELECT meta().id FROM `travel-sample`
+WHERE type = "route"
+  AND ANY v IN schedule SATISFIES v.day IN [1,2,3]
 END;
 ----
 
@@ -1635,9 +1634,9 @@ This example pushes the predicate `v.day IN [1,2,3]` to ARRAY index scan.
 
 .Explain plan
 ----
-EXPLAIN SELECT meta().id FROM `travel-sample` 
-WHERE type = "route" 
-  AND ANY v IN schedule SATISFIES v.day IN [1,2,3] 
+EXPLAIN SELECT meta().id FROM `travel-sample`
+WHERE type = "route"
+  AND ANY v IN schedule SATISFIES v.day IN [1,2,3]
 END;
 ----
 

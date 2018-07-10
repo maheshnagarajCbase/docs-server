@@ -8,11 +8,11 @@ You can now create an index of array elements ranging from plain scalar values t
 == N1QL Syntax
 
 ----
-CREATE INDEX [ index_name ] 
+CREATE INDEX [ index_name ]
         ON named_keyspace_ref ( index_key1, index_key2 | index_key3, ... )
         [ WHERE filter_expr ]
         [ USING GSI ]
-        [ WITH { "nodes": [ "node_name" ], 
+        [ WITH { "nodes": [ "node_name" ],
                 "defer_build": true | false
               }
         ];
@@ -46,7 +46,7 @@ This cannot use constant expressions, aggregate functions, or sub-queries.
 ----
 array_expr ::= full_array_expr | simple_array_expr
 full_array_expr ::=
-    (ALL | DISTINCT) ARRAY var_expr 
+    (ALL | DISTINCT) ARRAY var_expr
         FOR var1 ( IN | WITHIN ) expr1
         [ , var2 ( IN | WITHIN ) expr2 ]
         [ ( WHEN condition ) ] END
@@ -148,7 +148,7 @@ The following samples use the https://developer.couchbase.com/documentation/serv
 C1: Create an index on all schedules:
 
 ----
-CREATE INDEX idx_sched 
+CREATE INDEX idx_sched
 ON `travel-sample` ( DISTINCT ARRAY v.flight FOR v IN schedule END );
 ----
 
@@ -164,7 +164,7 @@ WHERE ANY v IN schedule SATISFIES v.flight LIKE 'UA%' END;
 C2: Create an index on flight IDs scheduled in the first 4 days of the week:
 
 ----
-CREATE INDEX idx_flight_day 
+CREATE INDEX idx_flight_day
 ON `travel-sample` ( ALL ARRAY v.flight FOR v IN schedule WHEN v.day < 4 END )
 WHERE type = "route" ;
 ----
@@ -189,8 +189,8 @@ NOTE: The index C2 qualifies for the query Q2 because:
 C3: Create an index on scheduled flight IDs and number of stops:
 
 ----
-CREATE INDEX idx_flight_stops 
-ON `travel-sample` 
+CREATE INDEX idx_flight_stops
+ON `travel-sample`
     ( stops, DISTINCT ARRAY v.flight FOR v IN schedule END )
 WHERE type = "route" ;
 ----
@@ -210,12 +210,12 @@ Use the DISTINCT ARRAY clause in a nested fashion to index specific attributes o
 For example,
 
 ----
-cbq> UPDATE `travel-sample` 
-     SET schedule[0] = {"day" : 7, "special_flights" : 
-                    [ {"flight" : "AI444", "utc" : "4:44:44"}, 
-                      {"flight" : "AI333", "utc" : "3:33:33"} 
-                    ] } 
-     WHERE type = "route" 
+cbq> UPDATE `travel-sample`
+     SET schedule[0] = {"day" : 7, "special_flights" :
+                    [ {"flight" : "AI444", "utc" : "4:44:44"},
+                      {"flight" : "AI333", "utc" : "3:33:33"}
+                    ] }
+     WHERE type = "route"
      AND destinationairport = "CDG" AND sourceairport = "TLV";
 ----
 
@@ -226,7 +226,7 @@ CREATE INDEX idx_nested ON `travel-sample`
     (DISTINCT ARRAY
         (DISTINCT ARRAY y.flight
         FOR y IN x.special_flights END)
-    FOR x IN schedule END) 
+    FOR x IN schedule END)
 WHERE type = "route";
 ----
 
@@ -286,7 +286,7 @@ Note that elements of schedule array are objects, and hence the right side value
 ----
 SELECT * FROM `travel-sample`
 WHERE type = "route"
-AND ANY v IN schedule 
+AND ANY v IN schedule
 SATISFIES v = {"day":2, "flight": "US681", "utc": "19:20:00"} END;
 ----
 
@@ -347,8 +347,8 @@ Result:
               ],
               "filter_covers": {
                 "cover ((`travel-sample`.`type`))": "route",
-                "cover (any `v` IN (`travel-sample`.`schedule`) 
-                SATISFIES ((\"UA" <= (`v`.`flight`)) 
+                "cover (any `v` IN (`travel-sample`.`schedule`)
+                SATISFIES ((\"UA" <= (`v`.`flight`))
                 AND ((`v`.`flight`) < \"UB\")) END)":
                    true,
                      "cover (ANY `v` IN (`travel-sample`.`schedule`)
@@ -374,7 +374,7 @@ EXPLAIN SELECT meta().id FROM `travel-sample`
 USE INDEX (idx_sched_covered)
 WHERE type = "route"
 AND ANY AND EVERY v IN schedule SATISFIES v.flight LIKE 'UA%' END;
- 
+
 Result:
    {
       "plan": {
@@ -406,7 +406,7 @@ UNNEST schedule v
 WHERE travel-sample.type = "route" AND v.flight LIKE 'UA%';
 
 Result:
-    { 
+    {
       "plan": {
         "#operator": "Sequence",
         "~children": [
@@ -444,7 +444,7 @@ Q7C:  Non-array index with an ALL array index.
 ----
 EXPLAIN SELECT meta().id FROM `travel-sample`
 USE INDEX (idx_sched_covered_all, idx_sched_covered)
-WHERE type = "route" 
+WHERE type = "route"
 AND EVERY v IN schedule SATISFIES v.flight LIKE 'UA%' END;
 
 Result:
@@ -497,14 +497,14 @@ Result:
         "scan": {
           "#operator": "IndexScan2",
           "covers": [
-            "cover ((DISTINCT (ARRAY (`v`.`flight`) FOR `v` 
+            "cover ((DISTINCT (ARRAY (`v`.`flight`) FOR `v`
                    IN (`travel-sample`.`schedule`) END)))",
             "cover ((meta(`travel-sample`).`id`))"
           ],
           "filter_covers": {
             "cover ((`travel-sample`.`type`))": "route",
             "cover (any `v` in (`travel-sample`.`schedule`)
-                   SATISFIES ((\"UA\" <= (`v`.`flight`)) 
+                   SATISFIES ((\"UA\" <= (`v`.`flight`))
                    AND ((`v`.`flight`) < \"UB\")) END)": true,
             "cover (any `v` in (`travel-sample`.`schedule`)
                    SATISFIES ((`v`.`flight`) LIKE \"UA%\") END)": true
@@ -582,7 +582,7 @@ Let's use the following sample document with Doc_Id "foo" to explain the limitat
 "foo": {
           "a":1,
           "b":[1,2],
-          "c":{"ca":[1,2,3], "cb":4},  
+          "c":{"ca":[1,2,3], "cb":4},
           "d":[{"da":5,"db":6},
           {"da":7,"db":8}],
           "e":[{"ea":9,"eb":[10,11,12]},

@@ -271,17 +271,17 @@ When the user left-clicks on the btn:[Query Elasticsearch] button, this value is
 [source,javascript]
 ----
 $("#queryElasticsearch").click(function(event)
-{  
+{
     // Get the user's radio-button selection, which corresonds to a particular
     // beer style.
-    // 
+    //
     var beerStyles = document.getElementsByName("beerStyle");
     var selectedBeerValue = 0;
     var selectedBeerStyle = "";
 
-    for (var i = 0; i < beerStyles.length; i++) 
+    for (var i = 0; i < beerStyles.length; i++)
     {
-        if (beerStyles[i].checked == true) 
+        if (beerStyles[i].checked == true)
         {
             selectedBeerValue = beerStyles[i].value;
         }
@@ -295,8 +295,8 @@ The value is then used to determine the style-name, which will be passed to Elas
 if (selectedBeerValue == 0)
 {
     selectedBeerStyle = "American-Style Pale Ale";
-} 
-else 
+}
+else
 {
     if (selectedBeerValue == 1)
     {
@@ -314,7 +314,7 @@ A corresponding Elasticsearch query is then prepared and executed:
 var esNodeJsAddress = "http://localhost:8081/";
 var esNodeJsTargetURL = esNodeJsAddress + '?' + "foo=" + selectedBeerStyle;
 
-$.getJSON(esNodeJsTargetURL, function(dataFromElasticsearch)  
+$.getJSON(esNodeJsTargetURL, function(dataFromElasticsearch)
 {
 ----
 
@@ -322,8 +322,8 @@ Retrieved IDs are, first, assembled and displayed:
 
 [source,javascript]
 ----
-$.each(dataFromElasticsearch, function(key, val) 
-{	
+$.each(dataFromElasticsearch, function(key, val)
+{
     esDataDisplayString = esDataDisplayString + '<p>' + dataFromElasticsearch[key]._id + '</p>';
     numberOfIds++;
 });
@@ -335,10 +335,10 @@ Then, the IDs are dispatched as an array, to _cbNodeJsQueryAgent_, so that Couch
 
 [source,javascript]
 ----
-cbNodeJsTargetURL = cbNodeJsAddress + '?' + keyNameForIDparam + '=' 
+cbNodeJsTargetURL = cbNodeJsAddress + '?' + keyNameForIDparam + '='
 + returnedCouchbaseIDsStringed + '&' + countKey + '=' + numberOfIds;
 
-$.getJSON(cbNodeJsTargetURL, function(dataReturnedFromCouchbase) 
+$.getJSON(cbNodeJsTargetURL, function(dataReturnedFromCouchbase)
 {
 ----
 
@@ -347,11 +347,11 @@ An array of documents is returned, each of which is duly displayed:
 [source,javascript]
 ----
 for (var currentKeyPosition = 0; currentKeyPosition < numberOfIds; currentKeyPosition++)
-{	
-					
-    $.each(JSON.parse(dataReturnedFromCouchbase[currentKeyPosition]), function(key, val) 
+{
+
+    $.each(JSON.parse(dataReturnedFromCouchbase[currentKeyPosition]), function(key, val)
     {
-        cbDataDisplayString =  '<p>' + cbDataDisplayString + "\"" + key + "\"" 
+        cbDataDisplayString =  '<p>' + cbDataDisplayString + "\"" + key + "\""
             + " : " + "\"" + val + "\"" + '</p>';
     });
 }
@@ -379,7 +379,7 @@ An http server is then created:
 
 [source,javascript]
 ----
-http.createServer(function (request, response) 
+http.createServer(function (request, response)
 {
 console.log('New connection');
 ----
@@ -395,7 +395,7 @@ The value passed to the program by couchbaseESqueryDemo is retrieved, by referen
 [source,javascript]
 ----
 var queryObject = url.parse(request.url, true).query
-		
+
 var luceneString = queryObject.foo;
 ----
 
@@ -403,7 +403,7 @@ Then, an appropriate query-string is created, to be passed to Elasticsearch:
 
 [source,javascript]
 ----
-var clientSearchStringStart = 
+var clientSearchStringStart =
     "{index: 'beer-sample', body: { query: { query_string: { query: ";
 var clientSearchStringEnd = "}}}}"
 var clientSearchStringFull = clientSearchStringStart + "\"" + luceneString + "\"" + clientSearchStringEnd;
@@ -460,18 +460,18 @@ The function itself invokes the Couchbase SDK _get_ method, to search Couchbase 
 ----
 function searchCouchbaseForNextID(arrayOfIDs, count, totalCount)
 {
-    myBucket.get(arrayOfIDs[count], function(err, res)  
+    myBucket.get(arrayOfIDs[count], function(err, res)
     {
 	    couchbaseObjectArray[count] = JSON.stringify(res.value);
-	
+
 	    if (count < totalCount)
 	    {
 	        count++;
 	        searchCouchbaseForNextID(receivedArray, count, totalCount);
-	    } 
-	    else 
+	    }
+	    else
 	    {
-	        response.writeHead(200, {"Content-Type": "application/json", 
+	        response.writeHead(200, {"Content-Type": "application/json",
                 "Access-Control-Allow-Origin": "*"});
 	        response.end(JSON.stringify(couchbaseObjectArray));
 	    }

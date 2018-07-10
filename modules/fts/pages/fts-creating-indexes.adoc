@@ -310,7 +310,7 @@ You can create the same index definition with object mappings using the REST API
           "name": "lat",
           "store": true,
           "type": "number"
-          }      
+          }
           ],
           "properties": {}
           },

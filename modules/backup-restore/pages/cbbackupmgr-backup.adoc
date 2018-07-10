@@ -98,59 +98,71 @@ The other two formats allow an option to take a port number which is needed for 
 
 The following command is used to take a backup of a Couchbase cluster.
 
-    $ cbbackupmgr config --archive /data/backups --repo example 
-  
-    $ cbbackupmgr backup --archive /data/backups --repo example \ 
-    --host couchbase://172.23.10.5 --username Administrator --password password
+[source,console]
+----
+   $ cbbackupmgr config --archive /data/backups --repo example
+
+   $ cbbackupmgr backup --archive /data/backups --repo example \
+   --host couchbase://172.23.10.5 --username Administrator --password password
+----
 
 Once the backup process is complete, there will be a new directory in the specified backup repository containing the backed up data.
 You can see this new directory using the xref:cbbackupmgr-list.adoc[cbbackupmgr list] command.
 
- $ cbbackupmgr list --archive /data/backups 
-  
- Size      Items          Name 
- 91.57MB   -              / 
- 91.57MB   -              + example 
- 91.57MB   -                  + 2016-02-11T16_35_35.796709869-08_00 
- 91.57MB   -                      + default 
- 322B      0                          bucket-config.json 
- 91.56MB   31569                      + data 
- 91.56MB   31569                          shard_0.fdb 
- 2B        0                          full-text.json 
- 10.07KB   8                          gsi.json 
- 1.72KB    1                          views.json
+[source,console]
+----
+$ cbbackupmgr list --archive /data/backups
+
+Size      Items          Name
+91.57MB   -              /
+91.57MB   -              + example
+91.57MB   -                  + 2016-02-11T16_35_35.796709869-08_00
+91.57MB   -                      + default
+322B      0                          bucket-config.json
+91.56MB   31569                      + data
+91.56MB   31569                          shard_0.fdb
+2B        0                          full-text.json
+10.07KB   8                          gsi.json
+1.72KB    1                          views.json
+----
 
 If a backup fails then it is considered a partial backup and the backup client will not be able to back up any new data until you decide whether to resume or purge the partial backup.
 This decision is made by specifying either the [.param]`--resume` or the [.param]`--purge` flag on the next invocation of the _backup_ command.
 Below is an example of how this process works if you want to resume a backup.
 
- $ cbbackupmgr config --archive /data/backups --repo example 
-  
- $ cbbackupmgr backup --archive /data/backups --repo example \ 
- --host 172.23.10.5 --username Administrator --password password 
-  
- Error backing up cluster: Not all data was backed up due to connectivity 
- issues. Check to make sure there were no server side failures during 
- backup. See backup logs for more details on what wasn't backed up. 
-  
- $ cbbackupmgr backup --archive /data/backups --repo example \ 
- --host 172.23.10.5 --username Administrator --password password 
-  
- Error backing up cluster: Partial backup error 2016-02-11T17:00:19.594970735-08:00 
-  
- $ cbbackupmgr backup --archive /data/backups --repo example --host 172.23.10.5 \ 
- --username Administrator --password password --resume 
-  
- Backup successfully completed
+[source,console]
+----
+$ cbbackupmgr config --archive /data/backups --repo example
+
+$ cbbackupmgr backup --archive /data/backups --repo example \
+--host 172.23.10.5 --username Administrator --password password
+
+Error backing up cluster: Not all data was backed up due to connectivity
+issues. Check to make sure there were no server side failures during
+backup. See backup logs for more details on what wasn't backed up.
+
+$ cbbackupmgr backup --archive /data/backups --repo example \
+--host 172.23.10.5 --username Administrator --password password
+
+Error backing up cluster: Partial backup error 2016-02-11T17:00:19.594970735-08:00
+
+$ cbbackupmgr backup --archive /data/backups --repo example --host 172.23.10.5 \
+--username Administrator --password password --resume
+
+Backup successfully completed
+----
 
 To backup a cluster with a different number of concurrent clients and decrease the backup time you can specify the [.param]`--threads` flag.
 Remember that specifying a higher number of concurrent clients increases the amount of resources the cluster uses to complete the backup.
 Below is an example of using 16 concurrent clients.
 
- $ cbbackupmgr config --archive /data/backups --repo example 
-  
- $ cbbackupmgr backup --archive /data/backups --repo example \ 
- --host 172.23.10.5 --username Administrator --password password --thread 16
+[source,console]
+----
+$ cbbackupmgr config --archive /data/backups --repo example
+
+$ cbbackupmgr backup --archive /data/backups --repo example \
+--host 172.23.10.5 --username Administrator --password password --thread 16
+----
 
 == Discussion
 

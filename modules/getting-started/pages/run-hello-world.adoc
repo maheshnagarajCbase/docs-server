@@ -66,8 +66,8 @@ As you inspect the file, note that the user makes a selection on strings to be s
 if (selectedCountryValue == 0)
 {
 	selectedCountry = "United States";
-} 
-else 
+}
+else
 {
 	if (selectedCountryValue == 1)
 	{
@@ -79,7 +79,7 @@ else
 		{
 			selectedCountryStyle = "France";
 		}
-	}	
+	}
 }
 ----
 
@@ -95,7 +95,7 @@ The query-string is then itself appended to a URL, which features the hostname a
 [source,javascript]
 ----
 var nodeJsAddress = "http://localhost:8082/";
-				
+
 var nodeJsTargetURL = nodeJsAddress + '?' + "myQuery=" + selectedQuery;
 ----
 
@@ -103,7 +103,7 @@ A `getJSON` call passes the query-string to the server-side program, and receive
 
 [source,javascript]
 ----
-$.getJSON(nodeJsTargetURL, function(dataReturnedFromCouchbase) 
+$.getJSON(nodeJsTargetURL, function(dataReturnedFromCouchbase)
 {
 ----
 
@@ -112,14 +112,14 @@ Returned documents, up to a specified numeric maximum (configurable, but here 10
 [source,javascript]
 ----
 for (var currentKeyPosition = 0; currentKeyPosition < 10; currentKeyPosition++)
-{	
-					
-	$.each(dataReturnedFromCouchbase[currentKeyPosition], function(key, val) 
-	{	
-						
+{
+
+	$.each(dataReturnedFromCouchbase[currentKeyPosition], function(key, val)
+	{
+
 		$.each(val, function(newKey, newVal)
-		{			
-			cbDataDisplayString = cbDataDisplayString + \"<i>\" + JSON.stringify(newKey) + "</i>" + " : " 
+		{
+			cbDataDisplayString = cbDataDisplayString + \"<i>\" + JSON.stringify(newKey) + "</i>" + " : "
 				+ "<b>" + JSON.stringify(newVal) + "</b>" + '</p>' + '<p>';
 		});
 	});
@@ -160,23 +160,23 @@ The values returned are passed back to the client, as a JSON string.
 
 [source,javascript]
 ----
-myBucket.get(theQueryString, function(err, res)  
+myBucket.get(theQueryString, function(err, res)
 {
 	myBucket.manager().createPrimaryIndex(function()
 	{
 		myBucket.query(
 			couchbase.N1qlQuery.fromString(theQueryString),
-			function (err, rows) 
+			function (err, rows)
 			{
-				console.log("Got rows: %j", rows);	
+				console.log("Got rows: %j", rows);
 
-				response.writeHead(200, {"Content-Type": "application/json", 
+				response.writeHead(200, {"Content-Type": "application/json",
 							"Access-Control-Allow-Origin": "*"});
-				console.log("Returning...");	
+				console.log("Returning...");
 				response.end(JSON.stringify(rows));
 			});
 		});
-	});		
+	});
 
 }).listen(8082);
 ----

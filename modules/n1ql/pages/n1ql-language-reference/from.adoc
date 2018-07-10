@@ -26,7 +26,7 @@ FROM from-term
 where _from-term_ has the following syntax:
 
 ----
-from-term::= keyspace-ref [ [ AS ] alias ] [ use-keys-clause ]  
+from-term::= keyspace-ref [ [ AS ] alias ] [ use-keys-clause ]
                         | “(” select “)” [ AS ] alias
                         | expr [ AS ] alias
                         | from-term ( join-clause | nest-clause | unnest-clause )
@@ -174,9 +174,9 @@ Example Q2: Find cities that have landmarks and airports.
 
 SELECT t1.city
 FROM `travel-sample` t1
-WHERE t1.type = "landmark" AND 
+WHERE t1.type = "landmark" AND
       t1.city IN (SELECT RAW city
-                  FROM `travel-sample` 
+                  FROM `travel-sample`
                   WHERE type = "airport");
 ----
 
@@ -187,9 +187,9 @@ Example Q2A: Find cities that have museum landmarks.
 
 SELECT t1.city, t1.name
 FROM `travel-sample` t1
-WHERE t1.type = "landmark" AND 
+WHERE t1.type = "landmark" AND
       (SELECT raw t2
-       FROM split(t1.name) t2 
+       FROM split(t1.name) t2
        WHERE t2 = "museum")[0] is not null;
 ----
 
@@ -200,7 +200,7 @@ Example Q2B: Find cities that have landmarks and breweries.
 
 SELECT t1.city
 FROM `travel-sample` t1
-WHERE t1.type = "landmark" AND 
+WHERE t1.type = "landmark" AND
       t1.city IN (SELECT RAW b1.city
                   FROM `beer-sample` b1
                   WHERE b1.type = "brewery");
@@ -236,28 +236,28 @@ For example, the following example Q3 shows a simple case of using subquery in F
 +
 ----
 Example Q3: Find highest altitude airports/cities in each country
- 
-SELECT t1.country, t1.max_country_alt, 
-       ARRAY x.city FOR x IN t1.c 
+
+SELECT t1.country, t1.max_country_alt,
+       ARRAY x.city FOR x IN t1.c
        WHEN x.alt = t1.max_country_alt END
 FROM (SELECT  country, array_agg({"alt": geo.alt , city}) c,
    max_country_alt
-      FROM `travel-sample` 
+      FROM `travel-sample`
       WHERE type = "airport"
-      GROUP BY country 
+      GROUP BY country
 LETTING max_country_alt = max(geo.alt) ) t1;
 ----
 +
 ----
 Example Q3A: Query Q3 without using subqueries
 
-SELECT  country, 
-        (ARRAY x.city FOR x IN array_agg({"alt": geo.alt, city}) 
+SELECT  country,
+        (ARRAY x.city FOR x IN array_agg({"alt": geo.alt, city})
         WHEN x.alt = max_country_alt END) AS max_alt_city,
         max_country_alt
-FROM `travel-sample` 
+FROM `travel-sample`
 WHERE type = "airport"
-GROUP BY country 
+GROUP BY country
 LETTING max_country_alt = max(geo.alt);
 ----
 +
@@ -273,10 +273,10 @@ Example Q4:
 SELECT t1.country, num_alts, total_cities
 FROM (SELECT country, geo.alt AS alt,
              count(city) AS num_cities
-      FROM `travel-sample` 
+      FROM `travel-sample`
       WHERE type = "airport"
       GROUP BY country, geo.alt) t1
-GROUP BY t1.country 
+GROUP BY t1.country
 LETTING num_alts = count(t1.alt), total_cities = sum(t1.num_cities);
 
 [
@@ -302,12 +302,12 @@ This is equivalent to blending the results of the following two queries by count
 +
 ----
 SELECT country,count(city) AS num_cities
-FROM `travel-sample` 
+FROM `travel-sample`
 WHERE type = "airport"
 GROUP BY country;
 
 SELECT country, count(distinct geo.alt) AS num_alts
-FROM `travel-sample` 
+FROM `travel-sample`
 WHERE type = "airport"
 GROUP BY country;
 ----
@@ -326,8 +326,8 @@ See xref:n1ql-language-reference/subqueries.adoc#nested-path-expr[Nested Paths i
 The following example shows usage of nested path over subquery expression:
 +
 ----
-SELECT x.alt 
-FROM (SELECT geo from `travel-sample` 
+SELECT x.alt
+FROM (SELECT geo from `travel-sample`
       WHERE type = "airport")[*].geo AS x
 LIMIT 2;
 
@@ -344,7 +344,7 @@ LIMIT 2;
 The following example shows usage of nested path over constant expression:
 +
 ----
-SELECT x FROM 
+SELECT x FROM
          [{"a" : 1, "b" : {"c" : 2}},
           {"a" : 3, "b" : {"d" : 4}}][*].b AS x
 LIMIT 2;
@@ -546,12 +546,12 @@ Using the new [.term]_index joins_, the same query can be written as:
 ----
 Required Index:
 CREATE INDEX beer_brewery_id ON `beer-sample`(brewery_id) WHERE type="beer";
-                 
+
 Optional index:
 CREATE INDEX brewery_state ON `beer-sample`(state) WHERE type="brewery";
-                 
-SELECT * FROM  `beer-sample` brewery JOIN `beer-sample` beer 
-    ON KEY  beer.brewery_id  FOR brewery 
+
+SELECT * FROM  `beer-sample` brewery JOIN `beer-sample` beer
+    ON KEY  beer.brewery_id  FOR brewery
     WHERE  beer.type="beer" AND brewery.type="brewery" AND brewery.state="California";
 ----
 
@@ -559,9 +559,9 @@ If you generalize the same query, it looks like the following:
 
 ----
 CREATE INDEX on-key-for-index-name rhs-expression (lhs-expression-key);
-                 
+
 SELECT projection-list FROM lhs-expression JOIN rhs-expression
-    ON KEY rhs-expression.lhs-expression-key FOR lhs-expression      
+    ON KEY rhs-expression.lhs-expression-key FOR lhs-expression
    [ WHERE predicates ] ;
 ----
 
@@ -673,14 +673,14 @@ Here is the result set:
 
 ----
  [
-    { "name" : "Acme Inc.", "street" : "101 Main St.", 
+    { "name" : "Acme Inc.", "street" : "101 Main St.",
         "zip" : "94040" },
-    { "name" : "Acme Inc.", "street" : "300 Broadway", 
+    { "name" : "Acme Inc.", "street" : "300 Broadway",
 	"zip" : "10011" },
     { "name" : "Roadster Corp.", "street" : "3500 Wilshire Blvd.",
         "zip" : "90210" },
-    { "name" : "Roadster Corp.", "street" : "4120 Alamo Dr.", 
-	"zip" : "75019" }     
+    { "name" : "Roadster Corp.", "street" : "4120 Alamo Dr.",
+	"zip" : "75019" }
 ]
 ----
 
@@ -699,11 +699,11 @@ Here is the result set:
 {"id": "7983345",
  "name": "Takayama Pale Ale",
  "brewer": "Hida Takayama Brewing Corp.",
- "reviews" : [ 
+ "reviews" : [
    {"reviewerName" : "Takeshi Kitano",
          "publication" : "Outdoor Japan Magazine","date": "3/2013"},
    {"reviewerName" : "Moto Ohtake", "publication" : "Japan Beer Times",
-         "date" : "7/2013"} 
+         "date" : "7/2013"}
             ]
 }
 ----
@@ -746,7 +746,7 @@ Recall our invoice objects:
      "customer_key": ...,
      "invoice_date": ...,
      "invoice_item_keys": [ ... ],
-     "total": ...     
+     "total": ...
  }
 ----
 
@@ -758,7 +758,7 @@ And our invoice_item objects:
          "product_key": ...,
          "unit_price": ...,
          "quantity": ...,
-         "item_subtotal": ...     
+         "item_subtotal": ...
 }
 ----
 

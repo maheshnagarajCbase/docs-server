@@ -59,6 +59,6 @@ Adding a server directly as part of the `rebalance` command using the `--server-
 Removes a node from a cluster and rebalances:
 
 ----
-couchbase-cli rebalance -c 192.168.0.1:8091 -u Administrator -p password \ 
+couchbase-cli rebalance -c 192.168.0.1:8091 -u Administrator -p password \
 --server-remove=192.168.0.2:8091
 ----

@@ -383,7 +383,7 @@ To avoid inconsistencies between multiple calls to `CLOCK_LOCAL()` within a sing
 
 [source,json]
 ----
-SELECT CLOCK_LOCAL() as full_date, CLOCK_LOCAL('invalid date') as invalid_date, 
+SELECT CLOCK_LOCAL() as full_date, CLOCK_LOCAL('invalid date') as invalid_date,
     CLOCK_LOCAL('1111-11-11') as short_date;
 
 {
@@ -418,7 +418,7 @@ To avoid inconsistencies between multiple calls to `CLOCK_MILLIS()` within a sin
 [source,json]
 ----
 SELECT CLOCK_MILLIS();
-                            
+
 {
     "results": [
         {
@@ -451,10 +451,10 @@ To avoid inconsistencies between multiple calls to `CLOCK_STR()` within a single
 
 [source,json]
 ----
-SELECT CLOCK_STR() as full_date, 
+SELECT CLOCK_STR() as full_date,
     CLOCK_STR('invalid date') as invalid_date,
     CLOCK_STR('1111-11-11') as short_date;
-    
+
 {
     "results": [
         {
@@ -495,10 +495,10 @@ To avoid inconsistencies between multiple calls to `CLOCK_TZ()` within a single 
 
 [source,json]
 ----
-SELECT CLOCK_TZ('UTC') as UTC_full_date, CLOCK_TZ('UTC', '1111-11-11') as UTC_short_date, 
-    CLOCK_TZ('invalid timezone') as invalid_timezone, CLOCK_TZ('US/Eastern') as us_east, 
+SELECT CLOCK_TZ('UTC') as UTC_full_date, CLOCK_TZ('UTC', '1111-11-11') as UTC_short_date,
+    CLOCK_TZ('invalid timezone') as invalid_timezone, CLOCK_TZ('US/Eastern') as us_east,
     CLOCK_TZ('US/Pacific') as us_west;
-	                    
+
 {
     "results": [
         {
@@ -580,11 +580,11 @@ If an invalid part is passed to the function then `null` is returned.
 
 [source,json]
 ----
-SELECT DATE_ADD_MILLIS(1463284740000, 3, 'day') as add_3_days, 
+SELECT DATE_ADD_MILLIS(1463284740000, 3, 'day') as add_3_days,
     DATE_ADD_MILLIS(1463284740000, 3, 'year') as add_3_years,
-    DATE_ADD_MILLIS(1463284740000, -3, 'day') as sub_3_days, 
+    DATE_ADD_MILLIS(1463284740000, -3, 'day') as sub_3_days,
     DATE_ADD_MILLIS(1463284740000, -3, 'year') as sub_3_years;
-                        
+
 {
     "results": [
         {
@@ -724,7 +724,7 @@ SELECT DATE_DIFF_STR('2016-05-18T03:59:00Z', '2016-05-15 03:59:00Z', 'day') as a
     DATE_DIFF_STR('2019-05-15T03:59:00Z', '2016-05-15 03:59:00Z', 'year') as add_3_years,
     DATE_DIFF_STR('2016-05-12T03:59:00Z', '2016-05-15 03:59:00Z', 'day') as sub_3_days,
     DATE_DIFF_STR('2013-05-15T03:59:00Z', '2016-05-15 03:59:00Z', 'year') as sub_3_years;
-                        
+
 {
     "results": [
         {
@@ -914,7 +914,7 @@ SELECT DATE_RANGE_MILLIS(1480752000000, 1475478000000, 'month', -1);
     ]
 }
 
-SELECT ARRAY_MILLIS_TO_STR(a,'2016-12-03') 
+SELECT ARRAY_MILLIS_TO_STR(a,'2016-12-03')
     FOR a IN DATE_RANGE_MILLIS(1480752000000, 1449129600000, 'month', -1);
 
 {
@@ -923,7 +923,7 @@ SELECT ARRAY_MILLIS_TO_STR(a,'2016-12-03')
             "$1": [
                 "2016-12-03",
                 "2016-11-03",
-                "2016-10-03"            
+                "2016-10-03"
             ]
         }
     ]
@@ -977,7 +977,7 @@ To ensure that both dates have the same format, you should use <<fn-date-format-
 
 [source,json]
 ----
-SELECT DATE_RANGE_STR('2015-11-30T15:04:05.999', '2017-04-14T15:04:06.998', 'quarter');  
+SELECT DATE_RANGE_STR('2015-11-30T15:04:05.999', '2017-04-14T15:04:06.998', 'quarter');
 
 [
     {
@@ -1018,7 +1018,7 @@ SELECT DATE_RANGE_STR('2018-01-01','2019-01-01', 'month', 4);
 ]
 
 
-SELECT DATE_RANGE_STR('2016-01-05T15:04:05.999', '1111-11-11T15:04:06.998', 'day', -1)"; 
+SELECT DATE_RANGE_STR('2016-01-05T15:04:05.999', '1111-11-11T15:04:06.998', 'day', -1)";
 
 {
     "results": [
@@ -1032,7 +1032,7 @@ SELECT DATE_RANGE_STR('2016-01-05T15:04:05.999', '1111-11-11T15:04:06.998', 'day
         }
     ]
 }
-                        
+
 SELECT DATE_RANGE_STR('2015-01-01T01:01:01', DATE_FORMAT_STR('1111-11-11', '1111-11-11T00:00:00'), 'month');
 
 {
@@ -1156,7 +1156,7 @@ If a value which is not a number is specified, then `null` is returned.
 SELECT DURATION_TO_STR(2000) as microsecs,
     DURATION_TO_STR(2000000) as millisecs,
     DURATION_TO_STR(2000000000) as secs
-                            
+
 {
     "results": [
         {
@@ -1227,7 +1227,7 @@ It is recommended that you do not use this function for very small Epoch/UNIX ti
 
 [source,json]
 ----
-SELECT MILLIS_TO_STR(1463284740000) as full_date, 
+SELECT MILLIS_TO_STR(1463284740000) as full_date,
     MILLIS_TO_STR(1463284740000, 'invalid format') as invalid_format,
     MILLIS_TO_STR(1463284740000, '1111-11-11') as short_date;
 
@@ -1273,7 +1273,7 @@ If an incorrect time zone is provided then `null` is returned.
 MILLIS_TO_TZ(1463284740000, 'America/New_York') as est,
 	                        MILLIS_TO_TZ(1463284740000, 'Asia/Kolkata') as ist,
 	                        MILLIS_TO_TZ(1463284740000, 'UTC') as utc
-	                        
+
 	                        {
 	                        "results": [
 	                        {
@@ -1308,7 +1308,7 @@ If this argument is not an integer then `null` is returned.
 
 [source,json]
 ----
-SELECT MILLIS_TO_UTC(1463284740000) as full_date, 
+SELECT MILLIS_TO_UTC(1463284740000) as full_date,
     MILLIS_TO_UTC(1463284740000, 'invalid format') as invalid_format,
     MILLIS_TO_UTC(1463284740000, '1111-11-11') as short_date;
 
@@ -1350,7 +1350,7 @@ If you wish to use the system time when the function is evaluated, use <<fn-date
 
 [source,json]
 ----
-SELECT NOW_LOCAL() as full_date, 
+SELECT NOW_LOCAL() as full_date,
     NOW_LOCAL('invalid date') as invalid_date,
     NOW_LOCAL('1111-11-11') as short_date;
 
@@ -1468,7 +1468,7 @@ SELECT NOW_TZ('invalid tz') as invalid_tz,
     ]
 }
 
-SELECT NOW_TZ('UTC'), NOW_TZ('UTC'), NOW_TZ('UTC'), NOW_TZ('UTC'), 
+SELECT NOW_TZ('UTC'), NOW_TZ('UTC'), NOW_TZ('UTC'), NOW_TZ('UTC'),
     NOW_TZ('UTC'), NOW_TZ('UTC'), NOW_TZ('UTC'), CLOCK_TZ('UTC')
 
 {
@@ -1522,9 +1522,9 @@ SELECT NOW_STR() as full_date,
         }
     ]
 }
-                            
+
 SELECT NOW_STR(), NOW_STR(), NOW_STR(), NOW_STR(), NOW_STR(), NOW_STR(), CLOCK_STR()
-                            
+
 {
     "results": [
         {
@@ -1571,9 +1571,9 @@ SELECT NOW_UTC()
         }
     ]
 }
-                            
+
 SELECT NOW_UTC(), NOW_UTC(), NOW_UTC(), NOW_UTC(), NOW_UTC(), NOW_UTC(), NOW_UTC(), CLOCK_UTC()
-                            
+
 {
     "results": [
         {
@@ -1586,7 +1586,7 @@ SELECT NOW_UTC(), NOW_UTC(), NOW_UTC(), NOW_UTC(), NOW_UTC(), NOW_UTC(), NOW_UTC
             "$7": "2017-02-03T11:18:27.183Z",
             "$8": "2017-02-03T11:18:27.185Z"
         }
-    ]                            
+    ]
 }
 ----
 
@@ -1690,7 +1690,7 @@ If this argument is not a valid date format then `null` is returned.
 ----
 SELECT STR_TO_UTC('1111-11-11T00:00:00+08:00') as full_date,
 STR_TO_UTC('1111-11-11') as short_date;
-                            
+
 {
     "results": [
         {
@@ -1728,7 +1728,7 @@ If this argument is not a valid timezone then `null` is returned.
 SELECT STR_TO_TZ('1111-11-11T00:00:00+08:00', 'America/New_York') as est,
     STR_TO_TZ('1111-11-11T00:00:00+08:00', 'UTC') as utc,
     STR_TO_TZ('1111-11-11', 'UTC') as utc_short;
-                            
+
 {
     "results": [
         {
@@ -1767,7 +1767,7 @@ If an incorrect time zone is provided then `null` is returned.
 [source,json]
 ----
 SELECT WEEKDAY_MILLIS(1486237655742, 'America/Tijuana')
-                            
+
 {
     "results": [
     {
@@ -1798,7 +1798,7 @@ If this argument is not a valid date format then `null` is returned.
 [source,json]
 ----
 SELECT WEEKDAY_STR('2017-02-05')
-                            
+
 [
     {
         "$1": "Sunday"

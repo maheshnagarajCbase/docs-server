@@ -40,8 +40,8 @@ Here is a full query example that performs a query string query and demonstrates
   ],
   "highlight": {},
   "sort": ["country", "-_score","-_id"],
-  "query":{ 
-    "query": "beautiful pool" 
+  "query":{
+    "query": "beautiful pool"
   }
 }
 ----
@@ -82,8 +82,8 @@ All hotels with no "Overall" ratings will be sorted at the end.
    "size" : 10,
    "sort": [
       {
-       "by" : "field", 
-       "field" : "reviews.ratings.Overall", 
+       "by" : "field",
+       "field" : "reviews.ratings.Overall",
        "mode" : "max",
        "missing" : "last"
       },
@@ -97,14 +97,14 @@ All hotels with no "Overall" ratings will be sorted at the end.
    "sort": [
       "country",
       {
-       "by" : "field", 
-       "field" : "reviews.ratings.Overall", 
+       "by" : "field",
+       "field" : "reviews.ratings.Overall",
        "mode" : "max",
        "missing" : "last"
       },
       {
-       "by" : "field", 
-       "field" : "reviews.ratings.Location", 
+       "by" : "field",
+       "field" : "reviews.ratings.Location",
        "mode" : "max",
        "missing" : "last"
       },

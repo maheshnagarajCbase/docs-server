@@ -73,20 +73,20 @@ In order to create a backup repository called "example" with the default configu
 Upon creation of a new backup repository there will be a new directory in the backup archive containing a backup configuration.
 You can see this new directory using the xref:cbbackupmgr-list.adoc[cbbackupmgr list] command.
 
- $ cbbackupmgr list --archive /data/backups 
- Size      Items          Name 
+ $ cbbackupmgr list --archive /data/backups
+ Size      Items          Name
  0B        -              + example
 
 Using the optional parameters of the _create_ command, you can modify the backup configuration settings.
 To create a backup repository with a backup configuration that only backs up the buckets "airline_data" and "ticket_prices" and does not back up bucket configuration data, you can run the following:
 
- $ cbbackupmgr config --archive /data/backups --repo example \ 
+ $ cbbackupmgr config --archive /data/backups --repo example \
  --include-buckets airline_data,ticket_prices --disable-bucket-config
 
 To create a backup repository with a backup configuration that backs up only data on all buckets, you can run the following command:
 
- $ cbbackupmgr config --archive /data/backups --repo example \ 
- --disable-bucket-config --disable-views --disable-gsi-indexes \ 
+ $ cbbackupmgr config --archive /data/backups --repo example \
+ --disable-bucket-config --disable-views --disable-gsi-indexes \
  --disable-ft-indexes
 
 == Discussion

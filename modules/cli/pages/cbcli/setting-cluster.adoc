@@ -43,7 +43,7 @@ The following are the command options:
 *Set the cluster name and the RAM quota of 8510 MB (the current total buckets quota).*
 
 ----
-couchbase-cli setting-cluster -c 192.168.0.1:8091 -u Administrator -p password \ 
+couchbase-cli setting-cluster -c 192.168.0.1:8091 -u Administrator -p password \
 --cluster-name MyCluster --cluster-ramsize=8510
 ----
 

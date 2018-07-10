@@ -126,54 +126,57 @@ All the examples assume that the backup archive is located at [.path]_/data/back
 The first thing to do when getting ready to restore data is to decide which backups to restore.
 The easiest way to do this is to use the _list_ command to see which backups are available to restore.
 
- $ cbbackupmgr list --archive /data/backups --repo example 
-  
- Size      Items          Name 
- 2.24GB    -              + example 
- 1.11GB    -                  + 2016-03-08T14_41_10.757145596-08_00 
- 1.11GB    -                      + default 
- 295B      0                          bucket-config.json 
- 1.11GB    983797                     + data 
- 1.11GB    983797                         shard_0.fdb 
- 2B        0                          full-text.json 
- 128B      0                          gsi.json 
- 2B        0                          views.json 
- 430.52MB  -                  + 2016-03-09T14_42_24.024494032-08_00 
- 430.52MB  -                      + default 
- 295B      0                          bucket-config.json 
- 430.52MB  334400                     + data 
- 430.52MB  334400                         shard_0.fdb 
- 2B        0                          full-text.json 
- 128B      0                          gsi.json 
- 2B        0                          views.json 
- 728.72MB  -                  + 2016-03-10T14_42_58.743250296-08_00 
- 728.72MB  -                      + default 
- 295B      0                          bucket-config.json 
- 728.72MB  607500                     + data 
- 728.72MB  607500                         shard_0.fdb 
- 2B        0                          full-text.json 
- 128B      0                          gsi.json 
- 2B        0                          views.json
+[source,console]
+----
+$ cbbackupmgr list --archive /data/backups --repo example
+
+Size      Items          Name
+2.24GB    -              + example
+1.11GB    -                  + 2016-03-08T14_41_10.757145596-08_00
+1.11GB    -                      + default
+295B      0                          bucket-config.json
+1.11GB    983797                     + data
+1.11GB    983797                         shard_0.fdb
+2B        0                          full-text.json
+128B      0                          gsi.json
+2B        0                          views.json
+430.52MB  -                  + 2016-03-09T14_42_24.024494032-08_00
+430.52MB  -                      + default
+295B      0                          bucket-config.json
+430.52MB  334400                     + data
+430.52MB  334400                         shard_0.fdb
+2B        0                          full-text.json
+128B      0                          gsi.json
+2B        0                          views.json
+728.72MB  -                  + 2016-03-10T14_42_58.743250296-08_00
+728.72MB  -                      + default
+295B      0                          bucket-config.json
+728.72MB  607500                     + data
+728.72MB  607500                         shard_0.fdb
+2B        0                          full-text.json
+128B      0                          gsi.json
+2B        0                          views.json
+----
 
 From listing the backup repository we can see we have three backups that we can restore in the "examples" backup repository.
 If we just want to restore one of them we set the [.param]`--start` and [.param]`--end` flags in the restore command to the same backup name and specify the cluster that we want to restore the data to.
 In the example below we restore only the oldest backup.
 
- $ cbbackupmgr restore --archive /data/backups --repo example \ 
- --host couchbase://127.0.0.1 --username Administrator --password password \ 
- --start 2016-03-08T14_41_10.757145596-08_00 \ 
+ $ cbbackupmgr restore --archive /data/backups --repo example \
+ --host couchbase://127.0.0.1 --username Administrator --password password \
+ --start 2016-03-08T14_41_10.757145596-08_00 \
  --end 2016-03-08T14_41_10.757145596-08_00
 
 If we want to restore only the two most recent backups then we specify the --start and --end flags with different backup names in order to specify the range we want to restore.
 
- $ cbbackupmgr restore --archive /data/backups --repo example \ 
- --host couchbase://127.0.0.1 --username Administrator --password password \ 
- --start 2016-03-09T14_42_24.024494032-08_00 \ 
+ $ cbbackupmgr restore --archive /data/backups --repo example \
+ --host couchbase://127.0.0.1 --username Administrator --password password \
+ --start 2016-03-09T14_42_24.024494032-08_00 \
  --end 2016-03-10T14_42_58.743250296-08_00
 
 If we want to restore all of the backups in the "examples" directory then we can omit the --start and --end flags since their default values are the oldest and most recent backup in the backup repository.
 
- $ cbbackupmgr restore --archive /data/backups --repo example \ 
+ $ cbbackupmgr restore --archive /data/backups --repo example \
  --host couchbase://127.0.0.1 --username Administrator --password password
 
 == Discussion

@@ -4,7 +4,7 @@
 _group-by-clause:_
 
 ----
-GROUP BY expression [ , expression ]* [ letting-clause ] 
+GROUP BY expression [ , expression ]* [ letting-clause ]
     [having-clause] ] | [letting-clause]
 ----
 

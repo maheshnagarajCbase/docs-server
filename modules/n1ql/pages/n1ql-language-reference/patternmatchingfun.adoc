@@ -21,9 +21,9 @@ NOTE: Couchbase Server 4.x N1QL supports regular expressions supported by The Go
 *Example*::
 +
 ----
-SELECT name 
-FROM `travel-sample` 
-WHERE type = "landmark" AND REGEX_CONTAINS(name, ".*In+") 
+SELECT name
+FROM `travel-sample`
+WHERE type = "landmark" AND REGEX_CONTAINS(name, ".*In+")
 LIMIT 2;
 ----
 
@@ -53,8 +53,8 @@ LIMIT 2;
 +
 ----
 SELECT name
-FROM `travel-sample` 
-WHERE type = "hotel" and REGEX_LIKE(name, "In+.*") 
+FROM `travel-sample`
+WHERE type = "hotel" and REGEX_LIKE(name, "In+.*")
 LIMIT 4;
 ----
 
@@ -93,8 +93,8 @@ Position counting starts from zero.
 +
 ----
 SELECT name, ARRAY REGEX_POSITION(x, "[aeiou]") FOR x IN TOKENS(name) END
-FROM `travel-sample` 
-WHERE type = "hotel" 
+FROM `travel-sample`
+WHERE type = "hotel"
 LIMIT 2;
 ----
 

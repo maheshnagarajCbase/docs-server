@@ -28,9 +28,9 @@ Every index has an index key(s) (used for lookup).
 When the index type is not primary index, index can have an index filter with the WHERE clause.
 
 ----
-CREATE INDEX index_name ON ( index_key1, ..., index_keyN) 
-    WHERE index_filter 
-    WITH { "nodes": [ "node1:8091" ] } 
+CREATE INDEX index_name ON ( index_key1, ..., index_keyN)
+    WHERE index_filter
+    WITH { "nodes": [ "node1:8091" ] }
     USING GSI | VIEW;
 ----
 
@@ -84,10 +84,10 @@ To load-balance GSIs, you must manually specify the nodes on which indexes shoul
 For example, create two indexes [.var]`productName_index1` and [.var]`productName_index2`, using the following commands:
 +
 ----
-CREATE INDEX productName_index1 ON bucket_name(productName, ProductID) 
+CREATE INDEX productName_index1 ON bucket_name(productName, ProductID)
        WHERE type="product" USING GSI WITH {"nodes":["node1:8091"]};
-      
-CREATE INDEX productName_index2 ON bucket_name(productName, ProductID) 
+
+CREATE INDEX productName_index2 ON bucket_name(productName, ProductID)
        WHERE type="product" USING GSI WITH {"nodes":["node2:8091"]};
 ----
 +
@@ -102,12 +102,12 @@ To load-balance GSIs, you must manually specify the nodes on which index partiti
 You can also create indexes by partitioning your indexes as shown in the following example using ranges:
 +
 ----
-CREATE INDEX productName_index1 ON bucket_name(productName, ProductID) 
-       WHERE type="product" AND productName BETWEEN "A" AND "K" USING GSI 
+CREATE INDEX productName_index1 ON bucket_name(productName, ProductID)
+       WHERE type="product" AND productName BETWEEN "A" AND "K" USING GSI
        WITH {"nodes":["node1:8091"]};
-       
-CREATE INDEX productName_index2 ON bucket_name(productName, ProductID) 
-       WHERE type="product" AND productName BETWEEN "K" AND "Z" USING GSI 
+
+CREATE INDEX productName_index2 ON bucket_name(productName, ProductID)
+       WHERE type="product" AND productName BETWEEN "K" AND "Z" USING GSI
        WITH {"nodes":["node2:8091"]};
 ----
 
@@ -156,14 +156,14 @@ Queries will load balance across the indexes and if one of the indexes become un
 You can create more than 2 copies of the index for better redundancy and load balancing.
 
 ----
-CREATE INDEX productName_index1 ON bucket_name(productName, ProductID) 
-    WHERE type="product" 
-    USING GSI 
+CREATE INDEX productName_index1 ON bucket_name(productName, ProductID)
+    WHERE type="product"
+    USING GSI
     WITH {"nodes":["node1:8091"]};
-    
-CREATE INDEX productName_index2 ON bucket_name(productName, ProductID) 
-    WHERE type="product" 
-    USING GSI 
+
+CREATE INDEX productName_index2 ON bucket_name(productName, ProductID)
+    WHERE type="product"
+    USING GSI
     WITH {"nodes":["node2:8091"]};
 ----
 
