@@ -19,8 +19,6 @@ Specifying various flags, the _config_ command can modify the configuration to b
 
 Once a backup repository is created its configuration cannot be changed.
 
-== #Anonymous Section#
-
 Options
 
 Below are a list of required and optional parameters for the config command.

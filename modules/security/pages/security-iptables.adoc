@@ -130,8 +130,6 @@ For a complete list of Couchbase ports, see xref:install:install-ports.adoc#topi
 
 NOTE: You can find a sample script for configuring the IP tables firewall settings in the following blog posting: http://blog.couchbase.com/iptables-firewall-settings-couchbase-db-and-couchbase-mobile-syncgateway[IPTables Firewall Settings for Couchbase DB and Couchbase Mobile Sync_gateway]
 
-== #Anonymous Section#
-
 In order to keep Couchbase Server secure, you need to perform the following:
 
 [#ol_bg4_n41_hy]
