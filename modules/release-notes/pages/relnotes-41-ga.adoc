@@ -32,7 +32,7 @@ Here are the notable fixes in the 4.1.2 release:
 | `Purge Seqno` would be reset in case there was a compaction call that was not purging any items, causing tombstone items not to be purged.
 
 | http://www.couchbase.com/issues/browse/MB-20102[MB-20102]
-| ``Purge Seqno ``is incorrectly passed to the compactor for development design documents preventing Couchbase Server from reclaiming the disk space.
+| `Purge Seqno` is incorrectly passed to the compactor for development design documents preventing Couchbase Server from reclaiming the disk space.
 
 | http://www.couchbase.com/issues/browse/MB-20047[MB-20047]
 | When using `cbdocloader` and loading files from disk, the documents are loaded except for the design documents, which are silently skipped.
@@ -167,7 +167,7 @@ The following issues are now fixed:
 | XDCR needs to add a timeout to call out to the remote cluster.
 
 | http://www.couchbase.com/issues/browse/MB-17517[MB-17517]
-| A corrupted  ``max_cas ``value in the vbucket breaks the HLC semantics.
+| A corrupted  `max_cas` value in the vbucket breaks the HLC semantics.
 
 | http://www.couchbase.com/issues/browse/MB-17506[MB-17506]
 | NMVB should not contain a cluster_config body if the client has already received the same cluster_config version

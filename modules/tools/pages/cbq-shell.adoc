@@ -239,7 +239,7 @@ a|
 
 | `-v`
 
-` --version`
+`--version`
 | None
 | false
 a|

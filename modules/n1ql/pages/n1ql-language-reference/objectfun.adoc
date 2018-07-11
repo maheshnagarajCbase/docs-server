@@ -311,7 +311,7 @@ Note that:
 
 [#ul_kck_2db_1v]
 * If [.var]`attr_key` is found in the object, it replaces the corresponding attribute value by [.var]`attr_value`.
-* If [.var]`attr_value` is MISSING, it deletes the corresponding existing key (if any), like[.cmd]`` object_remove()``.
+* If [.var]`attr_value` is MISSING, it deletes the corresponding existing key (if any), like [.cmd]`object_remove()`.
 * If [.var]`attr_key` is MISSING, it returns a MISSING value.
 * If [.var]`attr_key` is not an object, it returns a NULL value.
 
