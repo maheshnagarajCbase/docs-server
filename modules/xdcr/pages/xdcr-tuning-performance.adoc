@@ -38,7 +38,7 @@ Change the document threshold with the REST URI
 ----
 
 and the parameter for XDCR advanced settings.
-Alternatively, change the XDCR ``Optimistic Replication Threshold ``setting for the XDCR replication.
+Alternatively, change the XDCR `Optimistic Replication Threshold` setting for the XDCR replication.
 
 == Replication Statistics
 

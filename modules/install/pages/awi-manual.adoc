@@ -61,5 +61,5 @@ If you have not configured a public IP address, or if you want to automate the p
            --cluster-init-port=8091 \
            --cluster-init-ramsize=8000
 
-. When the cluster is initialized, you can access the Web Administration console by visiting the public DNS on the port configured in the command in the previous step, for example,`+ http://publicdns:8091+`.
+. When the cluster is initialized, you can access the Web Administration console by visiting the public DNS on the port configured in the command in the previous step, for example, `+http://publicdns:8091+`.
 You must log in with the username and password configured in the previous step.

@@ -73,11 +73,11 @@ The following are the command options:
 | `--optimistic-replication-threshold =[256]`
 | Document body size threshold (bytes) to trigger optimistic replication.
 
-| `--source-nozzle-per-node=[1-100] `
+| `--source-nozzle-per-node=[1-100]`
 | The number of source nozzles per target node.
 Default is 2.
 
-| `--target-nozzle-per-node=[1-100] `
+| `--target-nozzle-per-node=[1-100]`
 | The number of outgoing nozzles per target node.
 Default is 2.
 

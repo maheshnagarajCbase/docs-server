@@ -11,7 +11,7 @@ You need to be logged in as root (superuser) to complete the installation.
 . For Ubuntu version 12.04 and Debian 7, you need OpenSSL 1.x.
 Install a specific OpenSSL dependency by running:
 +
-`+ root-> apt-get install libssl version +`
+`+root-> apt-get install libssl version+`
 
 . To install, use the [.cmd]`dpkg` command-line tool using the `DEB` file that you downloaded.
 The following example uses [.cmd]`dpkg` for installation:
