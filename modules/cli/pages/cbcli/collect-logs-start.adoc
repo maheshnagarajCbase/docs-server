@@ -41,7 +41,7 @@ This name is mandatory when the option `--upload` is specified.
 | `--ticket=TICKET_NUMBER`
 | Number of the support ticket (optional).
 
-| `--upload `
+| `--upload`
 | Collects logs to a specified host.
 
 | `--upload-host=HOST`

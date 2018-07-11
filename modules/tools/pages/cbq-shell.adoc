@@ -276,7 +276,7 @@ REST API: `-creds` parameter
 
 | `-v`
 
-` --version`
+`--version`
 | None
 | false
 a|

@@ -356,7 +356,7 @@ This only affects indexes where there are keys which are close to the maximum ke
 | [.api]`DATE_RANGE_STR()` and [.api]`DATE_RANGE_MILLIS()` may give wrong results when using very large or very small values.
 
 | https://issues.couchbase.com/browse/MB-22530[MB-22530]
-| The functions [.api]`ARRAY_RANGE()`, [.api]`ARRAY_REPEAT()`, [.api]`DATE_RANGE_MILLIS()`, [.api]`DATE_RANGE_STR()`, [.api]``REPEAT() ``do not have bounds enforced.
+| The functions [.api]`ARRAY_RANGE()`, [.api]`ARRAY_REPEAT()`, [.api]`DATE_RANGE_MILLIS()`, [.api]`DATE_RANGE_STR()`, [.api]`REPEAT()` do not have bounds enforced.
 This causes the query engine to crash when very large arrays are generated.
 
 | https://issues.couchbase.com/browse/MB-22362[MB-22362]
@@ -373,7 +373,7 @@ END;+`)
 | Incorrect error message when non-JSON arguments are passed to the [.api]`TOKENS()` function.
 
 | https://issues.couchbase.com/browse/MB-20677[MB-20677]
-| [.api]``REGEXP_LIKE() ``does not return an error when an invalid pattern string is passed.
+| [.api]`REGEXP_LIKE()` does not return an error when an invalid pattern string is passed.
 |===
 
 *Web Console*

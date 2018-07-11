@@ -41,16 +41,16 @@ The following are the command options:
 | `--optimistic-replication-threshold=[256]`
 | Document body size threshold (bytes) to trigger an optimistic replication.
 
-| `--source-nozzle-per-node=[1-10] `
+| `--source-nozzle-per-node=[1-10]`
 | The number of source nozzles per source node.
 
 | `--target-nozzle-per-node=[1-100]`
 | The number of outgoing nozzles per target node.
 
-| `--log-level=[Error\|Info\|Debug\|Trace] `
+| `--log-level=[Error\|Info\|Debug\|Trace]`
 | Logging level.
 
-| `--stats-interval=[MS] `
+| `--stats-interval=[MS]`
 | The interval (in milliseconds) for statistics updates.
 |===
 
