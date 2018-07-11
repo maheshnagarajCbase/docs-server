@@ -135,13 +135,14 @@ Without purging, you would see an increase in your backup size during merges as 
 | The error message “[.output]`db is being used by another handle`” was not known to cause any issues and has been handled to not appear any more.
 
 | https://issues.couchbase.com/browse/MB-20403[MB-20403]
- The bucket being backed up was flushed between incremental backups.
- The bucket being backed up was deleted and re-created in between incremental backups.
- The bucket had not been backed up between a document's deletion and the metadata for that deleted document being purged.
- There had been a failover between incremental backups of the bucket .
-| The [.cmd]`cbbackupmgr merge` command did not function correctly and caused data corruption under the following circumstances:
+a|
+The [.cmd]`cbbackupmgr merge` command did not function correctly and caused data corruption under the following circumstances:
 
-
+[#ul_qsg_f4q_1bb]
+* The bucket being backed up was flushed between incremental backups.
+* The bucket being backed up was deleted and re-created in between incremental backups.
+* The bucket had not been backed up between a document's deletion and the metadata for that deleted document being purged.
+* There had been a failover between incremental backups of the bucket .
 |===
 
 *UI - Web Console*
@@ -192,20 +193,35 @@ This section lists some of the known issues in this release.
 | Issue | Description
 
 | https://issues.couchbase.com/browse/MB-25590[MB-25590]
+a|
+*Summary*: Query Service, Using N1QL incorrect results may be returned when the UNNEST expression does not match the array index expression.
+For example:
+
+----
+CREATE INDEX idx-mismatch
+  ON default(all addr);
+
+EXPLAIN SELECT v.seqno
+FROM default
+  USE index (idx-mismatch)
+  UNNEST default.messages AS v
+WHERE v.seqno >1;
+----
+
+*Workaround*: Do not use the simplified array index.
+Instead create a full array index as shown in the following example:
 
 ----
 CREATE INDEX idx-fullarray
   ON default (ALL ARRAY v FOR v IN add END);
 ----
-| *Summary*: Query Service, Using N1QL incorrect results may be returned when the UNNEST expression does not match the array index expression.
-For example:
-
-CREATE INDEX idx-mismatch ON default(all addr); EXPLAIN SELECT v.seqno FROM default USE index (idx-mismatch) UNNEST default.messages AS v WHERE v.seqno >1;
-
-*Workaround*: Do not use the simplified array index.
-Instead create a full array index as shown in the following example:
 
 | https://issues.couchbase.com/browse/MB-25669[MB-25669]
+a|
+*Summary*: On Windows platform, the [.cmd]`cbimport` tool fails to import a tab delimited CSV file where the tab is specified using '`\t`' or '`\\t`'.
+
+*Workaround*: Use Cygwin on the Windows platform to run the command as a Linux command.
+For example,
 
  $ /cygdrive/c/Program\ Files/Couchbase/Server/bin/cbimport.exe csv
  -c http://127.0.0.1:8091
@@ -213,10 +229,6 @@ Instead create a full array index as shown in the following example:
  -b default
  -d file://c:/tmp/csv_tab
  --field-separator $'\t'
-| *Summary*: On Windows platform, the [.cmd]`cbimport` tool fails to import a tab delimited CSV file where the tab is specified using '`\t`' or '`\\t`'.
-
-*Workaround*: Use Cygwin on the Windows platform to run the command as a Linux command.
-For example,
 
 | https://issues.couchbase.com/browse/MB-25188[MB-25188]
 | Replication from a timestamp-based conflict resolution bucket to Elasticsearch node is not supported and sequence number based conflict resolution will be used instead.
@@ -531,13 +543,14 @@ Workaround: Upgrade the cluster fully to Couchbase Server 3.1.6 as an intermedia
 This may result in a rebalance hanging as the rebalance waits for the vBucket to leave the backfill state.
 
 | https://issues.couchbase.com/browse/MB-20403[MB-20403]
- The bucket being backed up is https://developer.couchbase.com/documentation/server/4.6/clustersetup/bucket-flush.html#topic_v1t_trm_gv[flushed] between incremental backups
- The bucket being backed up is deleted and re-created in between incremental backups
- The bucket has not been backed up between a document's deletion and the https://developer.couchbase.com/documentation/server/4.6/architecture/core-data-access-bucket-disk-storage.html#concept_cy4_tr2_xs__tombstone[metadata for that deleted document being purged]
- There has been a failover between incremental backups of the bucket
-| The cbbackupmgr merge command will not function correctly and may cause data corruption under the following circumstances:
+a|
+The cbbackupmgr merge command will not function correctly and may cause data corruption under the following circumstances:
 
-
+[#ul_pgb_l1d_wz]
+* The bucket being backed up is https://developer.couchbase.com/documentation/server/4.6/clustersetup/bucket-flush.html#topic_v1t_trm_gv[flushed] between incremental backups
+* The bucket being backed up is deleted and re-created in between incremental backups
+* The bucket has not been backed up between a document's deletion and the https://developer.couchbase.com/documentation/server/4.6/architecture/core-data-access-bucket-disk-storage.html#concept_cy4_tr2_xs__tombstone[metadata for that deleted document being purged]
+* There has been a failover between incremental backups of the bucket
 
 For more information about the Merge functionality, see https://developer.couchbase.com/documentation/server/4.6/backup-restore/cbbackupmgr-merge.html#cbbackupmgr-merge.1[cbbackupmgr merge].
 
@@ -591,26 +604,26 @@ This section lists some of the known issues in this release:
 This should not affect the application clients.
 
 | https://issues.couchbase.com/browse/MB-22273[MB-22273]
- Do not use prepared statements.
- If using the Java SDK, set the undocumented property [.output]`N1qlQueryExecutor.ENCODED_PLAN_ENABLED_PROPERTY` to “[.output]`false`” before opening the bucket.
-For example,
-| In Couchbase clusters with multiple query service nodes, applications may get incorrect results from prepared N1QL queries that use covering indexes.
+a|
+In Couchbase clusters with multiple query service nodes, applications may get incorrect results from prepared N1QL queries that use covering indexes.
 
 *Workaround:* The following two options can be used to avoid this problem:
 
-
+* Do not use prepared statements.
+* If using the Java SDK, set the undocumented property [.output]`N1qlQueryExecutor.ENCODED_PLAN_ENABLED_PROPERTY` to “[.output]`false`” before opening the bucket.
+For example,
 
 [.output]`System.setProperty(N1qlQueryExecutor.ENCODED_PLAN_ENABLED_PROPERTY, "false”) ..
 cluster.openBucket(bucketname)`
 
 | https://issues.couchbase.com/browse/MB-20403[MB-20403]
- The bucket being backed up is xref:clustersetup:bucket-flush.adoc#topic_v1t_trm_gv[flushed] between incremental backups
- The bucket being backed up is deleted and re-created in between incremental backups
- The bucket has not been backed up between a document's deletion and the xref:architecture:core-data-access-bucket-disk-storage.adoc#tombstone[metadata for that deleted document being purged]
- There has been a failover between incremental backups of the bucket
-| The `cbbackupmgr merge` command will not function correctly and may cause data corruption under the following circumstances:
+a|
+The `cbbackupmgr merge` command will not function correctly and may cause data corruption under the following circumstances:
 
-
+* The bucket being backed up is xref:clustersetup:bucket-flush.adoc#topic_v1t_trm_gv[flushed] between incremental backups
+* The bucket being backed up is deleted and re-created in between incremental backups
+* The bucket has not been backed up between a document's deletion and the xref:architecture:core-data-access-bucket-disk-storage.adoc#tombstone[metadata for that deleted document being purged]
+* There has been a failover between incremental backups of the bucket
 
 For more information about the Merge functionality, see xref:backup-restore:cbbackupmgr-merge.adoc#cbbackupmgr-merge.1[cbbackupmgr merge].
 
@@ -679,37 +692,37 @@ This section lists some of the known issues in this release:
 | Issue | Description
 
 | https://issues.couchbase.com/browse/MB-23112[MB-23112]
+a|
+When using XDCR from a cluster running Couchbase Server 4.x (prior to 4.6.0) to a 4.6.0 cluster, XDCR stops when it tries to replicate `tombstones` (deletes) and fails with an error message EINVAL.
 
 IMPORTANT: We recommend you wait for the upcoming bug-fix version 4.6.1 to upgrade.
-| When using XDCR from a cluster running Couchbase Server 4.x (prior to 4.6.0) to a 4.6.0 cluster, XDCR stops when it tries to replicate `tombstones` (deletes) and fails with an error message EINVAL.
-
-
 
 | https://issues.couchbase.com/browse/MB-22814[MB-22814]
 | When creating a new Memcached bucket, existing Couchbase buckets may appear as not ready in the Couchbase Web Console for a few seconds.
 This should not affect the application clients.
 
 | https://issues.couchbase.com/browse/MB-22273[MB-22273]
- Do not use prepared statements.
- If using the Java SDK, set the undocumented property [.output]`N1qlQueryExecutor.ENCODED_PLAN_ENABLED_PROPERTY` to “[.output]`false`” before opening the bucket.
-For example,
-| In Couchbase clusters with multiple query service nodes, applications may get incorrect results from prepared N1QL queries that use covering indexes.
+a|
+In Couchbase clusters with multiple query service nodes, applications may get incorrect results from prepared N1QL queries that use covering indexes.
 
 *Workaround:* The following two options can be used to avoid this problem:
 
-
+[#ul_y2t_zqy_dz]
+* Do not use prepared statements.
+* If using the Java SDK, set the undocumented property [.output]`N1qlQueryExecutor.ENCODED_PLAN_ENABLED_PROPERTY` to “[.output]`false`” before opening the bucket.
+For example,
 
 [.output]`System.setProperty(N1qlQueryExecutor.ENCODED_PLAN_ENABLED_PROPERTY, "false”) ..
 cluster.openBucket(bucketname)`
 
 | https://issues.couchbase.com/browse/MB-20403[MB-20403]
- The bucket being backed up is xref:clustersetup:bucket-flush.adoc#topic_v1t_trm_gv[flushed] between incremental backups
- The bucket being backed up is deleted and re-created in between incremental backups
- The bucket has not been backed up between a document's deletion and the xref:architecture:core-data-access-bucket-disk-storage.adoc#tombstone[metadata for that deleted document being purged]
- There has been a failover between incremental backups of the bucket
-| The `cbbackupmgr merge` command will not function correctly and may cause data corruption under the following circumstances:
+a|
+The `cbbackupmgr merge` command will not function correctly and may cause data corruption under the following circumstances:
 
-
+* The bucket being backed up is xref:clustersetup:bucket-flush.adoc#topic_v1t_trm_gv[flushed] between incremental backups
+* The bucket being backed up is deleted and re-created in between incremental backups
+* The bucket has not been backed up between a document's deletion and the xref:architecture:core-data-access-bucket-disk-storage.adoc#tombstone[metadata for that deleted document being purged]
+* There has been a failover between incremental backups of the bucket
 
 For more information about the Merge functionality, see xref:backup-restore:cbbackupmgr-merge.adoc#cbbackupmgr-merge.1[cbbackupmgr merge].
 
@@ -972,18 +985,21 @@ SCRAM protocol for bucket authentication will first be introduced in Java, follo
 | [.path]_/Settings/replications_ REST endpoint will be available for all replication settings and provides the same functionality.
 
 | N1QL: Deprecated the use of path-expressions in `FROM` and `JOIN` clauses in version 4.5
+a|
+FROM and JOIN clauses should use only keyspaces.
+Paths can be used for expressions in other clauses, operators, projections, and so on.
+
+For example:
 
 ----
 SELECT count(*) FROM `travel-sample`.schedule;
 ----
 
+can be rewritten as:
+
 ----
 SELECT count(*)  FROM `travel-sample` WHERE schedule IS NOT MISSING;
 ----
-| FROM and JOIN clauses should use only keyspaces.
-Paths can be used for expressions in other clauses, operators, projections, and so on.
-
-For example: can be rewritten as:
 
 | CAPI based XDCR
 | CAPI based XDCR is deprecated and will be removed in a future version of Couchbase Server.

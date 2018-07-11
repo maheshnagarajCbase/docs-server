@@ -34,9 +34,10 @@ The following are the command options:
 | Parameter | Description
 
 | `--server-add=[host]:[port]`
-| Server to be added.
+a|
+Server to be added.
 
-Adding a server directly as part of the `rebalance` command using the `--server-add` parameter is deprecated and this functionality will be removed in a future release.
+WARNING: Adding a server directly as part of the `rebalance` command using the `--server-add` parameter is deprecated and this functionality will be removed in a future release.
 
 | `--server-add-username=[username]`
 | Administrator username to add the server.

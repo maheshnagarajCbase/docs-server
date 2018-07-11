@@ -600,13 +600,27 @@ Let's use the following sample document with Doc_Id "foo" to explain the limitat
 | Supported | Example
 
 | image:introduction/images/yes.png[,align=center]
-| SELECT a FROM default WHERE ANY i IN b SATISFIES i < 5 END;
+a|
+----
+SELECT a
+         FROM default
+         WHERE ANY i IN b SATISFIES i < 5 END;
+----
 
 | image:introduction/images/yes.png[,align=center]
-| SELECT ARRAY_DISTINCT(b) FROM default WHERE a = 5;
+a|
+----
+SELECT ARRAY_DISTINCT(b)
+        FROM default
+        WHERE a = 5;
+----
 
 | image:introduction/images/no.png[,align=center]
-| SELECT b,a FROM default;
+a|
+----
+SELECT b,a
+       FROM default;
+----
 |===
 
 * Indexed arrays do not maintain duplicate elements of an array or the position of the elements within an array in the GSI array index.
