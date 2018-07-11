@@ -64,7 +64,7 @@ Using a script defined in the [.path]_package.json_ file under the "build" secti
 The provisioning process outputs messages to the terminal.
 Provisioning and starting the app can take up to two minutes to complete based on the speed of your environment.
 Upon completion, the app outputs a message with the app login URL.
-You only need to run '`npm run build`' once, and if it's run again it will not re-provision the Couchbase instance.
+You only need to run '``npm run build``' once, and if it's run again it will not re-provision the Couchbase instance.
 You'll see messages similar to this one:
 +
 [source,console]

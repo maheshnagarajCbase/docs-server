@@ -45,7 +45,7 @@ a|
 [#ul_o3h_mbr_yx]
 * *Set the time interval when compaction is allowed to run*
 +
-If selected, you must specify the start time ([.var]`hh`:[.var]`mm`), and end time ([.var]`hh`:[.var]`mm`) of the time period when compaction is allowed to run.
+If selected, you must specify the start time ([.var]`hh`:[.var]``mm``), and end time ([.var]`hh`:[.var]``mm``) of the time period when compaction is allowed to run.
 
 * *Abort compaction if run time exceeds the set time interval*
 +
@@ -73,7 +73,7 @@ The option turns on append only writes for index storage and triggers the compac
 For new clusters created with version 4.5, this option is selected by default.
 +
 The option turns on writes with xref:architecture:storage-architecture.adoc#circular-reuse[circular reuse] for index storage and triggers compaction job based on time interval.
-You must specify the days of the week and the start time ([.var]`hh`:[.var]`mm`) when compaction is allowed to run and optionally set an end time ([.var]`hh`:[.var]`mm`) of the time period when compaction is aborted.
+You must specify the days of the week and the start time ([.var]`hh`:[.var]``mm``) when compaction is allowed to run and optionally set an end time ([.var]`hh`:[.var]``mm``) of the time period when compaction is aborted.
 
 * *Abort compaction if run time exceeds the set time interval*
 +

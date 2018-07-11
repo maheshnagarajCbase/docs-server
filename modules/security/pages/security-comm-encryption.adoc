@@ -28,7 +28,7 @@ To set up certification, see xref:security-x509certsintro.adoc#configuring-x.509
 
 While an administrative console is typically protected via an HTTPS connection, the new administrative access on port `18091` allows connection to the Couchbase Web Console over SSL/TLS, which is enabled by default.
 
-To talk over SSL/TLS to the Couchbase Web Console, connect to the following URL with your web browser: [.input]`https://couchbase_server:18091`
+To talk over SSL/TLS to the Couchbase Web Console, connect to the following URL with your web browser: [.input]`+https://couchbase_server:18091+`
 
 *Verifying the cluster's certificate *
 
@@ -138,7 +138,7 @@ For example, on the MAC OS these are:
 
 You can override this selection by setting the environment variable before starting Couchbase as follows:
 
-`COUCHBASE_SSL_CIPHER_LIST`= <[.var]`list of ciphers to accept`>
+`COUCHBASE_SSL_CIPHER_LIST`= <[.var]``list of ciphers to accept``>
 
 Set the variable to `COUCHBASE_SSL_CIPHER_LIST= MEDIUM, HIGH` to include only medium- and high-security ciphers for your installation.
 

@@ -105,14 +105,14 @@ IMPORTANT: We recommend that you do not create (or drop) secondary indexes when 
 
 *Using the meta().id function*
 
-You can use the `meta().id `function when creating an index.
+You can use the ``meta().id ``function when creating an index.
 The `meta().id` function does not require a parameter; it implicitly uses the keyspace being indexed.
 
 ----
 CREATE INDEX id_ix on `beer-sample`(meta().id);
 ----
 
-The `meta().id `function in a query is given an expression; if it resolves to a keyspace alias, the requested field (id) is returned.
+The ``meta().id ``function in a query is given an expression; if it resolves to a keyspace alias, the requested field (id) is returned.
 
 ----
 SELECT b.name, meta(b).id

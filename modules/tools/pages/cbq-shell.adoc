@@ -136,7 +136,7 @@ cbq> \HELP;
 | `-e`
 
 `--engine`
-| <[.var]`url`>
+| <[.var]``url``>
 a|
 ----
 http://localhost:8091
@@ -228,7 +228,7 @@ a|
 `--credentials`
 | [.var]`list of credentials`
 | None
-| Specify the login credentials in the form of [.var]`username`:[.var]`password`.
+| Specify the login credentials in the form of [.var]`username`:[.var]``password``.
 You can specify credentials for different buckets by separating them with a comma.
 
 Shell command: <<cbq-set,\SET>> `-creds`
@@ -372,7 +372,7 @@ cbq> \QUIT;
 | [.cmd]`\SET`
 | [.var]`parameter`[.var]`value`
 
-[.var]`parameter`=[.var]`prefix`:[.var]`variable name`
+[.var]`parameter`=[.var]`prefix`:[.var]``variable name``
 a|
 Sets the top most value of the stack for the given variable with the specified value.
 
