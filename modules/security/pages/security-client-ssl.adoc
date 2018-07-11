@@ -69,7 +69,7 @@ For example, on the MAC OS these are:
 
 You can override this selection by setting the environment variable before starting Couchbase as follows:
 
-`COUCHBASE_SSL_CIPHER_LIST`= <[.var]`list of ciphers to accept`>
+`COUCHBASE_SSL_CIPHER_LIST`= <[.var]``list of ciphers to accept``>
 
 Set the variable to `COUCHBASE_SSL_CIPHER_LIST= MEDIUM, HIGH` to include only medium- and high-security ciphers for your installation.
 
