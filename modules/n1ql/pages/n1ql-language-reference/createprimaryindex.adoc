@@ -101,8 +101,6 @@ If [.var]`num_replica_num` is not less than the number of index nodes in the clu
 [caption=Attention]
 IMPORTANT: We recommend that you do not create (or drop) secondary indexes when any node with a secondary index role is down as this may result in duplicate index names.
 
-== #Anonymous Section#
-
 *Example 1*: Create a primary index on the travel-sample keyspace.
 
 ----
