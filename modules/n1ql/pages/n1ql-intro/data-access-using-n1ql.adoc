@@ -44,6 +44,4 @@ UNION combines the results of two or more queries into a single result set that 
 EXCEPT returns any distinct values from the left query that are not found on the right query.
 INTERSECT returns any distinct values that are returned by the queries on both sides of the INTERSECT operand.
 
-== #Anonymous Section#
-
 See xref:index.adoc[N1QL reference] for information about N1QL language reference and N1QL REST API.

@@ -77,8 +77,6 @@ If an update to the brewery document is issued, all the beers embedding the same
 * Embedding results in replicated bytes and therefore uses extra memory and storage space because it requires repetition of brewery attributes across many beers.
 Intra-cluster replication (DCP) and Cross Datacenter Replication (XDCR) have to communicate the brewery attributes every time a beer gets updated.
 
-== #Anonymous Section#
-
 It is important to note that you can use hybrid solutions.
 Embedding may be a great choice for relationships like "book" and "authors" where there are only a few authors.
 However, referencing may be a better way when you have "instruments" and "measurements" as the relationship.

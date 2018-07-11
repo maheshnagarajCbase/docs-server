@@ -4,8 +4,6 @@
 [abstract]
 You can atomically increment or decrement the numerical value of special counter documents
 
-== #Anonymous Section#
-
 ----
 counter(docid, value)
 counter(docid, -value)
