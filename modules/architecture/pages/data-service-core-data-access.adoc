@@ -63,7 +63,6 @@ If you know the key used to store a particular value, then you can use the memca
 You can also perform bulk retrieve operations.
 +
 There are two main ways to retrieve data without referencing keys:
-
 * Use N1QL to submit a SQL-like query to retrieve your data.
 +
 NOTE: You must enable Query Service to run N1QL queries.

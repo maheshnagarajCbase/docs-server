@@ -54,14 +54,15 @@ In a multi-tier hierarchy, the root CA issues certificates to the intermediate C
 * Trusted root CA > Intermediate CA 1 > Intermediate CA 2\....
 > Intermediate CA N > Cluster certificate
 
++
 When you need to regenerate the intermediate certificate, ensure that the chain can be verified up to the root CA.
-
++
 If all intermediate certificates are not installed on your server, some clients might think you are on an insecure connection.
 This results in 'untrusted' warnings like the following:
-
++
 [#image_ofr_hg1_z5]
 image::pict/back-to-safety.png[,450,align=left]
-
++
 To avoid such warnings, a server should always send a complete trust chain.
 The trust chain contains your certificate concatenated with all intermediate certificates.
 
@@ -212,65 +213,64 @@ Here are the steps to help you generate X.509 certificates:
  ** One or more `int` subdirectories
  ** One or more `node` subdirectories
 . Generate the root private key file (`ca.key`), and CA public key file (`ca.pem`).
-
++
 Enter the following command inside the `root` subdirectory:
-
++
 ----
 openssl genrsa -out ca.key 2048
 ----
-
++
 ----
 Generating RSA private key, 2048 bit long modulus
 ............................................................................................+++
 ....+++
 e is 65537 (0x10001)
 ----
-
++
 ----
 openssl req -new -x509  -days 3650 -sha256 -key ca.key -out ca.pem \
 -subj '/C=UA/O=My Company/CN=My Company Root CA'
 ----
 
 . Generate the intermediate private key file (`int.key)` and the intermediate certificate signing request (`int.csr`) to generate the intermediate public key file (`int.pem`).
-
++
 Enter the following command inside the `int` subdirectory:
-
++
 ----
 openssl genrsa -out int.key 2048
 ----
-
++
 ----
 Generating RSA private key, 2048 bit long modulus
 ..........................................+++
 .....+++
 e is 65537 (0x10001
 ----
-
++
 ----
 openssl req -new -key int.key -out int.csr -subj '/C=UA/O=My Company/CN=My Company Intermediate CA'
 ----
 
 . Create the extension file (`v3_ca.ext)` to add extensions to the certificate and to generate the certificate signing request.
-
++
 In the `int` subdirectory enter:
-
++
 ----
 cat <<EOF >> v3_ca.ext
 ----
-
++
 Then add the following:
-
++
 ----
 subjectKeyIdentifier = hash
 authorityKeyIdentifier = keyid:always,issuer:always
 basicConstraints = CA:true
 EOF
 ----
-
++
 Your `int` directory now contains three files: `int.csr`,  `int.key`, and `v3_ca.ext`.
 
 . Generate the intermediate public key file (`int.pem)` based on the intermediate certificate signing request (`int.csr`), and signed by the root public key (`ca.pem`):
-
  .. In the `int` subdirectory enter:
 +
 ----
@@ -300,9 +300,10 @@ openssl x509 -in int.pem -text
 ----
 
 . Generate the node private key file (`pkey.key`) and the node certificate signing request (`pkey.csr`) to generate the node public key file (`pkey.pem`).
-
++
 Be sure to enter another node and use the appropriate node name instead of the variable *<node-name>*, such as "sales" or "HR’.
 Each time you use another name, another set of files will be generated.
+
  .. Inside the node subdirectory (repeated for each node in the cluster):
 +
 ----
@@ -391,18 +392,17 @@ pkey.pem: OK
 +
 This means that certificate validation has passed.
 . Generate a certificate chain file.
-
++
 When a client application tries to verify a certificate signed by the intermediate CA, it must also verify the intermediate certificate against the root certificate.
 To complete the chain of trust, create a certificate chain to present it to the application.
-
++
 In a chain file, the lowest certificate goes first, then the intermediate certificates in proper order.
-
++
 IMPORTANT: Do not include in your chain file the root CA’s public key certificate and intermediate certificates that are not in the trust path.
-
++
 NOTE: The root certificate is not included in this chain.
-
++
 To create the certificate chain file, concatenate the intermediate and root certificates together, beginning with the lowest one in the chain.
-
  ** If you have only one intermediate CA in your trust path, use this command:
 +
 ----
@@ -410,18 +410,19 @@ cat pkey.pem ../int/int.pem > chain.pem
 ----
 
  ** If you have more intermediate CAs in your trust path, keep in mind that the order of certificates in an SSL Certificate Chain file is important:
+
   *** `pkey.pem` certificate is signed by intermediate (`int3.pem`) certificate
   *** `int3.pem `is signed by intermediate (`int2.pem`)
   *** `int2.pem `is signed by intermediate (`int1.pem`)
 
++
 For multiple intermediate CAs, use this command:
-
++
 ----
 cat pkey.pem ../int3/int.pem ../int2/int.pem ../int1/int.pem  > chain.pem
 ----
 
 . Copy the node private key (`pkey.key)` and the chain file (`chain.pem`) manually to the `inbox` folder on each node.
-
  .. Create an `inbox` folder in the Couchbase server path:
 +
 ----
@@ -456,7 +457,7 @@ chain.pem	pkey.key
 ----
 
 . Change permissions so that Couchbase can read `pkey.key` and `chain.pem:`
-
++
 ----
 cd /Users/<username>/Library/Application\ Support/Couchbase/var/lib/couchbase/inbox/
 chmod 777 chain.pem
@@ -524,6 +525,7 @@ Before you rotate a certificate, you need to generate a new certificate.
 +
 Typically, your Certificate Authority (CA) will give you a self-service option to re-issue certificates.
 If this is not the case, you can manually regenerate your new X509 certificate.
+
  .. Renew the root CA certificate
 +
 The root certificate authority (CA) is the topmost CA in a CA hierarchy.
@@ -556,19 +558,19 @@ openssl genrsa -out newca.key 2048
                         -subj '/C=UA/O=My Company/CN=My Company Root CA'
 ----
  .. Renew the intermediate certificates.
-
++
 For the intermediate CAs, a possible strategy might be to renew them for a year to six months before they expire and reuse the existing key.
-
++
 By replacing the old chain file with the new chain file (that contains the updated intermediate certificate), rotation of the intermediate certificate can be performed:
-
++
 ----
 > cat pkey.pem ../int/newint.pem <possibly other intermediate CAs> > chain.pem
 ----
 
 . *Deploy the CA public key and intermediate certificates*
-
++
 Before modifying anything on the server-side, deploy the CA public key and intermediate certificates in the certificate stores used by your client browser and the SDK language.
-
++
 For example, here are steps to do that for http://www.cyberciti.biz/faq/firefox-adding-trusted-ca/[Firefox] and http://blogmines.com/blog/how-to-import-a-certificate-in-google-chrome/[Chrome].
 
 . *Rotate certificates on the server*
@@ -587,8 +589,9 @@ curl -X POST --data-binary "@newca.pem" \
                         http://Administrator:password@127.0.0.1:8091/controller/uploadClusterCA
 ----
  .. Configure the new intermediate and node certificate.
-
++
 For each node, copy over new `chain.pem` file, and per node private key (new `pkey.pem` file, if the node certificate is rotated) to the `inbox` folder.
+
   *** Using CLI:
 +
 ----
@@ -602,26 +605,26 @@ couchbase-cli ssl-manage -c <node-name>:8091 -u Administrator -p password \
 curl -X POST http://Administrator:password@[node-name]:8091/node/controller/reloadCertificate
 ----
 . *Test the server CA certificate*
-
++
 You can also use OpenSSL's `s_client` by trying to connect to a server that you know is using a certificate signed by the CA that you just installed:
-
++
 ----
 > openssl s_client -connect https://<hostname>:8091 -CApath <root ca public key>
 ----
 
 . *Troubleshoot X.509 certificates*
-
++
 During the development process these external tools might come in handy for verifying and debugging SSL traffic:
-
  ** [.cmd]`openssl`: OpenSSL command line tool
  ** wireshark: Network traffic analyzer
  ** nmap: Sophisticated security scanner
 
 . *Revert from the X.509 to the self-signed certificate*
-
++
 If you configured Couchbase to use X.509 certificates, and you want to go back to the self-signed certificates, you can do this by regenerating the self-signed cluster certificate using CLI or REST.
-
++
 WARNING: Moving from CA certificates to self-signed certificates will cause application downtime because you need to reconfigure the self-signed cluster certificate on the client machines after self-signed certificate regeneration.
+
  ** Using CLI:
 +
 ----

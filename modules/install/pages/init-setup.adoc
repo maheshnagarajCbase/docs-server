@@ -41,6 +41,7 @@ image::admin/picts/cluster-setup-01.png[,480,align=left]
 The displayed fields for [.uicontrol]*Start a New Cluster* are as follows:
 +
 // Second-level bulleted list
+
 [#ul_yqx_w5m_zv]
  ** [.uicontrol]*RAM Available*: The total RAM available on this node.
 
@@ -69,12 +70,13 @@ If there are multiple nodes in your cluster, the RAM-total you specify here will
  ** [.uicontrol]*Index Storage Setting*: If the Index service has been selected, either [.uicontrol]*Standard Global Secondary Indexes* or [.uicontrol]*Memory-Optimized Global Secondary Indexes* can be chosen here, by means of radio buttons.
 See xref:architecture:global-secondary-indexes.adoc#concept_e5c_kf4_vs[Global Secondary Indexes (GSIs)], for details.
 
++
 Note that no RAM-allocation option is provided for the Query service, since none is required.
 Note also that interactive [.uicontrol]*What's this?* elements are provided throughout the screen, in adjacency to certain fields: by hovering over any of these elements with the mouse-cursor, you cause pop-up help-information to be displayed.
-
++
 If you are joining an existing cluster, rather than starting a new cluster, you do not need to enter data into any of the above fields.
 Instead, click on the radio button [.uicontrol]*Join a cluster now*; and proceed as described immediately below.
-
++
 // End of first-level bulleted list item
 
 // Start of new first-level bulleted list
@@ -87,6 +89,7 @@ image::admin/picts/cluster-setup-01-join.png[,480,align=left]
 If you elect to [.uicontrol]*Join a cluster now*, interactive fields are displayed for the\...
 +
 // Start of new second-level bulleted list
+
  ** [.uicontrol]*IP Address* of the cluster you are joining.
 
  ** [.uicontrol]*Username* of the Couchbase Server administrator who is managing the cluster you are joining.
@@ -97,14 +100,15 @@ If you elect to [.uicontrol]*Join a cluster now*, interactive fields are display
 Each (including Data) can be selected by means of an associated checkbox.
 Select one to three services for a development environment.
 You are recommended only to set _one_ service for a production environment.
-
++
 // End of first-level bulleted item
 
 * [.uicontrol]* Configure Disk Storage *
-
++
 Whether you are starting a new cluster, or joining one existing, configure disk storage as follows:
-
++
 // Start of second-level bulleted list
+
  ** [.uicontrol]*Database Path*: The interactive text-field should contain the location where the database files will be stored.
 The following default is provided: [.path]_/Users/user_name/Library/Application Support/Couchbase/var/lib/couchbase/data_.
 The read-only [.uicontrol]*Free* field shows the current amount of free space for this location.
@@ -113,14 +117,15 @@ The read-only [.uicontrol]*Free* field shows the current amount of free space fo
 The following default is provided: [.path]_/Users/user_name/Library/Application Support/Couchbase/var/lib/couchbase/data_.
 The read-only [.uicontrol]*Free* field shows the current amount of free space for this location.
 
++
 Note that for a production environment, it is recommended that data and indexes should _not_ share the same location.
-
++
 // End of first-level bulleted item
 
 * [.uicontrol]* Configure Server Hostname *
-
++
 Whether you are starting a new cluster, or joining one existing, either enter a node IP or hostname into the editable text-field; _or_ use the default provided.
-
++
 Note that a specified hostname will survive node restart.
 For more details about hostnames, see xref:hostnames.adoc#topic_ggq_hfy_p4[Using Hostnames].
 

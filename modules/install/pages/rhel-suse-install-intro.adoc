@@ -143,30 +143,30 @@ rpm2cpio openssl098e-0.9.8e-17.el6.centos.2.x86_64.rpm | cpio --extract --make-d
 mv /usr/lib64/* lib/
 ----
 . After you extract the Couchbase Server installation files, go to the sub-directory:
-
++
 [source,bash]
 ----
 cd opt/couchbase
 ----
 
 . Run the following script to relocate the Couchbase Server installation to the present working directory (PWD):
-
++
 [source,bash]
 ----
 ./bin/install/reloc.sh `pwd`
 ----
-
++
 This enables you to continue the installation as a non-root, non-sudo user.
 
 . To run the server, use
-
++
 [source,bash]
 ----
 ./bin/couchbase-server \-- -noinput -detached
 ----
 
 . To stop the server, use
-
++
 [source,bash]
 ----
 ./bin/couchbase-server -k

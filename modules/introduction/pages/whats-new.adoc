@@ -149,7 +149,7 @@ It retains only distinct array elements in unspecified order.
 Result includes values that are in only one of the arrays.
 * `ARRAY_SYMDIFFN(arr1, arr2)` - This function returns symmetric difference of multiple input arrays.
 Result includes values that are in odd number of the input arrays.
-
++
 The following Array functions are updated to take variable number of arguments:
 [#ul_tjc_w4k_pz]
 * `ARRAY_APPEND()`
@@ -263,4 +263,5 @@ Various important efficiency improvements make better use of connections and res
 * *Faster serialization* is now possible as Couchbase sequence numbers are persisted as Kafka Connect offsets instead of as Zookeeper nodes.
 * *Bulk mode* for DCP Snapshots is a new option, making offsets only committed in Kafka once the entire snapshot is received - avoiding duplicate retransmissions of mutations.
 
++
 For details, see xref:connectors:kafka-3.1/kafka-intro.adoc#kafka-3-intro[Kafka Connector 3.1].

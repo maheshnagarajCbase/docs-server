@@ -58,7 +58,6 @@ The [.cmd]`ARRAY` operator lets you map and filter the elements or attributes of
 It evaluates to an array of the operand expression that satisfies the WHEN clause, if specified.
 +
 [.var]`var_expr` ::= function([.var]`var1`, [.var]`var2`, \...)
-
 [#ul_pw5_xgl_rz]
 * The expression is a function of the variables [.var]`var1`, [.var]`var2`, etc.
 used in the FOR clause, and the expressions [.var]`expr1`, [.var]`expr2`, etc.
@@ -67,12 +66,12 @@ respectively.
 * The [.var]`var_expr` itself can be an [.var]`array_expr`, allowing nested array expression.
 This enables creating array indexes on nested array fields.
 See examples below.
-
++
 [.var]`simple_array_expr`
-
++
 When using [.var]`simple_array_expr`, only an array field name or an expression [.var]`expr` that can evaluate to an array can be specified.
 In this case, all elements of the array are indexed.
-
++
 NOTE: Currently, array indexing is limited to using only one index key with [.var]`array_expr`.
 Furthermore, the [.var]`array_expr` must be the first index-key for the index to be leverages for a SELECT statement with an UNNEST clause on the array.
 To create an array index involving multiple array elements or multiple arrays:
@@ -81,6 +80,7 @@ To create an array index involving multiple array elements or multiple arrays:
 * Subsequent SELECT or DML must use similar compound objects in the WHERE clause to use the array index.
 See examples below.
 
++
 NOTE: Couchbase 4.6.2 release introduces the following enhancements to array indexing:
 [#ul_wb3_y3l_rz]
 * Allow arbitrary variable names in array index selection.
@@ -89,6 +89,7 @@ In earlier releases, the variable names must exactly match.
 See https://developer.couchbase.com/documentation/server/4.5/n1ql/n1ql-language-reference/indexing-arrays.html[4.5 documentation] for details.
 * Support [.var]`simple_array_expr`, which provides simpler syntax for array indexing when all array elements are indexed as is, without requiring to use the ARRAY operator in the index definition.
 
++
 NOTE: The variables used in query predicates (WHERE clauses) of subsequent SELECT/UPDATE/UPSERT/DELETE statements must be the same as those used in the above [.var]`array_expr`.
 See <<query-predicate-format,Format of Query Predicate in SELECT, UPDATE, or DELETE>> for details.
 

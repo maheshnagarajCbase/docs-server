@@ -33,15 +33,15 @@ You must specify either one or both parameters:
 * View size (in MB)
 
 Time Interval:: *Set the time interval when compaction is allowed to run*
-
++
 If selected, you must specify the start time ([.var]`hh`:[.var]`mm`), and end time ([.var]`hh`:[.var]`mm`) of the time period when compaction is allowed to run.
-
++
 *Abort compaction if run time exceeds the set time interval*
-
++
 When selected, if database compaction is running when the configured time period ends, the compaction process is terminated.
-
++
 *Compact Bucket and Views Index in parallel*
-
++
 When selected, database and view compaction is executed simultaneously, implying a heavier processing and disk I/O load during the compaction process.
 
 Index Fragmentation::
@@ -65,21 +65,22 @@ You must specify the days of the week and the start time ([.var]`hh`:[.var]`mm`)
 +
 When selected, if database compaction is running when the configured time period ends, the compaction process is terminated.
 
++
 Whenever you change the compaction settings for the index, the system starts the global secondary index process on all the nodes.
-
++
 When you switch from append-only writes with percent-fragmentation based trigger to circular reuse with time-based trigger, the setting may not take effect immediately after upgrading from 4.1 or 4.0 to version 4.5.
 To see when the circular reuse option takes effect, ensure that compaction has completed on all the indexes on all nodes with global indexes.
-
++
 NOTE: Index compaction settings cannot be overridden at the bucket level.
 
 Metadata Purge Interval::
 Sets the frequency of metadata purge interval.
 The default value is three days.
-
++
 [.term]_Tombstones_ are records of expired or deleted items, and they include the key and metadata.
 Tombstones are used in Couchbase Server to provide eventual consistency of data between clusters.
 The auto-compaction process waits for the specified number of days before permanently deleting tombstones for expired or deleted items.
-
++
 If you set this value too low, you may see more inconsistent results in views queries, such as deleted items in a result set.
 You may also see inconsistent items in clusters with XDCR set up between the clusters.
 If you set this value too high, it will delay the server from reclaiming disk space.

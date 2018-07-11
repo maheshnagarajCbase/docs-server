@@ -109,7 +109,7 @@ While there is no field name pattern matching available, you can use an asterisk
 Facets::
 This object indicates whether faceting was requested and when requested, returns the facets.
 The section on xref:fts-queries.adoc#search-facets[Search Facets] provides more information on the possible values of the facet request.
-
++
 ----
 "facets": {
     "type": {
@@ -120,7 +120,7 @@ The section on xref:fts-queries.adoc#search-facets[Search Facets] provides more 
 ----
 
 Explain:: This Boolean field when set to true prints a verbose response with full scoring information.
-
++
 ----
 ----
 

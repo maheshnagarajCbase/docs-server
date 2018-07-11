@@ -229,6 +229,7 @@ SELECT * FROM [1, 2, "name", { "type" : "airport", "id" : "SFO"}]  AS  ks1
 This includes expressions that refers to any xref:n1ql-language-reference/subqueries.adoc#section_onz_3tj_mz[variables in scope] for the query.
 This is applicable to only subqueries because the outermost level query cannot use any variables in its own FROM clause.
 This makes the subquery correlated with outer queries, as explained in the xref:n1ql-language-reference/subqueries.adoc#topic_9[Subqueries] section.
+
 *Subquery and Subquery Expressions*::
 A subquery itself can appear as `from-term` expression.
 In this case, the subquery results are fed as data source to the outer query.

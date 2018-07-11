@@ -24,7 +24,7 @@ This returns `true` if the substring exists within the input string, otherwise `
 *Return Value*:: A boolean, representing whether the search string exists within the input string.
 
 *Examples*::
-
++
 [source,json]
 ----
 SELECT CONTAINS("N1QL is awesome", "N1QL") as n1ql,
@@ -55,7 +55,7 @@ This function capitalizes the initial letter of every word in the sentence, this
 This does not strictly follow title case conventions used in the writing domain.
 
 *Examples*::
-
++
 [source,json]
 ----
 SELECT INITCAP("N1QL is awesome") as n1ql;
@@ -80,7 +80,7 @@ SELECT INITCAP("N1QL is awesome") as n1ql;
 *Return Value*:: An integer representing the length of the string.
 
 *Examples*::
-
++
 [source,json]
 ----
 SELECT LENGTH("") as empty_string,
@@ -109,7 +109,7 @@ This is useful for canonical comparison of string values.
 *Return Value*:: A string representing the input string converted to lower case.
 
 *Examples*::
-
++
 [source,json]
 ----
 SELECT LOWER("N1QL is awesome") as n1ql;
@@ -144,7 +144,7 @@ For example specifying a character value of `"abc"` will trim the characters "a"
 *Return Value*:: A string representing the input string with leading characters removed.
 
 *Examples*::
-
++
 ----
 SELECT LTRIM("...N1QL is awesome", ".") as dots,
     LTRIM("     N1QL is awesome", " ") as explicit_spaces,
@@ -178,7 +178,7 @@ If the search string does not exist within the input string then the function re
 *Return Value*:: An integer representing the first position of the search string.
 
 *Examples*::
-
++
 [source,json]
 ----
 SELECT POSITION("N1QL is awesome", "awesome") as awesome,
@@ -216,7 +216,7 @@ In some cases the query engine may be unable to process all of these and cause e
 It is therefore recommended that you first validate the inputs to this function to ensure that the generated result is a reasonable size.
 
 *Examples*::
-
++
 [source,json]
 ----
 SELECT REPEAT("N1QL", 0) as empty_string,
@@ -252,7 +252,7 @@ If a negative value is specified then all instances of the search string are rep
 *Return Value*:: A string representing the input string with the specified substring replaced.
 
 *Examples*::
-
++
 [source,json]
 ----
 SELECT REPLACE("SQL SQL SQL", "S", "N1", -2) as negative_n,
@@ -285,7 +285,7 @@ This is useful for testing whether or not a string is a palindrome.
 *Return Value*:: A string representing the input string with its characters reversed.
 
 *Examples*::
-
++
 [source,json]
 ----
 SELECT REVERSE("N1QL is awesome") as n1ql,
@@ -322,7 +322,7 @@ For example specifying a character value of `"abc"` will trim the characters `"a
 *Return Value*:: A string representing the input string with its trailing characters removed.
 
 *Examples*::
-
++
 [source,json]
 ----
 SELECT RTRIM("N1QL is awesome...", ".") as dots,
@@ -355,7 +355,7 @@ SELECT RTRIM("N1QL is awesome...", ".") as dots,
 *Return Value*:: An array of strings containing the strings created by splitting the input string.
 
 *Examples*::
-
++
 [source,json]
 ----
 SELECT SPLIT("N1QL is awesome", " ") as explicit_spaces,
@@ -405,7 +405,7 @@ An integer, or any valid xref:n1ql-language-reference/index.adoc[expression] whi
 *Return Value*:: A string representing the substring extracted from the input string.
 
 *Examples*::
-
++
 [source,json]
 ----
 SELECT SUBSTR("N1QL is awesome", 3) as end_of_string,
@@ -434,7 +434,7 @@ SELECT SUBSTR("N1QL is awesome", 3) as end_of_string,
 *Return Value*:: An array of strings containing all of the suffixes of the input string.
 
 *Examples*::
-
++
 [source,json]
 ----
 SELECT SUFFIXES("N1QL is awesome") as n1ql
@@ -463,16 +463,16 @@ SELECT SUFFIXES("N1QL is awesome") as n1ql
     ]
 }
 ----
-
++
 The following example uses the `SUFFIXES()` function to index and query the airport names when a partial airport name is given.
-
++
 [source,sql]
 ----
 CREATE INDEX autocomplete_airport_name
     ON `travel-sample`( DISTINCT ARRAY array_element FOR array_element IN SUFFIXES(LOWER(airportname)) END )
     WHERE type = "airport";
 ----
-
++
 [source,sql]
 ----
 SELECT airportname
@@ -481,7 +481,7 @@ SELECT airportname
     ANY array_element IN SUFFIXES(LOWER(airportname)) SATISFIES array_element LIKE 'washing%' END
     AND type="airport";
 ----
-
++
 [source,json]
 ----
 {
@@ -501,7 +501,7 @@ SELECT airportname
     ]
 }
 ----
-
++
 The following https://dzone.com/articles/a-couchbase-index-technique-for-like-predicates-wi[blog] provides more information about this example.
 
 [#fn-str-title]
@@ -574,7 +574,7 @@ NOTE: The `specials` options preserves special characters except at the end of a
 *Return Value*:: An array of strings containing all of the tokens obtained from the input string.
 
 *Examples*::
-
++
 [source,json]
 ----
 SELECT TOKENS( ['jim@abc.com, kim@abc.com, http://abc.com/, 408-555-1212'],
@@ -617,9 +617,9 @@ SELECT TOKENS(['jim@abc.com, kim@abc.com, http://abc.com/, 408-555-1212'],
     }
 ]
 ----
-
++
 In the following example, `TOKENS()` converts all of the URL data into UPPER case and also adds the full URL to the delimited words.
-
++
 [source,json]
 ----
 SELECT TOKENS(url) AS defaulttoken,
@@ -647,13 +647,13 @@ SELECT TOKENS(url) AS defaulttoken,
     }
 ]
 ----
-
++
 You can also use `{"case":"lower"}` or `{"case":"upper"}` to have case sensitive search.
 Index creation and querying can use this and other parameters in combination.
 These parameters should be passed within the query predicates as well.
 The parameters and values have to match exactly for N1QL to pick up and use the index correctly.
 The following example shows how you can create an index and use it your application.
-
++
 [source,sql]
 ----
 CREATE INDEX idx_url_upper_special on `travel-sample`(
@@ -661,7 +661,7 @@ CREATE INDEX idx_url_upper_special on `travel-sample`(
         tokens(url, {"specials":true, "case":"UPPER"})
     END ) where type = 'hotel';
 ----
-
++
 [source,json]
 ----
 SELECT name, address, url
@@ -704,7 +704,7 @@ For example specifying a character value of `"abc"` will trim the characters `"a
 *Return Value*:: A string representing the input string with trailing and leading characters removed.
 
 *Examples*::
-
++
 [source,json]
 ----
 SELECT TRIM("...N1QL is awesome...", ".") as dots,
@@ -735,7 +735,7 @@ SELECT TRIM("...N1QL is awesome...", ".") as dots,
 *Return Value*:: A string representing the input string converted to upper case.
 
 *Examples*::
-
++
 [source,json]
 ----
 SELECT UPPER("N1QL is awesome") as n1ql;
