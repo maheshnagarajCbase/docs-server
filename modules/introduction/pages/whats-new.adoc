@@ -201,15 +201,18 @@ Support for different development environments also continues with, for example,
 * Updated the Couchbase Java SDK to 2.4.2
 * Updated dcp-client to 0.8.0
 
++
 *Spark SQL*
 [#ul_q4t_k2d_wz]
 * Various fixes for custom nested schemas
 * Added `config` option to also store the document ID in the document instead of removing it proactively
 
++
 *Spark Streaming*
 [#ul_r4t_k2d_wz]
 * Internals reworked for Structured Streaming, Adaptations for dcp-client 0.8.0
 
++
 For more information, see xref:connectors:spark-2.1/spark-intro.adoc#concept_l11_ppm_pp[Spark Connector 2.1].
 
 *Talend Connector [Developer Preview]*::
