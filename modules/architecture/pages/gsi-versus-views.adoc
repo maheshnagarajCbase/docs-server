@@ -19,18 +19,20 @@ The following table lists the key differences between GSIs and Views.
 |  | GSIs | Views
 
 | Partitioning model
- GSIs are part of the index service, thus GSI independently partitions using the new multidimensional scaling capabilities and the services architecture*.*
- Each GSI can only be placed in one node.
- GSIs require manual partitioning to prevent hot spots.
- GSIs can respond without requiring scatter-gather operations.
-| 
+a|
+[#ul_tkj_lh2_zs]
+* GSIs are part of the index service, thus GSI independently partitions using the new multidimensional scaling capabilities and the services architecture*.*
 
-
+[#ul_tqn_kg2_zs]
+* Each GSI can only be placed in one node.
+* GSIs require manual partitioning to prevent hot spots.
+* GSIs can respond without requiring scatter-gather operations.
 
 For more information, see "GSI and index partitioning" under xref:global-secondary-indexes.adoc[Global secondary indexes].
- Views are auto-partitioned based on the data partitioning which is based on the hashing of the keys to vBuckets and vBucket placement.
- View queries need to perform expensive scatter-gather operations.
-| 
+a|
+[#ul_iq1_dh2_zs]
+* Views are auto-partitioned based on the data partitioning which is based on the hashing of the keys to vBuckets and vBucket placement.
+* View queries need to perform expensive scatter-gather operations.
 
 | Scaling model
 | GSIs are part of the index service.
@@ -47,9 +49,10 @@ As the node count of the cluster increases, views require a wider fan-out and he
 | GSIs come with a managed cache that can provide higher performance during index maintenance and index scans.
 | Views depend on the file system cache and can be impacted by fluctuations in the underlying operating system.
 
-| Storage engine
+a|
+Storage engine
 
-For more information on the differences between Couchstore and ForestDB, see "Couchstore versus ForestDB" under xref:storage-architecture.adoc[Storage Architecture].
+NOTE: For more information on the differences between Couchstore and ForestDB, see "Couchstore versus ForestDB" under xref:storage-architecture.adoc[Storage Architecture].
 | GSIs use ForestDB for storage.
 Starting version 5.0, the default storage for GSIs in the Enterprise Edition is Plasma.
 | Views use Couchstore for storage.
