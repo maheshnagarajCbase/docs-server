@@ -25,6 +25,4 @@ This encryption covers both data packets and administration traffic.
 xref:security:security-auditing.adoc#topic_a5p_npm_lq[Auditing]empowers authorized users to monitor the actions carried out by administrators in the Couchbase Server cluster.
 This capability is essential for achieving regulatory compliance and is often critical for adhering to internal security policies.
 
-== #Anonymous Section#
-
 For more information about security mechanisms in Couchbase Server, see xref:security:security-intro.adoc[Security in Couchbase].
