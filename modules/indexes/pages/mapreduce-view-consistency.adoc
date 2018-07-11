@@ -80,6 +80,7 @@ Scenario 4: Sequential access::
 * Client 1 queries a second time with [.input]`stale=ok`.
 * Client 1 gets the updated view.
 
++
 WARNING: This scenario can cause problems when paginating over a number of records as the record sequence may change between individual queries or if the number of mutations triggers an index update during pagination.
 
 Index updates are stacked when multiple clients request the view to be updated before executing the query and returning the information([.input]`stale=false`).

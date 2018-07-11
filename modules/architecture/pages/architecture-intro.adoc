@@ -47,11 +47,11 @@ Couchbase Server supports the following three indexers:
 * Global Secondary Index (GSI) indexer
 * Spatial Views indexer
 
++
 Using these indexers, you can create two types of indexes:
-
 * _Primary indexes_ which index all the keys in a given bucket and are used when a secondary index cannot be used to satisfy a query and a full bucket scan is required.
 * _Secondary indexes_ can index a subset of the items in a given bucket and are used to make queries targeting a specific subset of fields more efficient.
-
++
 In Couchbase Server, Views (both Incremental Map-Reduce Views and Spatial Views) are placed within the data service as they are partition-aligned to the core data distribution.
 The Global Secondary Indexes (GSI) are deployed on nodes hosting the index service and can be independently partitioned for better performance and throughput with N1QL queries.
 For more information about indexers and index services, see xref:views-indexing-index-service.adoc[Views, indexing, and index services].
@@ -63,7 +63,6 @@ Data service and core data operations provide a key based lookup.
 You can retrieve items based on the item key using the key-value API.
 
 * Querying with value, document, or document attribute
-
  ** With N1QL, you can query JSON documents using SQL-like syntax.
 You can also run ad-hoc queries with filters and aggregates over JSON data and reshape the JSON output.
 N1QL API is available through the query service.
@@ -74,4 +73,5 @@ Incremental Map-Reduce view API are available through data service.
 Spatial views define the attributes that signify the coordinates a given item represents using the MapReduce functions in JavaScript.
 Spatial view API is available through the data service.
 
++
 For more information about querying and retrieving data, see xref:querying-data-and-query-data-service.adoc[Querying data and query service].

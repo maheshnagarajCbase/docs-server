@@ -26,6 +26,7 @@ http://ec2-107-21-64-139.compute-1.amazonaws.com:8091
 ----
 +
 Answer the prompts for the username and password for the Couchbase Server web console:
+
  ** Username is `Administrator`
  ** Password is your instance ID
 

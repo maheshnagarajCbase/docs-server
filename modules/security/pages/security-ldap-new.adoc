@@ -45,10 +45,11 @@ Perform these tasks on the LDAP server:
 * Create users.
 * Set up user passwords.
 
++
 These tasks are performed using the Couchbase Web Console:
 * Mapping users in LDAP to full administrators or read-only administrators in Couchbase.
 * Validating LDAP credentials.
-
++
 To configure LDAP using the Couchbase Web Console, see xref:security-ldap-gui-new.adoc#topic_omm_dxq_wq[Configuring LDAP administrators].
 
 `saslauthd`:: The `saslauthd` process handles authentication requests on behalf of Couchbase Server.

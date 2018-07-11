@@ -32,10 +32,10 @@ Through configuration, buckets provide segregation along the following boundarie
 Item::
 Item is the basic unit of data in a Couchbase Server.
 An item is a key-value pair where each stored value is identified by a unique key within the bucket.
-
++
 This is different from relational databases which store data in databases grouped by tables.
 Tables have a strict schema (set of columns) and data is stored in rows in tables.
-
++
 Values for an item can be anything from a single bit, to a decimal measurement, to JSON documents.
 Storing data as a JSON document allows the Couchbase Server to provide extended features such as indexing and querying.
 Items are also referred to as documents, objects, or key-value pairs.
@@ -69,6 +69,7 @@ It is the core enabler for
 * Backups with full or incremental snapshots of data
 * Integration with Hadoop, Kafka and text search engines based on Lucene like Solr
 
++
 For more information about replication, see xref:high-availability-replication-architecture.adoc[High availability and replication architecture].
 
 Rebalance::
@@ -90,7 +91,7 @@ Node lifecycle::
 As the cluster topology changes, nodes in the cluster go through a set of state transitions.
 Operations such as Add Node, Remove Node, Rebalance, and Failover cause state transitions.
 The following diagram lists the states and state transitions of the nodes in the cluster.
-
++
 .Node lifecycle
 [#fig_x5h_k1c_ws]
 image::cb-rebalance4.png[,550,align=left]

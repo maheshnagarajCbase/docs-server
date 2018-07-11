@@ -60,16 +60,17 @@ This value has the same characteristics as [.input]`stale=ok` in the view API.
 +
 This value has the same characteristics as [.input]`stale=false` in the view API.
 
++
 When using GSI, the default consistency setting is [.input]`not_bounded`.
 
 Replication::
 GSIs are not automatically replicated.
 They must be defined on other indexing nodes for high-availability.
-
++
 To create a replica of a GSI, you can create an identical index definition with unique index names under 2 nodes.
 Queries will load balance across the indexes and if one of the indexes become unavailable, all requests are rerouted to the available remaining index.
 You can create more than 2 copies of the index for better redundancy and load balancing.
-
++
 ----
 CREATE INDEX productName_index1 ON bucket_name(productName, ProductID)
      WHERE type="product"

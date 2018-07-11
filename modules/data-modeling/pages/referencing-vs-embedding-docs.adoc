@@ -34,10 +34,12 @@ For example, even though the beer document may be in memory, brewery document ma
 To retrieve or update related items, you may need to issue multiple operations causing multiple round trips.
 For example, with "brewery" document referencing "beer", adding a new "beer" requires an additional write to the referencing "brewery" document.
 * Couchbase Server provides ACID properties on document operations addressing a single document.
+
  ** A single document write is guaranteed to either fully succeed or fail.
  ** No operation can see a partially updated version of the document.
  ** If update operation is issued with durability requirements such as replicated durability (replicateTo) or persisted durability (persistTo flag), Couchbase Server guarantees the whole document will be durable.
 
++
 Operations that require an update to beer and a brewery document cannot take advantage of ACID properties.
 For example, if brewery document is embedded in beer document and there could be many beers embedding the same brewery, you must search and update all the beers that embed the targeted brewery.
 However, this cannot be done in a single consistent operation.
@@ -62,10 +64,12 @@ Some of these are similar to the disadvantages of referencing.
 * Embedding can be advantageous when related items are frequently used together.
 Because multiple entities are contained in a single document, those entities are cached together in Couchbase Server managed cache and can be retrieved with a single operation, which eliminates the need for multiple round trips.
 * Couchbase Server provides ACID properties on operations addressing a single document.
+
  ** A single document write is guaranteed to either fully succeed or fail.
  ** No operation can see a partially updated version of the document.
  ** If an update operation is issued with durability requirements such as replicated durability (replicateTo) or persisted durability (persistTo flag), Couchbase Server guarantees the whole document will be durable.
 
++
 Imagine an "order" document that embeds "order line items" document embedded in it.
 With both related entities in a single document, operations that are required to update both the order and the order line items can take advantage of a single write.
 The atomic write ensures that either the entire update is successful or none of the updates to the order or its line items is committed to the document.
