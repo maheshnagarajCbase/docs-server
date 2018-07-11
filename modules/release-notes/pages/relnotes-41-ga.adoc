@@ -33,7 +33,7 @@ Here are the notable fixes in the 4.1.2 release:
 | `Purge Seqno` would be reset in case there was a compaction call that was not purging any items, causing tombstone items not to be purged.
 
 | http://www.couchbase.com/issues/browse/MB-20102[MB-20102]
-| ``Purge Seqno ``is incorrectly passed to the compactor for development design documents preventing Couchbase Server from reclaiming the disk space.
+| `Purge Seqno` is incorrectly passed to the compactor for development design documents preventing Couchbase Server from reclaiming the disk space.
 
 | http://www.couchbase.com/issues/browse/MB-20047[MB-20047]
 | When using `cbdocloader` and loading files from disk, the documents are loaded except for the design documents, which are silently skipped.

@@ -40,7 +40,7 @@ Defaults to all buckets
 | `--single-node`
 | Use a single server node from the source only
 
-| `-u USERNAME, --username=USERNAME `
+| `-u USERNAME, --username=USERNAME`
 | REST username for source cluster or server node.
 Default is Administrator
 
@@ -69,7 +69,7 @@ Defaults to 100.
 | Number of vbucket backup jobs to run at a time.
 Defaults to 1.
 
-| `-x EXTRA, --extra=EXTRA `
+| `-x EXTRA, --extra=EXTRA`
 | Provide extra, uncommon config parameters; comma-separated key=val(,key=val)* pairs.
 
 | `-m MODE, --mode=MODE`
@@ -134,7 +134,7 @@ Rehashing is needed when transferring data between clusters with a different num
 | Specify the bucket to restore.
 Defaults to all buckets
 
-| `-u USERNAME, --username=USERNAME `
+| `-u USERNAME, --username=USERNAME`
 | REST username for source cluster or server node.
 Default is Administrator
 
@@ -163,7 +163,7 @@ Defaults to 100.
 | Number of vbucket backup jobs to run at a time.
 Defaults to 1.
 
-| `-x EXTRA, --extra=EXTRA `
+| `-x EXTRA, --extra=EXTRA`
 | Provide extra, uncommon config parameters; comma-separated key=val(,key=val)* pairs.
 
 | `-m MODE, --mode=MODE`
