@@ -165,19 +165,19 @@ _unnest-clause:_
 If the `FROM` clause is omitted, the data source is equivalent to an array containing a single empty object.
 This allows you to evaluate expressions that do not depend on stored data.
 
-Evaluating an expression` SELECT 10 + 20 `produces the following result:
+Evaluating an expression`` SELECT 10 + 20 ``produces the following result:
 
 ----
 [ { "$1" : 30 } ]
 ----
 
-Counting the number of inputs` SELECT COUNT(*) AS input_count `produces the following result:
+Counting the number of inputs`` SELECT COUNT(*) AS input_count ``produces the following result:
 
 ----
 [ { "input_count" : 1 } ]
 ----
 
-Getting the input contents` SELECT * `produces the following result:
+Getting the input contents`` SELECT * ``produces the following result:
 
 ----
 [ { } ]

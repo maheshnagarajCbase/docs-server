@@ -14,7 +14,7 @@ They can then query the bucket to get the full document values and project the f
 
 Global secondary indexes (GSIs) are defined using the CREATE INDEX statement in N1QL.
 The CREATE INDEX statement supports the use of document attributes and N1QL expressions including functions in the index key.
-Using CREATE INDEX, you can also define a filter (that is, a WHERE clause with` WHERE type="person_document"`) to limit the index to person documents in the bucket) which in turn limits the documents being indexed.
+Using CREATE INDEX, you can also define a filter (that is, a WHERE clause with`` WHERE type="person_document"``) to limit the index to person documents in the bucket) which in turn limits the documents being indexed.
 There can only be zero or one index key output per document key.
 
 For example, you can create a global secondary index, also referred to as _index_, on name that indexes beer name attributes for documents of type "beer" using the following CREATE INDEX statement in N1QL.
@@ -116,8 +116,8 @@ See the example described in the previous section on "GSI and high availability"
 An index definition can define a filter to limit the documents being indexed.
 As an administrator, you can partition indexes by splitting them into multiple smaller segments and placing the individual segments in separate nodes to engage multiple nodes for processing highly concurrent queries.
 
-The following example illustrates partitioning the` beer_name `index into segments using a BETWEEN clause.
-`Index1_beer_name1 `specifies names that are between "A" and "C" inclusively, while` Index1_beer_name2 `specifies names between "D" and "F" inclusively, and so on.
+The following example illustrates partitioning the`` beer_name ``index into segments using a BETWEEN clause.
+``Index1_beer_name1 ``specifies names that are between "A" and "C" inclusively, while`` Index1_beer_name2 ``specifies names between "D" and "F" inclusively, and so on.
 
 [source,json]
 ----
@@ -133,7 +133,7 @@ The following example illustrates partitioning the` beer_name `index into segmen
  ...
 ----
 
-The first query below uses` Index1_beer_name1 `index to return the result which only engages nodeA as the index is created on nodeA, while the second query scans` Index_beer_name2 `index which is on nodeB.
+The first query below uses`` Index1_beer_name1 ``index to return the result which only engages nodeA as the index is created on nodeA, while the second query scans`` Index_beer_name2 ``index which is on nodeB.
 
 [source,json]
 ----
