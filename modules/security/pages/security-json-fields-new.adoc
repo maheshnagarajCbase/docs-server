@@ -22,15 +22,23 @@ For example: Login, Startup, Shutdown, Password, AuditStart, AuditStop, AuditTru
 For example, `+http://www.w3.org/TR/NOTE-datetime+`
 
 | `local`
-| document
+a|
+document
 
-{ip: <String>, port: <int>},
+----
+{ip: <String>,
+port: <int>},
+----
 | A JSON document that contains the local IP address and the port number of the running instance.
 
 | `remote`
-| document
+a|
+document
 
-{ip: <String>, port: <int>},
+----
+{ip: <String>,
+port: <int>},
+----
 | A JSON document that contains the remote IP address and the port number in addition to the information about the service that was used on the incoming connection associated with the event.
 
 Possible services include: `cbmcd`, `cbhttp`, `cbmgmt`, `cbxdcr`, `cbn1ql`, `cbsyncgw`.

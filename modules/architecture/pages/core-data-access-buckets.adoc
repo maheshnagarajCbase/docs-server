@@ -19,15 +19,17 @@ These items can also be replicated between nodes and clusters using Database Cha
 | Bucket type | Description
 
 | Couchbase
- Provides highly-available and dynamically reconfigurable distributed data storage, with persistence and replication services.
- 100% protocol compatible with, and built in the spirit of, the memcached open source distributed key-value cache.
-| 
+a|
+[#ul_evy_5fg_xs]
+* Provides highly-available and dynamically reconfigurable distributed data storage, with persistence and replication services.
+* 100% protocol compatible with, and built in the spirit of, the memcached open source distributed key-value cache.
 
 | memcached
- Provides a directly-addressed, distributed (scale-out), in-memory, key-value cache.
- Designed to be used alongside other database platforms such as relational database technology.
- By caching frequently-used data, they reduce the number of queries a database server must perform for web servers delivering a web application.
-| 
+a|
+[#ul_t2x_zfg_xs]
+* Provides a directly-addressed, distributed (scale-out), in-memory, key-value cache.
+* Designed to be used alongside other database platforms such as relational database technology.
+* By caching frequently-used data, they reduce the number of queries a database server must perform for web servers delivering a web application.
 |===
 
 IMPORTANT: With memcached buckets, the server provides only in-RAM storage and data does not persist on disk.
