@@ -562,7 +562,7 @@ Valid values are `true` or `false`.
 By default, this is set to true and `TOKENS()` will include field names.
 You can choose to not include field names by setting this option to `false`.
 * *{"case":"lower"}*: *Optional*.
-Valid values are [.input]`lower `or [.input]`upper`.
+Valid values are [.input]``lower ``or [.input]`upper`.
 Default is neither — return the case in the data.
 Use this option to specify the case sensitivity.
 * *{"specials": true}*:*Optional*.
@@ -688,7 +688,7 @@ SELECT name, address, url
 *Description*::
 Removes all leading and trailing characters from a string.
 The function removes all consecutive characters from the beginning and end of the string that match the specified characters and stops when it encounters a character that does not match any of the specified characters.
-This function is equivalent to calling `LTRIM() `and `RTRIM()` successively.
+This function is equivalent to calling ``LTRIM() ``and `RTRIM()` successively.
 
 *Arguments*::
 *input_string*;; A string, or any valid xref:n1ql-language-reference/index.adoc[expression] which evaluates to a string, that is the string to convert to remove trailing and leading characters from.

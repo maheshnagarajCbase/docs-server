@@ -206,10 +206,10 @@ Most field names and meanings match exactly those of system:active_requests.
 For Couchbase Server version 4.5 and 4.6, the following is true:
 
 [#ul_stl_slc_11b]
-* `completed_requests `lives completely in memory, and memory usage is about 1K per request, so even at 100k requests, memory consumption will be significantly lower than what N1QL uses to operate.
-* Adding every request to` completed_request `is likely to add only a few microseconds to the request duration, which are needed to assemble the entry.
-* The` completed_request `cache is fragmented across multiple buckets, so contention is not at issue.
-* Garbage collection is not involved in adding` completed_requests`, but it will be involved when deleting` completed_requests `entries.
+* ``completed_requests ``lives completely in memory, and memory usage is about 1K per request, so even at 100k requests, memory consumption will be significantly lower than what N1QL uses to operate.
+* Adding every request to`` completed_request ``is likely to add only a few microseconds to the request duration, which are needed to assemble the entry.
+* The`` completed_request ``cache is fragmented across multiple buckets, so contention is not at issue.
+* Garbage collection is not involved in adding`` completed_requests``, but it will be involved when deleting`` completed_requests ``entries.
 ====
 
 Get Completed Requests::

@@ -232,7 +232,7 @@ Valid values are `true` or `false`.
 By default, this is set to true and `TOKENS()` will include field names.
 You can choose to not include field names by setting this option to `false`.
 * *{"case":"lower"}*: *Optional*.
-Valid values are [.input]`lower `or [.input]`upper`.
+Valid values are [.input]``lower ``or [.input]`upper`.
 Default is neither — return the case in the data.
 Use this option to specify the case sensitivity.
 * *{"specials": true}*:*Optional*.

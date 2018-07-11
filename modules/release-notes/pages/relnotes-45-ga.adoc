@@ -372,8 +372,8 @@ Details for the change can be found in https://issues.couchbase.com/browse/MB-14
 With this change, global secondary indexes no longer display a `PENDING` state under the status in `SYSTEM:INDEXES`.
 Instead, global secondary indexes that are actively being built display `BUILDING` and global secondary indexes that are created with the `DEFER_BUILD` option display `DEFERRED` for the status attribute in the `SYSTEM:INDEXES` output in N1QL.
 Details for the change can be found in https://issues.couchbase.com/browse/MB-14679[MB-14679].
-* When the GROUP BY clause is present in a N1QL query, it is not valid to have any fields in SELECT <[.var]`projection_list`> expressions that are either not referred in GROUP BY expressions, or not in the aggregate functions in the <[.var]`projection_list`>.
-Further, the GROUP BY clause is required (on the non-aggregated field) if the <[.var]`projection_list`> has some fields aggregated and some not.
+* When the GROUP BY clause is present in a N1QL query, it is not valid to have any fields in SELECT <[.var]``projection_list``> expressions that are either not referred in GROUP BY expressions, or not in the aggregate functions in the <[.var]``projection_list``>.
+Further, the GROUP BY clause is required (on the non-aggregated field) if the <[.var]``projection_list``> has some fields aggregated and some not.
 This correct GROUP BY behavior is enforced, because each result row might otherwise have more than one possible value for the ungrouped columns/fields.
 If a query doesn't follow this rule, error code 4210 with message "Expression must be a group key or aggregate: \....
 " is thrown.
@@ -462,7 +462,7 @@ The workaround is to create covered indexes for both the branches.
 | http://www.couchbase.com/issues/browse/MB-19764[MB-19764]
 | Malformed or unknown roles seen when using the CLI.
 
-*Workaround:* Retry your command in the CLI using the following role strings - admin, ro_admin, cluster_admin, replication_admin, bucket_admin[<[.var]`bucket name`> or '*'], views_admin[<[.var]`bucket name`> or '*']
+*Workaround:* Retry your command in the CLI using the following role strings - admin, ro_admin, cluster_admin, replication_admin, bucket_admin[<[.var]``bucket name``> or '*'], views_admin[<[.var]``bucket name``> or '*']
 
 | http://www.couchbase.com/issues/browse/MB-19715[MB-19715]
 a|

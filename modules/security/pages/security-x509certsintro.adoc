@@ -412,8 +412,8 @@ cat pkey.pem ../int/int.pem > chain.pem
  ** If you have more intermediate CAs in your trust path, keep in mind that the order of certificates in an SSL Certificate Chain file is important:
 
   *** `pkey.pem` certificate is signed by intermediate (`int3.pem`) certificate
-  *** `int3.pem `is signed by intermediate (`int2.pem`)
-  *** `int2.pem `is signed by intermediate (`int1.pem`)
+  *** ``int3.pem ``is signed by intermediate (`int2.pem`)
+  *** ``int2.pem ``is signed by intermediate (`int1.pem`)
 
 +
 For multiple intermediate CAs, use this command:

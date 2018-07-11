@@ -8,7 +8,7 @@ Starting from version 4.6, the Enterprise Edition of Couchbase Server supports a
 
 Using PAM, administrators can set up the following features:
 
-* *External authentication*: PAM support enables Linux administrator accounts defined in`/etc/shadow` to be used in Couchbase Server.
+* *External authentication*: PAM support enables Linux administrator accounts defined in``/etc/shadow`` to be used in Couchbase Server.
 * *Password policy management*: PAM enables you to easily control password expiration rules, and synchronize administrator passwords on all servers through Linux password management.
 
 IMPORTANT: Although PAM provides several authentication modules, Couchbase Server PAM authentication supports only the Linux password module.
