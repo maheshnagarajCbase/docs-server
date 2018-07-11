@@ -34,6 +34,7 @@ With LDAP authentication enabled, the Full Administrator can add administrators 
 image::pict/manage-user-new.png[,350,align=left]
 +
 The roles are:
+
  ** `Admin` is the Full Administrator role, which can manage all cluster features including the security settings.
  ** `Read Only Admin` can view all cluster features without being able to edit them.
  ** `Cluster Admin` can manage all cluster features except for the security settings.
@@ -44,7 +45,7 @@ When denoted with an asterisk [*], this role can manage all views in a cluster.
  ** `Replication Admin` can manage only the XDCR features on the cluster and bucket level.
 
 . The Full Administrator can always manage all existing administrative roles in this same dialog and add a new role to particular users, or remove the roles from their list.
-
++
 [#image_vh2_xxr_nv]
 image::pict/manage-user-remove.png[,350,align=left]
 

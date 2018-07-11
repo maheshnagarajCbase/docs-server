@@ -76,9 +76,10 @@ The facets object contains the following fields:
 * missing - the count of documents that do not have a value for the field at all.
 The total count minus all the individual facet counts will give you the missing count, which may be 0.
 
++
 The other possible structures vary depending on whether it is a term facet or a range facet.
 This means terms have a structure called "term" with the name, or for a range query, they have some definition of the range and how to  name it.
-
++
 ----
 "facets": {
   "abv": {

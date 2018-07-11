@@ -103,21 +103,27 @@ Use the hostname of the machine running the query service: if you installed Couc
  .. Choose *Settings > Sample Buckets* and verify whether the `beer-sample` bucket is installed.
  .. If it is not available, follow the on-screen instructions to install it.
 . Start [.cmd]`cbq` on your system (Linux, Mac OSX, or Windows) to to run some queries against the `beer-sample` bucket.
+
 On Linux systems::
 
  $ /opt/couchbase/bin/cbq
+
+
 On OS X systems::
 
  $ /Applications/Couchbase\ Server.app/Contents/Resources/couchbase-core/bin/cbq
+
+
 On Windows systems::
 
  $ C:\Program Files\Couchbase\Server\bin\cbq.exe
 
++
 You are now at the [.cmd]`cbq` command prompt and can start running N1QL queries.
 Remember to end each query with a semicolon.
 
 . Run the following command to create the primary index:
-
++
 [source,sql]
 ----
 cbq> CREATE PRIMARY INDEX ON `beer-sample` USING GSI;
@@ -125,46 +131,46 @@ cbq> CREATE PRIMARY INDEX ON `beer-sample` USING GSI;
 
 . Now that your bucket is indexed, you can run some queries to explore the data it contains.
 Here are few sample queries to get you started.
-
++
 The following query returns the different values used for the `type` field:
-
++
 [source,sql]
 ----
 cbq> SELECT DISTINCT type FROM `beer-sample`;
 ----
-
++
 Each document in the bucket contains a `type` field that indicates the kind of data the document contains.
 The `beer-sample` bucket contains two kinds of documents—documents that describe breweries (the value for `type` is `brewery`) and documents that describe beers (the value for `type` is `beer`).
-
++
 The following query returns one `brewery` document and lists all the fields it contains:
-
++
 [source,sql]
 ----
 cbq> SELECT * FROM `beer-sample` WHERE type="brewery" LIMIT 1;
 ----
-
++
 The `beer-sample` bucket contains over 7000 documents, so the queries shown here contain a `LIMIT` clause to minimize the number of rows returned.
-
++
 The following query returns all fields in one `beer` document.
 The `IS NOT MISSING` clause on the `brewery_id `field tells N1QL to return only documents that have a `brewery_id` field.
-
++
 [source,sql]
 ----
 cbq> SELECT * FROM `beer-sample` WHERE brewery_id IS NOT MISSING
      AND type="beer" LIMIT 1;
 ----
-
++
 The following query returns the `brewery_id` and `name` fields from 5 beer documents:
-
++
 [source,sql]
 ----
 cbq> SELECT brewery_id, name FROM `beer-sample`
      WHERE brewery_id IS NOT MISSING AND type="beer" LIMIT 5;
 ----
-
++
 The following query returns 5 beer documents, but includes only the `brewery_id` field for each document.
 It orders them alphabetically by the `brewery_id` field and does not include any documents that do not have a `brewery_id` field.
-
++
 [source,sql]
 ----
 cbq> SELECT DISTINCT brewery_id FROM `beer-sample`

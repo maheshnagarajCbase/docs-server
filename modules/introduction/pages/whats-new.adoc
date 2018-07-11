@@ -118,6 +118,7 @@ SELECT {type, name} AS myobj FROM `travel-sample` LIMIT 1;
   ]
 ----
 
++
 For more information, see xref:n1ql:n1ql-language-reference/constructionops.adoc#topic_7_4[Construction Operators].
 
 == Release 4.5.0
@@ -220,10 +221,10 @@ See xref:n1ql:n1ql-language-reference/datefun.adoc[Date Functions] for details.
 Integrated Full Text Search (FTS) and new Full Text Search Service [Developer Preview]::
 Full Text Search (FTS) enables you to create, manage, and query full text indexes on JSON documents stored in a Couchbase bucket.
 FTS provides a language-aware manner of searching with relevance ranking (scoring) for results.
-
++
 NOTE: The Full Text Search feature is still considered experimental and the UI or the functionality may change.
 The xref:fts:fts-whats-new.adoc#topic_jzy_p5v_vv[What's New?] page lists the FTS features added in this release.
-
++
 For more information on search service and full-text search, see xref:fts:full-text-intro.adoc[Full Text Search Reference].
 
 [#mgmt-and-security]
