@@ -100,11 +100,11 @@ Buckets::
 Couchbase Server also provides a container called a bucket to group items.
 Buckets are primarily used to control resource allocation and to define security and storage properties.
 For data with differing caching and RAM quota needs, compaction requirements, availability requirements and IO priorities, buckets act as the control boundary.
-
++
 For example, you choose to create one replica for medical-codes data that contain drug, symptom and operation codes for a standard based electronic health record.
 This data can be recovered easily from other sources, so a single replica may be fine.
 However, patient data may require higher protection with 2 replicas.
 To achieve better protection for patient data without wasting additional space for medical-codes you could choose separate buckets for these 2 types of information.
-
++
 It is important to note that buckets can mix binary and document-based items.
 All keys within the bucket need to be unique regardless of the value type (binary or JSON document).

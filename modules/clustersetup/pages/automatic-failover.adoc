@@ -116,6 +116,7 @@ In many cases, it is better to not have access to a small part of the dataset ra
 * Implements a 30 second delay when a node fails before it performs an automatic failover.
 This prevents transient network issues or slowness from causing a node to be failed over when it shouldn’t be.
 
++
 If a network partition occurs, automatic failover occurs if and only if automatic failover is allowed by the specified restrictions.
 For example, if a single node is partitioned out of a cluster of five (5), it is automatically failed over.
 If more than one (1) node is partitioned off, autofailover does not occur.

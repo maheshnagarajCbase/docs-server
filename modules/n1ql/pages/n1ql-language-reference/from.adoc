@@ -41,28 +41,36 @@ Arguments::
 from-keyspace;;
 [Optional] String or <<concept_rnt_zfk_np/section_fkc_ftt_nz,expression>> resulting in a string that represents the keyspace or source of input documents.
 For details, see <<concept_rnt_zfk_np/keyspaces,Keyspaces>>.
+
 alias (Optionally, `AS` alias);;
 [Optional] To assign another name.
 For details, see <<concept_rnt_zfk_np/as,AS Keyword>>.
+
 `USE KEYS`;;
 [Optional] To specify one or multiple primary keys.
 For details, see <<concept_rnt_zfk_np/use-keys-clause,USE KEYS Clause>>.
+
 `SELECT`;;
 [Optional] To create a subquery of input objects.
 For details, see xref:n1ql-language-reference/selectclause.adoc#topic_SELECT_Clause[SELECT Clause].
+
 expr;;
 [Optional] A string expression of input objects.
 For details, see xref:n1ql-language-reference/index.adoc#n1ql-lang-ref[N1QL Expressions].
+
 from-term;; [Optional] The [.var]`from-term` defines the input objects for the query and it can be either a keyspace identifier or an expression.
 +
 When using nested subqueries, the [.var]`from-term` of the outermost parent query can only have a <<concept_rnt_zfk_np/section_ekc_ftt_nz,keyspace identifier>>, a subquery, or a <<concept_rnt_zfk_np/section_fkc_ftt_nz,constant expression>> since the [.var]`from-term` needs to independently produce input documents for the query.
 +
 However, the subqueries can use generic variable expressions, which may be dependent on the xref:n1ql-language-reference/subqueries.adoc#section_onz_3tj_mz[Variables in Scope of a Subquery].
 For details, see xref:n1ql-language-reference/subqueries.adoc#topic_9[Subqueries].
+
 join-clause;; [Optional] To create new input objects by combining two or more source objects either via a <<concept_rnt_zfk_np/lookup-join,Lookup JOIN>> or an <<concept_rnt_zfk_np/index-join,Index JOIN>>.
+
 nest-clause;;
 [Optional] To produce a single result of joining two keyspaces.
 For details, see <<concept_rnt_zfk_np/nest,NEST Clause>>.
+
 unnest-clause;;
 [Optional] To perform a join of the nested array with its parent.
 For details, see <<concept_rnt_zfk_np/unnest,UNNEST Clause>>.
@@ -414,6 +422,7 @@ However, other N1QL functions can also be used in the expressions.
 This includes expressions that refers to any xref:n1ql-language-reference/subqueries.adoc#section_onz_3tj_mz[variables in scope] for the query.
 This is applicable to only subqueries because the outermost level query cannot use any variables in its own `FROM` clause.
 This makes the subquery correlated with outer queries, as explained in the xref:n1ql-language-reference/subqueries.adoc#topic_9[Subqueries] section.
+
 *Subquery and Subquery Expressions*:: 
 +
 A subquery itself can appear as a `from-term` expression.
@@ -637,6 +646,7 @@ USE [ PRIMARY ] KEYS key_expression
 
 Arguments::
 PRIMARY;; [Optional] Make the [.var]`key_expression` a unique Primary Key.
+
 key_expression;; String of one or more fields to be used as a key.
 
 *USE KEYS Example 1: Specify a single key.*
@@ -672,13 +682,17 @@ These keys are subsequently nested-loop-joined to access qualified RHS documents
 Arguments::
 join-type;; [Optional; default is `LEFT INNER`]
 `LEFT` or `LEFT INNER`::: For each joined object produced, both the left-hand and right-hand source objects must be non-`MISSING` and non-`NULL`.
+
 `LEFT OUTER`::: For each joined object produced, only the left-hand source objects must be non-`MISSING` and non-`NULL`.
+
 from-path;;
 [Required] String or <<concept_rnt_zfk_np/section_fkc_ftt_nz,expression>> resulting in a string that represents the keyspace or source of input documents.
 For details, see <<concept_rnt_zfk_np/keyspaces,Keyspaces>>.
+
 alias (Optionally, `AS` alias);;
 [Optional] To assign another name.
 For details, see <<concept_rnt_zfk_np/as,AS Keyword>>.
+
 `ON KEYS` on-keys-clause;; [Required] String or expression representing the primary keys of the documents for the second keyspace.
 +
 The `ON KEYS` expression produces one or more document keys for the right-hand side document.
@@ -972,16 +986,22 @@ This is because Index JOINs' `ON KEY` expression must produce a scalar value; wh
 Arguments::
 join-type;; [Optional; default is `LEFT INNER`]
 `LEFT` or `LEFT INNER`::: For each joined object produced, both the left-hand and right-hand source objects must be non-`MISSING` and non-`NULL`.
+
 `LEFT OUTER`::: For each joined object produced, only the left-hand source objects must be non-`MISSING` and non-`NULL`.
+
 from-path;;
 String or <<concept_rnt_zfk_np/section_fkc_ftt_nz,expression>> resulting in a string that represents the keyspace or source of input documents.
 For details, see <<concept_rnt_zfk_np/keyspaces,Keyspaces>>.
+
 `AS` alias;;
 [Optional] To assign another name.
 For details, see <<concept_rnt_zfk_np/as,AS Keyword>>.
+
 `ON [PRIMARY] KEY` rhs-expression.lhs-expression-key FOR lhs-expression;; [Optional]
 rhs-expression::: String or expression representing the Keyspace corresponding to the right-hand side of JOIN.
+
 lhs-expression::: String or expression representing the Keyspace corresponding to the left-hand side of JOIN.
+
 lhs-expression-key::: String or expression representing the attribute in [.var]`rhs-expression` referencing the primary key for [.var]`lhs-expression`.
 
 *Index JOIN Example 1: ON KEY ...
@@ -1027,10 +1047,13 @@ Unnests can be chained.
 Arguments::
 join-type;; [Optional; default is `INNER`]
 `INNER`::: For each result object produced, both the left-hand and right-hand source objects must be non-`MISSING` and non-`NULL`.
+
 `LEFT` or `LEFT OUTER`::: A left-outer unnest is performed, and at least one result object is produced for each left source object.
 +
 For each joined object produced, only the left-hand source objects must be non-`MISSING` and non-`NULL`.
+
 path;; [Required] The first path element after each `UNNEST` must reference some preceding path.
+
 alias (optionally, `AS` alias);;
 [Required] To assign a name for the unnested item.
 For details, see <<concept_rnt_zfk_np/as,AS Keyword>>.
@@ -1200,13 +1223,17 @@ But instead of producing a cross-product of the left and right inputs, a single 
 Arguments::
 join-type;; [Optional; default is `INNER`]
 `INNER`::: For each result object produced, both the left-hand and right-hand source objects must be non-`MISSING` and non-`NULL`.
+
 `LEFT` or `LEFT OUTER`::: A left-outer unnest is performed, and at least one result object is produced for each left source object.
 +
 For each joined object produced, only the left-hand source objects must be non-`MISSING` and non-`NULL`.
+
 path;; [Required] The first path element after each `UNNEST` must reference some preceding path.
+
 alias (optionally, `AS` alias);;
 [Required] To assign a name for the unnested item.
 For details, see <<concept_rnt_zfk_np/as,AS Keyword>>.
+
 on-keys-clause;; [Required] String or expression representing the primary keys of the documents for the second keyspace.
 +
 The `ON KEYS` expression produces one or more document keys for the right-hand side document.
