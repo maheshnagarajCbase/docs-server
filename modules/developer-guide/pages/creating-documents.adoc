@@ -10,8 +10,6 @@ insert(docid, document)
 replace(docid, document)
 ----
 
-== #Anonymous Section#
-
 The first step in using a database involves storing data into it.
 
 In Couchbase, documents are typically updated using one of the _upsert_, _insert_, and _replace_ methods.
