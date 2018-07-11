@@ -54,7 +54,7 @@ The following are the command options:
 | Depends on the selected port.*
 
 | `--bucket-eviction-policy=[valueOnly\|fullEviction]`
-| Define the eviction policy: `full eviction `or `value-only` eviction.
+| Define the eviction policy: ``full eviction ``or `value-only` eviction.
 
 | `--enable-flush=[0\|1]`
 | Enables and disables flush (yes=1, no=0).

@@ -15,7 +15,7 @@ There are several deployment scenarios that Docker can easily support, and that 
 == Volumes
 
 A Couchbase Server Docker container will write all persistent and node-specific data under the directory [.path]_/opt/couchbase/var_.
-It is recommended to  map this directory to a directory on the host file system using the` -v` option to docker run and for the following reasons:
+It is recommended to  map this directory to a directory on the host file system using the`` -v`` option to docker run and for the following reasons:
 
 Persistence::
 Storing [.path]_/opt/couchbase/var_ outside the container allows you to delete the container and recreate it later.

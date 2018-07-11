@@ -13,7 +13,7 @@ image::docker-04.png[]
 
 Currently, the only supported approach for Couchbase Server on this deployment architecture is to use the --net=host flag.
 
-Using the `--net=host `flag will have the following effects:
+Using the ``--net=host ``flag will have the following effects:
 
 * The container will use the host's own networking stack, and bind directly to ports on the host.
 * Removes networking complications with Couchbase Server being behind an NAT.

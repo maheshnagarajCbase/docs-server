@@ -145,7 +145,7 @@ cbq> SELECT * FROM `beer-sample` WHERE type="brewery" LIMIT 1;
 The `beer-sample` bucket contains over 7000 documents, so the queries shown here contain a `LIMIT` clause to minimize the number of rows returned.
 +
 The following query returns all fields in one `beer` document.
-The `IS NOT MISSING` clause on the `brewery_id `field tells N1QL to return only documents that have a `brewery_id` field.
+The `IS NOT MISSING` clause on the ``brewery_id ``field tells N1QL to return only documents that have a `brewery_id` field.
 +
 [source,sql]
 ----
