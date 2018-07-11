@@ -30,22 +30,25 @@ The following are the command options:
 | Named bucket to act on.
 
 | `--bucket-eviction-policy=[valueOnly\|fullEviction]`
-| Define the eviction policy: full eviction or value-only eviction.
+a|
+Define the eviction policy: full eviction or value-only eviction.
 
-Changing the bucket ejection policy will invoke a bucket restart, resulting in temporary inaccessibility of data while the bucket warms up.
+IMPORTANT: Changing the bucket ejection policy will invoke a bucket restart, resulting in temporary inaccessibility of data while the bucket warms up.
 
 | `--bucket-password=PASSWORD`
 | Bucket password.
 
 | `--bucket-priority=[low\|high]`
-| Bucket priority compared to other buckets.
+a|
+Bucket priority compared to other buckets.
 
-Changing the bucket priority will invoke a bucket restart, resulting in temporary inaccessibility of data while the bucket warms up.
+IMPORTANT: Changing the bucket priority will invoke a bucket restart, resulting in temporary inaccessibility of data while the bucket warms up.
 
 | `--bucket-ramsize=RAMSIZEMB`
-| Bucket RAM quota in MB.
+a|
+Bucket RAM quota in MB.
 
-This option does not apply to memcached-style buckets since you cannot change the RAM quota on a memcached bucket.
+NOTE: This option does not apply to memcached-style buckets since you cannot change the RAM quota on a memcached bucket.
 
 | `--bucket-replica=COUNT`
 | Replication count.

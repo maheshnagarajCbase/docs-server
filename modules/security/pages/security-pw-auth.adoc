@@ -36,10 +36,11 @@ image::admin-access-control.png[,600,align=left]
 Enter the password that complies with the best practices rules.
 
 | Dedicated port
-| The dedicated port supports ASCII protocol and doesn't need authentication.
+a|
+The dedicated port supports ASCII protocol and doesn't need authentication.
 You only need to enter the port number.
 
-Server-side moxi proxy is deprecated in Couchbase Server version 4.5.
+NOTE: Server-side moxi proxy is deprecated in Couchbase Server version 4.5.
 Start using Couchbase client SDKs or client-side moxi in your applications.
 |===
 

@@ -137,13 +137,18 @@ cbq> \HELP;
 
 `--engine`
 | <[.var]`url`>
-| \http://localhost:8091
+a|
+----
+http://localhost:8091
+----
 | The connection string consists of a protocol scheme followed by a host, including a port number to connect to the query service (8093) or the Couchbase cluster (8091).
 
 The cbq shell supports [.path]_http://_, [.path]_https://_, [.path]_couchbase://_ and [.path]_couchbases://_ protocol schemes.
 When using the [.path]_couchbase://_ or [.path]_couchbases://_ protocol schemes, you need not specify the port when connecting to the Couchbase cluster.
 
 Shell command: <<cbq-connect,\CONNECT>>
+a|
+ $ ./cbq -e couchbase://localhost
 
  $ ./cbq --engine http://localhost:8093
 
@@ -156,9 +161,6 @@ Connected to : http://localhost:8091/. Type Ctrl-D or \QUIT to exit.
 Path to history file for the shell : /Users/myuser1/.cbq_history
 cbq>
 ----
-| $ ./cbq -e couchbase://localhost
-
-
 
 | `-ne`
 
@@ -167,7 +169,10 @@ cbq>
 | false
 | The cbq shell does not connect to any query service.
 You must explicitly connect to a query service using the [.cmd]`\CONNECT` shell command.
-| --no-engine
+a|
+----
+--no-engine
+----
 
 | `-q`
 
@@ -175,14 +180,13 @@ You must explicitly connect to a query service using the [.cmd]`\CONNECT` shell 
 | None
 | false
 | Enables or disables the startup connection message for the cbq shell.
-
+a|
  $ ./cbq -q -e http://localhost:8091
 
 .Result
 ----
  cbq>
 ----
-| 
 
 | `-t`
 
@@ -190,7 +194,8 @@ You must explicitly connect to a query service using the [.cmd]`\CONNECT` shell 
 | [.var]`value`
 | None
 | Sets the query timeout parameter.
-| $ ./cbq -e \http://localhost:8091 --timeout="1s"
+a|
+ $ ./cbq -e http://localhost:8091 --timeout="1s"
 
 | `-u`
 
@@ -201,7 +206,9 @@ You must explicitly connect to a query service using the [.cmd]`\CONNECT` shell 
 When used by itself, without the -p option to specify the password, you will be prompted for the password.
 
 This option requires administration credentials and you cannot switch the credentials during a session.
-| $ ./cbq -e \http://localhost:8091 -u=Administrator Enter Password:
+a|
+ $ ./cbq -e http://localhost:8091 -u=Administrator
+ Enter Password:
 
 | `-p`
 
@@ -213,7 +220,8 @@ You cannot use this option by itself.
 It must be used with the -u option to specify the user name.
 
 This option requires administration credentials and you cannot switch the credentials during a session.
-| $ ./cbq -e \http://localhost:8091 -u=Administrator -p=password
+a|
+ $ ./cbq -e http://localhost:8091 -u=Administrator -p=password
 
 | `-c`
 
@@ -226,22 +234,35 @@ You can specify credentials for different buckets by separating them with a comm
 Shell command: <<cbq-set,\SET>> `-creds`
 
 REST API: `-creds` parameter
-| $ ./cbq -e \http://localhost:8091 -c=beer-sample:password,Administrator:password
+a|
+ $ ./cbq -e http://localhost:8091 -c=beer-sample:password,Administrator:password
 
 | `-v`
 
 ` --version`
 | None
 | false
-| Provides the version of the cbq shell.
+a|
+Provides the version of the cbq shell.
 To display the query engine version of Couchbase Server (this is not the same as the version of Couchbase Server itself), use one of the following N1QL queries:
 
+----
 select version();
+----
 
+----
 select min_version();
-| $ ./cbq --version
+----
+a|
+ $ ./cbq --version
 
-SHELL VERSION  : 1.5 Use N1QL queries select version(); or select min_version(); to display server version.
+.Result
+----
+ SHELL VERSION  : 1.5
+
+ Use N1QL queries select version();
+ or select min_version(); to display server version.
+----
 
 | `-h`
 
@@ -251,7 +272,8 @@ SHELL VERSION  : 1.5 Use N1QL queries select version(); or select min_version();
 | Provides help for the command line options.
 
 Shell command: <<cbq-help,\HELP>>
-| $ ./cbq --help
+a|
+ $ ./cbq --help
 
 | `-s`
 
@@ -259,7 +281,8 @@ Shell command: <<cbq-help,\HELP>>
 | [.var]`query`
 | None
 | Provides a single command mode to execute a query from the command line.
-| $ ./cbq -s="select * from \`travel-sample\` limit 1"
+a|
+ $ ./cbq -s="select * from \`travel-sample\` limit 1"
 
 | `-f`
 
@@ -269,7 +292,8 @@ Shell command: <<cbq-help,\HELP>>
 | Provides an input file which contains all the commands to be run.
 
 Shell command: <<cbq-source,\SOURCE>>
-| $ ./cbq --file="sample.txt"
+a|
+ $ ./cbq --file="sample.txt"
 
 | `-o`
 
@@ -279,13 +303,15 @@ Shell command: <<cbq-source,\SOURCE>>
 | Specifies an output file where the commands and their results are to be written.
 
 Shell command: <<cbq-redirect,\REDIRECT>>
-| $ ./cbq -o="results.txt" -s="select * from `travel-sample` limit 1"
+a|
+ $ ./cbq -o="results.txt" -s="select * from `travel-sample` limit 1"
 
 | `--exit-on-error`
 | None
 | false
 | Specifies that the cbq shell must exit when it encounters the first error.
-| $ ./cbq --exit-on-error -f="sample.txt"
+a|
+ $ ./cbq --exit-on-error -f="sample.txt"
 
 | `--no-ssl-verify`
 | None
@@ -294,7 +320,8 @@ Shell command: <<cbq-redirect,\REDIRECT>>
 
 The default ports are 18091 and 18093.
 You need not specify the port when connecting to the cluster.
-| $ ./cbq --no-ssl-verify -f="sample.txt"
+a|
+ $ ./cbq --no-ssl-verify -f="sample.txt"
 |===
 
 .cbq Shell Commands
@@ -312,41 +339,60 @@ The cbq shell supports [.path]_http://_, [.path]_https://_, [.path]_couchbase://
 When using the [.path]_couchbase://_ or [.path]_couchbases://_ protocol schemes, you need not specify the port when connecting to the Couchbase cluster.
 
 Command Line Option: `-e` or `--engine`
-| cbq> \CONNECT \http://localhost:8093;
+a|
+----
+cbq> \CONNECT http://localhost:8093;
+----
 
 | [.cmd]`\DISCONNECT`
 | None
 | Disconnects the cbq shell from the query service or cluster endpoint.
-| cbq> \DISCONNECT; Couchbase query shell not connected to any endpoint.
-Use \CONNECT command to connect.
+a|
+----
+cbq> \DISCONNECT;
+
+ Couchbase query shell not connected to any endpoint.
+ Use \CONNECT command to connect.
+----
 
 | [.cmd]`\EXIT`
 
 [.cmd]`\QUIT`
 | None
 | Exits cbq shell.
-| cbq> \EXIT;
+a|
+----
+cbq> \EXIT;
+----
 
+----
 cbq> \QUIT;
+----
 
 | [.cmd]`\SET`
 | [.var]`parameter`[.var]`value`
 
 [.var]`parameter`=[.var]`prefix`:[.var]`variable name`
+a|
+Sets the top most value of the stack for the given variable with the specified value.
+
+Variables can be of the following types:
 
 [#ul_crw_cjc_fw]
 * Query parameters
 * Session variables
 * User-defined
 * Pre-defined and named parameters.
-| Sets the top most value of the stack for the given variable with the specified value.
-
-
 
 When the [.cmd]`\SET` command is used without any arguments, it displays the values for all the parameters of the current session.
-| cbq> \SET -args [5, "12-14-1987"];
+a|
+----
+cbq> \SET -args [5, "12-14-1987"];
+----
 
+----
 cbq> \SET -args [6,7];
+----
 
 | [.cmd]`\PUSH`
 | [.var]`parameter value`
@@ -355,29 +401,56 @@ cbq> \SET -args [6,7];
 When the [.cmd]`\PUSH` command is used without any arguments, it copies the top element of every variable's stack, and then pushes that copy to the top of the respective variable's stack.
 
 While each variable stack grows by 1, the previous values are preserved.
-| cbq> \PUSH -args  [8];
+a|
+----
+cbq> \PUSH -args  [8];
+----
 
+----
 cbq> \PUSH;
+----
 
-cbq> \SET; Query Parameters : Parameter name : args Value : [[6,7] [8] [8]] \...
+.Resulting variable stack
+----
+cbq> \SET;
+ Query Parameters :
+ Parameter name : args
+ Value : [[6,7] [8] [8]]
+...
 cbq>
+----
 
 | [.cmd]`\UNSET`
 | [.var]`parameter`
 | Deletes or resets the entire stack for the specified parameter.
-| cbq> \UNSET -args;
+a|
+----
+cbq> \UNSET -args;
+----
 
-cbq> \SET; Query Parameters : \...
+----
+cbq> \SET;
+ Query Parameters :
+ ...
 cbq>
+----
 
 | [.cmd]`\POP`
 | [.var]`parameter`
 | Pops the top most value from the specified parameter's stack.
 
 When the [.cmd]`\POP` command is used without any arguments, it pops the top most value of every variable's stack.
-| \POP -args;
+a|
+----
+\POP -args;
+----
 
-cbq> \SET; Query Parameters : Parameter name : args Value : [[6,7] [8]]
+----
+cbq> \SET;
+ Query Parameters :
+ Parameter name : args
+ Value : [[6,7] [8]]
+----
 
 | [.cmd]`\ALIAS`
 | [.var]`shell-command` or [.var]`n1ql-statement`
@@ -385,18 +458,53 @@ cbq> \SET; Query Parameters : Parameter name : args Value : [[6,7] [8]]
 You can then execute the alias using `\\alias-name;`.
 
 When the [.cmd]`\ALIAS` command is used without any arguments, it lists all the available aliases.
-| cbq> \ALIAS travel-limit1 select * from `travel-sample` limit 1;
+a|
+----
+cbq> \ALIAS travel-limit1 select * from `travel-sample` limit 1;
+----
 
-cbq> \ALIAS; serverversion  select version() travel-limit1  select * from `travel-sample` limit 1 cbq>
+----
+cbq> \ALIAS;
+serverversion  select version()
+travel-limit1  select * from `travel-sample` limit 1
+cbq>
+----
 
-cbq> \\serverversion; { "requestID": "21b0efdb-b1ec-44bc-adab-071831792c03", "signature": { "$1": "string" }, "results": [ { "$1": "1.5.0" } ], "status": "success", "metrics": { "elapsedTime": "4.03243ms", "executionTime": "4.001382ms", "resultCount": 1, "resultSize": 37 } }
+----
+cbq> \\serverversion;
+{
+    "requestID": "21b0efdb-b1ec-44bc-adab-071831792c03",
+    "signature": {
+        "$1": "string"
+    },
+    "results": [
+        {
+            "$1": "1.5.0"
+        }
+    ],
+    "status": "success",
+    "metrics": {
+        "elapsedTime": "4.03243ms",
+        "executionTime": "4.001382ms",
+        "resultCount": 1,
+        "resultSize": 37
+    }
+}
+----
 
 | [.cmd]`\UNALIAS`
 | [.var]`alias-name`
 | Deletes the specified alias.
-| cbq> \UNALIAS travel-limit1;
+a|
+----
+cbq> \UNALIAS travel-limit1;
+----
 
-cbq> \ALIAS; serverversion  select version() cbq>
+----
+cbq> \ALIAS;
+serverversion  select version()
+cbq>
+----
 
 | [.cmd]`\ECHO`
 | [.var]`args`
@@ -409,31 +517,55 @@ See <<table_ltk_c5s_5v>> for details.
 If the input is not a parameter, the command echoes the statement as is.
 
 If the input is an alias, the command displays the value of an alias command.
-| cbq> \ECHO -$r;
+a|
+----
+cbq> \ECHO -$r;
+----
 
-cbq> \ECHO \\serverversion; select version()
+----
+cbq> \ECHO \\serverversion;
+select version()
+----
 
 | [.cmd]`\VERSION`
 | None
 | Displays the version of the client shell.
-| cbq> \VERSION; SHELL VERSION  : 1.5
+a|
+----
+cbq> \VERSION;
+ SHELL VERSION  : 1.5
+----
 
 | [.cmd]`\HELP`
 | [.var]`command`
 | Displays the help information for the specified command.
 When used without any arguments, it lists all the commands supported by the cbq shell.
-| cbq> \HELP ECHO; \ECHO args \...
-Echo the input value.
-args can be a name (a prefixed-parameter), an alias (command alias) or a value (any input statement).
-Example : \ECHO -$r ; \ECHO \\tempalias;
+a|
+----
+cbq> \HELP ECHO;
+\ECHO args ...
+Echo the input value. args can be a name (a prefixed-parameter), an alias (command alias) or
+a value (any input statement).
+Example :
+\ECHO -$r ;
+\ECHO \\tempalias;
+----
 
 | [.cmd]`\COPYRIGHT`
 | None
 | Displays the copyright, attributions, and distribution terms.
-| cbq> \COPYRIGHT;
+a|
+----
+cbq> \COPYRIGHT;
+----
 
 | [.cmd]`\SOURCE`
 | [.var]`input-file`
+a|
+Reads and executes the commands from a file.
+Multiple commands in the input file must be separated by "; [.var]`<newline>`"
+
+For example, sample.txt contains the following commands:
 
 ----
 select * from `travel-sample` limit 1;
@@ -441,23 +573,30 @@ select * from `travel-sample` limit 1;
 #This is a comment;
 EOF
 ----
-| Reads and executes the commands from a file.
-Multiple commands in the input file must be separated by "; [.var]`<newline>`"
-
-For example, sample.txt contains the following commands:
-| cbq> \SOURCE sample.txt;
+a|
+----
+cbq> \SOURCE sample.txt;
+----
 
 | [.cmd]`\REDIRECT`
 | [.var]`filename`
 | Redirects the output of all the commands to the specified file until the cbq shell receives the [.cmd]`\REDIRECT OFF` command.
 By default, the file is created in the [.path]_/Applications/Couchbase Server.app/Contents/Resources/couchbase-core/bin_ directory.
 You can specify a different location using relative paths.
-| cbq> \REDIRECT temp_out.txt; cbq> select * from `travel-sample` limit 1; cbq>
+a|
+----
+cbq> \REDIRECT temp_out.txt;
+cbq> select * from `travel-sample` limit 1;
+cbq>
+----
 
 | [.cmd]`\REDIRECT OFF`
 | None
 | Redirects the output of subsequent commands from a custom file to standard output (os.stdout).
-| cbq> \REDIRECT OFF;
+a|
+----
+cbq> \REDIRECT OFF;
+----
 |===
 
 [#cbq-connect-to-cluster]
