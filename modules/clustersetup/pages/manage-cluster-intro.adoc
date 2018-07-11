@@ -22,6 +22,7 @@ image::admin/picts/cluster-setup-01.png[,720,align=left]
 The [.uicontrol]*Configure Disk Storage* option specifies the location of the persistent storage used by the Couchbase Server Data service.
 The setting affects only this node and sets the directory where all the data is stored on disk.
 It also sets the location where the indexes created by views are stored:
+
  ** If you are not indexing data with views, you can accept the default setting.
 Otherwise for the best performance we recommend specifying separate physical storage for the data and index paths.
 
@@ -32,27 +33,27 @@ In production, only one service per node should be deployed.
 . The [.uicontrol]*Configure Server Memory* section sets the amount of physical RAM that will be allocated by the Couchbase Server for storage, both for the Data and the Index service.
 The same amount of memory is allocated to each node in the cluster that runs the particular service.
 Since the same setting applies to the whole cluster, specify a value that all nodes of each service type can support.
-
++
 Alternatively, if joining an existing cluster, select the radio button [.uicontrol]*Join a cluster now* and then provide the IP address or hostname of an existing node and administrative credentials for that existing cluster.
 Select the services to install on this node.
 
 . Click [.uicontrol]*Next*.
-
++
 *Step 2 of 5: Sample Buckets*
-
++
 image:install/picts/setup-02.png[,720,align=left]
-
++
 The [.uicontrol]*Sample Buckets* panel appears where you can select the sample data buckets you want to load.
 
 . Click the names of sample buckets to load to the Couchbase Server.
 These data sets demonstrate Couchbase Server's features and help you understand and develop views and N1QL Queries.
-
++
 If you decide to install sample data, the installer creates one Couchbase bucket for each set of sample data you choose.
-
++
 After you create sample data buckets, the [.uicontrol]*Create Default Bucket* panel appears where you create a new default data bucket.
-
++
 *Step 3 of 5: Create Default Bucket*
-
++
 [#image_vjc_tfk_3v]
 image::install/picts/setup-03.png[,720]
 
@@ -60,35 +61,36 @@ image::install/picts/setup-03.png[,720]
 You can change all bucket settings later, except for the bucket name.
 See xref:bucket-setup.adoc#topic_jbt_4jn_vs[Bucket setup] for more information.
 . Accept all defaults in this panel.
-
++
 Couchbase Server will create a new data bucket named `default`.
 You can use this test bucket to learn more about Couchbase Server and use it in a test environment.
-
++
 Click [.uicontrol]*Next*.
-
++
 *Step 4 of 5: Notifications*
-
++
 [#image_yrl_5fk_3v]
 image::install/picts/setup-04.png[,720,align=left]
 
 . In the [.uicontrol]*Notifications* screen, select [.uicontrol]*Enable software update notifications*.
-
++
 Couchbase Web Console communicates with Couchbase Server nodes and confirms the version numbers of each node.
-
++
 As long as you have Internet access this information will be sent anonymously to Couchbase corporate, which uses this information only to provide you with updates and information to help improve Couchbase Server and related products.
 When you provide an email address, it is added to the Couchbase community mailing list for news and update information about Couchbase and related products.
 You can unsubscribe from the mailing list at any time using the Unsubscribe link provided in each newsletter.
-
++
 Couchbase Web Console communicates the following information:
+
  ** The current version.
 When a new version of Couchbase Server exists, you get information about where you can download the new version.
  ** Information about the size and configuration of your Couchbase cluster to Couchbase corporate.
 This information helps prioritize the development efforts.
 
 . Read the terms and conditions and then select `I agree to the terms and conditions associated with this product` and click [.uicontrol]*Next*.
-
++
 *Step 5 of 5: Configure Server*
-
++
 [#image_ahp_vfk_3v]
 image::install/picts/setup-05.png[,720,align=left]
 

@@ -40,35 +40,35 @@ Couchbase Server supports the following indexers:
 * Spatial Views indexer
 * Full Text Search indexer
 
++
 Using these indexers, you can create two types of indexes:
-
 * [.term]_Primary indexes_ which index all the keys in a given bucket and are used when a secondary index cannot be used to satisfy a query and a full bucket scan is required.
 * [.term]_Secondary indexes_ can index a subset of the items in a given bucket and are used to make queries targeting a specific subset of fields more efficient.
-
++
 In Couchbase Server, both MapReduce view and spatial view indexers provide direct access to the indexes through the View API.
 Both the indexers are placed within the data service as they are partition-aligned to the core data distribution.
-
++
 The full text search indexer (Developer Preview) provides direct access to indexers through the FTS API.
 FTS index is placed within its own service (FTS service) for independent scalability.
-
++
 The Global Secondary Indexes (GSI) are deployed on nodes hosting the index service and can be independently partitioned for better performance and throughput with N1QL queries.
-
++
 For more information about indexers and index services, see xref:views-indexing-index-service.adoc[Views, indexing, and index services].
 
 Querying data and query service::
 With N1QL, you can query JSON documents using SQL-like syntax.
 You can also run ad-hoc queries with filters and aggregates over JSON data and reshape the JSON output.
 N1QL API is available through the query service.
-
++
 Incremental Map-Reduce views provide a View API that can query data based on the keys defined by a view.
 Views can define the keys using the MapReduce functions in JavaScript.
 Incremental Map-Reduce view API are available through data service.
-
++
 Spatial views provide a Spatial View API that can query data based on a bounding box (rectangle with coordinates).
 Spatial views define the attributes that signify the coordinates a given item represents using the MapReduce functions in JavaScript.
 Spatial view API is available through the data service.
-
++
 Full text search indexer provides a Search API that can perform keyword searches directly on data in Couchbase Server.
 Search API is available through the Search service.
-
++
 For more information about querying and retrieving data, see xref:querying-data-and-query-data-service.adoc[Querying data and query service].

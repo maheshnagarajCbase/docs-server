@@ -11,7 +11,6 @@ All views within Couchbase Server operate as follows:
 * *Views are scoped within a design document, with each design document attached to a single bucket.* A view can only access the information within the corresponding bucket and cannot access or aggregate data from multiple buckets.
 +
 Views are created within design documents and each design document exists within the corresponding named bucket.
-
  ** Each design document can have 0-n views.
  ** Each bucket can contain 0-n design documents.
 
@@ -21,7 +20,7 @@ For more information, see xref:mapreduce-view-consistency.adoc[View consistency]
 Every 5 seconds the view engine checks whether 5000 mutations have occurred or not.
 If at least 5000 mutations have occurred, an index update operation is started per design document and all views within that design document are updated.
 The indexer takes all mutations since it was last run and applies them to the index files.
-
++
 The default number of mutations to check for is 5000, but this setting is tunable using the [.param]`updateMinChanges` option.
 The update interval can also be configured by setting the [.param]`updateInterval` option.
 
@@ -84,18 +83,16 @@ Each new access to the view only processes the documents that have been added, u
 +
 In practice, this means that views are entirely incremental in nature.
 Updates to views are typically quick as they only update changed documents.
-
  ** Because of the incremental nature of the view update process, information is only appended to the index stored on disk.
 This helps ensure that the index is updated efficiently.
 Compaction (including auto-compaction) optimizes the index size on disk and the index structure.
 An optimized index is more efficient to update and query.
  ** The entire view is recreated when the view definition changes.
 Because this has a detrimental effect on live data, only development views can be modified.
-
++
 Views are organized by design document, and indexes are created according to the design document.
 Changing a single view in a design document with multiple views invalidates all the views (and stored indexes) within the design document, and all the corresponding views defined in that design document must be rebuilt.
 This increases the I/O across the cluster while the index is rebuilt, in addition to the I/O required for any active production views.
-
  ** You can choose to update the result set from a view before you query it or after you query.
 Or you can choose to retrieve the existing result set from a view when you query the view.
 In this case the results are possibly out of date, or stale.
@@ -110,16 +107,16 @@ Couchbase Server has a maintenance process, called _expiry pager_, that periodic
 This maintenance process runs every 60 minutes, by default, unless configured to run at a different interval.
 Expired items are also purged on data access and on compaction.
 When an item is requested, Couchbase Server removes the item flagged for deletion and provides a response that the item does not exist.
-
++
 The result set from a view _will contain_ any items stored on disk that meet the requirements of your views function.
 Therefore, expired documents that have not yet been removed from the bucket may appear as part of a result set when you query a view.
-
++
 Using Couchbase Server views, you can also run reduce functions on the returned data, which perform calculations or other aggregations of data.
 For instance, if you want to count the instances of a type of object, use a reduce function.
 Once again, if an item is in a bucket, it will be included in any calculation performed by your reduce functions.
 In this case, you may want to run the expiry pager process more frequently to ensure that items that have expired are not included in calculations used in the reduce function.
 We recommend an interval of 10 minutes for the expiry pager on each node of a cluster.
-
++
 NOTE: This interval has a small impact on node performance as the expiry pager process will be performing cleanups more frequently on the node.
-
++
 For more information about setting intervals for the maintenance process, see section "Couchbase command line tool" and review the examples on [.cmd]`exp_pager_stime`.

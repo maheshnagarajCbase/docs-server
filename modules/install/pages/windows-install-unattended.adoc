@@ -20,7 +20,7 @@ The wizard completes the server installation and provides a file with your recor
 NOTE: Accept an increase in `MaxUserPort` (recommended).
 . Copy the `your_file_name.iss` file into the same directory as the installer executable.
 Run the installer from the command-line using the `/s` option:
-
++
 ----
 > couchbase_server_version.exe /s -f1your_file_name.iss
 ----
