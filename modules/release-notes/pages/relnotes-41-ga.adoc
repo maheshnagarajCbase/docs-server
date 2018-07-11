@@ -169,11 +169,11 @@ Here are the notable fixes in the 4.1.1 release:
 | XDCR does not recover in some cases when there is a network partition between target and source clusters.
 
 | http://www.couchbase.com/issues/browse/MB-17517[MB-17517]
- The Data service (memcached) will crash when arithmetic operations operate on an invalid CAS.
- CAS operation will incorrect work when a CAS mismatch should have been generated.
-| When an invalid CAS is discovered, one of the following situations can occur:
+a|
+When an invalid CAS is discovered, one of the following situations can occur:
 
-
+* The Data service (memcached) will crash when arithmetic operations operate on an invalid CAS.
+* CAS operation will incorrect work when a CAS mismatch should have been generated.
 
 An invalid CAS can only be created when the cluster has been upgraded from Couchbase Server 2.X, and the locks operations have been used.
 

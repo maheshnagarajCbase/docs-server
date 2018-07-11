@@ -44,9 +44,10 @@ The following are the command options:
 | Bucket priority compared to other buckets.
 
 | `--bucket-ramsize=RAMSIZEMB`
-| Bucket RAM quota in MB.
+a|
+Bucket RAM quota in MB.
 
-This option does not apply to memcached-style buckets since you cannot change the RAM quota on a memcached bucket.
+NOTE: This option does not apply to memcached-style buckets since you cannot change the RAM quota on a memcached bucket.
 
 | `--bucket-replica=COUNT`
 | Replication count.

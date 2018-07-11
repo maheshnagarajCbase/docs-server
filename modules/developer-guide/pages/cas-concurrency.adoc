@@ -36,8 +36,20 @@ Assume the following two blocks of code are executing concurrently in different 
 |===
 | Thread #1 | Thread #2
 
-| >>> result = cb1.get('docid') >>> new_doc = result.value >>> new_doc['field1'] = 'value1' >>> cb1.replace('docid', new_doc)
-| >>> result = cb2.get('docid') >>> new_doc = result.value >>> new_doc['field2'] = 'value2' >>> cb2.replace('docid', new_doc)
+a|
+----
+>>> result = cb1.get('docid')
+>>> new_doc = result.value
+>>> new_doc['field1'] = 'value1'
+>>> cb1.replace('docid', new_doc)
+----
+a|
+----
+>>> result = cb2.get('docid')
+>>> new_doc = result.value
+>>> new_doc['field2'] = 'value2'
+>>> cb2.replace('docid', new_doc)
+----
 |===
 
 Retrieving the document again yields:
@@ -81,15 +93,46 @@ This is not because Couchbase itself has lost the updates, but because the appli
 |===
 |  | 
 
-| >>> result = cb1.get('docid') >>> new_doc = result.value >>> print new_doc {u'a_field': u'a_value'} >>> *cur_cas = result.cas* >>> print cur_cas 272002471883283 >>> new_doc['field1'] = 'value1' >>> new_result = cb1.replace( 'docid', new_doc, cas=cur_cas)
+a|
+....
+>>> result = cb1.get('docid')
+>>> new_doc = result.value
+>>> print new_doc
+{u'a_field': u'a_value'}
+>>> cur_cas = result.cas
+>>> print cur_cas
+272002471883283
+>>> new_doc['field1'] = 'value1'
+>>> new_result = cb1.replace(
+       'docid',
+       new_doc,
+       cas=cur_cas)
+....
 
-Server's CAS matches `cur_cas`.
+NOTE: Server's CAS matches `cur_cas`.
 New CAS assigned
 
->>> print new_result.cas 195896137937427
-| >>> result = cb2.get('docid') >>> new_doc = result.value >>> print new_doc {u'a_field': u'a_value'} >>> *cur_cas = result.cas* >>> print cur_cas 272002471883283 >>> new_doc['field2'] = 'value2' >>> new_result = cb2.replace( 'docid', new_doc, cas=cur_cas)
+....
+>>> print new_result.cas
+195896137937427
+....
+a|
+....
+>>> result = cb2.get('docid')
+>>> new_doc = result.value
+>>> print new_doc
+{u'a_field': u'a_value'}
+>>> cur_cas = result.cas
+>>> print cur_cas
+272002471883283
+>>> new_doc['field2'] = 'value2'
+>>> new_result = cb2.replace(
+       'docid',
+       new_doc,
+       cas=cur_cas)
+....
 
-CAS on server differs: `195896137937427` vs `272002471883283`!
+WARNING: CAS on server differs: `195896137937427` vs `272002471883283`!
 |===
 
 == Handling CAS errors
