@@ -71,7 +71,7 @@ You can make N1QL requests in your applications or run N1QL queries against your
 The xref:tools:query-workbench.adoc#topic_prr_nyh_t5[Query Workbench] is integrated with the Couchbase Web console and is available on the [.uicontrol]*Query* tab.
 
 NOTE: The Query Workbench only runs on nodes which are running the Query service.
-If the Query service is _not _running on the current node, it provides a link to the nodes in the cluster which _are_ running the Query service.
+If the Query service is _not_ running on the current node, it provides a link to the nodes in the cluster which _are_ running the Query service.
 
 [#run-cbq]
 The [.cmd]`cbq` shell is available in your installation directory.

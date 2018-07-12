@@ -73,7 +73,7 @@ echo "couchbase.username: Administrator" >> config/elasticsearch.yml
 +
 Elasticsearch starts and runs on your machine in the background.
 
-. In a browser, go to [.path]_http://localhost:9200/_plugin/head/_ to open the administrative client for Elasticsearch.
+. In a browser, go to [.path]_\http://localhost:9200/_plugin/head/_ to open the administrative client for Elasticsearch.
 +
 The following screen with a randomized name appears:
 +

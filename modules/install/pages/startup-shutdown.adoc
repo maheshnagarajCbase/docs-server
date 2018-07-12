@@ -6,7 +6,7 @@ Use startup and shutdown scripts to manually start or shut down Couchbase Server
 
 == Start and Stop on Linux
 
-On Linux, Couchbase Server is installed as a standalone application with support for running as a background (daemon) process during start-up through the use of a standard control script, which is located in [.path]_ /etc/init.d/couchbase-server_.
+On Linux, Couchbase Server is installed as a standalone application with support for running as a background (daemon) process during start-up through the use of a standard control script, which is located in  [.path]_/etc/init.d/couchbase-server_.
 
 The startup script is automatically installed during installation from one of the Linux packaged releases (Debian/Ubuntu or Red Hat/CentOS).
 By default, Couchbase Server is configured to be started automatically at run levels 2, 3, 4, and 5, and explicitly shut down at run levels 0, 1 and 6.
@@ -80,9 +80,9 @@ The Couchbase-supplied start and stop scripts are provided in the standard insta
 
 To start and stop Couchbase Server, use the scripts located in:
 
-[.path]_ C:\Program Files\Couchbase\Server\bin\service_start.bat_
+[.path]_C:\Program Files\Couchbase\Server\bin\service_start.bat_
 
-[.path]_ C:\Program Files\Couchbase\Server\bin\service_stop.bat_
+[.path]_C:\Program Files\Couchbase\Server\bin\service_stop.bat_
 
 == On Mac OS
 

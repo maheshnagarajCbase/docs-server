@@ -72,7 +72,7 @@ and points to the current amount of free space for this location.
 
  ** Indices Path: Shows the default locations where indices will be stored:
 +
-[.path]_/Users/user_name/Library/Application Support/Couchbase/var/lib/couchbase/data _
+[.path]_/Users/user_name/Library/Application Support/Couchbase/var/lib/couchbase/data_
 +
 and points to the current amount of free space for this location.
 
