@@ -57,7 +57,7 @@ Replication (XDCR) Administrator:: The [.term]_Replication Administrator_ role c
 |===
 | Couchbase Resource and Administrative Roles 2+| Administrative Access: W(rite), R(ead), S(ecurity), none
 
-3+| *Full Administrator*
+3+^| *Full Administrator*
 
 | Cluster
 | W, R, S
@@ -95,7 +95,7 @@ Replication (XDCR) Administrator:: The [.term]_Replication Administrator_ role c
 | W, R, S
 | W, R, S
 
-3+| *Read-only Administrator*
+3+^| *Read-only Administrator*
 
 | Cluster
 | R
@@ -133,7 +133,7 @@ Replication (XDCR) Administrator:: The [.term]_Replication Administrator_ role c
 | R
 | R
 
-3+| *Cluster Administrator*
+3+^| *Cluster Administrator*
 
 | Cluster
 | W, R
@@ -171,7 +171,7 @@ Replication (XDCR) Administrator:: The [.term]_Replication Administrator_ role c
 | W, R
 | W, R
 
-3+| *Bucket Administrator*
+3+^| *Bucket Administrator*
 
 | Cluster
 | none
@@ -209,7 +209,7 @@ Replication (XDCR) Administrator:: The [.term]_Replication Administrator_ role c
 | W, R
 | W, R
 
-3+| *View Administrator*
+3+^| *View Administrator*
 
 | Cluster
 | none
@@ -247,7 +247,7 @@ Replication (XDCR) Administrator:: The [.term]_Replication Administrator_ role c
 | W, R
 | W, R
 
-3+| *Replication (XDCR) Administrator*
+3+^| *Replication (XDCR) Administrator*
 
 | Cluster
 | none
