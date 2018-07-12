@@ -110,7 +110,7 @@ Couchbase Server is supported on numerous popular operating systems and virtual 
 | Development and testing only
 |===
 
-*  _Only the Red Hat Compatible Kernel (RHCK) is supported, the Unbreakable Enterprise Kernel is not a supported platform._.
+* _Only the Red Hat Compatible Kernel (RHCK) is supported, the Unbreakable Enterprise Kernel is not a supported platform._.
 
 ** _Supported by Couchbase Server AMI on AWS_.
 
