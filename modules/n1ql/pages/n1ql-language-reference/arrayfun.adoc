@@ -151,7 +151,7 @@ LIMIT 1;
 ----
 
 [#fn-array-intersect]
-*ARRAY_INTERSECT(expression1, expression2, ...)*
+*ARRAY_INTERSECT(expression1, expression2, \...)*
 
 _Since Couchbase Server 4.5.1_
 

@@ -61,12 +61,12 @@ For all other cases, Couchbase recommends that you do not use the sub-document A
 | http://www.couchbase.com/issues/browse/MB-21038[MB-21038]
 | During rolling upgrade from Couchbase 4.0 to 4.5, if the query node is upgraded to 4.5 and the index node is on 4.0, `stale=false` query can crash the indexer.
 
-*Workaround: *Upgrade the index node to 4.5 first before query nodes.
+*Workaround:* Upgrade the index node to 4.5 first before query nodes.
 
 | http://www.couchbase.com/issues/browse/MB-20509[MB-20509]
 | Couchbase Server 4.5.x is not supported on the macOS Sierra (OS X 10.12) platform.
 
-*Workaround: *We are working on a fix and recommend that you do not upgrade the OS X version to macOS Sierra until the patch with the fix is available.
+*Workaround:* We are working on a fix and recommend that you do not upgrade the OS X version to macOS Sierra until the patch with the fix is available.
 
 | https://issues.couchbase.com/browse/MB-20338[MB-20338]
 | During the source cluster rebalancing, in some cases when a node is removed, the outbound XDCR mutation statistics show a negative number.
@@ -74,7 +74,7 @@ For all other cases, Couchbase recommends that you do not use the sub-document A
 | http://www.couchbase.com/issues/browse/MB-20337[MB-20337]
 | XDCR does not send all the mutations when the target cluster is rebalancing.
 
-*Workaround: *Wait for a few minutes (3-4mins) after the rebalance operation completes for XDCR to pick up from the last checkpoint..
+*Workaround:* Wait for a few minutes (3-4mins) after the rebalance operation completes for XDCR to pick up from the last checkpoint..
 
 | http://www.couchbase.com/issues/browse/MB-19846[MB-19846]
 | A rebalance failure due to DCP disconnection can occur on an idle DCP connection if no-op messages cannot be exchanged due to network congestion and/or heavy CPU usage.
@@ -82,13 +82,13 @@ For all other cases, Couchbase recommends that you do not use the sub-document A
 | http://www.couchbase.com/issues/browse/MB-19806[MB-19806]
 | Online upgrade from versions 2.x or 3.x to 4.5.x may fail.
 
-*Workaround: *Upgrade to version 4.0/4.1 first, and then upgrade to the latest 4.5.x version.
+*Workaround:* Upgrade to version 4.0/4.1 first, and then upgrade to the latest 4.5.x version.
 For more information, see xref:install:upgrade-matrix.adoc#topic_dwm_qfv_xs[Upgrade Matrix].
 
 | http://www.couchbase.com/issues/browse/MB-17433[MB-17433]
 | An error is thrown when trying to create more than 10 full-text indexes.
 
-*Workaround: *Reduce the setting `maxPartitionsPerPIndex` to a number lower than 32 (default), such as 16.
+*Workaround:* Reduce the setting `maxPartitionsPerPIndex` to a number lower than 32 (default), such as 16.
 |===
 
 *Fixed Issues*
@@ -444,7 +444,7 @@ We are working on a fix and recommend that you do not upgrade the OS X version t
 | When backup fails and you restart the backup with the `--resume` flag, it may cause items to be skipped.
 Consequently, if you then restore this backup, the items in the bucket may not be the same as the original.
 
-*Workaround: *When restarting backup, use the `--purge` flag to remove the partial backup and restart from the point of the previous successful backup.
+*Workaround:* When restarting backup, use the `--purge` flag to remove the partial backup and restart from the point of the previous successful backup.
 
 | http://www.couchbase.com/issues/browse/MB-19892[MB-19892]
 | After a hard failover, you may not be able to re-add a node with data service because the old vBucket files were not deleted.
@@ -454,7 +454,7 @@ Consequently, if you then restore this backup, the items in the bucket may not b
 | http://www.couchbase.com/issues/browse/MB-19706[MB-19861]
 | Different query results are returned depending on whether the index is present or not.
 
-*Workaround : *This happens when the UNION/INTERSECT is within the subquery of the FROM clause when one branch is a covering scan and other is not.
+*Workaround :* This happens when the UNION/INTERSECT is within the subquery of the FROM clause when one branch is a covering scan and other is not.
 The workaround is to create covered indexes for both the branches.
 
 | http://www.couchbase.com/issues/browse/MB-19706[MB-19846]

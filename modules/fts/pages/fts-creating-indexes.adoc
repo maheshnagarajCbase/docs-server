@@ -340,7 +340,7 @@ You can create the same index definition with object mappings using the REST API
 
 *Advanced Index Settings*
 
-*Type field *
+*Type field*
 
 By default, Couchbase Server will look for an attribute called "type" in your document and will use that for type mappings.
 You can change the name of the "type" field by clicking on the "[.uicontrol]*Advanced*" options and changing the value of the "[.uicontrol]*Type Field*".
@@ -350,17 +350,17 @@ You can change the name of the "type" field by clicking on the "[.uicontrol]*Adv
 Documents that match the default type mapping rules are written to the index as being of this type.
 The field defaults to "[.code]``_default``", which you can change to avoid conflicts if "[.code]``_default``" is a valid type field value in your JSON documents.
 
-*Default Analyzer  *
+*Default Analyzer*
 
 This analyzer is used by default when creating an index, if no other analyzer is specified.
 When you define your index mapping, you can override this value in a number of places, for example, when you create type mappings or field mappings.
 
-*Default Date/Time Parser *
+*Default Date/Time Parser*
 
 The name of a Date/Time parser that will be used to parse a date stored as a string.
 
 [#def-field-all]
-*Default Field *
+*Default Field*
 
 The default field is searched when a user query does not limit the scope of a search to a particular field.
 This is highly convenient because most of the time you want a user to be able to search for a term wherever it shows up in the index.

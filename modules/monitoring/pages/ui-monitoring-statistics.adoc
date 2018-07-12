@@ -371,7 +371,7 @@ The replication configuration may need to be deleted and recreated.
 Under the *Data Buckets* tab, you can click on a named Couchbase bucket and find more statistics about replication for that bucket.
 Couchbase Web Console displays statistics for the particular bucket; on this page you can find two drop-down areas: *Outgoing XDCR* and *Incoming XDCR Operations*.
 Both provides statistics about ongoing replication for the particular bucket.
-Under the*Outgoing XDCR* panel if you have multiple replication streams you will see statistics for each stream.
+Under the**Outgoing XDCR** panel if you have multiple replication streams you will see statistics for each stream.
 
 image::admin/picts/outbound_xdcr_2.2.png[outbound xdcr stats 2.2,720]
 

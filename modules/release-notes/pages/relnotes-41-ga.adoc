@@ -119,7 +119,7 @@ The following are the known issues:
 | *Summary:* When creating a Global Secondary Index (GSI), the interactive query shell `cbq` can time out if the result is not returned within 2 minutes.
 Although the index is successfully created, the error message is unclear.
 
-*Workaround:*Create the index with `defer_build:true` and then build the index separately.
+**Workaround:**Create the index with `defer_build:true` and then build the index separately.
 
 | http://www.couchbase.com/issues/browse/MB-16618[MB-16618]
 | *Summary:* When the View queries with the options `reduce` and `group` set to `true` are parameterized by a list of keys that are not listed in ascending order, the produced results might not be properly reduced.
