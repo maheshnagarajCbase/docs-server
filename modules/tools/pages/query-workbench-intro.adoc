@@ -100,7 +100,7 @@ The metadata panel lists all the buckets available on the datastore.
 The buckets are grouped into the following categories:
 
 * *Fully Queryable Buckets*, which lists all the buckets that have a primary index or primary and secondary index.
-These buckets support queries with no where clause, like "[.cmd]`pass:c[select * from `beer-sample`]`", or with a where clause on any field, like "[.cmd]`pass:c[select * from `beer-sample` where city = `Seattle`]`".
+These buckets support queries with no where clause, like "[.cmd]``pass:c[select * from `beer-sample`]``", or with a where clause on any field, like "[.cmd]``pass:c[select * from `beer-sample` where city = `Seattle`]``".
 * *Queryable on Indexed Fields*, which lists buckets that only have a secondary index.
 These buckets support queries with a where clause on the indexed fields.
 * *Non-Indexed Buckets*, which lists buckets that do not have any indexes.
@@ -157,8 +157,8 @@ You can also expand and collapse objects and array values using the little arrow
 image:query-workbench-results-json.png[,6in]
 * *Table*, where the data is presented in a tabular format.
 It converts the JSON arrays to HTML tables, and presents sub-objects or sub-arrays as sub-tables.
-This format works well for queries that return an array of objects, like "[.cmd]`pass:c[select `beer-sample`.* from `beer-sample`]`".
-It is not suitable for queries that return an array of objects where each object has a sub-object, like "[.cmd]`pass:c[select * from `beer-sample`]`".
+This format works well for queries that return an array of objects, like "[.cmd]``pass:c[select `beer-sample`.* from `beer-sample`]``".
+It is not suitable for queries that return an array of objects where each object has a sub-object, like "[.cmd]``pass:c[select * from `beer-sample`]``".
 image:query-workbench-results-table-2.png[,5.5in]
 * *Tree* (or list), where the JSON data is presented in an outline form and each sub-array or sub-object is displayed as a sub-list.
 image:query-workbench-results-tree.png[,6in]

@@ -125,13 +125,13 @@ The only supported `meta()` field in the `CREATE INDEX` statement is `meta().id`
 *Using indices for aggregates*
 
 If there is an index on the expression of an aggregate, that index may be used to satisfy the query.
-For example, given the index "`abv_idx`" created using the following statement:
+For example, given the index "[.code]``abv_idx``" created using the following statement:
 
 ----
 CREATE INDEX abv_idx ON `beer-sample`(abv);
 ----
 
-The query engine will use the index "`abv_idx`" for the following query:
+The query engine will use the index "[.code]``abv_idx``" for the following query:
 
 ----
 SELECT min(abv), max(abv) FROM `beer-sample`;

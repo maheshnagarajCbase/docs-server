@@ -44,7 +44,7 @@ NOTE: When an application sends a view request with stale=false, the result cont
 This means that you no longer need to use durability requirements such as observe to block for persistence in application code before issuing the stale=false query.
 
 [caption=Best practice]
-NOTE: For better scalability and throughput, consider setting the stale parameter to "[.input]`ok`".
+NOTE: For better scalability and throughput, consider setting the stale parameter to "[.input]``ok``".
 Typically, even with stale set to [.input]`ok`, the data returned is closer to the key-value data, although it may not include all of it.
 
 == Multiple clients and index update
