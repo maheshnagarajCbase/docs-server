@@ -119,7 +119,7 @@ For imports the table command accepts two values and will exit reporting errors 
 * `DUMP`—Causes all keys currently in Couchbase to be read into HDFS.
 Any data items which are received by the Couchbase cluster while this command is running will also be passed along by the connector meaning new or changed items are part of the dump.
 However, items removed while the dump is running will not be removed from the output.
-* `BACKFILL_##`—Streams all key mutations for a given amount of time (in minutes).
+* `+BACKFILL_##+`—Streams all key mutations for a given amount of time (in minutes).
 This is best used to sample a bucket in a cluster for a period of time.
 
 For the `--table` value for the `BACKFILL` table that a time should be put in place of the brackets.
@@ -218,7 +218,7 @@ If, for instance, the job run had the argument `--table couchbaseExportJob`, Sqo
 *List table*
 
 Sqoop has a tool called `list-tables`.
-Couchbase does not have a notion of tables, but we use `DUMP` and `BACKFILL_##` as values to the `--table` option.
+Couchbase does not have a notion of tables, but we use `DUMP` and `+BACKFILL_##+` as values to the `--table` option.
 
 Since there is no real purpose to the [.cmd]`list-tables` command in the case of the Couchbase Hadoop Connector, it is not recommended you use this argument to Sqoop.
 

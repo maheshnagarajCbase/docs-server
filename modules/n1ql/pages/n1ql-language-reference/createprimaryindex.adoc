@@ -46,7 +46,7 @@ _index_name:_
 
 Valid GSI index names can contain any of the following characters: A-Z a-z 0-9 # _, and must start with a letter, [A-Z a-z].
 The minimum length of an index name is 1 character and there is no maximum length set for an index name.
-When querying, if the index name contains a '#' or '_' character, you must enclose the index name within backticks.
+When querying, if the index name contains a '&#35;' or '_' character, you must enclose the index name within backticks.
 
 IMPORTANT: Unnamed primary indexes are dropped by using the DROP PRIMARY INDEX statement, and named primary indexes are dropped by using the DROP INDEX statement.
 
