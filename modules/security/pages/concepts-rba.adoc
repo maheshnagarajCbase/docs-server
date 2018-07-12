@@ -59,7 +59,7 @@ NOTE: Those with more than one administrator role will have all of the privilege
 |===
 | Couchbase Resource and Administrative Roles 2+| Administrative Access: W(rite), R(ead), S(ecurity), none
 
-3+| *Full Administrator*
+3+^| *Full Administrator*
 
 | Cluster
 | W, R, S
@@ -97,7 +97,7 @@ NOTE: Those with more than one administrator role will have all of the privilege
 | W, R, S
 | W, R, S
 
-3+| *Read-only Administrator*
+3+^| *Read-only Administrator*
 
 | Cluster
 | R
@@ -135,7 +135,7 @@ NOTE: Those with more than one administrator role will have all of the privilege
 | R
 | R
 
-3+| *Cluster Administrator*
+3+^| *Cluster Administrator*
 
 | Cluster
 | W, R
@@ -173,7 +173,7 @@ NOTE: Those with more than one administrator role will have all of the privilege
 | W, R
 | W, R
 
-3+| *Bucket Administrator*
+3+^| *Bucket Administrator*
 
 | Cluster
 | none
@@ -211,7 +211,7 @@ NOTE: Those with more than one administrator role will have all of the privilege
 | W, R
 | W, R
 
-3+| *View Administrator*
+3+^| *View Administrator*
 
 | Cluster
 | none
@@ -249,7 +249,7 @@ NOTE: Those with more than one administrator role will have all of the privilege
 | W, R
 | W, R
 
-3+| *Replication (XDCR) Administrator*
+3+^| *Replication (XDCR) Administrator*
 
 | Cluster
 | none
