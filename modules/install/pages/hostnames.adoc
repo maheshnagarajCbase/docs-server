@@ -20,7 +20,7 @@ Couchbase Server stores the hostnames in a configuration file on the disk.
 
 == Provide hostname on initial setup
 
-In the first screen, provide either a hostname or IP address under [.uicontrol]*Configure Server Hostname*.
+In the first screen, provide either a hostname or IP address under [.ui]*Configure Server Hostname*.
 
 The provided hostname survives node restart.
 

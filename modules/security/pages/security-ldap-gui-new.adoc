@@ -17,22 +17,22 @@ To enable LDAP, follow these steps:
 
 . Select menu:Settings[LDAP Auth Setup].
 +
-The [.uicontrol]*LDAP Authentication Setup* screen will appear.
+The [.ui]*LDAP Authentication Setup* screen will appear.
 +
 [#image_t2w_nrw_ft]
 image::admin/picts/ldap-authentication.png[,720,align=left]
 
-. Select the [.uicontrol]*Enable* check box to turn on LDAP support.
+. Select the [.ui]*Enable* check box to turn on LDAP support.
 If a user doesn't want to associate the installation with LDAP, this option can be turned off.
 
 == Mapping administrator IDs from the LDAP server
 
 To map the LDAP administrators using the Couchbase Web Console, follow these steps:
 
-. In the [.uicontrol]*Read-Only Admins* window, enter the read-only administrator IDs.
-. In the [.uicontrol]*Full Admins* window, enter the full administrator IDs.
+. In the [.ui]*Read-Only Admins* window, enter the read-only administrator IDs.
+. In the [.ui]*Full Admins* window, enter the full administrator IDs.
 +
-IMPORTANT: Both for the full and for the read-only administrator, enter only one user ID per line and press [.uicontrol]*Enter* after each user ID.
+IMPORTANT: Both for the full and for the read-only administrator, enter only one user ID per line and press [.ui]*Enter* after each user ID.
 If you try to separate user IDs with commas, these will be treated as a part of the ID.
 +
 IMPORTANT: To enter userIDs using CLI, see xref:cli:cli-overview.adoc#cli-overview[CLI overview].
@@ -43,7 +43,7 @@ All users have to be first authenticated with the LDAP server to have access.
 However, if a user ID was not entered in the UI either as the full or read-only administrator, that user will have a role that has been assigned as the `default`.
 
 . Enter a username and a password.
-. Click on [.uicontrol]*Validate* to test the user.
+. Click on [.ui]*Validate* to test the user.
 
 == Test LDAP settings
 
@@ -51,6 +51,6 @@ To test the LDAP settings:
 
 . Sign out of the Couchbase Web Console.
 . Try to log in with the new administrative credentials.
- ** If you enter the credentials of the full administrator, the screen will provide full access to all functions available through the Couchbase Web Console (see the [.uicontrol]*LDAP Auth Setup* screen above).
+ ** If you enter the credentials of the full administrator, the screen will provide full access to all functions available through the Couchbase Web Console (see the [.ui]*LDAP Auth Setup* screen above).
  ** If you enter credentials of the read-only administrator, a screen with the read-only view will become available.
 This screen doesn't allow the user to enable or disable LDAP, or to configure administrators.

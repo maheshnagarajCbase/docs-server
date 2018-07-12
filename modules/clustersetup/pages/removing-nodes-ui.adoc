@@ -2,10 +2,10 @@
 = Remove nodes via UI
 
 [abstract]
-Remove a node from the cluster from within the [.uicontrol]*Server Nodes* section of the Couchbase Web Console.
+Remove a node from the cluster from within the [.ui]*Server Nodes* section of the Couchbase Web Console.
 
 [#image_jty_jnq_ks]
 image::remove-server-node.png[,720,align=left]
 
-. Click [.uicontrol]*Remove* to mark the node for removal.
-. After the node is removed, click on [.uicontrol]*Rebalance*.
+. Click [.ui]*Remove* to mark the node for removal.
+. After the node is removed, click on [.ui]*Rebalance*.

@@ -22,7 +22,7 @@ The query workbench is supported on Windows, Linux, and Mac OS X platforms.
 
 == Installing the query workbench
 
-. Access the http://www.couchbase.com/nosql-databases/downloads[Downloads] page and select the [.uicontrol]*Tools* tab under Couchbase Server.
+. Access the http://www.couchbase.com/nosql-databases/downloads[Downloads] page and select the [.ui]*Tools* tab under Couchbase Server.
 Download the query workbench archive file `couchbase-query-workbench_dp3-<os>` by choosing the appropriate package.
 +
 // <table>
@@ -164,5 +164,5 @@ image:query-workbench-results-table-2.png[,5.5in]
 image:query-workbench-results-tree.png[,6in]
 * The btn:[Save] button saves the raw JSON text to a file.
 +
-NOTE: When using Safari, clicking [.uicontrol]*Save* loads the data into a new window.
+NOTE: When using Safari, clicking [.ui]*Save* loads the data into a new window.
 You have to save the file manually using the menu:File[Save As] menu.

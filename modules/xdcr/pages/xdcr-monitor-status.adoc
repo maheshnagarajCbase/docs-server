@@ -2,7 +2,7 @@
 = Monitor replication status
 
 [abstract]
-Monitor the replication status using the [.uicontrol]*XDCR* and [.uicontrol]*Data Buckets* tabs.
+Monitor the replication status using the [.ui]*XDCR* and [.ui]*Data Buckets* tabs.
 
 The following Couchbase Web Console areas contain information about replication via XDCR:
 

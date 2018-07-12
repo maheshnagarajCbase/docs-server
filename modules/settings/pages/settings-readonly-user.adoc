@@ -15,7 +15,7 @@ image::admin/picts/settings-rouser1.png[]
 
 . Enter a [.in]`Username`, [.in]`Password` and verify the password.
 (Note: The password must be at least six characters.)
-. Click [.uicontrol]*Create*.
+. Click [.ui]*Create*.
 +
 The panel refreshes and has options for resetting the read-only user password or deleting the user.
 +

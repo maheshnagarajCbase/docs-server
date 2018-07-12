@@ -19,7 +19,7 @@ image:forums-signup.png[,570]
 *Posting feedback to the forum:*
 
 When you post feedback to the forum, select a category to post under to ensure that we provide the fastest help.
-To select a category, click [.uicontrol]*all categories*, as shown in the following figure:
+To select a category, click [.ui]*all categories*, as shown in the following figure:
 
 image::forum-categories.png[,align=left]
 
@@ -27,15 +27,15 @@ image::forum-categories.png[,align=left]
 
 . Open a browser and log in to the https://issues.couchbase.com/[Couchbase issue tracker].
 +
-The [.uicontrol]*Create Issue* form is displayed.
+The [.ui]*Create Issue* form is displayed.
 +
-Select [.uicontrol]*Couchbase Server* project for Server issues, a client library project for SDK issues, or [.uicontrol]*Couchbase Documentation* for documentation issues.
+Select [.ui]*Couchbase Server* project for Server issues, a client library project for SDK issues, or [.ui]*Couchbase Documentation* for documentation issues.
 +
-Select [.uicontrol]*Bug* if the product isn't behaving as you expected or [.uicontrol]*Improvement* to suggest improvements to the existing behavior.
- .. [.uicontrol]*Summary*: Enter a one-line title that summarizes the issue.
- .. [.uicontrol]*Affected Version*: Select [.uicontrol]*4.1*
- .. [.uicontrol]*Environment*: Enter a full description of your environment, including operating system, client SDK name and version, deployment model.
+Select [.ui]*Bug* if the product isn't behaving as you expected or [.ui]*Improvement* to suggest improvements to the existing behavior.
+ .. [.ui]*Summary*: Enter a one-line title that summarizes the issue.
+ .. [.ui]*Affected Version*: Select [.ui]*4.1*
+ .. [.ui]*Environment*: Enter a full description of your environment, including operating system, client SDK name and version, deployment model.
 For the deployment model information, indicate whether it's a multinode or single node installation, and which enabled services you have enabled (data, index, and query).
- .. [.uicontrol]*Description*: Enter a detailed description of the issue.
+ .. [.ui]*Description*: Enter a detailed description of the issue.
 Describe what you were doing, what your expected results are, and the actual results.
 You can also upload attachments with additional information.

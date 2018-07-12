@@ -2,11 +2,11 @@
 = Install sample buckets
 
 [abstract]
-The [.uicontrol]*Sample Buckets* tab allows you to install the sample bucket data if it has not already been loaded in the system.
+The [.ui]*Sample Buckets* tab allows you to install the sample bucket data if it has not already been loaded in the system.
 
-If the sample bucket data was not loaded during setup, select the sample buckets that you want to load using the check-boxes and click [.uicontrol]*Create*.
+If the sample bucket data was not loaded during setup, select the sample buckets that you want to load using the check-boxes and click [.ui]*Create*.
 
-If the sample bucket data has already been loaded, it is listed under the [.uicontrol]*Installed Samples* section of the page.
+If the sample bucket data has already been loaded, it is listed under the [.ui]*Installed Samples* section of the page.
 
 [#image_vjy_zgb_1t]
 image::admin/picts/settings-samples.png[,720,align=left]

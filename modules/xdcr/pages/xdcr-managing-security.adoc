@@ -15,11 +15,11 @@ To enable XDCR data security using SSL and create replication:
 +
 (Optional) To regenerate the existing destination certificate, click Regenerate before copying.
 
-. In the source cluster, select the [.uicontrol]*XDCR* tab.
-. In the [.uicontrol]*Remote Clusters* panel, click Create Cluster Reference to verify or create the cluster reference.
-. Select the [.uicontrol]*Enable Encryption* box and paste the certificate in the provided area and click [.uicontrol]*Save*.
+. In the source cluster, select the [.ui]*XDCR* tab.
+. In the [.ui]*Remote Clusters* panel, click Create Cluster Reference to verify or create the cluster reference.
+. Select the [.ui]*Enable Encryption* box and paste the certificate in the provided area and click [.ui]*Save*.
 +
 [#image_e22_pv5_zs]
 image::xdcr-data-security.png[,500,align=left]
 
-. In the [.uicontrol]*Ongoing Replications* panel, click [.uicontrol]*Create Replication*, provide the cluster and bucket information, and click [.uicontrol]*Replicate*.
+. In the [.ui]*Ongoing Replications* panel, click [.ui]*Create Replication*, provide the cluster and bucket information, and click [.ui]*Replicate*.

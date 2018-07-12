@@ -113,7 +113,7 @@ module.exports.findAll = function (queryStr, done) {
 }
 ----
 
-Using the data model, if you enter [.in]`SEA`, [.in]`KSEA`, or [.in]`Seattle`, the typeahead directive gives you the option to select [.uicontrol]*Seattle Tacoma Intl.* To see the results of the query, watch the terminal window in which the Node application is running.
+Using the data model, if you enter [.in]`SEA`, [.in]`KSEA`, or [.in]`Seattle`, the typeahead directive gives you the option to select [.ui]*Seattle Tacoma Intl.* To see the results of the query, watch the terminal window in which the Node application is running.
 The example is showing an output for the N1QL statements:
 
 ----
@@ -128,7 +128,7 @@ You can enable or disable console logging for N1QL statements by changing the va
 image::architecture-flight-path.png[,650px]
 
 After the airports are selected and a leave date is entered, the application tries to find route and schedule information for an airline that services the requested flight path.
-The call to the REST API [.path]_/api/flightPath/findAll_ on the server is initiated when the user clicks the [.uicontrol]*Find Flights* button.
+The call to the REST API [.path]_/api/flightPath/findAll_ on the server is initiated when the user clicks the [.ui]*Find Flights* button.
 The button is defined within the `travelForm` form element in the [.path]_index.html_ file, as shown in the following code snippets:
 
 .travelForm form element from /public/index.html file

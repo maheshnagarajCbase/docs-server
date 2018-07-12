@@ -7,7 +7,7 @@ The Views section allows you to manage your development and production views.
 You can access the View section in two ways:
 
 * Click menu:Data Buckets[Views], or
-* Select the [.uicontrol]*Views* tab on the main Couchbase Web Console panel.
+* Select the [.ui]*Views* tab on the main Couchbase Web Console panel.
 
 The individual elements of this interface are:
 
@@ -23,7 +23,7 @@ Views screen:: The final section provides a list of the design documents and eac
 
 == Development views
 
-When viewing [.uicontrol]*Development Views*, you can perform the following actions:
+When viewing [.ui]*Development Views*, you can perform the following actions:
 
 Compact::
 Compact the view index with an associated design document.
@@ -33,19 +33,19 @@ Delete::
 Delete a design document.
 This action deletes all of the views defined within the design document.
 
-Add View:: [.uicontrol]*Add View* creates a new view for the corresponding design document.
+Add View:: [.ui]*Add View* creates a new view for the corresponding design document.
 
 Publish:: Publish your design document (and all of the defined views) as a production design document.
 
 For each view listed, you can:
 
-Edit:: Clicking on [.uicontrol]*Edit* or clicking the view name opens the view editor for the current view name.
+Edit:: Clicking on [.ui]*Edit* or clicking the view name opens the view editor for the current view name.
 
 Delete:: Deletes an individual view.
 
 == Production views
 
-When viewing [.uicontrol]*Production Views* you can perform the following operations on each design document:
+When viewing [.ui]*Production Views* you can perform the following operations on each design document:
 
 Compact::
 Compact the view index with an associated design document.
@@ -56,7 +56,7 @@ Delete a design document.
 This action will delete all of the views defined within the design document.
 
 Copy to Dev::
-[.uicontrol]*Copy to Dev* copies the view definition to the development area of the view editor.
+[.ui]*Copy to Dev* copies the view definition to the development area of the view editor.
 This action enables you to edit the view definition.
 Once you have finished making changes, click the btn:[Publish] button if you want to overwrite the existing view definition.
 

@@ -4,7 +4,7 @@
 [abstract]
 Use the Couchbase Web Console to add a node.
 
-To add a new node to an existing cluster after installation, click on the btn:[Add Server] button within the [.uicontrol]*Manage Server Nodes* area of the Couchbase Web Console.
+To add a new node to an existing cluster after installation, click on the btn:[Add Server] button within the [.ui]*Manage Server Nodes* area of the Couchbase Web Console.
 
 image::admin/picts/add-server-new.png[,550,align=left]
 

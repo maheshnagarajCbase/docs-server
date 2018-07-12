@@ -39,7 +39,7 @@ or
  couchbase-cli ssl-manage -c localhost -u Admin -p Pass  --retrieve-cert=/tmp/cert.file
 ----
 +
-You can re-generate he SSL certificate by clicking on [.uicontrol]*Regenerate*, trigger a new SSL certificate with  the xref:rest-api:rest-xdcr-data-encrypt.adoc#rest-xdcr-data-encrypt[REST API] or generate a new certificate and save it to a file with the CLI command:
+You can re-generate he SSL certificate by clicking on [.ui]*Regenerate*, trigger a new SSL certificate with  the xref:rest-api:rest-xdcr-data-encrypt.adoc#rest-xdcr-data-encrypt[REST API] or generate a new certificate and save it to a file with the CLI command:
 +
 Example:
 +

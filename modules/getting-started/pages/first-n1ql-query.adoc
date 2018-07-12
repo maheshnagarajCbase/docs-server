@@ -170,7 +170,7 @@ cbq> SELECT DISTINCT brewery_id FROM `beer-sample`
      WHERE brewery_id IS NOT MISSING ORDER BY brewery_id LIMIT 5;
 ----
 
-. When you are finished, type [.uicontrol]*control-D* to exit [.cmd]`cbq` and return to the command prompt.
+. When you are finished, type [.ui]*control-D* to exit [.cmd]`cbq` and return to the command prompt.
 
 == Learning more about N1QL
 

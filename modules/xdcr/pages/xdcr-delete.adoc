@@ -6,5 +6,5 @@ You can delete active replications.
 
 To delete the replication, delete the active replications.
 
-. In the XDCR section of the Couchbase Web Console, click [.uicontrol]*Delete* next to the active replication you want to delete.
+. In the XDCR section of the Couchbase Web Console, click [.ui]*Delete* next to the active replication you want to delete.
 . Confirm the deletion.

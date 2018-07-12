@@ -28,9 +28,9 @@ image::admin/picts/bucket-new.png[,400,align=left]
 
 == Memory size
 
-In the [.uicontrol]*Memory Size* section, you will configure the RAM quota your bucket will allocate on a per node basis.
+In the [.ui]*Memory Size* section, you will configure the RAM quota your bucket will allocate on a per node basis.
 The value you enter must fit with the overall cluster RAM quota.
-The cluster quota and what you are trying to add are displayed in the bar on the [.uicontrol]*Setting* page.
+The cluster quota and what you are trying to add are displayed in the bar on the [.ui]*Setting* page.
 The bucket RAM quota can be dynamically altered up or down with zero downtime to the cluster at any point in the future, provided you have enough cluster resources.
 
 Regarding Cache Metadata, keep in mind that it can have serious implications on your application’s performance.
@@ -91,7 +91,7 @@ It can be as dangerous as it sounds.
 The Flush option flags the items for removal in a memcached bucket and immediately removes items in a Couchbase bucket.
 
 Enable the Flush option either during the bucket creation phase or later, while changing the xref:change-settings-bucket.adoc#topic_mfl_rmn_vs[bucket settings].
-In both cases, after enabling this option you still must click on the red button [.uicontrol]*Flush* to proceed with flushing.
+In both cases, after enabling this option you still must click on the red button [.ui]*Flush* to proceed with flushing.
 Using this button is an additional security measure to prevent unintentional loss of data.
 
 [#image_b5v_pfs_zs]

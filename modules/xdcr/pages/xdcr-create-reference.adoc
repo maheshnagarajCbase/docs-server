@@ -27,5 +27,5 @@ curl GET -u Admin:password http://ip.for.destination.cluster:8091/pools/default/
  ** IP address or hostname of a node in the destination cluster
  ** Administrator username and password for the destination cluster
  ** Enable Encryption - If selected, XDCR data encryption occurs using SSL.
-. Click [.uicontrol]*Save* to store the new reference to the destination cluster.
+. Click [.ui]*Save* to store the new reference to the destination cluster.
 This cluster information is now available when configuring replication for the source cluster.

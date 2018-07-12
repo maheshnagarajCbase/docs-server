@@ -38,11 +38,11 @@ docker inspect --format '{{ .NetworkSettings.IPAddress }}' <node_3_container_id 
 +
 Let's call that `<node_3_ip_addr>`.
 
-. From the host, connect to the Couchbase Web Console via `+http://localhost:8091+` in your browser and click on [.uicontrol]*Setup*.
+. From the host, connect to the Couchbase Web Console via `+http://localhost:8091+` in your browser and click on [.ui]*Setup*.
 . In the hostname field, enter [.in]`<node_3_ip_addr >`
 . Accept all default values in the setup wizard.
 Choose a password that you will remember.
-. Click the [.uicontrol]*Server Nodes* menu.
+. Click the [.ui]*Server Nodes* menu.
 . Choose the btn:[Add Servers] button in the Couchbase Web Console.
 . For the two remaining containers:
  ** Get the IP address of the container by running:
@@ -53,5 +53,5 @@ docker inspect --format '{{ .NetworkSettings.IPAddress }}' <node_x_container_id 
 +
 Let's call that <node_x_ip_addr> .
 
- ** In the [.uicontrol]*Server IP Address* field, use <node_x_ip_addr >.
- ** In the [.uicontrol]*Password* field, use the password created above.
+ ** In the [.ui]*Server IP Address* field, use <node_x_ip_addr >.
+ ** In the [.ui]*Password* field, use the password created above.

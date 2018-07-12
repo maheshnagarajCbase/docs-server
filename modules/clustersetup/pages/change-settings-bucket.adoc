@@ -12,6 +12,6 @@ To edit the bucket settings:
 [#image_o5q_vns_zs]
 image::admin/picts/bucket-settings-edit.png[,620]
 +
-The [.uicontrol]*Configure Bucket* dialog offers the same options as the xref:create-bucket.adoc#topic_fym_kmn_vs[Create a New Bucket] dialog.
+The [.ui]*Configure Bucket* dialog offers the same options as the xref:create-bucket.adoc#topic_fym_kmn_vs[Create a New Bucket] dialog.
 
 You can change bucket setting also with the CLI command xref:cli:cbcli/bucket-edit.adoc#reference_hhk_gmn_ls[bucket-edit] or the REST command xref:rest-api:rest-bucket-parameters.adoc#rest-bucket-change[rest-bucket-parameters].
