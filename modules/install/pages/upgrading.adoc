@@ -29,7 +29,7 @@ Consider the following additional points about MDS and node service types when p
 * You cannot introduce additional node service types when adding a newly upgraded node to a cluster consisting of mixed version 3.x and 4.x nodes.
 If you attempt to upgrade a node to 4.x and introduce it back into the cluster with additional services checked prior to upgrading all nodes, you'll see a red warning similar to this:
 +
-[.output]`Attention - services parameter is not supported in this cluster compatibility mode.`
+[.out]`Attention - services parameter is not supported in this cluster compatibility mode.`
 
 * You can be prompted to change the Server Quota When adding a node with additional data services selected to a cluster.
 +

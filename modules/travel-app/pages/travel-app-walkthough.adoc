@@ -113,7 +113,7 @@ module.exports.findAll = function (queryStr, done) {
 }
 ----
 
-Using the data model, if you enter [.input]`SEA`, [.input]`KSEA`, or [.input]`Seattle`, the typeahead directive gives you the option to select [.uicontrol]*Seattle Tacoma Intl.* To see the results of the query, watch the terminal window in which the Node application is running.
+Using the data model, if you enter [.in]`SEA`, [.in]`KSEA`, or [.in]`Seattle`, the typeahead directive gives you the option to select [.uicontrol]*Seattle Tacoma Intl.* To see the results of the query, watch the terminal window in which the Node application is running.
 The example is showing an output for the N1QL statements:
 
 ----

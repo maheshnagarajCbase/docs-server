@@ -119,7 +119,7 @@ It supports the same N1QL as `cbq` and provides the following additional feature
 
 * *Auto-completion*
 +
-When entering a word in the query panel, if you enter the [.input]`tab` key or [.input]`Ctrl+Space`, the tool offers a list of matching N1QL keywords and bucket names that are close to what you have typed so far.
+When entering a word in the query panel, if you enter the [.in]`tab` key or [.in]`Ctrl+Space`, the tool offers a list of matching N1QL keywords and bucket names that are close to what you have typed so far.
 For names that have a space or a hyphen (-), the auto-complete option includes the back-quotes around the name.
 If you expand a bucket in the Metadata panel, the tool learns and includes the field names from the schema of the expanded bucket.
 

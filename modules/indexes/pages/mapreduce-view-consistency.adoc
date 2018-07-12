@@ -44,8 +44,8 @@ NOTE: When an application sends a view request with stale=false, the result cont
 This means that you no longer need to use durability requirements such as observe to block for persistence in application code before issuing the stale=false query.
 
 [caption=Best practice]
-NOTE: For better scalability and throughput, consider setting the stale parameter to "[.input]``ok``".
-Typically, even with stale set to [.input]`ok`, the data returned is closer to the key-value data, although it may not include all of it.
+NOTE: For better scalability and throughput, consider setting the stale parameter to "[.in]``ok``".
+Typically, even with stale set to [.in]`ok`, the data returned is closer to the key-value data, although it may not include all of it.
 
 == Multiple clients and index update
 
@@ -53,36 +53,36 @@ When multiple clients access an index, the index update process and results retu
 Consider the following scenarios.
 
 Scenario 1::
-* Client 1 queries view with [.input]`stale=false`.
+* Client 1 queries view with [.in]`stale=false`.
 * Client 1 waits until server updates the index.
-* Client 2 queries view with [.input]`stale=false` while re-indexing from Client 1 is still in progress.
+* Client 2 queries view with [.in]`stale=false` while re-indexing from Client 1 is still in progress.
 * Client 2 waits until existing index process triggered by Client 1 completes.
 Client 2 gets an updated index.
 
 Scenario 2::
-* Client 1 queries view with [.input]`stale=false`.
+* Client 1 queries view with [.in]`stale=false`.
 * Client 1 waits until server updates the index.
-* Client 2 queries view with [.input]`stale=ok` while re-indexing from Client 1 is still in progress.
+* Client 2 queries view with [.in]`stale=ok` while re-indexing from Client 1 is still in progress.
 * Client 2 gets the existing index.
 
 Scenario 3::
-* Client 1 queries view with [.input]`stale=false`.
+* Client 1 queries view with [.in]`stale=false`.
 * Client 1 waits until server updates the index.
-* Client 2 queries view with [.input]`stale=update_after`.
+* Client 2 queries view with [.in]`stale=update_after`.
 * If re-indexing from Client 1 is not complete, Client 2 gets the existing index.
 If re-indexing from Client 1 has completed, Client 2 gets this updated index.
 It then triggers re-indexing.
 
 Scenario 4: Sequential access::
-* Client 1 queries view with [.input]`stale=ok`.
-* Client 2 queries view with [.input]`stale=false`.
+* Client 1 queries view with [.in]`stale=ok`.
+* Client 2 queries view with [.in]`stale=false`.
 * Views are updated.
-* Client 1 queries a second time with [.input]`stale=ok`.
+* Client 1 queries a second time with [.in]`stale=ok`.
 * Client 1 gets the updated view.
 
 +
 WARNING: This scenario can cause problems when paginating over a number of records as the record sequence may change between individual queries or if the number of mutations triggers an index update during pagination.
 
-Index updates are stacked when multiple clients request the view to be updated before executing the query and returning the information([.input]`stale=false`).
+Index updates are stacked when multiple clients request the view to be updated before executing the query and returning the information([.in]`stale=false`).
 This ensures that multiple clients updating and querying the index data get the updated document and version of the view each time.
-For queries with [.input]`stale=update_after`, the server does not perform stacking because all updates occur after the query has been executed.
+For queries with [.in]`stale=update_after`, the server does not perform stacking because all updates occur after the query has been executed.

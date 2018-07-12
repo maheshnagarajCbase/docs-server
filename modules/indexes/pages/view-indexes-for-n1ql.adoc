@@ -25,7 +25,7 @@ View indexes are based on the scatter-gather architecture which touches all the 
 Since all the nodes in the cluster are touched, there is no load-balancing.
 
 Consistency::
-When using view indexes, the default consistency setting is [.input]`update_after`.
+When using view indexes, the default consistency setting is [.in]`update_after`.
 When using view indexes in N1QL, the index definition is fixed and cannot be changed through the Couchbase Web Console or the command line.
 
 Replication::
