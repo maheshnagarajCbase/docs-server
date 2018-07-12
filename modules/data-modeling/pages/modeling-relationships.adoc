@@ -35,9 +35,9 @@ In this case, "brewery" does not increase the "beer" document size much, yet you
 It may also compromise consistent update of brewery details because in this model you now have to iterate over all the "beer" documents to update the details of the duplicate embedded "brewery" sub-documents.
 
 Embedding "many" in the "1" side:: This is the case where "beer" documents are embedded as an array of documents in the "brewery" document.
-* *Pros: *Embedding documents is okay if there are fewer beers per brewery and your access pattern is to work with all beer in the brewery in most cases.
+* *Pros:* Embedding documents is okay if there are fewer beers per brewery and your access pattern is to work with all beer in the brewery in most cases.
 With this model you can also do a single consistent write to make multiple changes to the "brewery" and "beer" documents embedded together.
-* *Cons: *If the "brewery" document has many beers, you may end up with very large documents.
+* *Cons:* If the "brewery" document has many beers, you may end up with very large documents.
 A more obvious case where embedding is bad is when an instrument and its measurements are involved.
 Storing the perpetual list of measurements in the single instrument document is not likely to end well given the high frequency of measurements.
 +

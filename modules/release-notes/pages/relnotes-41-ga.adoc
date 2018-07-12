@@ -120,7 +120,7 @@ The following are the known issues:
 | *Summary:* When creating a Global Secondary Index (GSI), the interactive query shell `cbq` can time out if the result is not returned within 2 minutes.
 Although the index is successfully created, the error message is unclear.
 
-*Workaround:*Create the index with `defer_build:true` and then build the index separately.
+**Workaround:**Create the index with `defer_build:true` and then build the index separately.
 
 | http://www.couchbase.com/issues/browse/MB-16618[MB-16618]
 | *Summary:* When the View queries with the options `reduce` and `group` set to `true` are parameterized by a list of keys that are not listed in ascending order, the produced results might not be properly reduced.
@@ -243,23 +243,23 @@ The following are the known issues:
 | http://www.couchbase.com/issues/browse/MB-18564[MB-18564]
 | *Summary:*`cbbackupwrapper` on Windows requires that the file path of the cbbackup process has no spaces.
 
-*Workaround:*Copy `cbbackup.exe` into a path with no spaces ( such as [.path]_c:\couchbase_ )
+**Workaround:**Copy `cbbackup.exe` into a path with no spaces ( such as [.path]_c:\couchbase_ )
 
 | http://www.couchbase.com/issues/browse/MB-16831[MB-16831]
-| *Summary:*When creating a Global Secondary Index (GSI), the interactive query shell cbq can timeout if the result is not returned within 2 minutes.
+| **Summary:**When creating a Global Secondary Index (GSI), the interactive query shell cbq can timeout if the result is not returned within 2 minutes.
 Although the index is successfully created, the error message is unclear.
 
-*Workaround:*Create the index with `defer_build:true`, and then build the index separately.
+**Workaround:**Create the index with `defer_build:true`, and then build the index separately.
 
 | http://www.couchbase.com/issues/browse/MB-16618[MB-16618]
-| *Summary:*View queries with the options reduce and group set to true when parameterized by a list of keys that are not in ascending order can produce results that are not properly reduced.
+| **Summary:**View queries with the options reduce and group set to true when parameterized by a list of keys that are not in ascending order can produce results that are not properly reduced.
 
 *Workaround:* Ensure that the list of keys passed to the query is in ascending order.
 |===
 
 == Release  Notes for 4.1
 
-*Known Issues *
+*Known Issues*
 
 The following table lists the known issues in the 4.1 release:
 
