@@ -2,7 +2,7 @@
 = Change Bucket Settings
 
 [abstract]
-Full, Cluster and Bucket Administrators can edit bucket settings using the [.uicontrol]*Change Bucket Settings* option.
+Full, Cluster and Bucket Administrators can edit bucket settings using the [.ui]*Change Bucket Settings* option.
 
 The settings in this dialog are all covered in more detail in xref:create-bucket.adoc[Create a New Bucket].
 
@@ -32,12 +32,12 @@ There are some settings that cannot be changed after bucket creation:
 
 To edit the bucket settings:
 
-. Under [.uicontrol]*Data Buckets*, click the blue triangle preceding the bucket name.
+. Under [.ui]*Data Buckets*, click the blue triangle preceding the bucket name.
 . Click on the btn:[Edit] button.
 +
 [#image_wh4_mkk_3v]
 image::admin/picts/bucket-settings-edit.png[,720,align=left]
 +
-The [.uicontrol]*Configure Bucket* dialog offers the same options as the xref:create-bucket.adoc#topic_fym_kmn_vs[Create a New Bucket] dialog.
+The [.ui]*Configure Bucket* dialog offers the same options as the xref:create-bucket.adoc#topic_fym_kmn_vs[Create a New Bucket] dialog.
 
 You can also change bucket settings using the CLI command xref:cli:cbcli/bucket-edit.adoc#reference_hhk_gmn_ls[bucket-edit] or the xref:rest-api:rest-bucket-parameters.adoc#rest-bucket-change[bucket REST api].

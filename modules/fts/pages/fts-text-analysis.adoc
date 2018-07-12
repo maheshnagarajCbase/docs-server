@@ -40,8 +40,8 @@ Stemming is the process of reducing words to an underlying base form.
 The goal of stemming is to get rid of grammatical inflections while preserving the words’ meanings.
 Those underlying base forms are then written into the index.
 
-In the Couchbase Server Web Console, you can find a list of available stemmers on the [.uicontrol]*Index* > [.uicontrol]*Full Text* > [.uicontrol]*Edit* or [.uicontrol]*Create New Index* > [.uicontrol]*Analyzers*.
-If you click "[.uicontrol]*New Analyzer*" you see a list of available stemmers in the "[.uicontrol]*Token Filters*" drop-down list.
+In the Couchbase Server Web Console, you can find a list of available stemmers on the [.ui]*Index* > [.ui]*Full Text* > [.ui]*Edit* or [.ui]*Create New Index* > [.ui]*Analyzers*.
+If you click "[.ui]*New Analyzer*" you see a list of available stemmers in the "[.ui]*Token Filters*" drop-down list.
 
 *Single Token*
 

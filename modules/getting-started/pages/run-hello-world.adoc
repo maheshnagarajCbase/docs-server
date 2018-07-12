@@ -202,9 +202,9 @@ The initial appearance is as follows:
 [#hello_world_initial]
 image::helloWorldInitial.png[,660,align=left]
 
-Select a string to be queried on, by means of the radio buttons in the [.uicontrol]*Airline Countries* panel.
+Select a string to be queried on, by means of the radio buttons in the [.ui]*Airline Countries* panel.
 Then, left-click on the btn:[Query Couchbase] button.
-The query is executed, and the returned values are displayed in the [.uicontrol]*Travel-Sample Retrievals* panel:
+The query is executed, and the returned values are displayed in the [.ui]*Travel-Sample Retrievals* panel:
 
 [#hello_world_subsequent]
 image::helloWorldSubsequent.png[,660,align=left]

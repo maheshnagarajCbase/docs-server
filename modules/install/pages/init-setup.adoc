@@ -15,88 +15,88 @@ Therefore, if your machine can be identified on the network as `servera`, you ca
 Alternatively, you can use an IP address or, if you are working on the machine on which installation was performed, `+http://localhost:8091+`.
 If you have chosen to run Couchbase on a port other than `8091`, connect on that specific port.
 
-Once you have connected, to begin setting up Couchbase Server, click the btn:[Setup] button on the [.uicontrol]*Welcome Screen*:
+Once you have connected, to begin setting up Couchbase Server, click the btn:[Setup] button on the [.ui]*Welcome Screen*:
 
 [#image_tls_nkd_dy]
 image::admin/picts/setup-screen.png[,360,align=left]
 
-The first setup screen, [.uicontrol]*Configure Server*, now appears.
+The first setup screen, [.ui]*Configure Server*, now appears.
 Proceed as follows.
 
-[.uicontrol]*Step 1: Configure Server*
+[.ui]*Step 1: Configure Server*
 
-The [.uicontrol]*Configure Server* screen lets you choose either to [.uicontrol]*Start a new cluster*, or to [.uicontrol]*Join a cluster now*.
+The [.ui]*Configure Server* screen lets you choose either to [.ui]*Start a new cluster*, or to [.ui]*Join a cluster now*.
 Select one or the other of these options by means of the corresponding radio button: associated, interactive fields are then displayed, by means of which you can provide appropriate input.
 
 The screen also allows you to configure _disk storage_ and your server's _hostname_.
 All the options are described in detail below.
 
-* [.uicontrol]*Start a new cluster*
+* [.ui]*Start a new cluster*
 +
-By default, the first option, [.uicontrol]*Start a new cluster*, is already selected when the screen first appears:
+By default, the first option, [.ui]*Start a new cluster*, is already selected when the screen first appears:
 +
 [#image_ac2_2tf_x5]
 image::admin/picts/cluster-setup-01.png[,480,align=left]
 +
-The displayed fields for [.uicontrol]*Start a New Cluster* are as follows:
+The displayed fields for [.ui]*Start a New Cluster* are as follows:
 +
 // Second-level bulleted list
 
 [#ul_yqx_w5m_zv]
- ** [.uicontrol]*RAM Available*: The total RAM available on this node.
+ ** [.ui]*RAM Available*: The total RAM available on this node.
 
- ** [.uicontrol]*Services*: The available Couchbase services for this node; which are [.uicontrol]*Data*, [.uicontrol]*Index*, [.uicontrol]*Query*, and [.uicontrol]*Full Text*.
+ ** [.ui]*Services*: The available Couchbase services for this node; which are [.ui]*Data*, [.ui]*Index*, [.ui]*Query*, and [.ui]*Full Text*.
 Since you are starting a new cluster, the Data service (which is essential for the cluster) has already been allocated, and its checkbox disabled.
 If this is a development system, you may add up to three services.
 Note that on a production system, it is recommended that only _one_ service ever be allocated per node: therefore, if this is indeed a production-system, you are advised not to add another service to this node.
 
- ** [.uicontrol]*Data RAM Quota*: The RAM-allocation for the Data service.
+ ** [.ui]*Data RAM Quota*: The RAM-allocation for the Data service.
 This should be 256 MB or more.
 A default quota is provided.
 
- ** [.uicontrol]*Full Text RAM Quota*: The RAM-allocation for the Full Text service.
+ ** [.ui]*Full Text RAM Quota*: The RAM-allocation for the Full Text service.
 This should be 256 MB or more.
 If this service is selected, a default quota is provided.
 
- ** [.uicontrol]*Index RAM Quota*: The RAM-allocation for the Index service.
+ ** [.ui]*Index RAM Quota*: The RAM-allocation for the Index service.
 This should be 256 MB or more.
 If this service is selected, a default quota is provided.
 
- ** [.uicontrol]*Total Per Server*: The total RAM used on this node by the Data and any additional services.
+ ** [.ui]*Total Per Server*: The total RAM used on this node by the Data and any additional services.
 For good performance, this should be less than %80 of the total available RAM on this node.
 A default total of %60 is provided.
 If there are multiple nodes in your cluster, the RAM-total you specify here will also be allocated to each other node.
 
- ** [.uicontrol]*Index Storage Setting*: If the Index service has been selected, either [.uicontrol]*Standard Global Secondary Indexes* or [.uicontrol]*Memory-Optimized Global Secondary Indexes* can be chosen here, by means of radio buttons.
+ ** [.ui]*Index Storage Setting*: If the Index service has been selected, either [.ui]*Standard Global Secondary Indexes* or [.ui]*Memory-Optimized Global Secondary Indexes* can be chosen here, by means of radio buttons.
 See xref:architecture:global-secondary-indexes.adoc#concept_e5c_kf4_vs[Global Secondary Indexes (GSIs)], for details.
 
 +
 Note that no RAM-allocation option is provided for the Query service, since none is required.
-Note also that interactive [.uicontrol]*What's this?* elements are provided throughout the screen, in adjacency to certain fields: by hovering over any of these elements with the mouse-cursor, you cause pop-up help-information to be displayed.
+Note also that interactive [.ui]*What's this?* elements are provided throughout the screen, in adjacency to certain fields: by hovering over any of these elements with the mouse-cursor, you cause pop-up help-information to be displayed.
 +
 If you are joining an existing cluster, rather than starting a new cluster, you do not need to enter data into any of the above fields.
-Instead, click on the radio button [.uicontrol]*Join a cluster now*; and proceed as described immediately below.
+Instead, click on the radio button [.ui]*Join a cluster now*; and proceed as described immediately below.
 +
 // End of first-level bulleted list item
 
 // Start of new first-level bulleted list
 
-* [.uicontrol]*Join a cluster now*
+* [.ui]*Join a cluster now*
 +
 [#image_r3t_htm_zv]
 image::admin/picts/cluster-setup-01-join.png[,480,align=left]
 +
-If you elect to [.uicontrol]*Join a cluster now*, interactive fields are displayed for the\...
+If you elect to [.ui]*Join a cluster now*, interactive fields are displayed for the\...
 +
 // Start of new second-level bulleted list
 
- ** [.uicontrol]*IP Address* of the cluster you are joining.
+ ** [.ui]*IP Address* of the cluster you are joining.
 
- ** [.uicontrol]*Username* of the Couchbase Server administrator who is managing the cluster you are joining.
+ ** [.ui]*Username* of the Couchbase Server administrator who is managing the cluster you are joining.
 
- ** [.uicontrol]*Password* of the Couchbase Server administrator who is managing the cluster you are joining.
+ ** [.ui]*Password* of the Couchbase Server administrator who is managing the cluster you are joining.
 
- ** [.uicontrol]*Services* available.
+ ** [.ui]*Services* available.
 Each (including Data) can be selected by means of an associated checkbox.
 Select one to three services for a development environment.
 You are recommended only to set _one_ service for a production environment.
@@ -104,26 +104,26 @@ You are recommended only to set _one_ service for a production environment.
 +
 // End of first-level bulleted item
 
-* [.uicontrol]*Configure Disk Storage*
+* [.ui]*Configure Disk Storage*
 +
 Whether you are starting a new cluster, or joining one existing, configure disk storage as follows:
 +
 // Start of second-level bulleted list
 
- ** [.uicontrol]*Database Path*: The interactive text-field should contain the location where the database files will be stored.
+ ** [.ui]*Database Path*: The interactive text-field should contain the location where the database files will be stored.
 The following default is provided: [.path]_/Users/user_name/Library/Application Support/Couchbase/var/lib/couchbase/data_.
-The read-only [.uicontrol]*Free* field shows the current amount of free space for this location.
+The read-only [.ui]*Free* field shows the current amount of free space for this location.
 
- ** [.uicontrol]*Indices Path*: The interactive text-field should contain the location where indices will be stored.
+ ** [.ui]*Indices Path*: The interactive text-field should contain the location where indices will be stored.
 The following default is provided: [.path]_/Users/user_name/Library/Application Support/Couchbase/var/lib/couchbase/data_.
-The read-only [.uicontrol]*Free* field shows the current amount of free space for this location.
+The read-only [.ui]*Free* field shows the current amount of free space for this location.
 
 +
 Note that for a production environment, it is recommended that data and indexes should _not_ share the same location.
 +
 // End of first-level bulleted item
 
-* [.uicontrol]*Configure Server Hostname*
+* [.ui]*Configure Server Hostname*
 +
 Whether you are starting a new cluster, or joining one existing, either enter a node IP or hostname into the editable text-field; _or_ use the default provided.
 +
@@ -131,12 +131,12 @@ Note that a specified hostname will survive node restart.
 For more details about hostnames, see xref:hostnames.adoc#topic_ggq_hfy_p4[Using Hostnames].
 
 When you have entered data into all the appropriate fields listed above, click the btn:[Next] button, at the bottom-right.
-This dismisses the [.uicontrol]*Configure Server* screen, and brings up the [.uicontrol]*Sample Buckets* screen.
+This dismisses the [.ui]*Configure Server* screen, and brings up the [.ui]*Sample Buckets* screen.
 
-[.uicontrol]*Step 2: Install Sample Buckets*
+[.ui]*Step 2: Install Sample Buckets*
 
 Couchbase provides _sample buckets_, which contain data for demonstration and test purposes.
-The [.uicontrol]*Sample Buckets* screen allows you to choose which of these buckets you wish to install.
+The [.ui]*Sample Buckets* screen allows you to choose which of these buckets you wish to install.
 The screen appears as follows:
 
 [#image_f4x_rpy_dt]
@@ -144,7 +144,7 @@ image::setup-02.png[,480,align=left]
 
 Click the corresponding checkboxes for the sample buckets you wish to to load into the Couchbase Server.
 Then, click the btn:[Next] button.
-This dismisses the [.uicontrol]*Sample Buckets* screen, and displays the [.uicontrol]*Create Default Bucket* screen.
+This dismisses the [.ui]*Sample Buckets* screen, and displays the [.ui]*Create Default Bucket* screen.
 
 *Step 3: Create a default bucket*
 
@@ -155,59 +155,59 @@ Creation of a _default bucket_ is optional.
 The bucket contains no data by default; but can be configured in detail, and used for testing and other purposes.
 It can be removed after installation, if appropriate; and can be re-added still later.
 
-The [.uicontrol]*Create Default Bucket* screen provides interactive configuration options.
-Note that [.uicontrol]*What's this?* pop-ups can be accessed, for pop-up assistance.
+The [.ui]*Create Default Bucket* screen provides interactive configuration options.
+Note that [.ui]*What's this?* pop-ups can be accessed, for pop-up assistance.
 
 The configuraton options are as follows:
 
-* [.uicontrol]*Bucket Settings*
+* [.ui]*Bucket Settings*
 +
 This section of the screen establishes the name and type of the bucket.
 Since it is the _default_ bucket that is being configured, the name (_default_) has been pre-set.
 No data-entry is required.
 +
-However, the type of the bucket can be established as either [.uicontrol]*Couchbase* or [.uicontrol]*Memcached*, by means of radio-buttons.
-[.uicontrol]*Couchbase* is initially selected by default.
-If you select [.uicontrol]*Memcached*, the appearance of the [.uicontrol]*Create Default Bucket* screen changes to the following:
+However, the type of the bucket can be established as either [.ui]*Couchbase* or [.ui]*Memcached*, by means of radio-buttons.
+[.ui]*Couchbase* is initially selected by default.
+If you select [.ui]*Memcached*, the appearance of the [.ui]*Create Default Bucket* screen changes to the following:
 +
 [#createDefaultBucketMCD230117]
 image::install-createDefaultBucketMCD230117.png[,480,align=left]
 +
-As shown by the above illustration, the [.uicontrol]*Replicas* and [.uicontrol]*Disk I/O Optimization* sections have been omitted; since they are not pertinent to memcached buckets.
+As shown by the above illustration, the [.ui]*Replicas* and [.ui]*Disk I/O Optimization* sections have been omitted; since they are not pertinent to memcached buckets.
 
-* [.uicontrol]*Memory Size*
+* [.ui]*Memory Size*
 +
 This section allows the RAM quota for the default bucket to be determined.
-The interactive [.uicontrol]*Per Node RAM Quota* text-field allows memory to be allocated to the default bucket.
+The interactive [.ui]*Per Node RAM Quota* text-field allows memory to be allocated to the default bucket.
 As you change the number of megabytes, the graphical display to the immediate right of the field changes spontaneously, to demonstrate how much memory for the full cluster is now allocated to this and to other buckets:
 +
 [#createDefaultBucketRAM230117.png]
 image::install-createDefaultBucketRAM230117.png[,480,align=left]
 +
-[.uicontrol]*Total bucket size* is also dynamically recalculated.
+[.ui]*Total bucket size* is also dynamically recalculated.
 +
-The [.uicontrol]*Cache Metadata* radio buttons permit the default bucket's data to be subject either to [.uicontrol]*Value Ejection* or [.uicontrol]*Full Ejection*.
-If [.uicontrol]*Value Ejection* is selected, when memory is constrained, only the data-value is ejected: the key and metadata remain in memory.
-If [.uicontrol]*Full Ejection* is selected, everything (including metadata, key, and value) is ejected.
+The [.ui]*Cache Metadata* radio buttons permit the default bucket's data to be subject either to [.ui]*Value Ejection* or [.ui]*Full Ejection*.
+If [.ui]*Value Ejection* is selected, when memory is constrained, only the data-value is ejected: the key and metadata remain in memory.
+If [.ui]*Full Ejection* is selected, everything (including metadata, key, and value) is ejected.
 Generally, Value Ejection favors performance at the expense of memory; and Full Ejection vice versa.
 See xref:architecture:db-engine-architecture.adoc#concept_b5n_bwn_vs[Database Engine Architecture], for more information.
 
-* [.uicontrol]*Replicas*
+* [.ui]*Replicas*
 +
 This section allows replica-creation to be enabled and managed.
-To enable, check the [.uicontrol]*Enable* checkbox.
-The number of replica-copies to be created and maintained is determined by means of the [.uicontrol]*Number of replica (backup) copies* pulldown menu, which allows a value from 1 to 3 to be selected.
-By checking the [.uicontrol]*View index replicas* checkbox, you ensure that view indexes, as well as data, are replicated: see xref:indexes:mapreduce-view-replication.adoc#concept_cbq_hzh_1t[View replication], for details.
+To enable, check the [.ui]*Enable* checkbox.
+The number of replica-copies to be created and maintained is determined by means of the [.ui]*Number of replica (backup) copies* pulldown menu, which allows a value from 1 to 3 to be selected.
+By checking the [.ui]*View index replicas* checkbox, you ensure that view indexes, as well as data, are replicated: see xref:indexes:mapreduce-view-replication.adoc#concept_cbq_hzh_1t[View replication], for details.
 
-* [.uicontrol]*Disk I/O Optimization*
+* [.ui]*Disk I/O Optimization*
 +
 This section allows the bucket's disk I/O priority to be specified.
-Radio-buttons allow [.uicontrol]*Low* or [.uicontrol]*High* to be chosen.
+Radio-buttons allow [.ui]*Low* or [.ui]*High* to be chosen.
 These settings determine whether I/O tasks are enqueued in low or high priority task-queues: with the high priority resulting in faster processing.
 The default is Low.
 See xref:architecture:db-engine-architecture.adoc#concept_b5n_bwn_vs[Database Engine Architecture], for further information.
 
-* [.uicontrol]*Flush*
+* [.ui]*Flush*
 +
 This section allows flushing to be enabled.
 If it is enabled, and flushing is performed, items in the bucket are removed as soon as possible.
@@ -216,34 +216,34 @@ See xref:clustersetup:bucket-flush.adoc#topic_v1t_trm_gv[Flush a Bucket], for de
 If you do not wish to configure and use the Default Bucket, click on the btn:[Skip] button.
 If you _do_ wish to use it, once you have entered your configuration-preferences, click on the btn:[Next] button.
 
-The [.uicontrol]*Create Default Bucket* setup screen is now dismissed, and the [.uicontrol]*Notifications* screen appears.
+The [.ui]*Create Default Bucket* setup screen is now dismissed, and the [.ui]*Notifications* screen appears.
 
-[.uicontrol]*Step 4: Notifications*
+[.ui]*Step 4: Notifications*
 
 [#defaultBucketNotifications230117]
 image::defaultBucketNotifications230117.png[,480,align=left]
 
-The [.uicontrol]*Notifications* screen features two key areas, which are as follows:
+The [.ui]*Notifications* screen features two key areas, which are as follows:
 
-* [.uicontrol]*Update Notifications*
+* [.ui]*Update Notifications*
 +
-If you check the [.uicontrol]*Enable software update notifications* checkbox, provided that the current node is connected to the internet, the Couchbase Server version-numbers corresponding to each node in your cluster will be anonymously sent to Couchbase: this information is used by Couchbase over time, to provide you with appropriate updates, and to help with product-improvement.
+If you check the [.ui]*Enable software update notifications* checkbox, provided that the current node is connected to the internet, the Couchbase Server version-numbers corresponding to each node in your cluster will be anonymously sent to Couchbase: this information is used by Couchbase over time, to provide you with appropriate updates, and to help with product-improvement.
 If you additionally choose (based on subsequent fields in this dialog) to provide registration-information, your email-address will be added to the Couchbase community mailing-list, so that you can periodically receive Couchbase news and product-information.
 (You can unsubscribe from the mailing-list at any time using the `Unsubscribe` link, provided in each newsletter.)
 
-* [.uicontrol]*Product Registration*
+* [.ui]*Product Registration*
 +
-Register your product, by entering your [.uicontrol]*Email*, [.uicontrol]*First name*, [.uicontrol]*Last name*, and [.uicontrol]*Comapny*.
+Register your product, by entering your [.ui]*Email*, [.ui]*First name*, [.ui]*Last name*, and [.ui]*Comapny*.
 Then, check the checkbox whereby you agree to accept terms and conditions.
 
 When you have finished entering information, click on the btn:[Next] button.
-This dismisses the [.uicontrol]*Notifications* screen, and displays the [.uicontrol]*Configure Server* screen.
+This dismisses the [.ui]*Notifications* screen, and displays the [.ui]*Configure Server* screen.
 
 [#setpass]
-[.uicontrol]*Step 5: Configure server*
+[.ui]*Step 5: Configure server*
 
 To create a cluster, you must assign yourself administrative credentials: these will be used on all nodes in the cluster you are creating.
-This is accomplished by means of the [.uicontrol]*Configure Server* screen:
+This is accomplished by means of the [.ui]*Configure Server* screen:
 
 [#image_ox5_2sy_dt]
 image::setup-05.png[,480,align=left]
@@ -254,16 +254,16 @@ Then, click on the btn:[Next] button.
 This concludes the Couchbase Server initialization-process.
 
 [#explore]
-[.uicontrol]*Step 6: Explore Couchbase Server*
+[.ui]*Step 6: Explore Couchbase Server*
 
 Couchbase Server is now running and ready to use.
-The starting screen for the new Couchbase Server, [.uicontrol]*Cluster Overview*, appears as follows:
+The starting screen for the new Couchbase Server, [.ui]*Cluster Overview*, appears as follows:
 
 [#image_rhb_3sy_dt]
 image::setup-06.png[,540,align=left]
 
 Using the Couchbase Web Console, you can now explore all the administrative options at your disposal.
-For example, by accessing [.uicontrol]*Data Buckets*, you can examine the data-contents of the buckets you previously may have chosen to install.
+For example, by accessing [.ui]*Data Buckets*, you can examine the data-contents of the buckets you previously may have chosen to install.
 
 [#image_xpf_ksy_dt]
 image::setup-07.png[,540,align=left]

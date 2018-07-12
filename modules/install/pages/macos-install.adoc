@@ -35,8 +35,8 @@ This creates a single folder, the `Couchbase Server.app` application.
 Note that the installation may not work if you open the executable from the Downloads folder.
 
 After the installation completes, double-click on `Couchbase Server.app` to start Couchbase Server.
-On Mac OSX Sierra, you need to right-click on `Couchbase Server.app` and select [.uicontrol]*Open*.
-If prompted with a dialog such as "[.out]``Do you want the application “beam.smp” to accept incoming network connections?`` ", select [.uicontrol]*allow* and proceed.
+On Mac OSX Sierra, you need to right-click on `Couchbase Server.app` and select [.ui]*Open*.
+If prompted with a dialog such as "[.out]``Do you want the application “beam.smp” to accept incoming network connections?`` ", select [.ui]*allow* and proceed.
 
 The Couchbase Server icon appears in the menu bar on the right-hand side.
 If the server was not configured, the setup process can be completed from the Couchbase Web Console.
@@ -92,4 +92,4 @@ open /Applications/Couchbase\ Server.app
 +
 This enables you to use Couchbase Server as a non-sudo, non-root user.
 
-. To stop the Couchbase Server, click on its icon in the menu bar and select [.uicontrol]*Quit Couchbase Server*.
+. To stop the Couchbase Server, click on its icon in the menu bar and select [.ui]*Quit Couchbase Server*.

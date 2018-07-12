@@ -913,7 +913,7 @@ If you have full text index definitions from previous versions that you want to 
 | Issue | Description
 
 | https://issues.couchbase.com/browse/MB-21814[MB-21814]
-| The Email Server Password was not saved correctly when the Email Alerts setting was enabled (from the [.uicontrol]*Settings* > [.uicontrol]*Alerts* page).
+| The Email Server Password was not saved correctly when the Email Alerts setting was enabled (from the [.ui]*Settings* > [.ui]*Alerts* page).
 |===
 
 *Deprecated Items*

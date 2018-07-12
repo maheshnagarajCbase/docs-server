@@ -16,7 +16,7 @@ image::admin/picts/settings-auto-compact.png[,570,align=left]
 
 The auto-compaction settings can also be modified using the xref:rest-api:rest-autocompact-get.adoc#reference_epl_5kd_sp[REST API].
 
-From the Couchbase Web Console > Settings > [.uicontrol]*Auto-Compaction* tab, you can set the following auto-compaction parameters:
+From the Couchbase Web Console > Settings > [.ui]*Auto-Compaction* tab, you can set the following auto-compaction parameters:
 
 Database Fragmentation::
 Sets the database fragmentation level that determines the point when compaction is triggered.

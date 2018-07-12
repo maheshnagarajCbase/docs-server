@@ -228,7 +228,7 @@ cbq> SELECT name,phone FROM `travel-sample` WHERE type="hotel" AND city="Manches
 == Try the Query Workbench
 
 The Couchbase Web Console provides a _Query Workbench_, at which you can compose and execute N1QL queries.
-Left-click on the [.uicontrol]*Query* tab, located on the horizontal control-bar, near the top of the Couchbase Web Console:
+Left-click on the [.ui]*Query* tab, located on the horizontal control-bar, near the top of the Couchbase Web Console:
 
 [#query_button]
 image::queryButton.png[,100,align=left]
@@ -242,11 +242,11 @@ The workbench has three principal areas, which are:
 
 * An upper panel, which features the prompt `Enter a query here`: and this is indeed where you will type your N1QL query.
 
-* A [.uicontrol]*Bucket Analysis* panel, at the lower-left.
+* A [.ui]*Bucket Analysis* panel, at the lower-left.
 This provides information on the buckets currently maintained by your system.
 Right now, it shows that just one exists; the bucket `travel-sample`.
 
-* A [.uicontrol]*Results* panel, at the lower-right.
+* A [.ui]*Results* panel, at the lower-right.
 This shows query-results; and provides a number of options for their display.
 To start with, you will use the default option, which is selectable by the btn:[JSON] button, and duly displays results in JSON-format.
 
@@ -261,7 +261,7 @@ To execute your query, left-click on the btn:[Execute] button, at the upper-left
 [#execute_button]
 image::executeButton.png[,100,align=left]
 
-Query-results now appear in the [.uicontrol]*Results* panel:
+Query-results now appear in the [.ui]*Results* panel:
 
 [#query_results_json]
 image::queryResultsJSON.png[,660,align=left]

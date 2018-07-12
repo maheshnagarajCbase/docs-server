@@ -57,7 +57,7 @@ curl GET -u admin:password http://ip.for.destination.cluster:8091/pools/default/
  ** IP address or hostname of a node in the destination cluster
  ** Administrator username and password for the destination cluster
  ** Enable Encryption - If selected, XDCR data encryption occurs using SSL.
-. Click [.uicontrol]*Save* to store the new reference to the destination cluster.
+. Click [.ui]*Save* to store the new reference to the destination cluster.
 This cluster information is now available when configuring replication for the source cluster.
 
 [#create-replication]
@@ -65,17 +65,17 @@ This cluster information is now available when configuring replication for the s
 
 Full, Cluster, and Replication Administrators can create a replication between clusters after creating references to the source and destination cluster.
 
-After you configure and start replication, view the current status and list of replications in the [.uicontrol]*Ongoing Replications* section.
+After you configure and start replication, view the current status and list of replications in the [.ui]*Ongoing Replications* section.
 
-. Click [.uicontrol]*Create Replication* to configure a new XDCR replication.
+. Click [.ui]*Create Replication* to configure a new XDCR replication.
 A panel appears where you can configure a new replication from the source to the destination cluster.
 +
 [#image_zds_pjt_zs]
 image::xdcr-create-replication.png[,550,align=left]
 
-. In the section [.uicontrol]*Replicate changes from*, select a bucket from the current cluster to replicate.
-. In the section [.uicontrol]*To*, select a destination cluster and enter the bucket name from the destination cluster:
-. Select the check box [.uicontrol]*Enable Advanced filtering*.
+. In the section [.ui]*Replicate changes from*, select a bucket from the current cluster to replicate.
+. In the section [.ui]*To*, select a destination cluster and enter the bucket name from the destination cluster:
+. Select the check box [.ui]*Enable Advanced filtering*.
 This will allow you to specify the filtering expression while creating replication.
 +
 For more details, see <<configure-xdcr-filering>>.
@@ -323,12 +323,12 @@ After XDCR is resumed, data continues to replicate between the source and destin
 To pause and resume replication, click the replicating and paused icons under the ongoing replication status.
 
 . Using the Couchbase Web Console, navigate to XDCR.
-. To pause, under menu:Ongoing Replication[Status], click on the [.uicontrol]*Replicating* icon to pause replication.
+. To pause, under menu:Ongoing Replication[Status], click on the [.ui]*Replicating* icon to pause replication.
 +
 [#image_ltl_q25_zs]
 image::xdcr-pause-resume.png[,720,align=left]
 
-. To resume, under menu:Ongoing Replication[Status], click on the [.uicontrol]*Paused* triangle icon to continue replicating.
+. To resume, under menu:Ongoing Replication[Status], click on the [.ui]*Paused* triangle icon to continue replicating.
 
 *Pause/Resume Replication with REST API or CLI*
 
@@ -340,7 +340,7 @@ To use REST API or CLI:
 [#monitor-rep-status]
 == Monitor Replication Status
 
-Full, Cluster, Read-only, and Replication Administrators can monitor the replication status using the [.uicontrol]*XDCR* and [.uicontrol]*Data Buckets* tabs.
+Full, Cluster, Read-only, and Replication Administrators can monitor the replication status using the [.ui]*XDCR* and [.ui]*Data Buckets* tabs.
 
 The following Couchbase Web Console areas contain information about replication via XDCR:
 
@@ -372,5 +372,5 @@ Full, Cluster, and Replication Administrators can  delete active replications.
 
 To delete the replication, delete the active replications.
 
-. In the XDCR section of the Couchbase Web Console, click [.uicontrol]*Delete* next to the active replication you want to delete.
+. In the XDCR section of the Couchbase Web Console, click [.ui]*Delete* next to the active replication you want to delete.
 . Confirm the deletion.

@@ -16,17 +16,17 @@ Proceed as follows:
 [#couchbaseConsoleInitial]
 image::elasticsearch-2.2/images/couchbaseConsoleInitial.png[,540,align=left]
 
-. Select the [.uicontrol]*XDCR* option, on the upper toolbar:
+. Select the [.ui]*XDCR* option, on the upper toolbar:
 +
 [#XDCRoption]
 image::elasticsearch-2.2/images/selectXDCR.png[,86,align=left]
 +
-This brings up the [.uicontrol]*XDCR* interface, as follows:
+This brings up the [.ui]*XDCR* interface, as follows:
 +
 [#XDCRui]
 image::elasticsearch-2.2/images/xdcrInitial.png[,540,align=left]
 
-. Left-click on the btn:[Create Cluster Reference] button, at the upper-right of the [.uicontrol]*REMOTE CLUSTERS* panel:
+. Left-click on the btn:[Create Cluster Reference] button, at the upper-right of the [.ui]*REMOTE CLUSTERS* panel:
 +
 [#createClusterRef]
 image::elasticsearch-2.2/images/selectCreateClusterReference.png[,204,align=left]
@@ -36,10 +36,10 @@ The following dialog now appears:
 [#createClusterRefDialog]
 image::elasticsearch-2.2/images/createClusterReferenceDialog.png[,320,align=left]
 +
-Enter appropriate data into the fields of this dialog, and then left-click on the [.uicontrol]*Save* button.
-The [.uicontrol]*Cluster Name* can be any name of your choice, to refer to your Elasticsearch cluster.
-The [.uicontrol]*IP/hostname* should be the port-number 9091, appended to the word `localhost`.
-The [.uicontrol]*Username* and [.uicontrol]*Password* are those you have established for your Elasticsearch cluster, in the `elasticsearch.yml` configuration-file.
+Enter appropriate data into the fields of this dialog, and then left-click on the [.ui]*Save* button.
+The [.ui]*Cluster Name* can be any name of your choice, to refer to your Elasticsearch cluster.
+The [.ui]*IP/hostname* should be the port-number 9091, appended to the word `localhost`.
+The [.ui]*Username* and [.ui]*Password* are those you have established for your Elasticsearch cluster, in the `elasticsearch.yml` configuration-file.
 You do not need to enable TLS encryption.
 +
 The Couchbase Web Console now appears as follows:
@@ -47,28 +47,28 @@ The Couchbase Web Console now appears as follows:
 [#createClusterReferenceCreated]
 image::elasticsearch-2.2/images/clusterReferenceCreated.png[,520,align=left]
 
-. Left-click on the btn:[Create Replication] button, to the upper-right of the [.uicontrol]*ONGOING REPLICATIONS* panel.
+. Left-click on the btn:[Create Replication] button, to the upper-right of the [.ui]*ONGOING REPLICATIONS* panel.
 The following dialog appears:
 +
 [#createReplicationDialog]
 image::elasticsearch-2.2/images/createReplicationDialog.png[,380,align=left]
 +
 Enter appropriate data into the fields of this dialog.
-The [.uicontrol]*Bucket* should be the bucket whose data you intend to replicate to Elasticsearch (previously designated as _beer-sample_).
-The [.uicontrol]*Cluster* should be the Elasticsearch cluster you previously created; which you now select from the drop-down menu:
+The [.ui]*Bucket* should be the bucket whose data you intend to replicate to Elasticsearch (previously designated as _beer-sample_).
+The [.ui]*Cluster* should be the Elasticsearch cluster you previously created; which you now select from the drop-down menu:
 +
 [#pickRemoteCluster]
 image::elasticsearch-2.2/images/pickRemoteCluster.png[,220,align=left]
 +
-The [.uicontrol]*Bucket* should be the name of the Elasticsearch index you specified to handle data replicated from Couchbase: which was _beer-sample_.
+The [.ui]*Bucket* should be the name of the Elasticsearch index you specified to handle data replicated from Couchbase: which was _beer-sample_.
 +
-Next, left-click on [.uicontrol]*Advanced settings*.
+Next, left-click on [.ui]*Advanced settings*.
 The following dialog appears:
 +
 [#advancedSettings]
 image::elasticsearch-2.2/images/advancedSettings.png[,380,align=left]
 +
-Since replication from Couchbase to Elasticsearch is supported only by Version 1 of the XDCR Protocol, you must change the value of the [.uicontrol]*XDCR Protocol* correspondingly, by accessing the pull-down menu, as follows:
+Since replication from Couchbase to Elasticsearch is supported only by Version 1 of the XDCR Protocol, you must change the value of the [.ui]*XDCR Protocol* correspondingly, by accessing the pull-down menu, as follows:
 +
 [#selectVersion1]
 image::elasticsearch-2.2/images/selectVersion1.png[,220,align=left]
@@ -76,7 +76,7 @@ image::elasticsearch-2.2/images/selectVersion1.png[,220,align=left]
 Left-click on the btn:[Replicate] button, at the lower-right of the dialog.
 
 At this point, replication from Couchbase to Elasticsearch begins.
-This is represented within the [.uicontrol]*ONGOING REPLICATIONS* panel, as follows:
+This is represented within the [.ui]*ONGOING REPLICATIONS* panel, as follows:
 
 [#replicationInProgress]
 image::elasticsearch-2.2/images/replicationInProgress.png[,480,align=left]
@@ -206,14 +206,14 @@ Ensure Couchbase is running; then, proceed as follows:
 [#dataBucketsTab]
 image::elasticsearch-2.2/images/dataBucketsTab.png[,120,align=left]
 +
-This brings up the [.uicontrol]*Couchbase Buckets* screen.
+This brings up the [.ui]*Couchbase Buckets* screen.
 
-. Left-click on the btn:[Documents] button, towards the right of the [.uicontrol]*beer-sample* row:
+. Left-click on the btn:[Documents] button, towards the right of the [.ui]*beer-sample* row:
 +
 [#beerSampleLine]
 image::elasticsearch-2.2/images/beerSampleLine.png[,480,align=left]
 +
-This brings up the [.uicontrol]*Documents* screen for the beer-sample bucket:
+This brings up the [.ui]*Documents* screen for the beer-sample bucket:
 +
 [#beerSampleDocuments]
 image::elasticsearch-2.2/images/beerSampleDocuments.png[,480,align=left]

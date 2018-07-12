@@ -2,7 +2,7 @@
 = Monitoring Statistics
 
 [abstract]
-Within the [.uicontrol]*Data Bucket* tab, information and statistics about buckets and nodes is displayed for the entire Couchbase Server cluster.
+Within the [.ui]*Data Bucket* tab, information and statistics about buckets and nodes is displayed for the entire Couchbase Server cluster.
 The information is aggregated from all the server nodes within the configured cluster for the selected bucket.
 
 The following functionality is available through this display, and is common to all the graphs and statistics display within the web console.

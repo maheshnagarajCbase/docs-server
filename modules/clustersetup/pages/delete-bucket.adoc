@@ -8,7 +8,7 @@ Deleting a bucket and then recreating it is sometimes faster than deleting all o
 
 To delete a bucket using the Couchbase Web Console:
 
-. Go to the [.uicontrol]*Data Buckets* tab and click the blue triangle next to the bucket name.
+. Go to the [.ui]*Data Buckets* tab and click the blue triangle next to the bucket name.
 . Click on the btn:[Delete] button.
 +
 [#image_q1m_bmk_3v]
@@ -19,6 +19,6 @@ image::admin/picts/bucket-delete.png[,720,align=left]
 [#image_i3c_pmk_3v]
 image::admin/picts/bucket-remove-warning.png[,550,align=left]
 
-. Click on [.uicontrol]*Delete* and confirm the deletion.
+. Click on [.ui]*Delete* and confirm the deletion.
 
 You can also use the CLI command xref:cli:cbcli/bucket-delete.adoc#reference_yg2_2mn_ls[bucket-delete] or REST API command xref:rest-api:rest-bucket-delete.adoc#rest-bucket-delete[rest-bucket-delete].

@@ -49,4 +49,4 @@ To assign the Read-Only Administrator's role to a user:
 image::pict/readonly-admin.png[,720,align=left]
 
 . In the dialog box, enter the Read-Only Administrator's credentials: username and password.
-. Click on [.uicontrol]*Create* to create the user.
+. Click on [.ui]*Create* to create the user.

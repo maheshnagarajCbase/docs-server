@@ -10,7 +10,7 @@ This section provides a step-by-step procedure, whereby the three components can
 The installation-procedure provided below involves the creation of a test environment, by means of _Oracle VirtualBox_; requiring _Ubuntu 14_ as operating system.
 For details on setting up VirtualBox on your development-machine, and deploying a Ubuntu 14 image on it, see http://virtualbox.org[].
 The instructions in this section assume that you have completed the necessary procedures, and have supervisor-privileges in the resulting virtual environment.
-You will install and run Elasticsearch, the Elasticsearch Plug-in, and Couchbase Server in this environment: you should thus ensure that the virtual machine is provisioned with sufficient disk and memory resources; by means of the [.uicontrol]*Settings* panel, within the Oracle VM VirtualBox Manager.
+You will install and run Elasticsearch, the Elasticsearch Plug-in, and Couchbase Server in this environment: you should thus ensure that the virtual machine is provisioned with sufficient disk and memory resources; by means of the [.ui]*Settings* panel, within the Oracle VM VirtualBox Manager.
 
 Within the Ubuntu 14 environment, you will use both the terminal and the browser to perform installation and configuration.
 Note that within the terminal window, you may need to use supervisor-privileges, by means of the `sudo` command: this command, however, is not reproduced in the examples in this document; you must prepend your console-input with it, as appropriate.
