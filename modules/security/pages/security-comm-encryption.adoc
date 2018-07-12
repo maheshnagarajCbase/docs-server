@@ -34,7 +34,7 @@ To talk over SSL/TLS to the Couchbase Web Console, connect to the following URL 
 
 To verify which certificate your cluster is currently using:
 
-. Select *Security > Root Certificate*.
+. Select menu:Security[Root Certificate].
 +
 NOTE: Only the Full Administrator role can see the Root Certificate tab in the Couchbase Web Console UI.
 +
@@ -113,7 +113,7 @@ The TLS protocol supports both RSA and ECC, however for Couchbase Server, it sup
 To enable SSL/TLS on the client side, you need to get a certificate from Couchbase Server and then follow the steps appropriate to the client you are using.
 
 You can obtain a self-signed, server -generated certificate using the Couchbase Web Console.
-Navigate to *Settings > Certificate > Show certificate* and copy the certificate.
+Navigate to menu:Settings[Certificate, Show certificate] and copy the certificate.
 
 NOTE: If the self-signed certificate obtained via the Couchbase Web Console is regenerated, you must obtain a new one.
 

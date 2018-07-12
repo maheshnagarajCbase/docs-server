@@ -100,7 +100,7 @@ Use the hostname of the machine running the query service: if you installed Couc
 
 . Verify that the `beer-sample` bucket is installed:
  .. Open the Couchbase Web Console and log in.
- .. Choose *Settings > Sample Buckets* and verify whether the `beer-sample` bucket is installed.
+ .. Choose menu:Settings[Sample Buckets] and verify whether the `beer-sample` bucket is installed.
  .. If it is not available, follow the on-screen instructions to install it.
 . Start [.cmd]`cbq` on your system (Linux, Mac OSX, or Windows) to to run some queries against the `beer-sample` bucket.
 

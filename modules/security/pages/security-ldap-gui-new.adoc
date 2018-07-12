@@ -14,7 +14,7 @@ The only administrative role that you can configure without LDAP authentication 
 
 To enable LDAP authentication for administrators, follow these steps:
 
-. Select *Security > External User/Roles*.
+. Select menu:Security[External User/Roles].
 +
 [#image_lgt_s5r_nv]
 image::pict/enable-auth.png[,720,align=left]

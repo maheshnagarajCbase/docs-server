@@ -21,7 +21,7 @@ Only Couchbase processes can write audit records, which are asynchronous by defa
 
 Only the full Couchbase administrators can configure auditing using the Couchbase Web Console.
 
-To configure auditing select: *Security > Audit*:
+To configure auditing select: menu:Security[Audit]:
 
 [#image_lvf_zhm_3v]
 image::pict/audit-setup.png[,720,align=left]

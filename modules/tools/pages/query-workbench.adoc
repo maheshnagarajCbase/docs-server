@@ -62,7 +62,7 @@ NOTE: Clearing the browser history clears the history maintained by the N1QL Edi
 By default, the query is saved as a text file (.txt) in the Downloads directory.
 +
 NOTE: When using Safari, clicking [.uicontrol]*Save* loads the data into a new window.
-You have to save the file manually using the *File > Save As* menu.
+You have to save the file manually using the menu:File[Save As] menu.
 
 [#bucket-analyzer]
 == Bucket Analysis
