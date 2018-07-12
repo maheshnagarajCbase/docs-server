@@ -18,7 +18,7 @@ You can also save the query results to a file on disk.
 The Query Workbench is now integrated with the Couchbase Web console and is available on the [.uicontrol]*Query* tab.
 
 NOTE: The Query Workbench only runs on nodes which are running the Query service.
-If the Query service is _not _running on the current node, it provides a link to the nodes in the cluster which _are_ running the Query service.
+If the Query service is _not_ running on the current node, it provides a link to the nodes in the cluster which _are_ running the Query service.
 
 *Supported platforms*
 

@@ -3,7 +3,7 @@
 
 *Queries Using the Web Console*
 
-Once you have created a full text index, you can search it using the Couchbase Server Web Console ([.path]_http://your-Couchbase:8091_).
+Once you have created a full text index, you can search it using the Couchbase Server Web Console ([.path]_\http://your-Couchbase:8091_).
 Go to [.uicontrol]*Indexes* > [.uicontrol]*Full Text*.
 Select your index from the drop down and then enter your query using the xref:fts-query-types.adoc#query-string-query-syntax[query string syntax].
 

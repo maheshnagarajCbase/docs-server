@@ -727,7 +727,7 @@ SELECT ARRAY_SUM([0,1,1,2,3,5]) as sum;
 [#fn-array-symdiff1]
 == ARRAY_SYMDIFF(expression1, expression2, \...)
 
-_Synonym: ARRAY_SYMDIFF1(expression1, expression2, ...)_
+_Synonym: ARRAY_SYMDIFF1(expression1, expression2, \...)_
 
 This function returns a new array based on the set symmetric difference, or disjunctive union, of the input arrays.
 The new array contains only those elements that appear in exactly one of the input arrays.

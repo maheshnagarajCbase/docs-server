@@ -36,7 +36,7 @@ Just make sure you enable the service when you provision your Couchbase Server n
 
 *Creating Your First Full Text Index*
 
-. Log in to the Couchbase Web Console, for example, [.path]_http://localhost:8091/_.
+. Log in to the Couchbase Web Console, for example, [.path]_\http://localhost:8091/_.
 +
 Click menu:Indexes[Full Text], then click on the [.uicontrol]*New Full Text Index* button.
 +

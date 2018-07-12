@@ -40,7 +40,7 @@ _returning-clause:_
 RETURNING (result-expression [, result-expression]* | [RAW | ELEMENT ] expression)
 ----
 
-_keyspace-ref:_Specifies the data source from which to delete the document.
+__keyspace-ref:__Specifies the data source from which to delete the document.
 You can add an optional namespace name to the keyspace name in this way:
 
 ----
@@ -50,18 +50,18 @@ namespace-name:keyspace-name
 For example, main:customer indicates  the customer keyspace in the main namespace.
 If the namespace name is omitted, the default namespace in the current session is used.
 
-_use-keys-clause:_Specifies the keys of the data items to be deleted.
+__use-keys-clause:__Specifies the keys of the data items to be deleted.
 Optional.
 Keys can be any expression.
 
-_where-clause:_Specifies the condition that needs to be met for data to be deleted.
+__where-clause:__Specifies the condition that needs to be met for data to be deleted.
 Optional.
 
-_limit-clause:_Specifies the greatest number of objects that can be deleted.
+__limit-clause:__Specifies the greatest number of objects that can be deleted.
 This clause must have a non-negative integer as its upper bound.
 Optional.
 
-_returning-clause:_Returns the data you deleted as specified in the result_expression.
+__returning-clause:__Returns the data you deleted as specified in the result_expression.
 Optional.
 
 Examples:

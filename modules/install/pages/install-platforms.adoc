@@ -64,7 +64,7 @@ All options listed below are 64-bit compatible.
 | 10.11 (El Capitan)
 |===
 
-* _ Only the Red Hat Compatible Kernel (RHCK) is supported, the Unbreakable Enterprise Kernel is not a supported platform_.
+*  _Only the Red Hat Compatible Kernel (RHCK) is supported, the Unbreakable Enterprise Kernel is not a supported platform_.
 
 [NOTE]
 ====

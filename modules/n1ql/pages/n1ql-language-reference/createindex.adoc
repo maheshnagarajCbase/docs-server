@@ -84,7 +84,7 @@ _WITH options_
 
 With clause is used to specify additional options with the GSI type indexes.
 
-_"nodes":["node name"] _
+_"nodes":["node name"]_
 
 A single secondary index of type GSI can only be placed on a single node that runs the indexing service.
 The "nodes" option allows you to specify the node that the index is placed on.

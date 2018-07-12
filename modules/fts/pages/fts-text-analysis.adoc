@@ -46,7 +46,7 @@ If you click "[.uicontrol]*New Analyzer*" you see a list of available stemmers i
 *Single Token*
 
 The Single Token Tokenizer returns the entire input bytes as a single token.
-This can be useful for things like URLs ([.path]_http://www.example.com/blog/stuff+and+nonsense/_) or email address (`will.spammington@couchbase.com`) that might otherwise be broken up at punctuation or special character boundaries.
+This can be useful for things like URLs ([.path]_\http://www.example.com/blog/stuff+and+nonsense/_) or email address (`will.spammington@couchbase.com`) that might otherwise be broken up at punctuation or special character boundaries.
 It could also be used when multi-word phrases should be indexed as a single term, for example, in the case of proper place names that would otherwise be broken into multiple terms by the whitespace tokenizer.
 
 Consider the excerpt below from the brewery documents in the beer-sample database.
