@@ -98,7 +98,7 @@ It uses lock-free data structures to effectively utilize multi-core CPUs and a m
 This helps in creating a system that scales almost linearly and exploits the current trends in SSD and Flash storage.
 Persistent snapshots, that run in the background, help create recovery points that can be used to rollback in case of failure.
 Creating and managing such persistence snapshots creates minimal overhead on the disk and CPUs and also on the other processes running on the indexing node, thereby significantly reducing write amplification.
-Plasma is the underlying storage engine used for [.input]`Standard Global Secondary Indexes`, which you can choose as part of Index Settings while setting up the cluster.
+Plasma is the underlying storage engine used for [.in]`Standard Global Secondary Indexes`, which you can choose as part of Index Settings while setting up the cluster.
 For more information, see xref:architecture:index-storage.adoc#section_wlt_pdf_p1b[*Plasma*] documentation and the related blog https://blog.couchbase.com/plasma-storage-engine-gsi/[here].
 
 *Index HA and Manageability*::
