@@ -43,49 +43,49 @@ The `alias names` are used in commands and are accessible only by N1QL queries.
 
 [#table_bucket_full_access_role,cols="15,8,8,8,8,8"]
 |===
-6+| Role: Bucket Full Access (`bucket_sasl`)
+6+^| Role: Bucket Full Access (`bucket_sasl`)
 
-| Bucket [ * \| _bucket-name_ ]: Data
-| image:introduction/images/yes.png[]
-| image:introduction/images/yes.png[]
-| image:introduction/images/yes.png[]
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
+^| Bucket [ * \| _bucket-name_ ]: Data
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
 
-| Bucket [ * \| _bucket-name_ ]: Views
-| image:introduction/images/yes.png[]
-| image:introduction/images/yes.png[]
-| image:introduction/images/yes.png[]
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
+^| Bucket [ * \| _bucket-name_ ]: Views
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
 
-| N1QL: Index
-| image:introduction/images/yes.png[]
-| image:introduction/images/yes.png[]
-| image:introduction/images/yes.png[]
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
+^| N1QL: Index
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
 
-| N1QL: Other
-| image:introduction/images/yes.png[]
-| image:introduction/images/yes.png[]
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
+^| N1QL: Other
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
 
-| Bucket: [ * \| _bucket-name_ ]
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/yes.png[]
+^| Bucket: [ * \| _bucket-name_ ]
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/yes.png[]
 
-| Pools
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
+^| Pools
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
 |===
 
 == Data Reader
@@ -95,31 +95,31 @@ Note that the role does _not_ permit the running of N1QL queries (such as SELECT
 
 [#table_data_reader_role,cols="15,8,8,8,8"]
 |===
-5+| Role: Data Reader (`data_reader`)
+5+^| Role: Data Reader (`data_reader`)
 
-| Bucket [ * \| _bucket-name_ ]: Docs
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
+^| Bucket [ * \| _bucket-name_ ]: Docs
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
 
-| Bucket [ * \| _bucket-name_ ]: Meta
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
+^| Bucket [ * \| _bucket-name_ ]: Meta
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
 
-| Bucket [ * \| _bucket-name_ ]: Xattr
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
+^| Bucket [ * \| _bucket-name_ ]: Xattr
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
 
-| Pools
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
+^| Pools
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
 |===
 
 == Data Writer
@@ -128,25 +128,25 @@ The *Data Writer* role allows information to be written to and read from a speci
 
 [#table_data_writer_role,cols="15,8,8,8,8"]
 |===
-5+| Role: Data Writer (`data_writer`)
+5+^| Role: Data Writer (`data_writer`)
 
-| Bucket [ * \| _bucket-name_ ]: Docs
-| image:introduction/images/yes.png[]
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
+^| Bucket [ * \| _bucket-name_ ]: Docs
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
 
-| Bucket [ * \| _bucket-name_ ]: Xattr
-| image:introduction/images/yes.png[]
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
+^| Bucket [ * \| _bucket-name_ ]: Xattr
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
 
-| Pools
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
+^| Pools
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
 |===
 
 == Data DCP Reader
@@ -155,49 +155,49 @@ The *Data DCP Reader* role allows DCP streams to be read.
 
 [#table_data_dcp_reader_role,cols="2,1,1,1,1"]
 |===
-5+| Role: Data DCP Reader (`data_dcp_reader`)
+5+^| Role: Data DCP Reader (`data_dcp_reader`)
 
-| Bucket: [ * \| _bucket-name_ ]: Docs
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
+^| Bucket: [ * \| _bucket-name_ ]: Docs
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
 
-| Bucket: [ * \| _bucket-name_ ]: Meta
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
+^| Bucket: [ * \| _bucket-name_ ]: Meta
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
 
-| Bucket: [ * \| _bucket-name_ ]: DCP
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
+^| Bucket: [ * \| _bucket-name_ ]: DCP
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
 
-| Bucket: [ * \| _bucket-name_ ]: Sxattr
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
+^| Bucket: [ * \| _bucket-name_ ]: Sxattr
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
 
-| Bucket: [ * \| _bucket-name_ ]: Xattr
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
+^| Bucket: [ * \| _bucket-name_ ]: Xattr
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
 
-| Admin: Memcached: Idle
-| image:introduction/images/no.png[]
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
+^| Admin: Memcached: Idle
+^| image:introduction/images/no.png[]
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
 
-| Pools
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
+^| Pools
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
 |===
 
 == Data Backup
@@ -206,43 +206,43 @@ The *Data Backup* role allows data to be backed up and restored.
 
 [#table_data_backup_role,cols="15,8,8,8,8"]
 |===
-5+| Role: Data Backup (`data_backup`)
+5+^| Role: Data Backup (`data_backup`)
 
-| Bucket: [ * \| _bucket-name_ ]: Data
-| image:introduction/images/yes.png[]
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
+^| Bucket: [ * \| _bucket-name_ ]: Data
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
 
-| Bucket: [ * \| _bucket-name_ ]: Views
-| image:introduction/images/yes.png[]
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
+^| Bucket: [ * \| _bucket-name_ ]: Views
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
 
-| Bucket: [ * \| _bucket-name_ ]: FTS
-| image:introduction/images/yes.png[]
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/yes.png[]
+^| Bucket: [ * \| _bucket-name_ ]: FTS
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/yes.png[]
 
-| Bucket: [ * \| _bucket-name_ ]: Stats
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
+^| Bucket: [ * \| _bucket-name_ ]: Stats
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
 
-| Bucket: [ * \| _bucket-name_ ]: Settings
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
+^| Bucket: [ * \| _bucket-name_ ]: Settings
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
 
-| Bucket: [ * \| _bucket-name_ ]: Pools
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
+^| Bucket: [ * \| _bucket-name_ ]: Pools
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
 |===
 
 == Data Monitoring
@@ -251,19 +251,19 @@ The *Data Monitoring* role allows all bucket-statistics to be read.
 
 [#table_data_monitoring_role,cols="15,8,8,8,8"]
 |===
-5+| Role: Data Monitoring (`data_monitoring`)
+5+^| Role: Data Monitoring (`data_monitoring`)
 
-| Bucket [ * \| _bucket-name_ ]: Stats
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
+^| Bucket [ * \| _bucket-name_ ]: Stats
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
 
-| Pools
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
+^| Pools
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
 |===
 
 == Views Reader
@@ -272,19 +272,19 @@ The *Views Reader* role allows all views to be read.
 
 [#table_views_reader_role,cols="15,8,8,8,8"]
 |===
-5+| Role: Views Reader (`views_reader`)
+5+^| Role: Views Reader (`views_reader`)
 
-| Bucket [ * \| _bucket-name_ ]: Data
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
+^| Bucket [ * \| _bucket-name_ ]: Data
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
 
-| Bucket [ * \| _bucket-name_ ]: Views
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
+^| Bucket [ * \| _bucket-name_ ]: Views
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
 |===
 
 == FTS Searcher
@@ -293,31 +293,31 @@ The role *FTS Searcher* allows _Full Text Search_ indexes to be searched by user
 
 [#table_fts_searcher_role,cols="15,8,8,8,8"]
 |===
-5+| Role: FTS Searcher (`fts_searcher`)
+5+^| Role: FTS Searcher (`fts_searcher`)
 
-| Bucket [ * \| _bucket-name_ ]: FTS
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
+^| Bucket [ * \| _bucket-name_ ]: FTS
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
 
-| Settings: FTS
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
+^| Settings: FTS
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
 
-| UI
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
+^| UI
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
 
-| Pools
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
+^| Pools
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
 |===
 
 == Query Select
@@ -326,25 +326,25 @@ The *Query Select* role allows the SELECT statement to be executed on a specifie
 
 [#table_query_select_role,cols="15,8,8,8,8"]
 |===
-5+| Role: Query Select (`query_select`)
+5+^| Role: Query Select (`query_select`)
 
-| Bucket [ * \| _bucket-name_ ]: N1QL, SELECT
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
+^| Bucket [ * \| _bucket-name_ ]: N1QL, SELECT
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
 
-| UI
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
+^| UI
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
 
-| Pools
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
+^| Pools
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
 |===
 
 == Query Update
@@ -353,25 +353,25 @@ The *Query Update* role allows the UPDATE statement to be executed on a specifie
 
 [#table_query_update_role,cols="15,8,8,8,8"]
 |===
-5+| Role: Query Update (`query_update`)
+5+^| Role: Query Update (`query_update`)
 
-| Bucket [ * \| _bucket-name_ ]: N1QL, UPDATE
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
+^| Bucket [ * \| _bucket-name_ ]: N1QL, UPDATE
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
 
-| UI
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
+^| UI
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
 
-| Pools
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
+^| Pools
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
 |===
 
 == Query Insert
@@ -380,25 +380,25 @@ The *Query Insert* role allows the INSERT statement to be executed on a specifie
 
 [#table_query_insert_role,cols="15,8,8,8,8"]
 |===
-5+| Role: Query Insert (`query_insert`)
+5+^| Role: Query Insert (`query_insert`)
 
-| Bucket [ * \| _bucket-name_ ]: N1QL, INSERT
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
+^| Bucket [ * \| _bucket-name_ ]: N1QL, INSERT
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
 
-| UI
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
+^| UI
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
 
-| Pools
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
+^| Pools
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
 |===
 
 == Query Delete
@@ -407,25 +407,25 @@ The *Query Delete* role allows the DELETE statement to be executed on a specifie
 
 [#table_query_delete_role,cols="15,8,8,8,8"]
 |===
-5+| Role: Query Delete (`query_delete`)
+5+^| Role: Query Delete (`query_delete`)
 
-| Bucket [ * \| _bucket-name_ ]: N1QL, DELETE
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
+^| Bucket [ * \| _bucket-name_ ]: N1QL, DELETE
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
 
-| UI
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
+^| UI
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
 
-| Pools
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
+^| Pools
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
 |===
 
 == Query Manage Index
@@ -434,25 +434,25 @@ The *Query Manage Index* role allows indexes to be managed for a specified bucke
 
 [#table_query_manage_index_role,cols="15,8,8,8,8"]
 |===
-5+| Role: Query Manage Index (`query_manage_index`)
+5+^| Role: Query Manage Index (`query_manage_index`)
 
-| Bucket [ * \| _bucket-name_ ]: N1QL, INDEX
-| image:introduction/images/yes.png[]
-| image:introduction/images/yes.png[]
-| image:introduction/images/yes.png[]
-| image:introduction/images/yes.png[]
+^| Bucket [ * \| _bucket-name_ ]: N1QL, INDEX
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/yes.png[]
 
-| UI
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
+^| UI
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
 
-| Pools
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
+^| Pools
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
 |===
 
 == Query System Catalog
@@ -462,35 +462,35 @@ This role is designed for troubleshooters, who need to debug queries.
 
 [#table_query_system_catalog_role,cols="15,8,8,8,8,8"]
 |===
-6+| Role: Query System Catalog (`query_system_catalog`)
+6+^| Role: Query System Catalog (`query_system_catalog`)
 
-| Bucket [ * \| _bucket-name_ ]: N1QL, INDEX
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/yes.png[]
+^| Bucket [ * \| _bucket-name_ ]: N1QL, INDEX
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/yes.png[]
 
-| Bucket [ * \| _bucket-name_ ]: N1QL, Meta
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
+^| Bucket [ * \| _bucket-name_ ]: N1QL, Meta
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
 
-| UI
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
+^| UI
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
 
-| Pools
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
+^| Pools
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
 |===
 
 == Query External Access
@@ -503,25 +503,25 @@ For an account of limitations on CURL, see xref:n1ql:n1ql-language-reference/cur
 
 [#table_query_external_access_role,cols="15,8,8,8,8"]
 |===
-5+| Role: Query External Access (`query_external_access`)
+5+^| Role: Query External Access (`query_external_access`)
 
-| Bucket [ * \| _bucket-name_ ]: N1QL, curl
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
+^| Bucket [ * \| _bucket-name_ ]: N1QL, curl
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
 
-| UI
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
+^| UI
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
 
-| Pools
-| image:introduction/images/yes.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
-| image:introduction/images/no.png[]
+^| Pools
+^| image:introduction/images/yes.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
+^| image:introduction/images/no.png[]
 |===
 
 [#section_lkb_cnq_cbb]
