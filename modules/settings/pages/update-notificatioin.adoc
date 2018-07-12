@@ -16,7 +16,7 @@ To enable the update notifications using the Web Console:
 
 [#ol_uk4_cjw_zy]
 . From the [.uicontrol]*Couchbase Web Console* > [.uicontrol]*Settings* > select the [.uicontrol]*Software Updates* tab.
-. Select the [.uicontrol]*Enable software update notifications*check box to enable the updates and click [.uicontrol]*Save*.
+. Select the [.uicontrol]**Enable software update notifications**check box to enable the updates and click [.uicontrol]*Save*.
 
 If update notifications are disabled, then the [.uicontrol]*Software Updates* page only notifies you of your currently installed version, and no alert is provided.
 

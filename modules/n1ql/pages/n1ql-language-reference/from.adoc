@@ -1004,7 +1004,7 @@ lhs-expression::: String or expression representing the Keyspace corresponding t
 
 lhs-expression-key::: String or expression representing the attribute in [.var]`rhs-expression` referencing the primary key for [.var]`lhs-expression`.
 
-*Index JOIN Example 1: ON KEY ...
+*Index JOIN Example 1: ON KEY \...
 FOR.*
 
 The following example counts the number of distinct "AA" airline routes for each airport after creating the following index (if not already created).
@@ -1430,8 +1430,7 @@ This results in:
 
 If an array occurs along a path, you can use array subscripts to select one element.
 
-*Arrays Example 1a: List the arrays of public_likes.
-*
+*Arrays Example 1a: List the arrays of public_likes.*
 
 ----
 SELECT public_likes
@@ -1476,8 +1475,7 @@ This results in:
 ]
 ----
 
-*Arrays Example 1b: List the third item of each public_likes array.
-*
+*Arrays Example 1b: List the third item of each public_likes array.*
 
 Remember that array counting starts with `0`, so `2` points to the third item.
 

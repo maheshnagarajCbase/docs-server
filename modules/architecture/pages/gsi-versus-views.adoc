@@ -21,7 +21,7 @@ The following table lists the key differences between GSIs and Views.
 | Partitioning model
 a|
 [#ul_tkj_lh2_zs]
-* GSIs are part of the index service, thus GSI independently partitions using the new multidimensional scaling capabilities and the services architecture*.*
+* GSIs are part of the index service, thus GSI independently partitions using the new multidimensional scaling capabilities and the services architecture**.**
 
 [#ul_tqn_kg2_zs]
 * Each GSI can only be placed in one node.
