@@ -3,7 +3,7 @@
 
 == PREPARE statement
 
-*[This is a beta feature; it's not for use in production.] *
+*[This is a beta feature; it's not for use in production.]*
 
 _prepare:_
 
@@ -30,7 +30,7 @@ A prepare statement that uses a name that was used for a different statement wil
 
 == EXECUTE statement
 
-*[This is a beta feature; it's not for use in production.] *
+*[This is a beta feature; it's not for use in production.]*
 
 The EXECUTE statement executes a prepared statement.
 When provided, name should identify a prepared statement.

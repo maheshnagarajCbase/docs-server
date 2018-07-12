@@ -14,10 +14,10 @@ Every item in a database goes through the basic _CRUD_ cycle, which is typical o
 CRUD stands for create, read, update, and delete:
 
 [#ul_r1j_1gm_zs]
-* *C*reate: when data is first inserted into the cluster
-* *R*ead: when an application retrieves the data
-* *U*pdate: when data is modified to reflect a change in the state represented by the data
-* *D*elete: when the data is no longer needed
+* **C**reate: when data is first inserted into the cluster
+* **R**ead: when an application retrieves the data
+* **U**pdate: when data is modified to reflect a change in the state represented by the data
+* **D**elete: when the data is no longer needed
 
 The following examples use the xref:cli-overview.adoc#concept_lg3_dhm_zs[command line] interface to demonstrate the basic CRUD operations.
 If you don’t know how to use or install the command line client, don’t worry - we’ll walk through the steps in the next chapter.

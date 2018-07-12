@@ -42,7 +42,7 @@ NOTE: DML statements are beta in Couchbase Server 4.0.
 * *Transformations* such as GROUP BY, ORDER BY, LIMIT and OFFSET
 * *Set operators*, both distinct and non-distinct: UNION, INTERSECT, and EXCEPT
 * *Aggregate functions* such as AVG, SUM, MAX, and COUNT
-* *A full range of expressions *including string comparisons with LIKE and string operators such as UPPER and SUBSTR
+* *A full range of expressions* including string comparisons with LIKE and string operators such as UPPER and SUBSTR
 * *Prepared statements* that get and cache a query plan independently of query execution, eliminating unnecessary work and therefore lowering query latency
 
 N1QL also has extensions to SQL that enable it to better express the semantics of processing  JSON, which is more varied and flexible than RDBMS schemas and which has more embedded structure.

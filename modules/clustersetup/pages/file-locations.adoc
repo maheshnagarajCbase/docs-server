@@ -57,7 +57,7 @@ IMPORTANT: Changing the data path for a node that is already a part of a cluster
 TIP: When using CLI, the data file and index file path settings cannot be changed individually.
 To change the setting individually, use the REST API.
 
-*CLI example *
+*CLI example*
 
 ----
 couchbase-cli node-init -c 192.168.0.1:8091 -u Administrator -p password
