@@ -46,7 +46,7 @@ The result documents must satisfy all of the child queries.
 
 Disjunction Query::
 The disjunction query is a compound query.
-The result documents must satisfy a configurable [.input]`min` number of child queries.
+The result documents must satisfy a configurable [.in]`min` number of child queries.
 By default this `min` is set to 1.
 
 Boolean Query::
@@ -95,11 +95,11 @@ Match Phrases::
 Placing the search terms in quotes performs a match phrase query.
 This is not an exact match, see <<match-phrase-query,Match Phrases Query>> for more information.
 +
-Example: "[.input]``light beer``" performs a <<match-phrase-query,Match Phrases Query>> for the phrase "[.code]``light beer``".
+Example: "[.in]``light beer``" performs a <<match-phrase-query,Match Phrases Query>> for the phrase "[.code]``light beer``".
 
 Field Scoping:: You can qualify the field for these searches by prefixing them with the name of the field separated by a colon.
 +
-Example: [.input]`description:water` performs a <<match-query,Match Query>> for the term "[.code]``water``", in the `description` field.
+Example: [.in]`description:water` performs a <<match-query,Match Query>> for the term "[.code]``water``", in the `description` field.
 
 Required, Optional, and Exclusion:: When your query string includes multiple items, by default these are placed into the SHOULD clause of a http://www.blevesearch.com/docs/Query/#boolean:8f767fbc41af8ff1ddcf4c60ed8c0fe9[Boolean Query].
 +

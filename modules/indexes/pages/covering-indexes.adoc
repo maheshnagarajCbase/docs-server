@@ -18,7 +18,7 @@ This results in a considerable performance improvement.
 
 You can see the query execution plan using the EXPLAIN statement.
 When a query uses a covering index, the EXPLAIN statement shows that a covering index is used for data access, thus avoiding the overhead associated with key-value document fetches.
-Consider a simple index, [.input]`idxstate`, on the attribute [.param]`state` in the `beer-sample` bucket:
+Consider a simple index, [.in]`idxstate`, on the attribute [.param]`state` in the `beer-sample` bucket:
 
 ----
 CREATE INDEX idxstate on `beer-sample` (state) USING GSI;
@@ -267,7 +267,7 @@ INSERT into `travel-sample`(KEY k, value state)
 
 *Arrays in WHERE clauses*
 
-First, create a new index, [.input]`idxarray`.
+First, create a new index, [.in]`idxarray`.
 
 ----
 CREATE INDEX idxarray on `beer-sample`(a, b);

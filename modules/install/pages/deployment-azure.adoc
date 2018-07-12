@@ -59,7 +59,7 @@ To deploy Couchbase Server on Microsoft Azure, follow these steps:
 [#image_ydj_zr1_ys]
 image::deploy-azure01.png[,570]
 
-. Create a new virtual machine by pressing the [.input]`+` (plus) symbol in the lower left corner:
+. Create a new virtual machine by pressing the [.in]`+` (plus) symbol in the lower left corner:
 . Follow the wizard to create a virtual machine From Gallery that was pre-installed with Windows Server 2012 R2 Datacenter.
 . In the second part of the virtual machine configuration, wizard fills in the `Virtual Machine Name`.
 This is the display name that will be used by Windows Azure inside the Portal.
@@ -103,7 +103,7 @@ image::deploy-azure07.png[,570]
 . Download the 64 bit Windows installer and when the download is complete start the installation.
 . Open the file [.path]_C:\Windows\System32\drivers\etc\hosts_ and add a line to map the VM’s `Private IP` to `Public DNS Name`.
 For Example: `100.117.124.100 cb4.cloudapp.net`
-. Open the Couchbase Web Console and in the hostname field insert your DNS name followed by [.input]`.cloudapp.net.` Click [.uicontrol]*Next*.
+. Open the Couchbase Web Console and in the hostname field insert your DNS name followed by [.in]`.cloudapp.net.` Click [.uicontrol]*Next*.
 For example:
 +
 ----

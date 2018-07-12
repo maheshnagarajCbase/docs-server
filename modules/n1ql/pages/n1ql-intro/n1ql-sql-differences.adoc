@@ -153,5 +153,5 @@ New conversions, for example from non-zero integer values to Boolean value true,
 
 Most standard SQL functions (for example, [.api]`LOWER()`) are defined.
 In addition to the standard filtering predicates, N1QL provides new operators to work with arrays in documents: `ANY`, `SOME`, and `EVERY`.
-`ANY` and `SOME` evaluate a condition for each element, and return [.output]`true` if any element meets the condition.
-`EVERY` also evaluates a condition for each element, except it returns [.output]`true` only if all elements matched the condition.
+`ANY` and `SOME` evaluate a condition for each element, and return [.out]`true` if any element meets the condition.
+`EVERY` also evaluates a condition for each element, except it returns [.out]`true` only if all elements matched the condition.

@@ -459,10 +459,10 @@ LIMIT 1;
 [#fn-array-range]
 == ARRAY_RANGE(start, end [, step ])
 
-This function returns a new array of numbers, from [.input]`start` until the largest number less than [.input]`end`.
-Successive numbers are incremented by [.input]`step`.
-If [.input]`step` is not specified, the default value of 1 is used.
-If [.input]`step` is negative, the function decrements until the smallest number greater than [.input]`end`.
+This function returns a new array of numbers, from [.in]`start` until the largest number less than [.in]`end`.
+Successive numbers are incremented by [.in]`step`.
+If [.in]`step` is not specified, the default value of 1 is used.
+If [.in]`step` is negative, the function decrements until the smallest number greater than [.in]`end`.
 It returns MISSING if any of the arguments are MISSING, and returns NULL if any of the arguments are non-numbers.
 
 .Example
@@ -533,7 +533,7 @@ LIMIT 1;
 [#fn-array-repeat]
 == ARRAY_REPEAT(value, n)
 
-This function returns a new array with the specified value repeated [.input]`n` times.
+This function returns a new array with the specified value repeated [.in]`n` times.
 It returns MISSING if any of the arguments are MISSING, and returns NULL if the first argument is not an integer.
 
 .Example
@@ -553,8 +553,8 @@ SELECT ARRAY_REPEAT("Vallie Ryan", 3) AS repeat_val;
 [#fn-array-replace]
 == ARRAY_REPLACE(expression, value1, value2 [, n ])
 
-This function returns a new array with all occurrences of [.input]`value1` replaced with [.input]`value2`.
-If n is specified, at most [.input]`n` replacements are performed.
+This function returns a new array with all occurrences of [.in]`value1` replaced with [.in]`value2`.
+If n is specified, at most [.in]`n` replacements are performed.
 It returns MISSING if any of the arguments are missing, and returns NULL if the first argument is not an array, or if the second argument is NULL.
 
 ----

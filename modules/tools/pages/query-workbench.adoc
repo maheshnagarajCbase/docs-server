@@ -43,7 +43,7 @@ TIP: You can also execute queries by typing a semi-colon (;) at the end of the q
 
 The N1QL editor provides the following additional features:
 
-* *Auto-completion* - When entering a keyword in the N1QL editor, if you enter the [.input]`tab` key or [.input]`Ctrl+Space`, the tool offers a list of matching N1QL keywords and bucket names that are close to what you have typed so far.
+* *Auto-completion* - When entering a keyword in the N1QL editor, if you enter the [.in]`tab` key or [.in]`Ctrl+Space`, the tool offers a list of matching N1QL keywords and bucket names that are close to what you have typed so far.
 For names that have a space or a hyphen (-), the auto-complete option includes back quotes around the name.
 If you expand a bucket in the Bucket Analyzer, the tool learns and includes the field names from the schema of the expanded bucket.
 * *Query history* - The tool maintains a history of all the queries executed.

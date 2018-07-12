@@ -76,7 +76,7 @@ $ cp /etc/pam.d/passwd /etc/pam.d/couchbase
 ----
 
 . Test that Linux authentication permits you to log in.
-For example, use user name: [.input]`don` and password: [.input]`secretpa$$`.
+For example, use user name: [.in]`don` and password: [.in]`secretpa$$`.
 You can execute this step with any other Linux credentials as well, if the user already exists then there is no need to perform the following step.
 +
 To create a Linux user and set password, you can use the following commands:
@@ -103,7 +103,7 @@ $ service saslauthd restart
 $ service couchbase-server restart
 ----
 
-. Try connecting using the Linux user credentials created earlier, [.input]`don/secretpa$$`.
+. Try connecting using the Linux user credentials created earlier, [.in]`don/secretpa$$`.
 +
 Couchbase Server should permit the connection, and once authenticated, the privileges of that user in Couchbase Server should be as per the role mapping.
 

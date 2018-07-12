@@ -21,7 +21,7 @@ http://localhost:8091/ui/index.html#/fts_list
 ----
 
 From here, you can create, edit, clone, and delete index definitions.
-If you see a message saying "[.output]``Full Text not enabled on this node,``" access the web console on another node where the full text service is enabled.
+If you see a message saying "[.out]``Full Text not enabled on this node,``" access the web console on another node where the full text service is enabled.
 
 To create an index in the web console, using your web browser:
 
@@ -56,7 +56,7 @@ For this reason, default index mapping may be slow or result in high load if use
 
 . Click the button [.uicontrol]*New Full Text Index*.
 image:fts-create-index.png[,570]
-. Give your index a name like "[.input]``beer-sample-idx``" and select the bucket you want to index from the drop-down list.
+. Give your index a name like "[.in]``beer-sample-idx``" and select the bucket you want to index from the drop-down list.
 image:fts-create-index-2.png[,300]
 . Starting version 4.6, you can create custom index mappings by document type when the type is specified in the document key.
 FTS uses the type identifier that you specify to determine where to find the type of each document.
@@ -75,7 +75,7 @@ For example, the Doc ID up to the first underscore is considered the type identi
 [#image_pjl_mxy_ky]
 image::fts-create-index-4.png[,300]
 
-. If you click on "[.uicontrol]*Type Mappings*," you will only see one type listed, which is "[.output]``default``."
+. If you click on "[.uicontrol]*Type Mappings*," you will only see one type listed, which is "[.out]``default``."
 . Click the "[.uicontrol]*Create Index*" button.
 You will then see a screen that shows you how many documents are in your index and the percentage complete.
 image:fts-create-index-3.png[,300]

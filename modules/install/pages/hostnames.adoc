@@ -58,12 +58,12 @@ Provide the hostname and port for the node and administrative credentials for th
 The value you provide for `hostname` must be a valid hostname for the node.
 Possible errors that can occur:
 
-* [.output]`Could not resolve the host name.
+* [.out]`Could not resolve the host name.
 The host name you provide as a parameter does not resolve to a IP address.`
-* [.output]`Could not listen.
+* [.out]`Could not listen.
 The host name resolves to an IP address, but no network connection exists for the address.`
-* [.output]`Could not rename the node because name was fixed at server start-up.`
-* [.output]`Could not save address after rename.`
-* [.output]`Requested name host name is not allowed.
+* [.out]`Could not rename the node because name was fixed at server start-up.`
+* [.out]`Could not save address after rename.`
+* [.out]`Requested name host name is not allowed.
 Invalid host name provided.`
-* [.output]`Renaming is disallowed for nodes that are already part of a cluster.`
+* [.out]`Renaming is disallowed for nodes that are already part of a cluster.`

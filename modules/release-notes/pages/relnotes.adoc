@@ -132,7 +132,7 @@ Without purging, you would see an increase in your backup size during merges as 
 | Transferring data using [.cmd]`cbtransfer` threw an exception and the [.cmd]`cbtransfer` utility hanged.
 
 | https://issues.couchbase.com/browse/MB-21652[MB-21652]
-| The error message “[.output]`db is being used by another handle`” was not known to cause any issues and has been handled to not appear any more.
+| The error message “[.out]`db is being used by another handle`” was not known to cause any issues and has been handled to not appear any more.
 
 | https://issues.couchbase.com/browse/MB-20403[MB-20403]
 a|
@@ -610,10 +610,10 @@ In Couchbase clusters with multiple query service nodes, applications may get in
 *Workaround:* The following two options can be used to avoid this problem:
 
 * Do not use prepared statements.
-* If using the Java SDK, set the undocumented property [.output]`N1qlQueryExecutor.ENCODED_PLAN_ENABLED_PROPERTY` to “[.output]`false`” before opening the bucket.
+* If using the Java SDK, set the undocumented property [.out]`N1qlQueryExecutor.ENCODED_PLAN_ENABLED_PROPERTY` to “[.out]`false`” before opening the bucket.
 For example,
 
-[.output]`System.setProperty(N1qlQueryExecutor.ENCODED_PLAN_ENABLED_PROPERTY, "false”) ..
+[.out]`System.setProperty(N1qlQueryExecutor.ENCODED_PLAN_ENABLED_PROPERTY, "false”) ..
 cluster.openBucket(bucketname)`
 
 | https://issues.couchbase.com/browse/MB-20403[MB-20403]
@@ -709,10 +709,10 @@ In Couchbase clusters with multiple query service nodes, applications may get in
 
 [#ul_y2t_zqy_dz]
 * Do not use prepared statements.
-* If using the Java SDK, set the undocumented property [.output]`N1qlQueryExecutor.ENCODED_PLAN_ENABLED_PROPERTY` to “[.output]`false`” before opening the bucket.
+* If using the Java SDK, set the undocumented property [.out]`N1qlQueryExecutor.ENCODED_PLAN_ENABLED_PROPERTY` to “[.out]`false`” before opening the bucket.
 For example,
 
-[.output]`System.setProperty(N1qlQueryExecutor.ENCODED_PLAN_ENABLED_PROPERTY, "false”) ..
+[.out]`System.setProperty(N1qlQueryExecutor.ENCODED_PLAN_ENABLED_PROPERTY, "false”) ..
 cluster.openBucket(bucketname)`
 
 | https://issues.couchbase.com/browse/MB-20403[MB-20403]
