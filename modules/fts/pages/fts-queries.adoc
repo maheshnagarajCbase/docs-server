@@ -156,7 +156,7 @@ For a complete list of status codes and information on how to interpret them, se
 *Query Counts*
 
 All queries return a result count.
-To get just the count of documents that match a particular query without returning documents or ids, execute the query as usual but specify size "[.input]`0`" to return no results, as in the following example:
+To get just the count of documents that match a particular query without returning documents or ids, execute the query as usual but specify size "[.input]``0``" to return no results, as in the following example:
 
 ----
 curl -X POST -H "Content-Type: application/json" \
@@ -199,7 +199,7 @@ See xref:fts-query-types.adoc[Types of Queries] for details.
 
 Facets are aggregate information collected on a particular result set.
 So, you have to already have a search in mind, and then you collect additional facet information along with it.
-All of the facet examples below are for the query "`water`" on the beer-sample dataset.
+All of the facet examples below are for the query "[.code]``water``" on the beer-sample dataset.
 
 FTS supports 3 types of facets:
 

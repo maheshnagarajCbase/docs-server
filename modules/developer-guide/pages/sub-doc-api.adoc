@@ -44,7 +44,7 @@ The following blogs explain how the sub-document API is expressed using differen
 * http://blog.couchbase.com/2016/february/preview-of-the-subdocument-api-using-go[GO Walk-through of the Sub-document API]
 ====
 
-Consider a simple https://gist.github.com/ToddGreenstein/f43559b9ca5fc476f18c[Java] example that uses the sub-document API to connect to the [.param]`travel-sample` bucket, fetch the [.param]`name` field from the document "[.input]`airline_13633`", and then print it.
+Consider a simple https://gist.github.com/ToddGreenstein/f43559b9ca5fc476f18c[Java] example that uses the sub-document API to connect to the [.param]`travel-sample` bucket, fetch the [.param]`name` field from the document "[.input]``airline_13633``", and then print it.
 
 .Fetch.java
 ----
@@ -162,7 +162,7 @@ It also adds the ability to push items to the beginning or the end of an array, 
 * Deleting an existing array element (reducing the array size by 1) using [.cmd]`remove`.
 * Adding a new element only if the value is not already present in the array using [.cmd]`addUnique`.
 
-The [.path]_ArraysAndDicts.java_ example below shows the use of [.cmd]`upsert` to create a new "[.param]`fleet`" array in an existing document, and then appends two new aircraft dictionaries (containing the aircraft name and engine count) to the "[.param]`fleet`" array:
+The [.path]_ArraysAndDicts.java_ example below shows the use of [.cmd]`upsert` to create a new "[.param]``fleet``" array in an existing document, and then appends two new aircraft dictionaries (containing the aircraft name and engine count) to the "[.param]``fleet``" array:
 
 .ArraysAndDicts.java
 ----
@@ -251,7 +251,7 @@ IMPORTANT: A multi-path operation through either the [.api]`lookupIn` or [.api]`
 The sub-document API is a trade-off in server resource usage, between CPU and network bandwidth.
 When using a sub-document command the client only transmits the key, path and fragment to change, as opposed to sending the key, and complete (whole) value.
 Depending on the size of the document being operated on and the size of the fragment, this can result in a significant saving of network bandwidth.
-For example, operating on a 100KB document named "[.input]`user::j.bloggs`" where a 30 byte fragment is added to a path of length 20 bytes would require sending the following over the network:
+For example, operating on a 100KB document named "[.input]``user::j.bloggs``" where a 30 byte fragment is added to a path of length 20 bytes would require sending the following over the network:
 
 [#table_o2q_1ky_y5,cols="81,50,50,50,50,50"]
 |===
@@ -287,7 +287,7 @@ For example, operating on a 100KB document named "[.input]`user::j.bloggs`" wher
 In this example, there is a saving of 100,190 bytes using sub-document compared to existing full document operations, or a 99.91% saving in network bandwidth.
 
 However, this bandwidth saving is only possible because the cluster node performs the additional processing to handle this request.
-The cluster node needs to parse the current JSON value for "[.input]`user::j.bloggs`", apply the requested modification (inserting an element into a dictionary in the above example), and then store the result.
+The cluster node needs to parse the current JSON value for "[.input]``user::j.bloggs``", apply the requested modification (inserting an element into a dictionary in the above example), and then store the result.
 The exact CPU required for this will vary considerably depending on a number of factors, including:
 
 * Size of the existing document.

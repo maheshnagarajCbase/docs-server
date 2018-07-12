@@ -125,13 +125,13 @@ The only supported `meta()` field in the  `CREATE INDEX` statement for Couchbase
 *Using indices for aggregates*
 
 If there is an index on the expression of an aggregate, that index may be used to satisfy the query.
-For example, given the index "`abv_idx`" created using the following statement:
+For example, given the index "[.code]``abv_idx``" created using the following statement:
 
 ----
 CREATE INDEX abv_idx ON `beer-sample`(abv);
 ----
 
-The query engine will use the index "`abv_idx`" for the following query:
+The query engine will use the index "[.code]``abv_idx``" for the following query:
 
 ----
 SELECT min(abv), max(abv) FROM `beer-sample`;
@@ -177,5 +177,5 @@ This time the query on `system:indexes` shows that the index is built (`"state":
 * The total size of the index keys cannot exceed 4K for a single document.
 Index key size is calculated using the total size of all the expressions being indexed in a single document.
 If an index keys size exceeds 4K, it will be skipped.
-The following error is logged to indicate that an item is skipped when building the index: "[.output]`Encoded secondary key is too long`" in the [.path]_indexer.log_ file.
+The following error is logged to indicate that an item is skipped when building the index: "[.output]``Encoded secondary key is too long``" in the [.path]_indexer.log_ file.
 The [.path]_indexer.log_ file is included in cbcollect_info output.

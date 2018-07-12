@@ -21,7 +21,7 @@ http://localhost:8091/ui/index.html#/fts_list
 ----
 
 From here, you can create, edit, clone, and delete index definitions.
-If you see a message saying "[.output]`Full Text not enabled on this node,`" access the web console on another node where the full text service is enabled.
+If you see a message saying "[.output]``Full Text not enabled on this node,``" access the web console on another node where the full text service is enabled.
 
 To create an index in the web console, using your web browser:
 
@@ -55,8 +55,8 @@ For this reason, default index mapping may be slow or result in high load if use
 
 . Click the button [.uicontrol]*New Full Text Index*.
 image:fts-create-index.png[,570]
-. Give your index a name like "[.input]`beer-sample-idx`" and select the bucket you want to index from the drop-down list.
-If you click on "[.uicontrol]*Type Mappings*," you will only see one type listed, which is "[.output]`default`." image:fts-create-index-2.png[,300]
+. Give your index a name like "[.input]``beer-sample-idx``" and select the bucket you want to index from the drop-down list.
+If you click on "[.uicontrol]*Type Mappings*," you will only see one type listed, which is "[.output]``default``." image:fts-create-index-2.png[,300]
 . Click the "[.uicontrol]*Create Index*" button.
 You will then see a screen that shows you how many documents are in your index and the percentage complete.
 image:fts-create-index-3.png[,300]
@@ -197,11 +197,11 @@ This document contains an embedded object called "geo" that has three fields: ac
 To create an index with an object mapping for the geo structure using the Web Console, do the following:
 
 . Create a type mapping for breweries.
-. Insert a child mapping for the attribute "[.param]`geo`".
-. In the "[.param]`geo structure`", insert a child field for "[.param]`accuracy`".
-. Insert child fields for "[.param]`lat`" and "[.param]`lon`" and set them to type `number`.
-. In a search on your newly created index, you can search the accuracy field using a dot syntax: "`geo.accuracy:rooftop`".
-. You can also do range searches on the geo fields: "`geo.accuracy:rooftop +geo.lat:>37 +geo.lon:>141`".
+. Insert a child mapping for the attribute "[.param]``geo``".
+. In the "[.param]``geo structure``", insert a child field for "[.param]``accuracy``".
+. Insert child fields for "[.param]``lat``" and "[.param]``lon``" and set them to type `number`.
+. In a search on your newly created index, you can search the accuracy field using a dot syntax: "[.code]``geo.accuracy:rooftop``".
+. You can also do range searches on the geo fields: "[.code]``geo.accuracy:rooftop +geo.lat:>37 +geo.lon:>141``".
 
 The index definition you created will look like the example below.
 You can create the same index definition with object mappings using the REST API:
@@ -348,7 +348,7 @@ You can change the name of the "type" field by clicking on the "[.uicontrol]*Adv
 *Default Type*
 
 Documents that match the default type mapping rules are written to the index as being of this type.
-The field defaults to "`_default`", which you can change to avoid conflicts if "`_default`" is a valid type field value in your JSON documents.
+The field defaults to "[.code]``_default``", which you can change to avoid conflicts if "[.code]``_default``" is a valid type field value in your JSON documents.
 
 *Default Analyzer  *
 
@@ -364,8 +364,8 @@ The name of a Date/Time parser that will be used to parse a date stored as a str
 
 The default field is searched when a user query does not limit the scope of a search to a particular field.
 This is highly convenient because most of the time you want a user to be able to search for a term wherever it shows up in the index.
-For example, if you create a text index of breweries, as long as terms are included in the `_all` field, you can query "`La Jolla`" and find it without specifying "`name:la jolla`" or "`city:la jolla`".
-You would only need to change the name of this value if your JSON documents already include a field called "`_all`".
+For example, if you create a text index of breweries, as long as terms are included in the `_all` field, you can query "[.code]``La Jolla``" and find it without specifying "[.code]``name:la jolla``" or "[.code]``city:la jolla``".
+You would only need to change the name of this value if your JSON documents already include a field called "[.code]``_all``".
 
 [#index-alias]
 == Index Aliases
