@@ -107,7 +107,7 @@ ENVIRONMENT: READY--LOGIN AT: http://localhost:3000
 ----
 
 The travel app runs in the terminal window, which you need to keep open.
-To stop using the app, terminate the process by typing [.input]`Ctrl-C`.
+To stop using the app, terminate the process by typing [.in]`Ctrl-C`.
 
 [#using-travel-app]
 == Using the Travel App

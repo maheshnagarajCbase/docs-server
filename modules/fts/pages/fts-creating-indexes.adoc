@@ -21,7 +21,7 @@ http://localhost:8091/ui/index.html#/fts_list
 ----
 
 From here, you can create, edit, clone, and delete index definitions.
-If you see a message saying "[.output]``Full Text not enabled on this node,``" access the web console on another node where the full text service is enabled.
+If you see a message saying "[.out]``Full Text not enabled on this node,``" access the web console on another node where the full text service is enabled.
 
 To create an index in the web console, using your web browser:
 
@@ -55,8 +55,8 @@ For this reason, default index mapping may be slow or result in high load if use
 
 . Click the button [.uicontrol]*New Full Text Index*.
 image:fts-create-index.png[,570]
-. Give your index a name like "[.input]``beer-sample-idx``" and select the bucket you want to index from the drop-down list.
-If you click on "[.uicontrol]*Type Mappings*," you will only see one type listed, which is "[.output]``default``." image:fts-create-index-2.png[,300]
+. Give your index a name like "[.in]``beer-sample-idx``" and select the bucket you want to index from the drop-down list.
+If you click on "[.uicontrol]*Type Mappings*," you will only see one type listed, which is "[.out]``default``." image:fts-create-index-2.png[,300]
 . Click the "[.uicontrol]*Create Index*" button.
 You will then see a screen that shows you how many documents are in your index and the percentage complete.
 image:fts-create-index-3.png[,300]

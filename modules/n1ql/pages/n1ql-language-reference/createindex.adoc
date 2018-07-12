@@ -177,5 +177,5 @@ This time the query on `system:indexes` shows that the index is built (`"state":
 * The total size of the index keys cannot exceed 4K for a single document.
 Index key size is calculated using the total size of all the expressions being indexed in a single document.
 If an index keys size exceeds 4K, it will be skipped.
-The following error is logged to indicate that an item is skipped when building the index: "[.output]``Encoded secondary key is too long``" in the [.path]_indexer.log_ file.
+The following error is logged to indicate that an item is skipped when building the index: "[.out]``Encoded secondary key is too long``" in the [.path]_indexer.log_ file.
 The [.path]_indexer.log_ file is included in cbcollect_info output.

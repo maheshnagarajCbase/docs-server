@@ -79,9 +79,9 @@ To run the cbq shell:
 
 . Open a command window on a Couchbase Server node that has the query service enabled.
 . Enter the command to start the interactive query shell:
- ** On Linux systems: $ [.input]`/opt/couchbase/bin/cbq`
- ** On OS X systems: $ [.input]`/Applications/Couchbase\ Server.app/Contents/Resources/couchbase-core/bin/cbq`
- ** On Windows systems: $ [.input]`C:\Program Files\Couchbase\Server\bin\cbq.exe`
+ ** On Linux systems: $ [.in]`/opt/couchbase/bin/cbq`
+ ** On OS X systems: $ [.in]`/Applications/Couchbase\ Server.app/Contents/Resources/couchbase-core/bin/cbq`
+ ** On Windows systems: $ [.in]`C:\Program Files\Couchbase\Server\bin\cbq.exe`
 
 Before you can run your first query, create a primary index on the bucket, for example `travel-sample`.
 The primary index contains a list of every document within the database, with the document ID as the key.

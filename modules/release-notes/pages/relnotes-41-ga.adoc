@@ -140,7 +140,7 @@ The following issues are now fixed:
 | Issue | Description
 
 | http://www.couchbase.com/issues/browse/MB-19018[MB-19018]
-| `goxdcr` terminated during the longevity test with an error: [.output]`unexpected empty bucketName`.
+| `goxdcr` terminated during the longevity test with an error: [.out]`unexpected empty bucketName`.
 
 | http://www.couchbase.com/issues/browse/MB-18912[MB-18912]
 | `MutationQueue` was waiting for Node Alloc (hung indexer).

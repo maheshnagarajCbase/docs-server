@@ -156,7 +156,7 @@ For a complete list of status codes and information on how to interpret them, se
 *Query Counts*
 
 All queries return a result count.
-To get just the count of documents that match a particular query without returning documents or ids, execute the query as usual but specify size "[.input]``0``" to return no results, as in the following example:
+To get just the count of documents that match a particular query without returning documents or ids, execute the query as usual but specify size "[.in]``0``" to return no results, as in the following example:
 
 ----
 curl -X POST -H "Content-Type: application/json" \

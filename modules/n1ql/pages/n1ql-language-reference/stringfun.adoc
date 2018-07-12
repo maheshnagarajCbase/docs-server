@@ -63,8 +63,8 @@ select rtrim("2013-06-22 18:33:30 330+0300", " +03") ;
 
 *SPLIT(expression [, sep ])*
 
-Splits the string into an array of substrings separated by the specified separator [.input]`sep`.
-If [.input]`sep` is not given, any combination of white space characters is used.
+Splits the string into an array of substrings separated by the specified separator [.in]`sep`.
+If [.in]`sep` is not given, any combination of white space characters is used.
 
 *SUBSTR(expression, position [, length ])*
 

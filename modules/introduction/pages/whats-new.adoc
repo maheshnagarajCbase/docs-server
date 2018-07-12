@@ -19,7 +19,7 @@ See xref:release-notes:relnotes.adoc#release-451[Release Notes 4.5.1] for inform
 
 New N1QL "pretty" Setting::
 The new query parameter, [.param]`pretty`, enables or disables the pretty formatting of query results.
-Setting it to [.input]`false` disables pretty formatting of the query results and removes all occurrences of white space characters from the query results.
+Setting it to [.in]`false` disables pretty formatting of the query results and removes all occurrences of white space characters from the query results.
 This reduces the number of bytes transferred to the client applications and improves the query response time.
 The performance benefits are significantly visible when working with large result sets.
 For more information, see xref:n1ql:n1ql-rest-api/index.adoc[N1QL REST API].

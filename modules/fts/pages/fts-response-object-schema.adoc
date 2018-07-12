@@ -97,7 +97,7 @@ Highlight::
 This object indicates whether highlighting was requested.
 The `highlight` object contains two fields:
 [#ul_byz_pzt_zv]
-* [.param]`style` - Optional field that specifies the name of the highlighter, which can be "[.input]``html``", "[.input]``ansi``", or a custom highlighter.
+* [.param]`style` - Optional field that specifies the name of the highlighter, which can be "[.in]``html``", "[.in]``ansi``", or a custom highlighter.
 * [.param]`fields` - Specifies an array of field names to which highlighting is restricted.
 
 Fields::
@@ -151,7 +151,7 @@ In the example below, there are two fields named "description" and "name".
 +
 A name value pair whose name is the name of the term that was found and whose value is an array on objects representing the vector information that describes the position of the matched term in the field.
 This value is only present if the term vectors are calculated.
-For each match, the object contains the position ([.output]`pos`), start, end, and array positions ([.output]`array_positions`).
+For each match, the object contains the position ([.out]`pos`), start, end, and array positions ([.out]`array_positions`).
 +
 .Sample Locations Fragment
 ----
