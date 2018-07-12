@@ -43,7 +43,7 @@ Therefore, the Read-Only Administrator cannot set up a Couchbase SDK to connect 
 
 To assign the Read-Only Administrator's role to a user:
 
-. Select *Security > Internal User/Roles*.
+. Select menu:Security[Internal User/Roles].
 +
 [#image_rm3_prv_4v]
 image::pict/readonly-admin.png[,720,align=left]

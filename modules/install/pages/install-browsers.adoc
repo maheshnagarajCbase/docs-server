@@ -12,7 +12,7 @@ Apple Safari 6 or later:: To enable JavaScript, use the check box on the securit
 
 Google Chrome 46 or later::
 To enable JavaScript, go to the Chrome menu and select [.uicontrol]*Preferences*.
-Under *Advanced Settings > Privacy*, click [.uicontrol]*Content Settings*.
+Under menu:Advanced Settings[Privacy], click [.uicontrol]*Content Settings*.
 In the `JavaScript` section select the radio button [.uicontrol]*Allow all sites to run JavaScript (recommended)*.
 
-Microsoft Internet Explorer 9 or later:: To enable JavaScript, select *Tools > Internet Options > Security > Custom Level > Active Scripting*.
+Microsoft Internet Explorer 9 or later:: To enable JavaScript, select menu:Tools[Internet Options, Security, Custom Level, Active Scripting].

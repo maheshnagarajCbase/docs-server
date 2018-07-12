@@ -12,7 +12,7 @@ Encryption causes a slight increase in the CPU load since it requires additional
 
 To enable XDCR data security using SSL and create replication:
 
-. On the destination cluster, navigate to *Security > Root Certificate* and copy the certificate.
+. On the destination cluster, navigate to menu:Security[Root Certificate] and copy the certificate.
 +
 (Optional) To regenerate the existing destination certificate, click Regenerate before copying.
 
@@ -34,7 +34,7 @@ Only the Full Administrator can regenerate the SSL certificate to update XDCR da
 
 To change XDCR data encryption:
 
-. On the destination cluster, navigate to *Settings > Cluster*.
+. On the destination cluster, navigate to menu:Settings[Cluster].
 . Click [.uicontrol]*Regenerate* and copy the certificate.
 . On the source cluster, select the [.uicontrol]*XDCR* tab.
 . In the [.uicontrol]*Remote Clusters* panel, for the destination cluster, click [.uicontrol]*Edit*.
@@ -50,7 +50,7 @@ IMPORTANT: Replication will stop if you regenerate the destination cluster's cer
 As a security best practice, periodically rotate the XDCR certificates and also make sure that you instantiate a new certificate on the remote cluster.
 
 The following example is a self-signed SSL/TLS certificate obtained on the cluster.
-Click *Security > Root Certificate* to reach the certificate.
+Click menu:Security[Root Certificate] to reach the certificate.
 
 [#image_b14_2x5_zs]
 image::xdcr-ssl-cert.png[,720,align=left]

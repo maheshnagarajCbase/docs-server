@@ -6,7 +6,7 @@ Full Administrators and Cluster Administrators can use the Couchbase Web Console
 
 == Create a New Bucket using the Couchbase Web Console
 
-Go to *Data Buckets > Create New Data Bucket*.
+Go to menu:Data Buckets[Create New Data Bucket].
 
 A dialog containing the configuration for your new bucket appears.
 Remember that when you create a new bucket and save the configuration, the node status indicator will be yellow until all of the vBuckets are created across the cluster.
