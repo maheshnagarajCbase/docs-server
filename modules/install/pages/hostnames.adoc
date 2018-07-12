@@ -31,7 +31,7 @@ image::admin/picts/cluster-setup-host.png[,720,align=left]
 
 If a new node is being added to an existing 2.0.1 or earlier Couchbase Server cluster, first set up the hostname for the new node in the setup wizard.
 
-Add a new node to a cluster by providing either a hostname or IP address under *Add Server > Server IP Address*.
+Add a new node to a cluster by providing either a hostname or IP address under menu:Add Server[Server IP Address].
 
 [#image_yxs_y3f_zs]
 image::upgrade-online-02.png[,500,align=left]

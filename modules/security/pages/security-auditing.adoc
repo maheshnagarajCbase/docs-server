@@ -24,7 +24,7 @@ Only Couchbase processes can write audit records, which are asynchronous by defa
 
 Couchbase administrators with full privileges can configure auditing using the Couchbase Web Console.
 
-To configure auditing, select *Settings > Audit*:
+To configure auditing, select menu:Settings[Audit]:
 
 [#image_n42_jsw_ft]
 image::admin/picts/settings-auditing.png[,720,align=left]

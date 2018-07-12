@@ -6,7 +6,7 @@ Couchbase administrators with full privileges can configure auditing using the C
 
 To configure auditing:
 
-. Select *Settings > Audit*.
+. Select menu:Settings[Audit].
 +
 [#image_q5b_wfb_1t]
 image::admin/picts/settings-auditing.png[,720,align=left]

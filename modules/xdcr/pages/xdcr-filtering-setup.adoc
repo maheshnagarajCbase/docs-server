@@ -13,7 +13,7 @@ Therefore, administrators can create multiple replications to the same destinati
 
 == Define a filtering expression
 
-To implement filtering, you must explicitly do it by selecting *XDCR > Create Replication > Enable Advanced filtering*.
+To implement filtering, you must explicitly do it by selecting menu:XDCR[Create Replication, Enable Advanced filtering].
 
 [#image_i12_h15_zs]
 image::xdcr-adv-filtering.png[,500,align=left]

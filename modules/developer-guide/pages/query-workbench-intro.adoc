@@ -165,4 +165,4 @@ image:query-workbench-results-tree.png[,6in]
 * The btn:[Save] button saves the raw JSON text to a file.
 +
 NOTE: When using Safari, clicking [.uicontrol]*Save* loads the data into a new window.
-You have to save the file manually using the *File > Save As* menu.
+You have to save the file manually using the menu:File[Save As] menu.

@@ -23,7 +23,7 @@ Check whether your clients support TLS.
 
 To enable SSL/TLS on the client side, you need to get a certificate from Couchbase Server and then follow the steps specific to the client you are using.
 
-To obtain the certificate, access the Couchbase Web Console, navigate to *Settings > Certificate > Show certificate* and copy the certificate.
+To obtain the certificate, access the Couchbase Web Console, navigate to menu:Settings[Certificate, Show certificate] and copy the certificate.
 
 NOTE: The certificate that is obtained is a self-signed server-generated certificate.
 

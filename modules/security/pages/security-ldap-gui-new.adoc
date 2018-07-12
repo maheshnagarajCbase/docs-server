@@ -15,7 +15,7 @@ Couchbase Server supports multiple full LDAP administrators as well as multiple 
 
 To enable LDAP, follow these steps:
 
-. Select *Settings > LDAP Auth Setup*.
+. Select menu:Settings[LDAP Auth Setup].
 +
 The [.uicontrol]*LDAP Authentication Setup* screen will appear.
 +

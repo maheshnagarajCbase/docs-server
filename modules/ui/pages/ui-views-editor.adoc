@@ -6,7 +6,7 @@ The Views section allows you to manage your development and production views.
 
 You can access the View section in two ways:
 
-* Click *Data Buckets > Views*, or
+* Click menu:Data Buckets[Views], or
 * Select the [.uicontrol]*Views* tab on the main Couchbase Web Console panel.
 
 The individual elements of this interface are:

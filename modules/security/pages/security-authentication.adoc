@@ -26,7 +26,7 @@ This administrator can view certain activities without having ability to edit.
 Passwords for read-only administrators follow the same security best practices.
 See xref:security-passwords.adoc#topic_iyx_5ps_lq[Couchbase passwords] for more details.
 +
-To set up credentials for the read-only Couchbase administrator, open the Couchbase Web Console and go to *Settings > Account Management* to enter the administrator's credentials.
+To set up credentials for the read-only Couchbase administrator, open the Couchbase Web Console and go to menu:Settings[Account Management] to enter the administrator's credentials.
 
 [#image_ghq_l2r_wq]
 image::admin-read-only.png[,720,align=left]
@@ -42,7 +42,7 @@ Authentication at the bucket level takes place over the CRAM-MD5 protocol and in
 In the challenge sequence, the server sends a string in the format of a Message ID (email header value including angle brackets).
 The Message ID includes an arbitrary string of random digits, a timestamp, and the server's fully qualified domain name.
 
-Access control is configured using the Couchbase Web Console at *Data Buckets > Create New Data Bucket* and is set for two ports:
+Access control is configured using the Couchbase Web Console at menu:Data Buckets[Create New Data Bucket] and is set for two ports:
 
 [#image_pbx_5hw_1r]
 image::admin-access-control.png[,600,align=left]

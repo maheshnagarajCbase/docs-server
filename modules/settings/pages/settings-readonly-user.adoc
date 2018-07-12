@@ -6,7 +6,7 @@ Use the Account Management tab to create a read-only user.
 
 To create a read-only user:
 
-. In the Couchbase Web Console, select *Settings > Account Management*.
+. In the Couchbase Web Console, select menu:Settings[Account Management].
 +
 The Read-Only User dialog appears.
 +

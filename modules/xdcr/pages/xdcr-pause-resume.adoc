@@ -11,12 +11,12 @@ After XDCR is resumed, data continues to replicate between the source and destin
 To pause and resume replication, click the replicating and paused icons under the ongoing replication status.
 
 . Using the Couchbase Web Console, navigate to XDCR.
-. To pause, under *Ongoing Replication > Status*, click on the [.uicontrol]*Replicating* icon to pause replication.
+. To pause, under menu:Ongoing Replication[Status], click on the [.uicontrol]*Replicating* icon to pause replication.
 +
 [#image_ltl_q25_zs]
 image::xdcr-pause-resume.png[,550,align=left]
 
-. To resume, under *Ongoing Replication > Status*, click on the [.uicontrol]*Paused* triangle icon to continue replicating.
+. To resume, under menu:Ongoing Replication[Status], click on the [.uicontrol]*Paused* triangle icon to continue replicating.
 
 You can also use REST API or CLI:
 
