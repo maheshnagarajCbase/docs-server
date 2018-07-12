@@ -2,7 +2,7 @@
 = File Locations
 
 [abstract]
-Couchbase Server stores data files (data, views and secondary index) under *var > lib > couchbase > data*.
+Couchbase Server stores data files (data, views and secondary index) under menu:var[lib, couchbase, data].
 
 The disk path for the database and map reduce index files is set during the initial setup of the server node.
 The default disk path is typically used for development purposes only.

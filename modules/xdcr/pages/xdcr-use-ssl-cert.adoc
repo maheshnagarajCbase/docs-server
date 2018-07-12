@@ -5,7 +5,7 @@
 As a security best practice, periodically rotate the XDCR certificates and also make sure that you instantiate a new certificate on the remote cluster.
 
 The following example is a self-signed SSL/TLS certificate obtained on the cluster.
-Click *Security > Root Certificate* to reach the certificate.
+Click menu:Security[Root Certificate] to reach the certificate.
 
 [#image_b14_2x5_zs]
 image::xdcr-ssl-cert.png[,720,align=left]

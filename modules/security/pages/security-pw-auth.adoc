@@ -23,7 +23,7 @@ Authentication at the bucket level takes place over the CRAM-MD5 protocol and in
 In the challenge sequence, the server sends a string in the format of a Message ID (email header value including angle brackets).
 The Message ID includes an arbitrary string of random digits, a timestamp, and the server's fully qualified domain name.
 
-Access control is configured using the Couchbase Web Console at *Data Buckets > Create New Data Bucket* and is set for two ports:
+Access control is configured using the Couchbase Web Console at menu:Data Buckets[Create New Data Bucket] and is set for two ports:
 
 image::admin-access-control.png[,600,align=left]
 

@@ -4,7 +4,7 @@
 [abstract]
 You can either use the Couchbase Web Console, CLI, or REST API to create a new bucket.
 
-To create a new bucket using  the Couchbase Web Console, go to *Data Buckets > Create New Data Bucket*.
+To create a new bucket using  the Couchbase Web Console, go to menu:Data Buckets[Create New Data Bucket].
 
 A dialog containing the configuration for your new bucket appears.
 Remember that when you create a new bucket and save the configuration, the node status indicator will be yellow until all of the vBuckets are created across the cluster.

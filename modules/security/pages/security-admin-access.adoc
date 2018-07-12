@@ -20,7 +20,7 @@ While an administrative console is typically protected via an HTTPS connection, 
 
 To talk over SSL/TLS to the Couchbase Web Console, connect to the following URL with your web browser: [.in]`+https://couchbase_server:18091+`
 
-Select *Settings > Cluster*.
+Select menu:Settings[Cluster].
 
 [#image_idl_2j1_1s]
 image::security-ssl-cert.png[,720,align=left]

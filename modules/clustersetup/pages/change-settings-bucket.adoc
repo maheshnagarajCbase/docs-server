@@ -6,7 +6,7 @@ Edit bucket settings using the Change Bucket Settings option.
 
 To edit the bucket settings:
 
-. Select *>Data Buckets > (blue triangle preceding the bucket name)*.
+. Select menu:>Data Buckets[(blue triangle preceding the bucket name)].
 . Click on the btn:[Edit] button.
 +
 [#image_wh4_mkk_3v]

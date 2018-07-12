@@ -8,7 +8,7 @@ The cluster reference sets the cluster name, IP or hostname, administrator crede
 
 To create a cluster reference using the Couchbase Web Console:
 
-Go to *XDCR > Create Cluster Reference*
+Go to menu:XDCR[Create Cluster Reference]
 
 [#image_fxf_crb_ft]
 image::admin/picts/xdcr-createreference.png[,align=left]
@@ -22,7 +22,7 @@ To create the unidirectional replication (from cluster A to cluster B):
 curl GET -u Admin:password http://ip.for.destination.cluster:8091/pools/default/buckets
 ----
 
-. Navigate to the XDCR section, *XDCR > Remote Cluster section > Create Cluster Reference*
+. Navigate to the XDCR section, menu:XDCR[Remote Cluster section, Create Cluster Reference]
 . Click the btn:[Create Cluster Reference] button.
 . Provide the following information for identifying and accessing the destination cluster.
  ** Cluster Name
