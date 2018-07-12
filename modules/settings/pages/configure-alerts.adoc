@@ -13,7 +13,7 @@ It is important to ensure that all Couchbase Server nodes have network access to
 [#image_psg_sq1_1t]
 image::admin/picts/settings-alerts.png[,720,align=left]
 
-Select the [.uicontrol]*Enable email alerts* check box to enable the configuration of email alerts.
+Select the [.ui]*Enable email alerts* check box to enable the configuration of email alerts.
 These alerts are raised for the errors that you select in the *Available Alerts* section.
 
 It is also possible to configure Email alerts using the xref:rest-api:rest-cluster-email-notifications.adoc#rest-cluster-alerts[REST API.]
@@ -62,7 +62,7 @@ This email address should be one that is valid as a sender address for the SMTP 
 To specify more than one recipient, separate each address by a space, comma, or semicolon.
 
 | Test Mail
-| Click [.uicontrol]*Test Mail* to send a test email to confirm the settings and configuration of the email server and recipients.
+| Click [.ui]*Test Mail* to send a test email to confirm the settings and configuration of the email server and recipients.
 |===
 
 == Available Alerts

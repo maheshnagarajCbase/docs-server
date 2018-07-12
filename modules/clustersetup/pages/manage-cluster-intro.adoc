@@ -10,7 +10,7 @@ The default location of the Couchbase Web Console is `+http://<hostname>:8091+`
 
 . Open the Couchbase Web Console.
 +
-Click [.uicontrol]*Setup* to begin the initial configuration.
+Click [.ui]*Setup* to begin the initial configuration.
 +
 *Step 1 of 5: Configure Server*
 +
@@ -19,38 +19,38 @@ image::admin/picts/cluster-setup-01.png[,720,align=left]
 
 . Set up the disk storage and Data service.
 +
-The [.uicontrol]*Configure Disk Storage* option specifies the location of the persistent storage used by the Couchbase Server Data service.
+The [.ui]*Configure Disk Storage* option specifies the location of the persistent storage used by the Couchbase Server Data service.
 The setting affects only this node and sets the directory where all the data is stored on disk.
 It also sets the location where the indexes created by views are stored:
 
  ** If you are not indexing data with views, you can accept the default setting.
 Otherwise for the best performance we recommend specifying separate physical storage for the data and index paths.
 
-. Provide a node IP or hostname under [.uicontrol]*Configure Server Hostname*.
+. Provide a node IP or hostname under [.ui]*Configure Server Hostname*.
 . Choose which services to include on the first node.
 At a minimum, the Data service is required.
 In production, only one service per node should be deployed.
-. The [.uicontrol]*Configure Server Memory* section sets the amount of physical RAM that will be allocated by the Couchbase Server for storage, both for the Data and the Index service.
+. The [.ui]*Configure Server Memory* section sets the amount of physical RAM that will be allocated by the Couchbase Server for storage, both for the Data and the Index service.
 The same amount of memory is allocated to each node in the cluster that runs the particular service.
 Since the same setting applies to the whole cluster, specify a value that all nodes of each service type can support.
 +
-Alternatively, if joining an existing cluster, select the radio button [.uicontrol]*Join a cluster now* and then provide the IP address or hostname of an existing node and administrative credentials for that existing cluster.
+Alternatively, if joining an existing cluster, select the radio button [.ui]*Join a cluster now* and then provide the IP address or hostname of an existing node and administrative credentials for that existing cluster.
 Select the services to install on this node.
 
-. Click [.uicontrol]*Next*.
+. Click [.ui]*Next*.
 +
 *Step 2 of 5: Sample Buckets*
 +
 image:install/picts/setup-02.png[,720,align=left]
 +
-The [.uicontrol]*Sample Buckets* panel appears where you can select the sample data buckets you want to load.
+The [.ui]*Sample Buckets* panel appears where you can select the sample data buckets you want to load.
 
 . Click the names of sample buckets to load to the Couchbase Server.
 These data sets demonstrate Couchbase Server's features and help you understand and develop views and N1QL Queries.
 +
 If you decide to install sample data, the installer creates one Couchbase bucket for each set of sample data you choose.
 +
-After you create sample data buckets, the [.uicontrol]*Create Default Bucket* panel appears where you can create a new default data bucket.
+After you create sample data buckets, the [.ui]*Create Default Bucket* panel appears where you can create a new default data bucket.
 +
 *Step 3 of 5: Create Default Bucket (optional)*
 +
@@ -67,14 +67,14 @@ Couchbase Server will create a new data bucket named `default`; you can use this
 It is worth noting that the `default` bucket is unauthenticated, which is not recommended for production purposes due to possible security risks.
 You can instead choose to skip the creation of the default bucket and create your own buckets at a later stage.
 +
-To create a `default` bucket as part of the setup click [.uicontrol]*Next*, otherwise to skip this step click [.uicontrol]*Skip*.
+To create a `default` bucket as part of the setup click [.ui]*Next*, otherwise to skip this step click [.ui]*Skip*.
 +
 *Step 4 of 5: Notifications*
 +
 [#image_yrl_5fk_3v]
 image::install/picts/setup-04.png[,720,align=left]
 
-. In the [.uicontrol]*Notifications* screen, select [.uicontrol]*Enable software update notifications*.
+. In the [.ui]*Notifications* screen, select [.ui]*Enable software update notifications*.
 +
 Couchbase Web Console communicates with Couchbase Server nodes and confirms the version numbers of each node.
 +
@@ -89,14 +89,14 @@ When a new version of Couchbase Server exists, you get information about where y
  ** Information about the size and configuration of your Couchbase cluster to Couchbase corporate.
 This information helps prioritize the development efforts.
 
-. Read the terms and conditions and then select `I agree to the terms and conditions associated with this product` and click [.uicontrol]*Next*.
+. Read the terms and conditions and then select `I agree to the terms and conditions associated with this product` and click [.ui]*Next*.
 +
 *Step 5 of 5: Configure Server*
 +
 [#image_ahp_vfk_3v]
 image::install/picts/setup-05.png[,720,align=left]
 
-. The screen [.uicontrol]*Configure this Server* is the last configuration step.
+. The screen [.ui]*Configure this Server* is the last configuration step.
 Enter a cluster administrator's username and password.
 Your username can have up to 24 characters, and your password must have 6 to 24 characters.
 Use these credentials each time you add a new server into the cluster.

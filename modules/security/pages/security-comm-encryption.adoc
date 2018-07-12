@@ -41,7 +41,7 @@ NOTE: Only the Full Administrator role can see the Root Certificate tab in the C
 [#image_tps_ftv_4v]
 image::pict/self-signed-cert.png[,720,align=left]
 
-. The [.uicontrol]*Root Certificate* link shows that a self-signed certificate has been deployed across the cluster.
+. The [.ui]*Root Certificate* link shows that a self-signed certificate has been deployed across the cluster.
 This certificate can be regenerated or replaced using xref:rest-api:rest-encryption.adoc#topic_i45_xf2_gw[Encryption On-the-Wire API] or xref:cli:cbcli/ssl-manage.adoc#cbcli-xdcr-ssl[CLI] commands for managing certificates.
 
 *Viewing the SSL Certificate Used in the Web Browser*

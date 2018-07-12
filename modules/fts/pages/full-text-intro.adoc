@@ -38,7 +38,7 @@ Just make sure you enable the service when you provision your Couchbase Server n
 
 . Log in to the Couchbase Web Console, for example, [.path]_\http://localhost:8091/_.
 +
-Click menu:Indexes[Full Text], then click on the [.uicontrol]*New Full Text Index* button.
+Click menu:Indexes[Full Text], then click on the [.ui]*New Full Text Index* button.
 +
 A form where you can define your new index configuration is displayed.
 
@@ -54,13 +54,13 @@ There are more options, but you can ignore those for now and rely on the default
 +
 You should now see a summary page of your new full text index.
 The document count shows how many documents have been indexed so far.
-You can click on the [.uicontrol]*Refresh* button next to the Document Count field in order to see the indexing progress.
+You can click on the [.ui]*Refresh* button next to the Document Count field in order to see the indexing progress.
 
 *Querying Your Full Text Index*
 
-. Click on the [.uicontrol]*Full Text* tab again.
+. Click on the [.ui]*Full Text* tab again.
 . From the drop-down list, select your newly created index.
-. In the query field, type in a query term and press the [.uicontrol]*Search* button.
+. In the query field, type in a query term and press the [.ui]*Search* button.
 
 Congratulations, you’ve just executed your first full text query!
 

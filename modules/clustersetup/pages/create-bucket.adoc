@@ -28,9 +28,9 @@ image::admin/picts/bucket-new.png[,400,align=left]
 
 == Memory Size
 
-In the [.uicontrol]*Memory Size* section, you will configure the RAM quota your bucket will allocate on a per node basis.
+In the [.ui]*Memory Size* section, you will configure the RAM quota your bucket will allocate on a per node basis.
 The value you enter must fit with the overall cluster RAM quota.
-The cluster quota and what you are trying to add are displayed in the bar on the [.uicontrol]*Setting* page.
+The cluster quota and what you are trying to add are displayed in the bar on the [.ui]*Setting* page.
 The bucket RAM quota can be dynamically altered up or down with zero downtime to the cluster at any point in the future, provided you have enough cluster resources.
 
 Regarding Cache Metadata, keep in mind that it can have serious implications on your application’s performance.

@@ -12,7 +12,7 @@ An index can contain information from one bucket only.
 Your user must have appropriate access permissions for the bucket they want to search.
 You can enable searches across buckets by using an <<index-alias,index alias>>.
 
-To create an index, go to the Couchbase Server web console > [.uicontrol]*Indexes* tab > [.uicontrol]*Full Text*.
+To create an index, go to the Couchbase Server web console > [.ui]*Indexes* tab > [.ui]*Full Text*.
 
 Your URL might look something like this, if you replace [.param]`localhost` with the name of your server:
 
@@ -25,12 +25,12 @@ If you see a message saying "[.out]``Full Text not enabled on this node,``" acce
 
 To create an index in the web console, using your web browser:
 
-* Navigate to the [.uicontrol]*Indexes* tab > [.uicontrol]*Full Text*.
+* Navigate to the [.ui]*Indexes* tab > [.ui]*Full Text*.
 * Click on the btn:[New Index] button.
 
 To edit an index definition in the web console, using your web browser:
 
-* Navigate to the [.uicontrol]*Indexes* tab > [.uicontrol]*Full Text*.
+* Navigate to the [.ui]*Indexes* tab > [.ui]*Full Text*.
 * This page displays a list of full text indexes that you had previously defined, , if any.
 
 Each listed index, if any, has buttons for the following operations:
@@ -53,20 +53,20 @@ This example relies on dynamic mapping, explained later, to decide how to index 
 WARNING: Using the default index mapping with dynamic mapping is a good way to ensure that full text search is working properly on a small set of data, but it’s not very selective so it tends to write a lot of information into the index.
 For this reason, default index mapping may be slow or result in high load if used on a production-sized dataset.
 
-. Click the button [.uicontrol]*New Full Text Index*.
+. Click the button [.ui]*New Full Text Index*.
 image:fts-create-index.png[,570]
 . Give your index a name like "[.in]``beer-sample-idx``" and select the bucket you want to index from the drop-down list.
-If you click on "[.uicontrol]*Type Mappings*," you will only see one type listed, which is "[.out]``default``." image:fts-create-index-2.png[,300]
-. Click the "[.uicontrol]*Create Index*" button.
+If you click on "[.ui]*Type Mappings*," you will only see one type listed, which is "[.out]``default``." image:fts-create-index-2.png[,300]
+. Click the "[.ui]*Create Index*" button.
 You will then see a screen that shows you how many documents are in your index and the percentage complete.
 image:fts-create-index-3.png[,300]
-. Click on the [.uicontrol]*Full Text* link again to search the index you just created.
+. Click on the [.ui]*Full Text* link again to search the index you just created.
 . Your search shows the list of document IDs that contain the best matches for whatever search you ran, in order of score, with the highest scoring document listed first.
 
 == Custom Mapping
 
 There are many additional controls that can be used to build indexes on your documents just the way you want them.
-These can be found under [.uicontrol]*Indexes* > [.uicontrol]*Full Text* > *New* or btn:[Edit Full Text Index] buttons.
+These can be found under [.ui]*Indexes* > [.ui]*Full Text* > *New* or btn:[Edit Full Text Index] buttons.
 
 Document mapping works as follows:
 
@@ -94,7 +94,7 @@ If included in `_all`, a query for [.param]`rhinoceros` matches this document, o
 
 Couchbase Server indexes JSON documents differently depending on the type of the JSON document.
 For example, you can create a full text index that only includes documents of type="brewery," and you can specify exactly how you want the documents mapped.
-To do this, click [.uicontrol]*Add Type Mapping* and enter a type name that matches the type attribute of the JSON document you want to index.
+To do this, click [.ui]*Add Type Mapping* and enter a type name that matches the type attribute of the JSON document you want to index.
 
 There is also a special type mapping for the _Default Type_.
 The default type mapping is created for every index automatically and is used for any document whose type does not match another type mapping or that doesn’t have a type attribute.
@@ -107,7 +107,7 @@ Disabling a type mapping can be used to ignore documents of a certain type.
 For example, if you want to index all documents in the beer-sample bucket _except_ "breweries" you could simply create a type mapping for breweries and then check disabled (assuming the default mapping is also disabled).
 
 You can also specify an analyzer to use for a type mapping.
-This defaults to inheriting the Default Analyzer specified in "[.uicontrol]*Advanced*".
+This defaults to inheriting the Default Analyzer specified in "[.ui]*Advanced*".
 
 *Field Mapping*
 
@@ -116,7 +116,7 @@ The word "field" in index mapping refers to a name-value pair in JSON whose valu
 These child fields refer to name-value pairs that are directly under an object.
 In the brewery sample below, [.param]`name`, [.param]`city`, and [.param]`description` are all fields.
 
-You can index the [.param]`description` field of every document in the beer-sample bucket, you can create an index, hover over the _default index_, click on the plus that appears, and select "[.uicontrol]*Insert child field*".
+You can index the [.param]`description` field of every document in the beer-sample bucket, you can create an index, hover over the _default index_, click on the plus that appears, and select "[.ui]*Insert child field*".
 Because both beers and breweries have a description field, this default mapping will end up with every document in it.
 
 ----
@@ -149,15 +149,15 @@ For example, if we mapped the field [.param]`description` "searchable as" [.para
 
 In addition, there are four checkboxes:
 
-* [.uicontrol]*index*: If unchecked, fields that match this will not be indexed.
+* [.ui]*index*: If unchecked, fields that match this will not be indexed.
 If the store checkbox is checked, they will still be stored.
-* [.uicontrol]*store*: Normally, only the document IDs are written to the index.
+* [.ui]*store*: Normally, only the document IDs are written to the index.
 If this is checked, the document contents are also written to the index.
 This enables highlighting and result snippets but generally results in larger indexes that are slower to build.
 Since gets and multi-gets are quite fast, usually users don’t need to store the additional information in the index.
-* [.uicontrol]*Include in _all field*: If this is checked, the text in this field will be searchable in query strings without prefixing the field name.
+* [.ui]*Include in _all field*: If this is checked, the text in this field will be searchable in query strings without prefixing the field name.
 If unchecked, the query must include this prefix, for example, "description:modern."
-* [.uicontrol]*include term vectors*: Term vectors are the locations of terms in a particular field.
+* [.ui]*include term vectors*: Term vectors are the locations of terms in a particular field.
 Some functionality, such as snippets, highlighting, and phrase search, requires term vectors and can’t be used without them.
 Not storing term vectors results in smaller indexes and faster index build times.
 
@@ -170,7 +170,7 @@ field: description
           analyzer: inherit
 ----
 
-Check "[.uicontrol]*store*" so that all four checkboxes are checked.
+Check "[.ui]*store*" so that all four checkboxes are checked.
 This makes it easier to test and debug your new index because search results will include snippets with the search terms highlighted.
 The downside of storing the information is the extra size and time it takes to build, but these should be acceptable in this case.
 
@@ -343,7 +343,7 @@ You can create the same index definition with object mappings using the REST API
 *Type field*
 
 By default, Couchbase Server will look for an attribute called "type" in your document and will use that for type mappings.
-You can change the name of the "type" field by clicking on the "[.uicontrol]*Advanced*" options and changing the value of the "[.uicontrol]*Type Field*".
+You can change the name of the "type" field by clicking on the "[.ui]*Advanced*" options and changing the value of the "[.ui]*Type Field*".
 
 *Default Type*
 

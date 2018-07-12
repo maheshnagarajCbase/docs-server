@@ -2,7 +2,7 @@
 = Flush a Bucket
 
 [abstract]
-Full, Cluster, and Bucket Administrators can use the [.uicontrol]*Flush* option to start bucket flushing and delete every object in a bucket.
+Full, Cluster, and Bucket Administrators can use the [.ui]*Flush* option to start bucket flushing and delete every object in a bucket.
 
 Flushing will work only if this option was configured either during the initial xref:bucket-setup.adoc#topic_jbt_4jn_vs[bucket setup] or after the xref:change-settings-bucket.adoc#topic_mfl_rmn_vs[bucket settings] have been changed.
 
@@ -12,8 +12,8 @@ You can control and limit the ability to flush individual buckets by setting the
 
 To flush a bucket using the Couchbase Web Console:
 
-. Go to the [.uicontrol]*Data Buckets* tab and click the blue triangle next to the bucket name.
-. Click [.uicontrol]*Flush*.
+. Go to the [.ui]*Data Buckets* tab and click the blue triangle next to the bucket name.
+. Click [.ui]*Flush*.
 +
 [#image_qmp_kpv_4v]
 image::admin/picts/bucket-flush-data.png[,720,align=left]

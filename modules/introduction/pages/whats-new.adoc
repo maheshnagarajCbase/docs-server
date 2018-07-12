@@ -150,7 +150,7 @@ The new memory-optimized indexing provide an order of magnitude improvement to q
 Unlike other databases, Couchbase Server global secondary indexes are built to isolate the impact of indexing on performance of mutations, data ingest, and bulk data modifications using N1QL INSERT, UPDATE, DELETE and MERGE statements.
 Couchbase Server 4.5 memory-optimized indexes further enhances index processing and isolation of impact of indexing on the data ingest and query workloads.
 +
-You can enable the new memory-optimized global secondary indexes through the index settings under the [.uicontrol]*Settings* tab in the Couchbase Server Web Console.
+You can enable the new memory-optimized global secondary indexes through the index settings under the [.ui]*Settings* tab in the Couchbase Server Web Console.
 For more information, see xref:indexes:gsi-for-n1ql.adoc#memopt-gsi[Memory-Optimized Global Indexes].
 
 Array Indexing for Nested Data Structured in JSON Documents::
@@ -191,7 +191,7 @@ Integrated Query Workbench::
 Couchbase Server 4.5 also provides a simple and visual way to develop and design queries with auto-complete for your N1QL statements.
 Query Workbench also allows the ad-hoc execution of queries directly from the Web console.
 Query results are displayed in JSON, table or tree formats and can be saved.
-To use the new integrated Query Workbench, switch to the new [.uicontrol]*Query* tab in the Couchbase Server Web Console.
+To use the new integrated Query Workbench, switch to the new [.ui]*Query* tab in the Couchbase Server Web Console.
 For more information, see xref:tools:query-workbench.adoc[Query Workbench].
 
 Auto Schema Discovery::

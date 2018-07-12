@@ -19,7 +19,7 @@ To enable LDAP authentication for administrators, follow these steps:
 [#image_lgt_s5r_nv]
 image::pict/enable-auth.png[,720,align=left]
 
-. Click the [.uicontrol]*enable* link to turn on authentication.
+. Click the [.ui]*enable* link to turn on authentication.
 If a user doesn't want to associate the installation with LDAP, this option can be turned off.
 Without LDAP authentication enabled, the Full Administrator can only add a role of the Read-only Administrator as explained in xref:rbac-ro-user.adoc#ro-admin[Read-Only Administrator].
 
@@ -28,7 +28,7 @@ Without LDAP authentication enabled, the Full Administrator can only add a role 
 With LDAP authentication enabled, the Full Administrator can add administrators by setting up their roles and credentials.
 
 . Click on the btn:[Add User] button on the right.
-. In the [.uicontrol]*Manage User: New* dialog, enter the username and select the role from the drop-down list.
+. In the [.ui]*Manage User: New* dialog, enter the username and select the role from the drop-down list.
 +
 [#image_zvj_2wr_nv]
 image::pict/manage-user-new.png[,350,align=left]
@@ -64,6 +64,6 @@ To test the LDAP settings:
 
 . Sign out of the Couchbase Web Console.
 . Try to log in with the new administrative credentials.
- ** If you enter the credentials of the Full Administrator, the screen will provide full access to all functions available through the Couchbase Web Console (see the [.uicontrol]*LDAP Auth Setup* screen above).
+ ** If you enter the credentials of the Full Administrator, the screen will provide full access to all functions available through the Couchbase Web Console (see the [.ui]*LDAP Auth Setup* screen above).
  ** If you enter credentials of the Read-only Administrator, a screen with the read-only view will become available.
 This screen doesn't allow the user to enable or disable LDAP, or to configure administrators.

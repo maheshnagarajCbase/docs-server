@@ -2,7 +2,7 @@
 = Account Management Settings
 
 [abstract]
-Only Full Administrators can use the [.uicontrol]*Account Management* tab to set up the read-only user.
+Only Full Administrators can use the [.ui]*Account Management* tab to set up the read-only user.
 
 == Read-only User in Couchbase
 

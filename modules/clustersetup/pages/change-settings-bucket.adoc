@@ -2,14 +2,14 @@
 = Change Bucket Settings
 
 [abstract]
-Full, Cluster and Bucket Administrators can edit bucket settings using the [.uicontrol]*Change Bucket Settings* option.
+Full, Cluster and Bucket Administrators can edit bucket settings using the [.ui]*Change Bucket Settings* option.
 
 For more information about these settings, see xref:create-bucket.adoc[Create a New Bucket].
 
 To change the bucket settings using the Couchbase Web Console::
 
-. Under [.uicontrol]*Data Buckets*, click the blue triangle preceding the bucket name.
-. Click [.uicontrol]*Edit*.
+. Under [.ui]*Data Buckets*, click the blue triangle preceding the bucket name.
+. Click [.ui]*Edit*.
 +
 [#image_wh4_mkk_3v]
 image::admin/picts/bucket-settings-edit.png[,720,align=left]

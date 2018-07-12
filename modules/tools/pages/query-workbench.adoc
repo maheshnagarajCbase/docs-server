@@ -15,7 +15,7 @@ You no longer have to select the documents at random and guess the structure of 
 * Display query results in multiple formats: JSON, table,and tree.
 You can also save the query results to a file on disk.
 
-The Query Workbench is now integrated with the Couchbase Web console and is available on the [.uicontrol]*Query* tab.
+The Query Workbench is now integrated with the Couchbase Web console and is available on the [.ui]*Query* tab.
 
 NOTE: The Query Workbench only runs on nodes which are running the Query service.
 If the Query service is _not_ running on the current node, it provides a link to the nodes in the cluster which _are_ running the Query service.
@@ -39,7 +39,7 @@ image::query-workbench-areas.png[,570]
 
 The N1QL editor is where you build queries, and run the queries using the btn:[Execute] button.
 
-TIP: You can also execute queries by typing a semi-colon (;) at the end of the query and hitting [.uicontrol]*Enter*.
+TIP: You can also execute queries by typing a semi-colon (;) at the end of the query and hitting [.ui]*Enter*.
 
 .
 The N1QL editor provides the following additional features:
@@ -61,7 +61,7 @@ NOTE: Clearing the browser history clears the history maintained by the N1QL Edi
 * *Save query* - You can save a query to an external text file using the btn:[Save Query] button.
 By default, the query is saved as a text file (.txt) in the Downloads directory.
 +
-NOTE: When using Safari, clicking [.uicontrol]*Save* loads the data into a new window.
+NOTE: When using Safari, clicking [.ui]*Save* loads the data into a new window.
 You have to save the file manually using the menu:File[Save As] menu.
 
 [#bucket-analyzer]

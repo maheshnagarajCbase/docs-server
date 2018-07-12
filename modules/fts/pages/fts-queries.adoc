@@ -4,14 +4,14 @@
 *Queries Using the Web Console*
 
 Once you have created a full text index, you can search it using the Couchbase Server Web Console ([.path]_\http://your-Couchbase:8091_).
-Go to [.uicontrol]*Indexes* > [.uicontrol]*Full Text*.
+Go to [.ui]*Indexes* > [.ui]*Full Text*.
 Select your index from the dropdown and then enter your query using the xref:fts-query-types.adoc#query-string-query-syntax[query string syntax].
 
 *Queries Using the REST API*
 
 You can also use the REST API to perform queries.
 The easiest way to get started is to perform a query using the Web Console.
-Then, click the "[.uicontrol]*Advanced*" checkbox.
+Then, click the "[.ui]*Advanced*" checkbox.
 You will see the JSON payload to pass to the REST API.
 Click the nearby checkbox to get the CURL command.
 See the xref:rest-api:rest-fts.adoc#topic_ytp_sx4_1v[REST reference] for more information.
