@@ -64,7 +64,7 @@ For example, administrators can push from a central data center out to multiple 
 XDCR can also be used to synchronize a development or analytics cluster.
 Finally, XDCR is currently used to keep an Elasticsearch or SolR cluster updated for full-text indexing requirements.
 
-For more information about managing XDCR and tuning XDCR performance, see xref:xdcr:xdcr-intro.adoc[Cross Datacenter Replication (XDCR)] in the[.cite]_ Administration_ guide.
+For more information about managing XDCR and tuning XDCR performance, see xref:xdcr:xdcr-intro.adoc[Cross Datacenter Replication (XDCR)] in the [.cite]_Administration_ guide.
 
 == Backup and restore
 
@@ -73,7 +73,7 @@ Backups can also be used to copy buckets for development, test or staging purpos
 Couchbase Server supports zero-downtime backups and restores.
 Backups can be full, differential or cumulative, and Couchbase Server can restore any point to any bucket or topology.
 
-For information on how to perform backup and restore, see xref:backup-restore:backup-restore.adoc[Backup and restore] in the[.cite]_ Administration_ guide.
+For information on how to perform backup and restore, see xref:backup-restore:backup-restore.adoc[Backup and restore] in the [.cite]_Administration_ guide.
 
 == Resilient applications
 

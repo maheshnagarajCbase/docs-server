@@ -70,7 +70,7 @@ To connect to a different datastore, edit the [.path]_launch-cbq-gui.sh_ file lo
 ./launch-cbq-gui.sh
 ----
 
-. After the query web server starts successfully, you can now access query workbench UI from [.path]_http://COUCHBASE_URL:8095_.
+. After the query web server starts successfully, you can now access query workbench UI from [.path]_\http://COUCHBASE_URL:8095_.
 Look for a console message similar to the following:
 +
 ----

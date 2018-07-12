@@ -243,7 +243,7 @@ The following are the known issues:
 | http://www.couchbase.com/issues/browse/MB-18564[MB-18564]
 | *Summary:*`cbbackupwrapper` on Windows requires that the file path of the cbbackup process has no spaces.
 
-*Workaround:*Copy `cbbackup.exe` into a path with no spaces ( such as [.path]_c:\couchbase _)
+*Workaround:*Copy `cbbackup.exe` into a path with no spaces ( such as [.path]_c:\couchbase_ )
 
 | http://www.couchbase.com/issues/browse/MB-16831[MB-16831]
 | *Summary:*When creating a Global Secondary Index (GSI), the interactive query shell cbq can timeout if the result is not returned within 2 minutes.
