@@ -57,7 +57,7 @@ NOTE: Those with more than one administrator role will have all of the privilege
 .Role-Based Access Control (RBAC) for Administrators
 [#table_ofj_gp5_lv,cols="2,1,1"]
 |===
-| Couchbase Resource and Administrative Roles 2+| Administrative Access: W(rite), R(ead), S(ecurity), none | Configuration | Statistics
+| Couchbase Resource and Administrative Roles 2+| Administrative Access: W(rite), R(ead), S(ecurity), none
 
 3+| *Full Administrator*
 
