@@ -19,7 +19,7 @@ a|
 Retrieves automatic failover settings.
 Parameters include:
 
-* Enabled=`[true\|false]` : True to enable failover; false to disable failover.
+* Enabled=`[true\|false]`: True to enable failover; false to disable failover.
 * timeout=`[value]` : Integer between 30 and 3600.
 Specifies the amount of time (in seconds) that a node is down before failover in initiated.
 * count=`[0\|1]`:  Value is 0 or 1.
