@@ -24,13 +24,13 @@ You can switch over from a self-signed to an X.509 certificate before you deploy
 
 To set up certification, see xref:security-x509certsintro.adoc#configuring-x.509[Configuring X.509].
 
-*Connecting to the Couchbase Web Console *
+*Connecting to the Couchbase Web Console*
 
 While an administrative console is typically protected via an HTTPS connection, the new administrative access on port `18091` allows connection to the Couchbase Web Console over SSL/TLS, which is enabled by default.
 
 To talk over SSL/TLS to the Couchbase Web Console, connect to the following URL with your web browser: [.in]`+https://couchbase_server:18091+`
 
-*Verifying the cluster's certificate *
+*Verifying the cluster's certificate*
 
 To verify which certificate your cluster is currently using:
 
@@ -52,7 +52,7 @@ This certificate can be regenerated or replaced using xref:rest-api:rest-encrypt
 
 The following section shows an example URL of a secure connection using the Safari web browser.
 
-*Disabling the Couchbase Web Console on Port 8091 *
+*Disabling the Couchbase Web Console on Port 8091*
 
 If you would like to force Administrators to log in to the UI over an encrypted channel, you can disable the UI over the 8091 HTTP port, so that administrators can only access the administrative web console over port 18091.
 
@@ -96,7 +96,7 @@ For changes to be affective just on port 18091, no cluster restart is needed.
 
 Encryption for data access is performed through client-server communication and view access.
 
-*SSL/TLS Based Client-server Communication *
+*SSL/TLS Based Client-server Communication*
 
 Couchbase Server client libraries support client-side encryption using the SSL/TLS protocol by encrypting data in-flight between the client and the server.
 For Couchbase clients released after version 2.0, Couchbase Server provides secure client-server communication that does not require configuration.
@@ -117,7 +117,7 @@ Navigate to menu:Settings[Certificate, Show certificate] and copy the certificat
 
 NOTE: If the self-signed certificate obtained via the Couchbase Web Console is regenerated, you must obtain a new one.
 
-*SSL/TLS Support by Clients *
+*SSL/TLS Support by Clients*
 
 The following clients support SSL/TLS: Java, .NET, Node.js, PHP, Python, C, and Go.
 

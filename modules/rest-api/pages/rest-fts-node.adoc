@@ -106,7 +106,7 @@
 
 [[p-api-cfgrefresh]]POST /api/cfgRefresh:: Requests the node to refresh its configuration from the configuration provider.
 +
-*Permission Required *: cluster.settings!write
+*Permission Required*: cluster.settings!write
 
 [[p-api-mgrkick]]POST /api/managerKick:: Forces the node to replan resource assignments (by running the planner, if enabled) and to update its runtime state to reflect the latest plan (by running the janitor, if enabled).
 +
@@ -134,11 +134,11 @@ The [.path]_/api/diag_ response JSON object can be quite large, from 100's of KB
 +
 The motivation for [.path]_/api/diag_ is to simplify working with the Couchbase community, forums, technical support and other engineers by making data capture from each FTS node a single step.
 +
-*Permission Required *: cluster.logs!read
+*Permission Required*: cluster.logs!read
 
 [[g-api-log]]GET /api/log:: Returns recent log messages and key events for the node as JSON.
 +
-*Permission Required *: cluster.logs!read
+*Permission Required*: cluster.logs!read
 +
 .Sample response
 ----
@@ -150,7 +150,7 @@ The motivation for [.path]_/api/diag_ is to simplify working with the Couchbase 
 
 [[g-api-runtime]]GET /api/runtime:: Returns information on the node's software, such as version strings and slow-changing runtime settings as JSON.
 +
-*Permission Required *: cluster.settings!read
+*Permission Required*: cluster.settings!read
 +
 .Sample response
 ----
@@ -171,21 +171,21 @@ The motivation for [.path]_/api/diag_ is to simplify working with the Couchbase 
 
 [[g-api-runtime-args]]GET /api/runtime/args:: Returns information on the node's command-line, parameters, environment variables and O/S process values as JSON.
 +
-*Permission Required *: cluster.settings!read
+*Permission Required*: cluster.settings!read
 
 [[p-api-runtime-cpu]]POST /api/runtime/profile/cpu:: Requests the node to capture local cpu usage profiling information.
 +
-*Permission Required *: cluster.admin
+*Permission Required*: cluster.admin
 
 [[p-api-runtime-memory]]POST /api/runtime/profile/memory:: Requests the node to capture lcoal memory usage profiling information.
 +
-*Permission Required *: cluster.admin
+*Permission Required*: cluster.admin
 
 == Node Management
 
 [[p-api-runtime-gc]]POST /api/runtime/gc:: Requests the node to perform a GC.
 +
-*Permission Required *: cluster.admin
+*Permission Required*: cluster.admin
 
 == Node Monitoring
 

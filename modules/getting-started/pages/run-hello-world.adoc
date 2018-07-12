@@ -56,7 +56,7 @@ In fact, the words "Hello World" do not appear: instead, you see data retrieved 
 
 Before running the program, take a look at the principal elements within the code.
 
-* helloWorldCouchbaseQuery.html *
+*helloWorldCouchbaseQuery.html*
 
 Bring up `helloWorldCouchbaseQuery.html` in a text editor.
 As you inspect the file, note that the user makes a selection on strings to be searched on, by means of radio-buttons:
@@ -130,7 +130,7 @@ for (var currentKeyPosition = 0; currentKeyPosition < 10; currentKeyPosition++)
 document.getElementById('CouchbaseRetrievalsContent').innerHTML = cbDataDisplayString;
 ----
 
-* nodeJsQueryAgent.js *
+*nodeJsQueryAgent.js*
 
 Now bring up `nodeJsQueryAgent.js` in your text editor.
 Note that the node.js `require` construct is used to ensure that the program has access to the right supportive modules.

@@ -31,7 +31,7 @@ Select one or the other of these options by means of the corresponding radio but
 The screen also allows you to configure _disk storage_ and your server's _hostname_.
 All the options are described in detail below.
 
-* [.uicontrol]* Start a new cluster *
+* [.uicontrol]*Start a new cluster*
 +
 By default, the first option, [.uicontrol]*Start a new cluster*, is already selected when the screen first appears:
 +
@@ -81,7 +81,7 @@ Instead, click on the radio button [.uicontrol]*Join a cluster now*; and proceed
 
 // Start of new first-level bulleted list
 
-* [.uicontrol]* Join a cluster now *
+* [.uicontrol]*Join a cluster now*
 +
 [#image_r3t_htm_zv]
 image::admin/picts/cluster-setup-01-join.png[,480,align=left]
@@ -100,10 +100,11 @@ If you elect to [.uicontrol]*Join a cluster now*, interactive fields are display
 Each (including Data) can be selected by means of an associated checkbox.
 Select one to three services for a development environment.
 You are recommended only to set _one_ service for a production environment.
+
 +
 // End of first-level bulleted item
 
-* [.uicontrol]* Configure Disk Storage *
+* [.uicontrol]*Configure Disk Storage*
 +
 Whether you are starting a new cluster, or joining one existing, configure disk storage as follows:
 +
@@ -122,7 +123,7 @@ Note that for a production environment, it is recommended that data and indexes 
 +
 // End of first-level bulleted item
 
-* [.uicontrol]* Configure Server Hostname *
+* [.uicontrol]*Configure Server Hostname*
 +
 Whether you are starting a new cluster, or joining one existing, either enter a node IP or hostname into the editable text-field; _or_ use the default provided.
 +
@@ -132,7 +133,7 @@ For more details about hostnames, see xref:hostnames.adoc#topic_ggq_hfy_p4[Using
 When you have entered data into all the appropriate fields listed above, click the btn:[Next] button, at the bottom-right.
 This dismisses the [.uicontrol]*Configure Server* screen, and brings up the [.uicontrol]*Sample Buckets* screen.
 
-[.uicontrol]* Step 2: Install Sample Buckets *
+[.uicontrol]*Step 2: Install Sample Buckets*
 
 Couchbase provides _sample buckets_, which contain data for demonstration and test purposes.
 The [.uicontrol]*Sample Buckets* screen allows you to choose which of these buckets you wish to install.
@@ -217,7 +218,7 @@ If you _do_ wish to use it, once you have entered your configuration-preferences
 
 The [.uicontrol]*Create Default Bucket* setup screen is now dismissed, and the [.uicontrol]*Notifications* screen appears.
 
-[.uicontrol]* Step 4: Notifications *
+[.uicontrol]*Step 4: Notifications*
 
 [#defaultBucketNotifications230117]
 image::defaultBucketNotifications230117.png[,480,align=left]
@@ -239,7 +240,7 @@ When you have finished entering information, click on the btn:[Next] button.
 This dismisses the [.uicontrol]*Notifications* screen, and displays the [.uicontrol]*Configure Server* screen.
 
 [#setpass]
-[.uicontrol]* Step 5: Configure server *
+[.uicontrol]*Step 5: Configure server*
 
 To create a cluster, you must assign yourself administrative credentials: these will be used on all nodes in the cluster you are creating.
 This is accomplished by means of the [.uicontrol]*Configure Server* screen:
@@ -253,7 +254,7 @@ Then, click on the btn:[Next] button.
 This concludes the Couchbase Server initialization-process.
 
 [#explore]
-[.uicontrol]* Step 6: Explore Couchbase Server *
+[.uicontrol]*Step 6: Explore Couchbase Server*
 
 Couchbase Server is now running and ready to use.
 The starting screen for the new Couchbase Server, [.uicontrol]*Cluster Overview*, appears as follows:

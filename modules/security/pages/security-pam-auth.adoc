@@ -47,7 +47,7 @@ $ usermod -aG sasl couchbase
 
 . In the `saslauthd` config file, verify that `saslauthd` is set up to use PAM.
 +
-* Centos/RHEL*
+*Centos/RHEL*
 +
 [source,bash]
 ----
