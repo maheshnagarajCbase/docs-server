@@ -20,10 +20,10 @@ image::admin/picts/settings-alerts.png[,720,align=left]
 To setup email alerts using the Web Console:
 
 [#ol_uk4_cjw_zy]
-. From the [.uicontrol]*Couchbase Web Console* > [.uicontrol]*Settings* > select the [.uicontrol]*Email Alerts* tab.
-. Select the [.uicontrol]*Enable email alerts* check box to enable the email alerts configuration.
-These alerts are raised for errors that you select in the [.uicontrol]*Available Alerts* section.
-. Define the following settings and click [.uicontrol]*Save*:
+. From the [.ui]*Couchbase Web Console* > [.ui]*Settings* > select the [.ui]*Email Alerts* tab.
+. Select the [.ui]*Enable email alerts* check box to enable the email alerts configuration.
+These alerts are raised for errors that you select in the [.ui]*Available Alerts* section.
+. Define the following settings and click [.ui]*Save*:
 
 == Email Server Settings
 
@@ -63,7 +63,7 @@ This email address should be one that is valid as a sender address for the SMTP 
 To specify more than one recipient, separate each address by a space, comma (,), or semicolon (;).
 
 | Test Mail
-| Click [.uicontrol]*Send Test Email* to send a test email to confirm the settings and configuration of the email server and recipients.
+| Click [.ui]*Send Test Email* to send a test email to confirm the settings and configuration of the email server and recipients.
 |===
 
 == Available Alerts

@@ -14,20 +14,20 @@ NOTE: By default, when a Couchbase cluster is initialized, Group 1 is created.
 To add a new group using the Web Console:
 
 [#server-grp]
-. From the [.uicontrol]*Couchbase Web Console > Servers >* click [.uicontrol]*Groups* located on the top right side.
-. Click [.uicontrol]*Add Group* to add a new group.
-. Enter the group name in the [.uicontrol]*Group Name* field and click [.uicontrol]*Create*.
+. From the [.ui]*Couchbase Web Console > Servers >* click [.ui]*Groups* located on the top right side.
+. Click [.ui]*Add Group* to add a new group.
+. Enter the group name in the [.ui]*Group Name* field and click [.ui]*Create*.
 
-Once the information is entered successfully, a new group is added in the [.uicontrol]*Server Groups* page.
+Once the information is entered successfully, a new group is added in the [.ui]*Server Groups* page.
 
 == Editing a Server Group
 
 To edit a server group name using the Web Console:
 
 [#ol_ef4_tlf_zz]
-. From the [.uicontrol]*Couchbase Web Console > Servers > Groups* page, select the group that you want to edit.
-. Click [.uicontrol]*edit name* to change the group name.
-. In the [.uicontrol]*Edit Group* window, click [.uicontrol]*Rename*.
+. From the [.ui]*Couchbase Web Console > Servers > Groups* page, select the group that you want to edit.
+. Click [.ui]*edit name* to change the group name.
+. In the [.ui]*Edit Group* window, click [.ui]*Rename*.
 +
 The selected group name is updated.
 
@@ -38,22 +38,22 @@ Server groups are deleted by removing all nodes from the server group and then d
 To delete a server group using the Web Console:
 
 [#ol_uqn_clf_zz]
-. From the [.uicontrol]*Couchbase Web Console > Servers > Groups* page, select the group that you want to delete.
-. Click [.uicontrol]*delete group* to delete the group.
-. In the [.uicontrol]*Confirm Delete Group* window, click [.uicontrol]*Delete Group*.
+. From the [.ui]*Couchbase Web Console > Servers > Groups* page, select the group that you want to delete.
+. Click [.ui]*delete group* to delete the group.
+. In the [.ui]*Confirm Delete Group* window, click [.ui]*Delete Group*.
 +
 The selected group is deleted.
 
 == Moving Servers Between Server Groups
 
-Servers can be moved between server groups from the [.uicontrol]*Server Groups* page.
+Servers can be moved between server groups from the [.ui]*Server Groups* page.
 
 To move a server from one group to another using the Web Console:
 
 [#move-server-grp]
-. From the [.uicontrol]*Couchbase Web Console > Servers > Groups* page, select the server that you want to move to another group.
-. Select [.uicontrol]*move to* pull-down menu to select the new group name.
-Once you select the new group, the [.uicontrol]*pending move to <Group Name>* message appears.
-. Click [.uicontrol]*Apply Changes* to confirm the server move.
-. Make sure to [.uicontrol]*Rebalance* from the [.uicontrol]*Servers* page.
+. From the [.ui]*Couchbase Web Console > Servers > Groups* page, select the server that you want to move to another group.
+. Select [.ui]*move to* pull-down menu to select the new group name.
+Once you select the new group, the [.ui]*pending move to <Group Name>* message appears.
+. Click [.ui]*Apply Changes* to confirm the server move.
+. Make sure to [.ui]*Rebalance* from the [.ui]*Servers* page.
 For more information on how to rebalance, see xref:rebalance.adoc#topic_xsx_1mn_vs[Rebalancing a Cluster].

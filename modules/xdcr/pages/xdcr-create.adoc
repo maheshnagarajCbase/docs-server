@@ -6,7 +6,7 @@ XDCR replications are configured on a per-bucket basis.
 
 Full, Cluster, and Replication Administrators can create, edit, and delete cluster references and replications.
 
-From the [.uicontrol]*Couchbase Web Console > XDCR* menu, configure the replications.
+From the [.ui]*Couchbase Web Console > XDCR* menu, configure the replications.
 As replication is on a per bucket basis, you must configure replication for each bucket to each target cluster.
 
 Before configuring XDCR:
@@ -20,11 +20,11 @@ If a cluster is not properly sized for the existing workload plus the new XDCR s
 * Couchbase Server uses TCP/IP port `8091` to exchange cluster configuration information.
 If you are communicating with a destination cluster over a dedicated connection or the Internet, you should ensure that all the nodes in the destination and source clusters can communicate with each other over ports `8091` and `8092`.
 
-From the [.uicontrol]*XDCR* menu, you can configure [.uicontrol]*Remote Clusters* for XDCR; these are named destination clusters you can select when you configure replication.
+From the [.ui]*XDCR* menu, you can configure [.ui]*Remote Clusters* for XDCR; these are named destination clusters you can select when you configure replication.
 When you configure XDCR, the destination cluster reference should point to the IP address of one of the nodes in the destination cluster.
 Once it has the connection with that one node, similar to how a Couchbase SDK does, it will receive the cluster topology of that destination cluster.
 
-[.uicontrol]*Ongoing Replications* are the ones that are configured and operating currently.
+[.ui]*Ongoing Replications* are the ones that are configured and operating currently.
 You can monitor the current configuration, current status, and the last time a replication process was triggered for each configured replication.
 
 [#image_vwk_d2t_zs]
@@ -37,8 +37,8 @@ The cluster reference sets the cluster name, IP or hostname, and administrator c
 To add a new node to an existing cluster using the Web Console:
 
 [#ol_dyg_qjq_cz]
-. From the [.uicontrol]*Couchbase Web Console > XDCR >* click [.uicontrol]*Create Remote Cluster*.
-. Enter the following information and click [.uicontrol]*Save*.
+. From the [.ui]*Couchbase Web Console > XDCR >* click [.ui]*Create Remote Cluster*.
+. Enter the following information and click [.ui]*Save*.
 
 [#image_fxf_crb_ft]
 image::admin/picts/xdcr-createreference.png[,align=left]
@@ -52,7 +52,7 @@ To create the unidirectional replication (from cluster A to cluster B):
 curl GET -u admin:password http://ip.for.destination.cluster:8091/pools/default/buckets
 ----
 
-. From the [.uicontrol]*XDCR* >[.uicontrol]**Remote Clusters** panel, click [.uicontrol]*Create Remote Cluster*.
+. From the [.ui]*XDCR* >[.ui]**Remote Clusters** panel, click [.ui]*Create Remote Cluster*.
 . Enter the following information for identifying and accessing the destination cluster:
 +
 [#table_gfk_4q5_2z,cols="13,40"]
@@ -73,11 +73,11 @@ curl GET -u admin:password http://ip.for.destination.cluster:8091/pools/default/
 
 | Enable TLS Encryption
 | Select the check box to enable XDCR data encryption using SSL and then define the encryption level.
-The options are: [.uicontrol]*Half* (only encrypt password) and [.uicontrol]*Full* (TLS encrypt password and data).
-If selected, copy the root certificate from the [.uicontrol]*Security > Root Certificate* page and paste into the box.
+The options are: [.ui]*Half* (only encrypt password) and [.ui]*Full* (TLS encrypt password and data).
+If selected, copy the root certificate from the [.ui]*Security > Root Certificate* page and paste into the box.
 |===
 
-. Click [.uicontrol]*Save* to store the new reference to the destination cluster.
+. Click [.ui]*Save* to store the new reference to the destination cluster.
 This cluster information is now available when configuring replication for the source cluster.
 
 [#edit-clusters]
@@ -85,39 +85,39 @@ This cluster information is now available when configuring replication for the s
 
 To update the advanced replication settings using the Web Console:
 
-. From the [.uicontrol]*Couchbase Web Console > XDCR > Remote Clusters*, click [.uicontrol]*Edit* located in cluster row that you want to edit.
-. Update the cluster information and click [.uicontrol]*Save*.
+. From the [.ui]*Couchbase Web Console > XDCR > Remote Clusters*, click [.ui]*Edit* located in cluster row that you want to edit.
+. Update the cluster information and click [.ui]*Save*.
 
 [#delete-clusters]
 == Delete Remote Clusters
 
 To delete the replication, delete the active replications using the Web Console:
 
-. From the [.uicontrol]*Couchbase Web Console > XDCR > Remote Clusters*, click [.uicontrol]*Delete* located in cluster row that you want to delete.
-. Click [.uicontrol]*Yes* to confirm the deletion process.
+. From the [.ui]*Couchbase Web Console > XDCR > Remote Clusters*, click [.ui]*Delete* located in cluster row that you want to delete.
+. Click [.ui]*Yes* to confirm the deletion process.
 
 [#create-replication]
 == Create Replication
 
 Full, Cluster, and Replication Administrators can create a replication between clusters after creating references to the source and destination cluster.
 
-After you configure and start replication, view the current status and list of replications in the [.uicontrol]*Ongoing Replications* section.
+After you configure and start replication, view the current status and list of replications in the [.ui]*Ongoing Replications* section.
 
-. From the [.uicontrol]*XDCR* >[.uicontrol]**Ongoing Replications** panel, click [.uicontrol]*Create Replication* to configure a new XDCR replication.
-The [.uicontrol]*Add Replication* window is displayed where you can configure a new replication from the source to the destination cluster.
+. From the [.ui]*XDCR* >[.ui]**Ongoing Replications** panel, click [.ui]*Create Replication* to configure a new XDCR replication.
+The [.ui]*Add Replication* window is displayed where you can configure a new replication from the source to the destination cluster.
 +
 [#image_zds_pjt_zs]
 image::xdcr-create-replication.png[,align=left]
 
-. In the [.uicontrol]*Replicate From Bucket*, select a bucket from the current cluster to replicate.
-. In the section [.uicontrol]*Remote Cluster*, select a destination cluster.
-. Enter the bucket name in the [.uicontrol]*Remote Bucket* box.
-. Select the [.uicontrol]**Enable advanced filtering**check box.
+. In the [.ui]*Replicate From Bucket*, select a bucket from the current cluster to replicate.
+. In the section [.ui]*Remote Cluster*, select a destination cluster.
+. Enter the bucket name in the [.ui]*Remote Bucket* box.
+. Select the [.ui]**Enable advanced filtering**check box.
 This will allow you to specify the filtering expression while creating replication.
 For more details, see <<configure-xdcr-filering>>.
 . Configure the advanced settings.
 For more information, see <<xdcr-adv>> section.
-. Click [.uicontrol]*Save* to start the replication process.
+. Click [.ui]*Save* to start the replication process.
 
 [#xdcr-adv]
 == XDCR Advanced Settings
@@ -366,13 +366,13 @@ After XDCR is resumed, data continues to replicate between the source and destin
 
 To pause and resume replication using the Web Console:
 
-. From the [.uicontrol]*Couchbase Web Console > XDCR > Ongoing Replications* panel, use the appropriate icons.
-. To pause, under menu:Ongoing Replications[Status], click the [.uicontrol]*Replicating* icon to pause the replication.
+. From the [.ui]*Couchbase Web Console > XDCR > Ongoing Replications* panel, use the appropriate icons.
+. To pause, under menu:Ongoing Replications[Status], click the [.ui]*Replicating* icon to pause the replication.
 +
 [#image_ltl_q25_zs]
 image::xdcr-pause-resume.png[,720,align=left]
 
-. To resume, under menu:Ongoing Replications[Status], click the [.uicontrol]*Paused* triangle icon to continue replicating.
+. To resume, under menu:Ongoing Replications[Status], click the [.ui]*Paused* triangle icon to continue replicating.
 
 *Pause and Resume Replication using the CLI*
 
@@ -385,12 +385,12 @@ To use the REST API, see xref:rest-api:rest-xdcr-pause-resume.adoc#reference_kz4
 [#monitor-rep-status]
 == Monitor Replication Status
 
-Full, Cluster, Read-only, and Replication Administrators can monitor the replication status using the [.uicontrol]*XDCR* and [.uicontrol]*Data Buckets* tabs.
+Full, Cluster, Read-only, and Replication Administrators can monitor the replication status using the [.ui]*XDCR* and [.ui]*Data Buckets* tabs.
 
 The following Couchbase Web Console areas contain information about replication via XDCR:
 
-* The [.uicontrol]*XDCR > Replication* page.
-* The [.uicontrol]*Data Buckets > Outgoing XDCR* Statistics section.
+* The [.ui]*XDCR > Replication* page.
+* The [.ui]*Data Buckets > Outgoing XDCR* Statistics section.
 
 Couchbase Web Console displays any replications configured, or replications in progress for that particular source cluster.
 If you want to view information about replications at a destination cluster, you must open the console for that cluster.
@@ -415,8 +415,8 @@ In the event of a more prolonged network failure, where the destination cluster 
 
 To update the advanced replication settings using the Web Console:
 
-. From the [.uicontrol]*Couchbase Web Console > XDCR > Ongoing Replications*, click [.uicontrol]*Edit* located in active replication row that you want to edit.
-. Update the <<xdcr-adv>> and click [.uicontrol]*Save*.
+. From the [.ui]*Couchbase Web Console > XDCR > Ongoing Replications*, click [.ui]*Edit* located in active replication row that you want to edit.
+. Update the <<xdcr-adv>> and click [.ui]*Save*.
 
 [#delete-replication]
 == Delete XDCR Replication
@@ -425,5 +425,5 @@ Full, Cluster, and Replication Administrators can  delete active replications.
 
 To delete the replication, delete the active replications using the Web Console:
 
-. From the [.uicontrol]*Couchbase Web Console > XDCR > Ongoing Replications*, click [.uicontrol]*Delete* located in the active replication row that you want to delete.
-. Click [.uicontrol]*Yes* to confirm the deletion process.
+. From the [.ui]*Couchbase Web Console > XDCR > Ongoing Replications*, click [.ui]*Delete* located in the active replication row that you want to delete.
+. Click [.ui]*Yes* to confirm the deletion process.

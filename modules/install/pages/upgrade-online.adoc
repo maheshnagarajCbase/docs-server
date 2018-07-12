@@ -31,18 +31,18 @@ For instructions see xref:upgrade-individual-nodes.adoc#topic_tc1_vry_p4[Perform
 [#image_vlk_4cf_zs]
 image::upgrade-online-01.png[,570,align=left]
 
-. Click [.uicontrol]*Add Server*.
-. In the [.uicontrol]*Add Server* dialog, provide either a hostname or IP address for the new node to be added.
-Enter your Couchbase Server administrative credentials in the fields [.uicontrol]*Username* and [.uicontrol]*Password* and select the appropriate service.
+. Click [.ui]*Add Server*.
+. In the [.ui]*Add Server* dialog, provide either a hostname or IP address for the new node to be added.
+Enter your Couchbase Server administrative credentials in the fields [.ui]*Username* and [.ui]*Password* and select the appropriate service.
 +
 [#image_jtx_z2f_zs]
 image::upgrade-online-02.png[,350,align=left]
 
 . Remove one of your existing old nodes from the cluster.
 +
-Under menu:Server Nodes[Servers], click [.uicontrol]*Remove* for the node you want to remove to mark it for removal.
+Under menu:Server Nodes[Servers], click [.ui]*Remove* for the node you want to remove to mark it for removal.
 
-. In the [.uicontrol]*Servers* panel, click [.uicontrol]*Rebalance*.
+. In the [.ui]*Servers* panel, click [.ui]*Rebalance*.
 The rebalance process moves data from the existing node to your newly added node.
 
 Repeat these steps for all the remaining old nodes in the cluster.

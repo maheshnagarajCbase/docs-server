@@ -29,37 +29,37 @@ Only a _Full Administrator_ can configure auditing.
 Configuration is performed by means of the Couchbase Web Console.
 Proceed as follows.
 
-Access the Couchbase Web Console, and left-click on the [.uicontrol]*Security* tab, in the vertical navigation-bar, at the left-hand side of the Dashboard:
+Access the Couchbase Web Console, and left-click on the [.ui]*Security* tab, in the vertical navigation-bar, at the left-hand side of the Dashboard:
 
 [#security-tab-with-hand-cursor]
 image::pict/securityTabWithHandCursor.png[,110,align=left]
 
-This brings up the [.uicontrol]*Security* screen, which appears as follows:
+This brings up the [.ui]*Security* screen, which appears as follows:
 
 [#security-view-initial-no-users]
 image::pict/securityViewInitialNoUsers.png[,820,align=left]
 
-The initial, default view is for [.uicontrol]*Users*.
-To select auditing, left-click on the [.uicontrol]*Audit* tab, on the horizontal control-bar, near the top:
+The initial, default view is for [.ui]*Users*.
+To select auditing, left-click on the [.ui]*Audit* tab, on the horizontal control-bar, near the top:
 
 [#audit-tab]
 image::pict/auditTab.png[,140,align=left]
 
-This brings up the [.uicontrol]*Audit* view:
+This brings up the [.ui]*Audit* view:
 
 [#audit-view]
 image::pict/auditView.png[,820,align=left]
 
-To enable auditing, check the [.uicontrol]*Enable Auditing* checkbox:
+To enable auditing, check the [.ui]*Enable Auditing* checkbox:
 
 [#enable-auditing]
 image::pict/enableAuditing.png[,100,align=left]
 
-This makes the default pathname within the [.uicontrol]*Target Log Directory* text-field editable.
+This makes the default pathname within the [.ui]*Target Log Directory* text-field editable.
 If you wish to modify the pathname, enter the appropriate content.
 Records will be saved to the directory you specify.
 
-The [.uicontrol]*Log Rotation Time Interval* determines how often stored log files — referred to as _targets_ — are _rotated_: this means that the current default file, to which records are being written, named `audit.log` is saved under a new name, which features an appended timestamp.
+The [.ui]*Log Rotation Time Interval* determines how often stored log files — referred to as _targets_ — are _rotated_: this means that the current default file, to which records are being written, named `audit.log` is saved under a new name, which features an appended timestamp.
 For example: _usermachinename_`.local-2017-03-16T15-42-18-audit.log`.
 
 The number of units is specified by changing the number `1`, which appears in the interactive field by default.
