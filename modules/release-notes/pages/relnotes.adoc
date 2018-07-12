@@ -218,7 +218,7 @@ CREATE INDEX idx-fullarray
 
 | https://issues.couchbase.com/browse/MB-25669[MB-25669]
 a|
-*Summary*: On Windows platform, the [.cmd]`cbimport` tool fails to import a tab delimited CSV file where the tab is specified using '``\t``' or '``\\t``'.
+*Summary*: On Windows platform, the [.cmd]`cbimport` tool fails to import a tab delimited CSV file where the tab is specified using '[.code]``\t``' or '[.code]``\\t``'.
 
 *Workaround*: Use Cygwin on the Windows platform to run the command as a Linux command.
 For example,

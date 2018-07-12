@@ -633,7 +633,7 @@ In this example, the documents doc1 and doc2 are in the same bucket and contain 
   ]
 ----
 
-Assuming that the name of Doc2 is based on the `uid` of Doc1, that is, "`user1`" is based on "`uid=1`", you can use the following statement to fetch the user name:
+Assuming that the name of Doc2 is based on the `uid` of Doc1, that is, "[.code]``user1``" is based on "[.code]``uid=1``", you can use the following statement to fetch the user name:
 
 .JOIN statement
 ----

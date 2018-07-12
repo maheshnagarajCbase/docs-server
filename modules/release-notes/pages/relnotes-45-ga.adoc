@@ -532,13 +532,13 @@ Consider adjusting the ForestDB compaction settings to trigger more frequent com
 
 | http://www.couchbase.com/issues/browse/MB-18935[MB-18935]
 | When XDCR replication experiences issues with connections to target, it recovers by dropping the existing connection and setting up new connections.
-Sometimes the attempt to set up new connections failed with "[.output]`connections reset by peer`" error.
+Sometimes the attempt to set up new connections failed with "[.output]``connections reset by peer``" error.
 
 | http://www.couchbase.com/issues/browse/MB-18096[MB-18096]
 | When adding a node to the cluster, [.cmd]`add-node` did not correctly deploy the services selected.
 
 | http://www.couchbase.com/issues/browse/MB-17485[MB-17485]
-| When using [.cmd]`cbtransfer` to move data between buckets, a "[.output]`pump_mc fail`" error message was observed.
+| When using [.cmd]`cbtransfer` to move data between buckets, a "[.output]``pump_mc fail``" error message was observed.
 
 | http://www.couchbase.com/issues/browse/MB-17446[MB-17446]
 | During a delta node recovery, rebalance did not complete if the nodes were down.

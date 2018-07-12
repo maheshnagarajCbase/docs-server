@@ -417,7 +417,7 @@ If not, returns an empty results array.
 * [.output]`errors`: Returns the error codes and messages if the statement fails with errors.
 Returned only when the statement fails with errors.
 Errors can also include timeouts.
-* [.output]`status`: Status of the statement - "[.output]`successful`" or "[.output]`errors`".
+* [.output]`status`: Status of the statement - "[.output]``successful``" or "[.output]``errors``".
 * [.output]`metrics`: Provides metrics for the statement such as [.output]`elapsedTime`, [.output]`executionTime`, [.output]`resultCount`, [.output]`resultSize`, and [.output]`mutationCount`.
 For more information, see <<insert-metrics>>.
 

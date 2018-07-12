@@ -9,7 +9,7 @@ This feature is considered experimental and the UI or the functionality may chan
 Full Text Search provides powerful capabilities for querying natural language.
 There are three major benefits that make full text search much easier to use than alternative methods of querying, such as a wildcard match in N1QL using LIKE statements:
 
-* FTS provides a language-aware manner of searching, so users can type "`beauties`" and find results for "`beauty`" - which is not easy to do with regular expressions.
+* FTS provides a language-aware manner of searching, so users can type "[.code]``beauties``" and find results for "[.code]``beauty``" - which is not easy to do with regular expressions.
 * FTS provides scoring (relevance ranking) for results.
 Text search often returns massive numbers of matching documents, which are ordered by score so that users are presented with only a small number of results that are most likely to be the ones they are looking for.
 With regular expressions, there’s no practical way to simulate relevance.
@@ -43,7 +43,7 @@ Click *Indexes > Full Text*, then click on the [.uicontrol]*New Full Text Index*
 A form where you can define your new index configuration is displayed.
 
 . Each index needs a unique name.
-Type one in, such as "[.input]`test-index`".
+Type one in, such as "[.input]``test-index``".
 Only alphanumeric characters, hyphens, and underscores are allowed for index names.
 Also, the first character must be an alphabetic character.
 . Choose a bucket from the drop-down list.
