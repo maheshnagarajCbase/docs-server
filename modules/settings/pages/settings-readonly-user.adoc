@@ -13,7 +13,7 @@ The Read-Only User dialog appears.
 [#image_mrn_ydb_1t]
 image::admin/picts/settings-rouser1.png[]
 
-. Enter a [.input]`Username`, [.input]`Password` and verify the password.
+. Enter a [.in]`Username`, [.in]`Password` and verify the password.
 (Note: The password must be at least six characters.)
 . Click [.uicontrol]*Create*.
 +

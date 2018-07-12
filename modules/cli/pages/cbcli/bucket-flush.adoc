@@ -63,7 +63,7 @@ couchbase-cli bucket-flush -c 192.168.0.1:8091 -u Administrator -p password \
 *Response:*
 
 Example request response where you need to verify whether you want to flush the bucket.
-In this case, you need to specify either [.input]`Yes` or [.input]`No`.
+In this case, you need to specify either [.in]`Yes` or [.in]`No`.
 
 ----
 Running this command will totally PURGE database data from disk. Do you really want to do it? (Yes/No)

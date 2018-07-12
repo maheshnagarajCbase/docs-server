@@ -58,11 +58,11 @@ Examples of these settings include:
 When an operation is propagated to a replica, it is first propagated to the replica’s memory and then placed in a queue (as above) to be persisted to the replica’s disk.
 You can control whether you desire the operation to only be propagated to a replica’s memory (`ReplicateTo`), or whether to wait until it is fully persisted to the replica’s disk (`PersistTo`).
 
-[.option]`PersistTo` receives a value total to the number of nodes that an operation should be persisted.
+[.opt]`PersistTo` receives a value total to the number of nodes that an operation should be persisted.
 The maximum value is the number of replica nodes plus one.
 A value of 1 indicates master-only persistence (and no replica persistence).
 
-[.option]`ReplicateTo` receives a value total to the number of _replica_ nodes the operation should be replicated.
+[.opt]`ReplicateTo` receives a value total to the number of _replica_ nodes the operation should be replicated.
 Its maximum value is the number of replica nodes.
 
 == Performance considerations

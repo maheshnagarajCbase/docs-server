@@ -36,7 +36,7 @@ The following issues are fixed in Couchbase Server 4.0 GA release:
 | A spatial view could not be built when the input geometry was huge.
 
 | http://www.couchbase.com/issues/browse/MB-14290[MB-14290]
-| When multiple threads tried to increment the value of a non-existing item, a ‘[.output]`NotStoredError`’ occurred instead of an atomic increment.
+| When multiple threads tried to increment the value of a non-existing item, a ‘[.out]`NotStoredError`’ occurred instead of an atomic increment.
 
 | http://www.couchbase.com/issues/browse/MB-14068[MB-14068]
 | Partition versions contained duplicates.
