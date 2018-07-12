@@ -19,7 +19,7 @@ See xref:security:security-certs-auth.adoc[Certificate-Based Authentication] for
 
 The [.cmd]`cbbackupmgr` utility stores and restores the bucket configuration along with the backed-up data.
 If your bucket configuration settings have been updated since your last backup, then restoring a previous backup will overwrite these settings by default.
-Now you can choose to not restore the bucket configuration by setting the "`--disable-bucket-config`" flag.
+Now you can choose to not restore the bucket configuration by setting the "[.code]``--disable-bucket-config``" flag.
 See xref:backup-restore:cbbackupmgr.adoc[cbbackupmgr] for details.
 
 [#platforms]
