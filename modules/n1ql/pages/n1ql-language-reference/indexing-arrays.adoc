@@ -656,7 +656,7 @@ CREATE INDEX i1 on default(a,ARRAY x FOR x IN b END) USING GSI;
 The following table summarizes N1QL-supported collection operators in the DML WHERE clause for different kinds of array index features:
 
 .N1QL-supported collection operators
-[#table_kyc_brz_rz]
+[#table_kyc_brz_rz,cols=5*^]
 |===
 | Operator in the SELECT/DML WHERE clause | Array index with same variable names in Index definition and DML | Array index with arbitrary Variable names in Index definition and DML | Covered Array Index (with explicit array index-key) | Implicit Covered Array Index (without explicit array index-key)
 
