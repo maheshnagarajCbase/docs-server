@@ -78,7 +78,7 @@ The minimum driver versions that support SCRAM-SHA are:
 
 | Java
 | 2.2.5 and higher
-| Supports SCRAM through setting the system property  `com.couchbase.scramEnabled` to `true`.
+| Supports SCRAM through setting the system property `com.couchbase.scramEnabled` to `true`.
 |===
 
 SCRAM support for other clients will be announced in upcoming client release cycles.

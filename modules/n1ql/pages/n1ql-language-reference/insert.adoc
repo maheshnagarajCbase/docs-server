@@ -70,7 +70,7 @@ namespace-name:keyspace-name.
 For example, `main:customer` indicates the customer keyspace in the main namespace.
 If the namespace name is omitted, the default namespace in the current session is used.
 
-_insert-values:_  Specifies the values to be inserted.
+_insert-values:_ Specifies the values to be inserted.
 
 __insert-select__Specifies the values to be inserted as a SELECT statement.
 
