@@ -96,9 +96,9 @@ To stop using the app, terminate the process by typing [.in]`control-C`.
 . Sign in to Couchbase Travel by providing your credentials: image:travel-app-login.png[,650px]
 . Find a flight: image:travel-app-screen.png[,650px]
 +
-In the [.uicontrol]*Airport or City* section, enter an airport code or city name in the [.uicontrol]*From* and [.uicontrol]*To* fields.
+In the [.ui]*Airport or City* section, enter an airport code or city name in the [.ui]*From* and [.ui]*To* fields.
 
-. In the [.uicontrol]*Travel Dates* section, select [.uicontrol]*Leave* and [.uicontrol]*Return* dates by using the date picker that pops up when you click the date fields.
-. Click [.uicontrol]*Find Flights*.
+. In the [.ui]*Travel Dates* section, select [.ui]*Leave* and [.ui]*Return* dates by using the date picker that pops up when you click the date fields.
+. Click [.ui]*Find Flights*.
 +
 The app displays the available flights for the outbound and return legs of the trip.

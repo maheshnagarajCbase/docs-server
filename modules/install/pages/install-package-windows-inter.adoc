@@ -25,7 +25,7 @@ By default, Microsoft Server will not have an adequate number of ephemeral ports
 [#image_u1k_bhv_vs]
 image::wizard-01.png[,align=left]
 
-. Click [.uicontrol]*Yes* to continue.
+. Click [.ui]*Yes* to continue.
 +
 Without a sufficient number of ephemeral ports, a Couchbase Server cluster fails during rebalance and backup.
 Other operations, such as client requests, will time-out.

@@ -31,7 +31,7 @@ These parameters increase or decrease the maximum concurrent replication by a Co
 
 Each replication can require multiple TCP connections and both the concurrent replications and the number of connections may overwhelm the Elasticsearch node.
 If this does occur, you may see errors in the Couchbase Web Console.
-Click XDCR and look in the [.uicontrol]*Ongoing Replications* section, where the `capi_…` string is the ID of the CAPI nozzle, a component in XDCR replication, which writes to the target:
+Click XDCR and look in the [.ui]*Ongoing Replications* section, where the `capi_…` string is the ID of the CAPI nozzle, a component in XDCR replication, which writes to the target:
 
 ----
 "capi_f4268e62702130298bf87f17cc481219/default/default_172.23.105.146:9091_1 – Connection reset failed"

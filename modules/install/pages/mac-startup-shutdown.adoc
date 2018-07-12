@@ -29,7 +29,7 @@ You will be asked whether you want to automatically update Couchbase Server in t
 Using the update service also sends anonymous usage data to Couchbase on the current version and cluster used in your organization.
 This information is used to improve service offerings.
 +
-You can also enable automated updates by selecting the [.uicontrol]*Automatically download and install updates in the future* check box.
+You can also enable automated updates by selecting the [.ui]*Automatically download and install updates in the future* check box.
 
 Launch Couchbase Web Console at Start:: If this menu item is checked, the Couchbase Web Console is opened whenever Couchbase Server starts.
 

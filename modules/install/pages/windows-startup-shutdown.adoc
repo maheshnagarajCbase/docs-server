@@ -5,7 +5,7 @@
 Start-up and shutdown scripts are used to manually start up or shut down Couchbase Server.
 
 On Windows, Couchbase Server is installed as a Windows service.
-You can use the [.uicontrol]*Services* tab within the [.uicontrol]*Windows Task Manager* to start and stop Couchbase Server.
+You can use the [.ui]*Services* tab within the [.ui]*Windows Task Manager* to start and stop Couchbase Server.
 
 You will need a power user or administrator privileges, or have separately granted rights to manage services to start and stop Couchbase Server.
 By default, the service automatically starts when the machine boots.
@@ -16,12 +16,12 @@ Couchbase Server can be started and stopped via Windows Task Manager, Windows sy
 
 To manually start the service from the Windows interface:
 
-. Open the Windows Task Manager and select the [.uicontrol]*Services* tab to open the Services management console.
+. Open the Windows Task Manager and select the [.ui]*Services* tab to open the Services management console.
 +
-Alternatively, select the [.uicontrol]*Start*, select [.uicontrol]*Run* and then type [.in]`Services.msc` to open the Services management console.
+Alternatively, select the [.ui]*Start*, select [.ui]*Run* and then type [.in]`Services.msc` to open the Services management console.
 
-. Locate the [.uicontrol]*Couchbase Server* service and right-click.
-. Select [.uicontrol]*Start* or [.uicontrol]*Stop* as appropriate.
+. Locate the [.ui]*Couchbase Server* service and right-click.
+. Select [.ui]*Start* or [.ui]*Stop* as appropriate.
 
 NOTE: You can also alter the configuration so that the service is not automatically started during boot.
 

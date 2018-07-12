@@ -15,7 +15,7 @@ image::admin/picts/settings-auto-compact.png[,align=left]
 
 The auto-compaction settings can also be modified using the xref:rest-api:rest-autocompact-get.adoc#reference_epl_5kd_sp[REST API].
 
-The [.uicontrol]*Auto-Compaction* tab sets the following default parameters:
+The [.ui]*Auto-Compaction* tab sets the following default parameters:
 
 .Auto-compaction parameters
 [#table_m3c_tqc_34,cols="100,223"]

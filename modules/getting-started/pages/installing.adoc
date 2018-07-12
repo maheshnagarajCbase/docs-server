@@ -63,7 +63,7 @@ The folder contains the Couchbase Server application and [.path]_README.txt_ fil
 . Move the [.path]_Couchbase Server_ file to the [.path]_Applications_ folder.
 . Start Couchbase Server by double-clicking the application icon.
 +
-If you get a message that says you can't run Couchbase Server due to security restrictions, right-click the icon for Couchbase Server and choose [.uicontrol]*Open* from the pop-up menu.
+If you get a message that says you can't run Couchbase Server due to security restrictions, right-click the icon for Couchbase Server and choose [.ui]*Open* from the pop-up menu.
 
 == Install on 64-bit Microsoft Windows systems
 
@@ -73,7 +73,7 @@ To install on Microsoft Windows:
 . Follow the installer prompts.
  ** If desired, you can change the installation location.
  ** If the default port is unavailable, the installer prompts you for a different port to use for server administration.
- ** When the installer asks if you want to increase the number of ephemeral ports, click [.uicontrol]*Yes*.
+ ** When the installer asks if you want to increase the number of ephemeral ports, click [.ui]*Yes*.
 . After the installation is complete, restart Couchbase Server to apply the port changes.
 
 == Set up Couchbase Server
@@ -88,13 +88,13 @@ To set up Couchbase Server in a nonproduction environment, you can accept the de
 . Open a browser and navigate to http://[.var]`hostname`:8091/.
 . In the URL, [.var]`hostname` represents the name or IP address of the computer that hosts Couchbase Server.
 If Couchbase Server is running locally, enter `localhost` for the host name.
-. Click [.uicontrol]*Setup*.
-. On the [.uicontrol]*Configure Server* screen (Step 1 of 5), click [.uicontrol]*Next* to accept the default values for a new cluster.
-. On the [.uicontrol]*Sample Buckets* screen (Step 2 of 5), under [.uicontrol]*Available Samples* select the two samples we will use later in this tutorial: [.uicontrol]*beer-sample* and [.uicontrol]*travel-sample* and click [.uicontrol]*Next*.
-. On the [.uicontrol]*Create Default Bucket* screen (Step 3 of 5), under Memory Size set the [.uicontrol]*Per Node RAM Quota* to 100 MB and click [.uicontrol]*Next*.
-. On the [.uicontrol]*Notifications* screen (Step 4 of 5), enter your registration information, agree to the terms and conditions, and click [.uicontrol]*Next*.
-. On the [.uicontrol]*Configure Server* screen (Step 5 of 5), enter and verify a password for the administrator account, and click [.uicontrol]*Next*.
+. Click [.ui]*Setup*.
+. On the [.ui]*Configure Server* screen (Step 1 of 5), click [.ui]*Next* to accept the default values for a new cluster.
+. On the [.ui]*Sample Buckets* screen (Step 2 of 5), under [.ui]*Available Samples* select the two samples we will use later in this tutorial: [.ui]*beer-sample* and [.ui]*travel-sample* and click [.ui]*Next*.
+. On the [.ui]*Create Default Bucket* screen (Step 3 of 5), under Memory Size set the [.ui]*Per Node RAM Quota* to 100 MB and click [.ui]*Next*.
+. On the [.ui]*Notifications* screen (Step 4 of 5), enter your registration information, agree to the terms and conditions, and click [.ui]*Next*.
+. On the [.ui]*Configure Server* screen (Step 5 of 5), enter and verify a password for the administrator account, and click [.ui]*Next*.
 +
-The Couchbase Web Console opens and displays the [.uicontrol]*Cluster Overview*.
+The Couchbase Web Console opens and displays the [.ui]*Cluster Overview*.
 
 While the  Couchbase Web Console is open,  click on the tabs in the top menu and look at the screens to familiarize yourself with the information and available options.

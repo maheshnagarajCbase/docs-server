@@ -4,14 +4,14 @@
 [abstract]
 Perform the initial Couchbase Server setup with the Couchbase Web Console, CLI, or REST API.
 
-To set up Couchbase Server with the Couchbase Web Console, click on [.uicontrol]*Setup*.
+To set up Couchbase Server with the Couchbase Web Console, click on [.ui]*Setup*.
 
 == Step 1: Configure Server
 
 [#image_qkm_ttc_3w]
 image::setup-01.png[,720,align=left]
 
-. [.uicontrol]*Configure Disk Storage*
+. [.ui]*Configure Disk Storage*
 
  ** Database Path: Shows the default location where the database files will be stored:
 +
@@ -28,19 +28,19 @@ and points to the current amount of free space for this location.
 +
 NOTE: For the production environment, it is recommended to use different file locations.
 
-. [.uicontrol]*Configure Server Hostname*.
+. [.ui]*Configure Server Hostname*.
  ** Provide a node IP or a hostname.
 The provided hostname survives node restart.
 +
 For more details about hostnames, see xref:hostnames.adoc#topic_ggq_hfy_p4[Using Hostnames].
-. [.uicontrol]*Join Cluster/Start new Cluster* The [.uicontrol]*Configure Server Memory* section sets the amount of physical RAM that will be allocated by the Couchbase Server for storage.
+. [.ui]*Join Cluster/Start new Cluster* The [.ui]*Configure Server Memory* section sets the amount of physical RAM that will be allocated by the Couchbase Server for storage.
 +
 If you are creating a new cluster, this is the amount of memory that is allocated on each node within your Couchbase Server cluster.
 The same amount of memory is allocated to each node in the cluster.
 Since the same setting applies to the whole cluster, specify a value that can be supported by all nodes.
 The default value is 60% of your total free RAM and is calculated to provide a RAM capacity for use by the operating system caching layer when accessing and using views.
 
- ** [.uicontrol]*Start a new cluster*
+ ** [.ui]*Start a new cluster*
 +
 If you select this option, the following setup fields will be displayed:
 
@@ -50,7 +50,7 @@ If you select this option, the following setup fields will be displayed:
   *** Index RAM Quota: 256 MB or more.
   *** Total Per Server: RAM quota per server represents total RAM used by the data and index services.
 
- ** [.uicontrol]*Join a cluster now*:
+ ** [.ui]*Join a cluster now*:
 +
 If you select this option, the following setup fields will be displayed:
 
@@ -59,7 +59,7 @@ If you select this option, the following setup fields will be displayed:
   *** The password of the Couchbase Server administrator who is managing this cluster.
   *** Services: Select one of the service types for the production environment; select one to three service types for the development environment.
 
-. Click [.uicontrol]*Next*.
+. Click [.ui]*Next*.
 
 == Step 2: Install Sample Buckets
 
@@ -71,7 +71,7 @@ image::setup-02.png[,720,align=left]
 . Click the names of sample buckets to load to the Couchbase Server.
 These data sets demonstrate Couchbase Server's features and help you understand and develop views.
 If you decide to install sample data, the installer creates one Couchbase bucket for each set of sample data you choose.
-. Click [.uicontrol]*Next*.
+. Click [.ui]*Next*.
 
 == Step 3: Create default bucket
 
@@ -98,7 +98,7 @@ Disk I/O Optimization:: Set the bucket disk I/O priority: Low (the default) or H
 
 Flush:: Enable
 
-* Click [.uicontrol]*Next*.
+* Click [.ui]*Next*.
 
 == Step 4: Notifications
 
@@ -106,7 +106,7 @@ Flush:: Enable
 image::setup-04.png[,720,align=left]
 
 Update Notifications::
-Select [.uicontrol]*Update Notifications*.
+Select [.ui]*Update Notifications*.
 The Couchbase Web Console communicates with Couchbase Server nodes and confirms the version numbers of each node.
 +
 As long as you have Internet access this information will be sent anonymously to Couchbase corporate, which uses this information only to provide you with updates and information to help improve Couchbase Server and related products.
@@ -124,7 +124,7 @@ image::setup-05.png[,720,align=left]
 To secure the server, you must create an administrative account and then use these credentials to join other servers and form a cluster.
 
 . Provide the administrative credentials: username and password
-. Click [.uicontrol]*Next*.
+. Click [.ui]*Next*.
 
 == Couchbase Server is now running and ready to use.
 
@@ -133,7 +133,7 @@ To secure the server, you must create an administrative account and then use the
 [#image_rhb_3sy_dt]
 image::setup-06.png[,720,align=left]
 +
-Check the installation for example, whether you have properly installed the travel-sample application under [.uicontrol]*Data buckets*.
+Check the installation for example, whether you have properly installed the travel-sample application under [.ui]*Data buckets*.
 +
 [#image_xpf_ksy_dt]
 image::setup-07.png[,720,align=left]

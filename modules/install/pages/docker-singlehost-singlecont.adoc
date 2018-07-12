@@ -25,8 +25,8 @@ Verify container start:: The docker run command above will return a container ID
 Connect to the Couchbase Web Console:: From the host, connect your browser to `+http://localhost:8091+`, and you should see the Couchbase Server welcome screen.
 
 Configure::
-* Click [.uicontrol]*Setup*.
-* For all [.uicontrol]*Setup Wizard* screens, leave all values as default and click [.uicontrol]*Next*.
+* Click [.ui]*Setup*.
+* For all [.ui]*Setup Wizard* screens, leave all values as default and click [.ui]*Next*.
 +
 After finishing the Setup Wizard, you should see the following screen:
 +

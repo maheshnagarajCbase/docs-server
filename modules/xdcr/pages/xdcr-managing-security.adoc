@@ -15,15 +15,15 @@ To enable XDCR data security using SSL and create replication:
 
 . On the destination cluster, navigate to menu:Settings[Cluster] and copy the certificate.
 +
-(Optional) To regenerate the existing destination certificate, click [.uicontrol]*Regenerate* before copying.
+(Optional) To regenerate the existing destination certificate, click [.ui]*Regenerate* before copying.
 
-. In the source cluster, select the [.uicontrol]*XDCR* tab.
-. In the [.uicontrol]*Remote Clusters* panel, click [.uicontrol]*Create Cluster Reference* to verify or create the cluster reference.
-. Select the [.uicontrol]*Enable TLS Encryption* box and paste the certificate in the provided area and click [.uicontrol]*Save*.
+. In the source cluster, select the [.ui]*XDCR* tab.
+. In the [.ui]*Remote Clusters* panel, click [.ui]*Create Cluster Reference* to verify or create the cluster reference.
+. Select the [.ui]*Enable TLS Encryption* box and paste the certificate in the provided area and click [.ui]*Save*.
 +
 [#image_wjp_hpk_3v]
 image::admin/picts/xdcr-createreference.png[]
 
-. In the [.uicontrol]*Ongoing Replications* panel, click [.uicontrol]*Create Replication*, provide the cluster and bucket information, and click [.uicontrol]*Replicate*.
+. In the [.ui]*Ongoing Replications* panel, click [.ui]*Create Replication*, provide the cluster and bucket information, and click [.ui]*Replicate*.
 If this is an existing replication that is simply enabling TLS the replication will automatically restart to enable the SSL communication.
 During restart XDCR will use the last check point of the replication stream.

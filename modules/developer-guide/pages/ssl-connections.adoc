@@ -26,7 +26,7 @@ Use the Couchbase Web Console to retrieve the SSL certificate:
 [#ol_v41_25v_tt]
 . Open a browser and navigate to the Couchbase Web Console.
 . Click menu:Settings[Cluster].
-. In the Configuration section, click [.uicontrol]*Show* to display the certificate.
+. In the Configuration section, click [.ui]*Show* to display the certificate.
 image:couchbase-ssl.png[]
 . Copy the entire content of the certificate and store it in a file on the application server on which you want to install the certificate, and save it to a file accessible locally to your SDK.
 +

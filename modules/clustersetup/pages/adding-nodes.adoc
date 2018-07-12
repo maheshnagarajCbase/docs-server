@@ -12,7 +12,7 @@ When using the UI, rebalancing requires an extra click.
 
 When setting up a new Couchbase Server installation, you have the option to join the new node to an existing cluster.
 
-During the first step, select the [.uicontrol]*Join a cluster now* radio button, as shown in the figure below:
+During the first step, select the [.ui]*Join a cluster now* radio button, as shown in the figure below:
 
 [#image_c5c_54y_vv]
 image::admin/picts/add-node.png[,720,align=left]
@@ -25,6 +25,6 @@ Username:: The username of the administrator of the target cluster.
 
 Password:: The password of the administrator of the target cluster.
 
-The node will be created as a new cluster, but the pending status of the node within the new cluster will be indicated on the [.uicontrol]*Cluster Overview* page, as shown in the example below:
+The node will be created as a new cluster, but the pending status of the node within the new cluster will be indicated on the [.ui]*Cluster Overview* page, as shown in the example below:
 
 image::admin-tasks-rebalance-node-added.png[,600,align=left]
