@@ -33,7 +33,7 @@ Since the last Developer Preview, we’ve improved performance and added various
 * Preview of a new geospatial and term range query
 * Distributed and replicated search index and query
 * Real-time indexing and dynamic management
-* Integrated web UI with a new [.uicontrol]*Search* tab for Full Text Search on the Web Console.
+* Integrated web UI with a new [.ui]*Search* tab for Full Text Search on the Web Console.
 * Up to 30x performance improvement due to many enhancements, small and large.
 See <<performance-scale-ha>> for details.
 

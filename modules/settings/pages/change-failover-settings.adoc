@@ -17,9 +17,9 @@ image::admin/picts/settings-autofailover.png[,720,align=left]
 
 To enable the automatic failover using the Web Console:
 
-. From the [.uicontrol]*Couchbase Web Console* > [.uicontrol]*Settings* > select the [.uicontrol]*Auto-Failover* tab.
-. Select the [.uicontrol]*Enable auto-failover* check box to enable the setting.
-. To set the delay in seconds before auto-failover is started, enter the number of seconds in the [.uicontrol]*Timeout* box and click [.uicontrol]*Save*.
+. From the [.ui]*Couchbase Web Console* > [.ui]*Settings* > select the [.ui]*Auto-Failover* tab.
+. Select the [.ui]*Enable auto-failover* check box to enable the setting.
+. To set the delay in seconds before auto-failover is started, enter the number of seconds in the [.ui]*Timeout* box and click [.ui]*Save*.
 The default timeout is 120 seconds.
 In almost all cases, it is recommended to leave the timeout at the default.
 

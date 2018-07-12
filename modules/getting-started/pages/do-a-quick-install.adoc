@@ -10,19 +10,19 @@ After it has been downloaded, a single command is all you need; to obtain, insta
 
 Docker is a freely available application that lets you install a fully configured Couchbase Server with a single command.
 To download Docker, go to the https://www.docker.com/products/overview#/install_the_platform[Docker] installation page.
-This displays an [.uicontrol]*Install the Platform* pane:
+This displays an [.ui]*Install the Platform* pane:
 
 [#docker_download_page]
 image::docker-download-page.png[,560,align=left]
 
 Pick the version of Docker that is appropriate for your platform: Mac, Windows, or Linux.
-Then, left-click on the corresponding [.uicontrol]*Download* or btn:[Install] button:
+Then, left-click on the corresponding [.ui]*Download* or btn:[Install] button:
 
 * On *Mac*, the `Docker.dmg` package is now downloaded.
 When the download has completed, open the package by double left-clicking on the icon.
 An interactive screen is then displayed: follow the instruction it provides, and drag-and-drop Docker into your Applications folder.
 
-* On *Windows*, when you left-click on the [.uicontrol]*Download*, button, a `.msi` file is downloaded.
+* On *Windows*, when you left-click on the [.ui]*Download*, button, a `.msi` file is downloaded.
 When the download has completed, open the file, and proceed as directed with installation.
 
 * On *Linux*, a list of Docker-supported distributions is displayed.
