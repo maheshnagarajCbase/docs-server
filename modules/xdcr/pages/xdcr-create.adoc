@@ -52,7 +52,7 @@ To create the unidirectional replication (from cluster A to cluster B):
 curl GET -u admin:password http://ip.for.destination.cluster:8091/pools/default/buckets
 ----
 
-. From the [.uicontrol]*XDCR* >[.uicontrol]*Remote Clusters* panel, click [.uicontrol]*Create Remote Cluster*.
+. From the [.uicontrol]*XDCR* >[.uicontrol]**Remote Clusters** panel, click [.uicontrol]*Create Remote Cluster*.
 . Enter the following information for identifying and accessing the destination cluster:
 +
 [#table_gfk_4q5_2z,cols="13,40"]
@@ -103,7 +103,7 @@ Full, Cluster, and Replication Administrators can create a replication between c
 
 After you configure and start replication, view the current status and list of replications in the [.uicontrol]*Ongoing Replications* section.
 
-. From the [.uicontrol]*XDCR* >[.uicontrol]*Ongoing Replications* panel, click [.uicontrol]*Create Replication* to configure a new XDCR replication.
+. From the [.uicontrol]*XDCR* >[.uicontrol]**Ongoing Replications** panel, click [.uicontrol]*Create Replication* to configure a new XDCR replication.
 The [.uicontrol]*Add Replication* window is displayed where you can configure a new replication from the source to the destination cluster.
 +
 [#image_zds_pjt_zs]
@@ -111,8 +111,8 @@ image::xdcr-create-replication.png[,align=left]
 
 . In the [.uicontrol]*Replicate From Bucket*, select a bucket from the current cluster to replicate.
 . In the section [.uicontrol]*Remote Cluster*, select a destination cluster.
-. Enter the bucket name in the [.uicontrol]*Remote Bucket *box.
-. Select the [.uicontrol]*Enable advanced filtering*check box.
+. Enter the bucket name in the [.uicontrol]*Remote Bucket* box.
+. Select the [.uicontrol]**Enable advanced filtering**check box.
 This will allow you to specify the filtering expression while creating replication.
 For more details, see <<configure-xdcr-filering>>.
 . Configure the advanced settings.
@@ -324,7 +324,7 @@ You can also use the following shortcuts:
 | Matches against a Unicode character (for the hexadecimal character `hhhh`).***
 |===
 
-NOTE: ***Since the backslash character is used to denote a specific search expression, if you want to match against this character you must enter a double backslash (`\\`).
+NOTE: *****Since the backslash character is used to denote a specific search expression, if you want to match against this character you must enter a double backslash (`\\`).
 
 To match against occurrences of a character or expression, you can use the following.
 

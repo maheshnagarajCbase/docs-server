@@ -21,8 +21,8 @@ To setup email alerts using the Web Console:
 
 [#ol_uk4_cjw_zy]
 . From the [.uicontrol]*Couchbase Web Console* > [.uicontrol]*Settings* > select the [.uicontrol]*Email Alerts* tab.
-. Select the [.uicontrol]*Enable email alerts *check box to enable the email alerts configuration.
-These alerts are raised for errors that you select in the [.uicontrol]*Available Alerts *section.
+. Select the [.uicontrol]*Enable email alerts* check box to enable the email alerts configuration.
+These alerts are raised for errors that you select in the [.uicontrol]*Available Alerts* section.
 . Define the following settings and click [.uicontrol]*Save*:
 
 == Email Server Settings
