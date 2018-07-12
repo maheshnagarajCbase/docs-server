@@ -82,7 +82,7 @@ app.get('/api/airport/findAll',function(req,res) {
 });
 ----
 
-The [.path]_/api/airport/findAll_ route function in the [.path]_route.js_ file points to the corresponding [.api]`findAll` function in the airport module in the[.path]_ /model/airport.js_ file.
+The [.path]_/api/airport/findAll_ route function in the [.path]_route.js_ file points to the corresponding [.api]`findAll` function in the airport module in the [.path]_/model/airport.js_ file.
 This method allows the user to search by FAA code, ICAO code or airport name.
 It then prepares a N1QL query based on the selection criteria and bucket information from the [.path]_/config.json_ file.
 The query is passed to the Couchbase query service in the [.path]_/model/db.js_ module that calls Couchbase.

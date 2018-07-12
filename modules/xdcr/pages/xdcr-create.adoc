@@ -18,7 +18,7 @@ If a cluster is not properly sized for the existing workload plus the new XDCR s
 * Couchbase Server uses TCP/IP port `8091` to exchange cluster configuration information.
 If you are communicating with a destination cluster over a dedicated connection or the Internet, you should ensure that all the nodes in the destination and source clusters can communicate with each other over ports `8091` and `8092`.
 
-Under the XDCR tab, you can configure [.term]_Remote Clusters _for XDCR; these are named destination clusters you can select when you configure replication.
+Under the XDCR tab, you can configure [.term]_Remote Clusters_ for XDCR; these are named destination clusters you can select when you configure replication.
 When you configure XDCR, the destination cluster reference should point to the IP address of one of the nodes in the destination cluster.
 Once it has the connection with that one node, similar to how a Couchbase SDK does, it will receive the cluster topology of that destination cluster.
 

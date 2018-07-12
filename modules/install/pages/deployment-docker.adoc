@@ -21,7 +21,7 @@ Persistence::
 Storing [.path]_/opt/couchbase/var_ outside the container allows you to delete the container and recreate it later.
 You can even update to a container running a later point release of Couchbase Server without losing your data.
 
-Performance:: In a standard Docker environment using a union file system, leaving[.path]_ /opt/couchbase/var_ inside the container will result in some amount of performance degradation.
+Performance:: In a standard Docker environment using a union file system, leaving [.path]_/opt/couchbase/var_ inside the container will result in some amount of performance degradation.
 
 All of the sample commands below assume that you are using volumes mapped to host directories.
 
