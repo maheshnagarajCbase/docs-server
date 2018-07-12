@@ -19,7 +19,107 @@ GET /query/service
 POST /query/service
 ----
 
-Request parameters:: This table contains details of all the parameters that can be passed in a request to the /query/service endpoint:
+Request parameters::
++
+[cols="2,2,5"]
+|===
+| Parameter name | Value | Description
+
+| `statement`
+| String
+| Required if `prepared` is not provided.
+Any valid N1QL statement for a POST request, or a read-only N1QL statement (such as SELECT or EXPLAIN) for a GET request.
+If both the `prepared` and `statement` parameters are present and non-empty, an error is returned.
+
+| `prepared`
+| String
+| Required if statement is not provided.
+The prepared form of the N1QL statement to be executed.
+If both the prepared and statement parameters are present and non-empty, an error is returned.
+
+| `timeout`
+| String (duration format)
+| Optional.
+Maximum time to spend on the request before timing out.
+The default value is "0s", which means no timeout is applied.
+That is, the request runs until completion regardless of how long it takes.
+Its format includes an amount and a unit.
+Valid units are "ns", "us", "ms", "s", "m", "h", for nanoseconds, microseconds, milliseconds, seconds, minutes and hours, respectively.
+The unit is mandatory.
+Examples are "10ms" (which means 10 milliseconds), "1m" (which means 1 minute), and "0.5s" (which means half a second).
+There is also a server-wide `timeout` parameter.
+If both the server-wide `timeout` parameter and the `timeout` parameter in the request are specified, the minimum of the two timeout values is applied.
+
+| `namespace`
+| String
+| Optional.
+Specifies the namespace to use.
+If a request does not specify a namespace, the server wide `namespace` parameter is used.
+
+| `readonly`
+| Boolean
+| Optional.
+Always true for GET requests.
+By default, false for POST requests.
+If the server-wide `readonly` parameter is set to true, its setting supersedes the request `readonly` parameter.
+
+| `metrics`
+| Boolean
+| Optional.
+Specifies that metrics should be returned with query results.
+Default value is true.
+
+| `max_parallelism`
+| String
+| Optional.
+Specifies the maximum parallelism for the query.
+When zero or a negative value is specified, the number of logical CPUs is used as the parallelism for the query.
+The server wide `max_parallelism` parameter has a default value of 1.
+If a request includes max_parallelism, it is capped by the server max_parallelism.
+If a request does not include max_parallelism, the server wide `max_parallelism` parameter is used.
+
+| `$<identifier>`
+| json_value
+| Optional.
+If the `statement` has one or more _named parameters_, there should be one or more named parameters in the request.
+A named parameter consists of the $ character followed by an identifier.
+An identifier is an alphabetical character followed by one or more alphanumeric characters.
+Named parameters apply to `prepared` also.
+
+| `args`
+| list
+| Optional.
+If the statement has one or more positional parameters, this parameter is required in the request.
+This is a list of JSON values, one for each positional parameter in the statement.
+Positional parameters apply to `prepared` also.
+
+| `signature`
+| Boolean
+| Optional.
+Include a header for the results schema in the response.
+Default value is true.
+
+| `scan_consistency`
+| enum
+| Optional.
+Specify the consistency guarantee or constraint for index scanning using one of the following values: [.in]`not_bounded` (default), [.in]`request_plus`, [.in]`statement_plus`, and [.in]`at_plus`.
+Values are case insensitive.
+
+| `creds`
+| list
+| Optional.
+A list of credentials in the form of user/password objects.
+If credentials are supplied in the request header (that is, using HTTP basic authentication), then `creds` is ignored.
+See Authentication Parameters section for full specification.
+
+| `client_context_id`
+| string
+| Optional.
+A piece of data supplied by the client that is echoed in the response, if present.
+N1QL makes no assumptions about the meaning of this data and just logs and echoes it.
+Maximum allowed size is 64 characters.
+A `client_context_id` longer than 64 characters is cut off at 64 characters.
+|=== 
 
 Named parameters:: If the statement in a request contains named parameters, the request should contain the parameters described in the following table.
 +
@@ -28,6 +128,20 @@ Here is an example of a statement containing named parameters:
 ----
  SELECT detail FROM emp WHERE name = $nval AND age > $aval
 ----
++
+[cols="2,5"]
+|===
+| Parameter Name | Value
+
+| `statement`
+| `SELECT detail FROM emp WHERE name = $nval AND age > $aval`
+
+| `$nval`
+| "smith"
+
+| `$aval`
+| 45
+|===
 +
 There should be a named parameter in the request for each query parameter in the request’s statement parameter.
 
@@ -39,7 +153,29 @@ Here is an example of a statement containing positional parameters:
  SELECT detail FROM emp WHERE name = $1 AND hiredate > $2
 ----
 +
+[cols="2,5"]
+|===
+| Parameter Name | Value
+
+| `statement`
+| `SELECT detail FROM emp WHERE name = $1 AND age > $2`
+
+| `args`
+| [ "smith", 45 ]
+|===
++
 Positional parameters can also be specified in a statement using the question mark (?), so the following statement is an alternative way to specify the same query:
++
+[cols="2,5"]
+|===
+| Parameter Name | Value
+
+| `statement`
+| `SELECT detail FROM emp WHERE name = ? AND age > ?`
+
+| `args`
+| [ "smith", 45 ]
+|===
 
 Consistency parameters:: *scan_consistency*
 +
@@ -198,6 +334,99 @@ Response body:: The response body has the following structure:
 	}
 }
 ----
++
+[cols="32,25,50"]
+|===
+| Parameter name | Value | Description
+
+| `requestID`
+| UUID
+| A unique identifier for the response.
+
+| `clientContextID`
+| string
+| The clientContextID of the request, if one was supplied (see client_context _id in Request Parameters).
+
+| `signature`
+| object
+| The schema of the results.
+Present only when the query completes successfully.
+
+| `results`
+| list
+| A list of all the objects returned by the query.
+An object can be any JSON value.
+
+| `status`
+| enum
+| The status of the request.
+Possible values are: success, running, errors, completed, stopped, timeout, fatal.
+
+| `errors`
+| list
+| A list of 0 or more error objects.
+If an error occurred during processing of the request, it will be represented by an error object in this list.
+
+| `error.code`
+| int
+| A number that identifies the error.
+
+| `error.msg`
+| string
+| A message describing the error in detail.
+
+| `warnings`
+| list
+| A list of 0 or more warning objects.
+If a warning occurred during processing of the request, it is represented by a warning object in this list.
+
+| `warning.code`
+| int
+| A number that identifies the warning.
+
+| `warning.msg`
+| string
+| A message describing the warning in full.
+
+| `metrics`
+| object
+| An object containing metrics about the request.
+
+| `metrics.elapsedTime`
+| string
+| The total time taken for the request, that is the time from when the request was received until the results were returned.
+
+| `metrics.executionTime`
+| string
+| The time taken for the execution of the request, that is the time from when query execution started until the results were returned.
+
+| `metrics.resultCount`
+| unsigned int
+| The total number of objects in the results.
+
+| `metrics.resultSize`
+| unsigned int
+| The total number of bytes in the results.
+
+| `metrics.mutationCount`
+| unsigned int
+| The number of mutations that were made during the request.
+
+| `metrics.sortCount`
+| unsigned int
+| The number of objects that were sorted.
+Present only if the request includes ORDER BY.
+
+If a query includes ORDER BY, LIMIT, or OFFSET clauses, an application can use the `sortCount` value to give the overall number of results in a message such as "[.out]``page 1 of N``".
+
+| `metrics.errorCount`
+| unsigned int
+| The number of errors that occurred during the request.
+
+| `metrics.warningCount`
+| unsigned int
+| The number of warnings that occurred during the request.
+|===
 
 == Request error and warning format
 
