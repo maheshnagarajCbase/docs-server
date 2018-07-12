@@ -65,10 +65,10 @@ Switching into ready mode is a configurable setting that enables you to adjust t
 
 Tunable memory enables you to configure the ejection policy for a bucket as one of the following:
 
-* [.term]_Value-only ejection _(default) removes data from the cache but keeps all keys and metadata fields for non-resident items.
+* [.term]_Value-only ejection_ (default) removes data from the cache but keeps all keys and metadata fields for non-resident items.
 When a value bucket ejection occurs, the value of the item is reset.
 Value-only ejection, also referred to as value ejection, is well suited for cases where low latency access is critical to the application and the total item keys for the bucket can easily fit in the allocated Data RAM quota.
-* [.term]_Full metadata ejection _removes all data *including keys*, metadata, and key-value pairs from the cache for non-resident items.
+* [.term]_Full metadata ejection_ removes all data *including keys*, metadata, and key-value pairs from the cache for non-resident items.
 Full ejection is well suited for cases where the application has cold data that is not accessed frequently or the total data size is too large to fit in memory plus higher latency access to the data is accepted.
 The performance of full eviction cache management is significantly improved by xref:bloom-filters.adoc[Bloom filters].
 Bloom filters are enabled by default and cannot be disabled.
