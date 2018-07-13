@@ -26,7 +26,7 @@ The following are the command options:
 |===
 | Option | Description
 
-| `--enable-notification=[0\|1]`
+| `--enable-notification=[0{vbar}1]`
 | Allow notifications (yes=1, no=0).
 |===
 
