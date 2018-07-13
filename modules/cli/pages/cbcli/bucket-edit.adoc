@@ -29,7 +29,7 @@ The following are the command options:
 | `--bucket=BUCKETNAME`
 | Named bucket to act on.
 
-| `--bucket-eviction-policy=[valueOnly\|fullEviction]`
+| `--bucket-eviction-policy=[valueOnly{vbar}fullEviction]`
 a|
 Define the eviction policy: full eviction or value-only eviction.
 
@@ -38,7 +38,7 @@ IMPORTANT: Changing the bucket ejection policy will invoke a bucket restart, res
 | `--bucket-password=PASSWORD`
 | Bucket password.
 
-| `--bucket-priority=[low\|high]`
+| `--bucket-priority=[low{vbar}high]`
 a|
 Bucket priority compared to other buckets.
 
@@ -56,7 +56,7 @@ NOTE: This option does not apply to memcached-style buckets since you cannot cha
 | `--bucket-type=TYPE`
 | Bucket type, either memcached or Couchbase.
 
-| `--enable-flush=[0\|1]`
+| `--enable-flush=[0{vbar}1]`
 | Enables and disables flush (enable=1, disable=0).
 |===
 
