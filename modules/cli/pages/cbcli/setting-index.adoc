@@ -38,7 +38,7 @@ Default: 5
 | `--index-threads=[4]`
 | How many CPU cores to use for the indexer (400% - 4 cores)
 
-| `--index-log-level=[debug\|silent\|fatal\|error\|warn\|info\|verbose\|timing\|trace]`
+| `--index-log-level=[debug{vbar}silent{vbar}fatal{vbar}error{vbar}warn{vbar}info{vbar}verbose{vbar}timing{vbar}trace]`
 | Indexer log level.
 |===
 
