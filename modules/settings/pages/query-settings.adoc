@@ -334,9 +334,9 @@ If a request includes `max_parallelism`, it will be capped by the server `max_pa
 
 .Example
 ----
-cbq> \set -max-parallelism 3;
+cbq> \set -max_parallelism 3;
 
-curl http://hostname:8093/admin/settings -d '{"max-parallelism":0}' -u user:pword
+curl http://hostname:8093/admin/settings -d '{"max_parallelism":0}' -u user:pword
 ----
 
 | `memprofile`

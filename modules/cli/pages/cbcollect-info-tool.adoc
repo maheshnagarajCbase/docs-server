@@ -188,7 +188,7 @@ If specified, debugging information for `cbcollect_info` is also displayed on yo
 | Specifies the tmp directory that is used during data-processing.
 This setting overrides any existing setting of the `TMPDIR` environment variable.
 
-| `--initargs-INITARG`
+| `--initargs=INITARG`
 | The server `initargs` path.
 
 | `--single-node-diag`
