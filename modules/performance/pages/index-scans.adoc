@@ -89,7 +89,7 @@ Index scan requests in N1QL are based on a range where each range has a start va
 
 * A "High" field in the range indicates the end value.
 If "High" is missing from the range, then there is no upper bound.
-* A “Low” field in the range indicates the start value.
+* A "Low" field in the range indicates the start value.
 If "Low" is missing from the range, the scan starts with a NULL.
 NULL is the lowest value as MISSING values are not indexed.
 * Inclusion indicates if the values of High and Low fields are included.

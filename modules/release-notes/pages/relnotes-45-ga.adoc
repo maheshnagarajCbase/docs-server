@@ -241,7 +241,7 @@ This issue was observed when the cluster contained multiple Couchbase Server ver
 | An Index service crash was caused by a race condition when the indexer was trying to roll back and was using standard global indexes.
 
 | http://www.couchbase.com/issues/browse/MB-19770[MB-19770]
-| When the character “!” was used instead of “NOT” in N1QL, incorrect results were produced instead of throwing an error.
+| When the character "!" was used instead of "NOT" in N1QL, incorrect results were produced instead of throwing an error.
 
 | http://www.couchbase.com/issues/browse/MB-19764[MB-19764]
 | Malformed or unknown roles error was thrown when using CLI to configure RBAC for administrators.
@@ -309,7 +309,7 @@ Its syntax is enhanced to support multiple nested FOR clauses to access and upda
 | http://www.couchbase.com/issues/browse/MB-19777[MB-19777]
 a|
 When constructing objects in a N1QL query, the names of fields in name-value pairs is made optional.
-For example, the following query is valid in 4.5.1 and implicitly assigns names “type” and “name” for respective values:
+For example, the following query is valid in 4.5.1 and implicitly assigns names "type" and "name" for respective values:
 
 ----
 SELECT {type, name} FROM `travel-sample` LIMIT 2;

@@ -167,28 +167,28 @@ To get just the count of documents that match a particular query without returni
 
 ----
 curl -X POST -H "Content-Type: application/json" \
-                  http://127.0.0.1:8094/api/index/beer-idx/query \
-                  -d '{
-                  "indexName": "beer-idx",
-                  "size": 0,
-                  "from": 0,
-                  "explain": true,
-                  "highlight": {},
-                  "query": {
-                  "boost": 1,
-                  "query": "geo.accuracy:rooftop"
-                  },
-                  "fields": [
-                  "*"
-                  ],
-                  "ctl": {
-                  "consistency": {
-                  "level": "",
-                  "vectors": {}
-                  },
-                  "timeout": 0
-                  }
-                  }'
+http://127.0.0.1:8094/api/index/beer-idx/query -d \
+'{
+    "indexName": "beer-idx",
+    "size": 0,
+    "from": 0,
+    "explain": true,
+    "highlight": {},
+    "query": {
+        "boost": 1,
+        "query": "geo.accuracy:rooftop"
+    },
+    "fields": [
+        "*"
+    ],
+    "ctl": {
+        "consistency": {
+            "level": "",
+            "vectors": {}
+        },
+        "timeout": 0
+    }
+}'
 ----
 
 You can get a count of entries in an index overall by using the REST API:
@@ -229,20 +229,20 @@ Otherwise multi-term values get tokenized and the results are not what you expec
 +
 ----
 curl -X POST -H "Content-Type: application/json" \
-                          http://localhost:8094/api/index/bix/query \
-                          -d '{
-                          "size": 10,
-                          "query": {
-                          "boost": 1,
-                          "query": "water"
-                          },
-                          "facets": {
-                          "type": {
-                          "size": 5,
-                          "field": "type"
-                          }
-                          }
-                          }'
+http://localhost:8094/api/index/bix/query -d \
+'{
+    "size": 10,
+    "query": {
+        "boost": 1,
+        "query": "water"
+     },
+    "facets": {
+         "type": {
+             "size": 5,
+             "field": "type"
+         }
+    }
+}'
 ----
 +
 The result snippet below only shows the facet section for clarity.
@@ -251,53 +251,53 @@ Run the curl command to see the HTTP response containing the full results.
 [source,json]
 ----
 "facets": {
-                          "type": {
-                          "field": "type",
-                          "total": 91,
-                          "missing": 0,
-                          "other": 0,
-                          "terms": [
-                          {
-                          "term": "beer",
-                          "count": 70
-                          },
-                          {
-                          "term": "brewery",
-                          "count": 21
-                          }
-                          ]
-                          }
-                          }
+    "type": {
+        "field": "type",
+        "total": 91,
+        "missing": 0,
+        "other": 0,
+        "terms": [
+            {
+                "term": "beer",
+                "count": 70
+            },
+            {
+                "term": "brewery",
+                "count": 21
+            }
+        ]
+    }
+}
 ----
 
 . Numeric Range Facet - computes facet on the `abv` field with 2 buckets describing `high` (greater than 7) and `low` (less than 7).
 +
 ----
 curl -X POST -H "Content-Type: application/json" \
-                          http://localhost:8094/api/index/bix/query \
-                          -d '{
-                          "size": 10,
-                          "query": {
-                          "boost": 1,
-                          "query": "water"
-                          },
-                          "facets": {
-                          "abv": {
-                          "size": 5,
-                          "field": "abv",
-                          "numeric_ranges": [
-                          {
-                          "name": "high",
-                          "max": 7
-                          },
-                          {
-                          "name": "low",
-                          "min": 7
-                          }
-                          ]
-                          }
-                          }
-                          }'
+http://localhost:8094/api/index/bix/query -d \
+'{
+    "size": 10,
+    "query": {
+        "boost": 1,
+        "query": "water"
+    },
+    "facets": {
+        "abv": {
+            "size": 5,
+            "field": "abv",
+            "numeric_ranges": [
+                {
+                    "name": "high",
+                    "min": 7
+                },
+                {
+                    "name": "low",
+                    "max": 7
+                }
+             ]
+        }
+    }
+}'
 ----
 +
 Results:
@@ -305,23 +305,23 @@ Results:
 [source,json]
 ----
 facets": {
-                          "abv": {
-                          "field": "abv",
-                          "total": 70,
-                          "missing": 21,
-                          "other": 0,
-                          "numeric_ranges": [
-                          {
-                          "name": "high",
-                          "max": 7,
-                          "count": 57
-                          },
-                          {
-                          "name": "low",
-                          "min": 7,
-                          "count": 13
-                          }
-                          ]
-                          }
-                          }
+    "abv": {
+        "field": "abv",
+        "total": 70,
+        "missing": 21,
+        "other": 0,
+        "numeric_ranges": [
+            {
+                "name": "high",
+                "min": 7,
+                "count": 13
+            },
+            {
+                "name": "low",
+                "max": 7,
+                "count": 57
+            }
+        ]
+    }
+}
 ----

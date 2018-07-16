@@ -61,11 +61,11 @@ image:fts-create-index-2.png[,300]
 . Starting version 4.6, you can create custom index mappings by document type when the type is specified in the document key.
 FTS uses the type identifier that you specify to determine where to find the type of each document.
 The type mapping then uses the value of type identifier for each document to determine which index mapping rules to apply.
-Select one of the three options for type identifier: “JSON type field”, “Doc ID up to separator”, and “Doc ID with regex”.
+Select one of the three options for type identifier: "JSON type field", "Doc ID up to separator", and "Doc ID with regex".
 
 [#ul_tyx_xwy_ky]
  ** *JSON type field*: Specify the field in the JSON document whose value determines the type of the document.
-Defaults to “type”.
+Defaults to "type".
  ** *Doc ID up to separator*: The type identifier is the prefix of the document key, up to but not including the given character.
  ** *Doc ID with regex*: For advanced users, you can specify a regular expression that matches the type identifier.
 

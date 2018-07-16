@@ -9,7 +9,7 @@
 image::n1ql-language-reference/images/select.png[]
 
 [#select-term]
-`select-term::= subselect | “(“ select “)”`
+`select-term::= subselect | "(" select ")"`
 
 .Railroad Diagram: select-term
 [#fig_drp_vfl_dx]
@@ -55,7 +55,7 @@ image::n1ql-language-reference/images/select-clause.png[]
 image::n1ql-language-reference/images/from-clause.png[]
 
 [#from-term]
-`from-term::= from-keyspace [ [ AS ] alias ] [ use-clause ] | “(” select “)” [ AS ] alias | ffrom-term ( join-clause | nest-clause | unnest-clause )`
+`from-term::= from-keyspace [ [ AS ] alias ] [ use-clause ] | "(" select ")" [ AS ] alias | ffrom-term ( join-clause | nest-clause | unnest-clause )`
 
 .Railroad Diagram: from-term
 [#fig_osz_hgl_dx]
@@ -140,7 +140,7 @@ image::n1ql-language-reference/images/use-clause.png[]
 image::n1ql-language-reference/images/use-keys-clause.png[]
 
 [#use-index-clause]
-`use-index-clause::= USE INDEX “(“ index-ref [ “,” index-ref ]* “)”`
+`use-index-clause::= USE INDEX "(" index-ref [ "," index-ref ]* ")"`
 
 .Railroad Diagram: use-index-clause
 [#fig_h3d_wgl_dx]
@@ -170,7 +170,7 @@ image::n1ql-language-reference/images/index-using.png[]
 == LET Clause
 
 [#let-clause]
-`let-clause::= LET alias “=” expr [ “,” alias = expr ]*`
+`let-clause::= LET alias "=" expr [ "," alias = expr ]*`
 
 .Railroad Diagram: let-clause
 [#fig_sgz_bhl_dx]
@@ -195,14 +195,14 @@ image::n1ql-language-reference/images/cond.png[]
 == GROUP BY Clause
 
 [#group-by-clause]
-`group-by-clause::= GROUP BY expr [ “,” expr ]* [ letting-clause ] [ having-clause ] | letting-clause`
+`group-by-clause::= GROUP BY expr [ "," expr ]* [ letting-clause ] [ having-clause ] | letting-clause`
 
 .Railroad Diagram: group-by-clause
 [#fig_bjj_hhl_dx]
 image::n1ql-language-reference/images/group-by-clause.png[]
 
 [#letting-clause]
-`letting-clause::= LETTING alias “=” expr [ “,” alias = expr ]*`
+`letting-clause::= LETTING alias "=" expr [ "," alias = expr ]*`
 
 .Railroad Diagram: letting-clause
 [#fig_ym4_3hl_dx]
@@ -225,7 +225,7 @@ image::n1ql-language-reference/images/set-op.png[]
 == ORDER BY Clause
 
 [#order-by-clause]
-`order-by-clause::= ORDER BY ordering-term [ “,” ordering-term ]*`
+`order-by-clause::= ORDER BY ordering-term [ "," ordering-term ]*`
 
 .Railroad Diagram: order-by-clause
 [#fig_x3n_mhl_dx]

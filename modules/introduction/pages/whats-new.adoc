@@ -203,16 +203,16 @@ Many improvements are due to enhancements made in http://www.blevesearch.com/[bl
 +
 The biggest single contributor to performance improvements is MossStore, the new default KV store underlying full text indexes.
 FTS has for some time used https://github.com/couchbase/moss[Moss] to improve query and especially indexing performance.
-https://github.com/couchbase/moss[Moss], which stands for “Memory-oriented sorted segments”, is a simple, fast, persistable, ordered key value collection implemented as a pure Golang library.
+https://github.com/couchbase/moss[Moss], which stands for "Memory-oriented sorted segments", is a simple, fast, persistable, ordered key value collection implemented as a pure Golang library.
 +
 MossStore extends Moss so that it efficiently persists sorted segments to disk when necessary.
-MossStore is recommended for all use cases, but advanced users can still change back to ForestDB by setting the “store” “kvStoreName” property to “forestdb”.
+MossStore is recommended for all use cases, but advanced users can still change back to ForestDB by setting the "store" "kvStoreName" property to "forestdb".
 
 Index Type Mapping by Keys::
 You can now create custom index mappings by document type when the type is specified in the document key.
 Previously, you could create custom index mappings for different types of objects, but only when the type was indicated by an attribute in the JSON document body.
-(By default, FTS looks for an attribute named “type”).
-With this enhancement, it’s easier to support the common data modeling style in which the document type is indicated by a portion of the key, for example, “user::will.gardella”.
+(By default, FTS looks for an attribute named "type").
+With this enhancement, it’s easier to support the common data modeling style in which the document type is indicated by a portion of the key, for example, "user::will.gardella".
 For details, see xref:fts:fts-creating-indexes.adoc#fts-index-mapping[Index Type Mapping By Keys].
 
 Sorting::
