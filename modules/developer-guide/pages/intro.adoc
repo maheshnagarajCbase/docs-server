@@ -12,13 +12,13 @@ They provide a consistent and idiomatic experience for your language.
 
 Click on your language for instructions on setting up a development environment.
 
-* xref:sdks:c-2.4/c-intro.adoc#concept_zhc_crm_pp[C SDK 2.4/2.5]
-* xref:sdks:go-beta/introduction.adoc#concept_z3r_zgq_44[Go SDK 1.0]
-* xref:sdks:java-2.2/java-intro.adoc#concept_l11_ppm_pp[Java SDK 2.2]
-* xref:sdks:dotnet-2.2/dotnet-intro.adoc#concept_m1n_rqm_pp[.NET SDK 2.2]
-* xref:sdks:node-2.0/introduction.adoc#concept_z3r_zgq_44[Node.js SDK 2.0/2.1]
-* xref:sdks:php-2.0/php-intro.adoc#concept_z3r_zgq_44[PHP SDK 2.0/2.1]
-* xref:sdks:python-2.0/introduction.adoc#py-intro[Python SDK 2.0]
+* xref:2.5@c-sdk::c-intro.adoc#concept_zhc_crm_pp[C SDK 2.4/2.5]
+* xref:1.0@go-sdk::introduction.adoc#concept_z3r_zgq_44[Go SDK 1.0]
+* xref:2.2@java-sdk::java-intro.adoc#concept_l11_ppm_pp[Java SDK 2.2]
+* xref:2.2@dotnet-sdk::dotnet-intro.adoc#concept_m1n_rqm_pp[.NET SDK 2.2]
+* xref:2.1@nodejs-sdk::introduction.adoc#concept_z3r_zgq_44[Node.js SDK 2.0/2.1]
+* xref:2.1@php-sdk::php-intro.adoc#concept_z3r_zgq_44[PHP SDK 2.0/2.1]
+* xref:2.0@python-sdk::introduction.adoc#py-intro[Python SDK 2.0]
 * http://docs.couchbase.com/developer/dev-guide-3.0/ruby-sdk.html[Ruby]
 
 Couchbase SDKs attempt to follow common verbs and semantics (as much as the individual language allows).
