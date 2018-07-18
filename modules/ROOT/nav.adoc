@@ -305,6 +305,15 @@
 * xref:developer-guide:non-json.adoc[Dealing with non-JSON documents]
  ** xref:developer-guide:transcoders.adoc[Flags and Transcoders]
 
+.xref:sdks:intro.adoc[SDKs]
+* xref:2.5@c-sdk::c-intro.adoc[C SDK 2.5]
+* xref:1.0@go-sdk::introduction.adoc[Go SDK 1.0]
+* xref:2.2@java-sdk::java-intro.adoc[Java SDK 2.2]
+* xref:2.2@dotnet-sdk::dotnet-intro.adoc[.NET SDK 2.2]
+* xref:2.1@nodejs-sdk::introduction.adoc[Node.js SDK 2.1]
+* xref:2.1@php-sdk::php-intro.adoc[PHP SDK 2.1]
+* xref:2.0@python-sdk::introduction.adoc[Python SDK 2.0]
+
 .xref:connectors:intro.adoc[Connector guides]
 * xref:connectors:elasticsearch-2.1/elastic-intro.adoc[Elasticsearch plug-in 2.1]
  ** xref:connectors:elasticsearch-2.1/install-intro.adoc[Installation and configuration]

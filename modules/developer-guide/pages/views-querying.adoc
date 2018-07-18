@@ -673,4 +673,4 @@ Spatial views support a variety of different use cases including multidimensiona
 For details, see xref:indexes:querying-using-spatial-views.adoc#concept_hlq_bhb_ys[Querying using spatial views].
 
 You may also want to take a look the Couchbase SDK documentation for information on how to use spatial views with SDK.
-For example, see xref:sdks:java-2.2/querying-views.adoc[Working with views] in the Java SDK documentation.
+For example, see xref:2.2@java-sdk::querying-views.adoc[Working with views] in the Java SDK documentation.

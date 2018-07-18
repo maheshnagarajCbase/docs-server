@@ -30,7 +30,7 @@ Use the Couchbase Web Console to retrieve the SSL certificate:
 image:couchbase-ssl.png[]
 . Copy the entire content of the certificate and store it in a file on the application server on which you want to install the certificate, and save it to a file accessible locally to your SDK.
 +
-For C (libcouchbase-based) SDKs, you will need to pass the path to this file (the path itself does not matter, so long as it exists and is accessible by the SDK) to the connection string using the `certpath` xref:sdks:c-2.4/options.adoc#topic_k5w_kzt_4r[connection string] option.
+For C (libcouchbase-based) SDKs, you will need to pass the path to this file (the path itself does not matter, so long as it exists and is accessible by the SDK) to the connection string using the `certpath` xref:2.5@c-sdk::options.adoc#topic_k5w_kzt_4r[connection string] option.
 For other SDKs this may involve _installing_ the certificate to a special kind of _certificate repository_ or _store_.
 +
 The examples below demonstrate how to configure and connect your SDK to a Couchbase Cluster with SSL encryption in Python:
