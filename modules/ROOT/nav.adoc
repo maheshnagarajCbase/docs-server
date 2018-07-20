@@ -11,8 +11,15 @@
 * xref:getting-started:choose-your-next-steps.adoc[Choose Your Next Steps]
 
 .DEVELOPERS
-* xref:getting-started:starter-kits.adoc[Starter Kits]
 * xref:sdks.adoc[SDKs]
+ ** xref:2.8@c-sdk::start-using-sdk.adoc[C]
+ ** xref:2.5@dotnet-sdk::start-using-sdk.adoc[.NET]
+ ** xref:1.2@go-sdk::start-using-sdk.adoc[Go]
+ ** xref:2.5@java-sdk::start-using-sdk.adoc[Java]
+ ** xref:2.4@nodejs-sdk::start-using-sdk.adoc[Node.js]
+ ** xref:2.4@php-sdk::start-using-sdk.adoc[PHP]
+ ** xref:2.2@python-sdk::start-using-sdk.adoc[Python]
+* xref:getting-started:starter-kits.adoc[Starter Kits]
 * N1QL Reference
  ** xref:n1ql:n1ql-language-reference/index.adoc[N1QL Language Reference]
  ** xref:n1ql:n1ql-language-reference/n1ql-error-codes.adoc[N1QL Error Codes]
