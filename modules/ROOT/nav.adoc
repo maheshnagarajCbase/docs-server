@@ -58,7 +58,8 @@
  ** xref:architecture:storage-architecture.adoc[Storage Architecture]
 
 .DEVELOPERS
-* xref:sdks.adoc[SDKs]
+* xref:sdk:development-intro.adoc[Developer's Intro]
+* xref:sdk:overview.adoc[SDKs]
  ** xref:2.7@c-sdk::start-using-sdk.adoc[C]
  ** xref:2.4@dotnet-sdk::start-using-sdk.adoc[.NET]
  ** xref:1.2@go-sdk::start-using-sdk.adoc[Go]
