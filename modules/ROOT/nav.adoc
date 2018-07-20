@@ -58,6 +58,7 @@
  ** xref:architecture:storage-architecture.adoc[Storage Architecture]
 
 .DEVELOPERS
+* xref:getting-started:starter-kits.adoc[Starter Kits]
 
 .ADMINISTRATORS
 * Setup
