@@ -11,7 +11,8 @@
 * xref:getting-started:choose-your-next-steps.adoc[Choose Your Next Steps]
 
 .DEVELOPERS
-* xref:sdks.adoc[SDKs]
+* xref:sdk:development-intro.adoc[Developer's Intro]
+* xref:sdk:overview.adoc[SDKs]
  ** xref:2.8@c-sdk::start-using-sdk.adoc[C]
  ** xref:2.5@dotnet-sdk::start-using-sdk.adoc[.NET]
  ** xref:1.2@go-sdk::start-using-sdk.adoc[Go]
