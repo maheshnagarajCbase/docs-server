@@ -54,8 +54,15 @@
  ** xref:architecture:storage-architecture.adoc[Storage Architecture]
 
 .DEVELOPERS
-* xref:getting-started:starter-kits.adoc[Starter Kits]
 * xref:sdks.adoc[SDKs]
+ ** xref:2.6@c-sdk::start-using-sdk.adoc[C]
+ ** xref:2.3@dotnet-sdk::start-using-sdk.adoc[.NET]
+ ** xref:1.1@go-sdk::start-using-sdk.adoc[Go]
+ ** xref:2.3@java-sdk::start-using-sdk.adoc[Java]
+ ** xref:2.2@nodejs-sdk::start-using-sdk.adoc[Node.js]
+ ** xref:2.2@php-sdk::start-using-sdk.adoc[PHP]
+ ** xref:2.1@python-sdk::start-using-sdk.adoc[Python]
+* xref:getting-started:starter-kits.adoc[Starter Kits]
 
 .ADMINISTRATORS
 * Setup
