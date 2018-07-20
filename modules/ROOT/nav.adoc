@@ -59,6 +59,7 @@
 
 .DEVELOPERS
 * xref:getting-started:starter-kits.adoc[Starter Kits]
+* xref:sdks.adoc[SDKs]
 
 .ADMINISTRATORS
 * Setup
