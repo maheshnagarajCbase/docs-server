@@ -30,7 +30,7 @@ Prepared statements are stored in memory until you restart the Couchbase Server.
 After restarting the server, you must prepare the statements again before you can execute the prepared statements.
 
 For information on how to use prepared statements with various SDK, refer to the SDK documentation.
-For example, see xref:2.2@dotnet-sdk::prepared-statements.adoc[Using prepared statements] with .NET SDK.
+For example, see xref:2.1@dotnet-sdk::prepared-statements.adoc[Using prepared statements] with .NET SDK.
 
 == EXECUTE statement
 
