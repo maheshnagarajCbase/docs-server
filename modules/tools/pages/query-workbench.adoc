@@ -106,10 +106,12 @@ image:query-workbench-result-json.png[,570]
 * Table, where the results are presented in a tabular format.
 The tool converts the JSON documents to HTML tables, and presents sub-objects or sub-arrays as sub-tables.
 This format works well for queries that return an array of objects, like `pass:c[select `beer-sample`.* from `beer-sample`;]`.
-You can hover the mouse pointer over a data value to see the path to that value in a tool tip.image:query-workbench-result-table.png[,570]
+You can hover the mouse pointer over a data value to see the path to that value in a tool tip.
+image:query-workbench-result-table.png[,570]
 * Tree (or list), where the results are presented in a tree (or list or outline) format.
 Each sub-object or sub-array is displayed as a sub-list.
-You can hover the mouse pointer over a data value to see the path to that value in a tool tip.image:query-workbench-result-tree.png[,570]
+You can hover the mouse pointer over a data value to see the path to that value in a tool tip.
+image:query-workbench-result-tree.png[,570]
 
 == Canceling Running Queries
 
@@ -118,7 +120,8 @@ When you cancel a running query, it stops the activity on the server side as wel
 
 If you change to a different tab in the Couchbase Web Console when a query is running in the Query Workbench, the query will be interrupted on the client side.
 However, the query continues to run on the server.
-If you do need to change to a different tab when running a query, we recommend that you first terminate the running query using the Cancel button before changing the tab in order to avoid wasting server resources.image:query-workbench-cancel-query.png[,570]
+If you do need to change to a different tab when running a query, we recommend that you first terminate the running query using the Cancel button before changing the tab in order to avoid wasting server resources.
+image:query-workbench-cancel-query.png[,570]
 
 NOTE: The Cancel button does not cancel index creation statements.
 The index creation continues on the server side even though it appears to have been canceled from the Query Workbench.
