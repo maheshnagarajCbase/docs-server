@@ -12,20 +12,21 @@ To access documents using the Web UI:
 
 [#ol_lxc_g3m_zs]
 . Navigate your browser to a cluster node.
-Type the address of the cluster with the port (8091).image:webui-login.png[,650px]
+Type the address of the cluster with the port (8091).
+image:webui-login.png[,650px]
 +
 The password is the password you used when setting up the cluster
 
-. Once logged in, go to the Data Buckets section:image:webui-buckets.png[,650px]
+. Once logged in, go to the Data Buckets section: image:webui-buckets.png[,650px]
 . Click on the documents button of the default bucket.
-(We’ll learn more about buckets later on):image:webui-documents.png[,650px]
-. To retrieve a document, type in the document ID and click on "Lookup ID":image:webui-lookup.png[,650px]
+(We’ll learn more about buckets later on): image:webui-documents.png[,650px]
+. To retrieve a document, type in the document ID and click on "Lookup ID": image:webui-lookup.png[,650px]
 +
 This will take you to the document page where you can view and edit the document.
 +
 image::webui-editor-existing.png[,650px]
 
-. To create a new document, go back to the ‘Documents’ section and click on ‘Create Document’image:webui-create-document.png[,650px]
-. You’ll be prompted to enter a document ID:image:webui-newdoc-prompt.png[,650px]
+. To create a new document, go back to the ‘Documents’ section and click on ‘Create Document’ image:webui-create-document.png[,650px]
+. You’ll be prompted to enter a document ID: image:webui-newdoc-prompt.png[,650px]
 . Once created, you can now edit your document.
-Don't forget to save when doneimage:webui-editor-new.png[,650px]
+Don't forget to save when done image:webui-editor-new.png[,650px]
