@@ -34,7 +34,8 @@ Couchbase customers can tie Couchbase Server with their CA hierarchies.
 The CA at the top of a hierarchy is called the root authority, or root CA.
 There are two types of CA hierarchies supported by Couchbase: single- or n-tier.
 
-Single-Tier Hierarchy:: In its simplest form, the single-tier hierarchy starts with a root CA.
+Single-Tier Hierarchy::
+In its simplest form, the single-tier hierarchy starts with a root CA.
 +
 [#image_my1_wmk_y5]
 image::pict/ca_single_tier.png[,align=left]
@@ -44,12 +45,14 @@ All certificates immediately below the root certificate inherit its trustworthin
 +
 Although this is the simplest form of CA hierarchy, most enterprises use an N-tier CA hierarchy as described next.
 
-N-Tier Hierarchy:: Typically, in many production deployments, a hierarchy will have multiple CAs.
+N-Tier Hierarchy::
+Typically, in many production deployments, a hierarchy will have multiple CAs.
 +
 [#image_t1g_ymk_y5]
 image::pict/ca_n_tier.png[,570,align=left]
 +
 In a multi-tier hierarchy, the root CA issues certificates to the intermediate CAs, which in turn generate intermediate certificates used to sign the client certificates such as a cluster certificate:
+
 * Trusted root CA > Intermediate CA > Cluster certificate
 * Trusted root CA > Intermediate CA 1 > Intermediate CA 2\....
 > Intermediate CA N > Cluster certificate
@@ -183,7 +186,8 @@ NOTE: If your CA authority supports automatic generation of certificates, you ca
 
 Before you start configuring X.509 certificates for your nodes, assess your needs.
 
-Where will you put the configured CA, intermediate, and node keys?:: All the keys and certificates are generated in a directory named SSLCA, which can be located anywhere on your machine.
+Where will you put the configured CA, intermediate, and node keys?::
+All the keys and certificates are generated in a directory named SSLCA, which can be located anywhere on your machine.
 +
 The generated private node key (`pkey.key`) and chain certificate (`chain.pem`) must be posted in a specific place that is in the certificate trust path (such as [.path]_/Users/<username>/Library/Application\ Support/Couchbase/var/lib/couchbase/inbox/_ on MacOSX).
 
@@ -298,7 +302,6 @@ The response will be:
 int.pem: OK
 openssl x509 -in int.pem -text
 ----
-
 . Generate the node private key file (`pkey.key`) and the node certificate signing request (`pkey.csr`) to generate the node public key file (`pkey.pem`).
 +
 Be sure to enter another node and use the appropriate node name instead of the variable *<node-name>*, such as "sales" or "HR’.
@@ -403,6 +406,7 @@ IMPORTANT: Do not include in your chain file the root CA’s public key certific
 NOTE: The root certificate is not included in this chain.
 +
 To create the certificate chain file, concatenate the intermediate and root certificates together, beginning with the lowest one in the chain.
+
  ** If you have only one intermediate CA in your trust path, use this command:
 +
 ----
@@ -455,7 +459,6 @@ Check if the the files `chain.pem` and `pkey.key` have been posted to the inbox:
 johns-MacBook-Pro-4:inbox john$ ls
 chain.pem	pkey.key
 ----
-
 . Change permissions so that Couchbase can read `pkey.key` and `chain.pem:`
 +
 ----
@@ -504,7 +507,8 @@ Using REST API::
 curl -X POST http://Administrator:password@<node-name>:8091/node/controller/reloadCertificate
 ----
 
-See also::: CLI: xref:cli:cbcli/ssl-manage.adoc#cbcli-xdcr-ssl[[.cmd]`ssl-manage`]
+See also:::
+CLI: xref:cli:cbcli/ssl-manage.adoc#cbcli-xdcr-ssl[[.cmd]`ssl-manage`]
 +
 REST API: xref:rest-api:rest-uploads-ca.adoc#reference_jm5_j2x_hv[Upload and Regenerate Certificate]
 
@@ -615,6 +619,7 @@ You can also use OpenSSL's `s_client` by trying to connect to a server that you 
 . *Troubleshoot X.509 certificates*
 +
 During the development process these external tools might come in handy for verifying and debugging SSL traffic:
+
  ** [.cmd]`openssl`: OpenSSL command line tool
  ** wireshark: Network traffic analyzer
  ** nmap: Sophisticated security scanner

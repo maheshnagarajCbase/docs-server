@@ -75,6 +75,7 @@ Facets return an object that contains aggregated information about the documents
 There are three types of queries: Numeric Range Facet, DateTime Range Facets, and Terms Facets.
 For more information, see <<search-facets>>.
 The facets object contains the following fields:
+
 [#ul_bzz_p5z_bx]
 * total - the count of all results returned, regardless of which facet they are a part of.
 * count - the count of documents in a specific facet.
@@ -134,8 +135,6 @@ The response headers can contain the following information:
 400 Bad Request, returned if the query is invalid due to malformed JSON or invalid consistency request.
 
 412 if timeout occurs before the requested consistency requirements are met.
-
-
 
 For a complete list of status codes and information on how to interpret them, see xref:fts-response-object-schema.adoc#handling-response-status[Understanding the Query Response Status].
 

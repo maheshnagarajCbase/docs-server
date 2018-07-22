@@ -142,6 +142,7 @@ This function first converts the date in UNIX milliseconds into a date string in
 Array Functions::
 The following new Array functions are added.
 For details and examples, see xref:n1ql:n1ql-language-reference/arrayfun.adoc[Array Functions].
+
 [#ul_sjc_w4k_pz]
 * `+ARRAY_UNION(arr1, arr2, ...)+` - Returns set union of the input arrays.
 It retains only distinct array elements in unspecified order.
@@ -149,8 +150,10 @@ It retains only distinct array elements in unspecified order.
 Result includes values that are in only one of the arrays.
 * `ARRAY_SYMDIFFN(arr1, arr2)` - This function returns symmetric difference of multiple input arrays.
 Result includes values that are in odd number of the input arrays.
+
 +
 The following Array functions are updated to take variable number of arguments:
+
 [#ul_tjc_w4k_pz]
 * `ARRAY_APPEND()`
 * `ARRAY_CONCAT()`
@@ -238,7 +241,8 @@ For example, a Java developer can use the Java Collections Framework with the li
 
 *Big Data Connectors for Spark and Kafka*
 
-Spark Connector 2.0:: Support for Spark 2.0 is now available, including the *Structured Streaming API* that enables continuous analysis of operational data.
+Spark Connector 2.0::
+Support for Spark 2.0 is now available, including the *Structured Streaming API* that enables continuous analysis of operational data.
 +
 Dynamic topology is now automatically supported, making it easier to manage analytics processing in a changing production environment.
 Stream performance has been significantly improved.
@@ -257,6 +261,7 @@ Configuration and management of the Connector is made easier with a couple power
 *SSL support* can now easily be enabled simply by setting a configuration property.
 +
 Various important efficiency improvements make better use of connections and resources with the Connector.
+
 [#ul_dkc_w4k_pz]
 * The Connector now has *node partition distribution awareness*, allowing the cluster map to send DCP stream partitions to Kafka tasks, reducing socket connections.
 * The Connector now *maintains replication state* and can resume streaming from where it left off after a temporary disconnection.

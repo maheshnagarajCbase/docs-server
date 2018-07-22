@@ -244,7 +244,8 @@ REPEAT("N1QL", 3) as n1ql_3
 
 *replacement*;; A string, or any valid xref:n1ql-language-reference/index.adoc[expression] which evaluates to a string, that is the string to replace the search string with.
 
-*n*;; *Optional argument*, if unspecified then by default all instances of the search string are replaced.
+*n*;;
+*Optional argument*, if unspecified then by default all instances of the search string are replaced.
 +
 An integer, or any valid xref:n1ql-language-reference/index.adoc[expression] which evaluates to an integer, which represents the number of instances of the search string to replace.
 If a negative value is specified then all instances of the search string are replaced.
@@ -398,7 +399,8 @@ If position is negative, it is counted from the end of the string; -1 is the las
 
 *start_pos*;; An integer, or any valid xref:n1ql-language-reference/index.adoc[expression] which evaluates to an integer, that is the start position of the substring.
 
-*length*;; *Optional argument*, defaults to capturing to the end of the string if unspecified.
+*length*;;
+*Optional argument*, defaults to capturing to the end of the string if unspecified.
 +
 An integer, or any valid xref:n1ql-language-reference/index.adoc[expression] which evaluates to an integer, that is the length of the substring to extract.
 
@@ -518,7 +520,8 @@ breaks up into meaningful segments) the given input string based on specified de
 It recursively enumerates all tokens in a JSON value and returns an array of values (JSON atomic values) as the result.
 
 *Arguments*::
-*input_string*;; A valid JSON object, this can be anything: constant literal, simple JSON value, JSON key name or the whole document itself.
+*input_string*;;
+A valid JSON object, this can be anything: constant literal, simple JSON value, JSON key name or the whole document itself.
 +
 The following table lists the rules for each JSON type:
 +

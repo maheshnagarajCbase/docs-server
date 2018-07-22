@@ -97,11 +97,13 @@ This is not an exact match, see <<match-phrase-query,Match Phrases Query>> for m
 +
 Example: "[.in]``light beer``" performs a <<match-phrase-query,Match Phrases Query>> for the phrase "[.code]``light beer``".
 
-Field Scoping:: You can qualify the field for these searches by prefixing them with the name of the field separated by a colon.
+Field Scoping::
+You can qualify the field for these searches by prefixing them with the name of the field separated by a colon.
 +
 Example: [.in]`description:water` performs a <<match-query,Match Query>> for the term "[.code]``water``", in the `description` field.
 
-Required, Optional, and Exclusion:: When your query string includes multiple items, by default these are placed into the SHOULD clause of a http://www.blevesearch.com/docs/Query/#boolean:8f767fbc41af8ff1ddcf4c60ed8c0fe9[Boolean Query].
+Required, Optional, and Exclusion::
+When your query string includes multiple items, by default these are placed into the SHOULD clause of a http://www.blevesearch.com/docs/Query/#boolean:8f767fbc41af8ff1ddcf4c60ed8c0fe9[Boolean Query].
 +
 You can change this by prefixing your items with a `+` or ‘`-`’`.` `*` ‘`+`’ Prefixing with plus places that item in the MUST portion of the boolean query.
 `*` ‘`-`’ Prefixing with a minus places that item in the MUST NOT portion of the boolean query.
@@ -109,11 +111,13 @@ You can change this by prefixing your items with a `+` or ‘`-`’`.` `*` ‘`+
 Example: `+description:water -light beer` will perform a boolean query that MUST satisfy the match query for the term "[.code]``water``" in the description field, MUST NOT satisfy the match query for the term "[.code]``light``" in the default field, and SHOULD satisfy the match query for the term "[.code]``beer``" in the default field.
 Result documents satisfying the SHOULD clause will score higher than those that do not.
 
-Boosting:: You can influence the relative importance of the clauses by suffixing clauses with the `^` operator followed by a number.
+Boosting::
+You can influence the relative importance of the clauses by suffixing clauses with the `^` operator followed by a number.
 +
 Example: `description:water name:water^5` will perform match queries for "[.code]``water``" in both the `name` and `description` fields, but documents having the term in the `name` field will score higher.
 
-Numeric Ranges:: You can perform numeric ranges by using the >, >=, <, and \<= operators, followed by a numeric value.
+Numeric Ranges::
+You can perform numeric ranges by using the >, >=, <, and \<= operators, followed by a numeric value.
 +
 Example: `abv:>10` will perform an Numeric Range Query on the `abv` field for values greater than ten.
 
@@ -149,7 +153,8 @@ Most of the time users should use a Match Query instead.
 For example, a term query for "lovingli" would match documents with the term "lovingly" if they were indexed with the "[.code]``en``" analyzer.
 A term query for the  "lovingly" won’t match any documents that were indexed with the "[.code]``en``" analyzer.
 
-Phrase Query:: A phrase query searches for terms occurring in the specified position and offsets.
+Phrase Query::
+A phrase query searches for terms occurring in the specified position and offsets.
 +
 The phrase query performs an exact term match for all the phrase constituents without using an analyzer.
 If you want the phrase to be analyzed, consider using the Match Phrase Query instead.

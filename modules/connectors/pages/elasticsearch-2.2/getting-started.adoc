@@ -188,7 +188,6 @@ As indicated by the output shown above, responses to Elasticsearch queries conta
 
 * _Search-performance_.
 The `took` parameter indicates the number of milliseconds required for the search; while fields within the `_shards` object indicate how many Elasticsearch shards were available for search, how many were accessed successfully, and how many unsuccessfully.
-
 * _Items matched_.
 The `total` field indicates the total number of items.
 A `max_score` is provided, to indicate Elasticsearch’s estimate of the relevance of each search-hit.
@@ -200,7 +199,6 @@ The contents of the `_id` field, returned from an Elasticsearch query, can be us
 Ensure Couchbase is running; then, proceed as follows:
 
 . Access the Couchbase Web Console, at http://localhost:8091:/[].
-
 . Left-click on the Data Buckets tab, near the top:
 +
 [#dataBucketsTab]
