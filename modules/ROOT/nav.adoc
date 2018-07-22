@@ -249,6 +249,14 @@
 
 .INTEGRATIONS
 * xref:connectors:intro.adoc[Connector Guides]
+* xref:connectors:elasticsearch-2.2/overview.adoc[Elasticsearch Plug-in 2.2]
+ ** xref:connectors:elasticsearch-2.2/install-and-config.adoc[Installation and Configuration]
+ ** xref:connectors:elasticsearch-2.2/getting-started.adoc[Getting Started]
+ ** xref:connectors:elasticsearch-2.2/working-with-documents.adoc[Working with Documents]
+ ** xref:connectors:elasticsearch-2.2/advanced-settings.adoc[Advanced Settings]
+ ** xref:connectors:elasticsearch-2.2/performance-tuning.adoc[Performance Tuning]
+ ** xref:connectors:elasticsearch-2.2/troubleshooting.adoc[Troubleshooting]
+ ** xref:connectors:elasticsearch-2.2/release-notes.adoc[Release Notes]
 * xref:connectors:hadoop-1.2/hadoop.adoc[Hadoop Connector 1.2]
 * xref:connectors:kafka-3.1/kafka-intro.adoc[Kafka Connector 3.1]
  ** xref:connectors:kafka-3.1/quickstart.adoc[Quickstart]
