@@ -109,6 +109,7 @@ The best practice is to use automatic failover, but ensure that the cluster has 
 Continual capacity planning is critical to a healthy and correct performance of the Couchbase cluster.
 
 Handling failovers with network partitions (Split Brain Scenario):: In the event of a network partition or [.term]_split brain scenario_, where the failure of a network device causes a network to be split, the following restrictions for the automatic failover are in place at all time:
+
 * A minimum of three (3) nodes per cluster are required.
 Such sizing prevents a 2-node cluster from having both nodes fail in the face of a network partition and protects the data integrity and consistency.
 * Occurs only if exactly one (1) node is down.

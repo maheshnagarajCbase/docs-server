@@ -9,7 +9,8 @@ BASE64_ENCODE(expression):: Synonym of BASE64(), it returns the base64 encoding 
 
 BASE64_DECODE(expression):: It reverses the encoding done by the BASE64() or BASE64_ENCODING() functions.
 
-META(expression):: Returns metadata for the document _expression_.
+META(expression)::
+Returns metadata for the document _expression_.
 +
 You can use the meta() function when creating an index.
 In this context, the meta() function does not require a parameter.

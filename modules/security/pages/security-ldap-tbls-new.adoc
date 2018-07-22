@@ -23,6 +23,7 @@ Errors caused by `saslauthd`:::
 ----
 +
 Possible reason for the error: no LDAP server was installed.
+
 * Before installing the server again, you can try to resolve the issue by creating a symbolic link as follows:
 +
 ----
@@ -30,6 +31,7 @@ ln -s /var/run/saslauthd/ /var/run/sasl2
 ----
 
 * If the suggested solution doesn't work, install the server and test it again.
+
 +
 ----
 ....

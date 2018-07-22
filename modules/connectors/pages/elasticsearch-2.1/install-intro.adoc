@@ -77,7 +77,7 @@ Elasticsearch starts and runs on your machine in the background.
 +
 The following screen with a randomized name appears:
 +
-image:elasticsearch-2.1/images/elastic_head.png[,720]
+image::elasticsearch-2.1/images/elastic_head.png[,720]
 
 At this point you have the Couchbase Elasticsearch plug-in and the Elasticsearch engine installed and running.
 You can now set up the index templates for Elasticsearch and set up Couchbase Server to send data to Elasticsearch.

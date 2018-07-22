@@ -11,7 +11,8 @@ Take into account the best practices for upgrading Couchbase Server.
 
 IMPORTANT: Once a cluster is upgraded to a new version that contains new features, settings, API, and so on, you cannot add an older server version to that cluster since it will break the cluster compatibility.
 
-Supported upgrade path:: See xref:upgrade-matrix.adoc[Upgrade Matrix] for more information on the supported upgrade paths.
+Supported upgrade path::
+See xref:upgrade-matrix.adoc[Upgrade Matrix] for more information on the supported upgrade paths.
 +
 Although infrequent, there may be times when an upgrade to an intermediate version is required before getting to the latest release.
 
@@ -26,6 +27,7 @@ While upgrading, address only the nodes that support a given service to ensure t
 If the node has multiple services, also ensure that enough of such nodes remain to service requests for the different services when upgrading.
 +
 Consider the following additional points about MDS and node service types when planning your upgrade:
+
 * You cannot introduce additional node service types when adding a newly upgraded node to a cluster consisting of mixed version 3.x and 4.x nodes.
 If you attempt to upgrade a node to 4.x and introduce it back into the cluster with additional services checked prior to upgrading all nodes, you'll see a red warning similar to this:
 +
@@ -35,7 +37,8 @@ If you attempt to upgrade a node to 4.x and introduce it back into the cluster w
 +
 If you are adding additional services to the nodes while upgrading, this can affect the Server RAM Quota, and you will be prompted to adjust it.
 
-Sync Gateway:: Take special precaution when upgrading Couchbase Server if your cluster is used for replication through Sync Gateway.
+Sync Gateway::
+Take special precaution when upgrading Couchbase Server if your cluster is used for replication through Sync Gateway.
 +
 Be aware that http://developer.couchbase.com/documentation/mobile/1.1.0/get-started/sync-gateway-overview/index.html[Sync Gateway] (as of version 1.1.0) does not yet support the automatic handling of Couchbase Server cluster topology changes for related buckets.
 +

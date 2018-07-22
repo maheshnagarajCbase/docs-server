@@ -41,7 +41,8 @@ Select the services to install on this node.
 +
 *Step 2 of 5: Sample Buckets*
 +
-image:install/picts/setup-02.png[,720,align=left]
+[#image_ttt_rfk_3v]
+image::install/picts/setup-02.png[,720,align=left]
 +
 The [.ui]*Sample Buckets* panel appears where you can select the sample data buckets you want to load.
 

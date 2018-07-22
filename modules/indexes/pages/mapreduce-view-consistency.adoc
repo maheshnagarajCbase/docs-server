@@ -74,6 +74,7 @@ If re-indexing from Client 1 has completed, Client 2 gets this updated index.
 It then triggers re-indexing.
 
 Scenario 4: Sequential access::
+
 * Client 1 queries view with [.in]`stale=ok`.
 * Client 2 queries view with [.in]`stale=false`.
 * Views are updated.

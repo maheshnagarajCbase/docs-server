@@ -52,6 +52,7 @@ You can also create indexes by partitioning your indexes as shown in the followi
 Consistency::
 You can specify a query consistency flag per request, similar to the view API.
 The query consistency flag can be one of the following:
+
 * [.in]`not_bounded` (stale=ok)
 +
 This value has the same characteristics as [.in]`stale=ok` in the view API.

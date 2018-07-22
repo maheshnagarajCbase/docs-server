@@ -14,7 +14,8 @@ Querying of Couchbase data is accomplished via the following:
 
 Couchbase Server provides a number of indexes that can accelerate access for different types of queries.
 
-MapReduce view indexer:: This incremental view indexer takes in a user defined map and reduce function and incrementally processes each mutation on the bucket and calculates a view.
+MapReduce view indexer::
+This incremental view indexer takes in a user defined map and reduce function and incrementally processes each mutation on the bucket and calculates a view.
 +
 Views are typically useful for interactive reporting type queries where complex data processing and custom data reshaping is necessary.
 Incremental MapReduce views are part of the data service and are partitioned across the nodes in the same way as the data.
@@ -25,7 +26,8 @@ N1QL also allows access to MapReduce views, but only allows a static MapReduce f
 +
 For more information about MapReduce views, see xref:incremental-map-reduce-views.adoc[Incremental MapReduce Views].
 
-Spatial view indexer:: Spatial view indexer takes in a map function that supports processing geographic information and allows multidimensional bounding box queries for location aware applications.
+Spatial view indexer::
+Spatial view indexer takes in a map function that supports processing geographic information and allows multidimensional bounding box queries for location aware applications.
 +
 Much like the MapReduce views, spatial views incrementally process each mutation on the bucket and calculate a spatial view.
 Spatial views are part of the data service and are partitioned across the nodes in the same way as the data.

@@ -17,7 +17,8 @@ Start the container::
 docker run -d -v ~/couchbase:/opt/couchbase/var -p 8091:8091 couchbase/server
 ----
 
-Verify container start:: The docker run command above will return a container ID, for example, `1163fd8df.` Use the container ID to view the logs:
+Verify container start::
+The docker run command above will return a container ID, for example, `1163fd8df.` Use the container ID to view the logs:
 
  $ docker logs 1163fd8df
  Starting Couchbase Server -- Web UI available at http://<ip>:8091
