@@ -33,7 +33,7 @@ To find the number of items in a bucket, in the Couchbase web console click [.ui
 The number of documents for a named bucket appears under `Item Count`.
 This example shows 7303 items in the `beer-sample` bucket:
 +
-image:elasticsearch-2.1/images/elastic_montor_xdcr.png[,720]
+image::elasticsearch-2.1/images/elastic_montor_xdcr.png[,720]
 +
 To get the number of documents indexed by Elasticsearch, send an HTTP request (be sure to substitute the correct index-name):
 +

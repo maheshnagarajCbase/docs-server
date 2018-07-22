@@ -11,7 +11,8 @@ In the Cluster tab, the following sections can be edited or viewed:
 
 == Configure Cluster
 
-Cluster Name:: The name that was given during the initial setup, which you can edit in the UI, change with the CLI command or with a call to the REST API:
+Cluster Name::
+The name that was given during the initial setup, which you can edit in the UI, change with the CLI command or with a call to the REST API:
 +
 ----
 couchbase-cli setting-cluster -c localhost -u Admin -p Pass --cluster-name="New Cluster Name"

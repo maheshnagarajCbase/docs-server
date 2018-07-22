@@ -235,6 +235,7 @@ Each node in the cluster has a thread pool that is shared across multiple vBucke
 Based on the number of CPU cores on a node, the database engine spawns and allocates threads when a node instance starts up.
 +
 Using a shared thread pool provides the following benefits:
+
 * Better parallelism for worker threads with more efficient I/O resource management.
 * Better system scalability with more buckets being serviced with fewer worker threads.
 * Availability of task priority if the disk bucket I/O priority setting is used.

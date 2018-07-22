@@ -43,20 +43,24 @@ For more information, see xref:data-service-core-data-access.adoc[Data service a
 Indexing and index service::
 Indexes provide faster access to data in a bucket.
 Couchbase Server supports the following three indexers:
+
 * Incremental Map-Reduce View indexer
 * Global Secondary Index (GSI) indexer
 * Spatial Views indexer
 
 +
 Using these indexers, you can create two types of indexes:
+
 * _Primary indexes_ which index all the keys in a given bucket and are used when a secondary index cannot be used to satisfy a query and a full bucket scan is required.
 * _Secondary indexes_ can index a subset of the items in a given bucket and are used to make queries targeting a specific subset of fields more efficient.
+
 +
 In Couchbase Server, Views (both Incremental Map-Reduce Views and Spatial Views) are placed within the data service as they are partition-aligned to the core data distribution.
 The Global Secondary Indexes (GSI) are deployed on nodes hosting the index service and can be independently partitioned for better performance and throughput with N1QL queries.
 For more information about indexers and index services, see xref:views-indexing-index-service.adoc[Views, indexing, and index services].
 
 Querying data and query service:: You can retrieve data in a number of ways in Couchbase Server depending on the type of query.
+
 * Querying with keys
 +
 Data service and core data operations provide a key based lookup.

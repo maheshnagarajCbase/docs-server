@@ -5,7 +5,8 @@ Meta functions retrieve information about the document or item as well as perfor
 
 BASE64(expression):: Returns base64 encoding of _expression_.
 
-META(expression):: Returns metadata for the document _expression_.
+META(expression)::
+Returns metadata for the document _expression_.
 +
 You can use the meta() function when creating an index.
 In this context, the meta() function does not require a parameter.

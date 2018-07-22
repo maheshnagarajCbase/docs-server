@@ -26,7 +26,8 @@ Username:: The username of the administrator account of the node to be added.
 
 Password:: The password of the administrator account of the node to be added.
 
-Services:: By checking all appropriate check boxes (Data, Query, and Index), you can define what kind of xref:architecture:services-archi-multi-dimensional-scaling.adoc#concept_v4w_zmj_vs[services] will be provided on the
+Services::
+By checking all appropriate check boxes (Data, Query, and Index), you can define what kind of xref:architecture:services-archi-multi-dimensional-scaling.adoc#concept_v4w_zmj_vs[services] will be provided on the
 +
 server node that's been added.
 You can add one, two, or all three services.

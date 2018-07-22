@@ -80,17 +80,20 @@ image::setup-03.png[,720,align=left]
 
 For the default bucket, you can configure the following:
 
-Bucket Settings:: Bucket Name: The name of the Default bucket is pre-set.
+Bucket Settings::
+Bucket Name: The name of the Default bucket is pre-set.
 +
 Bucket Type: Couchbase (preset) or Memcached
 
-Memory Size:: Per Node RAM Quota
+Memory Size::
+Per Node RAM Quota
 +
 Total bucket size
 +
 Cache Metadata: Value Ejection (preset) or Full Ejection
 
-Replicas:: Enable (preset): select the number of replica backup copies.
+Replicas::
+Enable (preset): select the number of replica backup copies.
 +
 View index replicas
 

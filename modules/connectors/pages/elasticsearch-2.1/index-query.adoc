@@ -25,7 +25,7 @@ This is the Elasticsearch cluster where Couchbase Server will send copies of doc
 +
 Be aware that Elasticsearch listens on port 9091, which is not a standard port for those familiar with Couchbase Server.
 +
-image:elasticsearch-2.1/images/create_cluster_ref.png[,500,align=left]
+image::elasticsearch-2.1/images/create_cluster_ref.png[,500,align=left]
 +
 The reference to the new replication will appear in the Remote Clusters list under the XDCR Tab.
 

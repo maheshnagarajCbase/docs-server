@@ -35,13 +35,15 @@ sudo apt-get install sasl2-bin
 
 Depending on the system, the `saslauthd` file is configured as follows:
 
-Red Hat Enterprise Linux, CentOS, and Amazon Linux AMI:: If you are using a system that configures `saslauthd` with the file [.path]_/etc/sysconfig/saslauthd_, such as Red Hat Enterprise Linux, CentOS, and Amazon Linux AMI, set the mechanism `MECH` to `ldap`:
+Red Hat Enterprise Linux, CentOS, and Amazon Linux AMI::
+If you are using a system that configures `saslauthd` with the file [.path]_/etc/sysconfig/saslauthd_, such as Red Hat Enterprise Linux, CentOS, and Amazon Linux AMI, set the mechanism `MECH` to `ldap`:
 +
 ----
 MECH=ldap
 ----
 
-Ubuntu:: If you are using a system that configures `saslauthd` with the file [.path]_/etc/default/saslauthd_, such as Ubuntu, set the `MECHANISMS` option to `ldap`:
+Ubuntu::
+If you are using a system that configures `saslauthd` with the file [.path]_/etc/default/saslauthd_, such as Ubuntu, set the `MECHANISMS` option to `ldap`:
 +
 ----
 MECHANISMS=ldap

@@ -69,7 +69,8 @@ To start and stop Couchbase Server using net:
  net stop CouchbaseServer
 ----
 
-Start and stop using Couchbase-supplied `.bat` scripts:: The Couchbase-supplied start and stop scripts are provided in the [.path]_\bin_ directory of the standard installation:
+Start and stop using Couchbase-supplied `.bat` scripts::
+The Couchbase-supplied start and stop scripts are provided in the [.path]_\bin_ directory of the standard installation:
 +
 To start and stop Couchbase Server, use the scripts located in:
 +

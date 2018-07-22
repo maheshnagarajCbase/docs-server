@@ -63,6 +63,7 @@ Replication::
 Replication is the process of creating additional copies of active data on alternate nodes.
 Replication is at the heart of the Couchbase Server architecture enabling high availability, disaster recovery, and data exchange with other big data products.
 It is the core enabler for
+
 * Moving data between nodes to maintain replicas.
 * Geo-distribution of data with cross datacenter replication (XDCR)
 * Queries with incremental map-reduce and spatial views

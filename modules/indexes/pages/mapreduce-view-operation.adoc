@@ -11,6 +11,7 @@ All views within Couchbase Server operate as follows:
 * *Views are scoped within a design document, with each design document attached to a single bucket.* A view can only access the information within the corresponding bucket and cannot access or aggregate data from multiple buckets.
 +
 Views are created within design documents and each design document exists within the corresponding named bucket.
+
  ** Each design document can have 0-n views.
  ** Each bucket can contain 0-n design documents.
 
@@ -83,16 +84,19 @@ Each new access to the view only processes the documents that have been added, u
 +
 In practice, this means that views are entirely incremental in nature.
 Updates to views are typically quick as they only update changed documents.
+
  ** Because of the incremental nature of the view update process, information is only appended to the index stored on disk.
 This helps ensure that the index is updated efficiently.
 Compaction (including auto-compaction) optimizes the index size on disk and the index structure.
 An optimized index is more efficient to update and query.
  ** The entire view is recreated when the view definition changes.
 Because this has a detrimental effect on live data, only development views can be modified.
+
 +
 Views are organized by design document, and indexes are created according to the design document.
 Changing a single view in a design document with multiple views invalidates all the views (and stored indexes) within the design document, and all the corresponding views defined in that design document must be rebuilt.
 This increases the I/O across the cluster while the index is rebuilt, in addition to the I/O required for any active production views.
+
  ** You can choose to update the result set from a view before you query it or after you query.
 Or you can choose to retrieve the existing result set from a view when you query the view.
 In this case the results are possibly out of date, or stale.

@@ -22,7 +22,8 @@ Couchbase Server also provides tunable durability options to store data in the R
 Storing data in the RAM of multiple nodes protects against node failures and also provides a fast and durable way to store data.
 Storing data on disk can be slow as the operational latency depends on the disk subsystem and typically disk subsystems are much slower than memory access.
 
-Consistency:: When retrieving data using a key, Couchbase Server database engine provides full consistency (sometimes referred to as read-your-own-write semantics) by ensuring access to the master vBucket or optionally allowing access to eventually consistent replica vBuckets for reads (also known as replica reads).
+Consistency::
+When retrieving data using a key, Couchbase Server database engine provides full consistency (sometimes referred to as read-your-own-write semantics) by ensuring access to the master vBucket or optionally allowing access to eventually consistent replica vBuckets for reads (also known as replica reads).
 +
 Items are organized into buckets, which provide grouping of items (keys and values).
 Buckets govern resource allocation and usage, high availability settings, and security for the group of items.
@@ -63,6 +64,7 @@ If you know the key used to store a particular value, then you can use the memca
 You can also perform bulk retrieve operations.
 +
 There are two main ways to retrieve data without referencing keys:
+
 * Use N1QL to submit a SQL-like query to retrieve your data.
 +
 NOTE: You must enable Query Service to run N1QL queries.

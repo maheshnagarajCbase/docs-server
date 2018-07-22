@@ -26,6 +26,7 @@ You can use a GeoJSON geometry in a key.
 However, it must be the first element of the array.
 The bounding box is automatically calculated and used as the range.
 Couchbase Server supports the following GeoJSON objects:
+
  ** Point
  ** MultiPoint
  ** LineString
