@@ -59,28 +59,28 @@ Note that buckets have three independently access-controllable features, each of
 
  ** *Settings*: Includes
 
-Bucket Type:: 
+Bucket Type::
 
 
-Ejection Method:: 
+Ejection Method::
 
 
-Conflict Resolution method:: 
+Conflict Resolution method::
 
 
-Protocol Port:: 
+Protocol Port::
 
 
-Auto-Compaction:: 
+Auto-Compaction::
 
 
-Flush:: 
+Flush::
 
 
-compact:: 
+compact::
 
 
-delete:: 
+delete::
 
 
  ** *Statistics*: Includes _ops_, _gets_, _sets_, and _deletes_ per second.
