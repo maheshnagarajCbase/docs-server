@@ -142,17 +142,20 @@ image::setup-03.png[,720,align=left]
 
 For the default bucket, look also at the [.ui]*What's this?* pop-ups and configure the following:
 
-Bucket Settings:: Bucket Name: The name of the Default bucket is pre-set.
+Bucket Settings::
+Bucket Name: The name of the Default bucket is pre-set.
 +
 Bucket Type: Couchbase (preset) or Memcached
 
-Memory Size:: Per Node RAM Quota
+Memory Size::
+Per Node RAM Quota
 +
 Total bucket size
 +
 Cache Metadata: Value Ejection (preset) or Full Ejection
 
-Replicas:: Enable (preset): select the number of replica backup copies.
+Replicas::
+Enable (preset): select the number of replica backup copies.
 +
 View index replicas
 
@@ -192,7 +195,8 @@ To secure the server, you must create an administrative account and then use the
 
 The starting screen for the new Couchbase Server will appear.
 
-image:setup-06.png[,720,align=left]
+[#image_rhb_3sy_dt]
+image::setup-06.png[,720,align=left]
 
 Check the installation for example, whether you have properly installed the travel-sample application under [.ui]*Data buckets*.
 

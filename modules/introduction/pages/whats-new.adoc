@@ -85,6 +85,7 @@ It returns an empty array if there are no common array elements.
 For more information, see xref:n1ql:n1ql-language-reference/arrayfun.adoc#fn-array-intersect[ARRAY_INTERSECT()].
 
 Simplified Dynamic Object Construction:: N1QL simplifies dynamic object creation in the queries.
+
 [#ul_z12_cz5_lx]
 * When constructing objects in a N1QL query, the names of fields in the name-value pairs can be dynamically generated.
 Starting from release 4.5.1, both the names and values can be arbitrary expressions.

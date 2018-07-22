@@ -64,6 +64,7 @@ GET http://localhost:8093/admin/vitals
 This catalog lists all currently executing active requests or queries.
 
 Get Active Requests::
+To get all active requests, use:
 +
 .REST
 ----
@@ -73,7 +74,7 @@ GET  http://localhost:8093/admin/active_requests
 .N1QL
 ----
 SELECT * FROM system:active_requests;
----- To get all active requests, use:
+----
 +
 To get a specific active request, use:
 +
@@ -113,7 +114,8 @@ cbq> SELECT * FROM system:active_requests;
 }
 ----
 
-Terminate an Active Request:: The DELETE command can be used to terminate an active request, for instance, a non-responding or a long-running query.
+Terminate an Active Request::
+The DELETE command can be used to terminate an active request, for instance, a non-responding or a long-running query.
 +
 .REST
 ----
@@ -132,6 +134,7 @@ This catalog provides data about the known prepared statements and their state i
 For each prepared statement, this catalog provides information such as name, statement, query plan, last use time, number of uses, and so on.
 
 Get Prepared Statements::
+To get a list of all known prepared statements, use:
 +
 .REST
 ----
@@ -142,7 +145,7 @@ GET http://localhost:8093/admin/prepareds
 ----
 SELECT projection-list-expression FROM system:prepareds
               [ WHERE predicate-expression ]
----- To get a list of all known prepared statements, use:
+----
 +
 To get information about a specific prepared statement, use:
 +
@@ -174,6 +177,7 @@ SELECT * FROM system:prepareds
 ----
 
 Delete Prepared Statement::
+The DELETE command can be used to delete a prepared statement.
 +
 .REST
 ----
@@ -184,7 +188,7 @@ DELETE http://localhost:8093/admin/prepareds/prepared-statement-name
 ----
 DELETE FROM system:prepareds
 WHERE name = "p1";
----- The DELETE command can be used to delete a prepared statement.
+----
 +
 To delete all the known prepared statements, use
 +
@@ -212,6 +216,7 @@ For Couchbase Server version 4.5, the following is true:
 ====
 
 Get Completed Requests::
+To get a list of the completed requests, use:
 +
 .REST
 ----
@@ -221,7 +226,7 @@ GET http://localhost:8093/admin/completed_requests
 .N1QL
 ----
 SELECT * FROM system:completed_requests;
----- To get a list of the completed requests, use:
+----
 +
 .Example
 ----
@@ -257,7 +262,8 @@ cbq> SELECT * FROM system:completed_requests LIMIT 1;
 }
 ----
 
-Purging the Completed Requests:: To purge the completed requests for a given time period, use
+Purging the Completed Requests::
+To purge the completed requests for a given time period, use
 +
 .N1QL
 ----
