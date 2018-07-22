@@ -359,10 +359,12 @@
 .INTEGRATIONS
 * xref:connectors:intro.adoc[Connector Guides]
 * xref:connectors:elasticsearch/overview.adoc[Elasticsearch Plug-in]
+ ** xref:connectors:elasticsearch/getting-started.adoc[Getting Started]
  ** xref:connectors:elasticsearch/working-with-documents.adoc[Working with Documents]
  ** xref:connectors:elasticsearch/advanced-settings.adoc[Advanced Settings]
  ** xref:connectors:elasticsearch/performance-tuning.adoc[Performance Tuning]
  ** xref:connectors:elasticsearch/troubleshooting.adoc[Troubleshooting]
+ ** xref:connectors:elasticsearch/release-notes.adoc[Release Notes]
 * xref:connectors:hadoop-1.2/hadoop.adoc[Hadoop Connector]
 * xref:connectors:kafka/kafka-intro.adoc[Kafka Connector]
 * xref:connectors:spark-2.2/spark-intro.adoc[Spark Connector 2.2]
