@@ -52,7 +52,7 @@ Reset the automatic failover only:
 +
 or
 
-* if the node has the xref:architecture:data-service-core-data-access.adoc#concept_tcf_byn_vs[Data service] running and each bucket has additional replicas beyond the existing ones to handle another node auto-failover.
+* if the node has the xref:architecture:data-service-core-data-access.adoc[Data service] running and each bucket has additional replicas beyond the existing ones to handle another node auto-failover.
 
 You can reset this counter with the Couchbase Web Console by clicking on the [.ui]*Reset Quota*.
 You can also reset the counter using the REST API:

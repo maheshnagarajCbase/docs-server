@@ -56,4 +56,4 @@ To move a server from one group to another using the Web Console:
 Once you select the new group, the [.ui]*pending move to <Group Name>* message appears.
 . Click [.ui]*Apply Changes* to confirm the server move.
 . Make sure to [.ui]*Rebalance* from the [.ui]*Servers* page.
-For more information on how to rebalance, see xref:rebalance.adoc#topic_xsx_1mn_vs[Rebalancing a Cluster].
+For more information on how to rebalance, see xref:rebalance.adoc[Rebalancing a Cluster].

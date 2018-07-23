@@ -53,7 +53,7 @@ For more information about server groups, see xref:manage-groups.adoc#mangage-se
 | The password of the administrator account of the node to be added.
 
 | Services
-| Select the appropriate check box to define the kind of xref:architecture:services-archi-multi-dimensional-scaling.adoc#concept_v4w_zmj_vs[services] will be provided on the server node that's been added.
+| Select the appropriate check box to define the kind of xref:architecture:services-archi-multi-dimensional-scaling.adoc[services] will be provided on the server node that's been added.
 You can add one, two, or all four services.
 The options are: Data Service, GSI Service, FTS Service, and Query Service.
 |===

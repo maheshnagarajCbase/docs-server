@@ -73,14 +73,14 @@ See and for details.
 *Install the travel-sample Bucket*
 
 Install the sample bucket `travel-sample` before proceeding to run the examples in this topic.
-See xref:settings:install-sample-buckets.adoc#topic_jqr_1rn_vs[Install Sample Buckets] for information on how to install the sample buckets and xref:2.4@nodejs-sdk:common:sample-application.adoc#story-h2-3[Sample Application] for details about the travel-sample data model.
+See xref:settings:install-sample-buckets.adoc[Install Sample Buckets] for information on how to install the sample buckets and xref:2.4@nodejs-sdk:common:sample-application.adoc#story-h2-3[Sample Application] for details about the travel-sample data model.
 
 *Security Requirements*
 
 You should have read-write permission to the bucket, to be able to insert documents into a bucket.
 Any user who has the bucket credentials or any Couchbase administrator should be able to insert documents into a bucket.
 This includes the bucket administrator for the specified bucket, the cluster administrator, and the full administrator roles.
-See xref:security:concepts-rba.adoc#concept_ntl_jph_hr[RBAC for Administrators] for details about access privileges for various administrators.
+See xref:security:concepts-rba.adoc[RBAC for Administrators] for details about access privileges for various administrators.
 
 WARNING: You cannot insert documents into a SASL bucket if you have a read-only role for the SASL bucket.
 
@@ -406,7 +406,7 @@ See <<Example_15_copy_bucket,Example 15>> to use the INSERT statement to copy on
 
 select;;
 SELECT statements let you retrieve data from specified keyspaces.
-For details, see xref:n1ql-language-reference/select-syntax.adoc#topic_vr1_zzk_dx[SELECT Syntax].
+For details, see xref:n1ql-language-reference/select-syntax.adoc[SELECT Syntax].
 
 returning-clause::
 Specifies the fields that must be returned as part of the results object.
@@ -1071,7 +1071,7 @@ Use the following command to retrieve the indexer settings:
 curl -X GET http://localhost:9102/settings -u Administrator:password
 ----
 +
-See xref:n1ql-rest-api/extimeout.adoc#concept_qm1_2tx_nq[Request Timeout] for more information on timeouts.
+See xref:n1ql-rest-api/extimeout.adoc[Request Timeout] for more information on timeouts.
 
 * When inserting multiple documents, no cleanup or rollback is done for the already inserted documents if the INSERT operations hits an error.
 This means, when you are inserting 10 documents, if the INSERT operation fails when inserting the 6th document, the operator quits and exits.

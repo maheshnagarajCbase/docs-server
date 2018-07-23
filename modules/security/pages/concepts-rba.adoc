@@ -8,7 +8,7 @@ With RBAC, each administrator can perform only a well-defined fixed set of opera
 RBAC can be configured for internal or external users, and a userid can be mapped by the Full Administrator to one or more fixed administrative roles.
 These roles contain a defined set of duties that can be performed in the system: users have no other administrative access except for the one defined in their role-assignment.
 
-Full administrators in Couchbase can manage user roles using the Couchbase CLI tools (as described in xref:cli:cbcli/couchbase-cli-admin-role-manage.adoc#couchbasecliadminrolemanage1.idm31783028880[admin-role-manage]) or REST API (as described in xref:rest-api:rbac.adoc#topic_d3q_mt3_fw[Role Based Admin Access (RBAC)]).
+Full administrators in Couchbase can manage user roles using the Couchbase CLI tools (as described in xref:cli:cbcli/couchbase-cli-admin-role-manage.adoc#couchbasecliadminrolemanage1.idm31783028880[admin-role-manage]) or REST API (as described in xref:rest-api:rbac.adoc[Role Based Admin Access (RBAC)]).
 
 == Fixed Administrative Roles in Couchbase
 

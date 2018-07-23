@@ -37,7 +37,7 @@ Since the last Developer Preview, we’ve improved performance and added various
 * Up to 30x performance improvement due to many enhancements, small and large.
 See <<performance-scale-ha>> for details.
 
-For more information, see xref:fts:full-text-intro.adoc#topic_kp4_qth_t5[Full Text Search: Fundamentals].
+For more information, see xref:fts:full-text-intro.adoc[Full Text Search: Fundamentals].
 
 *N1QL Enhancements*
 
@@ -69,7 +69,7 @@ All monitoring information is also captured in various system keyspaces.
 This helps diagnosing troubled queries and understanding performance profile and insights.
 +
 New query parameters are provided to enable, disable, and control the monitoring capabilities, and can be configured for a query engine or individual queries.
-See xref:monitoring:monitoring-n1ql-query.adoc#topic_nvs_ghr_dz[Monitoring N1QL Queries] for details.
+See xref:monitoring:monitoring-n1ql-query.adoc[Monitoring N1QL Queries] for details.
 
 *Indexing and Querying on Meta() fields*::
 Couchbase Server 5.0 adds the capability to index the document metadata fields `expiration` and `cas`.
@@ -112,13 +112,13 @@ Couchbase Server’s key high availability features is automatic failover.
 Automatic failover happens within the cluster after a minimum timeout is met and that timeout is required to identify the failure node and start the auto-failover process.
 With the new robust failure detection in this version, the cluster manager now can reduce the timeout from current minimum of 30 seconds to lower than 10 seconds.
 Hence the total downtime experienced by the application could be reduced significantly.
-For more information, see xref:clustersetup:automatic-failover.adoc#topic_fcf_chm_zs[Automatic Failover].
+For more information, see xref:clustersetup:automatic-failover.adoc[Automatic Failover].
 
 *Ephemeral Buckets*::
 With ephemeral buckets in Couchbase Server 5.0, you can reduce the total cost of ownership (TCO) by eliminating the disk component of your buckets, and get highly consistent in-memory performance without disk-based fluctuations.
 You also get faster node warmups, rebalances and restarts, as well as cheaper geo-replication.
 Ephemeral buckets are designed to be used as an alternative to Couchbase buckets whenever persistence is not required, for example, when repeated disk access involves too much overhead.
-For more information, see xref:architecture:core-data-access-buckets.adoc#concept_qqk_4r2_xs[Ephemeral buckets].
+For more information, see xref:architecture:core-data-access-buckets.adoc[Ephemeral buckets].
 
 Full Text Search Performance Improvements::
 The performance of Full text search (FTS) has improved by an order of magnitude due to many enhancements, small and large.
@@ -146,7 +146,7 @@ For details, see xref:admin:ui-intro.adoc#topic1980[Couchbase Web Console].
 *CBImport & CBExport Tools*::
 This version delivers the first production release of the high performant data tools.
 `cbimport` imports data from a CSV file or a JSON document, and `cbexport` exports data as a JSON document.
-For more information, see xref:tools:cbimport.adoc#topic_fsg_5d3_vx[cbimport] and xref:tools:cbexport.adoc#topic_lt4_wd3_vx[cbexport].
+For more information, see xref:tools:cbimport.adoc[cbimport] and xref:tools:cbexport.adoc[cbexport].
 
 *Query Workbench Enhancements*::
 [#ul_n1f_npd_wz]
@@ -156,7 +156,7 @@ The Query Workbench now has an advanced feature that is visual query plan.
 Each time a query is executed, an explain command is automatically run in the background to retrieve the query plan for that query.
 +
 The Query History navigation has improved which allows you to view history of all executed queries, search the query history, delete a specific entry, or delete the entire query history.
-For more information, see xref:tools:query-workbench.adoc#topic_prr_nyh_t5[Query Workbench].
+For more information, see xref:tools:query-workbench.adoc[Query Workbench].
 
 * *Query Monitoring*
 +
@@ -164,7 +164,7 @@ This release introduces a new feature that allows you to monitor the current sta
 You can view the different types queries that are Active (currently running), Completed (recently run), and Prepared (aggregate statistics for prepared queries).
 Statistics information for the query service is displayed at the bottom of the page.
 Different information may be shown depending on the user’s access control role.
-For more information, see xref:tools:query-monitoring.adoc#topic_wk1_5v3_t5[Query Monitoring].
+For more information, see xref:tools:query-monitoring.adoc[Query Monitoring].
 
 [#mobile-server-interop]
 == Mobile Server Interoperability
@@ -217,7 +217,7 @@ First stable release of 2.1.x series brings various improvements in the followin
 * Internals reworked for Structured Streaming, Adaptations for dcp-client 0.8.0
 
 +
-For more information, see xref:connectors:spark-2.1/spark-intro.adoc#concept_l11_ppm_pp[Spark Connector 2.1].
+For more information, see xref:connectors:spark-2.1/spark-intro.adoc[Spark Connector 2.1].
 
 *Talend Connector [Developer Preview]*::
 Developer Preview of a newly rebuilt Talend connector is now available for Talend Open Studio 6.3.1.
