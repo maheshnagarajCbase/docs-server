@@ -1,5 +1,5 @@
 [#reference_kqj_dp5_ls]
-= [.cmd]`setting-autofailover`
+= setting-autofailover
 
 [abstract]
 Configures the auto-failover settings.

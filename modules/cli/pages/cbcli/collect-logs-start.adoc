@@ -1,5 +1,5 @@
 [#reference_xd5_mm5_ls]
-= [.cmd]`collect-logs-start`
+= collect-logs-start
 
 [abstract]
 Starts the cluster-wide log collection.

@@ -1,5 +1,5 @@
 [#reference_yg2_2mn_ls]
-= [.cmd]`bucket-delete`
+= bucket-delete
 
 [abstract]
 Deletes an existing bucket.

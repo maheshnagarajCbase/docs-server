@@ -1,5 +1,5 @@
 [#reference_jhf_jp5_ls]
-= [.cmd]`setting-ldap`
+= setting-ldap
 
 [abstract]
 Set the Lightweight Directory Access Protocol (LDAP) settings.

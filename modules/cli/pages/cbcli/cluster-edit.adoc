@@ -1,5 +1,5 @@
 [#reference_atj_tn5_ls]
-= [.cmd]`cluster-edit`
+= cluster-edit
 
 [abstract]
 Modifies cluster settings.

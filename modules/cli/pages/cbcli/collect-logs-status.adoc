@@ -1,5 +1,5 @@
 [#reference_ufl_rm5_ls]
-= [.cmd]`collect-logs-status`
+= collect-logs-status
 
 [abstract]
 Shows the status of the cluster-wide log collection.
