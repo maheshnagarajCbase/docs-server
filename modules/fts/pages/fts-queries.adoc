@@ -140,7 +140,7 @@ For a complete list of status codes and information on how to interpret them, se
 
 | Cache-Control
 | no-cache
-| 
+|
 
 | Content-Type
 | application/json; version=1.0.0
@@ -152,7 +152,7 @@ For a complete list of status codes and information on how to interpret them, se
 
 | Transfer-Encoding
 | chunked
-| 
+|
 
 | X-Content-Type-Options
 | nosniff
