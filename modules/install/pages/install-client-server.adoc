@@ -4,7 +4,7 @@
 [abstract]
 Couchbase Server client SDKs are the preferred deployment option.
 
-If your language and development environment supports a smart client library, xref:sdks:intro.adoc#concept_yqn_tjg_ps[Couchbase Server client SDKs] are the preferred deployment option.
+If your language and development environment supports a smart client library, xref:sdks:intro.adoc[Couchbase Server client SDKs] are the preferred deployment option.
 If this is not the case, use the Couchbase Server client-side Moxi (Memcached Proxy) configuration for the best performance and functionality.
 If your existing application supports Memcached, Moxi can be deployed and facilitate use of a Couchbase Server cluster with all the power and functionality that Couchbase Server is known for.
 

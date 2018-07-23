@@ -5,8 +5,8 @@
 Developing against a database involves storing items within the database and retrieving them.
 Storing and retrieving data is collectively referred to as data access.
 
-In a production environment, you access data by using a Couchbase xref:sdk-overview.adoc#concept_r52_xgm_zs[SDK].
-In addition, xref:cli-overview.adoc#concept_lg3_dhm_zs[command-line] and xref:webui.adoc#concept_j3z_zhm_zs[web-based] tools are available to access data during development and testing.
+In a production environment, you access data by using a Couchbase xref:sdk-overview.adoc[SDK].
+In addition, xref:cli-overview.adoc[command-line] and xref:webui.adoc[web-based] tools are available to access data during development and testing.
 
 == CRUD operations
 
@@ -19,7 +19,7 @@ CRUD stands for create, read, update, and delete:
 * **U**pdate: when data is modified to reflect a change in the state represented by the data
 * **D**elete: when the data is no longer needed
 
-The following examples use the xref:cli-overview.adoc#concept_lg3_dhm_zs[command line] interface to demonstrate the basic CRUD operations.
+The following examples use the xref:cli-overview.adoc[command line] interface to demonstrate the basic CRUD operations.
 If you don’t know how to use or install the command line client, don’t worry - we’ll walk through the steps in the next chapter.
 
 == Creating documents

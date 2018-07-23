@@ -9,7 +9,7 @@ See xref:install-platforms.adoc#topic1634[Supported Platforms] for details.
 
 == Disable Transparent Huge Pages (THP)
 
-To disable THP, see xref:thp-disable.adoc#topic_wmm_1ps_pv[Transparent Huge Pages (THP)].
+To disable THP, see xref:thp-disable.adoc[Transparent Huge Pages (THP)].
 
 == Complete the Installation
 

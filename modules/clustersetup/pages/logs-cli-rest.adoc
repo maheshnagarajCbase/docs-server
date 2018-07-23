@@ -10,9 +10,9 @@ You can  use the CLI command xref:cli:cbcollect-info-tool.adoc#cbcollect-info-to
 
 The other three CLI commands you can use to start and stop log collection and to read the log collection status:
 
-* xref:cli:cbcli/collect-logs-start.adoc#reference_xd5_mm5_ls[collect-logs-start]
-* xref:cli:cbcli/collect-logs-stop.adoc#reference_cqx_4m5_ls[collect-logs-stop]
-* xref:cli:cbcli/collect-logs-status.adoc#reference_ufl_rm5_ls[collect-logs-status]
+* xref:cli:cbcli/collect-logs-start.adoc[collect-logs-start]
+* xref:cli:cbcli/collect-logs-stop.adoc[collect-logs-stop]
+* xref:cli:cbcli/collect-logs-status.adoc[collect-logs-status]
 
 == Using REST API
 
@@ -20,4 +20,4 @@ The Logs REST API provides the REST API endpoints for retrieving log and diagnos
 
 To retrieve log information use the `/diag` and `/sasl_logs` xref:rest-api:rest-logs-api.adoc#reference_rest_logs[REST endpoints].
 
-To create client logs use xref:rest-api:rest-client-logs.adoc#reference_gv3_fs4_hp[client logs].
+To create client logs use xref:rest-api:rest-client-logs.adoc[client logs].

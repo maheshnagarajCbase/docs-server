@@ -13,7 +13,7 @@ If you remove a node that is running one of the services, it will have the follo
 This service does not support rebalance.
 When a node running the index service is removed or failed over, indexes that reside on the node are not moved to another node after rebalancing.
 These indexes are no longer available for queries and are dropped.
-Fore more details see xref:install:services-upgrade.adoc#topic_gmm_mz5_c5[Upgrading Services from Version 4.0 to the Latest].
+Fore more details see xref:install:services-upgrade.adoc[Upgrading Services from Version 4.0 to the Latest].
 * Query service: loss of query capability in that node.
 ====
 
@@ -23,7 +23,7 @@ You must perform a rebalance operation to complete the removal process.
 Once a node is removed, it is no longer part of the cluster and can be switched off, updated, or upgraded.
 
 IMPORTANT: Before you remove a node from the cluster, ensure that you have the capacity within the remaining nodes to handle the workload.
-For the best results, use the xref:install:upgrade-swap.adoc#topic_dgv_nky_p4[swap rebalance.]
+For the best results, use the xref:install:upgrade-swap.adoc[swap rebalance.]
 
 [WARNING]
 ====

@@ -9,7 +9,7 @@ In Couchbase clients can verify their identity by providing a secret predetermin
 Passwords for the Full Administrators are set up during the initial installation of Couchbase Server.
 See xref:install:init-setup.adoc#setpass[Step 5: Configure server]for details.
 
-Check also the Security Best Practices for setting xref:security-passwords.adoc#topic_iyx_5ps_lq[Couchbase passwords].
+Check also the Security Best Practices for setting xref:security-passwords.adoc[Couchbase passwords].
 
 Resetting the Administrative Password:: The administrative password can be reset using the password reset tool: xref:cli:cbreset_password-tool.adoc#cbreset_password_tool[[.cmd]`cbreset_password`]
 

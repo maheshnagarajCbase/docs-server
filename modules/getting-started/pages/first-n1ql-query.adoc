@@ -65,7 +65,7 @@ SELECT name FROM `beer-sample` WHERE  brewery_id ="mishawaka_brewing";
 After you install Couchbase Server, you can start using N1QL right away.
 You can make N1QL requests in your applications or run N1QL queries against your database through the interactive query shell called [.cmd]`cbq`.
 
-To learn how to send N1QL queries from an application, read the N1QL topic in the xref:sdks:intro.adoc#concept_yqn_tjg_ps[SDK] for the language you are using.
+To learn how to send N1QL queries from an application, read the N1QL topic in the xref:sdks:intro.adoc[SDK] for the language you are using.
 
 [#run-cbq]
 To run [.cmd]`cbq` from a node in your Couchbase installation:

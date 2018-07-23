@@ -10,7 +10,7 @@ There are two types of Couchbase administrators: full administrators and read-on
 
 Full Couchbase administrator::
 The initial built-in full Couchbase administrator authenticated during Couchbase Server installation has the full access and privileges to manage all Couchbase Server functions.
-There is one full administrator per Couchbase Server and his user ID is mapped from the LDAP server using the Couchbase Web Console, as explained in xref:security-authentication.adoc#topic_ztr_rnm_lq[Authentication].
+There is one full administrator per Couchbase Server and his user ID is mapped from the LDAP server using the Couchbase Web Console, as explained in xref:security-authentication.adoc[Authentication].
 
 Full LDAP administrators::
 The full LDAP administrators are set up only when then LDAP authentication is enabled for Couchbase Server.

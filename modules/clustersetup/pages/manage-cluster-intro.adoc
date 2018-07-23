@@ -27,7 +27,7 @@ It also sets the location where the indexes created by views are stored:
 Otherwise for the best performance we recommend specifying separate physical storage for the data and index paths.
 
 . Provide a node IP or hostname under [.ui]*Configure Server Hostname*.
-. Choose which xref:concepts:multidimensional-scaling.adoc#concept_ckt_svy_zs[services] to include on the first node.
+. Choose which xref:concepts:multidimensional-scaling.adoc[services] to include on the first node.
 At a minimum, the Data service is required.
 In production, only one service per node should be deployed.
 . The [.ui]*Configure Server Memory* section sets the amount of physical RAM that will be allocated by the Couchbase Server for storage, both for the Data and the Index service.
@@ -60,7 +60,7 @@ image::install/picts/setup-03.png[,720]
 
 . Set up a test bucket for Couchbase Server.
 You can change all bucket settings later, except for the bucket name.
-See xref:bucket-setup.adoc#topic_jbt_4jn_vs[Bucket setup] for more information.
+See xref:bucket-setup.adoc[Bucket setup] for more information.
 . Accept all defaults in this panel.
 +
 Couchbase Server will create a new data bucket named `default`.
@@ -107,6 +107,6 @@ Couchbase Server is now running and ready to use.
 
 Configure other settings, such as the port and RAM, using CLI or REST API.
 
-Command-line tools:: The command-line tools included with your Couchbase Server installation includes xref:cli:cli-intro.adoc#topic_c4y_k5d_54[couchbase-cli]tool, which allows access to the core functionality of the Couchbase Server by providing a wrapper to the REST API.
+Command-line tools:: The command-line tools included with your Couchbase Server installation includes xref:cli:cli-intro.adoc[couchbase-cli]tool, which allows access to the core functionality of the Couchbase Server by providing a wrapper to the REST API.
 
-REST API:: Couchbase Server can be configured and controlled using xref:rest-api:rest-intro.adoc#topic_d3j_g5d_54[REST],  on which both the command-line tools and Web interface to Couchbase Server are based.
+REST API:: Couchbase Server can be configured and controlled using xref:rest-api:rest-intro.adoc[REST],  on which both the command-line tools and Web interface to Couchbase Server are based.

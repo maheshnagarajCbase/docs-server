@@ -32,9 +32,9 @@ When a counter operation is complete, the application receives the current value
 Couchbase counters are 64-bit unsigned integers in Couchbase, and do not wrap around if decremented beyond 0, however they will wrap around if incremented past their maximum value (which is the maximum value contained within a 64 bit integer).
 Many SDKs will limit the _delta_ argument to the value of a _signed_ 64 bit integer.
 
-xref:expiry.adoc#concept_o53_kps_zs[Expiration] times can also be specified when using counter operations.
+xref:expiry.adoc[Expiration] times can also be specified when using counter operations.
 
-xref:cas-concurrency.adoc#concept_iq4_bts_zs[CAS] values are not used with counter operations since counter operations are atomic.
+xref:cas-concurrency.adoc[CAS] values are not used with counter operations since counter operations are atomic.
 The intent of the counter operation is to simply increment the current server-side value of the document.
 If you wish to only increment the document if it is at a certain value, then you may use a normal [.api]`upsert` function with CAS:
 

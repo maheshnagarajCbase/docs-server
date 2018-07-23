@@ -15,7 +15,7 @@ In this way a cluster can grow CPU, RAM, disk and network capacity by adding phy
 Nodes can be added or removed easily through a rebalance process, which re-distributes the data evenly across all nodes.
 The rebalance process is done online and requires no application downtime, and can be initiated at the click of a button or one command on the command line.
 
-Once a node is added, a user can optionally configure the services that are running on that node as described in xref:multidimensional-scaling.adoc#concept_ckt_svy_zs[Multidimensional scaling] It should be noted that configuring those services does negate the behavior described in the previous paragraph.
+Once a node is added, a user can optionally configure the services that are running on that node as described in xref:multidimensional-scaling.adoc[Multidimensional scaling] It should be noted that configuring those services does negate the behavior described in the previous paragraph.
 
 == Architecture of a Single Node
 
@@ -135,7 +135,7 @@ Snapshots can be used to create a brand new replica or catch up an interrupted o
 
 Couchbase Server leverages DCP internally and externally for several different purposes.
 Within Couchbase Server, DCP is used to create replicas of data within and between clusters, maintain indexes (both local and global), backups, etc.
-DCP also feeds most xref:connectors:intro.adoc#concept_iy1_2rg_2s[Connector Guides], which are integrations with external systems such as Hadoop, Kafka or Elasticsearch.
+DCP also feeds most xref:connectors:intro.adoc[Connector Guides], which are integrations with external systems such as Hadoop, Kafka or Elasticsearch.
 Some of these connectors leverage DCP directly or connect to Couchbase Server’s xref:ha-dr:ha-dr-intro.adoc#geo-dist-and-xdcr[XDCR] functionality to keep the external systems in sync by acting like Couchbase Server nodes.
 
 == Replication

@@ -23,5 +23,5 @@ image::xdcr-pause-resume.png[,720,align=left]
 
 To use REST API or CLI:
 
-* REST API: xref:rest-api:rest-xdcr-pause-resume.adoc#reference_kz4_khq_w4[Pausing XDCR replication streams]
+* REST API: xref:rest-api:rest-xdcr-pause-resume.adoc[Pausing XDCR replication streams]
 * CLI: xref:cli:cbcli/xdcr-replicate.adoc#cbcli-xdcr-manage-replications[[.cmd]`xdcr-replicate`]

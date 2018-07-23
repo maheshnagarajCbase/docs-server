@@ -15,7 +15,7 @@ Couchbase queries may be issued by one of the following mechanisms:
 [#ul_pn5_l3t_zs]
 * Couchbase SDK.
 * _cbq_ shell.
-* xref:cli-overview.adoc#concept_lg3_dhm_zs[cbc] command-line (via `cbc n1ql`).
+* xref:cli-overview.adoc[cbc] command-line (via `cbc n1ql`).
 * Query REST API.
 * xref:tools:query-workbench-intro.adoc[Query workbench] [Developer Preview]
 
