@@ -45,6 +45,15 @@ The `alias names` are used in commands and are accessible only by N1QL queries.
 |===
 6+^| Role: Bucket Full Access (`bucket_sasl`)
 
+.2+^h| Resources
+5+^h| Privileges
+
+^h| *Read*
+^h| *Write*
+^h| *Execute*
+^h| *Manage*
+^h| *Flush*
+
 ^| Bucket [ * {vbar} _bucket-name_ ]: Data
 ^| image:introduction/images/yes.png[]
 ^| image:introduction/images/yes.png[]
@@ -97,6 +106,14 @@ Note that the role does _not_ permit the running of N1QL queries (such as SELECT
 |===
 5+^| Role: Data Reader (`data_reader`)
 
+.2+^h| Resources
+4+^h| Privileges
+
+^h| *Read*
+^h| *Write*
+^h| *Execute*
+^h| *Manage*
+
 ^| Bucket [ * {vbar} _bucket-name_ ]: Docs
 ^| image:introduction/images/yes.png[]
 ^| image:introduction/images/no.png[]
@@ -130,6 +147,14 @@ The *Data Writer* role allows information to be written to and read from a speci
 |===
 5+^| Role: Data Writer (`data_writer`)
 
+.2+^h| Resources
+4+^h| Privileges
+
+^h| *Read*
+^h| *Write*
+^h| *Execute*
+^h| *Manage*
+
 ^| Bucket [ * {vbar} _bucket-name_ ]: Docs
 ^| image:introduction/images/yes.png[]
 ^| image:introduction/images/yes.png[]
@@ -156,6 +181,14 @@ The *Data DCP Reader* role allows DCP streams to be read.
 [#table_data_dcp_reader_role,cols="2,1,1,1,1"]
 |===
 5+^| Role: Data DCP Reader (`data_dcp_reader`)
+
+.2+^h| Resources
+4+^h| Privileges
+
+^h| *Read*
+^h| *Write*
+^h| *Execute*
+^h| *Manage*
 
 ^| Bucket: [ * {vbar} _bucket-name_ ]: Docs
 ^| image:introduction/images/yes.png[]
@@ -208,6 +241,14 @@ The *Data Backup* role allows data to be backed up and restored.
 |===
 5+^| Role: Data Backup (`data_backup`)
 
+.2+^h| Resources
+4+^h| Privileges
+
+^h| *Read*
+^h| *Write*
+^h| *Execute*
+^h| *Manage*
+
 ^| Bucket: [ * {vbar} _bucket-name_ ]: Data
 ^| image:introduction/images/yes.png[]
 ^| image:introduction/images/yes.png[]
@@ -253,6 +294,14 @@ The *Data Monitoring* role allows all bucket-statistics to be read.
 |===
 5+^| Role: Data Monitoring (`data_monitoring`)
 
+.2+^h| Resources
+4+^h| Privileges
+
+^h| *Read*
+^h| *Write*
+^h| *Execute*
+^h| *Manage*
+
 ^| Bucket [ * {vbar} _bucket-name_ ]: Stats
 ^| image:introduction/images/yes.png[]
 ^| image:introduction/images/no.png[]
@@ -274,6 +323,14 @@ The *Views Reader* role allows all views to be read.
 |===
 5+^| Role: Views Reader (`views_reader`)
 
+.2+^h| Resources
+4+^h| Privileges
+
+^h| *Read*
+^h| *Write*
+^h| *Execute*
+^h| *Manage*
+
 ^| Bucket [ * {vbar} _bucket-name_ ]: Data
 ^| image:introduction/images/yes.png[]
 ^| image:introduction/images/no.png[]
@@ -294,6 +351,14 @@ The role *FTS Searcher* allows _Full Text Search_ indexes to be searched by user
 [#table_fts_searcher_role,cols="15,8,8,8,8"]
 |===
 5+^| Role: FTS Searcher (`fts_searcher`)
+
+.2+^h| Resources
+4+^h| Privileges
+
+^h| *Read*
+^h| *Write*
+^h| *Execute*
+^h| *Manage*
 
 ^| Bucket [ * {vbar} _bucket-name_ ]: FTS
 ^| image:introduction/images/yes.png[]
@@ -328,6 +393,14 @@ The *Query Select* role allows the SELECT statement to be executed on a specifie
 |===
 5+^| Role: Query Select (`query_select`)
 
+.2+^h| Resources
+4+^h| Privileges
+
+^h| *Read*
+^h| *Write*
+^h| *Execute*
+^h| *Manage*
+
 ^| Bucket [ * {vbar} _bucket-name_ ]: N1QL, SELECT
 ^| image:introduction/images/no.png[]
 ^| image:introduction/images/no.png[]
@@ -354,6 +427,14 @@ The *Query Update* role allows the UPDATE statement to be executed on a specifie
 [#table_query_update_role,cols="15,8,8,8,8"]
 |===
 5+^| Role: Query Update (`query_update`)
+
+.2+^h| Resources
+4+^h| Privileges
+
+^h| *Read*
+^h| *Write*
+^h| *Execute*
+^h| *Manage*
 
 ^| Bucket [ * {vbar} _bucket-name_ ]: N1QL, UPDATE
 ^| image:introduction/images/no.png[]
@@ -382,6 +463,14 @@ The *Query Insert* role allows the INSERT statement to be executed on a specifie
 |===
 5+^| Role: Query Insert (`query_insert`)
 
+.2+^h| Resources
+4+^h| Privileges
+
+^h| *Read*
+^h| *Write*
+^h| *Execute*
+^h| *Manage*
+
 ^| Bucket [ * {vbar} _bucket-name_ ]: N1QL, INSERT
 ^| image:introduction/images/no.png[]
 ^| image:introduction/images/no.png[]
@@ -408,6 +497,14 @@ The *Query Delete* role allows the DELETE statement to be executed on a specifie
 [#table_query_delete_role,cols="15,8,8,8,8"]
 |===
 5+^| Role: Query Delete (`query_delete`)
+
+.2+^h| Resources
+4+^h| Privileges
+
+^h| *Read*
+^h| *Write*
+^h| *Execute*
+^h| *Manage*
 
 ^| Bucket [ * {vbar} _bucket-name_ ]: N1QL, DELETE
 ^| image:introduction/images/no.png[]
@@ -436,6 +533,14 @@ The *Query Manage Index* role allows indexes to be managed for a specified bucke
 |===
 5+^| Role: Query Manage Index (`query_manage_index`)
 
+.2+^h| Resources
+4+^h| Privileges
+
+^h| *Read*
+^h| *Write*
+^h| *Execute*
+^h| *Manage*
+
 ^| Bucket [ * {vbar} _bucket-name_ ]: N1QL, INDEX
 ^| image:introduction/images/yes.png[]
 ^| image:introduction/images/yes.png[]
@@ -463,6 +568,15 @@ This role is designed for troubleshooters, who need to debug queries.
 [#table_query_system_catalog_role,cols="15,8,8,8,8,8"]
 |===
 6+^| Role: Query System Catalog (`query_system_catalog`)
+
+.2+^h| Resources
+5+^h| Privileges
+
+^h| *Read*
+^h| *Write*
+^h| *Execute*
+^h| *Manage*
+^h| *List*
 
 ^| Bucket [ * {vbar} _bucket-name_ ]: N1QL, INDEX
 ^| image:introduction/images/no.png[]
@@ -504,6 +618,14 @@ For an account of limitations on CURL, see xref:n1ql:n1ql-language-reference/cur
 [#table_query_external_access_role,cols="15,8,8,8,8"]
 |===
 5+^| Role: Query External Access (`query_external_access`)
+
+.2+^h| Resources
+4+^h| Privileges
+
+^h| *Read*
+^h| *Write*
+^h| *Execute*
+^h| *Manage*
 
 ^| Bucket [ * {vbar} _bucket-name_ ]: N1QL, curl
 ^| image:introduction/images/no.png[]
