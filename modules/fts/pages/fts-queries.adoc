@@ -14,7 +14,7 @@ The easiest way to get started is to perform a query using the Web Console.
 Then, click the "[.ui]*Advanced*" checkbox.
 You will see the JSON payload to pass to the REST API.
 Click the nearby checkbox to get the CURL command.
-See the xref:rest-api:rest-fts.adoc#topic_ytp_sx4_1v[REST reference] for more information.
+See the xref:rest-api:rest-fts.adoc[REST reference] for more information.
 
 .Example CURL command to query the index 'beer-idx'
 ----

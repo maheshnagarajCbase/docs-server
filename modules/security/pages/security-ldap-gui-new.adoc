@@ -10,7 +10,7 @@ After the user IDs of these administrators have been defined, they can be mapped
 == Enabling LDAP Authentication
 
 Authentication with LDAP is disabled by default, and if you chose not to enable it, you wouldn't be able to set up the external administrative roles.
-The only administrative role that you can configure without LDAP authentication is the xref:rbac-ro-user.adoc#concept_pvc_qbs_nv[Read-Only Administrator.]
+The only administrative role that you can configure without LDAP authentication is the xref:rbac-ro-user.adoc[Read-Only Administrator.]
 
 To enable LDAP authentication for administrators, follow these steps:
 
@@ -54,9 +54,9 @@ If you click on an administrative role, the pop-up will explain what this user c
 [#image_yqx_4lv_4v]
 image::pict/bucket-admin-default.png[]
 
-NOTE: Full administrators in Couchbase can manage user roles using the Couchbase CLI tools (as described in xref:cli:alter-role.adoc#reference_wm2_4j1_hv[[.cmd]`admin-role-manage`]) or REST API (as described in xref:rest-api:rbac.adoc#topic_d3q_mt3_fw[Role Based Admin Access (RBAC)]).
+NOTE: Full administrators in Couchbase can manage user roles using the Couchbase CLI tools (as described in xref:cli:alter-role.adoc[[.cmd]`admin-role-manage`]) or REST API (as described in xref:rest-api:rbac.adoc[Role Based Admin Access (RBAC)]).
 
-NOTE: Full administrators in Couchbase can manage certificates using the Couchbase CLI tools (as described in xref:cli:cbcli/ssl-manage.adoc#cbcli-xdcr-ssl[[.cmd]`ssl-manage`]) or REST API (as described in xref:rest-api:rest-security.adoc#reference_ytt_hdx_hv[Security API] ).
+NOTE: Full administrators in Couchbase can manage certificates using the Couchbase CLI tools (as described in xref:cli:cbcli/ssl-manage.adoc#cbcli-xdcr-ssl[[.cmd]`ssl-manage`]) or REST API (as described in xref:rest-api:rest-security.adoc[Security API] ).
 
 == Test LDAP Settings
 

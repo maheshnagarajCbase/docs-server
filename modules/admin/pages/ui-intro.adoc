@@ -80,7 +80,7 @@ image::ui-buckets.png[,720,align=left]
 | Indicates how frequently Couchbase Server is reaching to disk to retrieve information instead of using the information stored in RAM.
 |===
 
-For more details, see xref:clustersetup:bucket-setup.adoc#topic_jbt_4jn_vs[Bucket setup].
+For more details, see xref:clustersetup:bucket-setup.adoc[Bucket setup].
 
 == Servers
 
@@ -106,4 +106,4 @@ image::ui-servers.png[,720,align=left]
 | The number of servers that are currently waiting to be rebalanced after joining a cluster or being reactivated after failover.
 |===
 
-For more details, see xref:clustersetup:server-setup.adoc#topic_sc2_crk_5s[Server setup].
+For more details, see xref:clustersetup:server-setup.adoc[Server setup].

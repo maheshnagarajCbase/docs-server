@@ -233,9 +233,9 @@ You can  use the CLI command xref:cli:cbcollect-info-tool.adoc#cbcollect-info-to
 
 The other three CLI commands you can use to start and stop log collection and to read the log collection status:
 
-* xref:cli:cbcli/collect-logs-start.adoc#reference_xd5_mm5_ls[[.cmd]`collect-logs-start`]
-* xref:cli:cbcli/collect-logs-stop.adoc#reference_cqx_4m5_ls[[.cmd]`collect-logs-stop`]
-* xref:cli:cbcli/collect-logs-status.adoc#reference_ufl_rm5_ls[[.cmd]`collect-logs-status`]
+* xref:cli:cbcli/collect-logs-start.adoc[[.cmd]`collect-logs-start`]
+* xref:cli:cbcli/collect-logs-stop.adoc[[.cmd]`collect-logs-stop`]
+* xref:cli:cbcli/collect-logs-status.adoc[[.cmd]`collect-logs-status`]
 
 *Using REST API*
 

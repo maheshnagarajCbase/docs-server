@@ -83,7 +83,7 @@ NOTE: For the production environment, it is recommended to use different file lo
  ** Provide a node IP or a hostname.
 The provided hostname survives node restart.
 +
-For more details about hostnames, see xref:hostnames.adoc#topic_ggq_hfy_p4[Using Hostnames].
+For more details about hostnames, see xref:hostnames.adoc[Using Hostnames].
 . [.ui]*Join Cluster/Start new Cluster* The [.ui]*Configure Server Memory* section sets the amount of physical RAM that will be allocated by the Couchbase Server for storage.
 +
 If you are creating a new cluster, this is the amount of memory that is allocated on each node within your Couchbase Server cluster.
@@ -119,7 +119,7 @@ For both setup options, configure the hostnames as follows:
   *** Provide a node IP or a hostname.
 The provided hostname survives node restart.
 +
-For more details about hostnames, see xref:hostnames.adoc#topic_ggq_hfy_p4[Using Hostnames].
+For more details about hostnames, see xref:hostnames.adoc[Using Hostnames].
 
  ** Click [.ui]*Next*.
 

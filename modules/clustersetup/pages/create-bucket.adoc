@@ -21,7 +21,7 @@ In most circumstances choose a Couchbase bucket, even if all you are using Couch
 
 If you need the memcached-like functionality, it is recommended that you use Couchbase’s memcached proxy Moxi.
 The memcached buckets are available to provide administration capabilities for regular memcached and backward compatibility and offer none of the high-end features Couchbase Server is known for.
-For more specific information, see xref:architecture:core-data-access-buckets.adoc#concept_qqk_4r2_xs[Buckets].
+For more specific information, see xref:architecture:core-data-access-buckets.adoc[Buckets].
 
 [#image_qm1_ntr_zs]
 image::admin/picts/bucket-new.png[,400,align=left]
@@ -57,7 +57,7 @@ One replica is configured by default, even if your cluster does not yet have eno
 
 The general rule is to have a replica for each node that can fail in the cluster.
 Best practice is to keep at least one replica copy configured at all times and most users run with one replica.
-If you decide that more replica copies are needed for your bucket, make sure that you read the xref:install:sizing-general.adoc#topic_axp_glg_xs[sizing] section of Couchbase Server documentation.
+If you decide that more replica copies are needed for your bucket, make sure that you read the xref:install:sizing-general.adoc[sizing] section of Couchbase Server documentation.
 The more replicas you have, the more server and network resources are required.
 
 In general, you will have one replica for clusters up to 5 data nodes, one or two replicas in clusters from 5 to 10 data nodes and three replicas only in clusters with 10 or more data nodes.
@@ -112,4 +112,4 @@ The bucket is created when all node statuses turn from `warmup` to `healthy`.
 
 == Create a New Bucket with CLI or REST API
 
-You can also use the Couchbase Server CLI command xref:cli:cbcli/bucket-create.adoc#reference_llp_znv_sq[bucket-create] or REST API command xref:rest-api:rest-bucket-create.adoc#rest-bucket-create[rest-bucket-create].
+You can also use the Couchbase Server CLI command xref:cli:cbcli/bucket-create.adoc[bucket-create] or REST API command xref:rest-api:rest-bucket-create.adoc#rest-bucket-create[rest-bucket-create].

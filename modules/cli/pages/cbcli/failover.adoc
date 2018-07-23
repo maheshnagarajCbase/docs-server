@@ -16,7 +16,7 @@ couchbase-cli failover -c [host]:8091 -u [admin] -p [password] [options]
 
 Nodes are failed over with one of the following methods:
 
-* xref:clustersetup:setup-failover-graceful.adoc#topic_ysk_ycm_zs[Using Graceful Failover]
+* xref:clustersetup:setup-failover-graceful.adoc[Using Graceful Failover]
 * xref:clustersetup:hard-failover.adoc[Hard failover]
 * xref:clustersetup:automatic-failover.adoc[Automatic failover]
 

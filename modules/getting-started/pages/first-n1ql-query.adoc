@@ -68,7 +68,7 @@ NOTE: Remember that for all identifiers (bucket names) that contain a hyphen cha
 After you install Couchbase Server, you can start using N1QL right away.
 You can make N1QL requests in your applications or run N1QL queries against your database using either the Query Workbench on the Couchbase Web Console or the interactive query shell, [.cmd]`cbq`.
 
-The xref:tools:query-workbench.adoc#topic_prr_nyh_t5[Query Workbench] is integrated with the Couchbase Web console and is available on the [.ui]*Query* tab.
+The xref:tools:query-workbench.adoc[Query Workbench] is integrated with the Couchbase Web console and is available on the [.ui]*Query* tab.
 
 NOTE: The Query Workbench only runs on nodes which are running the Query service.
 If the Query service is _not_ running on the current node, it provides a link to the nodes in the cluster which _are_ running the Query service.

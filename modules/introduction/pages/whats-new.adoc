@@ -224,7 +224,7 @@ Full Text Search (FTS) enables you to create, manage, and query full text indexe
 FTS provides a language-aware manner of searching with relevance ranking (scoring) for results.
 +
 NOTE: The Full Text Search feature is still considered experimental and the UI or the functionality may change.
-The xref:fts:fts-whats-new.adoc#topic_jzy_p5v_vv[What's New?] page lists the FTS features added in this release.
+The xref:fts:fts-whats-new.adoc[What's New?] page lists the FTS features added in this release.
 +
 For more information on search service and full-text search, see xref:fts:full-text-intro.adoc[Full Text Search Reference].
 
@@ -242,7 +242,7 @@ In addition to encryption and auditing capabilities available in previous versio
 Docker in Production::
 Docker provides high performance container technology for agile and portable deployments.
 With Couchbase Server 4.5, Couchbase Server now supports deploying Couchbase Server in production with Docker containers.
-See xref:install:getting-started-docker.adoc#topic_mln_twc_3w[Getting Started with Server on Docker Containers] and xref:install:plan-for-production.adoc#topic_tqm_rcx_fw[Planning for Production] for more information.
+See xref:install:getting-started-docker.adoc[Getting Started with Server on Docker Containers] and xref:install:plan-for-production.adoc[Planning for Production] for more information.
 
 X509 Certificates::
 With Couchbase Server 4.5, you can now use X.509 certificates from your own certificate authority for encryption.
@@ -254,9 +254,9 @@ Role-Based Access Control for Administrators::
 With version 4.5, Couchbase Server provides Role-Based Access Control for administrators.
 Aside from the existing encryption and auditing facilities, RBAC provides fine grain control over administrative access and simplifies compliance with governance rules.
 You can control administrative roles from the Settings tab in the Web Console.
-See xref:security:concepts-rba.adoc#concept_ntl_jph_hr[Role-Based Access Control (RBAC) for Administrators] for details.
+See xref:security:concepts-rba.adoc[Role-Based Access Control (RBAC) for Administrators] for details.
 
 Enterprise Backup and Restore::
 Couchbase Server 4.5 provides a new enterprise backup and restore tool that can back up larger datasets with significantly higher performance than before.
 The scalable, high-performance backup and restore tool allows Couchbase Server to provide faster and more scalable recovery options to better integrate with Disaster Recovery planning.
-See xref:backup-restore:enterprise-backup-restore.adoc#topic_rr5_sv3_t5[[.cmd]`cbbackupmgr` Tool] for detailed information.
+See xref:backup-restore:enterprise-backup-restore.adoc[[.cmd]`cbbackupmgr` Tool] for detailed information.

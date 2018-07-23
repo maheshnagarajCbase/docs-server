@@ -5,10 +5,10 @@
 Role-Based Access Control (RBAC) for administrators is designed to manage administrative access to the Couchbase system and to achieve segregation of administrative duties.
 With RBAC, each administrator can perform only a well-defined fixed set of operations based on the job description.
 
-RBAC requires configuration with xref:security-ldap-new.adoc#topic_bgy_3ng_tq[LDAP] so that the administrator's userid in LDAP can be mapped by the Full Administrator to one or more fixed administrative roles.
+RBAC requires configuration with xref:security-ldap-new.adoc[LDAP] so that the administrator's userid in LDAP can be mapped by the Full Administrator to one or more fixed administrative roles.
 These roles contain a defined set of duties that can be performed in the system, and LDAP users have no other administrative access except for the one defined in their role assignment.
 
-Full administrators in Couchbase can manage user roles using the Couchbase CLI tools (as described in xref:cli:alter-role.adoc#reference_wm2_4j1_hv[[.cmd]`admin-role-manage`]) or REST API (as described in xref:rest-api:rbac.adoc#topic_d3q_mt3_fw[Role Based Admin Access (RBAC)]).
+Full administrators in Couchbase can manage user roles using the Couchbase CLI tools (as described in xref:cli:alter-role.adoc[[.cmd]`admin-role-manage`]) or REST API (as described in xref:rest-api:rbac.adoc[Role Based Admin Access (RBAC)]).
 
 == Fixed Administrative Roles in Couchbase
 
