@@ -1,16 +1,16 @@
-.INTRODUCTION
+.Introduction
 * xref:introduction:intro.adoc[Why Couchbase?]
 * xref:introduction:whats-new.adoc[What's New?]
 * xref:introduction:editions.adoc[Couchbase Server Editions]
 
-.GETTING STARTED
+.Getting Started
 * xref:getting-started:start-here.adoc[Start Here!]
 * xref:getting-started:do-a-quick-install.adoc[Do a Quick Install]
 * xref:getting-started:look-at-the-results.adoc[Look at the Results]
 * xref:getting-started:try-a-query.adoc[Run Your First N1QL Query]
 * xref:getting-started:choose-your-next-steps.adoc[Choose Your Next Steps]
 
-.DEVELOPERS
+.Developers
 * xref:sdk:development-intro.adoc[Developer's Intro]
 * xref:sdk:overview.adoc[SDKs]
  ** xref:2.8@c-sdk::start-using-sdk.adoc[C]
@@ -115,7 +115,7 @@
   *** xref:fts:fts-response-object-schema.adoc[Handling Response Objects]
  ** xref:fts:fts-troubleshooting.adoc[Troubleshooting and FAQs]
 
-.MANAGING CLUSTERS
+.Managing Clusters
 * xref:admin:admin-intro.adoc[Administration Tools]
  ** xref:admin:ui-intro.adoc[Couchbase Web Console]
 * xref:clustersetup:server-setup.adoc[Cluster Operations]
@@ -248,7 +248,7 @@
   *** xref:performance:index-scans.adoc[Understanding Index Scans in Couchbase N1QL Query]
   *** xref:performance:index_pushdowns.adoc[Index Pushdown Optimizations]
 
-.INSTALLING & UPGRADING
+.Installing & Upgrading
 * xref:install:get-started.adoc[Couchbase Server Installation Home]
  ** xref:install:plan-for-production.adoc[Software, Hardware, and Network Requirements]
   *** xref:install:install-platforms.adoc[Supported Platforms]
@@ -308,7 +308,7 @@
   *** xref:install:migrate-mysql.adoc[Migrating from Relational Databases]
  ** xref:install:install-uninstalling.adoc[Uninstalling Couchbase Server]
 
-.UNDERSTANDING COUCHBASE
+.Understanding Couchbase
 * Key Concepts
  ** xref:concepts:concepts-intro.adoc[Overview]
  ** xref:data-modeling:concepts-data-modeling-intro.adoc[Data Model]
@@ -357,7 +357,7 @@
  ** xref:architecture:storage-architecture.adoc[Storage Architecture]
   *** xref:architecture:index-storage.adoc[Global Secondary Index Storage]
 
-.INTEGRATIONS
+.Integrations
 * xref:connectors:intro.adoc[Connector Guides]
 * xref:connectors:elasticsearch/overview.adoc[Elasticsearch Plug-in]
  ** xref:connectors:elasticsearch/getting-started.adoc[Getting Started]
@@ -404,7 +404,7 @@
 * xref:connectors:talend/talend.adoc[Talend Connector]
 * xref:connectors:odbc-jdbc-drivers.adoc[Couchbase ODBC and JDBC Drivers]
 
-.TOOLS & API REFERENCES
+.Tools & API References
 * xref:cli:cli-intro.adoc[CLI Reference]
 include::../backup-restore/pages/_partials/nav.adoc[]
 include::../cli/pages/_partials/cbcli/nav.adoc[]
@@ -568,5 +568,5 @@ include::../cli/pages/_partials/cbcli/nav.adoc[]
 * xref:release-notes:relnotes.adoc[Release Notes for Couchbase Server 5.0.x]
 * xref:release-notes:giving-feedback.adoc[Providing Feedback]
 
-.LICENSES
+.Licenses
 * xref:third-party-licenses.adoc[Licenses for Third-Party Components]
