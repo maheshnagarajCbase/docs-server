@@ -473,26 +473,23 @@ This has been fixed by reducing the number of connections to the target bucket.
 This release adds support for the following platforms:
 
 [#ul_rz4_mp3_qbb]
-* Ubuntu 16.04
-* SUSE Linux 12
 * Oracle Linux 7
-* Microsoft Windows 2016
+* SUSE Linux Enterprise Server (SLES) 12
+* Ubuntu 16.04
+* Windows Server 2016
 
 See xref:install:install-platforms.adoc#topic1634[Supported Platforms] for the complete list of supported platforms.
 
 [#deprecated-items]
 *Deprecated Features and Platforms*
 
-Starting this release, the following platforms are no longer supported:
+Starting with this release, the following platforms are no longer supported:
 
 [#ul_w3x_nw3_qbb]
-* Microsoft Windows 7
-* Microsoft Windows 8
-* Microsoft Windows 2008
 * Amazon Linux 2014.03
-* Ubuntu Linux 12.04
-* Debian GNU/Linux 7
-* Mac OS X 10.8, 10.9, 10.10
+* macOS 10.10
+* Ubuntu  12.04
+* Windows Server 2008
 
 See xref:install:install-platforms.adoc#topic1634[Supported Platforms] for the complete list of supported platforms.
 
