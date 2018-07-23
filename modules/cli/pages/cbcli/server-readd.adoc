@@ -1,5 +1,5 @@
 [#reference_u1v_x45_ls]
-= [.cmd]`server-readd`
+= server-readd
 
 [abstract]
 Re-adds the failed-over server.

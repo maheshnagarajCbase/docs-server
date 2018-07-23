@@ -1,5 +1,5 @@
 [#topic_ldx_gqs_g4]
-= Installing Using [.cmd]`rpm`
+= Installing Using rpm
 
 [abstract]
 Install Couchbase Server on RHEL using the [.cmd]`rpm` command-line tool with the downloaded RPM package.

@@ -1,5 +1,5 @@
 [#cbcli-node-recovery]
-= [.cmd]`recovery`
+= recovery
 
 [abstract]
 Recovers one or more servers.

@@ -1,5 +1,5 @@
 [#reference_vkv_mp5_ls]
-= [.cmd]`setting-notification`
+= setting-notification
 
 [abstract]
 Set email setting for notifications.

@@ -1,5 +1,5 @@
 [#reference_glz_fp5_ls]
-= [.cmd]`setting-cluster`
+= setting-cluster
 
 [abstract]
 Set the setting for a cluster.

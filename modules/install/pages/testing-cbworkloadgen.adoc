@@ -1,5 +1,5 @@
 [#topic_am2_cnr_p4]
-= Testing with [.cmd]`cbworkloadgen`
+= Testing with cbworkloadgen
 
 [abstract]
 The command [.cmd]`cbworkloadgen` is a basic tool used to check the availability and connectivity of the Couchbase Server cluster.

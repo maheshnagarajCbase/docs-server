@@ -1,5 +1,5 @@
 [#reference_udr_hp5_ls]
-= [.cmd]`setting-index`
+= setting-index
 
 [abstract]
 Set the index service settings.
