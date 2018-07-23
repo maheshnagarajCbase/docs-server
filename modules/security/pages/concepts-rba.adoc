@@ -61,6 +61,9 @@ NOTE: Those with more than one administrator role will have all of the privilege
 |===
 | Couchbase Resource and Administrative Roles 2+| Administrative Access: W(rite), R(ead), S(ecurity), none
 
+h| Configuration
+h| Statistics
+
 3+^| *Full Administrator*
 
 | Cluster
