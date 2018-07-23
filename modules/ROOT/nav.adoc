@@ -1,4 +1,4 @@
-.GETTING STARTED
+.Getting Started
 * xref:introduction:intro.adoc[Why Couchbase?]
 * xref:introduction:whats-new.adoc[What's New?]
 * xref:introduction:editions.adoc[Couchbase Server Editions]
@@ -8,7 +8,7 @@
  ** xref:travel-app:travel-app-data-model.adoc[Travel App Data Model]
  ** xref:travel-app:travel-app-walkthough.adoc[Travel App Walk-through]
 
-.CONCEPTS & ARCHITECTURE
+.Concepts & Architecture
 * Key Concepts
  ** xref:concepts:concepts-intro.adoc[Overview]
  ** xref:data-modeling:concepts-data-modeling-intro.adoc[Data Model]
@@ -53,7 +53,7 @@
  ** xref:architecture:managed-caching-layer-architecture.adoc[Managed Caching Layer Architecture]
  ** xref:architecture:storage-architecture.adoc[Storage Architecture]
 
-.DEVELOPERS
+.Developers
 * xref:sdk:development-intro.adoc[Developer's Intro]
 * xref:sdk:overview.adoc[SDKs]
  ** xref:2.6@c-sdk::start-using-sdk.adoc[C]
@@ -65,7 +65,7 @@
  ** xref:2.1@python-sdk::start-using-sdk.adoc[Python]
 * xref:getting-started:starter-kits.adoc[Starter Kits]
 
-.ADMINISTRATORS
+.Administrators
 * Setup
  ** xref:install:plan-for-production.adoc[Planning for Production]
   *** xref:install:install-platforms.adoc[Supported Platforms]
@@ -234,7 +234,7 @@
   *** xref:backup-restore:cbbackupmgr-archivelayout.adoc[Enterprise Backup Archive Layout]
  ** xref:backup-restore:incremental-backup.adoc[cbbackup and cbrestore Tools]
 
-.INTEGRATIONS
+.Integrations
 * xref:connectors:intro.adoc[Connector Guides]
 * xref:connectors:elasticsearch-2.1/elastic-intro.adoc[Elasticsearch Plug-in 2.1]
  ** xref:connectors:elasticsearch-2.1/install-intro.adoc[Installation and Configuration]
@@ -317,7 +317,7 @@
 * xref:connectors:talend/talend.adoc[Talend Connector]
 * xref:connectors:odbc-jdbc-drivers.adoc[Couchbase ODBC and JDBC Drivers]
 
-.REFERENCES
+.References
 * N1QL Reference
  ** xref:n1ql:n1ql-language-reference/index.adoc[N1QL Language Reference]
  ** xref:n1ql:n1ql-intro/queriesandresults.adoc[N1QL Queries and Results]
