@@ -1,5 +1,5 @@
 [#cbcli-xdcr-manage-encryption]
-= [.cmd]`xdcr-setup`
+= xdcr-setup
 
 [abstract]
 XDCR data encryption with Secure Socket Layer (SSL) is enabled with the `xdcr-setup` command (Enterprise Edition only).

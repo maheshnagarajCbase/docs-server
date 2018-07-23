@@ -1,5 +1,5 @@
 [#runHelloWorld]
-= Run _Hello World!_
+= Run Hello World!
 
 [abstract]
 You can run queries on Couchbase Server _programmatically_, as well as manually.

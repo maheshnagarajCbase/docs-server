@@ -1,5 +1,5 @@
 [#reference_xlj_bp5_ls]
-= [.cmd]`setting-audit`
+= setting-audit
 
 [abstract]
 Configures the audit settings.

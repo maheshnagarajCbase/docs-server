@@ -1,5 +1,5 @@
 [#reference_wm2_4j1_hv]
-= [.cmd]`admin-role-manage`
+= admin-role-manage
 
 [abstract]
 Sets access control roles for users.

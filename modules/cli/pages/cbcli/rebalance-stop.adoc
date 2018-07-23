@@ -1,5 +1,5 @@
 [#reference_vbc_2n5_ls]
-= [.cmd]`rebalance-stop`
+= rebalance-stop
 
 [abstract]
 Stops rebalancing.

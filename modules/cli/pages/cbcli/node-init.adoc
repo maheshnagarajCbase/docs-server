@@ -1,5 +1,5 @@
 [#reference_ggg_d45_ls]
-= [.cmd]`node-init`
+= node-init
 
 [abstract]
 Sets the node-specific parameters.

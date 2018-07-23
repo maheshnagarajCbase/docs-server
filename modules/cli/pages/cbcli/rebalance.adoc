@@ -1,5 +1,5 @@
 [#reference_hl3_v2v_sq]
-= [.cmd]`rebalance`
+= rebalance
 
 [abstract]
 Starts cluster rebalancing.

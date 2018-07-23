@@ -1,5 +1,5 @@
 [#cli-index]
-= [.cmd]`server-add`
+= server-add
 
 [abstract]
 Adds one or more servers to a cluster.

@@ -1,5 +1,5 @@
 [#reference_hhk_gmn_ls]
-= [.cmd]`bucket-edit`
+= bucket-edit
 
 [abstract]
 Modifies an existing bucket.

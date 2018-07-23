@@ -1,5 +1,5 @@
 [#cbcli-xdcr-manage-replications]
-= [.cmd]`xdcr-replicate`
+= xdcr-replicate
 
 [abstract]
 Options to manage XDCR replications.
