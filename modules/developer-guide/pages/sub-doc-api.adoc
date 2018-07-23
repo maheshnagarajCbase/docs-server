@@ -255,10 +255,10 @@ For example, operating on a 100KB document named "[.in]``user::j.bloggs``" where
 
 [#table_o2q_1ky_y5,cols="81,50,50,50,50,50"]
 |===
-| 
+|
 5+^| *Size (bytes)*
 
-| 
+|
 ^| Header
 ^| Key
 ^| Path
