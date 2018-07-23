@@ -1,5 +1,5 @@
 [#topic_yry_v5c_kv]
-= Installing using `apt-get`
+= Installing using apt-get
 
 [abstract]
 This installation uses a package management system.

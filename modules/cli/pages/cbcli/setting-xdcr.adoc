@@ -1,5 +1,5 @@
 [#reference_dxp_4p5_ls]
-= [.cmd]`setting-xdcr`
+= setting-xdcr
 
 [abstract]
 Set the setting for Cross Datacenter Replication (XDCR).

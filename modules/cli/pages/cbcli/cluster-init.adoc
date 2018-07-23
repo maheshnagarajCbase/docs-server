@@ -1,5 +1,5 @@
 [#reference_jx1_xn5_ls]
-= [.cmd]`cluster-init`
+= cluster-init
 
 [abstract]
 Sets the user name, password, port, RAM size and services for a cluster.

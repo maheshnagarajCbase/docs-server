@@ -1,5 +1,5 @@
 [#reference_llp_znv_sq]
-= [.cmd]`bucket-create`
+= bucket-create
 
 [abstract]
 Adds a new bucket to a cluster.

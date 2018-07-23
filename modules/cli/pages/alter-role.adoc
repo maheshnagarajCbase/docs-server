@@ -1,5 +1,5 @@
 [#reference_wm2_4j1_hv]
-= [.cmd]`alter-role`
+= alter-role
 
 [abstract]
 Alter the administrative role: add or remove users.

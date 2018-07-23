@@ -1,5 +1,5 @@
 [#topic_us1_cmr_p4]
-= Testing with [.cmd]`telnet`
+= Testing with telnet
 
 [abstract]
 The simplest method to determine whether Couchbase Server is running is to use [.cmd]`Telnet` to connect to the server with the memcached text protocol.

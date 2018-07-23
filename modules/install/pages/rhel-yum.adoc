@@ -1,5 +1,5 @@
 [#topic_trh_4tc_kv]
-= Installing using `yum`
+= Installing using yum
 
 [abstract]
 This installation uses a package management system.

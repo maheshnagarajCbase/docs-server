@@ -1,5 +1,5 @@
 [#reference_yfp_hh1_hv]
-= [.cmd]`external-authentication`
+= external-authentication
 
 [abstract]
 Configure administrative access role.

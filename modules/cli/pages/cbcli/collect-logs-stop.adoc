@@ -1,5 +1,5 @@
 [#reference_cqx_4m5_ls]
-= [.cmd]`collect-logs-stop`
+= collect-logs-stop
 
 [abstract]
 Stops the log collection.

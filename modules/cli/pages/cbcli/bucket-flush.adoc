@@ -1,5 +1,5 @@
 [#cbcli-bucket-flush]
-= [.cmd]`bucket-flush`
+= bucket-flush
 
 [abstract]
 Flushes all data from the disk for a given bucket.

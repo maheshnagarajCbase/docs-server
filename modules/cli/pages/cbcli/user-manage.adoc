@@ -1,5 +1,5 @@
 [#reference_hwj_z3g_lt]
-= [.cmd]`user-manage`
+= user-manage
 
 [abstract]
 This command is used to manage read-only Couchbase admins.

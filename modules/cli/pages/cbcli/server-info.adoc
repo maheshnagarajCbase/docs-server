@@ -1,5 +1,5 @@
 [#cbcli-servers]
-= [.cmd]`server-info`
+= server-info
 
 [abstract]
 Shows details about one server.

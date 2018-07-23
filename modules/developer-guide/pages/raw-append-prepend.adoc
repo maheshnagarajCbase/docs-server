@@ -1,5 +1,5 @@
 [#concept_kfc_zsg_vt]
-= Raw [.api]`append` and [.api]`prepend`
+= Raw append and prepend
 
 ----
 append(docid, fragment)

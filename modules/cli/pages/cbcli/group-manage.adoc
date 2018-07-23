@@ -1,5 +1,5 @@
 [#cbcli-rza]
-= [.cmd]`group-manage`
+= group-manage
 
 [abstract]
 Rack-Zone Awareness with its server group capability is available only in  Couchbase Server Enterprise Edition.

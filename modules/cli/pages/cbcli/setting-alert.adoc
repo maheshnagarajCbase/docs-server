@@ -1,5 +1,5 @@
 [#reference_fd4_z45_ls]
-= [.cmd]`setting-alert`
+= setting-alert
 
 [abstract]
 Set the email settings for alerts.

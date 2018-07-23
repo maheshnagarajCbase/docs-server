@@ -1,5 +1,5 @@
 [#cbcli-intro]
-= [.cmd]`couchbase-cli`
+= couchbase-cli
 
 [abstract]
 The [.cmd]`couchbase-cli` tool is used to perform operations both on single nodes or on entire clusters.

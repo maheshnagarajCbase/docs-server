@@ -1,5 +1,5 @@
 [#topic_r3f_422_dt]
-= [.cmd]`cbbackupwrapper` and [.cmd]`cbrestorewrapper`
+= cbbackupwrapper and cbrestorewrapper
 
 [abstract]
 Two new tools are included with Couchbase Server Enterprise Edition that improve throughput for the database backup process: [.cmd]`cbbackupwrapper` and [.cmd]`cbrestorewrapper`.
