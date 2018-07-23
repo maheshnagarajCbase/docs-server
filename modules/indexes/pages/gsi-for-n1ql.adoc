@@ -135,8 +135,7 @@ This behavior achieves consistency, at least or later than the moment of the log
 If the index maintenance is running behind the logical timestamp, the query waits for the index to catch up to the last updates logical timestamp.
 // At_plus scan consistency flag is not yet implemented by the View
 // API.
-// At_plus scan consistency flag automatically degrades to the same
-characteristics as `stale=false` in the view API.
+At_plus scan consistency flag automatically degrades to the same characteristics as `stale=false` in the view API.
 * [.param]`Request_plus`: This scan_consistency flag executes the query but require the indexes to be updated to the logical timestamp of the query request.
 For example, an application issuing the query may have done its last update 10 ms ago.
 An application issuing the query with request_plus scan consistency flag takes the logical timestamp of the query request.
