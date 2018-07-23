@@ -14,7 +14,7 @@ couchbase-cli bucket-flush -c [host]:8091 -u [admin] -p [password] [options]
 
 == Description
 
-Flushing will work only if this option was configured either during the initial xref:clustersetup:bucket-setup.adoc#topic_jbt_4jn_vs[bucket setup] or after the xref:clustersetup:change-settings-bucket.adoc#topic_mfl_rmn_vs[bucket settings] have been changed.
+Flushing will work only if this option was configured either during the initial xref:clustersetup:bucket-setup.adoc[bucket setup] or after the xref:clustersetup:change-settings-bucket.adoc[bucket settings] have been changed.
 
 Flushing a bucket involves:
 

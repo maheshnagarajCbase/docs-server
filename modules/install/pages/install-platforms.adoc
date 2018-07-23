@@ -79,4 +79,4 @@ The following platforms are no longer supported:
 * Amazon Linux 2014.03, 2016.03
 ====
 
-For more information on deprecated items, see xref:release-notes:relnotes.adoc#topic_gbk_tyh_t5[Release Notes].
+For more information on deprecated items, see xref:release-notes:relnotes.adoc[Release Notes].

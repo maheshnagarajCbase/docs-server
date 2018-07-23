@@ -103,7 +103,7 @@ USING GSI:: USING clause specifies the index type to use.
 
 WITH options:: Use the WITH clause to specify additional options and is fully supported with nodes and [.var]`defer_build` expressions.
 
-See the xref:n1ql-language-reference/createindex.adoc#concept_npk_mth_rq[CREATE INDEX] statement for more details on the syntax.
+See the xref:n1ql-language-reference/createindex.adoc[CREATE INDEX] statement for more details on the syntax.
 
 [#query-predicate-format]
 *Format of Query Predicate in SELECT, UPDATE, or DELETE*

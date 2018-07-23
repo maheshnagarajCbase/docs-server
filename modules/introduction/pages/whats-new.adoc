@@ -14,16 +14,16 @@ Earlier releases allow only keyspace identifier or subquery in SELECT statement�
 Couchbase Server 4.6.2 adds support for generic N1QL expressions in SELECT statement’s FROM clause.
 This is very powerful functionality, as it enables usage of various N1QL functions, operators, path expressions, and language constructs on constant expressions, variables, and subqueries.
 Further, it improves performance of correlated Subqueries that access nested arrays and sub-documents of the same document (as in its parent query).
-For details, see xref:n1ql:n1ql-language-reference/from.adoc#concept_rnt_zfk_np[FROM] statement syntax and xref:n1ql:n1ql-language-reference/subqueries.adoc#topic_9[Subqueries].
+For details, see xref:n1ql:n1ql-language-reference/from.adoc[FROM] statement syntax and xref:n1ql:n1ql-language-reference/subqueries.adoc#topic_9[Subqueries].
 
-Array Indexing:: Couchbase Server 4.6.2 release adds the following enhancements to xref:n1ql:n1ql-language-reference/indexing-arrays.adoc#topic_hv4_sbr_w5[Array Indexing] feature:
+Array Indexing:: Couchbase Server 4.6.2 release adds the following enhancements to xref:n1ql:n1ql-language-reference/indexing-arrays.adoc[Array Indexing] feature:
 [#ul_eht_zph_qz]
 * Allow arbitrary variable names in array index selections.
 That is, a SELECT query that needs to use an array index can use different variable names in the query from those used in the array index definition.
 * Support simpler syntax for array indexing when all array elements are indexed, without requiring the use of the ARRAY operator in the index definition.
 * In earlier releases, it is required to provide the whole-array as an additional index-key to create a covering array index.
 But now in 4.6.2, the explicit array index key is not required when the query predicate can be exactly and completely pushed to the indexer.
-For details, see xref:n1ql:n1ql-language-reference/indexing-arrays.adoc#topic_hv4_sbr_w5[Array Indexing].
+For details, see xref:n1ql:n1ql-language-reference/indexing-arrays.adoc[Array Indexing].
 
 Token Functions::
 The following new token functions are added.
@@ -222,7 +222,7 @@ Sorting::
 You can now sort search results by any indexed field.
 In the previous releases, search results are always sorted by descending score so that highest scoring results are listed first.
 This is still the default sort order, so if you don’t specify a sort order, you’re unlikely to notice any difference.
-For details, see xref:fts:fts-sorting.adoc#topic_l2x_pkx_vx[Sorting Query Results].
+For details, see xref:fts:fts-sorting.adoc[Sorting Query Results].
 
 *CBImport and CBExport Tools [Developer Preview]*
 
@@ -247,7 +247,7 @@ Support for Spark 2.0 is now available, including the *Structured Streaming API*
 Dynamic topology is now automatically supported, making it easier to manage analytics processing in a changing production environment.
 Stream performance has been significantly improved.
 +
-For details, see xref:connectors:spark-2.0/spark-intro.adoc#concept_l11_ppm_pp[Spark Connector 2.0].
+For details, see xref:connectors:spark-2.0/spark-intro.adoc[Spark Connector 2.0].
 
 Kafka Connector 3.1::
 The Couchbase Kafka Connector makes it easier to build scalable and reliable streaming data services between Apache Kafka and other systems.

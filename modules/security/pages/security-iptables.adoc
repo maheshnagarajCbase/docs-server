@@ -163,4 +163,4 @@ C:\Program Files\Couchbase Server\
 +
 Make sure to secure the root and user passwords under which Couchbase is installed.
 
-. Make sure to secure the Administrator password as well, see xref:secret-mgmt.adoc#topic_s2r_2yt_gy[Secret Management and Hardening] for details.
+. Make sure to secure the Administrator password as well, see xref:secret-mgmt.adoc[Secret Management and Hardening] for details.

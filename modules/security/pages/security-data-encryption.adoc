@@ -4,7 +4,7 @@
 [abstract]
 Encryption-at-rest refers to encryption of data that is not "moving, which  applies to the sensitive data stored on the physical media of the server., such as drives.
 
-On disk, Couchbase stores data in the form of files for each xref:architecture:core-data-access-vbuckets-bucket-partition.adoc#concept_lzt_qr2_xs[vBucket] and indexes.
+On disk, Couchbase stores data in the form of files for each xref:architecture:core-data-access-vbuckets-bucket-partition.adoc[vBucket] and indexes.
 As a best practices you can take several precautions to help secure the overall system such as encrypting confidential assets, and building a firewall around the cluster.
 However, in a scenario where the physical media are stolen, a malicious party can just open and browse the data stored in these files.
 

@@ -7,14 +7,14 @@ The process compacts databases and their respective view indexes when the follow
 Full Administrators and Cluster Administrators can configure auto-compaction settings.
 
 If you set the default auto-compaction settings for Couchbase Server, auto-compaction is automatically enabled for all Couchbase buckets.
-You can override all the auto-compaction settings except index fragmentation settings using xref:clustersetup:create-bucket.adoc#topic_fym_kmn_vs[per-bucket]settings that are available when creating or editing data buckets.
+You can override all the auto-compaction settings except index fragmentation settings using xref:clustersetup:create-bucket.adoc[per-bucket]settings that are available when creating or editing data buckets.
 
 You can provide a purge interval to remove the key and metadata for items that have been deleted or are expired, which is known as  xref:architecture:core-data-access-bucket-disk-storage.adoc#tombstone[Tombstone purging].
 
 [#image_sbn_zv1_1t]
 image::admin/picts/settings-auto-compact.png[,570,align=left]
 
-The auto-compaction settings can also be modified using the xref:rest-api:rest-autocompact-get.adoc#reference_epl_5kd_sp[REST API].
+The auto-compaction settings can also be modified using the xref:rest-api:rest-autocompact-get.adoc[REST API].
 
 From the Couchbase Web Console > Settings > [.ui]*Auto-Compaction* tab, you can set the following auto-compaction parameters:
 

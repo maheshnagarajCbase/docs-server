@@ -68,7 +68,7 @@ A default total of %60 is provided.
 If there are multiple nodes in your cluster, the RAM-total you specify here will also be allocated to each other node.
 
  ** [.ui]*Index Storage Setting*: If the Index service has been selected, either [.ui]*Standard Global Secondary Indexes* or [.ui]*Memory-Optimized Global Secondary Indexes* can be chosen here, by means of radio buttons.
-See xref:architecture:global-secondary-indexes.adoc#concept_e5c_kf4_vs[Global Secondary Indexes (GSIs)], for details.
+See xref:architecture:global-secondary-indexes.adoc[Global Secondary Indexes (GSIs)], for details.
 
 +
 Note that no RAM-allocation option is provided for the Query service, since none is required.
@@ -128,7 +128,7 @@ Note that for a production environment, it is recommended that data and indexes 
 Whether you are starting a new cluster, or joining one existing, either enter a node IP or hostname into the editable text-field; _or_ use the default provided.
 +
 Note that a specified hostname will survive node restart.
-For more details about hostnames, see xref:hostnames.adoc#topic_ggq_hfy_p4[Using Hostnames].
+For more details about hostnames, see xref:hostnames.adoc[Using Hostnames].
 
 When you have entered data into all the appropriate fields listed above, click the btn:[Next] button, at the bottom-right.
 This dismisses the [.ui]*Configure Server* screen, and brings up the [.ui]*Sample Buckets* screen.
@@ -190,14 +190,14 @@ The [.ui]*Cache Metadata* radio buttons permit the default bucket's data to be s
 If [.ui]*Value Ejection* is selected, when memory is constrained, only the data-value is ejected: the key and metadata remain in memory.
 If [.ui]*Full Ejection* is selected, everything (including metadata, key, and value) is ejected.
 Generally, Value Ejection favors performance at the expense of memory; and Full Ejection vice versa.
-See xref:architecture:db-engine-architecture.adoc#concept_b5n_bwn_vs[Database Engine Architecture], for more information.
+See xref:architecture:db-engine-architecture.adoc[Database Engine Architecture], for more information.
 
 * [.ui]*Replicas*
 +
 This section allows replica-creation to be enabled and managed.
 To enable, check the [.ui]*Enable* checkbox.
 The number of replica-copies to be created and maintained is determined by means of the [.ui]*Number of replica (backup) copies* pulldown menu, which allows a value from 1 to 3 to be selected.
-By checking the [.ui]*View index replicas* checkbox, you ensure that view indexes, as well as data, are replicated: see xref:indexes:mapreduce-view-replication.adoc#concept_cbq_hzh_1t[View replication], for details.
+By checking the [.ui]*View index replicas* checkbox, you ensure that view indexes, as well as data, are replicated: see xref:indexes:mapreduce-view-replication.adoc[View replication], for details.
 
 * [.ui]*Disk I/O Optimization*
 +
@@ -205,13 +205,13 @@ This section allows the bucket's disk I/O priority to be specified.
 Radio-buttons allow [.ui]*Low* or [.ui]*High* to be chosen.
 These settings determine whether I/O tasks are enqueued in low or high priority task-queues: with the high priority resulting in faster processing.
 The default is Low.
-See xref:architecture:db-engine-architecture.adoc#concept_b5n_bwn_vs[Database Engine Architecture], for further information.
+See xref:architecture:db-engine-architecture.adoc[Database Engine Architecture], for further information.
 
 * [.ui]*Flush*
 +
 This section allows flushing to be enabled.
 If it is enabled, and flushing is performed, items in the bucket are removed as soon as possible.
-See xref:clustersetup:bucket-flush.adoc#topic_v1t_trm_gv[Flush a Bucket], for details.
+See xref:clustersetup:bucket-flush.adoc[Flush a Bucket], for details.
 
 If you do not wish to configure and use the Default Bucket, click on the btn:[Skip] button.
 If you _do_ wish to use it, once you have entered your configuration-preferences, click on the btn:[Next] button.

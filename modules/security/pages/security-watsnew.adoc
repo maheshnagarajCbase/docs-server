@@ -11,8 +11,8 @@ By adding support for Pluggable Authentication Modules (PAM), this release of Co
 You can use existing password management services such as Linux /etc/shadow for a Couchbase cluster.
 You can also control password expiration rules and other password policies.
 PAM Authentication in Couchbase is available only on Linux platform and is an Enterprise only feature.
-See xref:security-pam-auth.adoc#topic_s4n_42h_vx[Pluggable Authentication Modules].
+See xref:security-pam-auth.adoc[Pluggable Authentication Modules].
 
 Secret Management::
 With the Secret Management functionality, Couchbase Server provides you a way to securely manage server secrets which helps hardening of Couchbase Server.
-See xref:secret-mgmt.adoc#topic_s2r_2yt_gy[Secret Management and Hardening].
+See xref:secret-mgmt.adoc[Secret Management and Hardening].

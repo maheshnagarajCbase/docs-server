@@ -17,4 +17,4 @@ image::admin/picts/settings-auditing.png[,720,align=left]
 . Specify the target directory path for storing the audit records.
 . Specify the log rotation time interval (in Days, Hours, or Minutes), after which the log gets rotated to the next file.
 
-To read more about auditing, see xref:security:security-auditing.adoc#topic_a5p_npm_lq[Auditing for Administrators].
+To read more about auditing, see xref:security:security-auditing.adoc[Auditing for Administrators].

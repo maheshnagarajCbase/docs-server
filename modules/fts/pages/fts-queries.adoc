@@ -14,7 +14,7 @@ The easiest way to get started is to perform a query using the Web Console.
 Then, click the "[.ui]*Advanced*" checkbox.
 You will see the JSON payload to pass to the REST API.
 Click the nearby checkbox to get the CURL command.
-See the xref:rest-api:rest-fts.adoc#topic_ytp_sx4_1v[REST reference] for more information.
+See the xref:rest-api:rest-fts.adoc[REST reference] for more information.
 
 .Example CURL command to query the index 'beer-idx'
 ----
@@ -47,7 +47,7 @@ http://127.0.0.1:8094/api/index/beer-idx/query \
 
 Unlike previous releases where the search results were always sorted by descending score, you can now sort search results by any indexed field.
 If you don't specify a sort order, the search results are sorted by descending score by default.
-For more information on specifying the sort order, see xref:fts-sorting.adoc#topic_l2x_pkx_vx[Sorting Query Results].
+For more information on specifying the sort order, see xref:fts-sorting.adoc[Sorting Query Results].
 
 == Query Response
 

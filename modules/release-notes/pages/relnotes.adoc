@@ -622,7 +622,7 @@ This section lists some of the notable improvements in this release, grouped by 
 
 | https://issues.couchbase.com/browse/MB-22252[MB-22252]
 | Change the default behavior of the cluster manager to wait for the master password by default.
-This new behavior is detailed in xref:security:secret-mgmt.adoc#topic_s2r_2yt_gy[Secret Management and Hardening].
+This new behavior is detailed in xref:security:secret-mgmt.adoc[Secret Management and Hardening].
 |===
 
 *Query*
@@ -807,7 +807,7 @@ cluster.openBucket(bucketname)`
 a|
 The `cbbackupmgr merge` command will not function correctly and may cause data corruption under the following circumstances:
 
-* The bucket being backed up is xref:clustersetup:bucket-flush.adoc#topic_v1t_trm_gv[flushed] between incremental backups
+* The bucket being backed up is xref:clustersetup:bucket-flush.adoc[flushed] between incremental backups
 * The bucket being backed up is deleted and re-created in between incremental backups
 * The bucket has not been backed up between a document's deletion and the xref:architecture:core-data-access-bucket-disk-storage.adoc#tombstone[metadata for that deleted document being purged]
 * There has been a failover between incremental backups of the bucket
@@ -906,7 +906,7 @@ cluster.openBucket(bucketname)`
 a|
 The `cbbackupmgr merge` command will not function correctly and may cause data corruption under the following circumstances:
 
-* The bucket being backed up is xref:clustersetup:bucket-flush.adoc#topic_v1t_trm_gv[flushed] between incremental backups
+* The bucket being backed up is xref:clustersetup:bucket-flush.adoc[flushed] between incremental backups
 * The bucket being backed up is deleted and re-created in between incremental backups
 * The bucket has not been backed up between a document's deletion and the xref:architecture:core-data-access-bucket-disk-storage.adoc#tombstone[metadata for that deleted document being purged]
 * There has been a failover between incremental backups of the bucket
@@ -1134,7 +1134,7 @@ The following functionality is deprecated, will be deprecated or is unsupported.
 | TAP
 | The TAP is an internal protocol that streams information about data changes between cluster nodes.
 In future releases, this protocol will be removed and not supported.
-The TAP is replaced with the Database Change Protocol (xref:architecture:high-availability-replication-architecture.adoc#concept_hj1_njj_vs[DCP]).
+The TAP is replaced with the Database Change Protocol (xref:architecture:high-availability-replication-architecture.adoc[DCP]).
 
 | CLI `setting-ldap` command
 | This command is deprecated in this release.
