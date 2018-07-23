@@ -16,7 +16,7 @@ There are four main types of access points that drive the majority of client to 
 .Communication ports
 [#table_yph_ppc_ws]
 |===
-| Type | Port | API | 
+| Type | Port | API |
 
 | REST
 | 8091, 18091 (SSL)
