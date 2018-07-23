@@ -70,17 +70,17 @@ Couchbase Server is supported on numerous popular operating systems and virtual 
 | Development, testing and production
 
 | Windows 10
-| 
+|
 | 32 bit and 64 bit
 | Development and testing only
 
 | Windows 8
-| 
+|
 | 32 bit and 64 bit
 | Development and testing only
 
 | Windows 7
-| 
+|
 | 32 bit and 64 bit
 | Development and testing only
 

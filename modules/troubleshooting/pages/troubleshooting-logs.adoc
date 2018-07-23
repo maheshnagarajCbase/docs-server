@@ -68,7 +68,7 @@ It is output in common log format and contains several important fields such as 
 | Contains only progress report and crash reports for the Erlang processes.
 
 | `ssl_proxy`
-| 
+|
 
 | `crash-log.bin`
 | Used to pass service crash reports from the babysitter to the `ns_server`.

@@ -91,7 +91,7 @@ This is not because Couchbase itself has lost the updates, but because the appli
 .CAS flow
 [#table_fw1_m5s_zs]
 |===
-|  | 
+| |
 
 a|
 ....
