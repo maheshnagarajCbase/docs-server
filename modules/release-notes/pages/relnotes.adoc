@@ -232,3 +232,12 @@ This has been fixed by adding a clickable tooltip to the “run at” time which
 | The Query Workbench incorrectly displayed a warning for a valid index creation statement.
 This was due to an incorrect handling of the 'bind' expression by the client-side parser.
 |===
+
+*New Supported Platforms*
+
+This release adds support for the following platforms:
+
+[#ul_sfs_kd3_n2b]
+* macOS 10.13 (High Sierra)
+
+See xref:install:install-platforms.adoc#topic1634[Supported Platforms] for the complete list of supported platforms.
