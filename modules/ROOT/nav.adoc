@@ -1,9 +1,9 @@
-.INTRODUCTION
+.Introduction
 * xref:introduction:intro.adoc[Why Couchbase?]
 * xref:introduction:whats-new.adoc[What's New?]
 * xref:introduction:editions.adoc[Couchbase Server Editions]
 
-.GETTING STARTED
+.Getting Started
 * xref:getting-started:start-here.adoc[Start Here!]
 * xref:getting-started:do-a-quick-install.adoc[Do a Quick Install]
 * xref:getting-started:look-at-the-results.adoc[Look at the Results]
@@ -11,7 +11,7 @@
 * xref:getting-started:run-hello-world.adoc[Run Hello World!]
 * xref:getting-started:choose-your-next-steps.adoc[Choose Your Next Steps]
 
-.CONCEPTS & ARCHITECTURE
+.Concepts & Architecture
 * Key Concepts
  ** xref:concepts:concepts-intro.adoc[Overview]
  ** xref:data-modeling:concepts-data-modeling-intro.adoc[Data Model]
@@ -57,7 +57,7 @@
  ** xref:architecture:managed-caching-layer-architecture.adoc[Managed Caching Layer Architecture]
  ** xref:architecture:storage-architecture.adoc[Storage Architecture]
 
-.DEVELOPERS
+.Developers
 * xref:sdk:development-intro.adoc[Developer's Intro]
 * xref:sdk:overview.adoc[SDKs]
  ** xref:2.7@c-sdk::start-using-sdk.adoc[C]
@@ -69,7 +69,7 @@
  ** xref:2.2@python-sdk::start-using-sdk.adoc[Python]
 * xref:getting-started:starter-kits.adoc[Starter Kits]
 
-.ADMINISTRATORS
+.Administrators
 * Setup
  ** xref:install:plan-for-production.adoc[Planning for Production]
   *** xref:install:install-platforms.adoc[Supported Platforms]
@@ -247,7 +247,7 @@
  ** xref:performance:indexing-and-query-perf.adoc[Indexing JSON Documents and Query Performance]
  ** xref:performance:index-scans.adoc[Understanding Index Scans]
 
-.INTEGRATIONS
+.Integrations
 * xref:connectors:intro.adoc[Connector Guides]
 * xref:connectors:elasticsearch-2.2/overview.adoc[Elasticsearch Plug-in 2.2]
  ** xref:connectors:elasticsearch-2.2/install-and-config.adoc[Installation and Configuration]
@@ -333,7 +333,7 @@
 * xref:connectors:talend/talend.adoc[Talend Connector]
 * xref:connectors:odbc-jdbc-drivers.adoc[Couchbase ODBC and JDBC Drivers]
 
-.REFERENCES
+.References
 * N1QL Reference
  ** xref:n1ql:n1ql-language-reference/index.adoc[N1QL Language Reference]
  ** xref:n1ql:n1ql-intro/queriesandresults.adoc[N1QL Queries and Results]
