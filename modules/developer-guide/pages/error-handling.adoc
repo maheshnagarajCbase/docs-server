@@ -35,7 +35,7 @@ Applications at this point should probably return an error up the stack to the u
 
 *CAS mismatch*
 
-A xref:cas-concurrency.adoc#concept_iq4_bts_zs[CAS] mismatch error is returned when an operation was executed with a CAS value (supplied by the application) and the CAS value passed differs from the CAS value on the server.
+A xref:cas-concurrency.adoc[CAS] mismatch error is returned when an operation was executed with a CAS value (supplied by the application) and the CAS value passed differs from the CAS value on the server.
 The corrective course of action in this case is for the application to re-try the read-update cycle as explained in detail in the CAS documentation.
 
 [#devguide-transient-errors]

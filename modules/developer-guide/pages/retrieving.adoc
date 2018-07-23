@@ -24,7 +24,7 @@ Retrieving a document via its ID is the simplest and quickest operation in Couch
 ....
 
 To retrieve a document, use the [.api]`get()` API.
-This API call will return the document along with metadata (such as the xref:cas-concurrency.adoc#concept_iq4_bts_zs[CAS] value).
+This API call will return the document along with metadata (such as the xref:cas-concurrency.adoc[CAS] value).
 
 Examples of retrieving a document using an SDK:
 
@@ -32,13 +32,13 @@ https://github.com/couchbaselabs/devguide-examples/blob/master/c/retrieving.cc[C
 
 == Retrieving via the command line
 
-The xref:cli-overview.adoc#concept_lg3_dhm_zs[cbc] tool may be used to fetch documents by their IDs
+The xref:cli-overview.adoc[cbc] tool may be used to fetch documents by their IDs
 
  $ cbc cat docid
  docid                CAS=0x8234c3c0f213, Flags=0x0. Size=16
  {"json":"value"}
 
-Will output the document’s value and metadata (xref:cas-concurrency.adoc#concept_iq4_bts_zs[CAS] and xref:transcoders.adoc#table_wrc_2nb_bt[flags]).
+Will output the document’s value and metadata (xref:cas-concurrency.adoc[CAS] and xref:transcoders.adoc#table_wrc_2nb_bt[flags]).
 
 == Retrieving JSON documents
 
@@ -56,9 +56,9 @@ See [batching operations] for a discussion of how to efficiently perform multipl
 
 == Retrieving and setting expiration
 
-Couchbase Server offers a [.api]`getAndTouch` operation which retrieves an item and updates its xref:expiry.adoc#concept_o53_kps_zs[expiration time] while doing so.
+Couchbase Server offers a [.api]`getAndTouch` operation which retrieves an item and updates its xref:expiry.adoc[expiration time] while doing so.
 This is most useful to prolong the lifetime of transient data, and delay its expiration a bit further.
-See xref:expiry.adoc#concept_o53_kps_zs[TTL] for more information.
+See xref:expiry.adoc[TTL] for more information.
 
 == Primary key lookups using N1QL
 

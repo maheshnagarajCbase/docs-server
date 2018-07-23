@@ -5,7 +5,7 @@
 Hard failover is the process of ejecting an unavailable or unstable node from a cluster immediately.
 
 NOTE: To fully understand how Hard Failover works, you must first understand how Couchbase partitions data across a cluster.
-If you are not familiar, click xref:concepts:buckets-vbuckets.adoc#concept_v22_mvy_zs[here].
+If you are not familiar, click xref:concepts:buckets-vbuckets.adoc[here].
 
 Hard failover is the act of ejecting a node from a cluster when that node is unavailable or unstable (for example, in case of a server or instance failure).
 When hard failover is initiated, it tells the Cluster Manager to remove the node from active use, regardless of what is occurring, and then to start the procedures necessary for the other nodes in the cluster to take over for that ejected node.
@@ -15,7 +15,7 @@ We will discuss these service-specific actions later in this section.
 You can perform hard failover on any node in the cluster.
 
 NOTE: Do not use hard failover for regular planned maintenance.
-For that purpose see the explanations provided in xref:setup-failover-graceful.adoc#topic_ysk_ycm_zs[Using Graceful Failover] or xref:remove-nodes.adoc#topic_byh_lbg_q4[Removing a server].
+For that purpose see the explanations provided in xref:setup-failover-graceful.adoc[Using Graceful Failover] or xref:remove-nodes.adoc[Removing a server].
 
 Hard failover can be initiated in multiple ways:
 
@@ -24,9 +24,9 @@ Hard failover can be initiated in multiple ways:
 * Using the automatic failover functionality performed by the Couchbase Cluster Manager
 
 Hard failover is the failover type triggered by the automatic failover when the Cluster Manager determines that a node is unavailable and eligible for automatic failover.
-To read more about this, see xref:automatic-failover.adoc#topic_fcf_chm_zs[Using Automatic Failover].
+To read more about this, see xref:automatic-failover.adoc[Using Automatic Failover].
 
-Hard failover affects each of the services slightly different, depending whether they are on the same server or instance or whether they are using xref:concepts:multidimensional-scaling.adoc#concept_ckt_svy_zs[Multidimensional scaling]and are on different servers or instances.
+Hard failover affects each of the services slightly different, depending whether they are on the same server or instance or whether they are using xref:concepts:multidimensional-scaling.adoc[Multidimensional scaling]and are on different servers or instances.
 
 == Hard Failover Effect on Nodes Running the Data Service
 
@@ -68,7 +68,7 @@ If the node is irreparable and replaced, the indexes will need to be created aga
 To rebalance a new node into the cluster, you must first eject the failed node using hard failover.
 
 The best practices suggest the secondary indexes on at least two nodes running the Index service to mitigate the situation when the indexes are unavailable.
-For more information, see the documentation on xref:indexes:indexing-overview.adoc#concept_ssb_qhb_ys[Indexing in Couchbase].
+For more information, see the documentation on xref:indexes:indexing-overview.adoc[Indexing in Couchbase].
 
 == Hard Failover Effect on Nodes Running the Query Service
 
@@ -79,7 +79,7 @@ As one might expect, when node capacity is reduced the cluster can experience hi
 
 == Returning the Cluster to a Stable State
 
-If or when the failed node is repaired and ready, it can be added back to the cluster via xref:delta-node-recovery.adoc#topic_gsv_g24_vs[Delta Node Recovery], xref:full-recovery.adoc#topic_v5t_324_vs[full recovery] or an entirely new node could be added.
+If or when the failed node is repaired and ready, it can be added back to the cluster via xref:delta-node-recovery.adoc[Delta Node Recovery], xref:full-recovery.adoc[full recovery] or an entirely new node could be added.
 
 * If Delta Node Recovery is an option, the Cluster Manager recognizes this node as a previous member of the cluster.
 If using the Couchbase Web Console, it will prompt the administrator to perform the Delta Node Recovery.
@@ -90,7 +90,7 @@ The Cluster Manager will coordinate the vBuckets to become resynchronized, which
 When the Cluster Manager has finished the synchronization, the vBucket is promoted back to active status, and the cluster map is updated since this is a topology change.
 
 * If the node is added back using Full Recovery, it is treated as an entirely new node added to the cluster:  it will be reloaded with data, and needs a rebalance.
-* The other option is to xref:adding-nodes.adoc#topic_ncd_gdg_q4[add a node] and xref:rebalance.adoc#topic_xsx_1mn_vs[rebalance the cluster].
+* The other option is to xref:adding-nodes.adoc[add a node] and xref:rebalance.adoc[rebalance the cluster].
 
 If you can, always attempt on returning the cluster to a properly sized topology before rebalancing.
 If you do a rebalance before adding the node back in, you can no longer perform the Delta Node Rebalancing.
@@ -139,7 +139,7 @@ The exception to the above rule is when the Rack/Zone Awareness (RZA) feature is
 RZA allows designating which nodes are in a server rack in a data center, different VM hosts or availability zones in a cloud hosting provider.
 It ensures that the replica vBuckets for the nodes residing in Rack A are never in Rack A.
 When using RZA, it is safe to failover an entire rack’s worth of Couchbase nodes without data loss or interrupting your application: because the other racks contain nodes with the replicas.
-For more information see xref:architecture:smart-data-placement-rack-zone-aware.adoc#concept_bln_cnv_vs[Smart data placement with rack and zone awareness].
+For more information see xref:architecture:smart-data-placement-rack-zone-aware.adoc[Smart data placement with rack and zone awareness].
 
 Hard failover when the cluster has not recognized that the node is down::
 In rare cases, the Cluster Manager might fail to recognize that an unhealthy node is down.

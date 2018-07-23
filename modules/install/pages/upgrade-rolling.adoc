@@ -6,7 +6,7 @@ A rolling upgrade through multiple Couchbase Server software versions combines t
 
 Use one of the following strategies:
 
-Full swap rebalance upgrade:: Swap most, if not all new nodes in for old with xref:cli:cbcli/rebalance.adoc#reference_hl3_v2v_sq[rebalance] command.
+Full swap rebalance upgrade:: Swap most, if not all new nodes in for old with xref:cli:cbcli/rebalance.adoc[rebalance] command.
 
 Rolling swap rebalance upgrade:: Swap one node in or one node out at a time.
 

@@ -75,7 +75,7 @@ The `Operations per second` provides information on the level of activity on the
 
 The `Disk fetches per second` indicate how frequently Couchbase Server is reaching to disk to retrieve information instead of using the information stored in RAM.
 
-For more details, see xref:clustersetup:bucket-setup.adoc#topic_jbt_4jn_vs[Bucket setup].
+For more details, see xref:clustersetup:bucket-setup.adoc[Bucket setup].
 
 == Servers
 
@@ -92,4 +92,4 @@ Servers Down:: The number of servers that are down and cannot be contacted.
 
 Servers Pending Rebalance:: The number of servers that are currently waiting to be rebalanced after joining a cluster or being reactivated after failover.
 
-For more details, see xref:clustersetup:server-setup.adoc#topic_sc2_crk_5s[Server setup].
+For more details, see xref:clustersetup:server-setup.adoc[Server setup].

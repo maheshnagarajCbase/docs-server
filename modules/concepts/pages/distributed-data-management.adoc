@@ -15,4 +15,4 @@ In this way a cluster can grow CPU, RAM, disk and network capacity by adding phy
 Nodes can be added or removed easily through a rebalance process, which re-distributes the data evenly across all nodes.
 The rebalance process is done online and requires no application downtime, and can be initiated at the click of a button or one command on the command line.
 
-Once a node is added, a user can optionally configure the services that are running on that node as described in xref:multidimensional-scaling.adoc#concept_ckt_svy_zs[Multidimensional scaling] It should be noted that configuring those services does negate the behavior described in the previous paragraph.
+Once a node is added, a user can optionally configure the services that are running on that node as described in xref:multidimensional-scaling.adoc[Multidimensional scaling] It should be noted that configuring those services does negate the behavior described in the previous paragraph.

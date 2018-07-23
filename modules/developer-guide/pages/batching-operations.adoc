@@ -20,7 +20,7 @@ All key-value operations may be batched.
 
 Asynchronous clients inherently batch operations: because the application receives the response at a later stage in the application, it may attain batching via issuing many requests in sequence.
 
-See xref:async-clients.adoc#concept_lln_jlg_1t[Asynchronous Clients] for an overview on asynchronous programming.
+See xref:async-clients.adoc[Asynchronous Clients] for an overview on asynchronous programming.
 
 == Performance benefits
 

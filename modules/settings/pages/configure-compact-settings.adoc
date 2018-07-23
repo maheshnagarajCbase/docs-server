@@ -6,14 +6,14 @@ If you set the default auto-compaction settings for Couchbase Server, auto-compa
 
 == Auto compaction
 
-You can override these auto-compaction settings using xref:clustersetup:create-bucket.adoc#topic_fym_kmn_vs[per-bucket]settings that are available when creating or editing data buckets.
+You can override these auto-compaction settings using xref:clustersetup:create-bucket.adoc[per-bucket]settings that are available when creating or editing data buckets.
 
-You can provide a purge interval to remove the key and metadata for items that have been deleted or are expired, which is known as xref:architecture:core-data-access-bucket-disk-storage.adoc#concept_cy4_tr2_xs[tombstone purging].
+You can provide a purge interval to remove the key and metadata for items that have been deleted or are expired, which is known as xref:architecture:core-data-access-bucket-disk-storage.adoc[tombstone purging].
 
 [#image_sbn_zv1_1t]
 image::admin/picts/settings-auto-compact.png[,align=left]
 
-The auto-compaction settings can also be modified using the xref:rest-api:rest-autocompact-get.adoc#reference_epl_5kd_sp[REST API].
+The auto-compaction settings can also be modified using the xref:rest-api:rest-autocompact-get.adoc[REST API].
 
 The [.ui]*Auto-Compaction* tab sets the following default parameters:
 

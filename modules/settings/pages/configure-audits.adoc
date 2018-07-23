@@ -17,4 +17,4 @@ image::admin/picts/settings-auditing.png[,720,align=left]
 
 NOTE: Auditing is only available in the Enterprise Edition of Couchbase Server.
 
-To read more about auditing, see xref:security:security-auditing.adoc#topic_a5p_npm_lq[Auditing for Couchbase administrators].
+To read more about auditing, see xref:security:security-auditing.adoc[Auditing for Couchbase administrators].

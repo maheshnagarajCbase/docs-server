@@ -83,17 +83,17 @@ Refer to the documentation of the SDK you are using for more details on how to s
 == Additional options
 
 [#ul_gfq_mhg_45]
-* xref:expiry.adoc#concept_o53_kps_zs[TTL] or Expiry value which will instruct the server to delete the document after a given amount of time.
+* xref:expiry.adoc[TTL] or Expiry value which will instruct the server to delete the document after a given amount of time.
 This option is useful for transient data (such as sessions).
 By default documents do not expire.
-See xref:expiry.adoc#concept_o53_kps_zs[TTL] for more information on expiration.
-* xref:cas-concurrency.adoc#concept_iq4_bts_zs[CAS] value to protect against concurrent updates to the same document.
-See xref:cas-concurrency.adoc#concept_iq4_bts_zs[CAS] for a description on how to use CAS values in your application.
-* xref:durability.adoc#concept_gyg_14s_zs[Persistence and replication requirements].
+See xref:expiry.adoc[TTL] for more information on expiration.
+* xref:cas-concurrency.adoc[CAS] value to protect against concurrent updates to the same document.
+See xref:cas-concurrency.adoc[CAS] for a description on how to use CAS values in your application.
+* xref:durability.adoc[Persistence and replication requirements].
 
 == Return values
 
-If an update completed successfully, a success indicator along with the document’s current xref:cas-concurrency.adoc#concept_iq4_bts_zs[CAS] value is returned.
+If an update completed successfully, a success indicator along with the document’s current xref:cas-concurrency.adoc[CAS] value is returned.
 
 == SDK-specific documentation
 
@@ -101,10 +101,10 @@ SDK-Specific documentation about creating documents may be found below: Python, 
 
 == Updating documents via the command line
 
-Documents may be updated using the xref:cli-overview.adoc#concept_lg3_dhm_zs[cbc] utility.
+Documents may be updated using the xref:cli-overview.adoc[cbc] utility.
 
 NOTE: The following examples assume the cbc command is being executed on one of the cluster nodes.
-If run on another machine, refer to the xref:connecting.adoc#concept_fbg_xjm_zs[documentation] to see how to specify the cluster address.
+If run on another machine, refer to the xref:connecting.adoc[documentation] to see how to specify the cluster address.
 
 ....
 # When storing JSON data using cbc, ensure it is properly quoted for your shell:

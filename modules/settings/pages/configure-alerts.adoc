@@ -100,7 +100,7 @@ This means that there is no memory available for caching values.
 With no memory left for storing metadata, further requests to store data will also fail.
 
 Only applicable to buckets with Value-only ejection policy.
-See xref:architecture:db-engine-architecture.adoc#concept_b5n_bwn_vs[Eviction Policy].
+See xref:architecture:db-engine-architecture.adoc[Eviction Policy].
 
 | Writing data to disk for a specific bucket has failed
 | The disk or device used for persisting data has failed to store persistent data for a bucket.

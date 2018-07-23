@@ -31,5 +31,5 @@ docker run -d -v ~/couchbase:/opt/couchbase/var --net=host couchbase/server
 == Configure Couchbase cluster
 
 * Access the Couchbase Web Console via port 8091 on any of the hosts.
-* Follow the same steps as in xref:docker-singlehost-miltiplecont.adoc#topic_wxx_g1c_ys[Single host, multiple containers] section.
+* Follow the same steps as in xref:docker-singlehost-miltiplecont.adoc[Single host, multiple containers] section.
 However, use the host IP address itself rather than having Docker inspect and discover the IP address.

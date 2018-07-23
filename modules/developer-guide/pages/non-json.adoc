@@ -12,7 +12,7 @@ Non-JSON documents may be desirable if migrating a legacy application which is u
 
 Note that only JSON documents can be accessed using Query (N1QL).
 Limited support for non-JSON documents is available for MapReduce views.
-Additionally, non-JSON documents will not be accessible using the xref:webui.adoc#concept_j3z_zhm_zs[Web UI] (the contents will be shown in their Base64 equivalent).
+Additionally, non-JSON documents will not be accessible using the xref:webui.adoc[Web UI] (the contents will be shown in their Base64 equivalent).
 
 == Using non-JSON documents with SDKs
 
@@ -20,7 +20,7 @@ Couchbase SDKs have options for storing documents as non-JSON.
 The process is different for each SDK.
 Some SDKs will offer a _format_ option to store a non-JSON value, while others will have a special "Raw Document" type.
 
-You may extend the SDK by using a xref:transcoders.adoc#concept_bdb_smb_bt[transcoder], which can help make handling non-JSON documents a bit more transparent to the application.
+You may extend the SDK by using a xref:transcoders.adoc[transcoder], which can help make handling non-JSON documents a bit more transparent to the application.
 
 Here is an example of storing a non-JSON document using the Python SDK:
 

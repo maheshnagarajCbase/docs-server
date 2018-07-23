@@ -73,7 +73,7 @@ If the document is large or is the result of another program's output, `cbc-crea
 
  $ echo '{"json":"value"}' | cbc-create document_id
 
-If the operation was successful, the client will output the xref:cas-concurrency.adoc#concept_iq4_bts_zs[CAS] of the document.
+If the operation was successful, the client will output the xref:cas-concurrency.adoc[CAS] of the document.
 If an error was received, it will be printed as well.
 
 == Retrieving a document
@@ -87,7 +87,7 @@ The output of the command contains the actual document value on `stdout` and any
  document_id          CAS=0xe0004ea40100, Flags=0x0. Size=16
  {"json":"value"}
 
-The metadata consists of the document's ID, the xref:cas-concurrency.adoc#concept_iq4_bts_zs[CAS], xref:transcoders.adoc#concept_bdb_smb_bt[flags], and the size of the document in bytes.
+The metadata consists of the document's ID, the xref:cas-concurrency.adoc[CAS], xref:transcoders.adoc[flags], and the size of the document in bytes.
 
 == Issuing N1QL queries
 

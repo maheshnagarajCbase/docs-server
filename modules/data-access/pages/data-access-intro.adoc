@@ -111,7 +111,7 @@ MapReduce data processing is incremental, so the output continues to update as t
 Programmers can also write Spatial MapReduce programs that operate on geometric data in the form of GeoJSON, n-dimensional numeric data (hyper-cubes), or a combination of the two.
 This can be used to handle queries about geometries, for example, to return a list of all items within a particular bounding box.
 
-MapReduce programs output either MapReduce Views or Spatial Views, which are described further in xref:concepts:indexing.adoc#concept_kl3_y5f_ps[Indexing].
+MapReduce programs output either MapReduce Views or Spatial Views, which are described further in xref:concepts:indexing.adoc[Indexing].
 
 == Full text search
 
