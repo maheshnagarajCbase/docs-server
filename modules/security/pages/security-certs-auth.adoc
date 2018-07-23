@@ -96,7 +96,7 @@ If using XDCR, *do not* use the [.param]`mandatory` state for X.509 Certificate 
 | Set SSL client certificate delimiter value.
 
 | --client-auth
-| 
+|
 | Show SSL client certificate authentication value.
 |===
 

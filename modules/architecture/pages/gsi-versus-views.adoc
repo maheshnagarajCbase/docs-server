@@ -16,7 +16,7 @@ The following table lists the key differences between GSIs and Views.
 .Differences between GSIs and Views
 [#table_vf1_rf2_zs]
 |===
-|  | GSIs | Views
+| | GSIs | Views
 
 | Partitioning model
 a|
