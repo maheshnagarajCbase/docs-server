@@ -72,7 +72,12 @@ Possible causes are:
 
 Applications should generally *not* retry an operation if it resulted in a timeout before performing corrective action and/or analysis to determine the cause of these timeouts.
 
-If your application cannot simply return an error but must ensure that the operation completes, it is suggested that you wait a while until retrying (similar to the mechanism used when receiving a temporary failure).
+[#messagepanel_kbb_trs_zs]
+.Timeout does not mean the operation failed.
+CAUTION: It is important to note that receipt of a timeout error does not mean the operation did not complete.
+It means the server did not respond in a timely fashion.
+It is possible that the operation completed on the server, but the acknowledgment response was not received by the client.
+If the CAS of the item is known, you may use it to guard against performing the same operation twice.
 
 *Network errors*
 
@@ -82,8 +87,11 @@ The cause of a network error may be included in the error object itself (for exa
 Like timeout errors, network errors may be transient (indicative of a bad network connection).
 They may also be a result of a node being failed over.
 
-Applications may retry operations which failed with network errors after waiting for a while (as in timeout errors].
-Retrying operations too soon may result in creating massive amounts of `TIME_WAIT` connections on the client, and in extreme cases, even cause system crashes or rendering it inaccessible via the network.For cases where it is of the utmost importance to retrieve the item, a <<devguide-replica-read,read from a replica>> can be performed.
+[#messagepanel_sbr_zrs_zs]
+.Network error does not indicate the failure of the operation
+CAUTION: As in timeout errors], it is not possible to determine if an operation was actually completed if it resulted in a network error.
+
+For cases where it is of the utmost importance to retrieve the item, a <<devguide-replica-read,read from a replica>> can be performed.
 This will retrieve a potentially stale item.
 
 *Missing nodes*
