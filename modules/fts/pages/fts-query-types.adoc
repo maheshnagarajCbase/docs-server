@@ -49,7 +49,7 @@ The disjunction query is a compound query.
 The result documents must satisfy a configurable [.in]`min` number of child queries.
 By default this `min` is set to 1.
 
-Boolean Query::
+[[boolean-query]]Boolean Query::
 The boolean query is a useful combination of conjunction and disjunction queries.
 A boolean query takes three lists of queries:
 * must - result documents must satisfy all of these queries.
