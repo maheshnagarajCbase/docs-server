@@ -146,7 +146,7 @@ XDCR Failure Retry Interval::
 This interval is the time that XDCR waits before it attempts to restart replication after a server or network failure.
 The interval for restarting a failed XDCR is 1 to 300 seconds (default 10): if you expect more frequent network or server failures, you may want to set this interval to a lower value.
 
-XDCR Optimistic Replication Threshold::
+[[xdcr-optimistic-replication-threshold]]XDCR Optimistic Replication Threshold::
 This option improves XDCR latency and represents the compressed document size in bytes that spans from 0 to 20MB (default is 256 Bytes).
 XDCR will get metadata for documents larger than this size on a single time before replicating the uncompressed document to a destination cluster.
 
