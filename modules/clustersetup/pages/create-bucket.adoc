@@ -64,6 +64,9 @@ For instructions, see xref:install:migration.adoc[Migrating Data for the Timesta
 
 You can also set the conflict resolution method using the CLI xref:cli:cbcli/bucket-create.adoc[[.cmd]`bucket-create`] command, or the xref:rest-api:rest-bucket-create.adoc#rest-bucket-create[REST API].
 
+[#image_ady_hfw_py]
+image::admin/picts/bucket-create-conflict-resolution-setting.png[,570]
+
 == Replicas
 
 One replica is configured by default, even if your cluster does not yet have enough nodes to support replicas (minimum two nodes).

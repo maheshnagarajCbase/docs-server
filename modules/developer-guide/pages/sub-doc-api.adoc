@@ -15,7 +15,11 @@ Append operations on binary values are always atomic and do not retrieve the doc
 
 With the addition of the sub-document API, you can now access and operate on individual JSON fields, [.term]_sub-document fragments_, within a larger JSON document.
 Consider the following example which uses a sub-document API to retrieve just the last name from a user profile JSON document.
-image:sub-doc-api-1.png[,570]Only the requested or modified fields are sent over the network as opposed to the entire document being sent over the network when using key-value APIs.
+
+[#image_qmy_n4c_1v]
+image::sub-doc-api-1.png[,570]
+
+Only the requested or modified fields are sent over the network as opposed to the entire document being sent over the network when using key-value APIs.
 
 NOTE: The above example shows the underlying Memcache protocol operations.
 The sub-document APIs are exposed through convenient builder APIs in each of the SDKs.

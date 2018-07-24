@@ -55,9 +55,15 @@ WARNING: Using the default index mapping with dynamic mapping is a good way to e
 For this reason, default index mapping may be slow or result in high load if used on a production-sized dataset.
 
 . Click the button [.ui]*New Full Text Index*.
-image:fts-create-index.png[,570]
++
+[#image_x44_s1l_1v]
+image::fts-create-index.png[,570]
+
 . Give your index a name like "[.in]``beer-sample-idx``" and select the bucket you want to index from the drop-down list.
-image:fts-create-index-2.png[,300]
++
+[#image_s1h_x1l_1v]
+image::fts-create-index-2.png[,300]
+
 . Starting version 4.6, you can create custom index mappings by document type when the type is specified in the document key.
 FTS uses the type identifier that you specify to determine where to find the type of each document.
 The type mapping then uses the value of type identifier for each document to determine which index mapping rules to apply.
@@ -78,7 +84,10 @@ image::fts-create-index-4.png[,300]
 . If you click on "[.ui]*Type Mappings*," you will only see one type listed, which is "[.out]``default``."
 . Click the "[.ui]*Create Index*" button.
 You will then see a screen that shows you how many documents are in your index and the percentage complete.
-image:fts-create-index-3.png[,300]
++
+[#image_zn3_1bl_1v]
+image::fts-create-index-3.png[,300]
+
 . Click on the [.ui]*Full Text* link again to search the index you just created.
 . Your search shows the list of document IDs that contain the best matches for whatever search you ran, in order of score, with the highest scoring document listed first.
 
