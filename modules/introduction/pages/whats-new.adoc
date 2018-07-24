@@ -76,7 +76,7 @@ Couchbase Server 5.0 adds the capability to index the document metadata fields `
 Subsequently, queries can be written to find documents based on filters on these fields.
 For example, it would be possible to use the index to efficiently find all expired or to be expired documents.
 
-*N1QL Performance Improvements*::
+[[perf-improvement]]*N1QL Performance Improvements*::
 In Couchbase Server 5.0, N1QL and GSI Indexes together enable many performance optimizations.
 For more details, see xref:performance:index_pushdowns.adoc#index_pushdowns[Index Pushdown Optimizations].
 [#ul_php_pzk_wz]
