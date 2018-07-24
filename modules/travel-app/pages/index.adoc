@@ -113,8 +113,13 @@ To stop using the app, terminate the process by typing [.in]`Ctrl-C`.
 == Using the Travel App
 
 . Open a browser and navigate to the login URL that was displayed when you started the app.
-. Sign in to Couchbase Travel by providing your credentials: image:travel-app-login.png[,650px]
-. Find a flight: image:travel-app-screen.png[,650px]
+. Sign in to Couchbase Travel by providing your credentials:
++
+image::travel-app-login.png[,650px]
+
+. Find a flight:
++
+image::travel-app-screen.png[,650px]
 +
 In the [.ui]*Airport or City* section, enter an airport code or city name in the [.ui]*From* and [.ui]*To* fields.
 
