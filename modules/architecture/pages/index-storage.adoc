@@ -33,7 +33,7 @@ The Nitro garbage collector is concurrent and scales linearly with the number of
 
 .Nitro Architecture
 [#image_wvs_l2f_p1b]
-image::nitro.png[]
+image::nitro.png[,30%]
 
 While Nitro is a memory-optimized storage engine, the index is also snapshotted to disk at regular intervals to allow the indexer to recover from a restart without needing to rebuild the entire index.
 
