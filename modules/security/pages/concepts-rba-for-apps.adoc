@@ -41,7 +41,7 @@ Use of the [.ui]*Bucket Full Access* role is deprecated for buckets created on C
 NOTE: The tables below list each bucket's *name* followed by its `alias name` in parenthesis.
 The `alias names` are used in commands and are accessible only by N1QL queries.
 
-[#table_bucket_full_access_role,cols="15,8,8,8,8,8"]
+[#table_bucket_full_access_role,cols="15,8,8,8,8,8",hrows=3]
 |===
 6+^| Role: Bucket Full Access (`bucket_sasl`)
 
@@ -102,7 +102,7 @@ The `alias names` are used in commands and are accessible only by N1QL queries.
 The *Data Reader* role allows data to be read from a specified bucket.
 Note that the role does _not_ permit the running of N1QL queries (such as SELECT) against data.
 
-[#table_data_reader_role,cols="15,8,8,8,8"]
+[#table_data_reader_role,cols="15,8,8,8,8",hrows=3]
 |===
 5+^| Role: Data Reader (`data_reader`)
 
@@ -143,7 +143,7 @@ Note that the role does _not_ permit the running of N1QL queries (such as SELECT
 
 The *Data Writer* role allows information to be written to and read from a specified bucket.
 
-[#table_data_writer_role,cols="15,8,8,8,8"]
+[#table_data_writer_role,cols="15,8,8,8,8",hrows=3]
 |===
 5+^| Role: Data Writer (`data_writer`)
 
@@ -178,7 +178,7 @@ The *Data Writer* role allows information to be written to and read from a speci
 
 The *Data DCP Reader* role allows DCP streams to be read.
 
-[#table_data_dcp_reader_role,cols="2,1,1,1,1"]
+[#table_data_dcp_reader_role,cols="2,1,1,1,1",hrows=3]
 |===
 5+^| Role: Data DCP Reader (`data_dcp_reader`)
 
@@ -237,7 +237,7 @@ The *Data DCP Reader* role allows DCP streams to be read.
 
 The *Data Backup* role allows data to be backed up and restored.
 
-[#table_data_backup_role,cols="15,8,8,8,8"]
+[#table_data_backup_role,cols="15,8,8,8,8",hrows=3]
 |===
 5+^| Role: Data Backup (`data_backup`)
 
@@ -290,7 +290,7 @@ The *Data Backup* role allows data to be backed up and restored.
 
 The *Data Monitoring* role allows all bucket-statistics to be read.
 
-[#table_data_monitoring_role,cols="15,8,8,8,8"]
+[#table_data_monitoring_role,cols="15,8,8,8,8",hrows=3]
 |===
 5+^| Role: Data Monitoring (`data_monitoring`)
 
@@ -319,7 +319,7 @@ The *Data Monitoring* role allows all bucket-statistics to be read.
 
 The *Views Reader* role allows all views to be read.
 
-[#table_views_reader_role,cols="15,8,8,8,8"]
+[#table_views_reader_role,cols="15,8,8,8,8",hrows=3]
 |===
 5+^| Role: Views Reader (`views_reader`)
 
@@ -348,7 +348,7 @@ The *Views Reader* role allows all views to be read.
 
 The role *FTS Searcher* allows _Full Text Search_ indexes to be searched by users with appropriate bucket-privileges.
 
-[#table_fts_searcher_role,cols="15,8,8,8,8"]
+[#table_fts_searcher_role,cols="15,8,8,8,8",hrows=3]
 |===
 5+^| Role: FTS Searcher (`fts_searcher`)
 
@@ -389,7 +389,7 @@ The role *FTS Searcher* allows _Full Text Search_ indexes to be searched by user
 
 The *Query Select* role allows the SELECT statement to be executed on a specified bucket.
 
-[#table_query_select_role,cols="15,8,8,8,8"]
+[#table_query_select_role,cols="15,8,8,8,8",hrows=3]
 |===
 5+^| Role: Query Select (`query_select`)
 
@@ -424,7 +424,7 @@ The *Query Select* role allows the SELECT statement to be executed on a specifie
 
 The *Query Update* role allows the UPDATE statement to be executed on a specified bucket.
 
-[#table_query_update_role,cols="15,8,8,8,8"]
+[#table_query_update_role,cols="15,8,8,8,8",hrows=3]
 |===
 5+^| Role: Query Update (`query_update`)
 
@@ -459,7 +459,7 @@ The *Query Update* role allows the UPDATE statement to be executed on a specifie
 
 The *Query Insert* role allows the INSERT statement to be executed on a specified bucket.
 
-[#table_query_insert_role,cols="15,8,8,8,8"]
+[#table_query_insert_role,cols="15,8,8,8,8",hrows=3]
 |===
 5+^| Role: Query Insert (`query_insert`)
 
@@ -494,7 +494,7 @@ The *Query Insert* role allows the INSERT statement to be executed on a specifie
 
 The *Query Delete* role allows the DELETE statement to be executed on a specified bucket.
 
-[#table_query_delete_role,cols="15,8,8,8,8"]
+[#table_query_delete_role,cols="15,8,8,8,8",hrows=3]
 |===
 5+^| Role: Query Delete (`query_delete`)
 
@@ -529,7 +529,7 @@ The *Query Delete* role allows the DELETE statement to be executed on a specifie
 
 The *Query Manage Index* role allows indexes to be managed for a specified bucket.
 
-[#table_query_manage_index_role,cols="15,8,8,8,8"]
+[#table_query_manage_index_role,cols="15,8,8,8,8",hrows=3]
 |===
 5+^| Role: Query Manage Index (`query_manage_index`)
 
@@ -565,7 +565,7 @@ The *Query Manage Index* role allows indexes to be managed for a specified bucke
 The *Query System Catalog* role allows information to be looked up in the system catalog: this includes `system:indexes`, `system:prepareds`, and tables listing current and past queries.
 This role is designed for troubleshooters, who need to debug queries.
 
-[#table_query_system_catalog_role,cols="15,8,8,8,8,8"]
+[#table_query_system_catalog_role,cols="15,8,8,8,8,8",hrows=3]
 |===
 6+^| Role: Query System Catalog (`query_system_catalog`)
 
@@ -615,7 +615,7 @@ Note that the *Query External Access* role should be assigned with caution, sinc
 
 For an account of limitations on CURL, see xref:n1ql:n1ql-language-reference/curl.adoc[CURL Function].
 
-[#table_query_external_access_role,cols="15,8,8,8,8"]
+[#table_query_external_access_role,cols="15,8,8,8,8",hrows=3]
 |===
 5+^| Role: Query External Access (`query_external_access`)
 

@@ -57,7 +57,7 @@ FTS Administrator:: The [.term]_FTS Administrator_ role allows Full Text Search 
 NOTE: Those with more than one administrator role will have all of the privileges of both (or all) roles granted.
 
 .Role-Based Access Control (RBAC) for Administrators
-[#table_ofj_gp5_lv,cols="2,1,1"]
+[#table_ofj_gp5_lv,cols="2,1,1",hrows=2]
 |===
 | Couchbase Resource and Administrative Roles 2+| Administrative Access: W(rite), R(ead), S(ecurity), none
 
