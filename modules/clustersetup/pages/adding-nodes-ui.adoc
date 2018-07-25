@@ -14,7 +14,7 @@ Using the same method, you can add a server that was previously part of this or 
 During this process, Couchbase Server must be running.
 
 [#image_myt_vqk_zs]
-image::../admin/picts/admin%20-add-node.png[,480,align=left]
+image::admin/picts/admin--add-node.png[,480,align=left]
 
 Fill in the requested information:
 
