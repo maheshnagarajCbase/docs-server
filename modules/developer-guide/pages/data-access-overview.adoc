@@ -5,7 +5,7 @@
 Developing against a database involves storing items within the database and retrieving them.
 Storing and retrieving data is collectively referred to as data access.
 
-In a production environment, you access data by using a Couchbase xref:sdk-overview.adoc[SDK].
+In a production environment, you access data by using a Couchbase xref:sdks/intro.adoc[SDK].
 In addition, xref:cli-overview.adoc[command-line] and xref:webui.adoc[web-based] tools are available to access data during development and testing.
 
 == CRUD operations
