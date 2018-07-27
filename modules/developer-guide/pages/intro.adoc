@@ -14,8 +14,8 @@ Click on your language for instructions on setting up a development environment.
 
 * xref:2.5@c-sdk::c-intro.adoc[C SDK 2.4/2.5]
 * xref:1.0@go-sdk::introduction.adoc[Go SDK 1.0]
-* xref:2.1@java-sdk::java-intro.adoc[Java SDK 2.2]
-* xref:2.1@dotnet-sdk::dotnet-intro.adoc[.NET SDK 2.2]
+* xref:2.2@java-sdk::java-intro.adoc[Java SDK 2.2]
+* xref:2.2@dotnet-sdk::dotnet-intro.adoc[.NET SDK 2.2]
 * xref:2.1@nodejs-sdk::introduction.adoc[Node.js SDK 2.0/2.1]
 * xref:2.1@php-sdk::php-intro.adoc[PHP SDK 2.0/2.1]
 * xref:2.0@python-sdk::introduction.adoc#py-intro[Python SDK 2.0]

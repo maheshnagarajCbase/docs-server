@@ -32,7 +32,7 @@ This method is useful when an application is handling a user session but does no
 
 Examples of setting expiry with SDKs:
 
-https://github.com/couchbaselabs/devguide-examples/blob/master/c/expiration.cc[C] | https://github.com/couchbaselabs/devguide-examples/blob/master/python/expiration.py[Python] | https://github.com/couchbaselabs/devguide-examples/blob/master/java/src/main/java/com/couchbase/devguide/Expiration.java[Java] | xref:2.1@dotnet-sdk::time-to-live.adoc[.NET] | https://github.com/couchbaselabs/devguide-examples/blob/master/go/expiration.go[Go] | https://github.com/couchbaselabs/devguide-examples/blob/master/nodejs/expiration.js[node.js]
+https://github.com/couchbaselabs/devguide-examples/blob/master/c/expiration.cc[C] | https://github.com/couchbaselabs/devguide-examples/blob/master/python/expiration.py[Python] | https://github.com/couchbaselabs/devguide-examples/blob/master/java/src/main/java/com/couchbase/devguide/Expiration.java[Java] | xref:2.2@dotnet-sdk::time-to-live.adoc[.NET] | https://github.com/couchbaselabs/devguide-examples/blob/master/go/expiration.go[Go] | https://github.com/couchbaselabs/devguide-examples/blob/master/nodejs/expiration.js[node.js]
 
 == Expiry value
 
