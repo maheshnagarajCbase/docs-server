@@ -238,6 +238,17 @@ This was due to an incorrect handling of the 'bind' expression by the client-sid
 This release adds support for the following platforms:
 
 [#ul_sfs_kd3_n2b]
+* Debian 9
 * macOS 10.13 (High Sierra)
+
+See xref:install:install-platforms.adoc#topic1634[Supported Platforms] for the complete list of supported platforms.
+
+[#deprecated-items]
+*Deprecated Features and Platforms*
+
+Starting with this release, the following platforms are no longer supported:
+
+[#ul_w3x_nw3_qbb]
+* Debian 7
 
 See xref:install:install-platforms.adoc#topic1634[Supported Platforms] for the complete list of supported platforms.
