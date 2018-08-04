@@ -27,13 +27,21 @@ image::forum-categories.png[,align=left]
 
 *Here's how to log issues directly in the Couchbase issue tracking system:*
 
+[.steps]
 . Open a browser and log in to the https://issues.couchbase.com/[Couchbase issue tracker].
+. Click [.ui]*Create issue*.
 +
 The [.ui]*Create Issue* form is displayed.
+
+. Select a project from the [.ui]*Project* drop-down menu.
 +
 Select [.ui]*Couchbase Server* project for Server issues, a client library project for SDK issues, or [.ui]*Couchbase Documentation* for documentation issues.
+
+. From the [.ui]*Issue Type* drop-down menu, select a type of issue.
 +
 Select [.ui]*Bug* if the product isn't behaving as you expected or [.ui]*Improvement* to suggest improvements to the existing behavior.
+
+. Add detailed information about the issue in these fields:
  .. [.ui]*Summary*: Enter a one-line title that summarizes the issue.
  .. [.ui]*Affected Version*: Select [.ui]*4.5*
  .. [.ui]*Environment*: Enter a full description of your environment, including operating system, client SDK name and version, deployment model.
