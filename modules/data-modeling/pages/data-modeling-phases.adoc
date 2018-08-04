@@ -25,7 +25,7 @@ For example, a satellite might define a number of simple attributes such as [.pa
 * *Entity relationships*: Entities can have 1-to-1, 1-to-many, or many-to-many relationships.
 For example, "a satellite has many modules" is a 1-to-many relationship.
 
-You can find various methods of data modeling at https://en.wikipedia.org/wiki/Data_modeling[].
+You can find various methods of data modeling at https://en.wikipedia.org/wiki/Data_modeling[^].
 
 == Physical Data Modeling
 
@@ -75,7 +75,7 @@ However, using binary values limits the functionality your application can take 
  ** *JSON values*: JSON provides rich representation for entities.
 Couchbase Server can parse, index and query JSON values.
 JSON provide a name and a value for each attribute.
-You can find the JSON definition at https://tools.ietf.org/html/rfc7159[RFC 7159] or at http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf[ECMA 404].
+You can find the JSON definition at https://tools.ietf.org/html/rfc7159[RFC 7159^] or at http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf[ECMA 404^].
 +
 The JSON document attributes can represent both basic types such as number, string, Boolean, and complex types including embedded documents and arrays.
 In the examples below, [.var]`a1` and [.var]`a2` represent attributes that have a numeric and string value respectively, [.var]`a3` represents an embedded document, and [.var]`a4` represents an array of embedded documents.

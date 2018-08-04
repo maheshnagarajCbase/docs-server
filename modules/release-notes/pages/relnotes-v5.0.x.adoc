@@ -19,7 +19,7 @@ Version 5.0.1 is the first maintenance release in the 5.0.x series for Couchbase
 |===
 | Issue | Description
 
-| https://issues.couchbase.com/browse/MB-27162[MB-27162]
+| https://issues.couchbase.com/browse/MB-27162[MB-27162^]
 | Revision-based conflict resolution did not work as expected as the revision number was not updated for a create that immediately followed a delete operation.
 The revision number of a deleted document was updated after the item was added to the checkpoint queue, which meant that when you recreate that document, the revision number was not being replicated intra-cluster or via XDCR.
 This has been fixed.
@@ -31,7 +31,7 @@ This has been fixed.
 |===
 | Issue | Description
 
-| https://issues.couchbase.com/browse/MB-27203[MB-27203]
+| https://issues.couchbase.com/browse/MB-27203[MB-27203^]
 | The "[.param]``default``" bucket is a bucket that in versions prior to 5.0 was either suggested or automatically created for users during the install and configuration process with a goal of being compatible with memcached out of the box.
 As its intention was to allow users to quickly get started with Couchbase it permitted anonymous access, consistent with memcached behavior.
 Starting 5.0, all buckets require authenticated access.
@@ -47,7 +47,7 @@ This issue has been fixed.
 |===
 | Issue | Description
 
-| https://issues.couchbase.com/browse/MB-26556[MB-26556]
+| https://issues.couchbase.com/browse/MB-26556[MB-26556^]
 | The [.cmd]`couchbase-cli cluster-init` command failed to initialize all services in the Community Edition as the default storage mode incorrectly pointed to Plasma, which is available in the Enterprise Edition, instead of ForestDB.
 |===
 
@@ -94,7 +94,7 @@ The following table lists some of the known issues in this release.
 |===
 | Issue | Description
 
-| https://issues.couchbase.com/browse/MB-27203[MB-27203]
+| https://issues.couchbase.com/browse/MB-27203[MB-27203^]
 | *Summary*: The "[.param]``default``" bucket is a bucket that in versions prior to 5.0 was either suggested or automatically created for users during the install and configuration process with a goal of being compatible with memcached out of the box.
 As its intention was to allow users to quickly get started with Couchbase it permitted anonymous access, consistent with memcached behavior.
 Starting 5.0, all buckets require authenticated access.
@@ -104,28 +104,28 @@ This issue will be fixed in the next maintenance release.
 
 *Workaround*: Do not define a bucket named "[.param]``default``" in your cluster configuration.
 
-| https://issues.couchbase.com/browse/MB-26171[MB-26171]
+| https://issues.couchbase.com/browse/MB-26171[MB-26171^]
 | *Summary*: Creating two XDCR replications to the same cluster with different users is not supported.
 
-| https://issues.couchbase.com/browse/MB-26126[MB-26126]
+| https://issues.couchbase.com/browse/MB-26126[MB-26126^]
 | *Summary*: When using Couchbase Server 5.0 with Sync Gateway 1.5+ and the Mobile Convergence feature is enabled in Sync Gateway (enable_shared_bucket_access), the count of non-resident documents reported in the UI may be incorrect.
 
-| https://issues.couchbase.com/browse/MB-26085[MB-26085]
+| https://issues.couchbase.com/browse/MB-26085[MB-26085^]
 | *Summary*: Rebalance failure is observed if the index planner takes a long time ( > ns-server timeout) to execute.
 
-| https://issues.couchbase.com/browse/MB-26065[MB-26065]
+| https://issues.couchbase.com/browse/MB-26065[MB-26065^]
 | *Summary*: Rebalance exits when loading the memcached RBAC file.
 
-| https://issues.couchbase.com/browse/MB-26037[MB-26037]
+| https://issues.couchbase.com/browse/MB-26037[MB-26037^]
 | *Summary*: During a rebalance, if the destination node for a particular vBucket already has a previous, outdated version of that vBucket then the rebalance can initially fail.
 
 *Workaround*: Retry the rebalance; the second attempt should succeed.
 
-| https://issues.couchbase.com/browse/MB-26022[MB-26022]
+| https://issues.couchbase.com/browse/MB-26022[MB-26022^]
 | *Summary*: When a source topology changes, while the docs_processed and changes_left stats are both recomputed, only the changes_left stats in the statistics overview are updated.
 This leads to incorrect docs_processed and incorrect, potentially negative changes_left statistics.
 
-| https://issues.couchbase.com/browse/MB-25938[MB-25938]
+| https://issues.couchbase.com/browse/MB-25938[MB-25938^]
 | *Summary*: Potential corruption of documents with extended attributes(XATTRs) during high concurrency.
 
 If a document contains extended attributes (XATTRs) and a Key/Value mutation request changes one of those XATTRs, the previous XATTR values are written to in a non-atomic way.
@@ -136,7 +136,7 @@ Note that this issue is believed to be very rare and has only been seen under sy
 
 *Workaround*: Do not modify XATTRs on documents which already have them.
 
-| https://issues.couchbase.com/browse/MB-25935[MB-25935]
+| https://issues.couchbase.com/browse/MB-25935[MB-25935^]
 | *Summary*: Data Service returns TEMP_FAIL for locked keys instead of LOCKED.
 
 Data Service 5.0 adds extended error codes (XERROR) to provide richer error handling between newer, smart SDKs and the server.
@@ -144,29 +144,29 @@ As part of this, attempting to mutate a document which is locked should return E
 
 *Workaround*: Check for both LOCKED and TEMP_FAIL error codes when using pessimistic locking.
 
-| https://issues.couchbase.com/browse/MB-25909[MB-25909]
+| https://issues.couchbase.com/browse/MB-25909[MB-25909^]
 | *Summary*: When you upgrade the source node in a unidirectional replication from 4.1 to 4.6, the GoGC global setting was set to 0 instead of a higher number.
 
-| https://issues.couchbase.com/browse/MB-25785[MB-25785]
+| https://issues.couchbase.com/browse/MB-25785[MB-25785^]
 | *Summary*: Resuming a backup process on ephemeral buckets fails if there was a data service rollback in the original backup that failed.
 This issue is observed when there is a failover shortly after starting the first backup in a backup repository.
 removing the original backup.
 
 *Workaround*: Remove the original backup by using the --purge flag and then start the backup process again.
 
-| https://issues.couchbase.com/browse/MB-25707[MB-25707]
+| https://issues.couchbase.com/browse/MB-25707[MB-25707^]
 | *Summary*: UI errors in XDCR are observed even though XDCR continues to function.
 
-| https://issues.couchbase.com/browse/MB-23074[MB-23074]
+| https://issues.couchbase.com/browse/MB-23074[MB-23074^]
 | *Summary*: Performance issues may be observed when running Couchbase Server on CentOS 7.3 with kernel 3.10.0-514.6.
 
-| https://issues.couchbase.com/browse/MB-22679[MB-22679]
+| https://issues.couchbase.com/browse/MB-22679[MB-22679^]
 | *Summary*: The Full Text Search service doesn't delete pindex files when deleting the index after a MOSS crash.
 
-| https://issues.couchbase.com/browse/MB-21772[MB-21772]
+| https://issues.couchbase.com/browse/MB-21772[MB-21772^]
 | *Summary*: Full Text Search queries fail under high load on multi-node cluster due to a large number of connections.
 
-| https://issues.couchbase.com/browse/MB-12000[MB-12000]
+| https://issues.couchbase.com/browse/MB-12000[MB-12000^]
 | *Summary*: The rebalance progress reported during delta recovery is confusing as certain phases like warmup are not tracked.
 |===
 
@@ -234,31 +234,31 @@ Regardless of needing new features, it is always advised to upgrade to the newes
 
 ! Java
 ! 2.5.1
-! https://developer.couchbase.com/server/other-products/release-notes-archives/java-sdk[Release notes]
+! https://developer.couchbase.com/server/other-products/release-notes-archives/java-sdk[Release notes^]
 
 ! .NET
 ! 2.5.0
-! https://developer.couchbase.com/server/other-products/release-notes-archives/dotnet-sdk#2.4.5[Release notes]
+! https://developer.couchbase.com/server/other-products/release-notes-archives/dotnet-sdk#2.4.5[Release notes^]
 
 ! Node.js
 ! 2.4.0
-! https://developer.couchbase.com/server/other-products/release-notes-archives/nodejs-sdk[Release notes]
+! https://developer.couchbase.com/server/other-products/release-notes-archives/nodejs-sdk[Release notes^]
 
 ! Python
 ! 2.2.6
-! https://developer.couchbase.com/server/other-products/release-notes-archives/python-sdk[Release notes]
+! https://developer.couchbase.com/server/other-products/release-notes-archives/python-sdk[Release notes^]
 
 ! PHP
 ! 2.4.0
-! https://developer.couchbase.com/server/other-products/release-notes-archives/php-sdk[Release notes]
+! https://developer.couchbase.com/server/other-products/release-notes-archives/php-sdk[Release notes^]
 
 ! Go
 ! 1.2.5
-! https://developer.couchbase.com/server/other-products/release-notes-archives/go-sdk[Release notes]
+! https://developer.couchbase.com/server/other-products/release-notes-archives/go-sdk[Release notes^]
 
 ! C
 ! 2.8.0
-! https://developer.couchbase.com/server/other-products/release-notes-archives/c-sdk[Release notes]
+! https://developer.couchbase.com/server/other-products/release-notes-archives/c-sdk[Release notes^]
 !===
 |===
 
@@ -273,17 +273,17 @@ This section lists some of the important fixed issues in this release.
 |===
 | Issue | Description
 
-| https://issues.couchbase.com/browse/MB-23976[MB-23976]
+| https://issues.couchbase.com/browse/MB-23976[MB-23976^]
 | The TOUCH command modifies a document and updates a CAS value too.
 However, the result of TOUCH incorrectly used a pre-updated CAS value and did not reflect the updated CAS.
 
-| https://issues.couchbase.com/browse/MB-20091[MB-20091]
+| https://issues.couchbase.com/browse/MB-20091[MB-20091^]
 | Improvements to ForestDB's thread handling for improved compaction.
 
-| https://issues.couchbase.com/browse/MB-16150[MB-16150]
+| https://issues.couchbase.com/browse/MB-16150[MB-16150^]
 | Fixed inconsistency in curr_items with full reviction on Data Greater than Memory (DGM).
 
-| https://issues.couchbase.com/browse/MB-13087[MB-13087]
+| https://issues.couchbase.com/browse/MB-13087[MB-13087^]
 | When an item is locked and there’s actually a lot of load on the server, the server now returns a PROTOCOL_BINARY_RESPONSE_LOCKED response to the client application if the client application has enabled extended error codes.
 |===
 
@@ -293,14 +293,14 @@ However, the result of TOUCH incorrectly used a pre-updated CAS value and did no
 |===
 | Issue | Description
 
-| https://issues.couchbase.com/browse/MB-23271[MB-23271]
+| https://issues.couchbase.com/browse/MB-23271[MB-23271^]
 | To improve readability, the stat keys in section mossScope are now sorted.
 
-| https://issues.couchbase.com/browse/MB-22560[MB-22560]
+| https://issues.couchbase.com/browse/MB-22560[MB-22560^]
 | The FTS ports now adjust SSL cipher levels based on the COUCHBASE_SSL_CIPHER_LIST environment variable.
 SSL ciphers can be set to LOW, MEDIUM, or HIGH(default) levels.
 
-| https://issues.couchbase.com/browse/MB-21855[MB-21855]
+| https://issues.couchbase.com/browse/MB-21855[MB-21855^]
 a|
 Improved error messages for the following scenarios:
 
@@ -308,10 +308,10 @@ Improved error messages for the following scenarios:
 * Creating an index with a name that already exists.
 * Creating an alias without target index.
 
-| https://issues.couchbase.com/browse/MB-20939[MB-20939]
+| https://issues.couchbase.com/browse/MB-20939[MB-20939^]
 | Improved memory usage and resource containment for Full Text Indexes.
 
-| https://issues.couchbase.com/browse/MB-18042[MB-18042]
+| https://issues.couchbase.com/browse/MB-18042[MB-18042^]
 | We’ve removed the Byte Array Converter dropdown on the Advanced tab of the Full Text Index editor as it contained a single value that couldn’t be changed.
 
 Note that index definitions created in earlier releases will not work unless you remove the "byte_array_converter": "json" attribute value pair from the index definition JSON.
@@ -323,13 +323,13 @@ Note that index definitions created in earlier releases will not work unless you
 |===
 | Issue | Description
 
-| https://issues.couchbase.com/browse/MB-21594[MB-21594]
+| https://issues.couchbase.com/browse/MB-21594[MB-21594^]
 | Duplicate partitions removed during rebalance to prevent OOM (Out Of Memory error), and subsequent recovery problems.
 
-| https://issues.couchbase.com/browse/MB-21156[MB-21156]
+| https://issues.couchbase.com/browse/MB-21156[MB-21156^]
 | As part of a number of improvements to logging, fixed an issue where couchdb.log wrapped too quickly.
 
-| https://issues.couchbase.com/browse/MB-20297[MB-20297]
+| https://issues.couchbase.com/browse/MB-20297[MB-20297^]
 | For an index that was built with defer_build:true, the CREATE INDEX statement on the Indexes tab showed an invalid N1QL statement that could not be copied to run as is using cbq or the Query Workbench.
 |===
 
@@ -339,7 +339,7 @@ Note that index definitions created in earlier releases will not work unless you
 |===
 | Issue | Description
 
-| https://issues.couchbase.com/browse/MB-22283[MB-22283]
+| https://issues.couchbase.com/browse/MB-22283[MB-22283^]
 | Installing and running Couchbase Server as a non-root and non-sudo user is now supported.
 |===
 
@@ -349,40 +349,40 @@ Note that index definitions created in earlier releases will not work unless you
 |===
 | Issue | Description
 
-| https://issues.couchbase.com/browse/MB-25103[MB-25103]
+| https://issues.couchbase.com/browse/MB-25103[MB-25103^]
 | Query Service authentication failed when the password contained a colon (":") character.
 
-| https://issues.couchbase.com/browse/MB-24429[MB-24429]
+| https://issues.couchbase.com/browse/MB-24429[MB-24429^]
 | When fetching data, if the data node failed to respond due to some reason, the query could hang as there was no timeout specified.
 This has been addressed by passing the query request timeout parameter when fetching data.
 
-| https://issues.couchbase.com/browse/MB-23150[MB-23150]
+| https://issues.couchbase.com/browse/MB-23150[MB-23150^]
 | The monitoring view for running queries provides details such as the node that’s processing the request, the client IP that initiated the request, and the running program type (i.e.
 WorkBench, CBC, Java, .NET, CBQ, etc.).
 This helps isolate rogue queries and unauthorized access.
 
-| https://issues.couchbase.com/browse/MB-22831[MB-22831]
+| https://issues.couchbase.com/browse/MB-22831[MB-22831^]
 | Inserting a numerical value using a N1QL query caused the value to be stored in scientific notation.
 
-| https://issues.couchbase.com/browse/MB-22273[MB-22273]
+| https://issues.couchbase.com/browse/MB-22273[MB-22273^]
 | In Couchbase clusters with multiple query service nodes, applications may get incorrect results from prepared N1QL queries that use covering indexes.
 
-| https://issues.couchbase.com/browse/MB-22119[MB-22119]
+| https://issues.couchbase.com/browse/MB-22119[MB-22119^]
 | When using ARRAY expressions, query service may rarely panic with error referring to ‘slice allocations’.
 
-| https://issues.couchbase.com/browse/MB-22105[MB-22105]
+| https://issues.couchbase.com/browse/MB-22105[MB-22105^]
 | The UPDATE, INSERT, UPSERT statements may fail with the error message: "Panic: : runtime error: slice bounds out of range", when running with increased pipeline_batch settings.
 
-| https://issues.couchbase.com/browse/MB-22093[MB-22093]
+| https://issues.couchbase.com/browse/MB-22093[MB-22093^]
 | The query engine may intermittently throw error code 12008 because of a memory allocation failure.
 
-| https://issues.couchbase.com/browse/MB-21928[MB-21928]
+| https://issues.couchbase.com/browse/MB-21928[MB-21928^]
 | The command line shell for N1QL, cbq, now connects to 8091 with http and 18091 with https by default when the port is not specified.
 
-| https://issues.couchbase.com/browse/MB-19893[MB-19893]
+| https://issues.couchbase.com/browse/MB-19893[MB-19893^]
 | The SELECT RAW did not take ORDER BY into account, thus the results were not ordered.
 
-| https://issues.couchbase.com/browse/MB-18769[MB-18769]
+| https://issues.couchbase.com/browse/MB-18769[MB-18769^]
 | Fixed an issue where a covered query with meta().type in the WHERE clause gave in correct results.
 |===
 
@@ -392,11 +392,11 @@ This helps isolate rogue queries and unauthorized access.
 |===
 | Issue | Description
 
-| https://issues.couchbase.com/browse/MB-24088[MB-24088]
+| https://issues.couchbase.com/browse/MB-24088[MB-24088^]
 | The secrets management feature fails to encrypt secrets larger than 4KB (such as SSL certificates).
 This causes the cluster manager to unexpectedly terminate when saving the cluster configuration to disk.
 
-| https://issues.couchbase.com/browse/MB-15624[MB-15624]
+| https://issues.couchbase.com/browse/MB-15624[MB-15624^]
 | You can now specify a SSL cipher list on Windows platform.
 |===
 
@@ -406,10 +406,10 @@ This causes the cluster manager to unexpectedly terminate when saving the cluste
 |===
 | Issue | Description
 
-| https://issues.couchbase.com/browse/MB-25669[MB-25669]
+| https://issues.couchbase.com/browse/MB-25669[MB-25669^]
 | On Windows platform, the cbimport tool failed to import a tab delimited CSV file where the tab is specified using '\t' or '\\t'.
 
-| https://issues.couchbase.com/browse/MB-20403[MB-20403]
+| https://issues.couchbase.com/browse/MB-20403[MB-20403^]
 a|
 The cbbackupmgr merge command did not function correctly and caused data corruption under the following circumstances:
 
@@ -419,7 +419,7 @@ The cbbackupmgr merge command did not function correctly and caused data corrupt
 * The bucket had not been backed up between a document's deletion and the metadata for that deleted document being purged.
 * There had been a failover between incremental backups of the bucket.
 
-| https://issues.couchbase.com/browse/MB-10093[MB-10093]
+| https://issues.couchbase.com/browse/MB-10093[MB-10093^]
 | Xmem XDCR network bandwidth can now be throttled if desired.
 |===
 
@@ -429,13 +429,13 @@ The cbbackupmgr merge command did not function correctly and caused data corrupt
 |===
 | Issue | Description
 
-| https://issues.couchbase.com/browse/MB-23251[MB-23251]
+| https://issues.couchbase.com/browse/MB-23251[MB-23251^]
 | The AutoComplete feature for the password field on the Web Console has been disabled.
 
-| https://issues.couchbase.com/browse/MB-12480[MB-12480]
+| https://issues.couchbase.com/browse/MB-12480[MB-12480^]
 | The text displayed when changing the RAM quota for a bucket was misleading and has been fixed to reflect the actual ranges that the server will allow the bucket to be sized within.
 
-| https://issues.couchbase.com/browse/MB-9658[MB-9658]
+| https://issues.couchbase.com/browse/MB-9658[MB-9658^]
 | The Web Console document browser for a bucket displays the ID and content sample of the documents in the bucket.
 The UI displayed only the first 16 characters and affected usability when viewing documents with keys longer than 16 characters.
 This has been fixed to display the full key name and wrap to the next line if needed.
@@ -447,23 +447,23 @@ This has been fixed to display the full key name and wrap to the next line if ne
 |===
 | Issue | Description
 
-| https://issues.couchbase.com/browse/MB-22514[MB-22514]
+| https://issues.couchbase.com/browse/MB-22514[MB-22514^]
 | The XDCR target topology change detection process resulted in a large number of open connections which caused a high CPU usage.
 This has been fixed by reducing the number of connections to the target bucket.
 
-| https://issues.couchbase.com/browse/MB-22172[MB-22172]
+| https://issues.couchbase.com/browse/MB-22172[MB-22172^]
 | If a mutation needs to be resent, sent_time is updated so that next mutation can be sent at the appropriate interval.
 
-| https://issues.couchbase.com/browse/MB-21369[MB-21369]
+| https://issues.couchbase.com/browse/MB-21369[MB-21369^]
 | Fixed a replication connection leak caused by a failure to close connections to source nodes from the pipeline supervisor when replication was stopped.
 
-| https://issues.couchbase.com/browse/MB-18961[MB-18961]
+| https://issues.couchbase.com/browse/MB-18961[MB-18961^]
 | Reduced default GoXDCR DCP checkpoint interval to 10 minutes for better progress during disruptions.
 
-| https://issues.couchbase.com/browse/MB-10093[MB-10093]
+| https://issues.couchbase.com/browse/MB-10093[MB-10093^]
 | The XDCR network bandwidth can now be tuned using the Bandwidth Usage Limit parameter either from the Web Console or by using the couchbase-cli xdcr-replicate command.
 
-| https://issues.couchbase.com/browse/MB-21879[MB-21879]
+| https://issues.couchbase.com/browse/MB-21879[MB-21879^]
 | Replication was stuck when some DCP streams were inactive for a long period and resulted in a race condition when the server tried to restart the inactive DCP streams.
 |===
 
@@ -508,7 +508,7 @@ Use the admin-role-manage command instead.
 
 Also, use the `BASE64_DECODE()` function to reverse the encoding done by `BASE64_ENCODE().`
 
-| Server-side moxi http://developer.couchbase.com/documentation/server/4.0/install/install-client-server.html[proxy] is deprecated in Couchbase Server and CLI
+| Server-side moxi http://developer.couchbase.com/documentation/server/4.0/install/install-client-server.html[proxy^] is deprecated in Couchbase Server and CLI
 | Use Couchbase client SDKs or client-side moxi in your applications.
 
 | CRAM-MD5 for bucket authentication
