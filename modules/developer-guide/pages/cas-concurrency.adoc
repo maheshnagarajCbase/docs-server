@@ -166,7 +166,7 @@ Sometimes more logic is needed when performing updates, for example, if a proper
 
 SDK examples for demonstrating CAS functionality (including handling CAS failures):
 
-https://github.com/couchbaselabs/devguide-examples/blob/master/c/cas.cc[C] | https://github.com/couchbaselabs/devguide-examples/blob/master/python/cas.py[Python] | https://github.com/couchbaselabs/devguide-examples/blob/master/java/src/main/java/com/couchbase/devguide/Cas.java[Java] | .NET | node.js | Go
+https://github.com/couchbaselabs/devguide-examples/blob/master/c/cas.cc[C^] | https://github.com/couchbaselabs/devguide-examples/blob/master/python/cas.py[Python^] | https://github.com/couchbaselabs/devguide-examples/blob/master/java/src/main/java/com/couchbase/devguide/Cas.java[Java^] | .NET | node.js | Go
 
 == Performance considerations
 

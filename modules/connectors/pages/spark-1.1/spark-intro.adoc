@@ -4,7 +4,7 @@
 [abstract]
 The Couchbase Spark Connector depends heavily on the APIs provided by Spark.
 
-The Couchbase Spark Connector provides first-class integration between your high performance Couchbase Server cluster and the https://spark.apache.org[Apache Spark] data processing platform.
+The Couchbase Spark Connector provides first-class integration between your high performance Couchbase Server cluster and the https://spark.apache.org[Apache Spark^] data processing platform.
 
 == Compatibility
 
@@ -28,4 +28,4 @@ The table above shows the combination Couchbase tests and supports.
 == Contributing
 
 Couchbase welcomes community contributions to the Spark connector.
-The https://github.com/couchbaselabs/couchbase-spark-connector[Spark connector source code] is available on GitHub and contains instructions to contribute.
+The https://github.com/couchbaselabs/couchbase-spark-connector[Spark connector source code^] is available on GitHub and contains instructions to contribute.

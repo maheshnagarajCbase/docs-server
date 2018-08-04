@@ -22,7 +22,7 @@ The query workbench is supported on Windows, Linux, and Mac OS X platforms.
 
 == Installing the query workbench
 
-. Access the http://www.couchbase.com/nosql-databases/downloads[Downloads] page and select the [.ui]*Tools* tab under Couchbase Server.
+. Access the http://www.couchbase.com/nosql-databases/downloads[Downloads^] page and select the [.ui]*Tools* tab under Couchbase Server.
 Download the query workbench archive file `couchbase-query-workbench_dp3-<os>` by choosing the appropriate package.
 +
 // <table>

@@ -18,7 +18,7 @@ When done setting up the repository, it installs the C SDK (just a few simple li
 
 == Installing cbc on OS X
 
-The [.cmd]`cbc` utility is available with the _libcouchbase_ package, which you can install by using the http://brew.sh[Homebrew] package manager for OS X:
+The [.cmd]`cbc` utility is available with the _libcouchbase_ package, which you can install by using the http://brew.sh[Homebrew^] package manager for OS X:
 
  $ brew install libcouchbase
 

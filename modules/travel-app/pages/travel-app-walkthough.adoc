@@ -146,7 +146,7 @@ The button is defined within the `travelForm` form element in the [.path]_index.
 ----
 
 The `travelForm` form element contains various Angular validation options that are used with the input directives.
-For more information about validation and the input directive see https://docs.angularjs.org/api/ng/directive/input.
+For more information about validation and the input directive see https://docs.angularjs.org/api/ng/directive/input[^].
 After validating the input options, the Angular function in the [.path]_script.js_ file is called to find flights.
 
 .findFlights() function from /public/js/scripts.js file

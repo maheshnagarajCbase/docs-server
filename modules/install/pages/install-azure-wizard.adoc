@@ -51,7 +51,7 @@ image::deploy-azure06.png[]
 [#image_fsr_dbb_ys]
 image::deploy-azure07.png[]
 
-. Open MS Internet Explorer and navigate to the  http://www.couchbase.com/nosql-databases/downloads[Couchbase download site].
+. Open MS Internet Explorer and navigate to the  http://www.couchbase.com/nosql-databases/downloads[Couchbase download site^].
 . Download the 64 bit Windows installer and when the download is complete start the installation.
 . Open the file [.path]_C:\Windows\System32\drivers\etc\hosts_ and add a line to map the VM’s `Private IP` to `Public DNS Name`.
 For Example: `100.117.124.100 cb4.cloudapp.net`

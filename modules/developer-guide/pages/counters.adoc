@@ -48,4 +48,4 @@ if should_increment_value(value):
 
 == Counter in other SDKs
 
-https://github.com/couchbaselabs/devguide-examples/blob/master/c/counter.cc[C] | https://github.com/couchbaselabs/devguide-examples/blob/master/python/counter.py[Python] | https://github.com/couchbaselabs/devguide-examples/blob/master/java/src/main/java/com/couchbase/devguide/Counter.java[Java] | .NET | https://github.com/couchbaselabs/devguide-examples/blob/master/go/counter.go[Go] | https://github.com/couchbaselabs/devguide-examples/blob/master/nodejs/counter.js[node.js]
+https://github.com/couchbaselabs/devguide-examples/blob/master/c/counter.cc[C^] | https://github.com/couchbaselabs/devguide-examples/blob/master/python/counter.py[Python^] | https://github.com/couchbaselabs/devguide-examples/blob/master/java/src/main/java/com/couchbase/devguide/Counter.java[Java^] | .NET | https://github.com/couchbaselabs/devguide-examples/blob/master/go/counter.go[Go^] | https://github.com/couchbaselabs/devguide-examples/blob/master/nodejs/counter.js[node.js^]

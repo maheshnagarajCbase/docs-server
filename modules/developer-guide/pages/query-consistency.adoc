@@ -37,4 +37,4 @@ query.consistency = CONSISTENCY_REQUEST
 
 Examples for setting this option in the SDKs:
 
-https://github.com/couchbaselabs/devguide-examples/blob/master/c/query-consistency.cc[C] | https://github.com/couchbaselabs/devguide-examples/blob/master/python/query-consistency.py[Python] | Java | .NET | node.js
+https://github.com/couchbaselabs/devguide-examples/blob/master/c/query-consistency.cc[C^] | https://github.com/couchbaselabs/devguide-examples/blob/master/python/query-consistency.py[Python^] | Java | .NET | node.js

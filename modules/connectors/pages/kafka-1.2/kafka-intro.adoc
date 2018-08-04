@@ -4,7 +4,7 @@
 [abstract]
 The Kafka connector provides functionality to stream, filter, and transform events from Couchbase Server to Kafka.
 
-The Couchbase Kafka connector enables you to send data events from a Couchbase Server cluster to a https://kafka.apache.org[Kafka] cluster by using the Couchbase database change protocol (DCP).
+The Couchbase Kafka connector enables you to send data events from a Couchbase Server cluster to a https://kafka.apache.org[Kafka^] cluster by using the Couchbase database change protocol (DCP).
 
 The Kafka Connector includes the following components:
 
@@ -19,4 +19,4 @@ Because the Kafka connector relies heavily on DCP, it is only compatible with Co
 == Contributing
 
 Couchbase welcomes community contributions to the Kafka connector.
-The https://github.com/couchbase/couchbase-kafka-connector[Kafka Connector source code] is available on GitHub.
+The https://github.com/couchbase/couchbase-kafka-connector[Kafka Connector source code^] is available on GitHub.

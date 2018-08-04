@@ -26,7 +26,7 @@ IMPORTANT: Please ensure that you are running OpenSSL v1.0.1g or higher.
 On Monday, April 7th, 2014, an OpenSSL vulnerability was disclosed which has been called one of the worst security holes in recent internet history.
 The bug, called the Heartbleed bug, was introduced in OpenSSL version 1.0.1.
 It has been in the wild since March of 2012 and is patched with OpenSSL version 1.0.1g released on April 7th, 2014.
-The problem, tagged CVE-2014-0160, is described in detail in this https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0160[NIST article].
+The problem, tagged CVE-2014-0160, is described in detail in this https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-0160[NIST article^].
 
 For CentOS systems, you can query the version of the OpenSSL package installed on your system by typing:
 

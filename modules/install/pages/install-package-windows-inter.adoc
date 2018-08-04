@@ -20,7 +20,7 @@ During the installation process, the installer also verifies that the default ad
 If the default port is unavailable, the installer prompts for a different port to be used for administration of Couchbase Server.
 The installer asks you to set up sufficient ports available for the node.
 +
-By default, Microsoft Server will not have an adequate number of ephemeral ports, see https://support.microsoft.com/en-us/kb/196271[Microsoft Knowledge Base Article 196271]:
+By default, Microsoft Server will not have an adequate number of ephemeral ports, see https://support.microsoft.com/en-us/kb/196271[Microsoft Knowledge Base Article 196271^]:
 +
 [#image_u1k_bhv_vs]
 image::wizard-01.png[,align=left]

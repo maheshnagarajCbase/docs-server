@@ -48,7 +48,7 @@ However, using binary values limits the functionality your application can take 
  ** *JSON values*: JSON provides rich representation for entities.
 Couchbase Server can parse, index and query JSON values.
 JSON provide a name and a value for each attribute.
-You can find the JSON definition at https://tools.ietf.org/html/rfc7159[RFC 7159] or at http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf[ECMA 404].
+You can find the JSON definition at https://tools.ietf.org/html/rfc7159[RFC 7159^] or at http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf[ECMA 404^].
 +
 JSON document attributes can represent both basic types such as number, string, Boolean, and complex types including embedded documents and arrays.
 In the examples below, a1 and a2 represent an attribute that has a numeric and string value respectively, a3 represents an embedded document, and a4 represents an array of embedded documents.
