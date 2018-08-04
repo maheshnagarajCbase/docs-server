@@ -18,7 +18,7 @@ All fields in the sort order MUST be indexed.
 There are two special fields:
 
 * `_id` - refers to the document identifier
-* `_score` - refers to the relevance score computed by http://www.blevesearch.com/[Bleve]
+* `_score` - refers to the relevance score computed by http://www.blevesearch.com/[Bleve^]
 
 Here is a more complex example:
 

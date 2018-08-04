@@ -99,7 +99,7 @@ image::deploy-azure06.png[,570]
 [#image_fsr_dbb_ys]
 image::deploy-azure07.png[,570]
 
-. Open MS Internet Explorer and navigate to the  http://www.couchbase.com/nosql-databases/downloads[Couchbase download site].
+. Open MS Internet Explorer and navigate to the  http://www.couchbase.com/nosql-databases/downloads[Couchbase download site^].
 . Download the 64 bit Windows installer and when the download is complete start the installation.
 . Open the file [.path]_C:\Windows\System32\drivers\etc\hosts_ and add a line to map the VM’s `Private IP` to `Public DNS Name`.
 For Example: `100.117.124.100 cb4.cloudapp.net`
@@ -125,8 +125,8 @@ Deploying a multi-node Couchbase Server cluster for the first time on many of th
 
 With the new Azure Resource Manager (ARM), you can deploy a multi-node Couchbase Server cluster with a simple but powerful template.
 
-http://www.fullscale180.com/[Full Scale 180] worked with Microsoft to develop some of the templates for deploying close to real life examples of common solutions in the market.
-Those templates can be found at https://github.com/azure/azure-quickstart-templates/[github.com].
+http://www.fullscale180.com/[Full Scale 180^] worked with Microsoft to develop some of the templates for deploying close to real life examples of common solutions in the market.
+Those templates can be found at https://github.com/azure/azure-quickstart-templates/[github.com^].
 
-The https://github.com/Azure/azure-quickstart-templates/tree/master/couchbase-on-ubuntu[Couchbase Server cluster template] is one of the templates.
+The https://github.com/Azure/azure-quickstart-templates/tree/master/couchbase-on-ubuntu[Couchbase Server cluster template^] is one of the templates.
 It allows Azure users to deploy clusters, using different VM sizes, implementing Azure and Couchbase Server best practices.

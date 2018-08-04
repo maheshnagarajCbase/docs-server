@@ -736,7 +736,7 @@ It returns MISSING if any of the arguments are MISSING, and returns NULL if one 
 
 The difference between [.cmd]`ARRAY_SYMDIFF()` and [.cmd]`ARRAY_SYMDIFFN()` is that the former function includes the value when it appears only once while the latter function includes the value when it appears odd number of times in the input arrays.
 
-NOTE: Refer to the following article for more information on the difference between a normal and n-ary symdiff:  https://en.wikipedia.org/wiki/Symmetric_difference[].
+NOTE: Refer to the following article for more information on the difference between a normal and n-ary symdiff:  https://en.wikipedia.org/wiki/Symmetric_difference[^].
 
 .Examples
 ----
@@ -761,7 +761,7 @@ It returns MISSING if any of the arguments are MISSING, and returns NULL if one 
 
 The difference between [.cmd]`ARRAY_SYMDIFF()` and [.cmd]`ARRAY_SYMDIFFN()` is that the former function includes the value when it appears only once while the latter function includes the value when it appears odd number of times in the input arrays.
 
-NOTE: Refer to the following article for more information on the difference between a normal and n-ary symdiff:  https://en.wikipedia.org/wiki/Symmetric_difference[].
+NOTE: Refer to the following article for more information on the difference between a normal and n-ary symdiff:  https://en.wikipedia.org/wiki/Symmetric_difference[^].
 
 .Examples
 ----

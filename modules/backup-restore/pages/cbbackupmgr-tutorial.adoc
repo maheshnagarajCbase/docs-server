@@ -154,7 +154,7 @@ The "single" backup repository also contains one backup, but this backup only co
 
 One of the most important features of [.cmd]`cbbackupmgr` is that it is an incremental-only backup utility.
 This means that once you back up some data, you will never need to back it up again.
-In order to simulate some changes on the cluster you can run the [.path]_02-modify.sh_ script from the http://github.com/couchbaselabs/backup-tutorial[backup-tutorial] GitHub repository mentioned at the beginning of the tutorial.
+In order to simulate some changes on the cluster you can run the [.path]_02-modify.sh_ script from the http://github.com/couchbaselabs/backup-tutorial[backup-tutorial^] GitHub repository mentioned at the beginning of the tutorial.
 If you do not have this script then you need to modify two documents and add two new documents to the travel-sample bucket.
 After you modify some data, run the backup sub-command on the "cluster" backup repository again.
 

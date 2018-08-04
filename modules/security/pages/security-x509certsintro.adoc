@@ -6,7 +6,7 @@ Couchbase Server uses X.509 certificates to encrypt client-server communications
 
 Couchbase Server 4.5 Enterprise Edition supports X.509 certificates for Transport Layer Security (TLS).
 
-With X.509 certificates, Couchbase Server can strongly encrypt client-server communications and http://developer.couchbase.com/documentation/server/4.1/xdcr/xdcr-intro.html[XDCR] (Cross Data Center Replication).
+With X.509 certificates, Couchbase Server can strongly encrypt client-server communications and http://developer.couchbase.com/documentation/server/4.1/xdcr/xdcr-intro.html[XDCR^] (Cross Data Center Replication).
 
 NOTE: Full administrators in Couchbase can manage certificates using the Couchbase CLI tools (as described in xref:cli:cbcli/ssl-manage.adoc#cbcli-xdcr-ssl[[.cmd]`ssl-manage`]) or REST API (as described in xref:rest-api:rest-security.adoc[Security API]).
 
@@ -92,7 +92,7 @@ Here are a few best practices around X.509 certificates in Couchbase that you sh
 * We recommended at least RSA key-length of 2048 bits or higher.
 As computing capabilities increase, longer RSA keys provide increased security.
 
-The certificate chain must be valid from the node certificate up to the root certificate, which can be verified using the https://www.openssl.org/docs/manmaster/man1/verify.html[OpenSSL validate certificate test].
+The certificate chain must be valid from the node certificate up to the root certificate, which can be verified using the https://www.openssl.org/docs/manmaster/man1/verify.html[OpenSSL validate certificate test^].
 
 *Validating Server Identity*
 
@@ -575,7 +575,7 @@ By replacing the old chain file with the new chain file (that contains the updat
 +
 Before modifying anything on the server-side, deploy the CA public key and intermediate certificates in the certificate stores used by your client browser and the SDK language.
 +
-For example, here are steps to do that for http://www.cyberciti.biz/faq/firefox-adding-trusted-ca/[Firefox] and http://blogmines.com/blog/how-to-import-a-certificate-in-google-chrome/[Chrome].
+For example, here are steps to do that for http://www.cyberciti.biz/faq/firefox-adding-trusted-ca/[Firefox^] and http://blogmines.com/blog/how-to-import-a-certificate-in-google-chrome/[Chrome^].
 
 . *Rotate certificates on the server*
  .. Configure the new root CA certificate (`newca.pem` is the new root CA certificate).
@@ -660,7 +660,7 @@ Here are some error messages you might encounter when configuring the cluster CA
 | `Certificate should not be empty`
 | This error message can occur if the request body of the certificate is empty.
 | Open the certificate file, and verify whether it is empty or not.
-The certificate file should be readable using openssl or via online SSL tools such as https://www.sslchecker.com/certdecoder[sslcheker].
+The certificate file should be readable using openssl or via online SSL tools such as https://www.sslchecker.com/certdecoder[sslcheker^].
 
 | `Certificate is not valid at this time`
 | This error message can occur if the certificate has expired, or is not yet valid.
@@ -700,7 +700,7 @@ openssl rsa -in privateKey.pem -out newPrivateKey.pem
 | `Invalid certificate type: ~s`
 | Appears when a header other than `BEGIN CERTIFICATE` has been found.
 | Open the certificate file, and verify whether it is a valid certificate.
-The certificate file should be readable using `openssl` or via online SSL tools such as https://www.sslchecker.com/certdecoder[sslchecker].
+The certificate file should be readable using `openssl` or via online SSL tools such as https://www.sslchecker.com/certdecoder[sslchecker^].
 |===
 
 *Node Certificates*

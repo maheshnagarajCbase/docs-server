@@ -14,9 +14,9 @@ Keep in mind that this kind of protection must be planned in advance.
 
 The sample 3rd party encryption tools are:
 
-* https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Security_Guide/sec-Encryption.html[Linux Unified Key Setup (LUKS)]
-* Vormetric: http://www.couchbase.com/binaries/content/assets/us/partner-collateral/vormetric/couchbase-vormetric-solution-brief.pdf[click]to download more information.
-* Gemalto: https://safenet.gemalto.com/resources/data-protection/couchbase-nosql-database-solution-brief/?langtype=1033[click] to download more information.
+* https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Security_Guide/sec-Encryption.html[Linux Unified Key Setup (LUKS)^]
+* Vormetric: http://www.couchbase.com/binaries/content/assets/us/partner-collateral/vormetric/couchbase-vormetric-solution-brief.pdf[click^]to download more information.
+* Gemalto: https://safenet.gemalto.com/resources/data-protection/couchbase-nosql-database-solution-brief/?langtype=1033[click^] to download more information.
 * Protegrity
 
 You can use full disk encryption or the file level encryption.

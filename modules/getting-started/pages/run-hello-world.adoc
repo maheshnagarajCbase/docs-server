@@ -21,7 +21,7 @@ The example uses _node.js_: this may or may not be the SDK-version you choose to
 
 == Install node.js
 
-To install node.js, use the appropriate installer for your platform; which is available from https://nodejs.org/en/download/[nodejs.org].
+To install node.js, use the appropriate installer for your platform; which is available from https://nodejs.org/en/download/[nodejs.org^].
 
 == Install the Couchbase SDK for node.js
 
@@ -42,7 +42,7 @@ $ npm install node-gyp
 
 == Obtain the _Hello World!_ Example
 
-The program you are to run is located https://github.com/couchbaselabs/helloWorldCouchbaseQueryDemo[here].
+The program you are to run is located https://github.com/couchbaselabs/helloWorldCouchbaseQueryDemo[here^].
 It consists of only two program files, and you can save them anywhere you want.
 There are also five supportive graphics files: these must be saved in the same directory as the html file.
 

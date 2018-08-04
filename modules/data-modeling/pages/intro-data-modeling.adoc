@@ -58,7 +58,7 @@ JSON supports the following basic data types:
 * Objects, consisting of key-value pairs, and also known as an associative array or hash.
 The key must be a string and the value can be any supported JSON data type.
 
-For more information on creating valid JSON documents, see http://www.json.org[].
+For more information on creating valid JSON documents, see http://www.json.org[^].
 
 When you use JSON documents to represent your application data, you should think about the document as a logical container for information.
 This involves thinking about how data from your application fits into natural groups.

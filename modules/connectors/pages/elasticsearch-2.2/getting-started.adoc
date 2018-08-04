@@ -169,11 +169,11 @@ $ curl -XPOST 'localhost:9200/beer-sample/_search?pretty' -d'{"query": \
 
 This produces the same output as the Lucene-based example.
 
-For more information on Elasticsearch query-options, see https://www.elastic.co/guide/en/elasticsearch/reference/current/_introducing_the_query_language.html[Introducing the Query Language], in the Elasticsearch API documentation.
+For more information on Elasticsearch query-options, see https://www.elastic.co/guide/en/elasticsearch/reference/current/_introducing_the_query_language.html[Introducing the Query Language^], in the Elasticsearch API documentation.
 
 == Use the Elasticsearch Web UI
 
-The Elasticsearch Web UI is located at http://localhost:9200:/_plugin/head/[], and appears as follows:
+The Elasticsearch Web UI is located at http://localhost:9200:/_plugin/head/[^], and appears as follows:
 
 [#esWebUI]
 image::elasticsearch-2.2/images/elasticsearchConsole.png[,480,align=left]
@@ -198,7 +198,7 @@ Note that the `source` object contains only metadata, rather than a document’s
 The contents of the `_id` field, returned from an Elasticsearch query, can be used to retrieve the entire corresponding document from Couchbase.
 Ensure Couchbase is running; then, proceed as follows:
 
-. Access the Couchbase Web Console, at http://localhost:8091:/[].
+. Access the Couchbase Web Console, at http://localhost:8091:/[^].
 . Left-click on the Data Buckets tab, near the top:
 +
 [#dataBucketsTab]
@@ -255,7 +255,7 @@ Couchbase returns, for each ID, a document containing detailed information on th
 
 == Access Source-Files
 
-You can access the three source-files for the example at this location: https://github.com/couchbaselabs/elasticsearchdemo/tree/master[].
+You can access the three source-files for the example at this location: https://github.com/couchbaselabs/elasticsearchdemo/tree/master[^].
 The following sections of the current document provide a brief summary of the functionality.
 
 == Client-Side HTML and JavaScript
@@ -488,8 +488,8 @@ If you wish to change these port-designations, you must edit the program-files, 
 To run the provided node.js programs, you must install both the Couchbase SDK and node.js Elasticsearch client; which in turn requires that you install and use the Node Package Manager, _npm_.
 On non-Windows platforms, you may also need to install _node-gyp_.
 
-For information on installing the node.js instance of the Couchbase SDK see the documentation at https://developer.couchbase.com/documentation/server/current/sdk/nodejs/start-using-sdk.html[Start Using the SDK].
-See also the Elasticsearch documentation for installing the Elasticsearch client, at https://www.elastic.co/guide/en/elasticsearch/client/javascript-api/current/about.html[About].
+For information on installing the node.js instance of the Couchbase SDK see the documentation at https://developer.couchbase.com/documentation/server/current/sdk/nodejs/start-using-sdk.html[Start Using the SDK^].
+See also the Elasticsearch documentation for installing the Elasticsearch client, at https://www.elastic.co/guide/en/elasticsearch/client/javascript-api/current/about.html[About^].
 
 When you have installed the required SDK, start cbNodeJsQueryAgent at the command-line, as follows:
 

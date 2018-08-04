@@ -8,7 +8,7 @@ This section provides a step-by-step procedure, whereby the three components can
 == Installation Prerequisites
 
 The installation-procedure provided below involves the creation of a test environment, by means of _Oracle VirtualBox_; requiring _Ubuntu 14_ as operating system.
-For details on setting up VirtualBox on your development-machine, and deploying a Ubuntu 14 image on it, see http://virtualbox.org[].
+For details on setting up VirtualBox on your development-machine, and deploying a Ubuntu 14 image on it, see http://virtualbox.org[^].
 The instructions in this section assume that you have completed the necessary procedures, and have supervisor-privileges in the resulting virtual environment.
 You will install and run Elasticsearch, the Elasticsearch Plug-in, and Couchbase Server in this environment: you should thus ensure that the virtual machine is provisioned with sufficient disk and memory resources; by means of the [.ui]*Settings* panel, within the Oracle VM VirtualBox Manager.
 
@@ -163,8 +163,8 @@ The procedures and code-examples that you will encounter in the next section, xr
 
 When you have completed Getting Started, and the other sections of this document, and have thus become more familiar with the plug-in and its capability, you will likely wish to perform installation on additional platforms, in preparation for or as part of a production-deployment.
 
-Full details on the installation-procedures for Couchbase Server are described https://developer.couchbase.com/documentation/server/current/install/install-intro.html[here].
-Those for Elasticsearch, https://www.elastic.co/guide/en/elasticsearch/reference/current/_installation.html[here].
+Full details on the installation-procedures for Couchbase Server are described https://developer.couchbase.com/documentation/server/current/install/install-intro.html[here^].
+Those for Elasticsearch, https://www.elastic.co/guide/en/elasticsearch/reference/current/_installation.html[here^].
 Installing and configuring the plug-in on other platforms is virtually the same as described here, for Ubuntu 14.
 Note that:
 
@@ -178,7 +178,7 @@ For example, on CentOS, to install the Elasticsearch package use `yum` (rather t
 == Elasticsearch 2.1.1
 
 Elasticsearch 2.1.1 requires a special, compatible version of the plug-in.
-This can be obtained https://github.com/couchbaselabs/elasticsearch-transport-couchbase/releases/download/v2.2.1.2/elasticsearch-transport-couchbase-2.2.1.2.zip[here].
+This can be obtained https://github.com/couchbaselabs/elasticsearch-transport-couchbase/releases/download/v2.2.1.2/elasticsearch-transport-couchbase-2.2.1.2.zip[here^].
 
 Use of this version of the plug-in requires that Java security-policy permissions be appropriately set.
 See xref:elasticsearch-2.2/advanced-settings.adoc[Advanced Settings].

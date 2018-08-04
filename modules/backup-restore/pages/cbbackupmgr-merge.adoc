@@ -9,7 +9,7 @@ cbbackupmgr-merge - Merges two or more backups together.
 Due to critical issues, we temporarily deprecated the merge command in _cbbackupmgr_ from versions 4.5.x and 4.6.x prior to 4.6.3.
 We re-introduced support for the command in the Couchbase Server 4.6.3 and 5.0 releases.
 
-For more information on this issue, see https://issues.couchbase.com/browse/MB-20403[MB-20403]
+For more information on this issue, see https://issues.couchbase.com/browse/MB-20403[MB-20403^]
 ====
 
 == Synopsis

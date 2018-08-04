@@ -8,14 +8,14 @@ This section shows how to add the connector to your application.
 
 At a minimum, Java 6 is required, but any newer version is also supported (including Java 8).
 
-The connector is shipped as a zip archive and available here for download: http://packages.couchbase.com/clients/kafka/3.0.0/kafka-connect-couchbase-3.0.0.zip[kafka-connect-couchbase-3.0.0.zip]
+The connector is shipped as a zip archive and available here for download: http://packages.couchbase.com/clients/kafka/3.0.0/kafka-connect-couchbase-3.0.0.zip[kafka-connect-couchbase-3.0.0.zip^]
 
-The location of the archive contents depends on how the http://docs.confluent.io/current/installation.html[Confluent Platform] was installed.
+The location of the archive contents depends on how the http://docs.confluent.io/current/installation.html[Confluent Platform^] was installed.
 In general it should be placed so that the `share/java/kafka-connect-couchbase` directory of the archive is at the same level as `kafka-connect-jdbc`.
 
-If you are only using https://kafka.apache.org/[Apache Kafka], the connector should be in the path (e.g.
+If you are only using https://kafka.apache.org/[Apache Kafka^], the connector should be in the path (e.g.
 `kafka_2.11-0.10.1.0/libs`.
-The Apache Kafka version of this sample will be almost the same except it cannot use Confluent-specific features provided by the http://docs.confluent.io/3.1.1/control-center/docs/index.html[Control Center] or http://docs.confluent.io/3.1.1/schema-registry/docs/index.html[Schema Registry] products.
+The Apache Kafka version of this sample will be almost the same except it cannot use Confluent-specific features provided by the http://docs.confluent.io/3.1.1/control-center/docs/index.html[Control Center^] or http://docs.confluent.io/3.1.1/schema-registry/docs/index.html[Schema Registry^] products.
 
 == Sample
 

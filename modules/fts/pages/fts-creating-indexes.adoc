@@ -392,7 +392,7 @@ When you define your index mapping, you can override this value in a number of p
 
 The name of a Date/Time parser that will be used to parse a date stored as a string.
 
-NOTE: Full text search and Bleve expect dates to be in the format specified by https://www.ietf.org/rfc/rfc3339.txt[RFC-3339], which is a specific profile of ISO-8601 that is more restrictive.
+NOTE: Full text search and Bleve expect dates to be in the format specified by https://www.ietf.org/rfc/rfc3339.txt[RFC-3339^], which is a specific profile of ISO-8601 that is more restrictive.
 
 [#def-field-all]
 *Default Field*

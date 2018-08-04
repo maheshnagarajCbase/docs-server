@@ -28,8 +28,8 @@ Here are some of the good online sources about IPSec and its configuration:
 
 Some of the methods to specify access control information at file/directory level are:
 
-* SELinux - https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Security-Enhanced_Linux/[RedHat]
-* https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Storage_Administration_Guide/ch-acls.html[Access Control Lists] in Linux
+* SELinux - https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Security-Enhanced_Linux/[RedHat^]
+* https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Storage_Administration_Guide/ch-acls.html[Access Control Lists^] in Linux
 
 You can also use the traditional file permissions to restrict user access to files or directories.
 
@@ -38,7 +38,7 @@ The other method is to allow administrative access to Couchbase Server only thro
 * Restricting the access to couchbase administrative ports 8091/8092 on the Couchbase Server.
 * Restricting the SSH access to the machine.
 
-Access restriction to the machines must be performed at the network level or the system level using https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Security_Guide/sect-Security_Guide-IPTables.html[IPtables rules.]
+Access restriction to the machines must be performed at the network level or the system level using https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Security_Guide/sect-Security_Guide-IPTables.html[IPtables rules.^]
 
 == Configuring IP Tables and Ports
 
@@ -53,7 +53,7 @@ To configure IP tables for Linux, you can choose among one of these two options:
       -A INPUT -m state --state NEW -p tcp --dport 443 -j ACCEPT
 ----
 
-A sample of the IP tables rules is available in this http://blog.couchbase.com/iptables-firewall-settings-couchbase-db-and-couchbase-mobile-syncgateway[blog].
+A sample of the IP tables rules is available in this http://blog.couchbase.com/iptables-firewall-settings-couchbase-db-and-couchbase-mobile-syncgateway[blog^].
 
 Keep in mind that certain Couchbase ports are used for node-to-node and some for node-to-client communication.
 For a complete list of Couchbase ports, see xref:install:install-ports.adoc#topic2659[Network Configuration].
