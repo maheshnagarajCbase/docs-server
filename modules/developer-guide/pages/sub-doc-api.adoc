@@ -44,11 +44,11 @@ In the context of social gaming, this may be thought of as sending messages betw
 The following blogs explain how the sub-document API is expressed using different SDKs:
 
 [#ul_qx5_sh4_2v]
-* http://blog.couchbase.com/2016/february/subdocument-couchbase-java-sdk[Java Walk-through of the Sub-document API]
-* http://blog.couchbase.com/2016/february/preview-of-the-subdocument-api-using-go[GO Walk-through of the Sub-document API]
+* http://blog.couchbase.com/2016/february/subdocument-couchbase-java-sdk[Java Walk-through of the Sub-document API^]
+* http://blog.couchbase.com/2016/february/preview-of-the-subdocument-api-using-go[GO Walk-through of the Sub-document API^]
 ====
 
-Consider a simple https://gist.github.com/ToddGreenstein/f43559b9ca5fc476f18c[Java] example that uses the sub-document API to connect to the [.param]`travel-sample` bucket, fetch the [.param]`name` field from the document "[.in]``airline_13633``", and then print it.
+Consider a simple https://gist.github.com/ToddGreenstein/f43559b9ca5fc476f18c[Java^] example that uses the sub-document API to connect to the [.param]`travel-sample` bucket, fetch the [.param]`name` field from the document "[.in]``airline_13633``", and then print it.
 
 .Fetch.java
 ----
@@ -58,7 +58,7 @@ LOGGER.info(resultLookup.content("name", String.class));
 ----
 
 The API for sub-document operations use the dot notation syntax to identify the logical location of an attribute within a document.
-This is also consistent with http://developer.couchbase.com/documentation/server/4.1/n1ql/n1ql-intro/queriesandresults.html[N1QL's path syntax] to refer to individual fields in a document.
+This is also consistent with http://developer.couchbase.com/documentation/server/4.1/n1ql/n1ql-intro/queriesandresults.html[N1QL's path syntax^] to refer to individual fields in a document.
 In the example below, the path to the last name field is "[.path]_name.last_".
 
 Updates to a field are atomic and do not collide with updates to a different field on the same key.
@@ -177,7 +177,7 @@ bucket.mutateIn("airline_13633").upsert("fleet", JsonArray.from(
 ), false).execute();
 ----
 
-The sub-document API also supports enforcing that values are unique in an array, which allows the construction of https://en.wikipedia.org/wiki/Set_(mathematics)[mathematical sets].
+The sub-document API also supports enforcing that values are unique in an array, which allows the construction of https://en.wikipedia.org/wiki/Set_(mathematics)[mathematical sets^].
 
 The [.path]_Unique.java_ example below shows an example of mathematical sets - each airline has a [.param]`models` array recording what models of aircraft an airline operates.
 There is a constraint that the elements in [.param]`models` should be unique (a model shouldn’t appear more than once), so the [.cmd]`addUnique` command is used when adding new models:

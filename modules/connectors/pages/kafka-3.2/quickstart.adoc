@@ -6,9 +6,9 @@ This section shows how to add the connector to your application.
 
 == Download
 
-The connector is shipped as a zip archive, available for download: https://packages.couchbase.com/clients/kafka/3.2.3/kafka-connect-couchbase-3.2.3.zip[kafka-connect-couchbase-3.2.3.zip]
+The connector is shipped as a zip archive, available for download: https://packages.couchbase.com/clients/kafka/3.2.3/kafka-connect-couchbase-3.2.3.zip[kafka-connect-couchbase-3.2.3.zip^]
 
-If you prefer to build the connectors from source, clone the https://github.com/couchbase/kafka-connect-couchbase[GitHub repository] and run `mvn package` to generate the connector archive (look for `kafka-connect-couchbase-<version>.zip` in the `target` directory).
+If you prefer to build the connectors from source, clone the https://github.com/couchbase/kafka-connect-couchbase[GitHub repository^] and run `mvn package` to generate the connector archive (look for `kafka-connect-couchbase-<version>.zip` in the `target` directory).
 
 == Getting Started
 
@@ -26,7 +26,7 @@ You'll also need a local installation of Apache Kafka or Confluent Platform Kafk
 If you already have an installation of Kafka and know how to start the servers, feel free to skip this section.
 
 Still reading? Don't worry, setting up a basic installation is pretty easy.
-Download either https://kafka.apache.org/downloads[Apache Kafka] or https://www.confluent.io/download/[Confluent Platform Kafka].
+Download either https://kafka.apache.org/downloads[Apache Kafka^] or https://www.confluent.io/download/[Confluent Platform Kafka^].
 For simplicity, this guide assumes you're installing from a ZIP or TAR archive, so steer clear of the deb/rpm packages for now.
 
 Decompress the Apache Kafka or Confluent Platform archive and move the resulting directory under `~/opt` (or wherever you like to keep this kind of software).
@@ -51,7 +51,7 @@ schema-registry-start $CONFLUENT_HOME/etc/schema-registry/schema-registry.proper
 
 NOTE: Confluent 3.3.0 introduced a CLI tool that lets you start all the servers with a single command.
 It also provides a more sophisticated way to manage connectors than the technique described in this guide.
-Read about it http://docs.confluent.io/current/connect/quickstart.html[here].
+Read about it http://docs.confluent.io/current/connect/quickstart.html[here^].
 
 If you're not using Confluent, the commands are slightly different, but the idea is the same.
 Start the servers by running these commands, *each in a separate terminal*:
@@ -68,7 +68,7 @@ The Couchbase connector distribution includes sample config files.
 Look inside `$KAFKA_CONNECT_COUCHBASE_HOME/config` and edit the `quickstart-couchbase-source.properties` file.
 
 Take a moment to peruse the configuration options specified here.
-Some are https://kafka.apache.org/documentation/#connect_configuring[standard options available to all connectors].
+Some are https://kafka.apache.org/documentation/#connect_configuring[standard options available to all connectors^].
 The rest are specific to the Couchbase connector.
 
 For this exercise, change the value of `connection.bucket` to `travel-sample` (or whichever bucket you want to stream from).
@@ -84,7 +84,7 @@ It doesn't matter for this exercise; just be aware the option exists and default
 
 == Run the Source Connector
 
-Kafka connectors can be run in https://kafka.apache.org/documentation/#connect_running[standalone or distributed] mode.
+Kafka connectors can be run in https://kafka.apache.org/documentation/#connect_running[standalone or distributed^] mode.
 For now let's run the connector in standalone mode, using the CLASSPATH environment variable to include the Couchbase connector JAR in the class path.
 
 For Confluent Platform Kafka:

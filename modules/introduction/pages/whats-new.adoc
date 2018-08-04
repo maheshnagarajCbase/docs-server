@@ -57,7 +57,7 @@ Statement level roles are added for executing various N1QL statements such as SE
 For more information, see xref:security:security-authorization.adoc#authorization[RBAC].
 
 *External Data Access & Federated Queries using CURL*::
-Couchbase Server 5.0 adds a new N1QL function named as CURL() function, which implements a subset of https://en.wikipedia.org/wiki/CURL[cURL] functionality and enables N1QL queries to interact and integrate with external JSON data sources available over HTTP/REST.
+Couchbase Server 5.0 adds a new N1QL function named as CURL() function, which implements a subset of https://en.wikipedia.org/wiki/CURL[cURL^] functionality and enables N1QL queries to interact and integrate with external JSON data sources available over HTTP/REST.
 This allows federated queries against external data sources or other Couchbase clusters.
 For example, this enables N1QL queries to use FTS indexes, or to access data from other Couchbase Clusters, or in general access any REST endpoint (such as Google APIs, or Yahoo API) that can provide JSON data.
 For more information, see xref:n1ql:n1ql-language-reference/curl.adoc#topic_8_8[CURL Function].
@@ -99,7 +99,7 @@ This helps in creating a system that scales almost linearly and exploits the cur
 Persistent snapshots, that run in the background, help create recovery points that can be used to rollback in case of failure.
 Creating and managing such persistence snapshots creates minimal overhead on the disk and CPUs and also on the other processes running on the indexing node, thereby significantly reducing write amplification.
 Plasma is the underlying storage engine used for [.in]`Standard Global Secondary Indexes`, which you can choose as part of Index Settings while setting up the cluster.
-For more information, see xref:architecture:index-storage.adoc#section_wlt_pdf_p1b[*Plasma*] documentation and the related blog https://blog.couchbase.com/plasma-storage-engine-gsi/[here].
+For more information, see xref:architecture:index-storage.adoc#section_wlt_pdf_p1b[*Plasma*] documentation and the related blog https://blog.couchbase.com/plasma-storage-engine-gsi/[here^].
 
 *Index HA and Manageability*::
 Index replica support has been added to improve index HA and manageability.
@@ -122,11 +122,11 @@ For more information, see xref:architecture:core-data-access-buckets.adoc[Epheme
 
 Full Text Search Performance Improvements::
 The performance of Full text search (FTS) has improved by an order of magnitude due to many enhancements, small and large.
-Many improvements are due to enhancements made in http://www.blevesearch.com/[bleve], the full-text search and indexing Go library that powers FTS.
+Many improvements are due to enhancements made in http://www.blevesearch.com/[bleve^], the full-text search and indexing Go library that powers FTS.
 +
 The biggest single contributor to performance improvements is MossStore, the new default KV store underlying full text indexes.
-FTS has for some time used https://github.com/couchbase/moss[Moss] to improve query and especially indexing performance.
-https://github.com/couchbase/moss[Moss], which stands for "Memory-oriented sorted segments", is a simple, fast, persistable, ordered key value collection implemented as a pure Golang library.
+FTS has for some time used https://github.com/couchbase/moss[Moss^] to improve query and especially indexing performance.
+https://github.com/couchbase/moss[Moss^], which stands for "Memory-oriented sorted segments", is a simple, fast, persistable, ordered key value collection implemented as a pure Golang library.
 MossStore extends Moss so that it efficiently persists sorted segments to disk when necessary.
 
 *N1QL Performance Improvements*::
@@ -187,9 +187,9 @@ The latest SDK update supports many new critical features including:
 * Querying the new Full Text Search (FTS) Service
 * Querying the Analytics Service
 
-There are many other language-specific improvements worth reviewing, see the release notes of https://developer.couchbase.com/server/other-products/release-notes-archives/dotnet-sdk[each language] for more about bug fixes and new features.
+There are many other language-specific improvements worth reviewing, see the release notes of https://developer.couchbase.com/server/other-products/release-notes-archives/dotnet-sdk[each language^] for more about bug fixes and new features.
 
-Support for different development environments also continues with, for example, improved Spring Data integration and https://blog.couchbase.com/introducing-couchbase-net-2-4-0-net-core-ga/[.NET Core] support for cross-platform development.
+Support for different development environments also continues with, for example, improved Spring Data integration and https://blog.couchbase.com/introducing-couchbase-net-2-4-0-net-core-ga/[.NET Core^] support for cross-platform development.
 
 *Big Data Connectors*
 
@@ -221,9 +221,9 @@ For more information, see xref:connectors:spark-2.1/spark-intro.adoc[Spark Conne
 
 *Talend Connector [Developer Preview]*::
 Developer Preview of a newly rebuilt Talend connector is now available for Talend Open Studio 6.3.1.
-Get the https://github.com/couchbaselabs/talend-components/blob/rel-0.16/README.md[Github] code and see the pre-release https://github.com/couchbaselabs/talend-components/blob/rel-0.16/doc/tutorial.md[tutorial] walkthrough.
+Get the https://github.com/couchbaselabs/talend-components/blob/rel-0.16/README.md[Github^] code and see the pre-release https://github.com/couchbaselabs/talend-components/blob/rel-0.16/doc/tutorial.md[tutorial^] walkthrough.
 Code will continue to change until it becomes stable for production.
 
 *Elasticsearch Plug-in 2.2*::
 The latest updates include support for Elasticsearch including support for ES 2.4 and 5.3 as well as fixed multiple issues.
-Refer to the xref:connectors:elasticsearch/overview.adoc#topic1393[documentation] or follow installation and https://github.com/couchbaselabs/elasticsearch-transport-couchbase/blob/master/README.md[configuration walkthrough].
+Refer to the xref:connectors:elasticsearch/overview.adoc#topic1393[documentation] or follow installation and https://github.com/couchbaselabs/elasticsearch-transport-couchbase/blob/master/README.md[configuration walkthrough^].

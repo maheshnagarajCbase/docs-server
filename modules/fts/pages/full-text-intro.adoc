@@ -15,7 +15,7 @@ These include:
 This keeps result-sets manageably small, even when the total number of documents returned is extremely large.
 * _Fast indexes_, which support a wide range of possible text-searches.
 
-Full Text Search is powered by http://www.blevesearch.com/[Bleve], an open source search and indexing library written in _Go_.
+Full Text Search is powered by http://www.blevesearch.com/[Bleve^], an open source search and indexing library written in _Go_.
 Full Text Search uses Bleve for the indexing of documents, and also makes available Bleve’s extensive range of _query types_.
 These include:
 
@@ -28,7 +28,7 @@ These include:
 Full Text Search includes pre-built _text analyzers_ for the following languages: Arabic, CJK characters (Chinese, Japanese, and Korean), English, French, Hindi, Italian, Kurdish, Persian, and Portuguese.
 Additional languages have been added to Couchbase Server 5.5.
 
-Additionally, Full Text Search _scores_ documents by means of Bleve’s industry standard http://en.wikipedia.org/wiki/Tf%E2%80%93idf[tf-idf] scoring, with _query time boosting_.
+Additionally, Full Text Search _scores_ documents by means of Bleve’s industry standard http://en.wikipedia.org/wiki/Tf%E2%80%93idf[tf-idf^] scoring, with _query time boosting_.
 
 [#whats-new-in-this-release]
 == What's New in this Release

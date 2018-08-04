@@ -9,7 +9,7 @@ After it has been downloaded, a single command is all you need; to obtain, insta
 == Download Docker
 
 Docker is a freely available application that lets you install a fully configured Couchbase Server with a single command.
-To download Docker, go to the https://www.docker.com/products/overview#/install_the_platform[Docker] installation page.
+To download Docker, go to the https://www.docker.com/products/overview#/install_the_platform[Docker^] installation page.
 This displays an [.ui]*Install the Platform* pane:
 
 [#docker_download_page]

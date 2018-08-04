@@ -41,8 +41,8 @@ CREATE TABLE beers (
 );
 ----
 
-This example is built on top of the http://docs.confluent.io/3.1.1/installation.html[Confluent Platform] which also installed on localhost, along with the Couchbase connector.
-We will use the Confluent http://docs.confluent.io/3.1.1/control-center/docs/index.html[Control Center] to configure the link, so make sure this service also is running.
+This example is built on top of the http://docs.confluent.io/3.1.1/installation.html[Confluent Platform^] which also installed on localhost, along with the Couchbase connector.
+We will use the Confluent http://docs.confluent.io/3.1.1/control-center/docs/index.html[Control Center^] to configure the link, so make sure this service also is running.
 The commands below can be used to start all dependencies:
 
 [source,bash]
@@ -76,7 +76,7 @@ producer.interceptor.classes=io.confluent.monitoring.clients.interceptor.Monitor
 
 == Code Overview
 
-The full code of this sample is accessible in the connector repository at https://github.com/couchbase/kafka-connect-couchbase/blob/master/src/test/java/examples/KafkaStreamsDemo.java[src/test/java/examples/KafkaStreamsDemo.java].
+The full code of this sample is accessible in the connector repository at https://github.com/couchbase/kafka-connect-couchbase/blob/master/src/test/java/examples/KafkaStreamsDemo.java[src/test/java/examples/KafkaStreamsDemo.java^].
 
 [source,java]
 ----
@@ -121,7 +121,7 @@ props.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
 The next block supplies the Streams configuration.
 Along with endpoints, it sets serializers and deserializers for keys and values, which appear in the Kafka topics.
 These values are written by the Couchbase connector.
-Here we use simple classes https://github.com/couchbase/kafka-connect-couchbase/blob/master/src/test/java/examples/serde/KeyAvroSerde.java[src/test/java/examples/serde/KeyAvroSerde.java] and https://github.com/couchbase/kafka-connect-couchbase/blob/master/src/test/java/examples/serde/ValueAvroSerde.java[src/test/java/examples/serde/ValueAvroSerde.java], which do not make assumptions about the document body, but the real application might implement serdes, working with more specific classes.
+Here we use simple classes https://github.com/couchbase/kafka-connect-couchbase/blob/master/src/test/java/examples/serde/KeyAvroSerde.java[src/test/java/examples/serde/KeyAvroSerde.java^] and https://github.com/couchbase/kafka-connect-couchbase/blob/master/src/test/java/examples/serde/ValueAvroSerde.java[src/test/java/examples/serde/ValueAvroSerde.java^], which do not make assumptions about the document body, but the real application might implement serdes, working with more specific classes.
 
 [source,java]
 ----
