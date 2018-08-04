@@ -64,7 +64,7 @@ When calculating the batch size, also consider that each operation has a 24 byte
 
 Below are links to examples of batching in various Couchbase SDKs:
 
-C (https://github.com/couchbaselabs/devguide-examples/blob/master/c/bulk-store.cc[storing], https://github.com/couchbaselabs/devguide-examples/blob/master/c/bulk-get.cc[retrieving]), https://github.com/couchbaselabs/devguide-examples/blob/master/python/bulk-operations.py[Python] (Storing and retrieving), Java (https://github.com/couchbaselabs/devguide-examples/blob/master/java/src/main/java/com/couchbase/devguide/BulkInsert.java[storing], https://github.com/couchbaselabs/devguide-examples/blob/master/java/src/main/java/com/couchbase/devguide/BulkGet.java[retrieving]), Go (https://github.com/couchbaselabs/devguide-examples/blob/master/go/bulk-insert.go[storing], https://github.com/couchbaselabs/devguide-examples/blob/master/go/bulk-get.go[retrieving]), node.js, .NET
+C (https://github.com/couchbaselabs/devguide-examples/blob/master/c/bulk-store.cc[storing^], https://github.com/couchbaselabs/devguide-examples/blob/master/c/bulk-get.cc[retrieving^]), https://github.com/couchbaselabs/devguide-examples/blob/master/python/bulk-operations.py[Python^] (Storing and retrieving), Java (https://github.com/couchbaselabs/devguide-examples/blob/master/java/src/main/java/com/couchbase/devguide/BulkInsert.java[storing^], https://github.com/couchbaselabs/devguide-examples/blob/master/java/src/main/java/com/couchbase/devguide/BulkGet.java[retrieving^]), Go (https://github.com/couchbaselabs/devguide-examples/blob/master/go/bulk-insert.go[storing^], https://github.com/couchbaselabs/devguide-examples/blob/master/go/bulk-get.go[retrieving^]), node.js, .NET
 
 == Sizing batches: examples
 

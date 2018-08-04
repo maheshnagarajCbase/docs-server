@@ -19,4 +19,4 @@ For example, a satellite might define a number of simple attributes such as [.pa
 * *Entity relationships*: Entities can have 1-to-1, 1-to-many, or many-to-many relationships.
 For example, "a satellite has many modules" is a 1-to-many relationship.
 
-You can find various methods of data modeling at https://en.wikipedia.org/wiki/Data_modeling[].
+You can find various methods of data modeling at https://en.wikipedia.org/wiki/Data_modeling[^].

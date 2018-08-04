@@ -11,7 +11,7 @@ The Enterprise edition represents the latest, most stable, production-ready rele
 We recommend EE binaries for commercial production systems.
 EE contains some unique features that make it the best fit for large production deployments running in data centers or a public cloud infrastructure.
 These features, which are not available in the community edition, are listed in <<ee-vs-ce>>.
-Our http://www.couchbase.com/subscriptions-and-support[paid annual subscriptions] for EE include a commercial license, technical support with service level commitments via our 24x7 support organization, as well as technical support and hot fixes for earlier releases.
+Our http://www.couchbase.com/subscriptions-and-support[paid annual subscriptions^] for EE include a commercial license, technical support with service level commitments via our 24x7 support organization, as well as technical support and hot fixes for earlier releases.
 
 Community edition (CE):::
 The Community edition is best for noncommercial developers, where taking some time to figure out or resolve issues doesn’t result in major problems.

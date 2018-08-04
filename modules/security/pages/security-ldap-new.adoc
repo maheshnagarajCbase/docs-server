@@ -62,7 +62,7 @@ To use LDAP authentication, you need to configure `saslauthd` properly using the
 
 == Configuring LDAP on the server
 
-Couchbase Server works with the OpenLDAP software, which can be downloaded from the http://www.openldap.org/[openldap.org] website.
+Couchbase Server works with the OpenLDAP software, which can be downloaded from the http://www.openldap.org/[openldap.org^] website.
 
 The Lightweight Directory Access Protocol (LDAP) is a public standard that facilitates distributed directories (such as network user privilege information) over the Internet Protocol (IP).
 

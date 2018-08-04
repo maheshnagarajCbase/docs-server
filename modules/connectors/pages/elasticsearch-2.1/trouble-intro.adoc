@@ -100,7 +100,7 @@ Typically this works with Elasticsearch default settings, however there are some
 +
 You use the Elasticsearch `refresh_interval` setting to indicate how frequently the engine provides newly indexed items.
 During an initial bulk load of documents from Couchbase, you can reduce access to newly indexed items in exchange for overall faster indexing time.
-For more information about enabling and disabling this setting, see https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-update-settings.html[Update Indices Settings] in the [.cite]_Elasticsearch Reference_.
+For more information about enabling and disabling this setting, see https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-update-settings.html[Update Indices Settings^] in the [.cite]_Elasticsearch Reference_.
 
 * Check Elasticsearch mappings
 +
@@ -110,7 +110,7 @@ Be aware that this default mapping from Elasticsearch includes assumptions about
 Based on these assumptions, Elasticsearch may omit your document from the index.
 For instance, objects within an array may not be indexed as you expect.
 +
-For general information about expected data structures see https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping.html[Mapping] in the [.cite]_Elasticsearch Reference_.
+For general information about expected data structures see https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping.html[Mapping^] in the [.cite]_Elasticsearch Reference_.
 
 * Check your documents
 +

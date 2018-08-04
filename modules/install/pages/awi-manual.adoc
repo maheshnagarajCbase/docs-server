@@ -13,7 +13,7 @@ To install Couchbase Server manually, follow these steps:
 
   $ sudo yum install openssl098e
 +
-You might also want to check the latest http://aws.amazon.com/security/security-bulletins/aws-services-updated-to-address-openssl-vulnerability/[AWS security bulletin] to upgrade your OpenSSL version if it is affected.
+You might also want to check the latest http://aws.amazon.com/security/security-bulletins/aws-services-updated-to-address-openssl-vulnerability/[AWS security bulletin^] to upgrade your OpenSSL version if it is affected.
 
 . Download and install the Couchbase Server RHEL package.
 At the SSH command prompt, type the following, and then press Enter:

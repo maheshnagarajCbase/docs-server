@@ -4,19 +4,19 @@
 [abstract]
 The Couchbase Hadoop Connector allows you to connect to Couchbase Server 2.5, 3.x or 4.x to stream keys into Hadoop Distributed File System (HDFS) or Hive for processing with Hadoop.
 
-If you have used http://sqoop.apache.org[Apache Sqoop] before with other databases, using this connector should be straightforward because it uses a similar command line argument structure.
+If you have used http://sqoop.apache.org[Apache Sqoop^] before with other databases, using this connector should be straightforward because it uses a similar command line argument structure.
 Some arguments might seem slightly different because Couchbase has a very different structure than a typical RDBMS.
 
 [#hadoop-get-started]
 == Getting started
 
-Download the Couchbase Hadoop Connector version 1.2.0 from http://packages.couchbase.com/clients/connectors/couchbase-hadoop-plugin-1.2.0.zip.
+Download the Couchbase Hadoop Connector version 1.2.0 from http://packages.couchbase.com/clients/connectors/couchbase-hadoop-plugin-1.2.0.zip[^].
 
 The Couchbase Hadoop Connector is supported on Cloudera 5.
-http://www.cloudera.com/content/cloudera/en/products-and-services/cdh.html[Cloudera] has certified the Couchbase Hadoop Connector 1.2 release for Cloudera 5.
+http://www.cloudera.com/content/cloudera/en/products-and-services/cdh.html[Cloudera^] has certified the Couchbase Hadoop Connector 1.2 release for Cloudera 5.
 
 The Couchbase Hadoop Connector is supported on Hortonworks Data Platform (HDP) 2.2.
-http://hortonworks.com/hdp/[Hortonworks] has certified the Couchbase Hadoop Connector 1.2 release for HDP 2.2.
+http://hortonworks.com/hdp/[Hortonworks^] has certified the Couchbase Hadoop Connector 1.2 release for HDP 2.2.
 
 [#hadoop-install]
 == Installation

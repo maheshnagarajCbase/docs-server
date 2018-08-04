@@ -25,4 +25,4 @@ For example, an upgrade from Couchbase Server version 2.2.0 to version 4.x using
 You should carefully plan upgrades spanning multiple versions.
 Be sure to read the release notes and details about significant changes in each newer version before attempting the upgrade.
 
-See the http://blog.couchbase.com/Couchbase-rolling-upgrades[Rolling Upgrades] blog post for more information and examples.
+See the http://blog.couchbase.com/Couchbase-rolling-upgrades[Rolling Upgrades^] blog post for more information and examples.

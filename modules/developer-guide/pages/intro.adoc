@@ -19,9 +19,9 @@ Click on your language for instructions on setting up a development environment.
 * xref:2.1@nodejs-sdk::introduction.adoc[Node.js SDK 2.0/2.1]
 * xref:2.1@php-sdk::php-intro.adoc[PHP SDK 2.0/2.1]
 * xref:2.0@python-sdk::introduction.adoc#py-intro[Python SDK 2.0]
-* http://docs.couchbase.com/developer/dev-guide-3.0/ruby-sdk.html[Ruby]
+* http://docs.couchbase.com/developer/dev-guide-3.0/ruby-sdk.html[Ruby^]
 
 Couchbase SDKs attempt to follow common verbs and semantics (as much as the individual language allows).
 Examples of using SDKs will be demonstrated in Python, but can easily be mimicked in other languages.
 Many examples are also available in other languages.
-The full listing of examples can be found at: https://github.com/couchbaselabs/devguide-examples[].
+The full listing of examples can be found at: https://github.com/couchbaselabs/devguide-examples[^].

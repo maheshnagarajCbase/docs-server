@@ -20,4 +20,4 @@ Here is a typical [.path]_pom.xml_ that you can copy and paste into your Java pr
 </dependencies>
 ----
 
-* 2.0 GA CURRENT - http://packages.couchbase.com/clients/kafka/2.0/Couchbase-Kafka-Connector-2.0.zip[Download] | http://docs.couchbase.com/sdk-api/couchbase-kafka-connector-2.0/[API Reference]
+* 2.0 GA CURRENT - http://packages.couchbase.com/clients/kafka/2.0/Couchbase-Kafka-Connector-2.0.zip[Download^] | http://docs.couchbase.com/sdk-api/couchbase-kafka-connector-2.0/[API Reference^]

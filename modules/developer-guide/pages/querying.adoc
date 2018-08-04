@@ -194,7 +194,7 @@ In the above query, we select all records that are of type _airport_ and have a 
 
 Here is an example of the above query in other SDKs:
 
-https://github.com/couchbaselabs/devguide-examples/blob/master/c/query-criteria.cc[C] | https://github.com/couchbaselabs/devguide-examples/blob/master/python/query-criteria.py[Python] | https://github.com/couchbaselabs/devguide-examples/blob/master/java/src/main/java/com/couchbase/devguide/QueryCriteria.java[Java] | .NET | https://github.com/couchbaselabs/devguide-examples/blob/master/go/query-criteria.go[Go] | https://github.com/couchbaselabs/devguide-examples/blob/master/nodejs/query-criteria.js[node.js]
+https://github.com/couchbaselabs/devguide-examples/blob/master/c/query-criteria.cc[C^] | https://github.com/couchbaselabs/devguide-examples/blob/master/python/query-criteria.py[Python^] | https://github.com/couchbaselabs/devguide-examples/blob/master/java/src/main/java/com/couchbase/devguide/QueryCriteria.java[Java^] | .NET | https://github.com/couchbaselabs/devguide-examples/blob/master/go/query-criteria.go[Go^] | https://github.com/couchbaselabs/devguide-examples/blob/master/nodejs/query-criteria.js[node.js^]
 
 == Querying nested documents
 
@@ -364,7 +364,7 @@ query = N1QLQuery(
 A similar approach can be used in other SDKs.
 The links below show using dynamic queries in our SDKs:
 
-https://github.com/couchbaselabs/devguide-examples/blob/master/c/query-placeholders.cc[C] | https://github.com/couchbaselabs/devguide-examples/blob/master/python/query-placeholders.py[Python] | https://github.com/couchbaselabs/devguide-examples/blob/master/java/src/main/java/com/couchbase/devguide/QueryPlaceholders.java[Java] | .NET | https://github.com/couchbaselabs/devguide-examples/blob/master/go/query-placeholders.go[Go] | https://github.com/couchbaselabs/devguide-examples/blob/master/nodejs/query-placeholders.js[node.js]
+https://github.com/couchbaselabs/devguide-examples/blob/master/c/query-placeholders.cc[C^] | https://github.com/couchbaselabs/devguide-examples/blob/master/python/query-placeholders.py[Python^] | https://github.com/couchbaselabs/devguide-examples/blob/master/java/src/main/java/com/couchbase/devguide/QueryPlaceholders.java[Java^] | .NET | https://github.com/couchbaselabs/devguide-examples/blob/master/go/query-placeholders.go[Go^] | https://github.com/couchbaselabs/devguide-examples/blob/master/nodejs/query-placeholders.js[node.js^]
 
 [#prepare-stmts]
 == Query optimization using prepared (optimized) statements

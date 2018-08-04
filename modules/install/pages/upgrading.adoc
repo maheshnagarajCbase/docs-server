@@ -40,7 +40,7 @@ If you are adding additional services to the nodes while upgrading, this can aff
 Sync Gateway::
 Take special precaution when upgrading Couchbase Server if your cluster is used for replication through Sync Gateway.
 +
-Be aware that http://developer.couchbase.com/documentation/mobile/1.1.0/get-started/sync-gateway-overview/index.html[Sync Gateway] (as of version 1.1.0) does not yet support the automatic handling of Couchbase Server cluster topology changes for related buckets.
+Be aware that http://developer.couchbase.com/documentation/mobile/1.1.0/get-started/sync-gateway-overview/index.html[Sync Gateway^] (as of version 1.1.0) does not yet support the automatic handling of Couchbase Server cluster topology changes for related buckets.
 +
 If you plan to upgrade a Couchbase Server cluster used by the Sync Gateway versions less than or equal to 1.1.0, you must carefully coordinate manual reconfiguration of the Sync Gateway service between the key points in your upgrade process.
 +

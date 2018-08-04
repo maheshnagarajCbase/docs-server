@@ -28,7 +28,7 @@ Cross document transactions typically can be avoided by consolidating often-acce
 // changes its value to "B", if Bob then accesses that document he will always see "B" and never
 // "A".
 
-When talking about the http://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed[CAP Theorem], distributed data management systems are generally considered to be either CP or AP, that is, evaluators focus on a tradeoff in either consistency (C) or availability (A).
+When talking about the http://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed[CAP Theorem^], distributed data management systems are generally considered to be either CP or AP, that is, evaluators focus on a tradeoff in either consistency (C) or availability (A).
 It's important to understand that the CAP Theorem is only relevant in so far as it describes how a system behaves during a network partition and how it recovers afterwards; when a system is working normally, no sacrifices need to be made.
 
 Couchbase Server acts like a CP system in its default configuration and running as a single cluster.
@@ -48,8 +48,8 @@ With XDCR the state of information on both clusters will eventually be made cons
 Couchbase Lite further increases availability in mobile and IOT scenarios.
 It does this by preserving local changes on device as a user interacts with the application as normal and then managing sync to Couchbase Server when network connectivity is restored.
 
-Although the http://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed[CAP Theorem] is a useful high-level formulation of principles, a full discussion of how Couchbase Server behaves and recovers from various distributed failure conditions is beyond the scope of this paper, especially given the various configuration and programming options available.
-For a more thorough discussion of the CAP Theorem as it applies to Couchbase Server, see http://blog.couchbase.com/cap-theorem-and-couchbase-server-time-xdcr[].
+Although the http://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed[CAP Theorem^] is a useful high-level formulation of principles, a full discussion of how Couchbase Server behaves and recovers from various distributed failure conditions is beyond the scope of this paper, especially given the various configuration and programming options available.
+For a more thorough discussion of the CAP Theorem as it applies to Couchbase Server, see http://blog.couchbase.com/cap-theorem-and-couchbase-server-time-xdcr[^].
 
 == Consistency of indexes and replicas
 

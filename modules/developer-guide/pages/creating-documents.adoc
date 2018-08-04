@@ -72,7 +72,7 @@ cb.replace('docid', {'property': 'value'})
 
 Examples of these operations in other SDKs:
 
-https://github.com/couchbaselabs/devguide-examples/blob/master/nodejs/updating.js[node.js] | https://github.com/couchbaselabs/devguide-examples/blob/master/java/src/main/java/com/couchbase/devguide/Updating.java[Java] | https://github.com/couchbaselabs/devguide-examples/blob/master/go/updating.go[Go] | .NET | https://github.com/couchbaselabs/devguide-examples/blob/master/c/updating.c[C] | https://github.com/couchbaselabs/devguide-examples/blob/master/python/updating.py[Python]
+https://github.com/couchbaselabs/devguide-examples/blob/master/nodejs/updating.js[node.js^] | https://github.com/couchbaselabs/devguide-examples/blob/master/java/src/main/java/com/couchbase/devguide/Updating.java[Java^] | https://github.com/couchbaselabs/devguide-examples/blob/master/go/updating.go[Go^] | .NET | https://github.com/couchbaselabs/devguide-examples/blob/master/c/updating.c[C^] | https://github.com/couchbaselabs/devguide-examples/blob/master/python/updating.py[Python^]
 
 == Document format
 
