@@ -14,4 +14,4 @@ X.509 Certificates for TLS::
 With X.509 certificates, Couchbase Server can strongly encrypt client-server communications and XDCR (Cross Data Center Replication).
 See xref:security-comm-encryption.adoc[Encryption on the Wire].
 
-See also the new http://www.couchbase.com/binaries/content/assets/us/product/couchbase-server/4.5/couchbase_server_45_security_ds.pdf[security data sheet] available in PDF format.
+See also the new http://www.couchbase.com/binaries/content/assets/us/product/couchbase-server/4.5/couchbase_server_45_security_ds.pdf[security data sheet^] available in PDF format.

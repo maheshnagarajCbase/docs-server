@@ -8,16 +8,16 @@ You can download the complete source code and then build and run the app.
 While the app runs, you can view the log of N1QL queries that it sends.
 The documentation for the travel app illustrates the data model and walks through the N1QL queries used to select flights.
 
-The travel app is written in https://nodejs.org[Node.js] and incorporates the following frameworks:
+The travel app is written in https://nodejs.org[Node.js^] and incorporates the following frameworks:
 
-* http://expressjs.com[Express]
-* https://angularjs.org[AngularJS]
-* http://getbootstrap.com[Bootstrap]
+* http://expressjs.com[Express^]
+* https://angularjs.org[AngularJS^]
+* http://getbootstrap.com[Bootstrap^]
 
 The application allows users to find flights by entering airports and travel dates.
 For the airport entries, the app uses a N1QL query bound to an Angular type ahead directive to suggest airport names based on the first few letters entered.
 
-If you want to try the sample app first, without having to build and run the sample code, take a look at the travel app hosted at http://try.couchbase.com[].
+If you want to try the sample app first, without having to build and run the sample code, take a look at the travel app hosted at http://try.couchbase.com[^].
 See <<using-travel-app>> for guidelines on how to use the travel app.
 
 == Building and Running the Travel App
@@ -33,7 +33,7 @@ You do not need to provision the cluster "manually" after installation.
 The sample application can take care of this for you.
 If you have a Couchbase instance already installed and configured, you can just use the application (that is, you don't need to reinstall Couchbase Server to try this app).
 
-. https://nodejs.org[Install node.js] on the machine that is running Couchbase Server.
+. https://nodejs.org[Install node.js^] on the machine that is running Couchbase Server.
 This application uses recent JavaScript features (ES6) for provisioning (fat arrow functions, promises, classes).
 Please make sure the version of node.js you are installing is 4.0.0 or higher.
 . In a terminal window on the machine that is running Couchbase Server, enter the following commands to install the sample application:

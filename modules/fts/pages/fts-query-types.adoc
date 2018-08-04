@@ -102,7 +102,7 @@ You can qualify the field for these searches by prefixing them with the name of 
 Example: [.in]`description:water` performs a <<match-query,Match Query>> for the term "[.code]``water``", in the `description` field.
 
 Required, Optional, and Exclusion::
-When your query string includes multiple items, by default these are placed into the SHOULD clause of a http://www.blevesearch.com/docs/Query/#boolean:8f767fbc41af8ff1ddcf4c60ed8c0fe9[Boolean Query].
+When your query string includes multiple items, by default these are placed into the SHOULD clause of a http://www.blevesearch.com/docs/Query/#boolean:8f767fbc41af8ff1ddcf4c60ed8c0fe9[Boolean Query^].
 +
 You can change this by prefixing your items with a `+` or ‘`-`’`.` `*` ‘`+`’ Prefixing with plus places that item in the MUST portion of the boolean query.
 `*` ‘`-`’ Prefixing with a minus places that item in the MUST NOT portion of the boolean query.

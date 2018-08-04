@@ -52,7 +52,7 @@ Then, enable external authentication on the cluster, using the Couchbase CLI `se
 ----
 +
 Note that `--ldap-enabled 1` enables external authentication, and `--ldap-enabled 0` disables.
-See https://developer.couchbase.com/documentation/server/4.5/cli/cbcli/setting-ldap.html[setting-ldap] for further information.
+See https://developer.couchbase.com/documentation/server/4.5/cli/cbcli/setting-ldap.html[setting-ldap^] for further information.
 When successfully executed, the command provides the following notification: `SUCCESS: LDAP settings modified`.
 
 . Configure the `MECHANISMS` option for `ldap`.

@@ -8,7 +8,7 @@ You can omit some fields from indexing, add more Elasticsearch nodes, change the
 
 When any search engine has to index large blocks of data, the process is more CPU intensive than smaller blocks of data.
 So if you have objects with large amounts of text that are not important for search results, you can provide a custom mapping and omit those fields from indexing using the setting `enabled`.
-For more detailed information about disabling fields, see https://www.elastic.co/guide/en/elasticsearch/reference/2.3/object.html[Object Type] in the [.cite]_Elasticsearch Reference_.
+For more detailed information about disabling fields, see https://www.elastic.co/guide/en/elasticsearch/reference/2.3/object.html[Object Type^] in the [.cite]_Elasticsearch Reference_.
 
 == Limit the Number of Index Entries
 

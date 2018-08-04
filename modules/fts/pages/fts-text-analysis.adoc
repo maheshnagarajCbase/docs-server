@@ -79,7 +79,7 @@ For many western languages this may work well as a simple tokenizer.
 
 *Unicode*
 
-The Unicode Tokenizer uses the https://github.com/blevesearch/segment[segment] library to perform http://www.unicode.org/reports/tr29/[Unicode Text Segmentation] on word boundaries.
+The Unicode Tokenizer uses the https://github.com/blevesearch/segment[segment^] library to perform http://www.unicode.org/reports/tr29/[Unicode Text Segmentation^] on word boundaries.
 It is recommended over the ICU tokenizer for all languages not requiring dictionary-based tokenization that is supported by ICU.
 
 Full Text Search includes a number of analyzers or you can build your own.

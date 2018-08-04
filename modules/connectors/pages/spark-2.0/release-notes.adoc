@@ -17,9 +17,9 @@ It brings support for Spark 2.0 and the following enhancements and bugfixes:
 
 *Spark SQL*
 
-* https://issues.couchbase.com/browse/SPARKC-67[SPARKC-67]: Allow filters to be not backticked.
-* https://issues.couchbase.com/browse/SPARKC-66[SPARKC-66]: Support for Couchbase as a Spark Structured Streaming Sink.
-* https://issues.couchbase.com/browse/SPARKC-68[SPARKC-68]: Support for Couchbase as a Spark Structured Streaming Source.
+* https://issues.couchbase.com/browse/SPARKC-67[SPARKC-67^]: Allow filters to be not backticked.
+* https://issues.couchbase.com/browse/SPARKC-66[SPARKC-66^]: Support for Couchbase as a Spark Structured Streaming Sink.
+* https://issues.couchbase.com/browse/SPARKC-68[SPARKC-68^]: Support for Couchbase as a Spark Structured Streaming Source.
 
 *Spark Streaming*
 

@@ -16,7 +16,7 @@ With regular expressions, there’s no practical way to simulate relevance.
 * FTS provides fast indexes that support a wide range of possible text searches.
 Regular expressions can be used to build one-off indexes but can’t be used to build indexes that support a full range of possible text searches.
 
-Couchbase Server Full Text Search is powered by http://www.blevesearch.com/[bleve], a full text search and indexing library written in Go.
+Couchbase Server Full Text Search is powered by http://www.blevesearch.com/[bleve^], a full text search and indexing library written in Go.
 FTS indexes your documents with Bleve and lets you use Bleve’s many powerful query types:
 
 * Term, Phrase, Match, Match Phrase, Prefix
@@ -26,7 +26,7 @@ FTS indexes your documents with Bleve and lets you use Bleve’s many powerful q
 
 FTS includes Bleve’s general-purpose analyzers as well as pre-built text analyzers for the following languages: Danish, Dutch, English, Finnish, French, German, Hungarian, Italian, Norwegian, Persian, Portuguese, Romanian, Russian, Sorani, Spanish, Swedish, Thai, and Turkish.
 
-FTS scores documents for relevance using Bleve’s industry standard http://en.wikipedia.org/wiki/Tf%E2%80%93idf[tf-idf] scoring with query time boosting.
+FTS scores documents for relevance using Bleve’s industry standard http://en.wikipedia.org/wiki/Tf%E2%80%93idf[tf-idf^] scoring with query time boosting.
 
 [#fts-quick-start]
 == Executing Your First Full Text Query
@@ -83,4 +83,4 @@ curl -X POST -H "Content-Type: application/json" \
 
 That's it! You should be ready to explore, or read on to learn more about creating and querying indexes.
 
-NOTE: Also, you may want to take a look at the following blog that explains how the full text search API (experimental) is expressed using the Java SDK: http://blog.couchbase.com/2016/february/cbftjavapreview[]
+NOTE: Also, you may want to take a look at the following blog that explains how the full text search API (experimental) is expressed using the Java SDK: http://blog.couchbase.com/2016/february/cbftjavapreview[^]

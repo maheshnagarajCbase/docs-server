@@ -396,7 +396,7 @@ For lookup joins, the ON KEYS expression can produce either a scalar or an array
 
 Syntax of Index Joins
 
-A new `on-key-for-clause` is added to the `join-clause` of the http://developer.couchbase.com/documentation/server/4.1/n1ql/n1ql-language-reference/from.html[FROM] syntax.
+A new `on-key-for-clause` is added to the `join-clause` of the http://developer.couchbase.com/documentation/server/4.1/n1ql/n1ql-language-reference/from.html[FROM^] syntax.
 
 ----
 [ join-type ] JOIN from-path [ [ AS ] alias ] < on-keys-clause | on-key-for-clause >

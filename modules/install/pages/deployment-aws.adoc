@@ -16,7 +16,7 @@ You can find the Couchbase Server's Amazon Machine Images (AMIs) by searching fo
 
 To install the Couchbase Server AMI:
 
-. Visit the page that contains https://aws.amazon.com/marketplace/seller-profile?id=1a064a14-5ac2-4980-9167-15746aabde72[Couchbase Server AMIs].
+. Visit the page that contains https://aws.amazon.com/marketplace/seller-profile?id=1a064a14-5ac2-4980-9167-15746aabde72[Couchbase Server AMIs^].
 . When prompted, sign into your AWS account.
 . Select the AWS Region where you want to launch your Couchbase Server instance in the [.ui]*Region* section.
 . Choose your preferred `instance type` in the Amazon EC2 [.ui]*Instance Type* section.
@@ -59,7 +59,7 @@ To install Couchbase Server manually, follow these steps:
 
   $ sudo yum install openssl098e
 +
-You might also want to check the latest http://aws.amazon.com/security/security-bulletins/aws-services-updated-to-address-openssl-vulnerability/[AWS security bulletin] to upgrade your OpenSSL version if it is affected.
+You might also want to check the latest http://aws.amazon.com/security/security-bulletins/aws-services-updated-to-address-openssl-vulnerability/[AWS security bulletin^] to upgrade your OpenSSL version if it is affected.
 
 . Download and install the Couchbase Server package.
 At the SSH command prompt, type the following, and then press Enter:

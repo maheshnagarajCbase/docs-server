@@ -55,7 +55,7 @@ USING GSI:: USING clause specifies the index type to use.
 
 WITH options:: Use the WITH clause to specify additional options and is fully supported with nodes and [.var]`defer_build` expressions.
 
-See the http://developer.couchbase.com/documentation/server/4.1/n1ql/n1ql-language-reference/createindex.html[CREATE INDEX] statement for more details on the syntax.
+See the http://developer.couchbase.com/documentation/server/4.1/n1ql/n1ql-language-reference/createindex.html[CREATE INDEX^] statement for more details on the syntax.
 
 [#query-predicate-format]
 *Format of Query Predicate in SELECT, UPDATE, or DELETE*

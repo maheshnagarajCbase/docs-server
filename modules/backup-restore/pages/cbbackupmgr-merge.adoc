@@ -8,5 +8,5 @@ We plan to fix those and re-introduce support for the command in the upcoming Co
 
 We found that a DCP rollback during backup can cause issues later when the merge command was run.
 Scenarios such as database purging, bucket deletion and recreation, and bucket flush can cause a rollback.
-To track this issue in JIRA, see https://issues.couchbase.com/browse/MB-20403[MB-20403]
+To track this issue in JIRA, see https://issues.couchbase.com/browse/MB-20403[MB-20403^]
 ====

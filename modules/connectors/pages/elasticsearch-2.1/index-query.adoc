@@ -142,4 +142,4 @@ Rather than using the web console to retrieve a document, you would typically us
 There are specific methods and functions available in each SDK to retrieve one or more items based on the IDs.
 For more information about reading and writing data from an application with Couchbase SDKs, see Couchbase Developer Guides.
 
-For more information about the JSON request and response documents for Elasticsearch, see http://www.elasticsearch.org/guide/reference/api/search/request-body.html[Elastic Search, Search API].
+For more information about the JSON request and response documents for Elasticsearch, see http://www.elasticsearch.org/guide/reference/api/search/request-body.html[Elastic Search, Search API^].

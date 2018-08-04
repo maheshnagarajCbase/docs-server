@@ -162,7 +162,7 @@ For added security, it is a good security practice to use IPSec on the network t
 IPSec has two modes: tunnel mode and transport mode.
 We recommend using IPSec with the transport mode, as it is easier to setup than the tunnel mode and does not require creating tunnels between all pairs of Couchbase nodes.
 
-To learn more about setting up transport mode IPSec for Couchbase, see the blog http://blog.couchbase.com/2016/june/configuration-ipsec-for-a-couchbase-cluster["Configuring IPsec for a Couchbase Cluster"].
+To learn more about setting up transport mode IPSec for Couchbase, see the blog http://blog.couchbase.com/2016/june/configuration-ipsec-for-a-couchbase-cluster["Configuring IPsec for a Couchbase Cluster"^].
 
 == Data Moving Between Data Centers
 

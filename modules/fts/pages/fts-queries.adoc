@@ -149,7 +149,7 @@ For a complete list of status codes and information on how to interpret them, se
 
 | X-Content-Type-Options
 | nosniff
-| Value "https://blogs.msdn.microsoft.com/ie/2008/09/02/ie8-security-part-vi-beta-2-update/[nosniff]" is returned in case of a bad request (400 or 412) in order to deter driveby downloads.
+| Value "https://blogs.msdn.microsoft.com/ie/2008/09/02/ie8-security-part-vi-beta-2-update/[nosniff^]" is returned in case of a bad request (400 or 412) in order to deter driveby downloads.
 |===
 
 *Query Counts*
