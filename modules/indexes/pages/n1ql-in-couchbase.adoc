@@ -1,5 +1,6 @@
 [#concept_kfz_ghb_ys]
 = Indexes for N1QL
+:page-type: concept
 
 [abstract]
 N1QL provides a SQL like query language for Couchbase.

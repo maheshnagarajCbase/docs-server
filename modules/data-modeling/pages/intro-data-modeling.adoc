@@ -1,5 +1,6 @@
 [#concept_xvc_fcq_dt]
 = Data Modeling Basics
+:page-type: concept
 
 [abstract]
 Couchbase Server is a multi-model database that natively manipulates data in key-value form or in JSON documents.

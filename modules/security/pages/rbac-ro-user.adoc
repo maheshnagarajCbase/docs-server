@@ -1,5 +1,6 @@
 [#concept_pvc_qbs_nv]
 = Internal Roles
+:page-type: concept
 
 [abstract]
 Couchbase Full Administrator can set up the internal role of the Read-Only Administrator.

@@ -1,5 +1,6 @@
 [#reference_hhk_gmn_ls]
 = bucket-edit
+:page-type: reference
 
 [abstract]
 Modifies an existing bucket.

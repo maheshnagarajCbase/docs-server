@@ -1,5 +1,6 @@
 [#cli-failover]
 = failover
+:page-type: reference
 
 [abstract]
 Fails over one node.

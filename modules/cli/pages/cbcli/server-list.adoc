@@ -1,5 +1,6 @@
 [#reference_tbl_h45_ls]
 = server-list
+:page-type: reference
 
 [abstract]
 Lists servers in a cluster.

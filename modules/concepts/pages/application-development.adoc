@@ -1,5 +1,6 @@
 [#concept_tq3_cqf_vs]
 = Application Development
+:page-type: concept
 
 [abstract]
 Couchbase provides developers with native SDKs for popular programming languages including Java, .Net, Node.js, PHP, Python, Ruby, C/C++, Go, and more.

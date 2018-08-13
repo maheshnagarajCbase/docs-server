@@ -1,5 +1,6 @@
 [#concept_gfm_j5f_ps]
 = Architecture Overview
+:page-type: concept
 
 [abstract]
 Couchbase Server is a distributed, open source NoSQL database engine.

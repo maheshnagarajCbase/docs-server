@@ -1,5 +1,6 @@
 [#reference_bjl_4sv_sq]
 = bucket-compact
+:page-type: reference
 
 [abstract]
 Compacts the bucket data and map-reduce view index data.

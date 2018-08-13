@@ -1,5 +1,6 @@
 [#concept_l11_ppm_pp]
 = Spark Connector 1.0
+:page-type: concept
 
 [abstract]
 The Couchbase Spark Connector depends heavily on the APIs provided by Spark.

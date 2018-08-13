@@ -1,5 +1,6 @@
 [#reference_udr_hp5_ls]
 = setting-index
+:page-type: reference
 
 [abstract]
 Set the index service settings.

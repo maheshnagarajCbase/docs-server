@@ -1,5 +1,6 @@
 [#topic_1_3]
 = N1QL and SQL Differences
+:page-type: concept
 
 [abstract]
 The most important difference between traditional SQL and N1QL is the data model.

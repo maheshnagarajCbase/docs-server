@@ -1,5 +1,6 @@
 [#reference_wm2_4j1_hv]
 = admin-role-manage
+:page-type: reference
 
 [abstract]
 Sets access control roles for users.

@@ -1,5 +1,6 @@
 [#topic_7_5]
 = Logical Operators
+:page-type: concept
 
 Logical terms let you combine other expressions using Boolean logic.
 N1QL provides the following logical operators:
