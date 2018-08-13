@@ -1,5 +1,6 @@
 [#concept_kl3_y5f_ps]
 = Indexing
+:page-type: concept
 
 [abstract]
 Couchbase Server speeds up data access with indexes.

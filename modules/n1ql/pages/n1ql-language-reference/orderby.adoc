@@ -1,5 +1,6 @@
 [#concept_x1g_ggk_np]
 = ORDER BY clause
+:page-type: concept
 
 _order-by-clause:_
 

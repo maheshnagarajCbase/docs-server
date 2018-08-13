@@ -1,5 +1,6 @@
 [#kafka-3-quickstart]
 = Quickstart
+:page-type: task
 
 [abstract]
 This section shows how to add the connector to your application.

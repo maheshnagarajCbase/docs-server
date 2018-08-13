@@ -1,5 +1,6 @@
 [#kafka-3-source-configuration-options]
 = Sink Configuration Options
+:page-type: concept
 
 [abstract]
 Reference of the source connector options.

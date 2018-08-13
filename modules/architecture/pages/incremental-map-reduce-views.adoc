@@ -1,5 +1,6 @@
 [#concept_jtd_z24_vs]
 = Incremental MapReduce Views
+:page-type: concept
 
 [abstract]
 MapReduce views (also called views) uses a user defined map and reduce function that can define arbitrarily complex logic for indexing.
