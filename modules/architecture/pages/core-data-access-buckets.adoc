@@ -1,5 +1,6 @@
 [#concept_qqk_4r2_xs]
 = Buckets
+:page-type: concept
 
 [abstract]
 Couchbase Server uses buckets to group collections of keys and values logically.
