@@ -1,5 +1,6 @@
 [#concept_h5v_5jc_bq]
 = IP tables and ports
+:page-type: concept
 
 [abstract]
 Security outside Couchbase Server involves the configuration of IP tables and ports.

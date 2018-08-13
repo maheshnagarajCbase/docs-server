@@ -1,5 +1,6 @@
 [#topic_11_7]
 = SELECT statement
+:page-type: concept
 
 SELECT statements let you retrieve data from specified keyspaces.
 A simple query in N1QL has three parts to it:

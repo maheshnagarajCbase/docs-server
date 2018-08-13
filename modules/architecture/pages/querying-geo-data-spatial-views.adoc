@@ -1,5 +1,6 @@
 [#concept_hq5_hq4_vs]
 = Querying geographic data with spatial views
+:page-type: concept
 
 [abstract]
 Spatial views operate in a similar way as incremental MapReduce views.

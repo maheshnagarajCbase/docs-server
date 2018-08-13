@@ -1,5 +1,6 @@
 [#concept_qqr_l1z_5t]
 = Handling retries and failures
+:page-type: concept
 
 [abstract]
 When an operation fails with an error or exception, the application must decide whether the operation is to be retried or failed.

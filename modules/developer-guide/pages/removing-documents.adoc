@@ -1,5 +1,6 @@
 [#concept_kk2_yl2_nt]
 = Removing documents
+:page-type: concept
 
 [abstract]
 Over the lifespan of your database, you will need to remove documents.

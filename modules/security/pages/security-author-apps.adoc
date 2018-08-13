@@ -1,5 +1,6 @@
 [#concept_cmw_nph_hr]
 = Authorization for applications
+:page-type: concept
 
 [abstract]
 Authorization defines what applications can perform in the system.

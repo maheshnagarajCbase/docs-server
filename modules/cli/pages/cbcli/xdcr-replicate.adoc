@@ -1,5 +1,6 @@
 [#cbcli-xdcr-manage-replications]
 = xdcr-replicate
+:page-type: reference
 
 [abstract]
 Options to manage XDCR replications.

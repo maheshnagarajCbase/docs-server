@@ -1,5 +1,6 @@
 [#concept_b5n_bwn_vs]
 = Database engine architecture
+:page-type: concept
 
 [abstract]
 The memory-first architecture of the Couchbase Server enables it to maintain sub-millisecond latencies with core data access.

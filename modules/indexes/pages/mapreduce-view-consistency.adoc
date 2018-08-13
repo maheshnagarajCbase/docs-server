@@ -1,5 +1,6 @@
 [#concept_s4t_4yb_bt]
 = View consistency
+:page-type: concept
 
 [abstract]
 By default, views in Couchbase Server are eventually consistent.

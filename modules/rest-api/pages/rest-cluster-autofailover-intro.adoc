@@ -1,5 +1,6 @@
 [#rest-cluster-autofailover]
 = Managing auto-failover
+:page-type: reference
 
 [abstract]
 Auto-failover is managed with with the `GET /settings/autoFailover` HTTP method and URI.

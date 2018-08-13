@@ -1,5 +1,6 @@
 [#reference_yg2_2mn_ls]
 = bucket-delete
+:page-type: reference
 
 [abstract]
 Deletes an existing bucket.

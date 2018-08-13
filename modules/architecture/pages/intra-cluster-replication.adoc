@@ -1,5 +1,6 @@
 [#concept_fts_f4v_vs]
 = Intra-cluster replication
+:page-type: concept
 
 [abstract]
 Intra-cluster replication involves replicas that are placed on another node in the same cluster.

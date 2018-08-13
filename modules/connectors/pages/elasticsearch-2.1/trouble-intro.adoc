@@ -1,5 +1,6 @@
 [#elastic-troubleshooting]
 = Troubleshooting
+:page-type: concept
 
 [abstract]
 The most common problems that might arise when using Couchbase Server with Elasticsearch are data transfer failure and data not getting indexed.

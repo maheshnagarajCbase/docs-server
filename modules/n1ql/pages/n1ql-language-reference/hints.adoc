@@ -1,5 +1,6 @@
 [#concept_npj_srf_2s]
 = USE INDEX clause
+:page-type: concept
 
 [abstract]
 The USE INDEX clause supplies index hints that specify an index to use as part of the query execution.

@@ -1,5 +1,6 @@
 [#concept_ukb_wgg_ps]
 = Data management
+:page-type: concept
 
 [abstract]
 Couchbase Server provides data management services through the data manager.

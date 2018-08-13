@@ -1,5 +1,6 @@
 [#rest-bucket-create]
 = Creating and editing buckets
+:page-type: reference
 
 [abstract]
 To create and edit buckets, use the `POST` operation with the `/pools/default/bucket` URI.

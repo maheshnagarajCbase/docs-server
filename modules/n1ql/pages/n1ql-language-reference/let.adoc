@@ -1,5 +1,6 @@
 [#concept_qz5_bgk_np]
 = LET clause
+:page-type: concept
 
 ----
 LET (alias = expression) [, (alias = expression)]*

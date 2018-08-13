@@ -1,5 +1,6 @@
 [#topic_1_2]
 = N1QL queries and results
+:page-type: concept
 
 [abstract]
 In N1QL, you submit queries by using the `SELECT` statement.

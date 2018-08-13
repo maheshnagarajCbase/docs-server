@@ -1,5 +1,6 @@
 [#concept_qqk_4r2_xs]
 = Buckets
+:page-type: concept
 
 [abstract]
 Buckets are logical groups of items (keys and values) which can be used to organize, manage, and analyze the group of items.

@@ -1,5 +1,6 @@
 [#sv-example-geo]
 = Playing with GeoJSON polygons
+:page-type: reference
 
 [abstract]
 This example shows GeoJSON using the polygon type.

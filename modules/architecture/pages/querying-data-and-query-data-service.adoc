@@ -1,5 +1,6 @@
 [#concept_dpq_h4j_vs]
 = Querying data and query data service
+:page-type: concept
 
 [abstract]
 Couchbase Server provides different ways to query data using either document keys, view queries, spatial queries, or N1QL queries.

@@ -1,5 +1,6 @@
 [#concept_ul5_45f_ps]
 = Data access
+:page-type: concept
 
 [abstract]
 Couchbase provides multiple ways of accessing data: using a Key-Value access pattern, querying data using MapReduce views or N1QL queries.

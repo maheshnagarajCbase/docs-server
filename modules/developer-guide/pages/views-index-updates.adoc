@@ -1,5 +1,6 @@
 [#concept_ggp_tqp_yn]
 = Stream-based views
+:page-type: concept
 
 [abstract]
 Stream-based views reduce latency for view updates, providing faster view consistency and fresher data.This feature uses the streaming protocol called Database Change Protocol (DCP).

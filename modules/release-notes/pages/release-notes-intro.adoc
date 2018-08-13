@@ -1,5 +1,6 @@
 [#concept_agx_3tr_dt]
 = Release notes
+:page-type: concept
 
 [abstract]
 Couchbase Server version 4.0 GA is now available.

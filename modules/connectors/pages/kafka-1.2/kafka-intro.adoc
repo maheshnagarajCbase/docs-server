@@ -1,5 +1,6 @@
 [#concept_l11_ppm_pp]
 = Kafka connector 1.2
+:page-type: concept
 
 [abstract]
 The Kafka connector provides functionality to stream, filter, and transform events from Couchbase Server to Kafka.

@@ -1,5 +1,6 @@
 [#concept_nrl_2dg_ps]
 = Cluster setup
+:page-type: concept
 
 [abstract]
 Setting up a cluster involves defining file locations and defining hostnames.

@@ -1,5 +1,6 @@
 [#cbcli-xdcr-ssl]
 = ssl-manage
+:page-type: reference
 
 [abstract]
 Data encryption with Secure Socket Layer (SSL) authentication is used with the Couchbase Server's self-signed certificates.

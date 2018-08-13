@@ -1,5 +1,6 @@
 [#concept_yzq_ktc_np]
 = DELETE statement [Beta]
+:page-type: concept
 
 *[This is a beta feature; it's not for use in production.
 Production systems can use the existing data service API (key-value API) for data modification.]*

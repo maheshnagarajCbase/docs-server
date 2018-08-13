@@ -1,5 +1,6 @@
 [#concept_tvl_lzz_lr]
 = Getting started
+:page-type: concept
 
 [abstract]
 Get Couchbase Server up and running quickly and learn how to run queries by reading the Getting Started guide.

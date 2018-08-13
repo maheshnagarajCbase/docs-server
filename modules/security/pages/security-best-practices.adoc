@@ -1,5 +1,6 @@
 [#concept_rt3_dg1_1q]
 = Security best practices
+:page-type: concept
 
 [abstract]
 Security best practices consist of guidelines and tips to provide security features throughout the network.

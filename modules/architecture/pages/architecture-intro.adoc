@@ -1,5 +1,6 @@
 [#concept_gfm_j5f_ps]
 = Couchbase Server architecture
+:page-type: concept
 
 [abstract]
 Couchbase Server is an open source scalable NoSQL database engine.

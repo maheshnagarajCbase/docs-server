@@ -1,5 +1,6 @@
 [#concept_md1_tnv_vs]
 = Cluster and Bucket RAM quotas
+:page-type: concept
 
 [abstract]
 RAM quota allocation is governed through individual services.

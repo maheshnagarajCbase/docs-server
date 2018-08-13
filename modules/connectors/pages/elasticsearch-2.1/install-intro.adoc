@@ -1,5 +1,6 @@
 [#topic2022]
 = Installation and configuration
+:page-type: concept
 
 Before you can work with Couchbase and Elasticsearch, you need to set up the Couchbase Elasticsearch plug-in, a Couchbase cluster, and an Elasticsearch cluster.
 After you install the clusters, start them.

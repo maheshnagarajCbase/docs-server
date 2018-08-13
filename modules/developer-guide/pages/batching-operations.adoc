@@ -1,5 +1,6 @@
 [#concept_qfq_5jg_1t]
 = Batching operations
+:page-type: concept
 
 [abstract]
 Execute multiple operations in batches to gain higher performance and better network utilization

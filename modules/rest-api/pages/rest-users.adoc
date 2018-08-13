@@ -1,5 +1,6 @@
 [#reference_rest_user]
 = User API
+:page-type: reference
 
 [abstract]
 A read-only user is created with the `/settings/readOnlyUser` URI endpont.

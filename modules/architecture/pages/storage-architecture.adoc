@@ -1,5 +1,6 @@
 [#concept_x13_xlj_vs]
 = Storage architecture
+:page-type: concept
 
 [abstract]
 Couchbase Server consists of various services and components that have different storage requirements.

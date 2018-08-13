@@ -1,5 +1,6 @@
 [#concept_wvm_gq4_vs]
 = Querying data with views
+:page-type: concept
 
 [abstract]
 View query requests come in through port 8092 to one of the nodes running the data service.

@@ -1,5 +1,6 @@
 [#reference_llp_znv_sq]
 = bucket-create
+:page-type: reference
 
 [abstract]
 Adds a new bucket to a cluster.

@@ -1,5 +1,6 @@
 [#concept_xrn_m5f_ps]
 = Data model
+:page-type: concept
 
 [abstract]
 Data in Couchbase Server can be either JSON documents or binary format.

@@ -1,5 +1,6 @@
 [#concept_ckt_svy_zs]
 = Multidimensional scaling
+:page-type: concept
 
 [abstract]
 Couchbase Server 4.0 and greater supports multidimensional scaling (MDS).

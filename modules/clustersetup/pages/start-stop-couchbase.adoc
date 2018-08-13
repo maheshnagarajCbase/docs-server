@@ -1,5 +1,6 @@
 [#reference_tsb_3bl_q4]
 = Starting and stopping Couchbase Server
+:page-type: reference
 
 [abstract]
 Start-up and shutdown scripts are used to manually start up or shut down Couchbase Server.

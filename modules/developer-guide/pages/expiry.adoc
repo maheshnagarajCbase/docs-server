@@ -1,5 +1,6 @@
 [#concept_o53_kps_zs]
 = Document expiration
+:page-type: concept
 
 [abstract]
 Most data in a database is there to be persisted and long lived.

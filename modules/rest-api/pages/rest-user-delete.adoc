@@ -1,5 +1,6 @@
 [#rest-user-delete]
 = Deleting the read-only user
+:page-type: reference
 
 [abstract]
 The read-only user is removed with the `DELETE /settings/readOnlyUser` HTTP method and URI.

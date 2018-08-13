@@ -1,5 +1,6 @@
 [#concept_vxy_gjg_ps]
 = Developer guide
+:page-type: concept
 
 [abstract]
 The developer guide provides general information about interacting with Couchbase Server.

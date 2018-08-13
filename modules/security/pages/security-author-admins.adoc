@@ -1,5 +1,6 @@
 [#concept_ntl_jph_hr]
 = Authorization for administrators
+:page-type: concept
 
 [abstract]
 Authorization defines what Couchbase administrators can perform after they connect to the system.

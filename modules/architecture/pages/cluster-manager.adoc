@@ -1,5 +1,6 @@
 [#concept_ydh_lmj_vs]
 = Cluster manager
+:page-type: concept
 
 [abstract]
 Cluster Manager runs on all the nodes of the cluster and orchestrates cluster wide operations.

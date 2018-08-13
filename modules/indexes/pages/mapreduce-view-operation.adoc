@@ -1,5 +1,6 @@
 [#concept_obm_wq1_1t]
 = View operation
+:page-type: concept
 
 [abstract]
 MapReduce views are scoped within a design document, with each design document attached to a single bucket.

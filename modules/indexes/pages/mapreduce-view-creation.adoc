@@ -1,5 +1,6 @@
 [#concept_j5w_yp1_1t]
 = View creation
+:page-type: concept
 
 [abstract]
 You can create a simple view by defining a JavaScript map function that generates output data, which represents a mapping of the documents stored within the bucket.

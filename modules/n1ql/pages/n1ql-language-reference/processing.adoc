@@ -1,5 +1,6 @@
 [#concept_l11_tfk_np]
 = SELECT statement processing
+:page-type: concept
 
 The SELECT statement queries a keyspace.
 A JSON array is returned that contains zero or more result objects.

@@ -1,5 +1,6 @@
 [#concept_ndy_g4d_5s]
 = Migrating from MySQL
+:page-type: concept
 
 [abstract]
 Migration guidelines for MySQL users.

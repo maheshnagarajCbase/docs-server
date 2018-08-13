@@ -1,5 +1,6 @@
 [#concept_p4j_ghj_vs]
 = Terminology
+:page-type: concept
 
 [abstract]
 This section defines the key terms and concepts used in the Couchbase Server architecture documentation.

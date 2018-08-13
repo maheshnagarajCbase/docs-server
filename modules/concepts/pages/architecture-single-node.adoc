@@ -1,5 +1,6 @@
 [#concept_kqw_gvy_zs]
 = Architecture of a single node
+:page-type: concept
 
 [abstract]
 A Couchbase Server cluster consists of a group of interchangeable, largely self-sufficient nodes.

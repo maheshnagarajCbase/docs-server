@@ -1,5 +1,6 @@
 [#topic_8_1]
 = Aggregate functions
+:page-type: concept
 
 Aggregate functions take multiple values from documents, perform calculations, and return a single value as the result.
 The function names are case insensitive.

@@ -1,5 +1,6 @@
 [#concept_kfc_zsg_vt]
 = Raw append and prepend
+:page-type: concept
 
 [#messagepanel_xx2_btg_vt]
 .These methods should not be used with JSON documents

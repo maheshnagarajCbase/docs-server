@@ -1,5 +1,6 @@
 [#concept_w4d_yml_bt]
 = Writing spatial views
+:page-type: concept
 
 [abstract]
 Spatial views use a single spatial function that is similar to the map function used in 	MapReduce views.

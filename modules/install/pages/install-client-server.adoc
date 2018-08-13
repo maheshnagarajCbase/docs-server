@@ -1,5 +1,6 @@
 [#concept_d5r_vdp_ts]
 = Client deployment strategies
+:page-type: concept
 
 [abstract]
 Couchbase Server client SDKs are the preferred deployment option.

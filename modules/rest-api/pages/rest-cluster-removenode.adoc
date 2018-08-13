@@ -1,5 +1,6 @@
 [#rest-cluster-removenode]
 = Removing nodes from clusters
+:page-type: reference
 
 [abstract]
 Remove nodes from clusters with the `POST /controller/ejectNode` HTTP method and URI.

@@ -1,5 +1,6 @@
 [#concept_otn_kpv_tt]
 = SSL Connections
+:page-type: concept
 
 [abstract]
 By default connections between applications (SDK) and the cluster are not protected against eavesdropping.

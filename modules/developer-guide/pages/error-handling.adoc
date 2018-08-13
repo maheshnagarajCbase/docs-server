@@ -1,5 +1,6 @@
 [#concept_ybj_tqs_zs]
 = Error handling
+:page-type: concept
 
 [abstract]
 Errors are returned by the SDK if a specific operation could not be executed.

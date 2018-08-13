@@ -1,5 +1,6 @@
 [#concept_v4w_zmj_vs]
 = Services architecture and multidimensional scaling
+:page-type: concept
 
 [abstract]
 Couchbase Server performs symmetric scaling to distribute the workload equally between nodes and using multidimensional scaling allows each of the workloads to scale independently.

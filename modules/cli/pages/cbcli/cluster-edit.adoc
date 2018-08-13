@@ -1,5 +1,6 @@
 [#reference_atj_tn5_ls]
 = cluster-edit
+:page-type: reference
 
 [abstract]
 Modifies cluster settings.

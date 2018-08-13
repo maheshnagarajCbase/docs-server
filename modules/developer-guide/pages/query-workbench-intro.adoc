@@ -1,5 +1,6 @@
 [#concept_mjc_fzs_nt]
 = Query workbench [Developer Preview]
+:page-type: concept
 
 [abstract]
 The query workbench provides a rich graphical user interface to prepare and execute simple to complex N1QL queries.

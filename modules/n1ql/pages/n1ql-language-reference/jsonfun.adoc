@@ -1,5 +1,6 @@
 [#topic_8_7]
 = JSON functions
+:page-type: concept
 
 DECODE_JSON(expression)
 

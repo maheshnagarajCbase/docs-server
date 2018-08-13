@@ -1,5 +1,6 @@
 [#topic_11_4_2]
 = PREPARE statement [Beta]
+:page-type: concept
 
 == PREPARE statement
 
