@@ -66,9 +66,9 @@ For example, the following operations do not collide although they are updating 
 
 ----
 [Thread 1]
-        bucket.mutateIn("user").upsert("name.last","Lennon",false).doMutate();
+        bucket.mutateIn("user").upsert("name.last","Lennon",false).execute();
 [Thread 2]
-        bucket.mutateIn("user").upsert("email","jlennon@abc.com",false).doMutate();
+        bucket.mutateIn("user").upsert("email","jlennon@abc.com",false).execute();
 ----
 
 == Commands
