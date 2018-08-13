@@ -1,5 +1,6 @@
 [#reference_glz_fp5_ls]
 = setting-cluster
+:page-type: reference
 
 [abstract]
 Set the setting for a cluster.

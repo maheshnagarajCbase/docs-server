@@ -1,5 +1,6 @@
 [#concept_nrl_2dg_ps]
 = Cluster Setup
+:page-type: concept
 
 [abstract]
 Only Full Administrators can set up a cluster by defining file locations and hostnames.

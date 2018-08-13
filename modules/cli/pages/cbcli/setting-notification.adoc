@@ -1,5 +1,6 @@
 [#reference_vkv_mp5_ls]
 = setting-notification
+:page-type: reference
 
 [abstract]
 Set email setting for notifications.

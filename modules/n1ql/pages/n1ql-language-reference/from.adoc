@@ -1,5 +1,6 @@
 [#concept_rnt_zfk_np]
 = FROM clause
+:page-type: concept
 
 The FROM clause defines the keyspaces and input objects for the query.
 

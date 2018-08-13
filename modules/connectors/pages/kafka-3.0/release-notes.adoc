@@ -1,5 +1,6 @@
 [#kafka3-release-notes]
 = Release Notes
+:page-type: concept
 
 [abstract]
 Release notes for the 3.0 version of the Kafka Connector.

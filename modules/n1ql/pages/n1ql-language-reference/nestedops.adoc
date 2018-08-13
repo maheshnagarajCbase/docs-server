@@ -1,5 +1,6 @@
 [#topic_7_6]
 = Nested Operators
+:page-type: concept
 
 *Fields:*
 

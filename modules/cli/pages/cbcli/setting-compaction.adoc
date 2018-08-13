@@ -1,5 +1,6 @@
 [#reference_z4y_kp5_ls]
 = setting-compaction
+:page-type: reference
 
 [abstract]
 Set the cluster-wide auto compaction settings.

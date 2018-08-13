@@ -1,5 +1,6 @@
 [#reference_ggg_d45_ls]
 = node-init
+:page-type: reference
 
 [abstract]
 Sets the node-specific parameters.

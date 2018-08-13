@@ -1,5 +1,6 @@
 [#concept_hvz_4qc_bq]
 = Encryption in Applications
+:page-type: concept
 
 [abstract]
 You can encrypt the data inside your application even before it hits the wire and is sent to the server.

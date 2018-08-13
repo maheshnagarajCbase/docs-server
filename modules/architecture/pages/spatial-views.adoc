@@ -1,5 +1,6 @@
 [#concept_dht_3f4_vs]
 = Spatial Views
+:page-type: concept
 
 [abstract]
 Spatial views are indexed in a similar way as the incremental MapReduce view indexes.

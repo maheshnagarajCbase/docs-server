@@ -1,5 +1,6 @@
 [#concept_hyy_k1z_pr]
 = Travel App Data Model
+:page-type: concept
 
 [abstract]
 The data model for the travel app uses several distinct document types: airline, route, airport and landmark.

@@ -1,5 +1,6 @@
 [#concept_ntl_jph_hr]
 = Role-Based Access Control (RBAC) for Administrators
+:page-type: concept
 
 [abstract]
 Role-Based Access Control (RBAC) for administrators is designed to manage administrative access to the Couchbase system and to achieve segregation of administrative duties.

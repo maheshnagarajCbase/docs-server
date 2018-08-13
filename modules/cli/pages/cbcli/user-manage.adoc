@@ -1,5 +1,6 @@
 [#reference_hwj_z3g_lt]
 = user-manage
+:page-type: reference
 
 [abstract]
 This command is used to manage read-only Couchbase admins.

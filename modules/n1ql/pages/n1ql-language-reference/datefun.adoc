@@ -1,5 +1,6 @@
 [#topic_8_6]
 = Date Functions
+:page-type: concept
 
 [abstract]
 N1QL date functions return the system clock value or manipulate the date string.

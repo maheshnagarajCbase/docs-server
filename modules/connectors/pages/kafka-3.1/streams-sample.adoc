@@ -1,5 +1,6 @@
 [#kafka-3-streams-sample]
 = Couchbase Sample with Kafka Streams
+:page-type: concept
 
 [abstract]
 Sample application which uses Couchbase connector with Kafka Streams.

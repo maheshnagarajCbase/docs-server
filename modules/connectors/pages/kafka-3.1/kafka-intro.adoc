@@ -1,5 +1,6 @@
 [#kafka-3-intro]
 = Kafka Connector 3.1
+:page-type: concept
 
 [abstract]
 The Kafka connector provides functionality to stream, filter, and transform events from Couchbase Server to Kafka.

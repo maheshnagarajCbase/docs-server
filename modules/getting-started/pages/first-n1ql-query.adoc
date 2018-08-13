@@ -1,5 +1,6 @@
 [#first-n1ql]
 = Running Your First N1QL Query
+:page-type: concept
 
 [abstract]
 N1QL (pronounced "nickel") is the Couchbase Server query language.

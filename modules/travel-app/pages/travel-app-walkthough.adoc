@@ -1,5 +1,6 @@
 [#concept_qqs_tnx_pr]
 = Travel App Walk-through
+:page-type: concept
 
 [abstract]
 The travel app is a single-page web application built using a decoupled AngularJS front-end that communicates with the application by using REST endpoints.

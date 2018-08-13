@@ -1,5 +1,6 @@
 [#concept_ol2_khr_dt]
 = Modeling Relationships
+:page-type: concept
 
 == 1-to-1 Relationships
 
