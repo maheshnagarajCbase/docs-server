@@ -1,5 +1,6 @@
 [#rest-user-delete]
 = Deleting the Read-only Administrator
+:page-type: reference
 
 [abstract]
 Delete the Read-only Administratgor with the `DELETE /settings/readOnlyUser` HTTP method and URI.

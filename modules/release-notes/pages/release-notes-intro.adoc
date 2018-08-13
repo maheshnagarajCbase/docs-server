@@ -1,5 +1,6 @@
 [#concept_agx_3tr_dt]
 = Release notes
+:page-type: concept
 
 [abstract]
 Couchbase Server 4.1 builds on the landmark Couchbase Server 4.0 release and delivers significant advances, primarily in query functionality, that further enhance developer productivity and improve connectivity to other systems for enterprise deployments.

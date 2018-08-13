@@ -1,5 +1,6 @@
 [#concept_cz5_szf_vs]
 = Distributed Data Management
+:page-type: concept
 
 [abstract]
 Couchbase Server is a distributed system that is built from the ground up for easy scale out and management.

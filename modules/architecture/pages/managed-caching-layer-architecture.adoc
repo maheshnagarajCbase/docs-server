@@ -1,5 +1,6 @@
 [#concept_x54_dmj_vs]
 = Managed Caching Layer Architecture
+:page-type: concept
 
 [abstract]
 Couchbase Server is built on a memory-first architecture and managing memory effectively is central to achieving high performance and scalability.

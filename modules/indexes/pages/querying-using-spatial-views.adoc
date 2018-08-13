@@ -1,5 +1,6 @@
 [#concept_hlq_bhb_ys]
 = Querying Using Spatial Views
+:page-type: concept
 
 [abstract]
 Spatial views support a variety of different use cases including multidimensional analysis, geographical data, and a combination of both.

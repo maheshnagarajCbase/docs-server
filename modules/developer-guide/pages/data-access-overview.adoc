@@ -1,5 +1,6 @@
 [#concept_r5s_c2m_zs]
 = Accessing data
+:page-type: concept
 
 [abstract]
 Developing against a database involves storing items within the database and retrieving them.

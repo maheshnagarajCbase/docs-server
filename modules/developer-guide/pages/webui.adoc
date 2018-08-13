@@ -1,5 +1,6 @@
 [#concept_j3z_zhm_zs]
 = Accessing data with a browser
+:page-type: concept
 
 [abstract]
 The Couchbase administrator console allows easy access to documents by using your web browser.

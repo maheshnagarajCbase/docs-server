@@ -1,5 +1,6 @@
 [#topic_8_10]
 = Object functions
+:page-type: concept
 
 OBJECT_LENGTH(expression)
 

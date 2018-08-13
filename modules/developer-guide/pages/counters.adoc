@@ -1,5 +1,6 @@
 [#concept_bf4_glh_ht]
 = Atomic Counters
+:page-type: concept
 
 [abstract]
 You can atomically increment or decrement the numerical value of special counter documents

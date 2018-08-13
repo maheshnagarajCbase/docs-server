@@ -1,5 +1,6 @@
 [#concept_mrs_vfk_np]
 = SELECT statement syntax
+:page-type: concept
 
 _select:_
 

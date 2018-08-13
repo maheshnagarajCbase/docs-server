@@ -1,5 +1,6 @@
 [#concept_y1w_3hb_ys]
 = View indexes for N1QL
+:page-type: concept
 
 Definition::
 You can define a primary or secondary index using view indexes in N1QL using the CREATE INDEX statement.

@@ -1,5 +1,6 @@
 [#cbcli-node-recovery]
 = recovery
+:page-type: reference
 
 [abstract]
 Recovers one or more servers.

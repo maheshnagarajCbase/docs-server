@@ -1,5 +1,6 @@
 [#concept_jbf_qth_rq]
 = DROP INDEX statement
+:page-type: concept
 
 The DROP INDEX statement allows you to drop a named primary or secondary index.
 You can drop unnamed primary indexes using the DROP PRIMARY INDEX statement.

@@ -1,5 +1,6 @@
 [#reference_vbc_2n5_ls]
 = rebalance-stop
+:page-type: reference
 
 [abstract]
 Stops rebalancing.

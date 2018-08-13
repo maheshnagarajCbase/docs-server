@@ -1,5 +1,6 @@
 [#concept_mlb_jkk_np]
 = SELECT/subselect statement
+:page-type: concept
 
 SELECT statements can begin with either SELECT or FROM.
 The behavior is the same in either case.

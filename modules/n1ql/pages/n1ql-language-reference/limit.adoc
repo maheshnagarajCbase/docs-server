@@ -1,5 +1,6 @@
 [#concept_dsd_hgk_np]
 = LIMIT clause
+:page-type: concept
 
 ----
 LIMIT expression

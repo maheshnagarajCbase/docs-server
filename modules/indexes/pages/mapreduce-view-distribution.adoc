@@ -1,5 +1,6 @@
 [#concept_mny_mq1_1t]
 = View distribution
+:page-type: concept
 
 [abstract]
 Couchbase Server uses hash-partitioning to distribute data evenly across the cluster.

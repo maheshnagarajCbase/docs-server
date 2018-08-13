@@ -1,5 +1,6 @@
 [#concept_bdb_smb_bt]
 = Flags and Transcoders
+:page-type: concept
 
 [abstract]
 Understand how Couchbase SDKs interpret document formats and flags, and add your own custom data formats using transcoders

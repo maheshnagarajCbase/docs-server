@@ -1,5 +1,6 @@
 [#concept_fbg_xjm_zs]
 = Connecting
+:page-type: concept
 
 [abstract]
 Connecting your client SDK to a Couchbase cluster.

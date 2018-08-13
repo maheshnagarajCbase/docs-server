@@ -1,5 +1,6 @@
 [#cbcli-bucket-flush]
 = bucket-flush
+:page-type: reference
 
 [abstract]
 Flushes all data from the disk for a given bucket.

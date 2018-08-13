@@ -1,5 +1,6 @@
 [#concept_lc3_4vy_zs]
 = Replication
+:page-type: concept
 
 [abstract]
 Within a single cluster, Couchbase Server employs peer-to-peer replication.

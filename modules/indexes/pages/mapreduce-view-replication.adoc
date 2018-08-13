@@ -1,5 +1,6 @@
 [#concept_cbq_hzh_1t]
 = View replication
+:page-type: concept
 
 [abstract]
 Couchbase Server provides data replication, which means the server replicates data from one node onto another node.

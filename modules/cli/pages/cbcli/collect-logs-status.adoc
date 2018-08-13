@@ -1,5 +1,6 @@
 [#reference_ufl_rm5_ls]
 = collect-logs-status
+:page-type: reference
 
 [abstract]
 Shows the status of the cluster-wide log collection.

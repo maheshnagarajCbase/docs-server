@@ -1,5 +1,6 @@
 [#concept_irs_1ss_zs]
 = Couchbase Mobile development
+:page-type: concept
 
 [abstract]
 Couchbase offers support for mobile developers to use their favorite application programming environments.

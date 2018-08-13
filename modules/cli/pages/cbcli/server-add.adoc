@@ -1,5 +1,6 @@
 [#cli-index]
 = server-add
+:page-type: reference
 
 [abstract]
 Adds one or more servers to a cluster.

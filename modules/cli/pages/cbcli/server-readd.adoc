@@ -1,5 +1,6 @@
 [#reference_u1v_x45_ls]
 = server-readd
+:page-type: reference
 
 [abstract]
 Re-adds the failed-over server.

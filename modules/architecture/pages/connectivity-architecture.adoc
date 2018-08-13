@@ -1,5 +1,6 @@
 [#concept_xh5_l3j_vs]
 = Connectivity Architecture
+:page-type: concept
 
 [abstract]
 Couchbase Server is a fully distributed database, making connection management and efficient communication key components of the architecture.

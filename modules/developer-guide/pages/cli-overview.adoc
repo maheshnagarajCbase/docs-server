@@ -1,5 +1,6 @@
 [#concept_lg3_dhm_zs]
 = Accessing data from a command line
+:page-type: concept
 
 [abstract]
 The Couchbase command line client, [.cmd]`cbc`, is part of the C SDK.

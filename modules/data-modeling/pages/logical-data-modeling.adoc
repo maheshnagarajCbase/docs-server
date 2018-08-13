@@ -1,5 +1,6 @@
 [#concept_y2g_w2q_dt]
 = Logical Data Modeling
+:page-type: concept
 
 [abstract]
 The logical data modeling phase focuses on describing your entities and relationships.

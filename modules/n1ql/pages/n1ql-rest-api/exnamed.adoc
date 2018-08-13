@@ -1,5 +1,6 @@
 [#concept_ep4_pfy_nq]
 = Request with named parameters
+:page-type: concept
 
 .Request:
    $ curl -v http://localhost:8093/query/service \

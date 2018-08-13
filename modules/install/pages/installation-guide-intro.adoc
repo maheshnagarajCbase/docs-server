@@ -1,5 +1,6 @@
 [#concept_pvp_lyf_ss]
 = Installation Guide
+:page-type: concept
 
 [abstract]
 The installation guide explains how to install and uninstall Couchbase Server, deploy the Couchbase cloud, upgrade Couchbase Server, and migrate to and from other databases.

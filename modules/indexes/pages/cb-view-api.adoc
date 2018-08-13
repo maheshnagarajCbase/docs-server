@@ -1,5 +1,6 @@
 [#concept_ob5_mgb_ys]
 = Couchbase View API
+:page-type: concept
 
 [abstract]
 Applications can query the Couchbase Server using Couchbase View API.

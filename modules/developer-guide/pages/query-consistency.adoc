@@ -1,5 +1,6 @@
 [#concept_vkw_fxf_4t]
 = Reading your writes
+:page-type: concept
 
 [abstract]
 In order to make query execution as quick as possible, queries are executed against an index.

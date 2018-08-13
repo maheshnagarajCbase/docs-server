@@ -1,5 +1,6 @@
 [#elastic-advanced]
 = Advanced Settings and Usage
+:page-type: concept
 
 [abstract]
 The Couchbase Elasticsearch plug-in is highly configurable and provides many setting to customize how your documents are indexed.

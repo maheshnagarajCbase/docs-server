@@ -1,5 +1,6 @@
 [#concept_mbg_5lp_pp]
 = Elasticsearch Plug-in 2.1
+:page-type: concept
 
 [abstract]
 The Couchbase Elasticsearch plug-in allows you to use Couchbase Server with Elasticsearch, an open source search engine.

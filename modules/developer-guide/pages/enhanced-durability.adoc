@@ -1,5 +1,6 @@
 [#concept_cgn_flg_lt]
 = Enhanced Durability
+:page-type: concept
 
 [abstract]
 Couchbase 4.0 offers additional durability options which provide clearer semantics in the face of failover.

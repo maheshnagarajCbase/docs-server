@@ -1,5 +1,6 @@
 [#reference_rest_user]
 = User API
+:page-type: reference
 
 [abstract]
 Manage the Read-only Administrator's configuration.

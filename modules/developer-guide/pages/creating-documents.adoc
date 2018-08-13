@@ -1,5 +1,6 @@
 [#concept_ygh_llm_zs]
 = Updating and creating documents
+:page-type: concept
 
 [abstract]
 This section shows how to update documents in Couchbase: using a Couchbase SDK, or through the cbc command line utility.

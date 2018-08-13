@@ -1,5 +1,6 @@
 [#concept_gyg_14s_zs]
 = Durability
+:page-type: concept
 
 [abstract]
 Data durability refers to the fault tolerance and persistence of data in the face of software or hardware failure.

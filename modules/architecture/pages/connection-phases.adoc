@@ -1,5 +1,6 @@
 [#concept_vqx_skd_3t]
 = Connectivity Phases
+:page-type: concept
 
 [abstract]
 When a connection request comes in from the client side, the connection is established in three phases: authentication, discovery, and service connection.

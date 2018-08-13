@@ -1,5 +1,6 @@
 [#topic_3]
 = N1QL language structure
+:page-type: concept
 
 [abstract]
 The N1QL language structure is composed of statements, expressions, and comments.

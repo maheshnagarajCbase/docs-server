@@ -1,5 +1,6 @@
 [#topic_9]
 = Subqueries
+:page-type: concept
 
 [abstract]
 A subquery is an expression that is evaluated by executing an inner SELECT query.

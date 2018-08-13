@@ -1,5 +1,6 @@
 [#hadoop-1.2]
 = Hadoop Connector 1.2
+:page-type: concept
 
 [abstract]
 The Couchbase Hadoop Connector allows you to connect to Couchbase Server 2.5, 3.x or 4.x to stream keys into Hadoop Distributed File System (HDFS) or Hive for processing with Hadoop.

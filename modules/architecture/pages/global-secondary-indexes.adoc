@@ -1,5 +1,6 @@
 [#concept_e5c_kf4_vs]
 = Global Secondary Indexes (GSIs)
+:page-type: concept
 
 [abstract]
 Global secondary index (GSI) is a powerful solution for secondary lookup queries that are required for interactive applications that require low latencies.

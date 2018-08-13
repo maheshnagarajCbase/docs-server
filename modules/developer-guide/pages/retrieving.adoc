@@ -1,5 +1,6 @@
 [#concept-devguide-retrieving]
 = Retrieving documents
+:page-type: concept
 
 [abstract]
 Retrieve stored documents from Couchbase

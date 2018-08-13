@@ -1,5 +1,6 @@
 [#reference_xd5_mm5_ls]
 = collect-logs-start
+:page-type: reference
 
 [abstract]
 Starts the cluster-wide log collection.

@@ -1,5 +1,6 @@
 [#concept_yzq_ktc_np]
 = DELETE statement
+:page-type: concept
 
 DELETE immediately removes the specified document from your keyspace.
 

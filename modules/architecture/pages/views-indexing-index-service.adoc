@@ -1,5 +1,6 @@
 [#concept_erk_4nj_vs]
 = Views, Indexing, and Index Service
+:page-type: concept
 
 [abstract]
 Views and indexes support querying data in Couchbase Server.

@@ -1,5 +1,6 @@
 [#concept_djt_2pj_kr]
 = N1QL REST API
+:page-type: concept
 
 [abstract]
 N1QL provides a REST API for submitting N1QL queries and statements to the N1QL query engine.

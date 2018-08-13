@@ -1,5 +1,6 @@
 [#topic_11]
 = Statements
+:page-type: concept
 
 [abstract]
 N1QL statements fall into three categories: data definition language (DDL) statements, data manipulation language (DML) statements, and query statements.

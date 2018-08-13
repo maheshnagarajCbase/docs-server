@@ -1,5 +1,6 @@
 [#cbcli-servers]
 = server-info
+:page-type: reference
 
 [abstract]
 Shows details about one server.

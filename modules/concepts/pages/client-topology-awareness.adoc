@@ -1,5 +1,6 @@
 [#concept_ljz_pvy_zs]
 = Client topology awareness
+:page-type: concept
 
 [abstract]
 All Couchbase clients are automatically aware of the topology of the Couchbase Server cluster that they are connected to and transparently maintain this awareness for all 3 services (data, index, query) across any topology change or failure.

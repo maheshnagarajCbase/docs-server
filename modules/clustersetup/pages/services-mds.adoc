@@ -1,5 +1,6 @@
 [#concept_evc_1vz_nr]
 = Multi-Dimensional Scaling (MDS)
+:page-type: concept
 
 [abstract]
 Multi-Dimensional Scaling (MDS) improves performance and throughput for mission-critical systems by enabling independent scaling of data, query and indexing workloads.

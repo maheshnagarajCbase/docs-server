@@ -1,5 +1,6 @@
 [#rest-cluster-autofailover-settings]
 = Retrieving auto-failover settings
+:page-type: reference
 
 [abstract]
 Auto-failover setting are retrieved with the `GET /settins/autoFailover` HTTP method and URI.

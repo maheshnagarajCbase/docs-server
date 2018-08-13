@@ -1,5 +1,6 @@
 [#reference_s2w_bn5_ls]
 = rebalance-status
+:page-type: reference
 
 [abstract]
 Shows the rebalancing status.

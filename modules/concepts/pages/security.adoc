@@ -1,5 +1,6 @@
 [#concept_ukb_wgg_ps]
 = Security
+:page-type: concept
 
 [abstract]
 It is more important than ever for organizations to secure their infrastructure to prevent unauthorized access and to ensure compliance to regulatory standards such as PCI-DSS and HIPAA.

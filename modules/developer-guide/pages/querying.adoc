@@ -1,5 +1,6 @@
 [#devguide-concept-querying]
 = Querying with N1QL
+:page-type: concept
 
 [abstract]
 You can use the N1QL query language to search and query documents from your applications.

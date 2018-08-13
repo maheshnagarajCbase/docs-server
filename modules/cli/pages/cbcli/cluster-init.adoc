@@ -1,5 +1,6 @@
 [#reference_jx1_xn5_ls]
 = cluster-init
+:page-type: reference
 
 [abstract]
 Sets the user name, password, port, RAM size and services for a cluster.
