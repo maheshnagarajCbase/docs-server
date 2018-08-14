@@ -27,7 +27,6 @@ See xref:backup-restore:cbbackupmgr.adoc[cbbackupmgr] for details.
 
 This release adds support for the following platforms:
 
-[#ul_sfs_kd3_n2b]
 * Debian 9
 * macOS 10.13 (High Sierra)
 

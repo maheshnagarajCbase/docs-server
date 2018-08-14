@@ -1,4 +1,3 @@
-[#topic_jqr_1rn_vs]
 = Install Sample Buckets
 
 [abstract]
@@ -18,12 +17,10 @@ Example:
 /opt/couchbase/bin/cbdocloader -n localhost:8091 -u Admin -p Pass -b mybucket -s 100 /opt/couchbase/samples/travel-sample.zip
 ----
 
-[#image_vjy_zgb_1t]
 image::admin/picts/settings-samples.png[,720,align=left]
 
 To enable the update notifications using the Web Console:
 
-[#ol_uk4_cjw_zy]
 . From the [.ui]*Couchbase Web Console* > [.ui]*Settings* > select the [.ui]*Sample Buckets* tab.
 . Select the sample buckets that you want to load using the check boxes and click [.ui]*Load Sample Data*.
 +

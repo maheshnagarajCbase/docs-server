@@ -1,4 +1,3 @@
-[#concept_cz5_szf_vs]
 = Distributed Data Management
 :page-type: concept
 
@@ -54,7 +53,6 @@ The *Query Service* handles N1QL query parsing, optimization, and execution.
 This service interacts with both the indexing service and the data service to process and return those queries back to the requesting application.
 
 .Couchbase Server cluster showing single node type
-[#fig_zfh_fgz_zs]
 image::architecture/images/server-cluster-single-node-type.png[,570]
 
 The *Storage Layer* persists data from RAM to disk and reads data back into memory when needed.
@@ -100,7 +98,6 @@ For example, by adding more CPUs to a node running queries.
 Multidimensional scaling allows specific services to both scale up and scale out without sacrificing ease of administration because they are all managed from within the same cluster and configured at run time, and the software installed on each machine is identical.
 
 .Multidimensional scaling optionally disables services to dedicate nodes to certain workloads
-[#fig_bnx_5jz_zs]
 image::multidimensional-scaling.png[,570]
 
 == Buckets and vBuckets
@@ -114,7 +111,6 @@ Buckets are used to segregate the configuration and operational handling of data
 While buckets can play a role in the concept of multitenancy, they are not necessarily the only component.
 For more information on buckets, see the blog http://blog.couchbase.com/multi-tenancy-couchbase-server[Multi-tenancy with Couchbase Server^].
 
-[#image_pv1_fjw_m5]
 image::docs-bucket-vBuckets.png[,570]
 
 Internally, Couchbase Server uses a mechanism called vBuckets (synonymous to shard or partition) to automatically distribute data across nodes, a process sometimes known as "auto-sharding".
@@ -151,7 +147,6 @@ Peer-to-peer replication allows for the best performance and resource utilizatio
 Each node replicates separate slices (vBuckets) of its active data to multiple other nodes so that the no one node is a replica for any other one node.
 
 .Intra-cluster replication providing data redundancy
-[#fig_cwz_qkz_zs]
 image::intra-cluster-replication.png[,250]
 
 If a node goes down, Couchbase Server recovers that data  by activating the replicas that already exist elsewhere in the cluster.

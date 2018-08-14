@@ -1,4 +1,3 @@
-[#concept_wvm_gq4_vs]
 = Querying Data with Views
 :page-type: concept
 
@@ -16,7 +15,6 @@ View query parameters also provide a number of parameters that can be used to ex
 The following diagram shows the flow of the execution for a view query.
 
 .Execution flow for a View query
-[#fig_kh4_g4h_zs]
 image::view-query-execution-flow.png[,500]
 
 When a view query is issued, one of the data service nodes receives it and becomes the coordinator node that is responsible for executing the query.

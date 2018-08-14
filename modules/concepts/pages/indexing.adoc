@@ -1,4 +1,3 @@
-[#concept_kl3_y5f_ps]
 = Indexing
 :page-type: concept
 

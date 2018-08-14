@@ -1,4 +1,3 @@
-[#concept_cy4_tr2_xs]
 = Bucket Disk Storage
 :page-type: concept
 
@@ -26,7 +25,6 @@ The following diagram shows six pre-allocated threads and two data buckets.
 Each thread has the range of vBuckets that is statically partitioned for read and write access.
 +
 .Bucket disk storage
-[#fig_thd_q1n_xs]
 image::bucket-disk-storage.png[,600]
 
 Item deletion::

@@ -1,4 +1,3 @@
-[#concept_ntl_jph_hr]
 = RBAC for Administrators
 :page-type: concept
 
@@ -9,7 +8,7 @@ With RBAC, each administrator can perform only a well-defined fixed set of opera
 RBAC can be configured for internal or external users, and a userid can be mapped by the Full Administrator to one or more fixed administrative roles.
 These roles contain a defined set of duties that can be performed in the system: users have no other administrative access except for the one defined in their role-assignment.
 
-Full administrators in Couchbase can manage user roles using the Couchbase CLI tools (as described in xref:cli:cbcli/couchbase-cli-admin-role-manage.adoc#couchbasecliadminrolemanage1.idm31783028880[admin-role-manage]) or REST API (as described in xref:rest-api:rbac.adoc[Role Based Admin Access (RBAC)]).
+Full administrators in Couchbase can manage user roles using the Couchbase CLI tools (as described in xref:cli:cbcli/couchbase-cli-admin-role-manage.adoc[admin-role-manage]) or REST API (as described in xref:rest-api:rbac.adoc[Role Based Admin Access (RBAC)]).
 
 == Fixed Administrative Roles in Couchbase
 
@@ -29,7 +28,6 @@ While Index and Views are tied to a bucket, XDCR exists at the cluster scope wit
 
 The diagram below shows how these administrative roles correlate to each other.
 
-[#image_edw_5k3_mv]
 image::pict/RBAC.png[]
 
 Full Administrator:: The [.term]_Full Administrator_ role has permissions to read/write and manage all Couchbase resources, including the security settings such as adding a user to, or removing a user from a particular fixed role.
@@ -58,7 +56,7 @@ FTS Administrator:: The [.term]_FTS Administrator_ role allows Full Text Search 
 NOTE: Those with more than one administrator role will have all of the privileges of both (or all) roles granted.
 
 .Role-Based Access Control (RBAC) for Administrators
-[#table_ofj_gp5_lv,cols="2,1,1",hrows=2]
+[cols="2,1,1",hrows=2]
 |===
 .2+| Couchbase Resource and Administrative Roles 2+| Administrative Access: W(rite), R(ead), S(ecurity), none
 

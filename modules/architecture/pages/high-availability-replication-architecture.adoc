@@ -1,4 +1,3 @@
-[#concept_hj1_njj_vs]
 = High Availability and Replication Architecture
 :page-type: concept
 
@@ -27,7 +26,6 @@ Replica vBuckets are also spread across the cluster for best availability and ca
 For example, to protect against the node failure-domain, Couchbase Server places an active vBucket and its corresponding replica vBucket on separate nodes or separate racks.
 
 .Couchbase Server replicas
-[#fig_z5p_ybd_ws]
 image::server-replication.png[,500,align=left]
 
 [#cross-datacenter-replication]
@@ -43,7 +41,6 @@ XDCR uses DCP to stream mutations with an agent running on each node within the 
 This XDCR agent is tuned to function with low latency and high reliability over WAN type latencies and efficiently handle frequent connectivity issues between clusters.
 
 .Cross datacenter replication (XDCR)
-[#fig_m4y_g3d_ws]
 image::xdcr.png[Cross datacenter replication (XDCR) with Couchbase Server ,600,align=left]
 
 In XDCR, each replication stream is set up between a source and destination bucket on separate clusters.

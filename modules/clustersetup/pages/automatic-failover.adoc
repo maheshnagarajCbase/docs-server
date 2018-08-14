@@ -1,4 +1,3 @@
-[#topic_fcf_chm_zs]
 = Using Automatic Failover
 
 [abstract]
@@ -124,7 +123,6 @@ If more than one (1) node is partitioned off, autofailover does not occur.
 After that, administrative action is required for a reset.
 In the event that another node fails before the automatic failover is reset, no automatic failover occurs.
 
-[#section_otz_jrl_z1b]
 == Limitations of Automatic Failover
 
 In some cases, automatic failover may take longer than the specified timeout value.

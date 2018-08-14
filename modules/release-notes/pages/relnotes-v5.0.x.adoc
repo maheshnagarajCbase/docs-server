@@ -1,4 +1,3 @@
-[#topic_gbk_tyh_t5]
 = Release Notes for Couchbase Server 5.0.x
 
 Couchbase Server 5.0 delivers exciting capabilities for cross datacenter replication, security, query, search, tools, and application development.
@@ -63,7 +62,6 @@ The following sections list the behavior changes, fixed issues, known issues, an
 
 Here are the behavior changes in the product, compared to the previous (4.6.x) release.
 
-[#ul_dhx_b15_xz]
 * Newly created buckets in 5.0 (including sample buckets) do not have any passwords associated with them.
 To access a bucket, a user must be created with appropriate roles to access using RBAC.
 See xref:security:concepts-rba-for-apps.adoc#rbac_for_users_roles_and_privileges[Bucket Full Access] for details.
@@ -74,7 +72,7 @@ Upgrade according to the SDK versions listed in the <<sdk-compatibility,SDK Comp
 TAP is an internal protocol that streams information about data changes between cluster nodes.
 TAP is replaced with a new protocol called Database Change Protocol (xref:architecture:high-availability-replication-architecture.adoc[DCP]).
 * Starting 5.0, port based buckets can only be created now through the bucket CLI command.
-Use the xref:cli:cbcli/couchbase-cli-bucket-create.adoc#couchbaseclibucketcreate1.idm386415259904[bucket-create] command to create a port based bucket.
+Use the xref:cli:cbcli/couchbase-cli-bucket-create.adoc[bucket-create] command to create a port based bucket.
 +
 [caption=Remember]
 IMPORTANT: Server-side moxi which drives port based bucket creation has been deprecated.
@@ -90,7 +88,7 @@ See xref:install:upgrade-online.adoc[Performing the Rolling Online Upgrade] for 
 
 The following table lists some of the known issues in this release.
 
-[#table_zgb_11j_qbb,cols="25,66"]
+[cols="25,66"]
 |===
 | Issue | Description
 
@@ -172,13 +170,12 @@ removing the original backup.
 
 This section lists some of the limitations in different areas across the product:
 
-[#table_wbm_p3s_dz,cols="50,133"]
+[cols="50,133"]
 |===
 | Area | Description
 
 | Powerful Query, Indexing, and Search
 a|
-[#ul_okg_4p5_xz]
 * *Index Replicas Placement*
 +
 When deciding the index nodes to place index replicas, the system takes into account to not place replicas onto the same node, and to distribute the replicas across as many server groups as possible.
@@ -228,7 +225,7 @@ Many 5.0 features require you to upgrade your client SDK versions.
 The minimum versions that support the latest 5.0 features are shown below, newer versions are available through the Release Notes link.
 Regardless of needing new features, it is always advised to upgrade to the newest SDK version.
 
-[#table_o1h_fmv_xz,cols="10,10,23"]
+[cols="10,10,23"]
 !===
 ! SDK ! Min. Version for 5.0 ! Reference
 
@@ -269,7 +266,7 @@ This section lists some of the important fixed issues in this release.
 
 *Data Service*
 
-[#table_tbm_p3s_dz2,cols="25,66"]
+[cols="25,66"]
 |===
 | Issue | Description
 
@@ -289,7 +286,7 @@ However, the result of TOUCH incorrectly used a pre-updated CAS value and did no
 
 *Full Text Search Service*
 
-[#table_lfz_qr5_xz,cols="25,66"]
+[cols="25,66"]
 |===
 | Issue | Description
 
@@ -304,7 +301,6 @@ SSL ciphers can be set to LOW, MEDIUM, or HIGH(default) levels.
 a|
 Improved error messages for the following scenarios:
 
-[#ul_vpb_1jj_qbb]
 * Creating an index with a name that already exists.
 * Creating an alias without target index.
 
@@ -319,7 +315,7 @@ Note that index definitions created in earlier releases will not work unless you
 
 *Indexing Service*
 
-[#table_lfz_qr5_xz2,cols="25,66"]
+[cols="25,66"]
 |===
 | Issue | Description
 
@@ -335,7 +331,7 @@ Note that index definitions created in earlier releases will not work unless you
 
 *Installer*
 
-[#table_ubm_p3s_ez,cols="25,66"]
+[cols="25,66"]
 |===
 | Issue | Description
 
@@ -345,7 +341,7 @@ Note that index definitions created in earlier releases will not work unless you
 
 *Query Service*
 
-[#table_ubm_p3s_dz,cols="25,66"]
+[cols="25,66"]
 |===
 | Issue | Description
 
@@ -388,7 +384,7 @@ This helps isolate rogue queries and unauthorized access.
 
 *Security*
 
-[#table_wbm_p3s_dz2,cols="25,66"]
+[cols="25,66"]
 |===
 | Issue | Description
 
@@ -402,7 +398,7 @@ This causes the cluster manager to unexpectedly terminate when saving the cluste
 
 *Tools*
 
-[#table_wbm_p3s_dz3,cols="25,66"]
+[cols="25,66"]
 |===
 | Issue | Description
 
@@ -413,7 +409,6 @@ This causes the cluster manager to unexpectedly terminate when saving the cluste
 a|
 The cbbackupmgr merge command did not function correctly and caused data corruption under the following circumstances:
 
-[#ul_hlv_vmj_qbb]
 * The bucket being backed up was flushed between incremental backups.
 * The bucket being backed up was deleted and re-created in between incremental backups.
 * The bucket had not been backed up between a document's deletion and the metadata for that deleted document being purged.
@@ -425,7 +420,7 @@ The cbbackupmgr merge command did not function correctly and caused data corrupt
 
 *Web Console*
 
-[#table_wbm_p3s_dz1,cols="25,66"]
+[cols="25,66"]
 |===
 | Issue | Description
 
@@ -443,7 +438,7 @@ This has been fixed to display the full key name and wrap to the next line if ne
 
 *XDCR*
 
-[#table_wbm_p3s_dz4,cols="25,66"]
+[cols="25,66"]
 |===
 | Issue | Description
 
@@ -472,7 +467,6 @@ This has been fixed by reducing the number of connections to the target bucket.
 
 This release adds support for the following platforms:
 
-[#ul_rz4_mp3_qbb]
 * Oracle Linux 7
 * SUSE Linux Enterprise Server (SLES) 12
 * Ubuntu 16.04
@@ -485,7 +479,6 @@ See xref:install:install-platforms.adoc#topic1634[Supported Platforms] for the c
 
 Starting this release, the following platforms are no longer supported:
 
-[#ul_w3x_nw3_qbb]
 * Amazon Linux 2014.03
 * macOS 10.10
 * Ubuntu  12.04
@@ -495,7 +488,7 @@ See xref:install:install-platforms.adoc#topic1634[Supported Platforms] for the c
 
 The following functionality is deprecated, will be deprecated or is unsupported.
 
-[#table_bl3_533_1v,cols="1,3"]
+[cols="1,3"]
 |===
 | Function | Description
 

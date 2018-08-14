@@ -1,4 +1,3 @@
-[#topic_jpj_kqn_vs]
 = Update Product Notifications
 
 [abstract]
@@ -9,12 +8,10 @@ Full Administrators and Cluster Administrators can update notifications function
 During installation, you can choose to enable the [.ui]*Update Notification* function.
 After installation, you can also enable or disable the setting from the [.ui]*Couchbase Web Console* > [.ui]*Settings* > [.ui]*Software Updates* tab.
 
-[#image_pbt_kh1_1t]
 image::admin/picts/settings-notifications.png[,600,align=left]
 
 To enable the update notifications using the Web Console:
 
-[#ol_uk4_cjw_zy]
 . From the [.ui]*Couchbase Web Console* > [.ui]*Settings* > select the [.ui]*Software Updates* tab.
 . Select the [.ui]**Enable software update notifications**check box to enable the updates and click [.ui]*Save*.
 
@@ -36,7 +33,6 @@ Identifiable information such as bucket names, bucket data, design document name
 
 If an update is available, the notification will look like the following in the Couchbase Web Console:
 
-[#image_t3v_x31_1t]
 image::admin/picts/settings-update.png[,100,align=left]
 
 NOTE: If the browser or the machine you are using to connect to your Couchbase Web Console does not have Internet access, the update notification system does not work.
