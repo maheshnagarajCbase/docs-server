@@ -1,4 +1,3 @@
-[#mangage-server-groups]
 = Manage Server Groups
 
 [abstract]

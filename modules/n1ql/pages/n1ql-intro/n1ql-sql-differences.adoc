@@ -1,4 +1,3 @@
-[#topic_1_3]
 = N1QL and SQL Differences
 :page-type: concept
 

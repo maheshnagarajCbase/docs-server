@@ -1,4 +1,3 @@
-[#topic3291]
 = Verifying Your Couchbase Server Installation
 
 [abstract]

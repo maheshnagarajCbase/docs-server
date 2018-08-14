@@ -1,4 +1,3 @@
-[#run-couchbase-openshift-container]
 = Running Couchbase Server Using Red Hat OpenShift
 
 [abstract]

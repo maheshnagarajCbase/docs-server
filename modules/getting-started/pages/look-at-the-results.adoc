@@ -1,4 +1,3 @@
-[#lookAtTheResults]
 = Look at the Results
 
 [abstract]
