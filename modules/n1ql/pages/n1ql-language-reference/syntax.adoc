@@ -1,5 +1,5 @@
 = SELECT statement syntax
-:page-type: concept
+:page-topic-type: concept
 
 _select:_
 

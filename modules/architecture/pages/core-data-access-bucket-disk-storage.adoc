@@ -1,5 +1,5 @@
 = Bucket Disk Storage
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 When storing data in a Couchbase bucket, the server first writes data to the caching layer and eventually stores all data to disk to provide a higher level of reliability.

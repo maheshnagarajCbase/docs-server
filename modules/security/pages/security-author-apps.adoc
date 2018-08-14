@@ -1,5 +1,5 @@
 = Authorization for Applications
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 Authorization for applications in Couchbase defines what applications can perform in the system.

@@ -1,5 +1,5 @@
 = bucket-edit
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 Modifies an existing bucket.

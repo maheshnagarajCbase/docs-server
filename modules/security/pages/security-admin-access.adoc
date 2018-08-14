@@ -1,5 +1,5 @@
 = Secure administrative access
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 Encrypted administrative access enables HTTPS access for the Couchbase Web Console and the REST API using SSL/TLS.

@@ -1,5 +1,5 @@
 = bucket-compact
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 Compacts the bucket data and map-reduce view index data.

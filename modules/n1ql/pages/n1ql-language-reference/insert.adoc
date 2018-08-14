@@ -1,5 +1,5 @@
 = INSERT statement
-:page-type: concept
+:page-topic-type: concept
 
 Inserts new records into a keyspace.
 

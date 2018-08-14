@@ -1,5 +1,5 @@
 = Buckets and vBuckets
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 A bucket is a logical collection of related documents in Couchbase, just like a database in RDBMS.

@@ -1,5 +1,5 @@
 = rebalance-status
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 Shows the rebalancing status.

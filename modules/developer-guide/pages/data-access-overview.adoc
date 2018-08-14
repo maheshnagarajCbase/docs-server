@@ -1,5 +1,5 @@
 = Accessing data
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 Developing against a database involves storing items within the database and retrieving them.

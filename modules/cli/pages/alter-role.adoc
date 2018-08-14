@@ -1,5 +1,5 @@
 = alter-role
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 Alter the administrative role: add or remove users.

@@ -1,5 +1,5 @@
 = Getting XDCR stats
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 Requests for XDCR statistics about a destination cluster are performed on the source cluster.

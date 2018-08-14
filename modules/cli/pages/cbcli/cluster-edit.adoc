@@ -1,5 +1,5 @@
 = cluster-edit
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 Modifies cluster settings.

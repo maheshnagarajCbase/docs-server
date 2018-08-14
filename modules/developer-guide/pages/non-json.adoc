@@ -1,5 +1,5 @@
 = Dealing with non-JSON documents
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 Store and retrieve non-JSON ("binary") data with Couchbase

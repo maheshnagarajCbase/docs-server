@@ -1,5 +1,5 @@
 = Modeling Relationships
-:page-type: concept
+:page-topic-type: concept
 
 == 1-to-1 Relationships
 

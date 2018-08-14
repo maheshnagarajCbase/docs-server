@@ -1,5 +1,5 @@
 = bucket-delete
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 Deletes an existing bucket.

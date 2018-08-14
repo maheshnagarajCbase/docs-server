@@ -1,5 +1,5 @@
 = collect-logs-stop
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 Stops the log collection.

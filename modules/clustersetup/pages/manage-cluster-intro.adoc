@@ -1,5 +1,5 @@
 = Cluster setup
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 Set up a cluster by defining file locations and hostnames.

@@ -1,5 +1,5 @@
 = Pattern-matching functions
-:page-type: concept
+:page-topic-type: concept
 
 Pattern-matching functions allow you to work determine if strings contain a regular expression pattern.
 You can also find the first position of a regular expression pattern and replace a regular expression with another.

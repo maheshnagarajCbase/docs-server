@@ -1,5 +1,5 @@
 = Updating server group memberships
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 To change server group membership, use the `PUT /pools/default/serverGroups` HTTP method and URI.

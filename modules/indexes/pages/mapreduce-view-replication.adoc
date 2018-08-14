@@ -1,5 +1,5 @@
 = View replication
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 Couchbase Server provides data replication, which means the server replicates data from one node onto another node.

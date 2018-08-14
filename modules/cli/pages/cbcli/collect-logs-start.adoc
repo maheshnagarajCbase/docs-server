@@ -1,5 +1,5 @@
 = collect-logs-start
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 Starts the cluster-wide log collection.

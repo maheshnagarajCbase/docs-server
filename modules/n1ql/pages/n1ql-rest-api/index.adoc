@@ -1,5 +1,5 @@
 = N1QL REST API
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 N1QL provides a REST API for submitting N1QL queries and statements to the N1QL query engine.

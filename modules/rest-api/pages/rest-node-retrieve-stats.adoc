@@ -1,5 +1,5 @@
 = Retrieving statistics
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 To retrieve statistics for a node, first retrieve a list of nodes

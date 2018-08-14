@@ -1,5 +1,5 @@
 = server-add
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 Adds one or more servers to a cluster.

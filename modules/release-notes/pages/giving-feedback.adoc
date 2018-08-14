@@ -1,5 +1,5 @@
 = Providing feedback
-:page-type: task
+:page-topic-type: task
 
 [abstract]
 We look forward to your feedback about Couchbase Server and provide several ways you can send us your comments.

@@ -1,5 +1,5 @@
 = Handling temporary out of memory errors
-:page-type: concept
+:page-topic-type: concept
 
 There may be cases where you are performing operations at such a high volume, that you need to decrease your requests to a rate your environment can handle.
 For instance Couchbase Server may return a temporary out of memory response based on a heavy request volume, your network can be slow, or your operations may be returning too many errors.

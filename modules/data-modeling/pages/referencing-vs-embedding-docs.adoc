@@ -1,5 +1,5 @@
 = Referencing Versus Embedding Documents
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 This section discusses the tools for representing relationships and best practices for each type of relationship.

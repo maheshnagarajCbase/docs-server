@@ -1,5 +1,5 @@
 = Incremental backup and restore
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 Incremental backup and restore enables administrators to back up quickly only the modified data in the database, making backup and restore more efficient for larger data sets.

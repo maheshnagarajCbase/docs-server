@@ -1,5 +1,5 @@
 = Couchbase Server architecture
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 Couchbase Server is an open source scalable NoSQL database engine.

@@ -1,5 +1,5 @@
 = Keyboard shortcuts
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 Couchbase Server provides a tool, [.cmd]`cbq`, to run N1QL queries.

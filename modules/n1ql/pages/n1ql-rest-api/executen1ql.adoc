@@ -1,5 +1,5 @@
 = Execute N1QL
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 This method enables the client to execute a N1QL statement.

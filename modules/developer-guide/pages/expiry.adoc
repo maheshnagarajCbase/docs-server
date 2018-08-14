@@ -1,5 +1,5 @@
 = Document expiration
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 Most data in a database is there to be persisted and long lived.

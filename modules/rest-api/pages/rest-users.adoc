@@ -1,5 +1,5 @@
 = User API
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 Manage the Read-only Administrator's configuration.

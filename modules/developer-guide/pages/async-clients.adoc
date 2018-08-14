@@ -1,5 +1,5 @@
 = Reactive asynchronous clients
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 You can use non-blocking programming to better utilize application and network resources and gain overall higher I/O throughput.

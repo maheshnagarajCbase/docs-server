@@ -1,5 +1,5 @@
 = Getting the Read-only Administrator's Name
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 Retrieve the Read-only Administrator's name using the `GET /settings/readOnlyAdminName` HTTP method and URI.

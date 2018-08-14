@@ -1,5 +1,5 @@
 = Encryption in Applications
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 You can encrypt the data inside your application even before it hits the wire and is sent to the server.

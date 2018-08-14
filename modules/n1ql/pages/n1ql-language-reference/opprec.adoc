@@ -1,5 +1,5 @@
 = Operator precedence
-:page-type: concept
+:page-topic-type: concept
 
 N1QL supports the use of parentheses to group operators and expressions.
 Expressions enclosed in parentheses are evaluated first.

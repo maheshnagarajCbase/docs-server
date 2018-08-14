@@ -1,5 +1,5 @@
 = Aggregate functions
-:page-type: concept
+:page-topic-type: concept
 
 Aggregate functions take multiple values from documents, perform calculations, and return a single value as the result.
 The function names are case insensitive.

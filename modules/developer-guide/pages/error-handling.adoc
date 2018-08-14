@@ -1,5 +1,5 @@
 = Error handling
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 Errors are returned by the SDK if a specific operation could not be executed.

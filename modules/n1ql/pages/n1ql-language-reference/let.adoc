@@ -1,5 +1,5 @@
 = LET clause
-:page-type: concept
+:page-topic-type: concept
 
 ----
 LET (alias = expression) [, (alias = expression)]*

@@ -1,5 +1,5 @@
 = Reading your writes
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 In order to make query execution as quick as possible, queries are executed against an index.

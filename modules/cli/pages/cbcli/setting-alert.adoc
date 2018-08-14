@@ -1,5 +1,5 @@
 = setting-alert
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 Set the email settings for alerts.

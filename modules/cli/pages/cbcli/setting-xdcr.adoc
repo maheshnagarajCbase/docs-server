@@ -1,5 +1,5 @@
 = setting-xdcr
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 Set the setting for Cross Datacenter Replication (XDCR).

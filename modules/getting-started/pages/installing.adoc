@@ -1,5 +1,5 @@
 = Quick Installation and Setup
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 You can install Couchbase Server on Linux, Microsoft Windows, or OS X systems.

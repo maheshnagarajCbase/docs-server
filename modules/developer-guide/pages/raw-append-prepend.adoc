@@ -1,5 +1,5 @@
 = Raw append and prepend
-:page-type: concept
+:page-topic-type: concept
 
 .These methods should not be used with JSON documents
 CAUTION: The append and prepend operations operate at the byte level and are unsuitable for dealing with JSON documents.

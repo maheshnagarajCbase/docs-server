@@ -1,5 +1,5 @@
 = Indexing
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 Couchbase Server speeds up data access with indexes.
