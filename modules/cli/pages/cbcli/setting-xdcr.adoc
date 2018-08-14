@@ -15,7 +15,7 @@ couchbase-cli setting-xdcr -c [host]:8091 -u [admin] -p [password] [options]
 == Description
 
 Use this command to set various options for XDCR.
-See xref:xdcr:xdcr-intro.adoc#topic1500[Cross Datacenter Replication (XDCR)].
+See xref:xdcr:xdcr-intro.adoc[Cross Datacenter Replication (XDCR)].
 
 == Options
 

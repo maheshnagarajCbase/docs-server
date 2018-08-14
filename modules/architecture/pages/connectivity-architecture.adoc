@@ -45,7 +45,7 @@ There are four main types of access points that drive the majority of client to 
 |===
 
 NOTE: This table lists a subset of the network ports.
-For a complete list of network ports, see xref:install:install-ports.adoc#topic2659[Network Configuration].
+For a complete list of network ports, see xref:install:install-ports.adoc[Network Configuration].
 
 For information on how a connection is established when a request from the client side is received, see <<connectivity-phases>>.
 

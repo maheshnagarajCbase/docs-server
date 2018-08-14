@@ -96,7 +96,7 @@ The setup process, which configures Couchbase Server and sets the data location 
 
 . Set the security group for the new instance, allowing connectivity for ports 8091, 8092, 11210, 4369 and 21100 to 21199.
 For communication between clients and instances, you need only ports 8091, 8092, and 11210.
-For the complete list of ports used for Couchbase Server, see xref:install-ports.adoc#topic2659[Network Configuration].
+For the complete list of ports used for Couchbase Server, see xref:install-ports.adoc[Network Configuration].
 . Initialize the cluster by setting the [.param]`username`, [.param]`password`, [.param]`cluster port` (default 8091) and RAM allocated to Couchbase Server for data storage.
 To do so, access the Couchbase Server setup service through the Web-based administration console, which is initially exposed on port 8091.
 If you have not configured a public IP address, or if you want to automate the process, you can use the command-line tools to perform the setup operation as follows:

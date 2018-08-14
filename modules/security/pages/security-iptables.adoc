@@ -56,7 +56,7 @@ To configure IP tables for Linux, you can choose among one of these two options:
 A sample of the IP tables rules is available in this http://blog.couchbase.com/iptables-firewall-settings-couchbase-db-and-couchbase-mobile-syncgateway[blog^].
 
 Keep in mind that certain Couchbase ports are used for node-to-node and some for node-to-client communication.
-For a complete list of Couchbase ports, see xref:install:install-ports.adoc#topic2659[Network Configuration].
+For a complete list of Couchbase ports, see xref:install:install-ports.adoc[Network Configuration].
 
 .Important Couchbase Ports
 [cols="100,206,101,193"]

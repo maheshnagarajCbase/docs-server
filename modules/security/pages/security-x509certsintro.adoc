@@ -7,7 +7,7 @@ Couchbase Server 4.5 Enterprise Edition supports X.509 certificates for Transpor
 
 With X.509 certificates, Couchbase Server can strongly encrypt client-server communications and http://developer.couchbase.com/documentation/server/4.1/xdcr/xdcr-intro.html[XDCR^] (Cross Data Center Replication).
 
-NOTE: Full administrators in Couchbase can manage certificates using the Couchbase CLI tools (as described in xref:cli:cbcli/ssl-manage.adoc#cbcli-xdcr-ssl[[.cmd]`ssl-manage`]) or REST API (as described in xref:rest-api:rest-security.adoc[Security API]).
+NOTE: Full administrators in Couchbase can manage certificates using the Couchbase CLI tools (as described in xref:cli:cbcli/ssl-manage.adoc[[.cmd]`ssl-manage`]) or REST API (as described in xref:rest-api:rest-security.adoc[Security API]).
 
 image::pict/ca_sys_diagram.png[,570]
 
@@ -501,7 +501,7 @@ curl -X POST http://Administrator:password@<node-name>:8091/node/controller/relo
 ----
 
 See also:::
-CLI: xref:cli:cbcli/ssl-manage.adoc#cbcli-xdcr-ssl[[.cmd]`ssl-manage`]
+CLI: xref:cli:cbcli/ssl-manage.adoc[[.cmd]`ssl-manage`]
 +
 REST API: xref:rest-api:rest-uploads-ca.adoc[Upload and Regenerate Certificate]
 
