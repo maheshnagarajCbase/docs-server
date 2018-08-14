@@ -1,5 +1,5 @@
 = View consistency
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 By default, views in Couchbase Server are eventually consistent.

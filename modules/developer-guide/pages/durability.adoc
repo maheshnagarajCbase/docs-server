@@ -1,5 +1,5 @@
 = Durability
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 Data durability refers to the fault tolerance and persistence of data in the face of software or hardware failure.

@@ -1,5 +1,5 @@
 = View operation
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 MapReduce views are scoped within a design document, with each design document attached to a single bucket.

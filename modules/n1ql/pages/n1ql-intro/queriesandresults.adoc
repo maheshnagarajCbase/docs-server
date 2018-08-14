@@ -1,5 +1,5 @@
 = N1QL queries and results
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 In N1QL, you submit queries by using the `SELECT` statement.

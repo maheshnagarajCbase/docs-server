@@ -1,5 +1,5 @@
 = Modeling relationships
-:page-type: concept
+:page-topic-type: concept
 
 == 1-to-1 relationships
 

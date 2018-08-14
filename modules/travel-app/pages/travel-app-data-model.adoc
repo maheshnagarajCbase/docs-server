@@ -1,5 +1,5 @@
 = Travel app data model
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 The data model for the travel app uses several distinct document types: airline, route, airport and landmark.

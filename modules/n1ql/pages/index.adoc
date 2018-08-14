@@ -1,5 +1,5 @@
 = N1QL reference
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 Non-first Normal Form Query Language or N1QL (pronounced "nickel") is the first query language that leverages the complete flexibility of JSON with the full power of SQL.

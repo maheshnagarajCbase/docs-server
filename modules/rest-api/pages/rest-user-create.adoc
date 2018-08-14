@@ -1,5 +1,5 @@
 = Creating a read-only user
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 A read-only user is create with the `POST /settings/readOnlyUser` HTTP method and URI.

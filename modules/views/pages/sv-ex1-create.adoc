@@ -1,5 +1,5 @@
 = Creating a spatial view function
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 A spatial view function is created to create a multidimensional view file for GeoJSON polygons.

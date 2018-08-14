@@ -1,5 +1,5 @@
 = Release notes
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 Couchbase Server version 4.0 GA is now available.

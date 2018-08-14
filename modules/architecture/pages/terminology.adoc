@@ -1,5 +1,5 @@
 = Terminology
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 This section defines the key terms and concepts used in the Couchbase Server architecture documentation.

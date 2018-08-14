@@ -1,5 +1,5 @@
 = server-info
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 Shows details about one server.

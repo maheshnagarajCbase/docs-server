@@ -1,5 +1,5 @@
 = setting-audit
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 Configures the audit settings.

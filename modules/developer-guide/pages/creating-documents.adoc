@@ -1,5 +1,5 @@
 = Updating and creating documents
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 This section shows how to update documents in Couchbase: using a Couchbase SDK, or through the cbc command line utility.

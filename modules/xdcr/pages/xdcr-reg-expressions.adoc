@@ -1,5 +1,5 @@
 = XDCR filtering regular expression
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 This is a list of JavaScript regular expressions (RegEx) you can use for XDCR filtering.

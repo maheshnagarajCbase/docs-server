@@ -1,5 +1,5 @@
 = collect-logs-status
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 Shows the status of the cluster-wide log collection.

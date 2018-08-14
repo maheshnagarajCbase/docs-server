@@ -1,5 +1,5 @@
 = Server nodes API
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 The Server Nodes REST API manages nodes in a cluster.

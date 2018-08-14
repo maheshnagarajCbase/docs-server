@@ -1,5 +1,5 @@
 = Intra-cluster replication
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 Intra-cluster replication involves replicas that are placed on another node in the same cluster.

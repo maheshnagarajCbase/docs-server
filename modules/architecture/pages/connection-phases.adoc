@@ -1,5 +1,5 @@
 = Connectivity Phases
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 When a connection request comes in from the client side, the connection is established in three phases: authentication, discovery, and service connection.

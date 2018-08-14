@@ -1,5 +1,5 @@
 = Physical data modeling
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 The physical data model takes the logical data model and maps the entities and relationships to physical containers.

@@ -1,5 +1,5 @@
 = Authorization for administrators
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 Authorization defines what Couchbase administrators can perform after they connect to the system.

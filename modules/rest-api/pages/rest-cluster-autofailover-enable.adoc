@@ -1,5 +1,5 @@
 = Enabling and disabling auto-failover
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 Auto-failover is enabled and disabled the `POST /settings/autoFailover` HTTP method and URI.

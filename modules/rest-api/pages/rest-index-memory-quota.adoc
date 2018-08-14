@@ -1,5 +1,5 @@
 = Setting Index memory quota
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 Memory quota for the Index service is set with the `POST /pools/nodes/` HTTP method and URI.

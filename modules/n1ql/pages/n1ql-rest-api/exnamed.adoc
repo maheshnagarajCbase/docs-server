@@ -1,5 +1,5 @@
 = Request with named parameters
-:page-type: concept
+:page-topic-type: concept
 
 .Request:
    $ curl -v http://localhost:8093/query/service \

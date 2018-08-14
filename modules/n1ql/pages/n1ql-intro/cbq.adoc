@@ -1,5 +1,5 @@
 = Running N1QL queries from a command line
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 Couchbase Server provides a tool called [.cmd]`cbq` that enables you to run N1QL queries from a command line.

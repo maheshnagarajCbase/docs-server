@@ -1,5 +1,5 @@
 = Getting the read-only user name
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 The read-only user name is retrieved with the `GET /settings/readOnlyAdminName` HTTP method and URI.

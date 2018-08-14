@@ -1,5 +1,5 @@
 = PREPARE statement [Beta]
-:page-type: concept
+:page-topic-type: concept
 
 == PREPARE statement
 

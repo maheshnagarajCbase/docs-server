@@ -1,5 +1,5 @@
 = Replication
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 Within a single cluster, Couchbase Server employs peer-to-peer replication.

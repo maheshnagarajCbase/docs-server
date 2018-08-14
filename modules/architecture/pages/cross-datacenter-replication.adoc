@@ -1,5 +1,5 @@
 = Cross datacenter replication
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 Using the cross datacenter replication (XDCR) capability you can set up replication of data between clusters.

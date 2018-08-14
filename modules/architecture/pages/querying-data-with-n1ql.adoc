@@ -1,5 +1,5 @@
 = Querying data with N1QL
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 The N1QL query requests come in through port 8093 to one of the nodes running the query service.

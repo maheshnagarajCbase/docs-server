@@ -1,5 +1,5 @@
 = Secure data access
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 Couchbase Server client libraries support client-side encryption using the Secure Sockets Layer (SSL) and Transport Layer Security (TLS).

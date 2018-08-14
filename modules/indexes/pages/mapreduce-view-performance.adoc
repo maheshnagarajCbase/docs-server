@@ -1,5 +1,5 @@
 = View performance
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 View performance depends on different factors including the time taken to update the view, the time required for the view update to be accessed, and the time for the updated information to be returned.

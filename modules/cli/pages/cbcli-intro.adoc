@@ -1,5 +1,5 @@
 = couchbase-cli
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 The [.cmd]`couchbase-cli` tool is used to perform operations both on single nodes or on entire clusters.

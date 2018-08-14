@@ -1,5 +1,5 @@
 = Batching operations
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 Execute multiple operations in batches to gain higher performance and better network utilization

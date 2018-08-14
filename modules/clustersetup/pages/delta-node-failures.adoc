@@ -1,5 +1,5 @@
 = Delta node recovery failure scenarios
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 There are conditions where delta node recovery either defaults to full recovery or is not available.

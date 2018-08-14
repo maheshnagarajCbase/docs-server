@@ -1,5 +1,5 @@
 = Advanced connection details
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 How Couchbase SDKs connect to the cluster, and what an application developer or administration should be aware of.

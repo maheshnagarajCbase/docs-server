@@ -1,5 +1,5 @@
 = vBuckets and vBucket maps: bucket partitions
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 vBuckets help distribute data effectively across a cluster and support replicas on more than one node.

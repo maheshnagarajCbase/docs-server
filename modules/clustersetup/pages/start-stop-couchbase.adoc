@@ -1,5 +1,5 @@
 = Starting and stopping Couchbase Server
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 Start-up and shutdown scripts are used to manually start up or shut down Couchbase Server.

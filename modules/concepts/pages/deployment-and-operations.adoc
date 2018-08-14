@@ -1,5 +1,5 @@
 = Deployment and operations
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 An important feature of Couchbase Server is that all operations and deployment can be done online, without changing or impacting running applications.

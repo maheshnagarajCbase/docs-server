@@ -1,5 +1,5 @@
 = Atomic Counters
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 You can atomically increment or decrement the numerical value of special counter documents

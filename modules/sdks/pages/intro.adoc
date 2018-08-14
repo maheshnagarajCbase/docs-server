@@ -1,5 +1,5 @@
 = SDKs
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 Couchbase offers a number of software development kits (SDKs) that enable programmatic access to Couchbase Server.

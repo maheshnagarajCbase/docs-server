@@ -1,5 +1,5 @@
 = Setting memory quota
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 Memory quota is set with the `POST /pools/default` HTTP method and URI.

@@ -1,5 +1,5 @@
 = Indexing in Couchbase
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 An index is a data-structure that provides quick and efficient means to access data, that would otherwise require scanning a lot more documents.

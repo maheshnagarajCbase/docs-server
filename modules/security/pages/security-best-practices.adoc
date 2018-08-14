@@ -1,5 +1,5 @@
 = Security best practices
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 Security best practices consist of guidelines and tips to provide security features throughout the network.

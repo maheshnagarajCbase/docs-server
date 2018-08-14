@@ -1,5 +1,5 @@
 = Flushing buckets
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 The `doFlush` operation empties the contents of the specified bucket, deleting all stored data.

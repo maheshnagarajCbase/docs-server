@@ -1,5 +1,5 @@
 = Cluster and Bucket RAM quotas
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 RAM quota allocation is governed through individual services.

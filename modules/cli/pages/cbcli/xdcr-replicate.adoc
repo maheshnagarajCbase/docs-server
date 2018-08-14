@@ -1,5 +1,5 @@
 = xdcr-replicate
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 Options to manage XDCR replications.

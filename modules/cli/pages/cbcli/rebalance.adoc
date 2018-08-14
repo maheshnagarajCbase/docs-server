@@ -1,5 +1,5 @@
 = rebalance
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 Starts cluster rebalancing.

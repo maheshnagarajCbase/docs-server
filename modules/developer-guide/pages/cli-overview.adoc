@@ -1,5 +1,5 @@
 = Accessing data from a command line
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 The Couchbase command line client, [.cmd]`cbc`, is part of the C SDK.

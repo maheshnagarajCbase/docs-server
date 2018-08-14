@@ -1,5 +1,5 @@
 = Collect logs with CLI or REST API
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 Several CLI commands and REST API

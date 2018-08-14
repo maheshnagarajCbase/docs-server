@@ -1,5 +1,5 @@
 = Removing documents
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 Over the lifespan of your database, you will need to remove documents.

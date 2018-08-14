@@ -1,5 +1,5 @@
 = Entity relationships and document design
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 Logical data modeling starts with a decision on how to map your entities to documents.

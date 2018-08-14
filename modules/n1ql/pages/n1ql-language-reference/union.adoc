@@ -1,5 +1,5 @@
 = UNION, INTERSECT, and EXCEPT
-:page-type: concept
+:page-topic-type: concept
 
 UNION, INTERSECT, and EXCEPT combine results from multiple subselects.
 

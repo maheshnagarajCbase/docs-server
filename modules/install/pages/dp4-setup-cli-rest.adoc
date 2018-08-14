@@ -1,5 +1,5 @@
 = Initial server setup using CLI or REST API
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 You can initialize and configure a new Couchbase Server node using CLI and REST API commands.

@@ -1,5 +1,5 @@
 = Data model
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 Data in Couchbase Server can be either JSON documents or binary format.

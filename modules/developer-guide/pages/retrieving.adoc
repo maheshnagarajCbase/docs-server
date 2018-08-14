@@ -1,5 +1,5 @@
 = Retrieving documents
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 Retrieve stored documents from Couchbase

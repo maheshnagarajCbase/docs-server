@@ -1,5 +1,5 @@
 = Managing Index parameters
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 The Index service parameters are retrieved and changed with the `GET` and `POST` HTTP methods and the `/settings/indexes` URI.
