@@ -1,4 +1,3 @@
-[#topic_o23_j34_1v]
 = Text Analysis
 
 [.term]_Text analysis_ is the process of transforming input text into a series of terms, or canonical forms of words that are typically stripped of inflections and junk characters.
@@ -91,7 +90,6 @@ Full Text Search includes a number of analyzers or you can build your own.
 
 When the indexer encounters a field whose type you haven’t explicitly specified, it guesses the type by looking at the JSON value.
 
-[#table_dcs_gl4_1v]
 |===
 | Type of JSON value | Indexed as\...
 

@@ -1,4 +1,3 @@
-[#reference_tbl_h45_ls]
 = server-list
 :page-type: reference
 

@@ -1,4 +1,3 @@
-[#concept_vxd_qf4_vs]
 = Global Secondary Indexes Versus Views
 :page-type: concept
 
@@ -15,23 +14,19 @@ N1QL does not support user defined MapReduce definitions and restricts the defin
 The following table lists the key differences between GSIs and Views.
 
 .Differences between GSIs and Views
-[#table_vf1_rf2_zs]
 |===
 | | GSIs | Views
 
 | Partitioning model
 a|
-[#ul_tkj_lh2_zs]
 * GSIs are part of the index service, thus GSI independently partitions using the new multidimensional scaling capabilities and the services architecture**.**
 
-[#ul_tqn_kg2_zs]
 * Each GSI can only be placed in one node.
 * GSIs require manual partitioning to prevent hot spots.
 * GSIs can respond without requiring scatter-gather operations.
 
 For more information, see "GSI and index partitioning" under xref:global-secondary-indexes.adoc[Global secondary indexes].
 a|
-[#ul_iq1_dh2_zs]
 * Views are auto-partitioned based on the data partitioning which is based on the hashing of the keys to vBuckets and vBucket placement.
 * View queries need to perform expensive scatter-gather operations.
 

@@ -1,4 +1,3 @@
-[#concept_bb5_khb_ys]
 = Global Secondary Indexes for N1QL
 :page-type: concept
 
@@ -48,7 +47,6 @@ GSIs provide a lower latency scan compared to view indexes due to its architectu
 GSI, as its name suggests is a global index that is independently placed within the cluster as opposed to Views, which are local indexes placed aligned to the data distribution.
 
 .Query Execution with Global Indexes
-[#fig_jzj_ms1_vv]
 image::query-exe-with-global-indexes.png[,370,align=left]
 
 GSI comes with two storage settings:
@@ -211,13 +209,11 @@ When placing indexes, it is important to note the disk IO "bandwidth" remaining 
 You can monitor the resource usage for the index nodes through Web Console and pick the nodes that can house your next index.
 
 .Monitor Resource Usage for Indexes
-[#fig_kwl_kx1_vv]
 image::monitor-index-resource-usage.png[,570]
 
 There are also per-index statistics that can help identify the item counts,disk and data size, and more individual statistics for an index.
 
 .Per-index Statistics
-[#fig_pzm_qx1_vv]
 image::per-index-stats.png[,400]
 
 Aside from the performance characteristics, the mechanics of creating, placing, load balancing, partitioning and HA behavior is identical in both standard and memory optimized global secondary indexes.
@@ -269,7 +265,6 @@ If a node is approaching high percent usage of Index RAM Quota, it is time to ta
 
 Optionally, you can also perform the following steps if a node is approaching high percent usage of Index RAM Quota:
 
-[#ul_gvj_1zf_2y]
 * Drop few indexes from the index node which is in the Paused state.
 * Flush the bucket on which indexes of the Paused node are created.
 
@@ -277,13 +272,11 @@ It is also important to understand other resource utilization beyond RAM.
 You can monitor the resource usage for the index nodes through Web Console and pick the nodes that can house your next index.
 
 .Monitor Resource Usage for Index Nodes
-[#fig_ccd_b1b_vv]
 image::moi-index-resource-usage.png[,570]
 
 There are also per-index statistics that can help identify the item counts, disk/snapshot and data size and more individual statistics for an index for memory optimized indexes.
 
 .Per-index Statistics
-[#fig_xzy_wz1_vv]
 image::moi-per-index-stats.png[,400]
 
 Aside from the performance characteristics, the mechanics of creating, placing, load balancing, partitioning and HA behavior is identical in both standard and memory optimized global secondary indexes.
@@ -306,7 +299,6 @@ However, queries with `stale=ok` continue to execute normally.
 
 To recover from an out-of-memory situation, use one or more of the following fixes:
 
-[#ul_aps_f5g_sw]
 * Increase the Index RAM Quota sufficiently enough to give indexes the additional memory to process requests.
 * Drop other indexes on the node to free up memory.
 On nodes with multiple indexes, drop the unimportant indexes to free memory.

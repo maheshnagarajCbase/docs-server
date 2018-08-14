@@ -1,4 +1,3 @@
-[#reference_xlj_bp5_ls]
 = setting-audit
 :page-type: reference
 

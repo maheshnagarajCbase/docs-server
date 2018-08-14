@@ -1,4 +1,3 @@
-[#topic_jfq_fn4_1v]
 = Types of Queries
 
 == Simple Queries

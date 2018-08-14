@@ -1,4 +1,3 @@
-[#concept_h3h_sdm_gr]
 = Audit Events
 :page-type: concept
 
@@ -11,7 +10,6 @@ These auditable events are captured in the output targets, which are files in JS
 Couchbase Server generates audit events for the following admin actions and performed by the administrators that belong to specified administrative roles:
 
 .Administrative Audit Events
-[#table_vrh_rws_gr]
 |===
 | Administrator Audit Event
 

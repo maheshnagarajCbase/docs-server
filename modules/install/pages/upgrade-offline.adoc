@@ -1,4 +1,3 @@
-[#topic_q11_1my_p4]
 = Performing the Offline Upgrade
 
 [abstract]
@@ -29,7 +28,6 @@ When the queue reaches zero, no more data remains to be written to disk.
 In the [.ui]*Summary* section, check that [.ui]*Disk write queue* is equal to 0.
 If you have more than one data bucket in your cluster, repeat this check on each bucket.
 +
-[#image_bjw_tqf_zs]
 image::upgrade-online-03.png[,570,align=left]
 
 . Create a backup of your cluster data using the xref:backup-restore:cbbackupmgr.adoc#cbbackupmgr.1[cbbackupmgr] tool.

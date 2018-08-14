@@ -1,4 +1,3 @@
-[#topic_mfl_rmn_vs]
 = Change Bucket Settings
 
 [abstract]
@@ -35,7 +34,6 @@ To edit the bucket settings:
 . Under [.ui]*Data Buckets*, click the blue triangle preceding the bucket name.
 . Click on the btn:[Edit] button.
 +
-[#image_wh4_mkk_3v]
 image::admin/picts/bucket-settings-edit.png[,720,align=left]
 +
 The [.ui]*Configure Bucket* dialog offers the same options as the xref:create-bucket.adoc[Create a New Bucket] dialog.

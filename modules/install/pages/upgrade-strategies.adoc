@@ -1,4 +1,3 @@
-[#topic_y23_jjv_xs]
 = Upgrade Options
 
 [abstract]
@@ -76,7 +75,6 @@ Both the online and offline upgrade processes have trade-offs.
 The following table illustrates some important aspects of the two upgrade strategies.
 
 .Differences between online and offline upgrades
-[#table_shv_yr2_zs]
 |===
 | Feature | Online upgrade | Offline upgrade
 

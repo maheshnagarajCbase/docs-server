@@ -1,4 +1,3 @@
-[#topic_sbf_kpm_lq]
 = Authorization
 
 [abstract]

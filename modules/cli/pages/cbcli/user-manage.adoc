@@ -1,4 +1,3 @@
-[#reference_hwj_z3g_lt]
 = user-manage
 :page-type: reference
 

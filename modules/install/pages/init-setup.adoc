@@ -17,7 +17,6 @@ If you have chosen to run Couchbase on a port other than `8091`, connect on that
 
 Once you have connected, to begin setting up Couchbase Server, click the btn:[Setup] button on the [.ui]*Welcome Screen*:
 
-[#image_tls_nkd_dy]
 image::admin/picts/setup-screen.png[,360,align=left]
 
 The first setup screen, [.ui]*Configure Server*, now appears.
@@ -35,14 +34,12 @@ All the options are described in detail below.
 +
 By default, the first option, [.ui]*Start a new cluster*, is already selected when the screen first appears:
 +
-[#image_ac2_2tf_x5]
 image::admin/picts/cluster-setup-01.png[,480,align=left]
 +
 The displayed fields for [.ui]*Start a New Cluster* are as follows:
 +
 // Second-level bulleted list
 
-[#ul_yqx_w5m_zv]
  ** [.ui]*RAM Available*: The total RAM available on this node.
 
  ** [.ui]*Services*: The available Couchbase services for this node; which are [.ui]*Data*, [.ui]*Index*, [.ui]*Query*, and [.ui]*Full Text*.
@@ -83,7 +80,6 @@ Instead, click on the radio button [.ui]*Join a cluster now*; and proceed as des
 
 * [.ui]*Join a cluster now*
 +
-[#image_r3t_htm_zv]
 image::admin/picts/cluster-setup-01-join.png[,480,align=left]
 +
 If you elect to [.ui]*Join a cluster now*, interactive fields are displayed for the\...
@@ -139,7 +135,6 @@ Couchbase provides _sample buckets_, which contain data for demonstration and te
 The [.ui]*Sample Buckets* screen allows you to choose which of these buckets you wish to install.
 The screen appears as follows:
 
-[#image_f4x_rpy_dt]
 image::setup-02.png[,480,align=left]
 
 Click the corresponding checkboxes for the sample buckets you wish to to load into the Couchbase Server.
@@ -148,7 +143,6 @@ This dismisses the [.ui]*Sample Buckets* screen, and displays the [.ui]*Create D
 
 *Step 3: Create a default bucket*
 
-[#image_st3_cqy_dt]
 image::setup-03.png[,480,align=left]
 
 Creation of a _default bucket_ is optional.
@@ -245,7 +239,6 @@ This dismisses the [.ui]*Notifications* screen, and displays the [.ui]*Configure
 To create a cluster, you must assign yourself administrative credentials: these will be used on all nodes in the cluster you are creating.
 This is accomplished by means of the [.ui]*Configure Server* screen:
 
-[#image_ox5_2sy_dt]
 image::setup-05.png[,480,align=left]
 
 Enter an appropriate username (this defaults to _Administrator_), and a password; and then verify the password.
@@ -259,13 +252,11 @@ This concludes the Couchbase Server initialization-process.
 Couchbase Server is now running and ready to use.
 The starting screen for the new Couchbase Server, [.ui]*Cluster Overview*, appears as follows:
 
-[#image_rhb_3sy_dt]
 image::setup-06.png[,540,align=left]
 
 Using the Couchbase Web Console, you can now explore all the administrative options at your disposal.
 For example, by accessing [.ui]*Data Buckets*, you can examine the data-contents of the buckets you previously may have chosen to install.
 
-[#image_xpf_ksy_dt]
 image::setup-07.png[,540,align=left]
 
 [#initialize-cluster-cli]

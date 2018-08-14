@@ -1,4 +1,3 @@
-[#topic_gbk_tyh_t5]
 = Release Notes
 
 Couchbase Server 4.6 delivers some exciting capabilities for cross datacenter replication, security, query, tools, and application development.
@@ -18,7 +17,6 @@ Since most Couchbase Server upgrade procedures involve rebalance, some care must
 Specifically, graceful failover and/or remove+rebalance should not be used to start this upgrade.
 As such, there are a few best practice approaches:
 
-[#ol_vzl_trx_h2b]
 . Add a net-new node of at least 4.6.5 to any existing cluster first.
 This new node will become the orchestrator and any further rebalance will not be affected.
 From then on, follow the instructions in xref:install:upgrade-strategies.adoc#online-upgrade[Performing Online Upgrade].
@@ -203,7 +201,7 @@ This section lists some of the notable fixed issues in this release, grouped by 
 
 *Data Service*
 
-[#table_jjp_mmz_y1b,cols="1,3"]
+[cols="1,3"]
 |===
 | Issue | Description
 
@@ -217,7 +215,7 @@ This has been fixed by first checking to see if the node is a part of the cluste
 
 *Index Service*
 
-[#table_btk_qmz_y1b,cols="1,3"]
+[cols="1,3"]
 |===
 | Issue | Description
 
@@ -239,7 +237,7 @@ This has been fixed by first checking to see if the node is a part of the cluste
 
 *Query Service and N1QL*
 
-[#table_f2q_qmz_y1b,cols="1,3"]
+[cols="1,3"]
 |===
 | Issue | Description
 
@@ -269,7 +267,7 @@ The parameters are substituted before optimization, thus ensuring the best possi
 
 *Cluster Manager*
 
-[#table_fnz_qmz_y1b,cols="1,3"]
+[cols="1,3"]
 |===
 | Issue | Description
 
@@ -283,7 +281,7 @@ Additionally added improved logging to diagnose such issues.
 
 *Security*
 
-[#table_ewd_rmz_y1b,cols="1,3"]
+[cols="1,3"]
 |===
 | Issue | Description
 
@@ -293,7 +291,7 @@ Additionally added improved logging to diagnose such issues.
 
 *Tools*
 
-[#table_ty3_rmz_y1b,cols="1,3"]
+[cols="1,3"]
 |===
 | Issue | Description
 
@@ -325,7 +323,6 @@ Without purging, you would see an increase in your backup size during merges as 
 a|
 The [.cmd]`cbbackupmgr merge` command did not function correctly and caused data corruption under the following circumstances:
 
-[#ul_qsg_f4q_1bb]
 * The bucket being backed up was flushed between incremental backups.
 * The bucket being backed up was deleted and re-created in between incremental backups.
 * The bucket had not been backed up between a document's deletion and the metadata for that deleted document being purged.
@@ -334,7 +331,7 @@ The [.cmd]`cbbackupmgr merge` command did not function correctly and caused data
 
 *UI - Web Console*
 
-[#table_z4q_rmz_y1b,cols="1,3"]
+[cols="1,3"]
 |===
 | Issue | Description
 
@@ -347,7 +344,7 @@ However, if you want to query password-protected buckets, you need to either cli
 
 *XDCR*
 
-[#table_mfy_rmz_y1b,cols="1,3"]
+[cols="1,3"]
 |===
 | Issue | Description
 
@@ -375,7 +372,7 @@ This caused various issues such as stats missing from the log file and replicati
 
 This section lists some of the known issues in this release.
 
-[#table_ebz_smz_y1b,cols="1,3"]
+[cols="1,3"]
 |===
 | Issue | Description
 
@@ -433,7 +430,7 @@ This section lists some of the notable fixed issues in this release, grouped by 
 
 *Backup*
 
-[#table_egb_l1d_wz,cols="1,3"]
+[cols="1,3"]
 |===
 | Issue | Description
 
@@ -459,7 +456,7 @@ This unexpected termination would be indicated by the message 'panic: runtime er
 
 *Cluster Manager*
 
-[#table_fgb_l1d_wz,cols="1,3"]
+[cols="1,3"]
 |===
 | Issue | Description
 
@@ -477,7 +474,7 @@ This results in the failure of the node addition process.
 
 *Data Service*
 
-[#table_ggb_l1d_wz,cols="1,3"]
+[cols="1,3"]
 |===
 | Issue | Description
 
@@ -506,7 +503,7 @@ This prevents the node from being accessible once it has been removed from a clu
 
 *Indexing Service*
 
-[#table_hgb_l1d_wz,cols="1,3"]
+[cols="1,3"]
 |===
 | Issue | Description
 
@@ -520,7 +517,7 @@ This only affects indexes where there are keys which are close to the maximum ke
 
 *Query Service*
 
-[#table_igb_l1d_wz,cols="1,3"]
+[cols="1,3"]
 |===
 | Issue | Description
 
@@ -565,7 +562,7 @@ END;+`)
 
 *Web Console*
 
-[#table_jgb_l1d_wz,cols="1,3"]
+[cols="1,3"]
 |===
 | Issue | Description
 
@@ -584,7 +581,7 @@ END;+`)
 
 *XDCR*
 
-[#table_kgb_l1d_wz,cols="1,3"]
+[cols="1,3"]
 |===
 | Issue | Description
 
@@ -616,7 +613,7 @@ This section lists some of the notable improvements in this release, grouped by 
 
 *Cluster Manager*
 
-[#table_lgb_l1d_wz,cols="1,3"]
+[cols="1,3"]
 |===
 | Issue | Description
 
@@ -627,7 +624,7 @@ This new behavior is detailed in xref:security:secret-mgmt.adoc[Secret Managemen
 
 *Query*
 
-[#table_mgb_l1d_wz,cols="1,3"]
+[cols="1,3"]
 |===
 | Issue | Description
 
@@ -697,7 +694,7 @@ This new behavior is detailed in xref:security:secret-mgmt.adoc[Secret Managemen
 
 *XDCR*
 
-[#table_ngb_l1d_wz,cols="1,3"]
+[cols="1,3"]
 |===
 | Issue | Description
 
@@ -716,7 +713,7 @@ This reduces the number of requests to a target cluster in situations where ther
 
 This section lists some of the known issues in this release:
 
-[#table_ogb_l1d_wz,cols="1,3"]
+[cols="1,3"]
 |===
 | Issue | Description
 
@@ -733,7 +730,6 @@ This may result in a rebalance hanging as the rebalance waits for the vBucket to
 a|
 The cbbackupmgr merge command will not function correctly and may cause data corruption under the following circumstances:
 
-[#ul_pgb_l1d_wz]
 * The bucket being backed up is https://developer.couchbase.com/documentation/server/4.6/clustersetup/bucket-flush.html#topic_v1t_trm_gv[flushed^] between incremental backups
 * The bucket being backed up is deleted and re-created in between incremental backups
 * The bucket has not been backed up between a document's deletion and the https://developer.couchbase.com/documentation/server/4.6/architecture/core-data-access-bucket-disk-storage.html#concept_cy4_tr2_xs__tombstone[metadata for that deleted document being purged^]
@@ -782,7 +778,7 @@ This section lists some of the fixed issues in this release:
 
 This section lists some of the known issues in this release:
 
-[#table_ld4_5bn_2z,cols="25,66"]
+[cols="25,66"]
 |===
 | Issue | Description
 
@@ -835,7 +831,6 @@ For more information, see xref:install:install-platforms.adoc#topic1634[Supporte
 
 Here are the behavior changes in the product, compared to the previous release:
 
-[#ul_zs4_whs_dz]
 * Results for the `OBJECT_PAIRS` and `OBJECT_INNER_PAIRS` functions:
 +
 Starting from version 4.6.0, the results generated by `OBJECT_PAIRS` and `OBJECT_INNER_PAIRS` functions use the word "val" for value instead of the N1QL reserved word "value".
@@ -894,7 +889,6 @@ In Couchbase clusters with multiple query service nodes, applications may get in
 
 *Workaround:* The following two options can be used to avoid this problem:
 
-[#ul_y2t_zqy_dz]
 * Do not use prepared statements.
 * If using the Java SDK, set the undocumented property [.out]`N1qlQueryExecutor.ENCODED_PLAN_ENABLED_PROPERTY` to "[.out]``false``" before opening the bucket.
 For example,
@@ -924,7 +918,7 @@ This will lead to longer backup times than performing incremental backups, but w
 
 *Data Service*
 
-[#table_tbm_p3s_dz,cols="25,66"]
+[cols="25,66"]
 |===
 | Issue | Description
 
@@ -982,7 +976,7 @@ Please note that version 1 is used when replicating to ElasticSearch.
 
 *Query Service*
 
-[#table_ubm_p3s_dz,cols="25,66"]
+[cols="25,66"]
 |===
 | Issue | Description
 
@@ -1069,7 +1063,7 @@ USING VIEWS` clause.
 
 *Index Service*
 
-[#table_vbm_p3s_dz,cols="25,66"]
+[cols="25,66"]
 |===
 | Issue | Description
 
@@ -1079,7 +1073,7 @@ USING VIEWS` clause.
 
 *FTS Service*
 
-[#table_wbm_p3s_dz,cols="25,66"]
+[cols="25,66"]
 |===
 | Issue | Description
 
@@ -1095,7 +1089,7 @@ If you have full text index definitions from previous versions that you want to 
 
 *Security*
 
-[#table_xbm_p3s_dz,cols="25,66"]
+[cols="25,66"]
 |===
 | Issue | Description
 
@@ -1107,7 +1101,6 @@ If you have full text index definitions from previous versions that you want to 
 
 Support for the following platforms is deprecated in this release:
 
-[#ul_tkf_vml_wx]
 * Microsoft Windows 2008
 * Microsoft Windows 2008 R2 SP1
 * Ubuntu 12.0.4
@@ -1120,14 +1113,13 @@ When upgrading a cluster to 5.x, we recommend performing a https://www.couchbase
 
 The following platforms are no longer supported:
 
-[#ul_arx_kgx_4y]
 * Microsoft Windows 8
 * Mac OS X 10.9
 * Amazon Linux 2014.03
 
 The following functionality is deprecated, will be deprecated or is unsupported.
 
-[#table_bl3_533_1v,cols="1,3"]
+[cols="1,3"]
 |===
 | Function | Description
 

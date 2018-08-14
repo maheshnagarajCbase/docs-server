@@ -1,4 +1,3 @@
-[#concept_v4w_zmj_vs]
 = Multidimensional Scaling
 :page-type: concept
 
@@ -21,7 +20,6 @@ NoSQL and big data platforms typically partition these workloads across their po
 Couchbase Server does this symmetric scaling as well.
 
 .Symmetric scaling with Couchbase Server
-[#fig_dc5_ll2_xs]
 image::symmetric-scaling-with-cbserver.png[,400]
 
 Symmetric scale-out is simple.
@@ -43,7 +41,6 @@ As an Administrator, you can fine tune the hardware resources for each service s
 You can add more cores to enable parallel query computation in query service and also add more memory to cache more indexes in the index service.
 
 .Independent scaling with Couchbase Server
-[#fig_ltw_nq2_xs]
 image::independent-scaling.png[,500]
 
 Multidimensional Scaling (MDS) separates the distinct workloads:

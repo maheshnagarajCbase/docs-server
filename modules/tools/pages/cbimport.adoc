@@ -1,4 +1,3 @@
-[#topic_fsg_5d3_vx]
 = cbimport
 
 [abstract]
@@ -21,7 +20,7 @@ For more information on how specific commands work, run `cbimport <command> --he
 *Options*
 
 .cbimport options
-[#table_t4f_cq3_vx,cols="1,2"]
+[cols="1,2"]
 |===
 | Option | Description
 
@@ -73,7 +72,7 @@ For details about key generators, see <<key-generators-csv,Key Generators>>.
 The following tables list the required and optional parameters for the [.cmd]`cbimport csv` command.
 
 .Required options for cbimport csv
-[#table_thk_3q3_vx,cols="1,2"]
+[cols="1,2"]
 |===
 | Option | Description
 
@@ -101,7 +100,7 @@ If a URL is used then the file should be prefixed with either [.path]_http://_ o
 |===
 
 .Optional options for cbimport csv
-[#table_s21_mq3_vx,cols="1,2"]
+[cols="1,2"]
 |===
 | Option | Description
 
@@ -162,7 +161,6 @@ The errors file is written in the "json lines" format (one document per line).
 
 When specifying a host for the cbimport command the following formats are expected:
 
-[#ul_m5j_ns3_vx]
 * `couchbase://<addr>`
 * `<addr>:<port>`
 * `+http://<addr>:<port>+`
@@ -283,7 +281,7 @@ For details about key generators, see <<key-generators-json,Key Generators>>.
 The following tables list the required and optional parameters for the [.cmd]`cbimport json` command.
 
 .Required options for cbimport json
-[#table_thk_3q3_vy,cols="1,2"]
+[cols="1,2"]
 |===
 | Option | Description
 
@@ -315,7 +313,7 @@ See <<dataset-formats,Dataset Formats>> for more details on the formats supporte
 |===
 
 .Optional options for cbimport json
-[#table_s21_mq3_vy,cols="1,2"]
+[cols="1,2"]
 |===
 | Option | Description
 
@@ -354,7 +352,6 @@ The errors file is written in the "lines" format (one document per line).
 
 When specifying a host for the cbimport command the following formats are expected:
 
-[#ul_m5j_ns3_vy]
 * `couchbase://<addr>`
 * `<addr>:<port>`
 * `+http://<addr>:<port>+`
@@ -367,7 +364,6 @@ The other two formats allow an option to take a port number which is needed for 
 
 The cbimport command supports the following formats:
 
-[#ul_frg_4sj_vx]
 * *Lines*
 +
 The lines format specifies a file that contains one JSON document on every line in the file.

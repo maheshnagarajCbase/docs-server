@@ -1,4 +1,3 @@
-[#reference_bjl_4sv_sq]
 = bucket-compact
 :page-type: reference
 

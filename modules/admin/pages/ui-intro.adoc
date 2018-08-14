@@ -8,7 +8,6 @@ The Couchbase Web Console is accessed by navigating to `+http://<host>:8091/+` i
 
 When you start the Couchbase Web Console, the introductory screen opens with the tab [.ui]*Cluster Overview* selected by default.
 
-[#image_smh_qzh_ht]
 image::web-console.png[,720,align=left]
 
 The Cluster Overview screen contains three sections: Cluster, Buckets, and Servers.
@@ -17,7 +16,6 @@ The Cluster Overview screen contains three sections: Cluster, Buckets, and Serve
 
 The [.ui]*Cluster* section provides information on the RAM and disk usage information for your cluster.
 
-[#image_w5k_jwp_ht]
 image::ui-cluster.png[,720,align=left]
 
 For the RAM information, you are provided with a graphical representation of your RAM situation, including:
@@ -69,7 +67,6 @@ The free space available for storing objects on disk.
 
 == Buckets
 
-[#image_rwk_3wc_3v]
 image::ui-buckets.png[,720,align=left]
 
 The [.ui]*Buckets* section provides two graphs showing the `Operations per second` and `Disk fetches per second`.
@@ -84,7 +81,6 @@ For more details, see xref:clustersetup:bucket-setup.adoc[Bucket setup].
 
 The [.ui]*Servers* section indicates overall server information for the cluster:
 
-[#image_xkb_nxp_ht]
 image::ui-servers.png[,720,align=left]
 
 Active Servers:: The number of active servers within the current cluster configuration.

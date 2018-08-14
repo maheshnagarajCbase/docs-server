@@ -1,4 +1,3 @@
-[#topic_jzr_ct2_gv]
 = Password-Based Authentication
 
 [abstract]
@@ -75,7 +74,7 @@ You must upgrade all drivers used by applications that will connect to upgraded 
 The minimum driver versions that support SCRAM-SHA are:
 
 .Driver requirements for SCRAM-SHA authentication
-[#table_bd2_w5f_qv,cols="52,50,177"]
+[cols="52,50,177"]
 |===
 | Couchbase Client | Version | Description
 

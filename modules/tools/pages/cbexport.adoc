@@ -1,4 +1,3 @@
-[#topic_lt4_wd3_vx]
 = cbexport
 
 [abstract]
@@ -21,7 +20,7 @@ For more information on how specific commands work, run `cbexport <command> --he
 *Options*
 
 .cbexport options
-[#table_t4f_cq3_vx,cols="1,2"]
+[cols="1,2"]
 |===
 | Option | Description
 
@@ -67,7 +66,7 @@ See <<dataset-formats,Dataset Formats>> for more details on the supported file f
 The following tables list the required and optional parameters for the [.cmd]`cbexport json` command.
 
 .Required options for cbexport json
-[#table_thk_3q3_vy,cols="1,2"]
+[cols="1,2"]
 |===
 | Option | Description
 
@@ -98,7 +97,7 @@ The file does not have to exist when the command is invoked.
 |===
 
 .Optional options for cbexport json
-[#table_s21_mq3_vy,cols="100,197"]
+[cols="100,197"]
 |===
 | Option | Description
 
@@ -133,7 +132,6 @@ This parameter defaults to 1 if it is not specified and it is recommended that t
 
 When specifying a host for the [.cmd]`cbexport` command the following formats are expected:
 
-[#ul_m5j_ns3_vy]
 * `couchbase://<addr>`
 * `<addr>:<port>`
 * `+http://<addr>:<port>+`
@@ -146,7 +144,6 @@ The other two formats allow an option to take a port number which is needed for 
 
 The cbexport command supports the following formats:
 
-[#ul_frg_4sj_vx]
 * *Lines*
 +
 The lines format specifies a file that contains one JSON document on every line in the file.

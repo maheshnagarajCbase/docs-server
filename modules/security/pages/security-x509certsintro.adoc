@@ -1,4 +1,3 @@
-[#topic_cfk_mhn_xv]
 = X.509 for TLS
 
 [abstract]
@@ -10,7 +9,6 @@ With X.509 certificates, Couchbase Server can strongly encrypt client-server com
 
 NOTE: Full administrators in Couchbase can manage certificates using the Couchbase CLI tools (as described in xref:cli:cbcli/ssl-manage.adoc#cbcli-xdcr-ssl[[.cmd]`ssl-manage`]) or REST API (as described in xref:rest-api:rest-security.adoc[Security API]).
 
-[#image_gnp_5mk_y5]
 image::pict/ca_sys_diagram.png[,570]
 
 With CA-based certificates, you also achieve their simplified management and rotation without client downtime.
@@ -23,7 +21,6 @@ An X.509 certificate does more than just distribute the public key: it is signed
 
 Some common scenarios which may require use of X.509 certificates are:
 
-[#ul_j3z_b1k_1v]
 * In production where clients have to go through the internet.
 * When transferring sensitive data on the wire between application and Couchbase Server, or between data centers (XDCR).
 * When mandated by regulatory compliance regulations.
@@ -37,7 +34,6 @@ There are two types of CA hierarchies supported by Couchbase: single- or n-tier.
 Single-Tier Hierarchy::
 In its simplest form, the single-tier hierarchy starts with a root CA.
 +
-[#image_my1_wmk_y5]
 image::pict/ca_single_tier.png[,align=left]
 +
 For example, as shown in the figure above, the root CA is also the issuing CA.
@@ -48,7 +44,6 @@ Although this is the simplest form of CA hierarchy, most enterprises use an N-ti
 N-Tier Hierarchy::
 Typically, in many production deployments, a hierarchy will have multiple CAs.
 +
-[#image_t1g_ymk_y5]
 image::pict/ca_n_tier.png[,570,align=left]
 +
 In a multi-tier hierarchy, the root CA issues certificates to the intermediate CAs, which in turn generate intermediate certificates used to sign the client certificates such as a cluster certificate:
@@ -63,7 +58,6 @@ When you need to regenerate the intermediate certificate, ensure that the chain 
 If all intermediate certificates are not installed on your server, some clients might think you are on an insecure connection.
 This results in 'untrusted' warnings like the following:
 +
-[#image_ofr_hg1_z5]
 image::pict/back-to-safety.png[,450,align=left]
 +
 To avoid such warnings, a server should always send a complete trust chain.
@@ -146,7 +140,7 @@ The Couchbase cluster certificate is used to sign per-node Couchbase certificate
 * The certificate chain file based on the supported CA hierarchy, This file is named `chain.pem` as shown in the configuration steps below.
 
 .Private and public keys you need to have
-[#table_r1q_1zz_pv,cols="100,143,334"]
+[cols="100,143,334"]
 |===
 | | Key name | Description
 
@@ -204,7 +198,6 @@ This order will show that the intermediate CA closest to the node (which signed 
 +
 For example:
 +
-[#image_e5g_bcn_sv]
 image::pict/chain-pem.png[,500,align=left]
 
 [#sslconfig]
@@ -653,7 +646,6 @@ This section lists the error messages connected to the configuration of cluster 
 Here are some error messages you might encounter when configuring the cluster CA certificate and the suggested corrective actions:
 
 .Error messages when configuring cluster CA certificates
-[#table_fsj_r3d_5v]
 |===
 | Couchbase Error Message | Description | Suggested User Action
 
@@ -708,7 +700,6 @@ The certificate file should be readable using `openssl` or via online SSL tools 
 Here are some error messages you might encounter when configuring the node certificate and the suggested corrective actions:
 
 .Error messages when configuring node certificates
-[#table_u3d_bkd_5v]
 |===
 | Couchbase Error Message | Description | Suggested User Action
 

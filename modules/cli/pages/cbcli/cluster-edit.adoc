@@ -1,4 +1,3 @@
-[#reference_atj_tn5_ls]
 = cluster-edit
 :page-type: reference
 

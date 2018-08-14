@@ -1,4 +1,3 @@
-[#topic_s4n_42h_vx]
 = Pluggable Authentication Modules
 
 [abstract]
@@ -89,7 +88,6 @@ $ passwd don
 
 . Map the Linux login name (user name) to one or many Couchbase Server administrator roles.
 +
-[#image_nbk_ykh_vx]
 image::pict/security-pam-auth-linux.png[,570]
 
 . Re-start the SASL service for PAM authentication to take effect.

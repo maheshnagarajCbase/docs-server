@@ -1,4 +1,3 @@
-[#topic_l2x_pkx_vx]
 = Sorting Query Results
 
 Starting Couchbase Server version 4.6, you can sort search results by any indexed field.
@@ -51,7 +50,6 @@ Here is a full query example that performs a query string query and demonstrates
 
 You can exercise finer control over sort behavior using objects in the `sort` field.
 
-[#ul_xhg_wzz_yx]
 * `by` Sort results on `id`, `score`, or a `field` in the full text index.
 * `field` the name of the field to sort on, if you specify `"by" : "field"`.
 It is ignored if you specify `score` or `id`.

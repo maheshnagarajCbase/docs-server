@@ -1,4 +1,3 @@
-[#concept_pvc_qbs_nv]
 = Internal Roles
 :page-type: concept
 
@@ -46,7 +45,6 @@ To assign the Read-Only Administrator's role to a user:
 
 . Select menu:Security[Internal User/Roles].
 +
-[#image_rm3_prv_4v]
 image::pict/readonly-admin.png[,720,align=left]
 
 . In the dialog box, enter the Read-Only Administrator's credentials: username and password.

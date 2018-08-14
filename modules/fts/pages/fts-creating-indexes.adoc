@@ -1,4 +1,3 @@
-[#topic_ksl_wwk_1v]
 = Text Indexing
 
 In order to perform full text queries, you must first create a full text index.
@@ -56,12 +55,10 @@ For this reason, default index mapping may be slow or result in high load if use
 
 . Click the button [.ui]*New Full Text Index*.
 +
-[#image_x44_s1l_1v]
 image::fts-create-index.png[,570]
 
 . Give your index a name like "[.in]``beer-sample-idx``" and select the bucket you want to index from the drop-down list.
 +
-[#image_s1h_x1l_1v]
 image::fts-create-index-2.png[,300]
 
 . Starting version 4.6, you can create custom index mappings by document type when the type is specified in the document key.
@@ -69,7 +66,6 @@ FTS uses the type identifier that you specify to determine where to find the typ
 The type mapping then uses the value of type identifier for each document to determine which index mapping rules to apply.
 Select one of the three options for type identifier: "JSON type field", "Doc ID up to separator", and "Doc ID with regex".
 
-[#ul_tyx_xwy_ky]
  ** *JSON type field*: Specify the field in the JSON document whose value determines the type of the document.
 Defaults to "type".
  ** *Doc ID up to separator*: The type identifier is the prefix of the document key, up to but not including the given character.
@@ -78,14 +74,12 @@ Defaults to "type".
 +
 For example, the Doc ID up to the first underscore is considered the type identifier, so beer name, brewery name, and so on could be specified as type mappings.
 +
-[#image_pjl_mxy_ky]
 image::fts-create-index-4.png[,300]
 
 . If you click on "[.ui]*Type Mappings*," you will only see one type listed, which is "[.out]``default``."
 . Click the "[.ui]*Create Index*" button.
 You will then see a screen that shows you how many documents are in your index and the percentage complete.
 +
-[#image_zn3_1bl_1v]
 image::fts-create-index-3.png[,300]
 
 . Click on the [.ui]*Full Text* link again to search the index you just created.

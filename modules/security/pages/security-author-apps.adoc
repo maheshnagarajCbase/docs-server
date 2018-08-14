@@ -1,4 +1,3 @@
-[#concept_cmw_nph_hr]
 = Authorization for Applications
 :page-type: concept
 

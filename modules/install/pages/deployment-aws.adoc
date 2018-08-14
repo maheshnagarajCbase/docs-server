@@ -1,4 +1,3 @@
-[#topic_knp_njt_xs]
 = AWS Marketplace
 
 [abstract]

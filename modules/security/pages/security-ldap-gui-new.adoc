@@ -1,4 +1,3 @@
-[#topic_omm_dxq_wq]
 = External Roles
 
 [abstract]
@@ -16,7 +15,6 @@ To enable LDAP authentication for administrators, follow these steps:
 
 . Select menu:Security[External User/Roles].
 +
-[#image_lgt_s5r_nv]
 image::pict/enable-auth.png[,720,align=left]
 
 . Click the [.ui]*enable* link to turn on authentication.
@@ -30,7 +28,6 @@ With LDAP authentication enabled, the Full Administrator can add administrators 
 . Click on the btn:[Add User] button on the right.
 . In the [.ui]*Manage User: New* dialog, enter the username and select the role from the drop-down list.
 +
-[#image_zvj_2wr_nv]
 image::pict/manage-user-new.png[,350,align=left]
 +
 The roles are:
@@ -46,12 +43,10 @@ When denoted with an asterisk [*], this role can manage all views in a cluster.
 
 . The Full Administrator can always manage all existing administrative roles in this same dialog and add a new role to particular users, or remove the roles from their list.
 +
-[#image_vh2_xxr_nv]
 image::pict/manage-user-remove.png[,350,align=left]
 
 If you click on an administrative role, the pop-up will explain what this user can manage in the Couchbase system:
 
-[#image_yqx_4lv_4v]
 image::pict/bucket-admin-default.png[]
 
 NOTE: Full administrators in Couchbase can manage user roles using the Couchbase CLI tools (as described in xref:cli:alter-role.adoc[[.cmd]`admin-role-manage`]) or REST API (as described in xref:rest-api:rbac.adoc[Role Based Admin Access (RBAC)]).

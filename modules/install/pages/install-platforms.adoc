@@ -73,7 +73,6 @@ All options listed below are 64-bit compatible.
 ====
 The following platforms are no longer supported:
 
-[#ul_arx_kgx_4y]
 * Microsoft Windows 8
 * Mac OS X 10.9
 * Amazon Linux 2014.03, 2016.03

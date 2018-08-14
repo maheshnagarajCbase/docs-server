@@ -1,4 +1,3 @@
-[#topic_ffr_mth_t5]
 = Sub-Document API
 
 The sub-document API enables you to access parts of JSON documents (sub-documents) efficiently without requiring the transfer of the entire document over the network.
@@ -16,7 +15,6 @@ Append operations on binary values are always atomic and do not retrieve the doc
 With the addition of the sub-document API, you can now access and operate on individual JSON fields, [.term]_sub-document fragments_, within a larger JSON document.
 Consider the following example which uses a sub-document API to retrieve just the last name from a user profile JSON document.
 
-[#image_qmy_n4c_1v]
 image::sub-doc-api-1.png[,570]
 
 Only the requested or modified fields are sent over the network as opposed to the entire document being sent over the network when using key-value APIs.
@@ -33,7 +31,6 @@ For example, incrementing a statistics counter or a login counter.
 For example, an existing web session where the user modifies or stores some data such as an updated profile or an updated score.
 * Cross-referencing scenarios, where an application-defined relationship exists between two documents.
 In the context of social gaming, this may be thought of as sending messages between inboxes.
-[#ol_emq_v4b_1v]
  .. User #1 sends a message to User #2.
  .. This may be implemented as: generate a key for the inbox message, store it somewhere.
  .. `docAddValue(‘user:1’, ‘sent’, [‘user:2’, ‘keyToMessage’]`
@@ -43,7 +40,6 @@ In the context of social gaming, this may be thought of as sending messages betw
 ====
 The following blogs explain how the sub-document API is expressed using different SDKs:
 
-[#ul_qx5_sh4_2v]
 * http://blog.couchbase.com/2016/february/subdocument-couchbase-java-sdk[Java Walk-through of the Sub-document API^]
 * http://blog.couchbase.com/2016/february/preview-of-the-subdocument-api-using-go[GO Walk-through of the Sub-document API^]
 ====
@@ -76,7 +72,6 @@ For example, the following operations do not collide although they are updating 
 This section lists the available sub-document commands.
 There are two categories of commands exposed through builder APIs in the SDKs:
 
-[#ul_hwt_jqq_1v]
 * [.term]_lookupIn_ commands which are used to read data from existing documents.
 * [.term]_mutateIn_ commands which are used to modify documents.
 
@@ -231,7 +226,6 @@ For more information on CAS, see xref:2.4@java-sdk::common/concurrent-mutations-
 
 The application logic may require a document modification to be either:
 
-[#ul_phc_w3h_1v]
 * [.term]_Locally consistent_ with regards to the immediate parent object which contains the value being modified.
 For example, ensure that a specific object key is unique, or ensure that a specific list item is not duplicated.
 * [.term]_Globally consistent_ with regards to the entire document.
@@ -257,7 +251,7 @@ When using a sub-document command the client only transmits the key, path and fr
 Depending on the size of the document being operated on and the size of the fragment, this can result in a significant saving of network bandwidth.
 For example, operating on a 100KB document named "[.in]``user::j.bloggs``" where a 30 byte fragment is added to a path of length 20 bytes would require sending the following over the network:
 
-[#table_o2q_1ky_y5,cols="81,50,50,50,50,50"]
+[cols="81,50,50,50,50,50"]
 |===
 |
 5+^| *Size (bytes)*
@@ -309,7 +303,6 @@ In general, sub-document API is a good fit for applications where network bandwi
 There are several sanity-check-like limits when using the sub-document API.
 These limits are essentially arbitrary but are there to improve performance, conserve memory, and help detect errant code.
 
-[#ul_dpx_fvp_kx]
 * Paths cannot have more than 32 levels of nesting (e.g.
 `foo` is one layer, `foo.bar` is two layers, and `foo.bar[4]` is three layers).
 * Paths cannot be longer than 1024 bytes.

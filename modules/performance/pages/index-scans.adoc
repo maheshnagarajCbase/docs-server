@@ -1,4 +1,3 @@
-[#topic_kkx_msp_mx]
 = Understanding Index Scans
 
 [abstract]
@@ -19,7 +18,6 @@ Spans simply express the predicates in terms of data ranges.
 
 The following table shows some example translations:
 
-[#table_nth_nxp_mx]
 |===
 | Predicate | Span Low | Span High | Span Inclusion
 
@@ -94,7 +92,7 @@ If "Low" is missing from the range, the scan starts with a NULL.
 NULL is the lowest value as MISSING values are not indexed.
 * Inclusion indicates if the values of High and Low fields are included.
 +
-[#table_hxk_cgs_mx,cols="2,2,5"]
+[cols="2,2,5"]
 |===
 | Inclusion Number | Meaning | Description
 
@@ -118,7 +116,6 @@ NULL is the lowest value as MISSING values are not indexed.
 When you analyze an explain plan, correlate the predicates in the explain to the spans.
 To make your queries more efficient:
 
-[#ul_qn1_llm_nx]
 * Ensure the most optimal index is selected and the spans have the expected range for all the index keys.
 * Use more keys in each span.
 
@@ -145,7 +142,6 @@ SELECT meta().id FROM `travel-sample` WHERE id = 10;
 
 This example pushes the predicate `id = 10` to index scan.
 
-[#table_r2t_frx_mx]
 |===
 | Span for | Low | High | Inclusion
 
@@ -186,7 +182,6 @@ SELECT meta().id FROM `travel-sample` WHERE id >= 10;
 
 This example pushes the predicate `id >= 10` to index scan.
 
-[#table_r2t_frx_my]
 |===
 | Span for | Low | High | Inclusion
 
@@ -224,7 +219,6 @@ SELECT meta().id FROM `travel-sample` WHERE id > 10;
 
 This example pushes the predicate `id >= 10` to index scan.
 
-[#table_r2t_frx_mz]
 |===
 | Span for | Low | High | Inclusion
 
@@ -262,7 +256,6 @@ SELECT meta().id FROM `travel-sample` WHERE id <= 10;
 
 This example pushes the predicate `+id <= 10+` to index scan.
 
-[#table_r2t_frx_na]
 |===
 | Span for | Low | High | Inclusion
 
@@ -303,7 +296,6 @@ SELECT meta().id FROM `travel-sample` WHERE id < 10;
 
 This example pushes the predicate `id < 10` to index scan.
 
-[#table_r2t_frx_nb]
 |===
 | Span for | Low | High | Inclusion
 
@@ -344,7 +336,6 @@ SELECT meta().id FROM `travel-sample` WHERE id >= 10 AND id < 25;
 
 This example pushes the predicate `id >= 10 AND id < 25` to index scan.
 
-[#table_r2t_frx_nc]
 |===
 | Span for | Low | High | Inclusion
 
@@ -385,7 +376,6 @@ SELECT meta().id FROM `travel-sample` WHERE id >= 10 AND id < 25 AND id <= 20;
 
 This example pushes the predicates `+id >= 10 AND id < 25 AND id <= 20+` to the index scan.
 
-[#table_r2t_frx_nd]
 |===
 | Span for | Low | High | Inclusion
 
@@ -419,7 +409,6 @@ EXPLAIN SELECT meta().id FROM `travel-sample` WHERE id >=10 AND id < 25 AND id <
 
 Observe that the optimizer created the span without the `id < 25` predicate because the other AND predicate `+id <=20+` makes the former predicate redundant.
 
-[#table_dgm_lky_mx]
 |===
 | Span for | Low | High | Inclusion
 
@@ -466,7 +455,6 @@ SELECT meta().id FROM `travel-sample` WHERE id > 10 AND id < 5;
 
 This example pushes the predicate `id > 10 AND id < 5` to the index scan.
 
-[#table_r2t_frx_ne]
 |===
 | Span for | Low | High | Inclusion
 
@@ -508,7 +496,6 @@ SELECT meta().id FROM `travel-sample` WHERE id BETWEEN 10 AND 25;
 
 In this example, the predicate `id BETWEEN 10 AND 25` (that is, id >= 10 AND id \<= 25) is pushed to index scan.
 
-[#table_r2t_frx_nf]
 |===
 | Span for | Low | High | Inclusion
 
@@ -550,7 +537,6 @@ SELECT meta().id FROM `travel-sample` WHERE id = 10 OR id = 20;
 In this example, the predicate `id = 10 OR id = 20` produces two independent ranges and both of them are pushed to index scan.
 Duplicate ranges are eliminated, but overlaps are not eliminated.
 
-[#table_r2t_frx_ng]
 |===
 | Span for | Low | High | Inclusion
 
@@ -611,7 +597,6 @@ After eliminating the duplicates each element is pushed as a separate range to i
 NOTE: In version 4.5, up to 8192 IN elements are pushed as separate ranges to the index service.
 If the number of elements exceed 8192, then the index service performs a full scan on the key.
 
-[#table_r2t_frx_nh]
 |===
 | Span for | Low | High | Inclusion
 
@@ -668,7 +653,6 @@ SELECT meta().id FROM `travel-sample` WHERE (id BETWEEN 10 AND 25) OR (id > 50 A
 
 This example pushes the predicate `+(id BETWEEN 10 AND 25) OR (id > 50 AND id <= 60)+` to index scan.
 
-[#table_r2t_frx_ni]
 |===
 | Span for | Low | High | Inclusion
 
@@ -725,7 +709,6 @@ SELECT meta().id FROM `travel-sample` WHERE id <> 10;
 
 In this example, the predicate `id <> 10` is transformed to `id < 10 OR id > 10` and then pushed to index scan.
 
-[#table_r2t_frx_nj]
 |===
 | Span for | Low | High | Inclusion
 
@@ -779,7 +762,6 @@ SELECT meta().id FROM `travel-sample` WHERE NOT (id >= 10 AND id < 25);
 
 In this example, the predicate `id >= 10 AND id < 25` is transformed to `id <10 OR id >=25` and pushed to index scan.
 
-[#table_r2t_frx_nk]
 |===
 | Span for | Low | High | Inclusion
 
@@ -833,7 +815,6 @@ SELECT meta().id FROM `travel-sample` WHERE name = "AMerican Airlines";
 
 This example pushes the predicate `name >= "American Airlines"` to index scan.
 
-[#table_r2t_frx_nl]
 |===
 | Span for | Low | High | Inclusion
 
@@ -874,7 +855,6 @@ SELECT meta().id FROM `travel-sample` WHERE name >= "American Airlines" AND name
 
 This example pushes the predicate `+name >= "American Airlines" AND name <= "United Airlines"+` to the index scan.
 
-[#table_r2t_frx_nm]
 |===
 | Span for | Low | High | Inclusion
 
@@ -918,7 +898,6 @@ SELECT meta().id FROM `travel-sample` WHERE name LIKE "American%";
 In this example, the predicate `name LIKE "American%"` is transformed to `name >= "American"` AND `name < "Americao"` (the next N1QL collation order of "American") and then pushed to index scan.
 In LIKE predicate % means match with any number of any character.
 
-[#table_r2t_frx_no]
 |===
 | Span for | Low | High | Inclusion
 
@@ -962,7 +941,6 @@ In this LIKE predicate '%' is the leading portion of the string so we can't push
 "" is the lowest string.
 [] is an empty array and is greater than every string value in the N1QL collation order.
 
-[#table_r2t_frx_np]
 |===
 | Span for | Low | High | Inclusion
 
@@ -1006,7 +984,6 @@ WHERE sourceairport = "SFO"
 
 This example pushes the predicate `sourceairport = "SFO" AND destinationairport = "JFK" AND stops BETWEEN 0 AND 2` to index scan.
 
-[#table_r2t_frx_nq]
 |===
 | Span for | Low | High | Inclusion
 
@@ -1028,7 +1005,6 @@ This example pushes the predicate `sourceairport = "SFO" AND destinationairport 
 
 The index selected has keys (sourceairport, destinationairport, stops) and the spans are stitched in that order to create a composite span.
 
-[#table_znk_vrf_nx]
 |===
 | Span for | Low | High | Inclusion
 
@@ -1079,7 +1055,6 @@ WHERE sourceairport IN ["SFO", "SJC"]
 
 This example pushes the predicate `sourceairport IN ["SFO", "SJC"] AND destinationairport = "JFK" AND stops = 0` to index scan.
 
-[#table_r2t_frx_nr]
 |===
 | Span for | Low | High | Inclusion
 
@@ -1107,7 +1082,6 @@ This example pushes the predicate `sourceairport IN ["SFO", "SJC"] AND destinati
 
 The index selected has keys (sourceairport, destinationairport, stops) and the spans are stitched in that order to create a composite span as follows:
 
-[#table_r2t_frx_nr1]
 |===
 | Span for | Low | High | Inclusion
 
@@ -1175,7 +1149,6 @@ SELECT meta().id FROM `travel-sample` WHERE sourceairport = "SFO" AND destinatio
 
 This example pushes the predicate `sourceairport = "SFO" AND destinationairport = "JFK"` to index scan.
 
-[#table_r2t_frx_ns]
 |===
 | Span for | Low | High | Inclusion
 
@@ -1194,7 +1167,6 @@ The index selected has keys (sourceairport, destinationairport, stops).
 As the stop key predicate is missing in the query, the one before span high value is converted to successor and removed inclusive bit.
 The transformed spans are as follows:
 
-[#table_r2t_frx_ns1]
 |===
 | Span for | Low | High | Inclusion
 
@@ -1211,7 +1183,6 @@ The transformed spans are as follows:
 
 The spans are then stitched in that order to create a composite span as follows.
 
-[#table_r2t_frx_n2s]
 |===
 | Span for | Low | High | Inclusion
 
@@ -1259,7 +1230,6 @@ WHERE sourceairport = "SFO"
 
 This example pushes the predicate `sourceairport = "SFO" AND destinationairport = "JFK" AND stops >= 0` to index scan.
 
-[#table_r2t_frx_nt]
 |===
 | Span for | Low | High | Inclusion
 
@@ -1283,7 +1253,6 @@ The index selected has keys (sourceairport, destinationairport, stops).
 As the stop key high is unbounded, the high value of the earlier span is converted to successor and the inclusive bit is removed.
 The transformed spans looks as follows:
 
-[#table_r2t_frx_nt1]
 |===
 | Span for | Low | High | Inclusion
 
@@ -1305,7 +1274,6 @@ The transformed spans looks as follows:
 
 The spans are then stitched in that order to create a composite span as follows:
 
-[#table_erz_kgm_nx]
 |===
 | Span for | Low | High | Inclusion
 
@@ -1352,7 +1320,6 @@ SELECT meta().id FROM `travel-sample` WHERE id = $1;
 
 This example pushes the predicate `id = $1` to index scan.
 
-[#table_r2t_frx_nu]
 |===
 | Span for | Low | High | Inclusion
 
@@ -1393,7 +1360,6 @@ SELECT meta().id FROM `travel-sample` WHERE id >= $1 AND id < $2;
 
 This example pushes the predicate `id >= $1 AND id < $2` to the index scan.
 
-[#table_r2t_frx_nv]
 |===
 | Span for | Low | High | Inclusion
 
@@ -1434,7 +1400,6 @@ SELECT meta().id FROM `travel-sample` WHERE id = $1 OR id < $2;
 
 This example pushes the predicate `id = $1 OR id < $2` to the index scan.
 
-[#table_r2t_frx_nw]
 |===
 | Span for | Low | High | Inclusion
 
@@ -1489,7 +1454,6 @@ SELECT meta().id FROM `travel-sample` WHERE id IN [ $1, 10, $2] ;
 
 This example pushes the predicate `id IN [$1, 10, $2]` to the index scan.
 
-[#table_r2t_frx_nx]
 |===
 | Span for | Low | High | Inclusion
 
@@ -1563,7 +1527,6 @@ END;
 
 This example pushes the predicate `v.day = 0` to ARRAY index scan.
 
-[#table_r2t_frx_ny]
 |===
 | Span for | Low | High | Inclusion
 
@@ -1610,7 +1573,6 @@ END;
 
 This example pushes the predicate `v.day IN [1,2,3]` to ARRAY index scan.
 
-[#table_r2t_frx_nz]
 |===
 | Span for | Low | High | Inclusion
 
@@ -1684,7 +1646,6 @@ SELECT meta().id FROM `travel-sample` WHERE abs(id) = 10;
 
 This example does not push any predicate to index scan.
 
-[#table_r2t_frx_oa]
 |===
 | Span for | Low | High | Inclusion
 
@@ -1722,7 +1683,6 @@ CREATE INDEX `idx_absid` ON `travel-sample`(abs(`id`));
 
 When index `idx_absid` is used, the query pushes the predicate `abs(id) = 10` to index scan.
 
-[#table_yfm_nwm_nx]
 |===
 | Span for | Low | High | Inclusion
 
@@ -1763,7 +1723,6 @@ SELECT meta().id FROM `travel-sample` WHERE id <= 100 OR (id BETWEEN 50 AND 150)
 
 This example pushes the predicate `+id <= 100 OR (id BETWEEN 50 AND 150)+` to index scan as two ranges.
 
-[#table_r2t_frx_ob]
 |===
 | Span for | Low | High | Inclusion
 

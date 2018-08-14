@@ -1,4 +1,3 @@
-[#topic_mln_twc_3w]
 = Getting Started with Server on Docker Containers
 
 [abstract]
@@ -25,7 +24,6 @@ Step 3: Access the Web Console::
 Access the Web Console [.path]_\http://localhost:8091_.
 If the container is up and running, you'll see the Couchbase Server Setup Screen.
 +
-[#image_khq_ngg_3w]
 image::setup-screen.png[,570]
 
 Step 4: Set up Couchbase Server::

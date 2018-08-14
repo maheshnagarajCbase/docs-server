@@ -1,4 +1,3 @@
-[#concept_lbx_hgk_np]
 = OFFSET clause
 :page-type: concept
 

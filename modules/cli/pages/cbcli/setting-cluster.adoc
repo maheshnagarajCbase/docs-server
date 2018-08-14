@@ -1,4 +1,3 @@
-[#reference_glz_fp5_ls]
 = setting-cluster
 :page-type: reference
 

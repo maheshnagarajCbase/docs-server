@@ -20,7 +20,6 @@ In particular, this release fixes a long-standing bug with an incorrect concurre
 Some configuration option-names changed.
 
 .Version Compatibility
-[#table_ktv_l1x_ht]
 |===
 | Elasticsearch plug-in version | Couchbase versions | Elasticsearch versions
 

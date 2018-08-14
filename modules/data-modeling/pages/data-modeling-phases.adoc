@@ -1,4 +1,3 @@
-[#topic_tlg_jqz_bw]
 = Phases of Data Modeling
 
 [abstract]
@@ -39,7 +38,6 @@ The data representation and containment in Couchbase Server is drastically diffe
 The following table provides a high level comparison to help you get familiar with Couchbase Server containers.
 
 .Data representation and containment in Couchbase Server versus relational databases
-[#table_tjc_k3q_dt]
 |===
 | Couchbase Server | Relational databases
 

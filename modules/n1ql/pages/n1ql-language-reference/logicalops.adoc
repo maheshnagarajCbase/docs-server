@@ -24,7 +24,6 @@ condition AND condition
 AND evaluates to TRUE only if both conditions are TRUE.
 
 .AND Truth Table
-[#table_w2v_rcn_hw]
 |===
 | | TRUE | FALSE
 
@@ -47,7 +46,6 @@ condition OR condition
 OR evaluates to TRUE if one of the conditions is TRUE.
 
 .OR Truth Table
-[#table_w2v_rcn_hx]
 |===
 | | TRUE | FALSE
 

@@ -1,4 +1,3 @@
-[#topic_o4w_11g_vq]
 = Bloom Filters
 
 [abstract]
@@ -27,7 +26,6 @@ The algorithm calculates the almost exact probability of false positives, includ
 You can expect an increase in memory usage or memory overhead while using the Bloom filter:
 
 .Memory overhead for Bloom filter use
-[#table_dkx_rvg_vq]
 |===
 | False positive probability | 0.01 | 0.05
 

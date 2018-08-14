@@ -1,4 +1,3 @@
-[#reference_jhf_jp5_ls]
 = setting-ldap
 :page-type: reference
 

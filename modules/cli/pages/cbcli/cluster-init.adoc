@@ -1,4 +1,3 @@
-[#reference_jx1_xn5_ls]
 = cluster-init
 :page-type: reference
 

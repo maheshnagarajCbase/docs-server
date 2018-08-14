@@ -1,4 +1,3 @@
-[#concept_ed2_pth_rq]
 = CREATE PRIMARY INDEX
 :page-type: concept
 
