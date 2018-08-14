@@ -1,5 +1,5 @@
 = setting-notification
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 Set email setting for notifications.

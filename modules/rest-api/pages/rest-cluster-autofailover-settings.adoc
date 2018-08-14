@@ -1,5 +1,5 @@
 = Retrieving Auto-Failover Settings
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 Auto-failover setting are retrieved with the `GET /settins/autoFailover` HTTP method and URI.

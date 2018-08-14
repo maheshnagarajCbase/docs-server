@@ -1,5 +1,5 @@
 = Download and API Reference
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 You can get the Kafka connector via Maven Central or by downloading it as an archive.

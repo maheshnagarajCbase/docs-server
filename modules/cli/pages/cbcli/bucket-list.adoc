@@ -1,5 +1,5 @@
 = bucket-list
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 Lists all buckets in a cluster.

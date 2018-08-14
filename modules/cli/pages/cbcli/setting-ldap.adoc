@@ -1,5 +1,5 @@
 = setting-ldap
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 Set the Lightweight Directory Access Protocol (LDAP) settings.

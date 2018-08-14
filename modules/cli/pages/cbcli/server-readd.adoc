@@ -1,5 +1,5 @@
 = server-readd
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 Re-adds the failed-over server.

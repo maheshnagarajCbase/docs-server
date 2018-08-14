@@ -1,5 +1,5 @@
 = Couchbase Travel App
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 Couchbase Travel is a sample web application that demonstrates how to interact with the Couchbase query service via the Node.js SDK.

@@ -1,5 +1,5 @@
 = Getting Started
-:page-type: task
+:page-topic-type: task
 
 [abstract]
 To help you get started using the Kafka connector, this section shows how to add the connector to your application and includes a basic sample application.

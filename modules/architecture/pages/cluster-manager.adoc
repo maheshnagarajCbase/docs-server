@@ -1,5 +1,5 @@
 = Cluster Manager
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 Cluster Manager runs on all the nodes of the cluster and orchestrates cluster wide operations.

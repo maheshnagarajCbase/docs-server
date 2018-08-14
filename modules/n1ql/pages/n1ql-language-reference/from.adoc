@@ -1,5 +1,5 @@
 = FROM clause
-:page-type: concept
+:page-topic-type: concept
 
 The FROM clause defines the keyspaces and input objects for the query.
 

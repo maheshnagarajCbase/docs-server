@@ -1,5 +1,5 @@
 = setting-autofailover
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 Configures the auto-failover settings.

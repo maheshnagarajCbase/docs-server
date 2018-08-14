@@ -1,5 +1,5 @@
 = node-init
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 Sets the node-specific parameters.

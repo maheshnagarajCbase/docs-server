@@ -1,5 +1,5 @@
 = Audit Events
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 Couchbase Server provides rich administrative auditing for over 25 administrative events and captures them in output target files.

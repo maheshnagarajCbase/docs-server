@@ -1,5 +1,5 @@
 = bucket-create
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 Adds a new bucket to a cluster.
