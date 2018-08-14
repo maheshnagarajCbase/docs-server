@@ -1,4 +1,3 @@
-[#concept_hgb_31r_dt]
 = Entity relationships and document design
 :page-type: concept
 

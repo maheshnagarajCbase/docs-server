@@ -1,4 +1,3 @@
-[#concept_jtd_z24_vs]
 = Incremental MapReduce views
 :page-type: concept
 
@@ -36,7 +35,6 @@ The indexer for each design document picks up the mutation from DCP and processe
 Indexers then queue the view writes for disk I/O to persist the changes to the view.
 
 .Indexing with incremental map-reduce views
-[#fig_ult_bph_zs]
 image::indexing-with-incremental-map-reduce-views.png[,500]
 
 == View storage

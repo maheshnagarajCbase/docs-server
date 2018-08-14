@@ -1,4 +1,3 @@
-[#topic_vls_dxs_zs]
 = Create cluster reference
 
 [abstract]
@@ -8,7 +7,6 @@ To create a cluster reference using the Couchbase Web Console:
 
 Go to menu:XDCR[Create Cluster Reference]
 
-[#image_fxf_crb_ft]
 image::admin/picts/xdcr-createreference.png[,align=left]
 
 To create the unidirectional replication (from cluster A to cluster B):

@@ -1,4 +1,3 @@
-[#concept_cz5_szf_vs]
 = Distributed data management
 :page-type: concept
 

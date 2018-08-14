@@ -1,4 +1,3 @@
-[#topic_pqg_nlg_xs]
 = Index Service nodes
 
 [abstract]
@@ -20,7 +19,6 @@ At Couchbase, we looked at performance data and customer use cases to provide si
 Here is a disk size example:
 
 .Disk sizes
-[#table_pwg_l2c_3t]
 |===
 | Input variable | Value
 

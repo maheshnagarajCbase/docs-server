@@ -1,4 +1,3 @@
-[#concept_w4d_yml_bt]
 = Writing spatial views
 :page-type: concept
 

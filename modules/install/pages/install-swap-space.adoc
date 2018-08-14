@@ -1,4 +1,3 @@
-[#concept_efx_mdp_ts]
 = Swap space and kernel swappiness
 :page-type: concept
 

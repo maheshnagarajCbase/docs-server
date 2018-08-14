@@ -1,4 +1,3 @@
-[#concept_lc3_4vy_zs]
 = Replication
 :page-type: concept
 
@@ -11,7 +10,6 @@ Peer-to-peer replication allows for the best performance and resource utilizatio
 Each node replicates separate slices (vBuckets) of its active data to multiple other nodes so that the no one node is a replica for any other one node.
 
 .Intra-cluster replication providing data redundancy
-[#fig_cwz_qkz_zs]
 image::intra-cluster-replication.png[,250]
 
 If a node goes down, Couchbase Server recovers that data  by activating the replicas that already exist elsewhere in the cluster.

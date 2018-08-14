@@ -1,4 +1,3 @@
-[#concept_ttw_pbp_ts]
 = Security considerations
 :page-type: concept
 

@@ -1,4 +1,3 @@
-[#topic_o3h_hnl_5s]
 = Remove nodes via REST API
 
 Remove a node from a cluster  with a [.cmd]`curl` command.

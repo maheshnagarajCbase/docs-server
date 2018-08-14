@@ -1,4 +1,3 @@
-[#concept_ldw_fz5_mp]
 = Arithmetic operators
 :page-type: concept
 

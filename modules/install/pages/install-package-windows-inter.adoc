@@ -1,4 +1,3 @@
-[#topic_p25_qdv_vs]
 = Interactive installation
 
 [abstract]
@@ -22,7 +21,6 @@ The installer asks you to set up sufficient ports available for the node.
 +
 By default, Microsoft Server will not have an adequate number of ephemeral ports, see https://support.microsoft.com/en-us/kb/196271[Microsoft Knowledge Base Article 196271^]:
 +
-[#image_u1k_bhv_vs]
 image::wizard-01.png[,align=left]
 
 . Click [.ui]*Yes* to continue.
@@ -32,7 +30,6 @@ Other operations, such as client requests, will time-out.
 If you already changed this setting, you can click No.
 The installer displays this panel to confirm the update.
 +
-[#image_orp_rhv_vs]
 image::wizard-02.png[,align=left]
 
 . After installation, follow the server setup instructions.

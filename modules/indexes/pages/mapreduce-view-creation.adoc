@@ -1,4 +1,3 @@
-[#concept_j5w_yp1_1t]
 = View creation
 :page-type: concept
 

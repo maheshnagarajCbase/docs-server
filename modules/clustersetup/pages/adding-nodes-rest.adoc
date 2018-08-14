@@ -1,4 +1,3 @@
-[#topic_vhh_2dl_5s]
 = Add nodes via REST API
 
 [abstract]

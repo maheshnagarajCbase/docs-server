@@ -1,4 +1,3 @@
-[#concept_r5s_c2m_zs]
 = Accessing data
 :page-type: concept
 
@@ -14,7 +13,6 @@ In addition, xref:cli-overview.adoc[command-line] and xref:webui.adoc[web-based]
 Every item in a database goes through the basic _CRUD_ cycle, which is typical of an application’s use of data.
 CRUD stands for create, read, update, and delete:
 
-[#ul_r1j_1gm_zs]
 * **C**reate: when data is first inserted into the cluster
 * **R**ead: when an application retrieves the data
 * **U**pdate: when data is modified to reflect a change in the state represented by the data

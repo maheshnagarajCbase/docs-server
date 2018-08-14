@@ -1,4 +1,3 @@
-[#topic_wxx_g1c_ys]
 = Single host, multiple containers
 
 [abstract]
@@ -11,7 +10,6 @@ The norm for a production cluster is that each node runs on dedicated hardware.
 The networking in this setup is effectively the same as described the Software-defined network section.
 Docker allocates an internal IP address to each container, and each of these IPs is visible to all other containers running on the same host.
 
-[#image_plq_cp3_ys]
 image::docker-03.png[]
 
 Internal IPs should be used in the Couchbase Web Console when adding new nodes to the cluster.

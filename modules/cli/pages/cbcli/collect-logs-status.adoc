@@ -1,4 +1,3 @@
-[#reference_ufl_rm5_ls]
 = collect-logs-status
 :page-type: reference
 

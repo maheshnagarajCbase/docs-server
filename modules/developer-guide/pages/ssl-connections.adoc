@@ -1,4 +1,3 @@
-[#concept_otn_kpv_tt]
 = SSL Connections
 :page-type: concept
 
@@ -24,7 +23,6 @@ See xref:security:security-admin-access.adoc#security-admin-access[Secure admini
 In order for the SDK to connect to the cluster using SSL, the SDK must be aware of the server’s self-signed SSL certificate.
 Use the Couchbase Web Console to retrieve the SSL certificate:
 
-[#ol_v41_25v_tt]
 . Open a browser and navigate to the Couchbase Web Console.
 . Click menu:Settings[Cluster].
 . In the Configuration section, click [.ui]*Show* to display the certificate.

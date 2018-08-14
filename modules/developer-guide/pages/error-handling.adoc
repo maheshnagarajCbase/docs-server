@@ -1,4 +1,3 @@
-[#concept_ybj_tqs_zs]
 = Error handling
 :page-type: concept
 
@@ -73,7 +72,6 @@ Possible causes are:
 
 Applications should generally *not* retry an operation if it resulted in a timeout before performing corrective action and/or analysis to determine the cause of these timeouts.
 
-[#messagepanel_kbb_trs_zs]
 .Timeout does not mean the operation failed.
 CAUTION: It is important to note that receipt of a timeout error does not mean the operation did not complete.
 It means the server did not respond in a timely fashion.
@@ -88,7 +86,6 @@ The cause of a network error may be included in the error object itself (for exa
 Like timeout errors, network errors may be transient (indicative of a bad network connection).
 They may also be a result of a node being failed over.
 
-[#messagepanel_sbr_zrs_zs]
 .Network error does not indicate the failure of the operation
 CAUTION: As in timeout errors], it is not possible to determine if an operation was actually completed if it resulted in a network error.
 

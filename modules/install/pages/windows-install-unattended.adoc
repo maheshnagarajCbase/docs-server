@@ -1,4 +1,3 @@
-[#topic_tzd_jjf_2p]
 = Unattended installation
 
 [abstract]

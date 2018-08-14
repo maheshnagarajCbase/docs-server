@@ -1,4 +1,3 @@
-[#topic_nx2_gdb_1t]
 = Create a read-only user
 
 [abstract]
@@ -10,7 +9,6 @@ To create a read-only user:
 +
 The Read-Only User dialog appears.
 +
-[#image_mrn_ydb_1t]
 image::admin/picts/settings-rouser1.png[]
 
 . Enter a [.in]`Username`, [.in]`Password` and verify the password.
@@ -19,7 +17,6 @@ image::admin/picts/settings-rouser1.png[]
 +
 The panel refreshes and has options for resetting the read-only user password or deleting the user.
 +
-[#image_u3g_zdb_1t]
 image::admin/picts/settings-rouser2.png[]
 
 It is also possible to Add, Modify and Remove the xref:rest-api:rest-endpoints-all.adoc#rest-endpoints-all[read-only] user with the REST API.

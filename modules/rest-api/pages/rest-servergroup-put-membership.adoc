@@ -1,4 +1,3 @@
-[#reference_ad5_dcl_sp]
 = Updating server group memberships
 :page-type: reference
 

@@ -1,4 +1,3 @@
-[#concept_b5g_f5f_ps]
 = Couchbase Server concepts
 :page-type: concept
 

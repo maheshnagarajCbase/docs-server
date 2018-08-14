@@ -1,4 +1,3 @@
-[#concept_md1_tnv_vs]
 = Cluster and Bucket RAM quotas
 :page-type: concept
 

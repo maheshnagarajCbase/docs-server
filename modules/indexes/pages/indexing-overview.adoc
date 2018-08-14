@@ -1,4 +1,3 @@
-[#concept_ssb_qhb_ys]
 = Indexing in Couchbase
 :page-type: concept
 

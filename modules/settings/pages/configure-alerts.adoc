@@ -1,4 +1,3 @@
-[#topic_yq2_qqn_vs]
 = Configure alerts
 
 [abstract]
@@ -10,7 +9,6 @@ Alerts are also provided as a popup within the Couchbase Web Console.
 
 It is important to ensure that all Couchbase Server nodes have network access to the configured SMTP server.
 
-[#image_psg_sq1_1t]
 image::admin/picts/settings-alerts.png[,align=left]
 
 Select the [.ui]*Enable email alerts* check box to enable the configuration of email alerts.

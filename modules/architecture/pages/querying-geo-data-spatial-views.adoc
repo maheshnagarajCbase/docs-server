@@ -1,4 +1,3 @@
-[#concept_hq5_hq4_vs]
 = Querying geographic data with spatial views
 :page-type: concept
 

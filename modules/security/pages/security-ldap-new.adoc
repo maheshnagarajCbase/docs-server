@@ -1,4 +1,3 @@
-[#topic_bgy_3ng_tq]
 = LDAP authentication
 
 [abstract]
@@ -20,11 +19,9 @@ Centralized identity management:::
 * Allows for centralized security policy management of the administrative accounts for stronger passwords, password rotation, and auto lockouts.
 
 Individual accountability and simplified compliance:::
-[#ul_ic4_c2b_mt]
 * Defines UIDs in LDAP and maps UIDs to read-only or full administrative role in Couchbase.
 * Allows for comprehensive audit trails with LDAP UIDs in audit records.
 
-[#image_ecq_vk1_mt]
 image::admin/picts/security-ldap.png[,align=left]
 
 == LDAP administrators

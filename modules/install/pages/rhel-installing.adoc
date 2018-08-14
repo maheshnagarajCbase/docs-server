@@ -1,4 +1,3 @@
-[#topic_ldx_gqs_g4]
 = Installing Using rpm
 
 [abstract]

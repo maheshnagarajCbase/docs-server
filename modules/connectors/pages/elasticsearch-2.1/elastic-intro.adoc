@@ -1,4 +1,3 @@
-[#concept_mbg_5lp_pp]
 = Elasticsearch plug-in 2.1
 :page-type: concept
 

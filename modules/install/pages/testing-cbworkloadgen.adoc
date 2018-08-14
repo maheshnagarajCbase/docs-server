@@ -1,4 +1,3 @@
-[#topic_am2_cnr_p4]
 = Testing with cbworkloadgen
 
 [abstract]

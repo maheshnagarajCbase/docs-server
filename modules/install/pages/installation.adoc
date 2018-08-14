@@ -1,4 +1,3 @@
-[#topic_o2n_51k_5s]
 = Installing Couchbase Server
 
 [abstract]

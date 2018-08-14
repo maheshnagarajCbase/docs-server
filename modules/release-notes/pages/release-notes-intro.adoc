@@ -1,4 +1,3 @@
-[#concept_agx_3tr_dt]
 = Release notes
 :page-type: concept
 

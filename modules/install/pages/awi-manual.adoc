@@ -1,4 +1,3 @@
-[#topic_xtm_3xt_xs]
 = Manual installation
 
 [abstract]

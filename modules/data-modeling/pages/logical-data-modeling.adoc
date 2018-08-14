@@ -1,4 +1,3 @@
-[#concept_y2g_w2q_dt]
 = Logical data modeling
 :page-type: concept
 

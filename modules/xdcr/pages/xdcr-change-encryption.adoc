@@ -1,4 +1,3 @@
-[#topic_ijw_vws_zs]
 = Change XDCR data encryption
 
 [abstract]

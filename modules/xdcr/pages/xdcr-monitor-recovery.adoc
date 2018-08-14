@@ -1,4 +1,3 @@
-[#topic_umk_vn5_zs]
 = Monitor the recovery process
 
 [abstract]
@@ -11,14 +10,12 @@ To monitor the progress of recovery:
 . Click on the [.ui]*Summary* drop-down list to see more details about this data bucket.
 You will see an increased number of items during recovery:
 +
-[#image_x1h_cq5_zs]
 image::xdcr-recovery-process-1.png[,450,align=left]
 
 . You can also see the number of active vBuckets increase as they are recovered until you reach 1024 vBuckets.
 +
 Click on the [.ui]*vBucket Resources* drop-down:
 +
-[#image_hxy_hq5_zs]
 image::xdcr-recovery-process-2.png[,500,align=left]
 +
 Since this tool runs from the command line, you can stop it at any time.
@@ -28,7 +25,6 @@ If you click this button, you will stop the recovery process between clusters.
 Once the recovery process completes, this button will no longer appear, and you will need to rebalance the cluster.
 You can also stop it in this panel:
 +
-[#image_z2p_pq5_zs]
 image::xdcr-recovery-process-3.png[,600,align=left]
 
 . After the recovery completes, click on the Server Nodes tab and then on Rebalance to rebalance your cluster.

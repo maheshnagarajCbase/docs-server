@@ -1,4 +1,3 @@
-[#concept_jbf_qth_rq]
 = DROP INDEX statement
 :page-type: concept
 

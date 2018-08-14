@@ -1,4 +1,3 @@
-[#topic_xtt_q2v_xs]
 = Rolling upgrade with multiple versions
 
 [abstract]

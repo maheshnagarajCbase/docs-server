@@ -1,4 +1,3 @@
-[#concept_xvc_fcq_dt]
 = Data modeling in Couchbase Server
 :page-type: concept
 

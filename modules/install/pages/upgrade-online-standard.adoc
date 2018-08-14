@@ -1,4 +1,3 @@
-[#topic_e5f_tjv_xs]
 = Standard online upgrade
 
 [abstract]

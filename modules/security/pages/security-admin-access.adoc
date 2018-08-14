@@ -23,7 +23,6 @@ To talk over SSL/TLS to the Couchbase Web Console, connect to the following URL 
 
 Select menu:Settings[Cluster].
 
-[#image_idl_2j1_1s]
 image::security-ssl-cert.png[,720,align=left]
 
 The [.ui]*Cluster* tab shows that a self-signed certificate has been deployed across the cluster.
@@ -37,7 +36,6 @@ This certificate can be regenerated or replaced.
 +
 The following is an example URL of a secure connection using the Safari web browser:
 +
-[#image_tp1_2r1_mp]
 image::ui-ssl-ip.png[,420]
 
 .SSL certificate

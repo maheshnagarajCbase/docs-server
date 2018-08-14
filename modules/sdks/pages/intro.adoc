@@ -1,4 +1,3 @@
-[#concept_yqn_tjg_ps]
 = SDKs
 :page-type: concept
 

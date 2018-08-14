@@ -1,4 +1,3 @@
-[#concept_lph_wf2_2s]
 = XDCR filtering regular expression
 :page-type: concept
 

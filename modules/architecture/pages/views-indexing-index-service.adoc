@@ -1,4 +1,3 @@
-[#concept_erk_4nj_vs]
 = Views, indexing, and index service
 :page-type: concept
 

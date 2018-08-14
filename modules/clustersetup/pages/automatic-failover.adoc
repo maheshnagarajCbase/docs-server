@@ -1,4 +1,3 @@
-[#topic_fcf_chm_zs]
 = Using Automatic Failover
 
 [abstract]
@@ -55,7 +54,6 @@ or
 
 You can reset this counter with the Couchbase Web Console by clicking on the btn:[Reset Quota] button as shown below.
 
-[#image_xfr_bxm_5v]
 image::admin/picts/reset-quota.png[,align=left]
 
 You can also reset the counter using the REST API:

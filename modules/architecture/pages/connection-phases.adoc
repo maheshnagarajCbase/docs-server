@@ -1,4 +1,3 @@
-[#concept_vqx_skd_3t]
 = Connectivity Phases
 :page-type: concept
 

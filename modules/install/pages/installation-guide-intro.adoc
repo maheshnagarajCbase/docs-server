@@ -1,4 +1,3 @@
-[#concept_pvp_lyf_ss]
 = Installation guide
 :page-type: concept
 

@@ -38,7 +38,7 @@ For example: `scp`.
 The following are the command options:
 
 .ssl-manage command options
-[#table_rbb_g5t_qq,cols="25,38"]
+[cols="25,38"]
 |===
 | Option | Description
 

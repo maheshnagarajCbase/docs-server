@@ -1,4 +1,3 @@
-[#topic_omm_dxq_wq]
 = Configuring LDAP administrators
 
 [abstract]
@@ -19,7 +18,6 @@ To enable LDAP, follow these steps:
 +
 The [.ui]*LDAP Authentication Setup* screen will appear.
 +
-[#image_t2w_nrw_ft]
 image::admin/picts/ldap-authentication.png[,720,align=left]
 
 . Select the [.ui]*Enable* check box to turn on LDAP support.

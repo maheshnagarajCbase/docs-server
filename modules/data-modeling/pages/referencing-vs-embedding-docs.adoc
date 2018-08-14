@@ -1,4 +1,3 @@
-[#concept_ugr_ddr_dt]
 = Referencing versus embedding documents
 :page-type: concept
 
@@ -46,7 +45,6 @@ For example, if brewery document is embedded in beer document and there could be
 However, this cannot be done in a single consistent operation.
 
 .Embedded versus referenced documents
-[#fig_zzl_yrt_dt]
 image::embed-vs-reference-ref-docs.png[,600]
 
 == Embedding documents

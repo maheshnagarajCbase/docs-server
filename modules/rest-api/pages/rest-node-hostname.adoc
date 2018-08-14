@@ -1,4 +1,3 @@
-[#reference_bcx_rt2_q4]
 = Setting host names
 :page-type: reference
 

@@ -1,4 +1,3 @@
-[#concept_tcf_byn_vs]
 = Data service and core data access
 :page-type: concept
 

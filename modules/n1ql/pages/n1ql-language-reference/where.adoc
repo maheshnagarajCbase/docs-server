@@ -1,4 +1,3 @@
-[#concept_zvb_dgk_np]
 = WHERE clause
 :page-type: concept
 

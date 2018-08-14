@@ -1,4 +1,3 @@
-[#topic_pgq_ghf_2p]
 = Installing as non-administrator user
 
 [abstract]

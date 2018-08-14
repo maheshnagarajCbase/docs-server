@@ -1,4 +1,3 @@
-[#topic_gmm_mz5_c5]
 = Upgrading services
 
 [abstract]

@@ -48,7 +48,6 @@ Check Elasticsearch documentation to make sure that you have configured your Ela
 
 The following tips, which are not specific to Couchbase, will also tune system performance:
 
-[#ul_ac4_5lz_pt]
 * When bulk loading, increase the Elasticsearch setting `index.refresh_interval` to improve indexing performance.
 This setting determines how quickly Elasticsearch makes the indexed documents available to query.
 For a large bulk load, where realtime indexing is not needed, setting this setting to a large number such as 30s can significantly increase throughput.

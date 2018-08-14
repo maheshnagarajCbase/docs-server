@@ -1,4 +1,3 @@
-[#concept_ggp_tqp_yn]
 = Stream-based views
 :page-type: concept
 

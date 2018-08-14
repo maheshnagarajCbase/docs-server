@@ -1,4 +1,3 @@
-[#topic_ix4_hkh_14]
 = Pause/Resume Replication
 
 [abstract]
@@ -13,7 +12,6 @@ To pause and resume replication, click the replicating and paused icons under th
 . Using the Couchbase Web Console, navigate to XDCR.
 . To pause, under menu:Ongoing Replication[Status], click on the [.ui]*Replicating* icon to pause replication.
 +
-[#image_ltl_q25_zs]
 image::xdcr-pause-resume.png[,550,align=left]
 
 . To resume, under menu:Ongoing Replication[Status], click on the [.ui]*Paused* triangle icon to continue replicating.

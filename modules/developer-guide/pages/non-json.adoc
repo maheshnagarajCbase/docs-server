@@ -1,4 +1,3 @@
-[#concept_lgg_gmb_bt]
 = Dealing with non-JSON documents
 :page-type: concept
 

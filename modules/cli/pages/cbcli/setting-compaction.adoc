@@ -1,4 +1,3 @@
-[#reference_z4y_kp5_ls]
 = setting-compaction
 :page-type: reference
 

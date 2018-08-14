@@ -1,4 +1,3 @@
-[#topic_nlg_tpn_vs]
 = Delete XDCR replication
 
 [abstract]

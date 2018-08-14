@@ -1,4 +1,3 @@
-[#concept_rnt_zfk_np]
 = FROM clause
 :page-type: concept
 

@@ -1,4 +1,3 @@
-[#topic_z2l_djn_vs]
 = Cloud deployment
 
 [abstract]

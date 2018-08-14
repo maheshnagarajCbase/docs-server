@@ -1,4 +1,3 @@
-[#topic_f4g_3nl_5s]
 = Remove nodes via CLI
 
 [abstract]

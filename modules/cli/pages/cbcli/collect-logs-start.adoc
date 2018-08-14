@@ -1,4 +1,3 @@
-[#reference_xd5_mm5_ls]
 = collect-logs-start
 :page-type: reference
 

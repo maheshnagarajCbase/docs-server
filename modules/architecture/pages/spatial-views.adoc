@@ -1,4 +1,3 @@
-[#concept_dht_3f4_vs]
 = Spatial views
 :page-type: concept
 

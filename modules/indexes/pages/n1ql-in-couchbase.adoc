@@ -1,4 +1,3 @@
-[#concept_kfz_ghb_ys]
 = N1QL in Couchbase
 :page-type: concept
 

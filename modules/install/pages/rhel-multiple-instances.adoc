@@ -1,4 +1,3 @@
-[#topic_fdf_nls_g4]
 = Installing multiple instances
 
 [abstract]

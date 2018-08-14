@@ -1,4 +1,3 @@
-[#concept_iq4_bts_zs]
 = Concurrent document mutations
 :page-type: concept
 
@@ -15,7 +14,6 @@ CAS is an acronym for _Compare And Swap_, and is known as a form of optimistic l
 The CAS can be supplied by applications to mutation operations ([.api]`insert`, [.api]`upsert`, [.api]`replace`).
 When applications provide the CAS, server will check the application-provided version of CAS against its own version of the CAS:
 
-[#ul_cxq_3ts_zs]
 * If the two CAS values match (they compare successfully), then the mutation operation succeeds.
 * If the two CAS values differ, then the mutation operation fails
 
@@ -33,7 +31,6 @@ At the application level, this requires the following steps:
 Assume the following two blocks of code are executing concurrently in different application instances:
 
 .CAS flow
-[#table_x23_rts_zs]
 |===
 | Thread #1 | Thread #2
 
@@ -63,7 +60,7 @@ Retrieving the document again yields:
 Note that `field1` is not present, even though the application inserted it into the document.
 The reason is because the replace on Thread #2 happened to run after the replace on Thread #1, however Thread #1’s replace was executed after Thread #2’s get: Since the local version of the document on Thread #2 did not contain field1 (because Thread #1’s update was not stored on the server yet), by executing the replace, it essentially overrode the replace performed by Thread #1.
 
-[#table_jvd_b5s_zs,cols="50,719"]
+[cols="50,719"]
 |===
 | 0.00ms
 | (#2): `new_doc = get(‘docid’).value`
@@ -90,7 +87,6 @@ In the prior example, we saw that concurrent updates to the same document may re
 This is not because Couchbase itself has lost the updates, but because the application was unaware of newer changes made to the document and inadvertently override them.
 
 .CAS flow
-[#table_fw1_m5s_zs]
 |===
 | |
 

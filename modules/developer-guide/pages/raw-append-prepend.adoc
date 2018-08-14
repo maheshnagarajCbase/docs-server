@@ -1,8 +1,6 @@
-[#concept_kfc_zsg_vt]
 = Raw append and prepend
 :page-type: concept
 
-[#messagepanel_xx2_btg_vt]
 .These methods should not be used with JSON documents
 CAUTION: The append and prepend operations operate at the byte level and are unsuitable for dealing with JSON documents.
 Use these methods only when explicitly dealing with binary or UTF-8 documents.

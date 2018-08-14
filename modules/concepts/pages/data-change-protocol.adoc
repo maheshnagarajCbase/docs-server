@@ -1,4 +1,3 @@
-[#concept_mkf_nvy_zs]
 = Data Change Protocol
 :page-type: concept
 

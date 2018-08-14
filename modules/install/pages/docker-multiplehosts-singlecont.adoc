@@ -1,4 +1,3 @@
-[#topic_dwf_n1c_ys]
 = Multiple hosts, single container on each host
 
 [abstract]
@@ -8,7 +7,6 @@ The multiple-hosts, single-container setup presents a typical Couchbase Server c
 All nodes are considered to be in the same datacenter with high-speed network links between them.
 We assume that the datacenter LAN configuration allows each host in the cluster to see each other host via known IPs.
 
-[#image_gzs_xv3_ys]
 image::docker-04.png[]
 
 Currently, the only supported approach for Couchbase Server on this deployment architecture is to use the --net=host flag.

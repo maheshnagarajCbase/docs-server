@@ -1,4 +1,3 @@
-[#concept_o53_kps_zs]
 = Document expiration
 :page-type: concept
 
@@ -39,7 +38,6 @@ https://github.com/couchbaselabs/devguide-examples/blob/master/c/expiration.cc[C
 
 For Couchbase SDKs which accept simple integer expiry values (as opposed to a proper date or time object) allow expiration to be specified in two flavors.
 
-[#ol_uk5_2qs_zs]
 . As an offset from the current time.
 . As an absolute Unix time stamp
 
@@ -49,7 +47,6 @@ If it is greater, it is considered an _absolute time stamp_.
 It may be preferable for applications to normalize the expiration value (i.e.
 by always converting it to an absolute time stamp) in order to avoid issues when the intended offset is larger than 30 days (in which case it is taken to mean a Unix time stamp and will result in the document automatically expiring as soon as it is stored).
 
-[#messagepanel_y22_jqs_zs]
 .If you wish to use the expiry feature, then you should supply the expiry value for every mutation operation
 CAUTION: When dealing with expiration, it is important to note that most operations will implicitly remove any existing expiration.
 Thus when modifying a document with expiration, it is important to pass the desired expiration time.

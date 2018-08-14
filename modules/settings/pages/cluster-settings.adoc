@@ -1,10 +1,8 @@
-[#topic_h12_hqn_vs]
 = Cluster settings
 
 [abstract]
 The Cluster tab provides an interface to configure the cluster name, RAM quota, index settings, and so on.
 
-[#image_dcr_5zz_zs]
 image::admin/picts/settings-cluster.png[,align=left]
 
 In the Cluster tab, the following sections can be edited or viewed:

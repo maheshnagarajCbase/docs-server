@@ -1,4 +1,3 @@
-[#reference_zvb_jmn_ls]
 = bucket-list
 :page-type: reference
 

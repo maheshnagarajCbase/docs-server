@@ -1,4 +1,3 @@
-[#concept_rwn_1vf_ps]
 = High availability and disaster recovery
 :page-type: concept
 
@@ -15,7 +14,6 @@ Couchbase Server delivers key high availability features such as zero downtime a
 
 Factors that increase system uptime and availability include:
 
-[#ul_njt_hzf_vs]
 * Number of replicas
 * Number of racks or availability zones
 * Number of clusters

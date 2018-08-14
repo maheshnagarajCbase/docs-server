@@ -1,4 +1,3 @@
-[#concept_gyg_14s_zs]
 = Durability
 :page-type: concept
 
@@ -40,7 +39,6 @@ The [.term]_level of durability_ is configurable depending on the needs of the a
 
 The level of durability may be expressed in two values:
 
-[#ol_tzb_w4s_zs]
 . The _replication_ factor of the operation: how many replicas must this operation be propagated to.
 This is specified as the `ReplicateTo` option in most SDKs.
 . The [.term]_persistence_ of the modification: how many persisted copies of the modified record must exist.
@@ -48,7 +46,6 @@ Often found as a `PersistTo` option.
 
 Examples of these settings include:
 
-[#ul_h5y_z4s_zs]
 * Ensure the modification is stored (on disk) on the active (master) node.
 * Ensure the modification exists (in memory) on at least one replica.
 * Ensure the modification is stored (on disk) on at least one replica.

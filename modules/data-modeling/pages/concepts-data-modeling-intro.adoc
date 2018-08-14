@@ -1,4 +1,3 @@
-[#concept_xrn_m5f_ps]
 = Data model
 :page-type: concept
 
@@ -31,13 +30,11 @@ To understand the document model in practice, think about an online flight booki
 In a relational data model, there would be tables for airlines, flights, and schedules among many others that might look something like the picture below.
 
 .Relational model for flight schedules
-[#fig_bzz_ymz_zs]
 image::concepts/images/relational-model-flight-status.png[,450]
 
 In Couchbase however, the document model would likely be a single route object that embeds an array of schedules for all flights between each two airports.
 
 .Document data model for flight bookings
-[#fig_lpx_2nz_zs]
 image::concepts/images/document-data-model-flight-booking.png[,150]
 
 In contrast to the relational model, each route document is self-contained.

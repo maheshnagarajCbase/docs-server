@@ -1,4 +1,3 @@
-[#concept_hyp_xpf_vs]
 = Deployment and operations
 :page-type: concept
 

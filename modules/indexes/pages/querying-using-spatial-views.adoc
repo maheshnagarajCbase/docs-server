@@ -1,4 +1,3 @@
-[#concept_hlq_bhb_ys]
 = Querying using spatial views
 :page-type: concept
 

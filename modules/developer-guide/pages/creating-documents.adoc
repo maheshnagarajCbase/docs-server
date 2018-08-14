@@ -1,4 +1,3 @@
-[#concept_ygh_llm_zs]
 = Updating and creating documents
 :page-type: concept
 
@@ -17,7 +16,6 @@ In Couchbase, documents are typically updated using one of the _upsert_, _insert
 These methods will all write a JSON document with a given document ID (key) to the database.
 The update methods differ in behavior in respect to the existing state of the document:
 
-[#ul_wjj_zlm_zs]
 * _insert_ will only create the document if the given ID is not found within the database.
 * _replace_ will only replace the document if the given ID already exists within the database.
 * _upsert_ will always replace the document, ignoring whether the ID has already existed or not.
@@ -49,7 +47,6 @@ def upsert(doc_id, value):
 Document IDs are assigned by application.
 A valid document ID must:
 
-[#ul_rht_rnm_zs]
 * Conform to UTF-8 encoding
 * Be no longer than 250 bytes
 +
@@ -83,7 +80,6 @@ Refer to the documentation of the SDK you are using for more details on how to s
 
 == Additional options
 
-[#ul_gfq_mhg_45]
 * xref:expiry.adoc[TTL] or Expiry value which will instruct the server to delete the document after a given amount of time.
 This option is useful for transient data (such as sessions).
 By default documents do not expire.

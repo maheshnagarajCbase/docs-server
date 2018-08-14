@@ -1,4 +1,3 @@
-[#concept_ydh_lmj_vs]
 = Cluster manager
 :page-type: concept
 
@@ -24,7 +23,6 @@ The Cluster Manager is responsible for the following operations:
  ** Authentication of connections to the cluster
 
 .Cluster Manager architecture
-[#fig_qd5_4wj_ws]
 image::cluster-manager-internals.png[,600]
 
 The Cluster Manager consists of the following modules to perform the tasks above:

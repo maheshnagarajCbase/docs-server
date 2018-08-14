@@ -1,4 +1,3 @@
-[#concept_dpq_h4j_vs]
 = Querying data and query data service
 :page-type: concept
 

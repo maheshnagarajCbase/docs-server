@@ -1,4 +1,3 @@
-[#concept_cbq_hzh_1t]
 = View replication
 :page-type: concept
 

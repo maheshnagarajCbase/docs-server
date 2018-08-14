@@ -1,4 +1,3 @@
-[#topic_a4q_vqn_vs]
 = Configure account management settings
 
 [abstract]
@@ -7,7 +6,6 @@ The Account Management tab lets you set up and modify the read-only user's usern
 This user has read-only access and cannot make any changes to the system, nor can it access N1QL.
 The user can only view existing servers, buckets, views and monitor stats.
 
-[#image_qhq_vrw_ft]
 image::admin/picts/account-mgmt.png[,720,align=left]
 
 In the Couchbase Web Console, a read-only user can view:

@@ -1,4 +1,3 @@
-[#concept_mlb_jkk_np]
 = SELECT/subselect statement
 :page-type: concept
 

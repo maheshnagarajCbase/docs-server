@@ -1,4 +1,3 @@
-[#reference_tsb_3bl_q4]
 = Starting and stopping Couchbase Server
 :page-type: reference
 
@@ -14,7 +13,6 @@ The startup script is automatically installed during installation from one of th
 
 To manually start Couchbase Server using the startup/shutdown script:
 
-[#ul_ork_dxk_5s]
 * For RHEL 6:
 +
 ----
@@ -29,7 +27,6 @@ To manually start Couchbase Server using the startup/shutdown script:
 
 To manually stop Couchbase Server using the startup/shutdown script:
 
-[#ul_bsk_dxk_5s]
 * For RHEL 6:
 +
 ----

@@ -1,4 +1,3 @@
-[#topic_rfg_qjt_xs]
 = Azure Marketplace
 
 [abstract]

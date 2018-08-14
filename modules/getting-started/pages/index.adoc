@@ -1,4 +1,3 @@
-[#concept_tvl_lzz_lr]
 = Getting started
 :page-type: concept
 

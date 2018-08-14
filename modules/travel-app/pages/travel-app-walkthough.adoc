@@ -1,4 +1,3 @@
-[#concept_qqs_tnx_pr]
 = Travel app walk-through
 :page-type: concept
 

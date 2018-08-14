@@ -1,4 +1,3 @@
-[#concept_tq3_cqf_vs]
 = Application development
 :page-type: concept
 

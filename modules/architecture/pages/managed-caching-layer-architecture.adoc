@@ -1,4 +1,3 @@
-[#concept_x54_dmj_vs]
 = Managed caching layer architecture
 :page-type: concept
 

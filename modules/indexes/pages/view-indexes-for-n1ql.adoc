@@ -1,4 +1,3 @@
-[#concept_y1w_3hb_ys]
 = View indexes for N1QL
 :page-type: concept
 
@@ -11,7 +10,6 @@ Data nodes hash partition data so that data is uniformly distributed across the 
 View indexes are co-located with the data and each view index contains only a subset of the data that is available on the node.
 +
 .View distribution
-[#fig_zxf_4cr_bt]
 image::n1ql-view-indexes-distribution.png[,300]
 
 Latency::

@@ -1,4 +1,3 @@
-[#concept_yzq_ktc_np]
 = MERGE statement [Beta]
 :page-type: concept
 

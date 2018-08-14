@@ -1,4 +1,3 @@
-[#topic_is1_mqk_5s]
 = File locations
 
 [abstract]
@@ -10,7 +9,7 @@ The default disk path is typically used for development purposes only.
 If the server node is used for production, configure a different disk path.
 
 .Default disk paths for data files
-[#table_uyf_wld_dt,cols="1,2"]
+[cols="1,2"]
 |===
 | Platform | Default directory
 

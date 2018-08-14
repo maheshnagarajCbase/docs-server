@@ -1,4 +1,3 @@
-[#concept_mdb_gtf_ps]
 = Concepts and architecture
 :page-type: concept
 

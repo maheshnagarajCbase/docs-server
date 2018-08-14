@@ -8,7 +8,6 @@ Open Couchbase Web Console and click on [.ui]*Setup*.
 
 == Step 1: Configure Server
 
-[#image_b5p_fsc_3w]
 image::setup-01.png[,720,align=left]
 
 . [.ui]*Configure Disk Storage*
@@ -65,7 +64,6 @@ If you select this option, the following setup fields will be displayed:
 
 A screen appears where you can select the sample data buckets you want to load.
 
-[#image_tz2_jsc_3w]
 image::setup-02.png[,720,align=left]
 
 . Click the names of sample buckets to load to the Couchbase Server.
@@ -75,7 +73,6 @@ If you decide to install sample data, the installer creates one Couchbase bucket
 
 == Step 3: Create default bucket
 
-[#image_yjn_lsc_3w]
 image::setup-03.png[,720,align=left]
 
 For the default bucket, you can configure the following:
@@ -105,7 +102,6 @@ Flush:: Enable
 
 == Step 4: Notifications
 
-[#image_f1s_nsc_3w]
 image::setup-04.png[,720,align=left]
 
 Update Notifications::
@@ -129,10 +125,8 @@ image:setup-05.png[,720,align=left] To secure the server, you must create an adm
 
 . The starting screen for the new Couchbase Server will appear.
 +
-[#image_rhb_3sy_dt]
 image::setup-06.png[,720,align=left]
 +
 Check the installation for example, whether you have properly installed the travel-sample application under [.ui]*Data buckets*.
 +
-[#image_xpf_ksy_dt]
 image::setup-07.png[,720,align=left]

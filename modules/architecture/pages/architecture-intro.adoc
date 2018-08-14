@@ -1,4 +1,3 @@
-[#concept_gfm_j5f_ps]
 = Couchbase Server architecture
 :page-type: concept
 
@@ -24,7 +23,6 @@ The runtime behaviors such as replication, storage, caching, and so on can be tu
 For more information about the core components, see the sections under xref:cluster-manager.adoc[Cluster manager] and xref:services-archi-multi-dimensional-scaling.adoc[Services architecture].
 
 .Nodes, services, and cluster
-[#fig_bpd_dpn_vs]
 image::server-cluster-single-node-type.png[,600,align=left]
 
 == Services

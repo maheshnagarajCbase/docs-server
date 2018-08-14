@@ -1,4 +1,3 @@
-[#concept_irs_1ss_zs]
 = Couchbase Mobile development
 :page-type: concept
 

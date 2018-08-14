@@ -1,4 +1,3 @@
-[#concept_iy1_2rg_2s]
 = Connector guides
 :page-type: concept
 

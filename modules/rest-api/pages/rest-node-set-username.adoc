@@ -1,4 +1,3 @@
-[#reference_bwf_w3f_q4]
 = Setting usernames and passwords
 :page-type: reference
 

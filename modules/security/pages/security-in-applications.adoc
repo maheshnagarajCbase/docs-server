@@ -1,4 +1,3 @@
-[#concept_hvz_4qc_bq]
 = Encryption in applications
 :page-type: concept
 

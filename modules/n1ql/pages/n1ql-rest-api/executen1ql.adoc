@@ -1,4 +1,3 @@
-[#concept_r1w_435_nq]
 = Execute N1QL
 :page-type: concept
 

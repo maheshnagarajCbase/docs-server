@@ -1,4 +1,3 @@
-[#concept_obm_wq1_1t]
 = View operation
 :page-type: concept
 
