@@ -6,6 +6,6 @@ Get Couchbase Server up and running quickly and learn how to run queries by read
 
 The topics in this guide show you how to:
 
-* xref:installing.adoc#installing[Install and set up] Couchbase Server quickly (for nonproduction purposes only)
-* xref:first-n1ql-query.adoc#first-n1ql[Run N1QL queries] by using the command-line query tool, [.cmd]`cbq`
+* xref:installing.adoc[Install and set up] Couchbase Server quickly (for nonproduction purposes only)
+* xref:first-n1ql-query.adoc[Run N1QL queries] by using the command-line query tool, [.cmd]`cbq`
 * xref:travel-app:index.adoc[Run a sample web application] that retrieves data from Couchbase Server

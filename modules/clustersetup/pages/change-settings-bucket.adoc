@@ -12,4 +12,4 @@ image::admin/picts/bucket-settings-edit.png[,720,align=left]
 +
 The [.ui]*Configure Bucket* dialog offers the same options as the xref:create-bucket.adoc[Create a New Bucket] dialog.
 
-You can also change bucket setting with the CLI command xref:cli:cbcli/bucket-edit.adoc[bucket-edit] or the REST command xref:rest-api:rest-bucket-parameters.adoc#rest-bucket-change[rest-bucket-parameters].
+You can also change bucket setting with the CLI command xref:cli:cbcli/bucket-edit.adoc[bucket-edit] or the REST command xref:rest-api:rest-bucket-parameters.adoc[rest-bucket-parameters].
