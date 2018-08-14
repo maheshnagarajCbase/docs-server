@@ -64,7 +64,7 @@ Revision IDs keep track of the number of mutations to a document; this XDCR conf
 Couchbase Server 4.6 introduces another strategy for conflict resolution, _timestamp-based resolution_, where conflicts are resolved by comparing timestamps of conflicting documents.
 This conflict resolution mode is also known as Last Write Wins (LWW) and is best characterized as "the most recent update wins".
 
-See xref:xdcr:xdcr-conflict-resolution.adoc#conflict-resolution[XDCR Conflict Resolution] for more details.
+See xref:xdcr:xdcr-conflict-resolution.adoc[XDCR Conflict Resolution] for more details.
 
 == Database Change Protocol (DCP)
 

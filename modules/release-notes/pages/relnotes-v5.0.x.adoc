@@ -472,7 +472,7 @@ This release adds support for the following platforms:
 * Ubuntu 16.04
 * Windows Server 2016
 
-See xref:install:install-platforms.adoc#topic1634[Supported Platforms] for the complete list of supported platforms.
+See xref:install:install-platforms.adoc[Supported Platforms] for the complete list of supported platforms.
 
 [#deprecated-items]
 *Deprecated Features and Platforms*
@@ -484,7 +484,7 @@ Starting this release, the following platforms are no longer supported:
 * Ubuntu  12.04
 * Windows Server 2008
 
-See xref:install:install-platforms.adoc#topic1634[Supported Platforms] for the complete list of supported platforms.
+See xref:install:install-platforms.adoc[Supported Platforms] for the complete list of supported platforms.
 
 The following functionality is deprecated, will be deprecated or is unsupported.
 

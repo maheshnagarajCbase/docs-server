@@ -104,7 +104,7 @@ curl -X GET  Administrator:password@localhost:8091/settings/clientCertAuth
 
 *Using CLI*
 
-Use the [.cmd]`couchbase-cli` xref:cli:cbcli/couchbase-cli-ssl-manage.adoc#couchbaseclisslmanage1.idm68744912[ssl-manage] command:
+Use the [.cmd]`couchbase-cli` xref:cli:cbcli/couchbase-cli-ssl-manage.adoc[ssl-manage] command:
 
 ----
 couchbase-cli ssl-manage <options>
@@ -155,7 +155,7 @@ To do so:
 . Ensure that this user is an internally managed user with a strong password.
 While the password is not used as part of the certificate based authentication, it is required if the user is trying to access the resources through the web console.
 
-For information on assigning roles to users, see xref:security-rbac-for-admins-and-apps.adoc#topic_auth_for_admins[Creating and Managing Users with the UI].
+For information on assigning roles to users, see xref:security-rbac-for-admins-and-apps.adoc[Creating and Managing Users with the UI].
 
 == Limitations
 

@@ -34,7 +34,7 @@ image::cb-initial-setup-5.0.1.png[,400]
 Step 5 Set up Couchbase Server::
 Walk through the Setup New Cluster wizard and accept the default values.
 You may need to lower the RAM allocated to various services to fit within the bounds of the resource for the containers.
-For detailed information on setting up the Couchbase server, see xref:init-setup.adoc#topic12527[Initializing the Cluster].
+For detailed information on setting up the Couchbase server, see xref:init-setup.adoc[Initializing the Cluster].
 Add the sample buckets ‘travel-sample’ and ‘beer-sample’ to load sample data that’s ready for immediate experimentation and testing.
 
 You now have a working Couchbase Server instance.
