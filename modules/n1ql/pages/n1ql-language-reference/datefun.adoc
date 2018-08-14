@@ -1,4 +1,3 @@
-[#topic_8_6]
 = Date Functions
 :page-type: concept
 

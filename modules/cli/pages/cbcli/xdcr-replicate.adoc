@@ -1,4 +1,3 @@
-[#cbcli-xdcr-manage-replications]
 = xdcr-replicate
 :page-type: reference
 

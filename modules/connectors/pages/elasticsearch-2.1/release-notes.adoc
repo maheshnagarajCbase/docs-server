@@ -1,4 +1,3 @@
-[#elastic-release-notes]
 = Release Notes
 
 The Couchbase plug-in for Elasticsearch integrates Couchbase Server and Elasticsearch, a full-text search engine, by streaming data in real-time from Couchbase to Elasticsearch.

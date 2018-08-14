@@ -1,4 +1,3 @@
-[#cbbackupmgr-merge.1]
 = cbbackupmgr merge
 
 [IMPORTANT]

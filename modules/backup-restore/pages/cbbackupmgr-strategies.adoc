@@ -1,4 +1,3 @@
-[#cbbackupmgr-strategies.7]
 = Enterprise Backup Strategies
 
 [abstract]

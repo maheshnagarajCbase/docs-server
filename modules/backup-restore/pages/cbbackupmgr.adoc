@@ -1,4 +1,3 @@
-[#cbbackupmgr.1]
 = cbbackupmgr
 
 [abstract]

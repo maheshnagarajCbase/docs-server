@@ -1,4 +1,3 @@
-[#travel-app]
 = Couchbase Travel App
 :page-type: concept
 

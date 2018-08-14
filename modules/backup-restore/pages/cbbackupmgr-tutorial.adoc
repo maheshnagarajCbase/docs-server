@@ -1,4 +1,3 @@
-[#cbbackupmgr-tutorial.7]
 = Enterprise Backup Tutorial
 
 [abstract]

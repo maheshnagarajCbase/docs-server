@@ -1,4 +1,3 @@
-[#cbcli-node-recovery]
 = recovery
 :page-type: reference
 

@@ -1,4 +1,3 @@
-[#cbbackupmgr-restore.1]
 = cbbackupmgr restore
 
 [abstract]

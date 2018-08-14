@@ -1,4 +1,3 @@
-[#topic2022]
 = Installation and Configuration
 :page-type: concept
 

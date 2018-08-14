@@ -1,4 +1,3 @@
-[#cli-failover]
 = failover
 :page-type: reference
 

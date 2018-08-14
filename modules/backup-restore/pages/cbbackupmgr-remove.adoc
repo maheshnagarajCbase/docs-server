@@ -1,4 +1,3 @@
-[#cbbackupmgr-remove.1]
 = cbbackupmgr remove
 
 [abstract]
