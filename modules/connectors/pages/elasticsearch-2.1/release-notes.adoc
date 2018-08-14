@@ -10,7 +10,7 @@ It adds compatibility with newer Elasticsearch versions up to 1.7.x, multiple ne
 In particular, this release fixes a long-standing bug with an incorrect concurrent bulk request counter, which could eventually cause the plug-in to stop accepting requests from Couchbase Server altogether.
 
 Some of the configuration option names have changed.
-For information about the option names, see xref:elasticsearch-2.1/adv-usage.adoc#elastic-advanced[Advanced Settings and Usage].
+For information about the option names, see xref:elasticsearch-2.1/adv-usage.adoc[Advanced Settings and Usage].
 
 .Version Compatability
 |===

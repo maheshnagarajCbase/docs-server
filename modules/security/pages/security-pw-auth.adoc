@@ -10,7 +10,7 @@ See xref:install:init-setup.adoc#setpass[Step 5: Configure server]for details.
 
 Check also the Security Best Practices for setting xref:security-passwords.adoc[Couchbase passwords].
 
-Resetting the Administrative Password:: The administrative password can be reset using the password reset tool: xref:cli:cbreset_password-tool.adoc#cbreset_password_tool[[.cmd]`cbreset_password`]
+Resetting the Administrative Password:: The administrative password can be reset using the password reset tool: xref:cli:cbreset_password-tool.adoc[[.cmd]`cbreset_password`]
 
 [#standardport]
 == Authentication for Applications

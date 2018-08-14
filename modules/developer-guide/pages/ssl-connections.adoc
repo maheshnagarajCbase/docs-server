@@ -16,7 +16,7 @@ In order to make use of SSL connections, you must first obtain the SSL certifica
 
 == Getting the certificate via the REST API
 
-See xref:security:security-admin-access.adoc#security-admin-access[Secure administrative access]
+See xref:security:security-admin-access.adoc[Secure administrative access]
 
 == Getting the certificate via the web UI
 

@@ -6,7 +6,7 @@ After you install the clusters, start them.
 The Couchbase cluster stores any items from your application and sends replicas of these items to the Elasticsearch cluster for indexing.
 Your Couchbase cluster can contain one or more instances of Couchbase server, and your Elasticsearch cluster can contain one or more instances of Elasticsearch.
 
-For compatibility information, see xref:elasticsearch-2.1/release-notes.adoc#elastic-release-notes[Release Notes].
+For compatibility information, see xref:elasticsearch-2.1/release-notes.adoc[Release Notes].
 
 For now, you probably need only one instance of Couchbase Server running in a cluster and one instance of the Elasticsearch engine.
 Later, as you test your integration under load and deploy your implementation, you will need to add more servers to handle the workload.

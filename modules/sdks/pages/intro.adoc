@@ -11,4 +11,4 @@ Couchbase offers a number of software development kits (SDKs) that enable progra
 It can be used via a synchronous or asynchronous interface.
 * xref:2.1@nodejs-sdk::introduction.adoc[Node.js SDK 2.0/2.1] This is a native Node.js module and uses Couchbase's high performance C library to handle communicating to the cluster over Couchbase’s binary protocols.
 * xref:2.1@php-sdk::php-intro.adoc[PHP SDK 2.0/2.1] The Couchbase PHP SDK is a native PHP extension and uses the Couchbase high-performance C library to handle communicating to the cluster over Couchbase binary protocols.
-* xref:2.0@python-sdk::introduction.adoc#py-intro[Python SDK 2.0] The Couchbase Python SDK is written as a fast C extension with support for a traditional synchronous API, as well as gevent and twisted APIs for high performance asynchronous programming.
+* xref:2.0@python-sdk::introduction.adoc[Python SDK 2.0] The Couchbase Python SDK is written as a fast C extension with support for a traditional synchronous API, as well as gevent and twisted APIs for high performance asynchronous programming.

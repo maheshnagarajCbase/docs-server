@@ -36,7 +36,7 @@ To configure IP tables for Linux, you have to edit the file located in [.path]_/
 
 Keep in mind that certain Couchbase ports are used for node-to-node and some for node-to-client communication.
 
-For a complete list of Couchbase ports, see xref:install:install-ports.adoc#topic2659[Network Configuration].
+For a complete list of Couchbase ports, see xref:install:install-ports.adoc[Network Configuration].
 
 .Important Couchbase Ports
 [cols="100,206,101,193"]
