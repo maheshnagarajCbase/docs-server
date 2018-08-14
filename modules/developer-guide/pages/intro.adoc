@@ -18,7 +18,7 @@ Click on your language for instructions on setting up a development environment.
 * xref:2.2@dotnet-sdk::dotnet-intro.adoc[.NET SDK 2.2]
 * xref:2.1@nodejs-sdk::introduction.adoc[Node.js SDK 2.0/2.1]
 * xref:2.1@php-sdk::php-intro.adoc[PHP SDK 2.0/2.1]
-* xref:2.0@python-sdk::introduction.adoc#py-intro[Python SDK 2.0]
+* xref:2.0@python-sdk::introduction.adoc[Python SDK 2.0]
 * http://docs.couchbase.com/developer/dev-guide-3.0/ruby-sdk.html[Ruby^]
 
 Couchbase SDKs attempt to follow common verbs and semantics (as much as the individual language allows).

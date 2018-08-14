@@ -29,7 +29,7 @@ To set up credentials for the read-only Couchbase administrator, open the Couchb
 
 image::admin-read-only.png[,720,align=left]
 
-Resetting the administrative password:: The administrative password can be reset using the password reset tool: xref:cli:cbreset_password-tool.adoc#cbreset_password_tool[[.cmd]`cbreset_password`]
+Resetting the administrative password:: The administrative password can be reset using the password reset tool: xref:cli:cbreset_password-tool.adoc[[.cmd]`cbreset_password`]
 
 == Authentication for applications
 
