@@ -5,7 +5,7 @@ Installation using a package management system on Windows.
 
 This installation guide only supports 64-bit systems.
 Windows 7 and 8 are supported only for development purposes.
-See xref:install-platforms.adoc#topic1634[Supported platforms] for details.
+See xref:install-platforms.adoc[Supported platforms] for details.
 
 == Prerequisites
 

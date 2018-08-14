@@ -54,4 +54,4 @@ After the bucket creation, you cannot change the following settings:
 * Bucket Type - Once a `memcached` or `couchbase` bucket has been created, its type cannot be changed.
 * View index replicas - xref:indexes:mapreduce-view-replication.adoc[View index replicas] cannot be enabled/disabled once a bucket has been created.
 
-You can also change bucket settings using the CLI command xref:cli:cbcli/bucket-edit.adoc[bucket-edit] or the xref:rest-api:rest-bucket-parameters.adoc#rest-bucket-change[bucket REST api].
+You can also change bucket settings using the CLI command xref:cli:cbcli/bucket-edit.adoc[bucket-edit] or the xref:rest-api:rest-bucket-parameters.adoc[bucket REST api].

@@ -40,7 +40,7 @@ Use `true`/`false` to set.
 
 Set the location for audit logs.
 The default location is [.path]_/opt/couchbase/var/lib/couchbase/logs_.
-You can set the location with REST, or with the xref:clustersetup:ui-logs.adoc#topic180[Couchbase Web Console.]
+You can set the location with REST, or with the xref:clustersetup:ui-logs.adoc[Couchbase Web Console.]
 
  $ curl POST http://user:password@127.0.0.1:8091/settings/audit/rotateInterval
 

@@ -27,7 +27,7 @@ It's not required to run your development environment this way it's just easier 
 Advanced "MDS" configurations are supported.
 To build and run the sample travel app follow these steps:
 
-. xref:getting-started:installing.adoc#installing[Install Couchbase Server 4.5].
+. xref:getting-started:installing.adoc[Install Couchbase Server 4.5].
 +
 You do not need to provision the cluster "manually" after installation.
 The sample application can take care of this for you.

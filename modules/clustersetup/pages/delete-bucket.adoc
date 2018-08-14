@@ -18,4 +18,4 @@ image::admin/picts/bucket-remove-warning.png[,550,align=left]
 
 . Click on [.ui]*Delete* and confirm the deletion.
 
-You can also use the CLI command xref:cli:cbcli/bucket-delete.adoc[bucket-delete] or REST API command xref:rest-api:rest-bucket-delete.adoc#rest-bucket-delete[rest-bucket-delete].
+You can also use the CLI command xref:cli:cbcli/bucket-delete.adoc[bucket-delete] or REST API command xref:rest-api:rest-bucket-delete.adoc[rest-bucket-delete].
