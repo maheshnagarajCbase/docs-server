@@ -13,5 +13,5 @@ This page summarizes the available options to run Couchbase Server in containers
 a|
 * xref:getting-started-docker.adoc[Running Couchbase Server using Docker]
 a|
-* xref:couchbase-using-openshift-container.adoc#run-couchbase-openshift-container[Running Couchbase Server Using Red Hat OpenShift]
+* xref:couchbase-using-openshift-container.adoc[Running Couchbase Server Using Red Hat OpenShift]
 |===

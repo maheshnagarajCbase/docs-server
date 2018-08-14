@@ -58,7 +58,7 @@ For more information, see xref:security:security-authorization.adoc#authorizatio
 Couchbase Server 5.0 adds a new N1QL function named as CURL() function, which implements a subset of https://en.wikipedia.org/wiki/CURL[cURL^] functionality and enables N1QL queries to interact and integrate with external JSON data sources available over HTTP/REST.
 This allows federated queries against external data sources or other Couchbase clusters.
 For example, this enables N1QL queries to use FTS indexes, or to access data from other Couchbase Clusters, or in general access any REST endpoint (such as Google APIs, or Yahoo API) that can provide JSON data.
-For more information, see xref:n1ql:n1ql-language-reference/curl.adoc#topic_8_8[CURL Function].
+For more information, see xref:n1ql:n1ql-language-reference/curl.adoc[CURL Function].
 
 *Monitoring and Profiling N1QL Queries*::
 This feature enables fine grain and detailed query monitoring and profiling.
@@ -76,7 +76,7 @@ For example, it would be possible to use the index to efficiently find all expir
 
 [[perf-improvement]]*N1QL Performance Improvements*::
 In Couchbase Server 5.0, N1QL and GSI Indexes together enable many performance optimizations.
-For more details, see xref:performance:index_pushdowns.adoc#index_pushdowns[Index Pushdown Optimizations].
+For more details, see xref:performance:index_pushdowns.adoc[Index Pushdown Optimizations].
 * *Complex Predicate Pushdown*: Supports efficient and exact pushdown of complex AND/OR predicates to index.
 This helps in:
  ** avoiding spurious results from Indexer in certain queries where predicates have range scans on prefixing index-keys.
@@ -137,7 +137,7 @@ The redesigned 5.0 interface for Couchbase Server’s web console offers a new, 
 Re-designed for intelligence, comfort, and speed, you will see a clean new look and experience a streamlined interface to Couchbase administration and development platform that optimizes your common tasks and workflows.
 +
 Some of the more obvious improvements are the modern color palette that shows the condition of your cluster, servers, and services; simplified navigation that lets you know where you are, where you’ve been, and where you might go next; and a responsive layout that fits your browser at any screen size.
-For details, see xref:admin:ui-intro.adoc#topic1980[Couchbase Web Console].
+For details, see xref:admin:ui-intro.adoc[Couchbase Web Console].
 
 *CBImport & CBExport Tools*::
 This version delivers the first production release of the high performant data tools.

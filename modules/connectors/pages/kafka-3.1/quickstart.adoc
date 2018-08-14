@@ -45,7 +45,7 @@ use_snapshots=false
 
 For this exercise, change the value of `connection.bucket` to `travel-sample` (or whichever bucket you want to stream from).
 For `connection.username` and `connection.password`, supply the credentials of a Couchbase user with read access to the bucket.
-If you have not yet created such a user, see xref:security:security-rbac-for-admins-and-apps.adoc#topic_auth_for_admins[Creating and Managing Users with the UI].
+If you have not yet created such a user, see xref:security:security-rbac-for-admins-and-apps.adoc[Creating and Managing Users with the UI].
 
 NOTE: For Couchbase Server versions prior to 5.0, leave the username blank.
 Set the password property to the bucket password, or leave it blank if the bucket does not have a password.
@@ -198,7 +198,7 @@ connection.password=secret
 ----
 
 For the username and password properties, supply the credentials of a Couchbase user with write access to the bucket.
-If you have not yet created such a user, see xref:security:security-rbac-for-admins-and-apps.adoc#topic_auth_for_admins[Creating and Managing Users with the UI].
+If you have not yet created such a user, see xref:security:security-rbac-for-admins-and-apps.adoc[Creating and Managing Users with the UI].
 
 NOTE: For Couchbase Server versions prior to 5.0, leave the username blank.
 Set the password property to the bucket password, or leave it blank if the bucket does not have a password.

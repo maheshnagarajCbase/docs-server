@@ -72,7 +72,7 @@ Upgrade according to the SDK versions listed in the <<sdk-compatibility,SDK Comp
 TAP is an internal protocol that streams information about data changes between cluster nodes.
 TAP is replaced with a new protocol called Database Change Protocol (xref:architecture:high-availability-replication-architecture.adoc[DCP]).
 * Starting 5.0, port based buckets can only be created now through the bucket CLI command.
-Use the xref:cli:cbcli/couchbase-cli-bucket-create.adoc#couchbaseclibucketcreate1.idm386415259904[bucket-create] command to create a port based bucket.
+Use the xref:cli:cbcli/couchbase-cli-bucket-create.adoc[bucket-create] command to create a port based bucket.
 +
 [caption=Remember]
 IMPORTANT: Server-side moxi which drives port based bucket creation has been deprecated.
@@ -472,7 +472,7 @@ This release adds support for the following platforms:
 * Ubuntu 16.04
 * Windows Server 2016
 
-See xref:install:install-platforms.adoc#topic1634[Supported Platforms] for the complete list of supported platforms.
+See xref:install:install-platforms.adoc[Supported Platforms] for the complete list of supported platforms.
 
 [#deprecated-items]
 *Deprecated Features and Platforms*
@@ -484,7 +484,7 @@ Starting with this release, the following platforms are no longer supported:
 * Ubuntu  12.04
 * Windows Server 2008
 
-See xref:install:install-platforms.adoc#topic1634[Supported Platforms] for the complete list of supported platforms.
+See xref:install:install-platforms.adoc[Supported Platforms] for the complete list of supported platforms.
 
 The following functionality is deprecated, will be deprecated or is unsupported.
 

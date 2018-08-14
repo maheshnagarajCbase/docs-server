@@ -16,7 +16,7 @@ If the `FROM` clause is omitted, the input for the query is a single empty objec
 == Prerequisites
 
 For you to select data from a document or keyspace, you must have the [.param]`query_select` privilege on the document or keyspace.
-For more details about user roles, see xref:security:security-authorization.adoc#authorization[Authorization].
+For more details about user roles, see xref:security:security-authorization.adoc[Authorization].
 
 == Syntax
 
@@ -59,7 +59,7 @@ from-term;;
 When using nested subqueries, the [.var]`from-term` of the outermost parent query can only have a <<concept_rnt_zfk_np/section_ekc_ftt_nz,keyspace identifier>>, a subquery, or a <<concept_rnt_zfk_np/section_fkc_ftt_nz,constant expression>> since the [.var]`from-term` needs to independently produce input documents for the query.
 +
 However, the subqueries can use generic variable expressions, which may be dependent on the xref:n1ql-language-reference/subqueries.adoc#section_onz_3tj_mz[Variables in Scope of a Subquery].
-For details, see xref:n1ql-language-reference/subqueries.adoc#topic_9[Subqueries].
+For details, see xref:n1ql-language-reference/subqueries.adoc[Subqueries].
 
 join-clause;; [Optional] To create new input objects by combining two or more source objects either via a <<concept_rnt_zfk_np/lookup-join,Lookup JOIN>> or an <<concept_rnt_zfk_np/index-join,Index JOIN>>.
 
@@ -413,7 +413,7 @@ However, other N1QL functions can also be used in the expressions.
 *Variable N1QL Expression*::
 This includes expressions that refers to any xref:n1ql-language-reference/subqueries.adoc#section_onz_3tj_mz[variables in scope] for the query.
 This is applicable to only subqueries because the outermost level query cannot use any variables in its own `FROM` clause.
-This makes the subquery correlated with outer queries, as explained in the xref:n1ql-language-reference/subqueries.adoc#topic_9[Subqueries] section.
+This makes the subquery correlated with outer queries, as explained in the xref:n1ql-language-reference/subqueries.adoc[Subqueries] section.
 
 *Subquery and Subquery Expressions*::
 A subquery itself can appear as a `from-term` expression.
@@ -563,7 +563,7 @@ WHERE type = "airport"
 GROUP BY country;
 ----
 +
-See xref:n1ql-language-reference/subqueries.adoc#topic_9[Subqueries] for details and examples.
+See xref:n1ql-language-reference/subqueries.adoc[Subqueries] for details and examples.
 
 *Nested Path Expressions*::
 Expressions used in the `from-term` can have nested paths, including constant or variable or subquery expressions.
