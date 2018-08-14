@@ -64,7 +64,7 @@ Here are the behavior changes in the product, compared to the previous (4.6.x) r
 
 * Newly created buckets in 5.0 (including sample buckets) do not have any passwords associated with them.
 To access a bucket, a user must be created with appropriate roles to access using RBAC.
-See xref:security:concepts-rba-for-apps.adoc#rbac_for_users_roles_and_privileges[Bucket Full Access] for details.
+See xref:security:concepts-rba-for-apps.adoc[Bucket Full Access] for details.
 * Important: Many 5.0 features require the latest versions of Couchbase SDK.
 It is critical to update the SDK before updating to 5.0.
 Upgrade according to the SDK versions listed in the <<sdk-compatibility,SDK Compatibility>> chart below.
@@ -81,7 +81,7 @@ Consider using client-side moxi instead.
 * For Windows, [.path]_.exe_ installers which were previously deprecated are now removed and replaced with industry-standard MSI installer files.
 Consequently, any upgrade for the Windows platform from pre-5.0 version to 5.0 will need to be done in a rolling upgrade fashion.
 See xref:install:upgrade-online.adoc[Performing the Rolling Online Upgrade] for details.
-* Re-designed xref:admin:ui-intro.adoc#topic1980[Couchbase Web Console].
+* Re-designed xref:admin:ui-intro.adoc[Couchbase Web Console].
 
 [#known-issues-limitations]
 *Known Issues and Limitations*

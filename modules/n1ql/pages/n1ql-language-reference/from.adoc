@@ -47,11 +47,11 @@ For details, see <<concept_rnt_zfk_np/use-keys-clause,USE KEYS Clause>>.
 
 `SELECT`;;
 [Optional] To create a subquery of input objects.
-For details, see xref:n1ql-language-reference/selectclause.adoc#topic_SELECT_Clause[SELECT Clause].
+For details, see xref:n1ql-language-reference/selectclause.adoc[SELECT Clause].
 
 expr;;
 [Optional] A string expression of input objects.
-For details, see xref:n1ql-language-reference/index.adoc#n1ql-lang-ref[N1QL Expressions].
+For details, see xref:n1ql-language-reference/index.adoc[N1QL Expressions].
 
 from-term;;
 [Optional] The [.var]`from-term` defines the input objects for the query and it can be either a keyspace identifier or an expression.
@@ -392,7 +392,7 @@ This results in:
 [#section_fkc_ftt_nz]
 == N1QL Expression
 
-Couchbase Server version 4.6.2 adds support for generic xref:n1ql-language-reference/index.adoc#n1ql-lang-ref[expressions] in the `from-term`.
+Couchbase Server version 4.6.2 adds support for generic xref:n1ql-language-reference/index.adoc[expressions] in the `from-term`.
 This is a very powerful functionality as it enables usage of various N1QL functions, operators, path expressions, language constructs on constant expressions, variables, and subqueries.
 
 * When the `from-term` is an expression, `USE KEYS` or `USE INDEX` clauses are not allowed.
@@ -407,7 +407,7 @@ SELECT * FROM [1, 2, "name", { "type" : "airport", "id" : "SFO"}]  AS  ks1;
 SELECT * FROM CURL(...) as ks2;
 ----
 +
-Note that functions such as xref:n1ql-language-reference/curl.adoc#topic_8_8[CURL()] can independently produce input data objects for the query.
+Note that functions such as xref:n1ql-language-reference/curl.adoc[CURL()] can independently produce input data objects for the query.
 However, other N1QL functions can also be used in the expressions.
 
 *Variable N1QL Expression*::
