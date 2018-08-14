@@ -1,5 +1,5 @@
 = Data Access
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 Couchbase provides multiple ways of accessing data: using a key-value access pattern, querying data using MapReduce (views) or N1QL.

@@ -1,5 +1,5 @@
 = Global Secondary Indexes Versus Views
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 There are a number of differences between views and GSIs.

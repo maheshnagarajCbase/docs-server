@@ -1,5 +1,5 @@
 = ORDER BY clause
-:page-type: concept
+:page-topic-type: concept
 
 _order-by-clause:_
 

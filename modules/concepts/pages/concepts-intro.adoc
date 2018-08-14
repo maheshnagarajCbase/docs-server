@@ -1,5 +1,5 @@
 = Overview
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 Couchbase Server is an open source distributed NoSQL document database that provides low latency data management for large scale, interactive online applications.

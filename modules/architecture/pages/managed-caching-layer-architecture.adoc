@@ -1,5 +1,5 @@
 = Managed Caching Layer Architecture
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 Since Couchbase built Couchbase Server on a memory-first architecture, achieving high performance and scalability requires effective memory management.
