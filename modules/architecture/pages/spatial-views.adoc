@@ -1,5 +1,5 @@
 = Spatial Views
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 Spatial views are indexed in a similar way as the incremental MapReduce view indexes.

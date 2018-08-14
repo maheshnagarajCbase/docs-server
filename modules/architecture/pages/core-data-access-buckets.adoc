@@ -1,5 +1,5 @@
 = Buckets
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 Couchbase Server uses buckets to group collections of keys and values logically.

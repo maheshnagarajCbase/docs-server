@@ -1,5 +1,5 @@
 = Querying Geographic Data with Spatial Views
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 Spatial views operate in a similar way as incremental MapReduce views.

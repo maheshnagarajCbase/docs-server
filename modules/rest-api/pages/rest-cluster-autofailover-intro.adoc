@@ -1,5 +1,5 @@
 = Managing Auto-Failover
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 Auto-failover is managed with with the `GET /settings/autoFailover` HTTP method and URI.
