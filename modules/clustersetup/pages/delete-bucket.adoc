@@ -1,4 +1,3 @@
-[#topic_zdy_mmn_vs]
 = Delete a bucket
 
 [abstract]
@@ -10,12 +9,10 @@ To delete a bucket using the Couchbase Web Console:
 
 . Go to the [.ui]*Data Buckets* tab and click the blue triangle next to the bucket name.
 +
-[#image_jtl_ycz_vv]
 image::admin/picts/deletebucket1.png[,640,align=left]
 
 . Click on the btn:[Edit] button.
 +
-[#image_d5w_1dz_vv]
 image::admin/picts/deletebucket2.png[,640,align=left]
 
 . The standard bucket editing screen will appear and in the lower left corner (you may have to scroll down) there is the Delete button in red.

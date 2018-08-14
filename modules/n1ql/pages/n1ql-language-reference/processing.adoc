@@ -1,4 +1,3 @@
-[#concept_l11_tfk_np]
 = SELECT statement processing
 :page-type: concept
 

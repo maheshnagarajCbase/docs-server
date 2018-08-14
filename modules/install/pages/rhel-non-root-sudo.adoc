@@ -1,4 +1,3 @@
-[#topic_atz_r3s_g4]
 = Installing as non-root, non-sudo
 
 [abstract]

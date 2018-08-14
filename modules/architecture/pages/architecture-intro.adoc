@@ -1,4 +1,3 @@
-[#concept_gfm_j5f_ps]
 = Couchbase Server architecture
 :page-type: concept
 
@@ -19,7 +18,6 @@ For more information about the core runtime behavior, see the following topics:
 * xref:managed-caching-layer-architecture.adoc[Caching layer architecture]
 * xref:security:security-intro.adoc[Security architecture]
 
-[#fig_bpd_dpn_vs]
 image::server-cluster-single-node-type.png[,600,align=left]
 
 == Services

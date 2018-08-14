@@ -1,4 +1,3 @@
-[#reference_lj2_cqb_dt]
 = Keyboard shortcuts
 :page-type: reference
 

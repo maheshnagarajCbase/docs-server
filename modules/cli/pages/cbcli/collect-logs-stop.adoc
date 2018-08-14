@@ -1,4 +1,3 @@
-[#reference_cqx_4m5_ls]
 = collect-logs-stop
 :page-type: reference
 

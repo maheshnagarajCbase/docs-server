@@ -1,4 +1,3 @@
-[#topic_asr_bkn_vs]
 = Settings
 
 [abstract]

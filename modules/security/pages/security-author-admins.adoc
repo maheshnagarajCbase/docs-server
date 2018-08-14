@@ -1,4 +1,3 @@
-[#concept_ntl_jph_hr]
 = Authorization for administrators
 :page-type: concept
 

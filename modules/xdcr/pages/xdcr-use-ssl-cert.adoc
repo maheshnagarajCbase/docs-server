@@ -1,4 +1,3 @@
-[#topic_njg_yws_zs]
 = Use an SSL Certificate
 
 [abstract]
@@ -7,7 +6,6 @@ As a security best practice, periodically rotate the XDCR certificates and also 
 The following example is a self-signed SSL/TLS certificate obtained on the cluster.
 Click menu:Security[Root Certificate] to reach the certificate.
 
-[#image_b14_2x5_zs]
 image::xdcr-ssl-cert.png[,720,align=left]
 
 == XDCR Data Security Error Messages

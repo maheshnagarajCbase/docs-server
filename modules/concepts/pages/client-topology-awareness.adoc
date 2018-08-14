@@ -1,4 +1,3 @@
-[#concept_ljz_pvy_zs]
 = Client topology awareness
 :page-type: concept
 

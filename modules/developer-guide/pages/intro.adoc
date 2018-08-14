@@ -1,4 +1,3 @@
-[#concept_vxy_gjg_ps]
 = Developer guide
 :page-type: concept
 

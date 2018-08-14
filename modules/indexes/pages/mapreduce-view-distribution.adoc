@@ -1,4 +1,3 @@
-[#concept_mny_mq1_1t]
 = View distribution
 :page-type: concept
 
@@ -17,7 +16,6 @@ Depending on the options specified when querying the view, each node will either
 The view results corresponding to each node are collected together and collated before the aggregate result is returned to the client.
 
 .View distribution
-[#fig_u2v_fp1_1t]
 image::views-distribution.png[,450]
 
 View distribution works well for a small dataset and a small number of nodes.

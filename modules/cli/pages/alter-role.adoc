@@ -1,4 +1,3 @@
-[#reference_wm2_4j1_hv]
 = alter-role
 :page-type: reference
 

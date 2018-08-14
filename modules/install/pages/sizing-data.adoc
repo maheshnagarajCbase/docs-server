@@ -1,4 +1,3 @@
-[#topic_dhn_jlg_xs]
 = Data Service Nodes
 
 [abstract]

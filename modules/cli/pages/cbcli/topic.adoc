@@ -1,4 +1,3 @@
-[#reference_yfp_hh1_hv]
 = external-authentication
 :page-type: reference
 

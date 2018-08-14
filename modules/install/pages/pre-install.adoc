@@ -1,4 +1,3 @@
-[#topic_g1w_qpr_g4]
 = Hardware and Software Requirements
 
 [abstract]

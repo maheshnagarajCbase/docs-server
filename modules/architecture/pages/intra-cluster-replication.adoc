@@ -1,4 +1,3 @@
-[#concept_fts_f4v_vs]
 = Intra-cluster Replication
 :page-type: concept
 
@@ -21,5 +20,4 @@ Replica vBuckets are also spread across the cluster for best availability and ca
 For example, to protect against the node failure-domain, Couchbase Server places an active vBucket and its corresponding replica vBucket on separate nodes or separate racks.
 
 .Couchbase Server replicas
-[#fig_z5p_ybd_ws]
 image::server-replication.png[,500,align=left]

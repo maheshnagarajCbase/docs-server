@@ -1,4 +1,3 @@
-[#concept_iwq_wmg_qr]
 = Initial Server Setup with CLI or REST API
 :page-type: concept
 

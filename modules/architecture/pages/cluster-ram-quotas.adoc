@@ -1,4 +1,3 @@
-[#concept_md1_tnv_vs]
 = RAM quotas
 :page-type: concept
 

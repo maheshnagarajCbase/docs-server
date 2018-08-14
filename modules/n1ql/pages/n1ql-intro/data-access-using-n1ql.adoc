@@ -1,4 +1,3 @@
-[#concept_zyb_g23_ft]
 = Data access using N1QL
 :page-type: concept
 

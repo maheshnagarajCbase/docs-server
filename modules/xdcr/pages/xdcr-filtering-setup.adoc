@@ -1,4 +1,3 @@
-[#topic_wz2_yjf_xq]
 = Configure XDCR Filtering
 
 [abstract]
@@ -17,7 +16,6 @@ For example, the expression [.out]`airline|hotel` would match both "unitedairlin
 
 To implement filtering, you must explicitly do it by selecting menu:XDCR[Create Replication, Enable Advanced filtering].
 
-[#image_i12_h15_zs]
 image::xdcr-adv-filtering.png[,500,align=left]
 
 IMPORTANT: You cannot change a filtering expression on an existing replication.

@@ -14,7 +14,6 @@ Some of the configuration option names have changed.
 For information about the option names, see xref:elasticsearch-2.1/adv-usage.adoc#elastic-advanced[Advanced Settings and Usage].
 
 .Version Compatability
-[#table_ktv_l1x_ht]
 |===
 | Elasticsearch plug-in version | Couchbase versions | Elasticsearch versions
 

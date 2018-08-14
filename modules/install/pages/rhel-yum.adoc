@@ -1,4 +1,3 @@
-[#topic_trh_4tc_kv]
 = Installing using yum
 
 [abstract]

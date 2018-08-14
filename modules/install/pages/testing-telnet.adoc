@@ -1,4 +1,3 @@
-[#topic_us1_cmr_p4]
 = Testing with telnet
 
 [abstract]

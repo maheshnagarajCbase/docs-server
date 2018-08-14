@@ -1,4 +1,3 @@
-[#topic_fym_kmn_vs]
 = Create a new bucket
 
 [abstract]
@@ -23,7 +22,6 @@ If you need the memcached-like functionality, it is recommended that you use Cou
 The memcached buckets are available to provide administration capabilities for regular memcached and backward compatibility and offer none of the high-end features Couchbase Server is known for.
 For more specific information, see xref:architecture:core-data-access-buckets.adoc[Buckets].
 
-[#image_qm1_ntr_zs]
 image::admin/picts/bucket-new.png[,400,align=left]
 
 == Memory Size
@@ -40,7 +38,6 @@ If you use Full ejection effectively, it is very powerful and expands what you c
 If you use it incorrectly,  it can cause performance problems in your application and operation of your database.
 Please make sure you read the detailed documentation on xref:architecture:db-engine-architecture.adoc[Full ejection] before changing this setting.
 
-[#image_rcx_pcs_zs]
 image::admin/picts/bucket-full-ejection.png[,600,align=left]
 
 == Replicas
@@ -65,14 +62,12 @@ This setting only enables prioritization if at least one bucket in the cluster i
 Therefore, there is no effect if all buckets are set to high priority.
 If buckets with different priorities exist in the cluster, there are internal server resources allocated for high and low priority buckets.
 
-[#image_rlt_j2s_zs]
 image::admin/picts/bucket-disk-io.png[,720,align=left]
 
 == Auto-Compaction
 
 This setting allows you to override the cluster-wide auto-compaction settings for the specified bucket.
 
-[#image_btp_jbz_vv]
 image::admin/picts/autocompact.png[,720,align=left]
 
 For the most part, you should never need to use this setting.
@@ -93,7 +88,6 @@ Enable the Flush option either during the bucket creation phase or later, while 
 In both cases, after enabling this option you still must click on the red button [.ui]*Flush* to proceed with flushing.
 Using this button is an additional security measure to prevent unintentional loss of data.
 
-[#image_aw5_tbz_vv]
 image::admin/picts/delete-flush.png[,360,align=left]
 
 You can also use the commands the CLI command xref:cli:cbcli/bucket-flush.adoc#cbcli-bucket-flush[bucket-flush] and REST API xref:rest-api:rest-bucket-flush.adoc#rest-bucket-flush[rest-bucket-flush.]

@@ -1,4 +1,3 @@
-[#topic_e5r_qpn_vs]
 = Managing XDCR
 
 [abstract]
@@ -25,5 +24,4 @@ Once it has the connection with that one node, similar to how a Couchbase SDK do
 [.term]_Ongoing Replications_ are the ones that are configured and operating currently.
 You can monitor the current configuration, current status, and the last time a replication process was triggered for each configured replication.
 
-[#image_vwk_d2t_zs]
 image::xccr-create.png[,720,align=left]

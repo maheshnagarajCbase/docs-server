@@ -1,4 +1,3 @@
-[#topic_myc_nws_zs]
 = Bucket Flush with XDCR
 
 [abstract]

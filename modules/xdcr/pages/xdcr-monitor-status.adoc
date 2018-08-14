@@ -1,4 +1,3 @@
-[#topic_ikn_rf5_zs]
 = Monitor Replication Status
 
 [abstract]
@@ -16,7 +15,6 @@ When configuring bi-directional replication, use the web interfaces that belong 
 Any errors that occur during replication appear in the XDCR errors panel.
 The following example shows the errors that occur if replication streams from XDCR fail due to the missing vBuckets at the source cluster:
 
-[#image_tfl_mg5_zs]
 image::xdcr-replication-statuis.png[,450,align=left]
 
 == XDCR Replication and Network Failures

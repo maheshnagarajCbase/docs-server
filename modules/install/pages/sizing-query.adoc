@@ -1,4 +1,3 @@
-[#topic_w1w_4lg_xs]
 = Query Service Nodes
 
 [abstract]

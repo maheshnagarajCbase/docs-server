@@ -1,4 +1,3 @@
-[#concept_h5v_5jc_bq]
 = IP Tables and Ports
 :page-type: concept
 

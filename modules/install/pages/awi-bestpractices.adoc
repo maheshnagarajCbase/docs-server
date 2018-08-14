@@ -1,4 +1,3 @@
-[#topic_tqh_lxt_xs]
 = Cloud Deployment
 
 == Handling Instance Reboot in the Cloud

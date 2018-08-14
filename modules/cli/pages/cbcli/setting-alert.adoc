@@ -1,4 +1,3 @@
-[#reference_fd4_z45_ls]
 = setting-alert
 :page-type: reference
 

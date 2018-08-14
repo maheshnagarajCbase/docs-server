@@ -1,4 +1,3 @@
-[#concept_vkw_fxf_4t]
 = Reading your writes
 :page-type: concept
 

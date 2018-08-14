@@ -1,4 +1,3 @@
-[#reference_kz4_khq_w4]
 = Pausing XDCR replication streams
 :page-type: reference
 

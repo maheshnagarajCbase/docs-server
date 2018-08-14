@@ -1,4 +1,3 @@
-[#concept_kqw_gvy_zs]
 = Architecture of a single node
 :page-type: concept
 
@@ -36,7 +35,6 @@ The *Query Service* handles N1QL query parsing, optimization, and execution.
 This service interacts with both the indexing service and the data service to process and return those queries back to the requesting application.
 
 .Couchbase Server cluster showing single node type
-[#fig_zfh_fgz_zs]
 image::architecture/images/server-cluster-single-node-type.png[,600]
 
 The *Storage Layer* persists data from RAM to disk and reads data back into memory when needed.

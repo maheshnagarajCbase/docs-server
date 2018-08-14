@@ -1,4 +1,3 @@
-[#topic_bzl_dcb_ys]
 = Deploy a Multi-Node Cluster with ARM
 
 [abstract]

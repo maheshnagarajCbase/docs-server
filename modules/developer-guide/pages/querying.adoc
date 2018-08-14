@@ -13,7 +13,6 @@ To use N1QL queries, your cluster must have at least one node with the query and
 
 Couchbase queries may be issued by one of the following mechanisms:
 
-[#ul_pn5_l3t_zs]
 * Couchbase SDK.
 * _cbq_ shell.
 * xref:cli-overview.adoc[cbc] command-line (via `cbc n1ql`).
@@ -38,7 +37,6 @@ It is not in the system-wide path by default.
 To run it, invoke the full path to cbq.
 Copy/paste the following into your terminal:
 
-[#ul_gst_r3t_zs]
 * *Linux*
 +
 ----
@@ -278,7 +276,6 @@ While N1QL allows you to select documents based on whether a given field has a g
 
 For example:
 
-[#ul_onq_4kt_zs]
 * A document contains any subdocument of which any (or every) child matches a given criteria.
 * All of a document’s immediate children satisfy a given criteria.
 * Any child within a document (and any of its sub-documents) contains a given value.

@@ -1,4 +1,3 @@
-[#concept_lg3_dhm_zs]
 = Accessing data from a command line
 :page-type: concept
 
@@ -28,7 +27,6 @@ The [.cmd]`cbc` utility is available with the _libcouchbase_ package, which you 
 The command-line client contains subcommands that perform various operations on the server.
 The basic commands are:
 
-[#ul_xn5_nhm_zs]
 * `cbc create` (create/update documents)
 * `cbc cat` (retrieve a document)
 * `cbc n1ql` (execute a query)

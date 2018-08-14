@@ -39,7 +39,7 @@ The `-xdcr-certificate=CERTIFICATE` option provides the SSL certificate for data
 The following are the command options:
 
 .xdcr-setup options
-[#table_drj_bcn_c4,cols="23,20"]
+[cols="23,20"]
 |===
 | Option | Description
 

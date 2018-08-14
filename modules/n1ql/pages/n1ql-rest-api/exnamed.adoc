@@ -1,4 +1,3 @@
-[#concept_ep4_pfy_nq]
 = Request with named parameters
 :page-type: concept
 

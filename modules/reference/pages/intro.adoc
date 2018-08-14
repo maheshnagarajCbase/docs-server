@@ -1,4 +1,3 @@
-[#concept_g2m_lkg_ps]
 = Reference Guides
 :page-type: concept
 

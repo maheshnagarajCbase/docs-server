@@ -1,4 +1,3 @@
-[#concept_s5k_qtx_1t]
 = Running N1QL queries from a command line
 :page-type: concept
 

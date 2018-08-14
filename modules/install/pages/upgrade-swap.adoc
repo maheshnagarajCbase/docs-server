@@ -1,4 +1,3 @@
-[#topic_dgv_nky_p4]
 = Swap Rebalance Online Upgrade
 
 [abstract]
@@ -34,14 +33,12 @@ For instructions see xref:upgrade-individual-nodes.adoc[Single Node Upgrade].
 . Open the Couchbase Web Console on an existing cluster node.
 . Select menu:Servers[Active Servers] to view and manage the cluster nodes:
 +
-[#image_vlk_4cf_zs]
 image::upgrade-online-01.png[,720,align=left]
 
 . Click [.ui]*Add Server*.
 . In the [.ui]*Add Server* dialog, provide either a hostname or IP address for the new node to be added.
 Enter your Couchbase Server administrative credentials in the fields [.ui]*Username* and [.ui]*Password* and select the appropriate service.
 +
-[#image_jtx_z2f_zs]
 image::upgrade-online-02.png[,500,align=left]
 
 . Remove one of your existing old nodes from the cluster.

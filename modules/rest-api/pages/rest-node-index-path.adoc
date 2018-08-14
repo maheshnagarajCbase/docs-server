@@ -1,4 +1,3 @@
-[#reference_ywl_gkf_q4]
 = Setting index paths
 :page-type: reference
 

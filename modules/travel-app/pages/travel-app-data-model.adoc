@@ -1,4 +1,3 @@
-[#concept_hyy_k1z_pr]
 = Travel app data model
 :page-type: concept
 

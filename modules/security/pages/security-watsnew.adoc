@@ -1,4 +1,3 @@
-[#topic_hjr_c23_tq]
 = What's New in the Current Version
 
 [abstract]

@@ -1,4 +1,3 @@
-[#concept_bf4_glh_ht]
 = Atomic Counters
 :page-type: concept
 

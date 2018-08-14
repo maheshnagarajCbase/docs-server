@@ -25,7 +25,7 @@ NOTE: Filtered XDCR is available only in Couchbase Server Enterprise Edition.
 The following are the command options:
 
 .xdcr-replicate options
-[#table_drj_bcn_c4,cols="73,50"]
+[cols="73,50"]
 |===
 | Option | Description
 

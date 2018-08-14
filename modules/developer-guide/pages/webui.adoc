@@ -1,4 +1,3 @@
-[#concept_j3z_zhm_zs]
 = Accessing data with a browser
 :page-type: concept
 
@@ -11,7 +10,6 @@ In the UI, you can only edit documents that are up to 2.5 kilobits in size.
 
 To access documents using the Web UI:
 
-[#ol_lxc_g3m_zs]
 . Navigate your browser to a cluster node.
 Type the address of the cluster with the port (8091).
 image:webui-login.png[,650px]

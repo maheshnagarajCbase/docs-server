@@ -1,4 +1,3 @@
-[#topic_zf5_lwt_xs]
 = Installing with AMI
 
 [abstract]

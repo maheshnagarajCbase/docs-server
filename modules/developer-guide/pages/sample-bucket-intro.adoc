@@ -1,4 +1,3 @@
-[#topic_apq_4qb_54]
 = Sample buckets
 
 [abstract]

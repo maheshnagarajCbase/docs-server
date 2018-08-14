@@ -1,4 +1,3 @@
-[#concept_s4t_4yb_bt]
 = View consistency
 :page-type: concept
 
@@ -14,7 +13,6 @@ This ensures that all updated documents are included in the view.
 In this case, the response to the client may be delayed because the views engine must first update the index and then execute the query after the updated index is available.
 +
 .Stale parameter set to "false"
-[#fig_xsf_n1c_bt]
 image::view-consistency-false.png[,400]
 
 update_after::
@@ -22,7 +20,6 @@ This is the default value used when the stale parameter is not specified.
 The views engine uses the existing index as the basis of the query and marks the index to be updated after the results are returned to the client.
 +
 .Stale parameter set to "update_after"
-[#fig_xnn_lcc_bt]
 image::views-consistency-update-after.png[,400]
 +
 The indexing engine is an asynchronous process; this means querying an index may produce results you did not expect.
@@ -37,7 +34,6 @@ As a result, this setting provides the fastest response times for a given query.
 However, if only stale=ok is used, the query will return incomplete information until the number of mutations trigger an index update.
 +
 .Stale parameter set to "ok"
-[#fig_lyy_jsc_bt]
 image::views-consistency-ok.png[,400]
 
 [caption=Important]

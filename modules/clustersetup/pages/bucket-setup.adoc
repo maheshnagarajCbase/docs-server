@@ -1,4 +1,3 @@
-[#topic_jbt_4jn_vs]
 = Bucket Setup
 
 [abstract]

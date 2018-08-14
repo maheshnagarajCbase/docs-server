@@ -1,4 +1,3 @@
-[#concept_yzq_ktc_np]
 = DELETE statement
 :page-type: concept
 

@@ -1,4 +1,3 @@
-[#concept_nrl_2dg_ps]
 = Cluster setup
 :page-type: concept
 
@@ -15,7 +14,6 @@ Click [.ui]*Setup* to begin the initial configuration.
 +
 *Step 1 of 5: Configure Server*
 +
-[#image_wmt_pbd_dt]
 image::admin/picts/cluster-setup-01.png[,720,align=left]
 
 . Set up the disk storage and Data service.
@@ -42,7 +40,6 @@ Select the services to install on this node.
 +
 *Step 2 of 5: Sample Buckets*
 +
-[#image_ttt_rfk_3v]
 image::install/picts/setup-02.png[,720,align=left]
 +
 The [.ui]*Sample Buckets* panel appears where you can select the sample data buckets you want to load.
@@ -56,7 +53,6 @@ After you create sample data buckets, the [.ui]*Create Default Bucket* panel app
 +
 *Step 3 of 5: Create Default Bucket*
 +
-[#image_vjc_tfk_3v]
 image::install/picts/setup-03.png[,720]
 
 . Set up a test bucket for Couchbase Server.
@@ -71,7 +67,6 @@ Click [.ui]*Next*.
 +
 *Step 4 of 5: Notifications*
 +
-[#image_yrl_5fk_3v]
 image::install/picts/setup-04.png[,720,align=left]
 
 . In the [.ui]*Notifications* screen, select [.ui]*Enable software update notifications*.
@@ -93,7 +88,6 @@ This information helps prioritize the development efforts.
 +
 *Step 5 of 5: Configure Server*
 +
-[#image_ahp_vfk_3v]
 image::install/picts/setup-05.png[,720,align=left]
 
 . The screen [.ui]*Configure this Server* is the last configuration step.

@@ -1,4 +1,3 @@
-[#concept_xh5_l3j_vs]
 = Connectivity Architecture
 :page-type: concept
 
@@ -15,7 +14,6 @@ Each access point supports clear text and encrypted communication ports.
 There are four main types of access points that drive the majority of client to server communications.
 
 .Communication ports
-[#table_yph_ppc_ws]
 |===
 | Type | Port | API |
 

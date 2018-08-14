@@ -1,4 +1,3 @@
-[#topic_gym_zx1_2t]
 = Release notes for version 4.0
 
 == Supported platforms
@@ -21,7 +20,7 @@ For a complete list of network ports used by Couchbase Server, see xref:install:
 
 The following issues are fixed in Couchbase Server 4.0 GA release:
 
-[#table_n1b_rv1_2t,cols="50,217"]
+[cols="50,217"]
 |===
 | *Issue*
 | *Description*

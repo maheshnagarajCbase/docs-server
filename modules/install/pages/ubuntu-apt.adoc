@@ -1,4 +1,3 @@
-[#topic_yry_v5c_kv]
 = Installing using apt-get
 
 [abstract]

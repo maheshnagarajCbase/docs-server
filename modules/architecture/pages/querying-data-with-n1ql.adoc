@@ -1,4 +1,3 @@
-[#concept_igg_kq4_vs]
 = Querying Data with N1QL
 :page-type: concept
 
@@ -27,7 +26,6 @@ Additional consistency levels enable queries to set staleness levels.
 The following diagram shows the N1QL query engine components - listener, query processor, and data stores.
 
 .Components of N1QL query engine
-[#fig_nqy_b4h_zs]
 image::n1ql-query-engine-components.png[,500]
 
 Listener:: N1QL query engine listener is responsible for receiving the concurrent query requests.
@@ -52,7 +50,6 @@ Once the parsing and planning is done, the operators are assembled into a plan a
 The parallelization of the operators is illustrated with the multiple stacked boxes under scan, fetch, join, filter, and other operators.
 
 .Execution flow for N1QL queries
-[#fig_uwn_xnh_zs]
 image::n1ql-query-execution-flow.png[,400]
 
 == Prepared query execution

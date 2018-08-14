@@ -1,4 +1,3 @@
-[#concept_qqr_l1z_5t]
 = Handling retries and failures
 :page-type: concept
 

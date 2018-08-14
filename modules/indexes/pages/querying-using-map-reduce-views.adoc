@@ -1,4 +1,3 @@
-[#concept_cly_qgb_ys]
 = Querying using MapReduce views
 :page-type: concept
 

@@ -1,4 +1,3 @@
-[#topic_a2d_45p_rv]
 = Couchbase ODBC and JDBC Drivers
 
 The ODBC and JDBC drivers provide the ability to connect to BI tools of your choice - including Microsoft Excel, QlikView, SAP Lumira, or Tableau - to Couchbase Server.

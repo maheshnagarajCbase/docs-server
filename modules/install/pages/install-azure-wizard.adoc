@@ -1,4 +1,3 @@
-[#topic_hsj_rbb_ys]
 = Install Azure with the Wizard
 
 [abstract]
@@ -8,7 +7,6 @@ To deploy Couchbase Server on Microsoft Azure, follow these steps:
 
 . Log into your account for the Azure Management portal `manage.windowsazure.com` and select [.ui]*Virtual Machines* in the left menu.
 +
-[#image_ydj_zr1_ys]
 image::deploy-azure01.png[]
 
 . Create a new virtual machine by pressing the [.in]`+` (plus) symbol in the lower left corner:
@@ -18,7 +16,6 @@ This is the display name that will be used by Windows Azure inside the Portal.
 . Choose username and password.
 They are used for  Remote Desktop to the VM, which is important since you need to install Couchbase Server on the VM using Remote Desktop.
 +
-[#image_dww_ts1_ys]
 image::deploy-azure02.png[]
 
 . Pick up the VM machine size (A1 through G5).
@@ -26,29 +23,24 @@ image::deploy-azure02.png[]
 DNS: Please note that the DNS name needs to be unique for all Azure instances.
 . In the fourth and last step, leave all settings and their defaults and select done/checkmark.
 +
-[#image_zgm_st1_ys]
 image::deploy-azure03.png[]
 +
 The moment the wizard is complete Azure begins the process to start the new VM: Loading, Provisioning, Start, Running.
 +
-[#image_dst_251_ys]
 image::deploy-azure04.png[]
 
 . Press "Connect" in the lower left in the Dashboard tab for the newly created WM.
 This will start a download of a preconfigured Remote Desktop file.
 Open the file and follow the steps in "Remote Desktop" to log in to the VM.
 +
-[#image_ekr_k1b_ys]
 image::deploy-azure05.png[]
 
 . Before installing Couchbase Server, perform the following basic setup steps.
 Disable [.ui]*Enhanced IE Security* and in [.ui]*Firewall Settings* make sure that the required ports are open so that the client can connect to the node.
 Verify the list of ports.
 +
-[#image_wls_cbb_ys]
 image::deploy-azure06.png[]
 +
-[#image_fsr_dbb_ys]
 image::deploy-azure07.png[]
 
 . Open MS Internet Explorer and navigate to the  http://www.couchbase.com/nosql-databases/downloads[Couchbase download site^].

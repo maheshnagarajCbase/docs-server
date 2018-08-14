@@ -1,4 +1,3 @@
-[#concept_jnh_xnj_bt]
 = View performance
 :page-type: concept
 

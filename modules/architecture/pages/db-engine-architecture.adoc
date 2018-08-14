@@ -1,4 +1,3 @@
-[#concept_b5n_bwn_vs]
 = Database Engine Architecture
 :page-type: concept
 
@@ -14,7 +13,6 @@ With Couchbase buckets, data is stored on disk eventually through the storage en
 The storage engine enables the server to efficiently hold data much larger than the size of memory.
 
 .Database engine architecture
-[#fig_bpn_3ft_xs]
 image::db-engine-architecture.png[,600]
 
 == Listeners
@@ -101,7 +99,6 @@ If the rate of incoming items is faster than the migration of items to disk, the
 The process of migrating data from the cache to make way for actively used information is called ejection and is controlled automatically through thresholds set on each configured bucket in the Couchbase Server cluster.
 
 .Working set management and ejection
-[#fig_cr5_jk5_xs]
 image::tunable-memory-bucket-config.png[,300]
 
 Depending on the ejection policy set for the bucket, the vBucket Manager removes just the document or both the document, key and the metadata for the item being ejected.
@@ -127,7 +124,6 @@ NRUs are decremented or incremented by server processes to indicate an item that
 The following table lists the bit values with the corresponding scores and statuses:
 
 .Scoring for NRU bit values
-[#table_ekt_2yz_xs]
 |===
 | Binary NRU | Score | Access pattern | Description
 
@@ -176,7 +172,6 @@ You can change the high water mark and low water mark settings for a node by spe
 Couchbase recommends that you use the following default settings:
 
 .Default setting for RAM water marks
-[#table_pnj_x21_ys]
 |===
 | Version | High water mark | Low water mark
 
@@ -200,7 +195,6 @@ The probability is based on the current memory usage, low water mark, and whethe
 If a vBucket is in an active state, the probability of ejection is lower than if the vBucket is in a replica state.
 +
 .Probability of ejection based on active vBuckets versus replica vBuckets
-[#table_qpb_hg1_ys]
 |===
 | Active vBucket | Replica vBucket
 
@@ -254,7 +248,6 @@ You can configure the bucket I/O priority settings during initial setup and chan
 However, changing a bucket I/O priority after the initial setup results in a restart of the bucket and the client connections are reset.
 
 .Create bucket settings
-[#fig_hvl_jq2_2t]
 image::create-bucket-settings.png[,600]
 
 The previous versions of Couchbase Server, version 3.0 or earlier, required the I/O thread allocation per bucket to be configured manually.

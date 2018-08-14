@@ -1,4 +1,3 @@
-[#topic_l3v_lh4_14]
 = XDCR advanced settings
 
 [abstract]

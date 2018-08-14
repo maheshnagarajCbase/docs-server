@@ -1,4 +1,3 @@
-[#reference_hl3_v2v_sq]
 = rebalance
 :page-type: reference
 

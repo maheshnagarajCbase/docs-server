@@ -75,7 +75,6 @@ For Memcached bucket types, the Memcached statistic summary is provided.
 The summary section is designed to provide a quick overview of the cluster activity.
 Each graph (or selected graph) shows information based on the currently selected bucket.
 
-[#image_y4j_s33_45]
 image::admin/picts/web-console-server-stats-summary.png[]
 
 The following graph types are available:

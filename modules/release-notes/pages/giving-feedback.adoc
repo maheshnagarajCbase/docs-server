@@ -16,7 +16,6 @@ This is the fastest and easiest method to provide feedback about the documentati
 To post to Couchbase forums or file an issue in our issue tracking system, you need to be a registered user.
 To register for an account, use the sign up button on https://forums.couchbase.com/[Couchbase forums^].
 
-[#image_vyt_ntr_f1b]
 image::forums-signup.png[,570]
 
 *Posting feedback to the forum:*

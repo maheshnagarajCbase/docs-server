@@ -1,4 +1,3 @@
-[#concept_x13_xlj_vs]
 = Storage Architecture
 :page-type: concept
 
@@ -69,5 +68,4 @@ In the figure below, as A", B', and D are received by Couchbase Server, previous
 After compaction, the orphaned references are removed and a continuous file is created.
 
 .Compaction in Couchbase Server
-[#fig_hrv_3x3_ws]
 image::compaction.png[,500]

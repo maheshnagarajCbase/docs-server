@@ -1,4 +1,3 @@
-[#concept_hj1_njj_vs]
 = High Availability and Replication Architecture
 :page-type: concept
 

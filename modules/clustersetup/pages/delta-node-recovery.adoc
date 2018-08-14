@@ -1,4 +1,3 @@
-[#topic_gsv_g24_vs]
 = Delta Node Recovery
 
 [abstract]

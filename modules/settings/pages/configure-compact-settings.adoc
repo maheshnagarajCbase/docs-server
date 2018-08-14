@@ -1,4 +1,3 @@
-[#topic_w5q_sqn_vs]
 = Configure compaction settings
 
 [abstract]
@@ -10,7 +9,6 @@ You can override these auto-compaction settings using xref:clustersetup:create-b
 
 You can provide a purge interval to remove the key and metadata for items that have been deleted or are expired, which is known as xref:architecture:core-data-access-bucket-disk-storage.adoc[tombstone purging].
 
-[#image_sbn_zv1_1t]
 image::admin/picts/settings-auto-compact.png[,align=left]
 
 The auto-compaction settings can also be modified using the xref:rest-api:rest-autocompact-get.adoc[REST API].
@@ -18,7 +16,7 @@ The auto-compaction settings can also be modified using the xref:rest-api:rest-a
 The [.ui]*Auto-Compaction* tab sets the following default parameters:
 
 .Auto-compaction parameters
-[#table_m3c_tqc_34,cols="100,223"]
+[cols="100,223"]
 |===
 | Parameter | Description
 
