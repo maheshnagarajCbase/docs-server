@@ -210,7 +210,7 @@ WHERE t1.type = "landmark" AND
 [#section_fkc_ftt_nz]
 == N1QL Expression
 
-Couchbase Server version 4.6.2 adds support for generic xref:n1ql-language-reference/index.adoc#n1ql-lang-ref[expressions] in the `from-term`.
+Couchbase Server version 4.6.2 adds support for generic xref:n1ql-language-reference/index.adoc[expressions] in the `from-term`.
 This is a very powerful functionality as it enables usage of various N1QL functions, operators, path expressions, language constructs on constant expressions, variables, and subqueries.
 
 * When the `from-term` is an expression, USE KEYS or USE INDEX clauses are not allowed.

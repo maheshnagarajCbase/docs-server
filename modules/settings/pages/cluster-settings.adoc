@@ -27,7 +27,7 @@ Certificate::
 The self-signed SSL certificate that is deployed across the cluster on each node.
 It is provided to set up secure communication in an XDCR environment, all nodes in a cluster have the same certificate.
 Click to display the certificate.
-It is also possible to retrieve the certificate using the xref:rest-api:rest-xdcr-data-encrypt.adoc#rest-xdcr-data-encrypt[REST API] or save to a file with the CLI command:
+It is also possible to retrieve the certificate using the xref:rest-api:rest-xdcr-data-encrypt.adoc[REST API] or save to a file with the CLI command:
 +
 ----
  curl http://localhost:8091/pools/default/certificate
@@ -39,7 +39,7 @@ or
  couchbase-cli ssl-manage -c localhost -u Admin -p Pass  --retrieve-cert=/tmp/cert.file
 ----
 +
-You can re-generate he SSL certificate by clicking on [.ui]*Regenerate*, trigger a new SSL certificate with  the xref:rest-api:rest-xdcr-data-encrypt.adoc#rest-xdcr-data-encrypt[REST API] or generate a new certificate and save it to a file with the CLI command:
+You can re-generate he SSL certificate by clicking on [.ui]*Regenerate*, trigger a new SSL certificate with  the xref:rest-api:rest-xdcr-data-encrypt.adoc[REST API] or generate a new certificate and save it to a file with the CLI command:
 +
 Example:
 +

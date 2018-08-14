@@ -59,7 +59,7 @@ You can learn more about the two different conflict resolution strategies in xre
 If you wish to enable the timestamp-based conflict resolution for your existing bucket while upgrading to version 4.6.0, then you must migrate your data to version 4.6.0.
 For instructions, see xref:install:migration.adoc[Migrating Data for the Timestamp-based Conflict Resolution].
 
-You can also set the conflict resolution method using the CLI xref:cli:cbcli/bucket-create.adoc[[.cmd]`bucket-create`] command, or the xref:rest-api:rest-bucket-create.adoc#rest-bucket-create[REST API].
+You can also set the conflict resolution method using the CLI xref:cli:cbcli/bucket-create.adoc[[.cmd]`bucket-create`] command, or the xref:rest-api:rest-bucket-create.adoc[REST API].
 
 image::admin/picts/bucket-create-conflict-resolution-setting.png[,570]
 
@@ -105,7 +105,7 @@ Even for use cases where this is the desired behaviour, flushing is not recommen
 
 image::admin/picts/bucket-flush.png[,250,align=left]
 
-You can flush a bucket xref:bucket-flush.adoc[using the UI] or using the CLI command xref:cli:cbcli/bucket-flush.adoc#cbcli-bucket-flush[bucket-flush] and REST API xref:rest-api:rest-bucket-flush.adoc#rest-bucket-flush[rest-bucket-flush.]
+You can flush a bucket xref:bucket-flush.adoc[using the UI] or using the CLI command xref:cli:cbcli/bucket-flush.adoc[bucket-flush] and REST API xref:rest-api:rest-bucket-flush.adoc[rest-bucket-flush.]
 
 == Bucket Creation Status Update
 
@@ -120,4 +120,4 @@ The bucket is created when all node statuses turn from `warmup` to `healthy`.
 
 == Create a New Bucket with CLI or REST API
 
-You can also use the Couchbase Server CLI command xref:cli:cbcli/bucket-create.adoc[bucket-create] or REST API command xref:rest-api:rest-bucket-create.adoc#rest-bucket-create[rest-bucket-create].
+You can also use the Couchbase Server CLI command xref:cli:cbcli/bucket-create.adoc[bucket-create] or REST API command xref:rest-api:rest-bucket-create.adoc[rest-bucket-create].

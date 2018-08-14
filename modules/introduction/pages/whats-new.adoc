@@ -13,7 +13,7 @@ Earlier releases allow only keyspace identifier or subquery in SELECT statementâ
 Couchbase Server 4.6.2 adds support for generic N1QL expressions in SELECT statementâ€™s FROM clause.
 This is very powerful functionality, as it enables usage of various N1QL functions, operators, path expressions, and language constructs on constant expressions, variables, and subqueries.
 Further, it improves performance of correlated Subqueries that access nested arrays and sub-documents of the same document (as in its parent query).
-For details, see xref:n1ql:n1ql-language-reference/from.adoc[FROM] statement syntax and xref:n1ql:n1ql-language-reference/subqueries.adoc#topic_9[Subqueries].
+For details, see xref:n1ql:n1ql-language-reference/from.adoc[FROM] statement syntax and xref:n1ql:n1ql-language-reference/subqueries.adoc[Subqueries].
 
 Array Indexing:: Couchbase Server 4.6.2 release adds the following enhancements to xref:n1ql:n1ql-language-reference/indexing-arrays.adoc[Array Indexing] feature:
 * Allow arbitrary variable names in array index selections.

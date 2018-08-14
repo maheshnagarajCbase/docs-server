@@ -20,4 +20,4 @@ image::admin/picts/flushing-error.png[,550,align=left]
 
 . Click the btn:[Flush] button to start flushing.
 
-You can also use the commands the CLI command xref:cli:cbcli/bucket-flush.adoc#cbcli-bucket-flush[bucket-flush] and REST API xref:rest-api:rest-bucket-flush.adoc#rest-bucket-flush[rest-bucket-flush.]
+You can also use the commands the CLI command xref:cli:cbcli/bucket-flush.adoc[bucket-flush] and REST API xref:rest-api:rest-bucket-flush.adoc[rest-bucket-flush.]
