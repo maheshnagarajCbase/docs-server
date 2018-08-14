@@ -1,5 +1,5 @@
 = Indexes for N1QL
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 N1QL provides a SQL like query language for Couchbase.

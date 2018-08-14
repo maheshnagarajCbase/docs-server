@@ -1,5 +1,5 @@
 = user-manage
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 This command is used to manage read-only Couchbase admins.

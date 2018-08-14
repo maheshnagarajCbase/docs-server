@@ -1,5 +1,5 @@
 = failover
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 Fails over one node.

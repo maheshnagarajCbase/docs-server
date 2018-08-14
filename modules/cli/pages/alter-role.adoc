@@ -1,5 +1,5 @@
 = admin-role-manage
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 Sets access control roles for users.

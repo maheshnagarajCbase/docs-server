@@ -1,5 +1,5 @@
 = Arithmetic Operators
-:page-type: concept
+:page-topic-type: concept
 
 Arithmetic operations perform basic mathematical operations such as addition, subtraction, multiplication, divisions, and modulo within an expression or any numerical value retrieved as part of query clauses.
 Additionally, N1QL provides a negation operation which changes the sign of a value.

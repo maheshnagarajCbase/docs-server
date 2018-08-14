@@ -1,5 +1,5 @@
 = Views, Indexing, and Index Service
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 Views and indexes support querying data in Couchbase Server.

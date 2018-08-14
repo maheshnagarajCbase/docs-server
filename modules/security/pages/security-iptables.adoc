@@ -1,5 +1,5 @@
 = Network and ACLs
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 Security outside Couchbase Server involves the configuration of IP tables and ports.

@@ -1,5 +1,5 @@
 = Quickstart
-:page-type: task
+:page-topic-type: task
 
 [abstract]
 This section shows how to add the connector to your application.

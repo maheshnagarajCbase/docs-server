@@ -1,5 +1,5 @@
 = cluster-init
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 Sets the user name, password, port, RAM size and services for a cluster.

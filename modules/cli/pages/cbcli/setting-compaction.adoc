@@ -1,5 +1,5 @@
 = setting-compaction
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 Set the auto compaction settings.

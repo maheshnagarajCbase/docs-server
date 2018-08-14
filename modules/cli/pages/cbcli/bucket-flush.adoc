@@ -1,5 +1,5 @@
 = bucket-flush
-:page-type: reference
+:page-topic-type: reference
 
 [abstract]
 Flushes all data from the disk for a given bucket.

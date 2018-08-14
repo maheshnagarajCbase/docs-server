@@ -1,5 +1,5 @@
 = Sink Configuration Options
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 Reference of the source connector options.

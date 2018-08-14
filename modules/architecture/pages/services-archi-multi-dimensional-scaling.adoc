@@ -1,5 +1,5 @@
 = Multidimensional Scaling
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 Couchbase Server performs symmetric scaling to distribute the workload equally between nodes and using multidimensional scaling allows each of the workloads to scale independently.

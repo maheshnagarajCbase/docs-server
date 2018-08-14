@@ -1,5 +1,5 @@
 = Internal Roles
-:page-type: concept
+:page-topic-type: concept
 
 [abstract]
 Couchbase Full Administrator can set up the internal role of the Read-Only Administrator.
