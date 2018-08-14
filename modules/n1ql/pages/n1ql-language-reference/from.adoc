@@ -11,7 +11,7 @@ You can perform calculations with the SELECT statement if the FROM clause is omi
 The `from-term` defines the input objects for the query and it can be either a keyspace identifier or an expression.
 When using nested subqueries, the `from-term` of the outermost parent query can only have a <<section_ekc_ftt_nz,keyspace identifier>>, a subquery, or a <<section_fkc_ftt_nz,constant expression>> since the `from-term` needs to independently produce input documents for the query.
 However, the subqueries can use generic variable expressions, which may be dependent on the xref:n1ql-language-reference/subqueries.adoc#section_onz_3tj_mz[Variables in Scope of a Subquery].
-For more details, see xref:n1ql-language-reference/subqueries.adoc#topic_9[Subqueries].
+For more details, see xref:n1ql-language-reference/subqueries.adoc[Subqueries].
 
 NOTE: Couchbase Server version 4.x supports only keyspace identifier or a subquery in the `from-term`, but not expressions.
 Couchbase Server version 4.6.2 adds support for generic  <<section_fkc_ftt_nz,expression>> in the `from-term`.
@@ -226,7 +226,7 @@ SELECT * FROM [1, 2, "name", { "type" : "airport", "id" : "SFO"}]  AS  ks1
 *Variable N1QL Expression*::
 This includes expressions that refers to any xref:n1ql-language-reference/subqueries.adoc#section_onz_3tj_mz[variables in scope] for the query.
 This is applicable to only subqueries because the outermost level query cannot use any variables in its own FROM clause.
-This makes the subquery correlated with outer queries, as explained in the xref:n1ql-language-reference/subqueries.adoc#topic_9[Subqueries] section.
+This makes the subquery correlated with outer queries, as explained in the xref:n1ql-language-reference/subqueries.adoc[Subqueries] section.
 
 *Subquery and Subquery Expressions*::
 A subquery itself can appear as `from-term` expression.
@@ -313,7 +313,7 @@ WHERE type = "airport"
 GROUP BY country;
 ----
 +
-See xref:n1ql-language-reference/subqueries.adoc#topic_9[Subqueries] for details and examples.
+See xref:n1ql-language-reference/subqueries.adoc[Subqueries] for details and examples.
 
 *Nested Path Expressions*::
 Expressions used in the `from-term` can have nested paths, including constant or variable or subquery expressions.

@@ -25,7 +25,7 @@ For details, see xref:n1ql:n1ql-language-reference/indexing-arrays.adoc[Array In
 
 Token Functions::
 The following new token functions are added.
-For more details and examples, see xref:n1ql:n1ql-language-reference/tokenfun.adoc#topic_8_12[Token Functions].
+For more details and examples, see xref:n1ql:n1ql-language-reference/tokenfun.adoc[Token Functions].
 * `HAS_TOKEN()` - This function checks if [.var]`input_obj` contains the token [.var]`token_expr`.
 * `CONTAINS_TOKEN()` - This function is an alias of `HAS_TOKEN()`.
 * `CONTAINS_TOKEN_LIKE()` - Checks if [.var]`input_obj` contains the token [.var]`token_expr`, which can have wildcards in the same way as the LIKE operator.
@@ -251,4 +251,4 @@ Various important efficiency improvements make better use of connections and res
 * *Bulk mode* for DCP Snapshots is a new option, making offsets only committed in Kafka once the entire snapshot is received - avoiding duplicate retransmissions of mutations.
 
 +
-For details, see xref:connectors:kafka-3.1/kafka-intro.adoc#kafka-3-intro[Kafka Connector 3.1].
+For details, see xref:connectors:kafka-3.1/kafka-intro.adoc[Kafka Connector 3.1].

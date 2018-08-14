@@ -346,7 +346,7 @@ See the example on how to use the INSERT statement to copy the bucket data to an
 
 select;;
 SELECT statements let you retrieve data from specified keyspaces.
-For complete information on SELECT statements, see xref:n1ql-language-reference/selectintro.adoc#topic_11_7[Overview].
+For complete information on SELECT statements, see xref:n1ql-language-reference/selectintro.adoc[Overview].
 
 returning-clause::
 Specifies the fields that must be returned as part of the results object.
@@ -421,7 +421,7 @@ expr;; N1QL expressions can be an identifier, a literal value, operators, functi
 identifier::
 An identifier uniquely identifies an object in a query and can be used to refer to a value in the current context of a query.
 Identifiers are case sensitive and can be used for bucket names, field names within documents, and array indexes.
-For more information, see xref:n1ql-language-reference/identifiers.adoc#topic_6[Identifiers].
+For more information, see xref:n1ql-language-reference/identifiers.adoc[Identifiers].
 
 [#insert-examples]
 == Examples

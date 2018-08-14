@@ -51,7 +51,7 @@ image::pict/bucket-admin-default.png[]
 
 NOTE: Full administrators in Couchbase can manage user roles using the Couchbase CLI tools (as described in xref:cli:alter-role.adoc[[.cmd]`admin-role-manage`]) or REST API (as described in xref:rest-api:rbac.adoc[Role Based Admin Access (RBAC)]).
 
-NOTE: Full administrators in Couchbase can manage certificates using the Couchbase CLI tools (as described in xref:cli:cbcli/ssl-manage.adoc#cbcli-xdcr-ssl[[.cmd]`ssl-manage`]) or REST API (as described in xref:rest-api:rest-security.adoc[Security API] ).
+NOTE: Full administrators in Couchbase can manage certificates using the Couchbase CLI tools (as described in xref:cli:cbcli/ssl-manage.adoc[[.cmd]`ssl-manage`]) or REST API (as described in xref:rest-api:rest-security.adoc[Security API] ).
 
 == Test LDAP Settings
 

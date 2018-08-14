@@ -259,7 +259,7 @@ A subquery is an expression that is evaluated by executing an inner SELECT query
 Subqueries can be used in most places where you can use an expression such as projections, FROM clauses, and WHERE clauses.
 +
 A subquery is executed once for every input document to the outer statement and it returns an array every time it is evaluated.
-See xref:n1ql-language-reference/subqueries.adoc#topic_9[Subqueries] for more details.
+See xref:n1ql-language-reference/subqueries.adoc[Subqueries] for more details.
 +
 .Query
 ----

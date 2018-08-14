@@ -808,7 +808,7 @@ The `cbbackupmgr merge` command will not function correctly and may cause data c
 * The bucket has not been backed up between a document's deletion and the xref:architecture:core-data-access-bucket-disk-storage.adoc#tombstone[metadata for that deleted document being purged]
 * There has been a failover between incremental backups of the bucket
 
-For more information about the Merge functionality, see xref:backup-restore:cbbackupmgr-merge.adoc#cbbackupmgr-merge.1[cbbackupmgr merge].
+For more information about the Merge functionality, see xref:backup-restore:cbbackupmgr-merge.adoc[cbbackupmgr merge].
 
 *Workaround*: In the interim, the recommendation is to perform a full backup if you experience any of the above scenarios.
 This will lead to longer backup times than performing incremental backups, but will avoid potential data corruption due to to the aforementioned issue.
@@ -825,7 +825,7 @@ Couchbase Server 4.6.0 was released in February 2017.
 *Supported Platforms*
 
 This release also adds support for Microsoft Windows 10 Anniversary Edition and Mac OS Sierra.
-For more information, see xref:install:install-platforms.adoc#topic1634[Supported Platforms].
+For more information, see xref:install:install-platforms.adoc[Supported Platforms].
 
 *Changes in Behavior*
 
@@ -905,7 +905,7 @@ The `cbbackupmgr merge` command will not function correctly and may cause data c
 * The bucket has not been backed up between a document's deletion and the xref:architecture:core-data-access-bucket-disk-storage.adoc#tombstone[metadata for that deleted document being purged]
 * There has been a failover between incremental backups of the bucket
 
-For more information about the Merge functionality, see xref:backup-restore:cbbackupmgr-merge.adoc#cbbackupmgr-merge.1[cbbackupmgr merge].
+For more information about the Merge functionality, see xref:backup-restore:cbbackupmgr-merge.adoc[cbbackupmgr merge].
 
 *Workaround*: In the interim, the recommendation is to perform a full backup if you experience any of the above scenarios.
 This will lead to longer backup times than performing incremental backups, but will avoid potential data corruption due to to the aforementioned issue.
