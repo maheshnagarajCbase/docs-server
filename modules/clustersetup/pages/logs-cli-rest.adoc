@@ -6,7 +6,7 @@ Several CLI commands and REST API
 
 == Using CLI commands
 
-You can  use the CLI command xref:cli:cbcollect-info-tool.adoc#cbcollect-info-tool[cbcollect_info], which is one of the most important diagnostic tools used by Couchbase technical support.
+You can  use the CLI command xref:cli:cbcollect-info-tool.adoc[cbcollect_info], which is one of the most important diagnostic tools used by Couchbase technical support.
 
 The other three CLI commands you can use to start and stop log collection and to read the log collection status:
 
@@ -18,6 +18,6 @@ The other three CLI commands you can use to start and stop log collection and to
 
 The Logs REST API provides the REST API endpoints for retrieving log and diagnostic information as well as how an SDK can add entries into a log.
 
-To retrieve log information use the `/diag` and `/sasl_logs` xref:rest-api:rest-logs-api.adoc#reference_rest_logs[REST endpoints].
+To retrieve log information use the `/diag` and `/sasl_logs` xref:rest-api:rest-logs-api.adoc[REST endpoints].
 
 To create client logs use xref:rest-api:rest-client-logs.adoc[client logs].

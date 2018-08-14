@@ -13,7 +13,7 @@ Standard rolling upgrade:: For this upgrade strategy, your cluster must have suf
 
 For example, an upgrade from Couchbase Server version 2.2.0 to version 4.x using the rolling swap rebalance upgrade strategy typically involves the following steps:
 
-. Back up cluster data with the xref:cli:cbbackup-tool.adoc#cbbackup-tool[cbbackup tool].
+. Back up cluster data with the xref:cli:cbbackup-tool.adoc[cbbackup tool].
 . Install Couchbase Server version 2.5.2 on as many new nodes as you have on hand to swap in for the existing 2.2.0 cluster nodes.
 . Add the upgraded nodes to the cluster and select the same number of existing nodes to remove.
 . Initiate a rebalance operation to move existing data from nodes that will be removed to the nodes that are being added.

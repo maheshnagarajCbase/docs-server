@@ -9,7 +9,7 @@ A dialog containing the configuration for your new bucket appears.
 Remember that when you create a new bucket and save the configuration, the node status indicator will be yellow until all of the vBuckets are created across the cluster.
 Once this is finished, the indicator turns green.
 
-You can also use the Couchbase Server CLI command xref:cli:cbcli/bucket-create.adoc[bucket-create] or REST API command xref:rest-api:rest-bucket-create.adoc#rest-bucket-create[rest-bucket-create].
+You can also use the Couchbase Server CLI command xref:cli:cbcli/bucket-create.adoc[bucket-create] or REST API command xref:rest-api:rest-bucket-create.adoc[rest-bucket-create].
 
 == Bucket settings
 
@@ -90,7 +90,7 @@ Using this button is an additional security measure to prevent unintentional los
 
 image::admin/picts/bucket-flush.png[,250,align=left]
 
-You can also use the commands the CLI command xref:cli:cbcli/bucket-flush.adoc#cbcli-bucket-flush[bucket-flush] and REST API xref:rest-api:rest-bucket-flush.adoc#rest-bucket-flush[rest-bucket-flush.]
+You can also use the commands the CLI command xref:cli:cbcli/bucket-flush.adoc[bucket-flush] and REST API xref:rest-api:rest-bucket-flush.adoc[rest-bucket-flush.]
 
 == Bucket creation status update
 

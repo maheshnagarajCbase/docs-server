@@ -5,7 +5,7 @@ There are several Docker configuration scenarios for Couchbase Server deployment
 
 IMPORTANT: Use deployment with Docker for development and testing purposes only.
 
-Couchbase Server communicates on a number of xref:install-ports.adoc#topic2659[different ports].
+Couchbase Server communicates on a number of xref:install-ports.adoc[different ports].
 In addition, it is not supported for nodes in a cluster that are behind any kind of NAT.
 
 For these reasons, Docker's default networking configuration is not ideally suited to Couchbase Server deployments.

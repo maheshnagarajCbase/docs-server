@@ -4,7 +4,7 @@
 Upgrading Couchbase Server is a recommended regular best practice to ensure ideal cluster operation and supportability.
 
 [caption=Remember]
-IMPORTANT: Back up your cluster data with the xref:cli:cbbackup-tool.adoc#cbbackup-tool[cbbackup tool] before performing any upgrade.
+IMPORTANT: Back up your cluster data with the xref:cli:cbbackup-tool.adoc[cbbackup tool] before performing any upgrade.
 
 Take into account the best practices for upgrading Couchbase Server.
 

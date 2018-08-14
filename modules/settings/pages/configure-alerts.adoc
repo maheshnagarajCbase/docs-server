@@ -14,7 +14,7 @@ image::admin/picts/settings-alerts.png[,align=left]
 Select the [.ui]*Enable email alerts* check box to enable the configuration of email alerts.
 These alerts are raised for the errors that you select in the [.ui]*Available Alerts* section.
 
-It is also possible to configure Email alerts using the xref:rest-api:rest-cluster-email-notifications.adoc#rest-cluster-alerts[REST API.]
+It is also possible to configure Email alerts using the xref:rest-api:rest-cluster-email-notifications.adoc[REST API.]
 
 == Email Server Settings
 
