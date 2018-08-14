@@ -1,4 +1,3 @@
-[#topic_e5r_qpn_vs]
 = Managing XDCR
 
 [abstract]
@@ -25,7 +24,6 @@ Once it has the connection with that one node, similar to how a Couchbase SDK do
 [.term]_Ongoing Replications_ are the ones that are configured and operating currently.
 You can monitor the current configuration, current status, and the last time a replication process was triggered for each configured replication.
 
-[#image_vwk_d2t_zs]
 image::xccr-create.png[,720,align=left]
 
 == Create Cluster Reference
@@ -38,7 +36,6 @@ To create a cluster reference using the Couchbase Web Console:
 
 Go to menu:XDCR[Create Cluster Reference]
 
-[#image_fxf_crb_ft]
 image::admin/picts/xdcr-createreference.png[,align=left]
 
 To create the unidirectional replication (from cluster A to cluster B):
@@ -69,7 +66,6 @@ After you configure and start replication, view the current status and list of r
 . Click [.ui]*Create Replication* to configure a new XDCR replication.
 A panel appears where you can configure a new replication from the source to the destination cluster.
 +
-[#image_zds_pjt_zs]
 image::xdcr-create-replication.png[,550,align=left]
 
 . In the section [.ui]*Replicate changes from*, select a bucket from the current cluster to replicate.
@@ -173,7 +169,6 @@ For example, the expression `airline|hotel` would match both "unitedairline" and
 
 To implement filtering, you must explicitly do it by selecting menu:XDCR[Create Replication, Enable Advanced filtering].
 
-[#image_i12_h15_zs]
 image::xdcr-adv-filtering.png[,500,align=left]
 
 IMPORTANT: You cannot change a filtering expression on an existing replication.
@@ -317,7 +312,6 @@ To pause and resume replication, click the replicating and paused icons under th
 . Using the Couchbase Web Console, navigate to XDCR.
 . To pause, under menu:Ongoing Replication[Status], click on the [.ui]*Replicating* icon to pause replication.
 +
-[#image_ltl_q25_zs]
 image::xdcr-pause-resume.png[,720,align=left]
 
 . To resume, under menu:Ongoing Replication[Status], click on the [.ui]*Paused* triangle icon to continue replicating.
@@ -345,7 +339,6 @@ When configuring bi-directional replication, use the web interfaces that belong 
 Any errors that occur during replication appear in the XDCR errors panel.
 The following example shows the errors that occur if replication streams from XDCR fail due to the missing vBuckets at the source cluster:
 
-[#image_tfl_mg5_zs]
 image::xdcr-replication-statuis.png[,450,align=left]
 
 *XDCR Replication and Network Failures*

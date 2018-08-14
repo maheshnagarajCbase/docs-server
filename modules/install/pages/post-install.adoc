@@ -1,4 +1,3 @@
-[#topic_spx_crr_g4]
 = Post-installation
 
 [abstract]

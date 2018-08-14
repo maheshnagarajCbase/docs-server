@@ -1,4 +1,3 @@
-[#topic_byh_lbg_q4]
 = Removing a Node
 
 [abstract]
@@ -32,7 +31,6 @@ To prevent such problems, make sure that you provide one of the following soluti
 
 Remove a node from the cluster from within the [.ui]*Server Nodes* section of the Couchbase Web Console.
 
-[#image_lsl_ymv_4v]
 image::admin/picts/active-servers.png[,720,align=left]
 
 . Click [.ui]*Remove* to mark the node for removal.

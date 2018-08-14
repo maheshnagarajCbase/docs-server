@@ -1,4 +1,3 @@
-[#concept_xvc_fcq_dt]
 = Data Modeling Basics
 :page-type: concept
 
@@ -26,7 +25,6 @@ You can also use one or more documents to represent a real-world object.
 The following example compares a conventional table with document-based objects.
 
 .1-to-many relationship comparison between relational table and JSON documents
-[#fig_tpv_jjz_bw]
 image::relational-1-many-hotels.png[,500]
 
 In this example we have a table that represents "hotels" and their respective attributes: name, address, city, and so forth.
@@ -115,7 +113,6 @@ In case of JSON documents, you use key-values pairs, or even nested key-value pa
 
 Given the boundary-less nature of the document model, there are several considerations to have in mind when you design your JSON document:
 
-[#ul_dxd_xpz_bw]
 * Whether you want to use a type field at the highest level of your JSON document in order to group and filter object types, for instance the above example includes a "type" attribute that has the value "hotel".
 * What particular keys, ids, prefixes or conventions do you want to use for items, for instance ‘Hotel::Medway_Youth_Hostel.’
 * If want to use a document to access other documents.

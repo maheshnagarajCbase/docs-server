@@ -11,7 +11,6 @@ Two sub-tabs are available: Logs and Collect Information.
 
 The Logs tab displays available logs by the Event, Module Code, Server Node, and Time.
 
-[#image_hwn_lnn_ht]
 image::admin/picts/logs-tab.png[,720,align=left]
 
 The Collection Information tab enables you to collect logs and diagnostic information from either all nodes or selected nodes in a cluster.

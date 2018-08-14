@@ -1,4 +1,3 @@
-[#topic_gym_zx1_2t]
 = Release Notes for Couchbase Server 4.0
 
 [abstract]
@@ -24,7 +23,7 @@ For a complete list of network ports used by Couchbase Server, see xref:install:
 
 The following issues are fixed in Couchbase Server 4.0 GA release:
 
-[#table_n1b_rv1_2t,cols="50,217"]
+[cols="50,217"]
 |===
 | *Issue*
 | *Description*
@@ -81,7 +80,7 @@ The following software versions are deprecated, will be deprecated, or are unsup
 The following operating systems have been or will be deprecated.
 
 .Deprecated operating systems
-[#table_af3_2gq_54,cols="145,430,100,108"]
+[cols="145,430,100,108"]
 |===
 | Operating system | Description | Deprecated version | Unsupported version
 
@@ -122,7 +121,7 @@ The following operating systems have been or will be deprecated.
 The following REST API URI items have been or will be deprecated.
 
 .Deprecated REST API URIs or parameters
-[#table_o5f_tgq_54,cols="100,223,238,105,108"]
+[cols="100,223,238,105,108"]
 |===
 | REST API | URI | Description | Deprecated version | Unsupported version
 
@@ -145,7 +144,7 @@ To obtain information about nodes in a Couchbase cluster, use the `/pools/defaul
 The following tools parameters have been deprecated, removed, or are not supported.
 
 .Deprecated tools
-[#table_t42_phq_54,cols="59,59,20,20"]
+[cols="59,59,20,20"]
 |===
 | Tool | Description | Deprecated version | Unsupported version
 

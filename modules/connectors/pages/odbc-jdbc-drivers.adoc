@@ -1,4 +1,3 @@
-[#topic_a2d_45p_rv]
 = Couchbase ODBC and JDBC Drivers
 
 Simba Technologies

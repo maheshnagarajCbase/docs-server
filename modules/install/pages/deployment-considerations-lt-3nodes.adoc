@@ -1,4 +1,3 @@
-[#topic_tdq_qbp_4v]
 = Deployment Considerations for Less Than 3 Nodes
 
 When setting up a Couchbase Server deployment, the number of nodes in that deployment impact the features that are available.

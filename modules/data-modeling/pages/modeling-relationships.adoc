@@ -1,4 +1,3 @@
-[#concept_ol2_khr_dt]
 = Modeling Relationships
 :page-type: concept
 
@@ -16,7 +15,6 @@ By separating the history, you can avoid having to maintain a very large documen
 History can be fetched when needed, but the vast majority of accesses to the brewery document take advantage of the smaller brewery document size.
 
 .Embedded versus referenced documents: 1-to-1 relationships
-[#fig_mdh_bst_dt]
 image::modeling-relationships-one-to-one.png[,600]
 
 == 1-to-many Relationships
@@ -48,7 +46,6 @@ Large document may cause excessive I/O even in cases where only a smaller part o
 I/O penalty can hit both network traffic with replication and storage subsystems with disk persistence.
 
 .Embedded versus referenced documents
-[#fig_lgv_ytt_dt]
 image::modeling-relationships-one-to-many-embed.png[,600]
 
 *Referencing 1-to-many relationships*: There are multiple options when referencing 1-to-many relationships as well.
@@ -71,7 +68,6 @@ Large documents may cause excessive I/O even in cases where only a smaller part 
 I/O penalty can hit both network traffic with replication and storage subsystems with disk persistence.
 
 .Embedded versus referenced documents
-[#fig_ppc_fwt_dt]
 image::modeling-relationships-one-to-many-reference.png[,600]
 
 == Many-to-many relationships

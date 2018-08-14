@@ -1,4 +1,3 @@
-[#topic_fym_kmn_vs]
 = Create a New Bucket
 
 [abstract]
@@ -23,7 +22,6 @@ If you need the memcached-like functionality, it is recommended that you use Cou
 The memcached buckets are available to provide administration capabilities for regular memcached and backward compatibility and offer none of the high-end features Couchbase Server is known for.
 For more specific information, see xref:architecture:core-data-access-buckets.adoc[Buckets].
 
-[#image_qm1_ntr_zs]
 image::admin/picts/bucket-new.png[,400,align=left]
 
 == Memory Size
@@ -40,7 +38,6 @@ If you use Full ejection effectively, it is very powerful and expands what you c
 If you use it incorrectly, it can cause performance problems in your application and operation of your database.
 Please make sure you read the detailed documentation on xref:architecture:db-engine-architecture.adoc#full-ejection[Tunable Memory with Ejection Policy] before changing this setting.
 
-[#image_rcx_pcs_zs]
 image::admin/picts/bucket-full-ejection.png[,600,align=left]
 
 == Access Control
@@ -62,7 +59,6 @@ The more replicas you have, the more server and network resources are required.
 
 In general, you will have one replica for clusters up to 5 data nodes, one or two replicas in clusters from 5 to 10 data nodes and three replicas only in clusters with 10 or more data nodes.
 
-[#image_fyn_mnv_4v]
 image::admin/picts/create-replicas.png[,720,align=left]
 
 == Disk I/O Optimization
@@ -74,7 +70,6 @@ This setting only enables prioritization if at least one bucket in the cluster i
 Therefore, there is no effect if all buckets are set to high priority.
 If buckets with different priorities exist in the cluster, there are internal server resources allocated for high and low priority buckets.
 
-[#image_rlt_j2s_zs]
 image::admin/picts/bucket-disk-io.png[,720,align=left]
 
 == Auto-Compaction
@@ -83,7 +78,6 @@ This setting allows you to override the cluster-wide auto-compaction settings fo
 
 For the most part, you should never need to use this setting.
 
-[#image_bkg_wfs_zs]
 image::admin/picts/bucket-auto-compact.png[,720,align=left]
 
 == Flush
@@ -94,7 +88,6 @@ Checking this option does not directly trigger the `flush`, it only allows a `fl
 It is recommended that the `flush` capability is disabled in production as it irreversibly deletes every document in the bucket.
 Even for use cases where this is the desired behaviour, flushing is not recommended as it is a very disruptive process.
 
-[#image_b5v_pfs_zs]
 image::admin/picts/bucket-flush.png[,250,align=left]
 
 You can flush a bucket xref:bucket-flush.adoc[using the UI] or using the CLI command xref:cli:cbcli/bucket-flush.adoc#cbcli-bucket-flush[bucket-flush] and REST API xref:rest-api:rest-bucket-flush.adoc#rest-bucket-flush[rest-bucket-flush.]

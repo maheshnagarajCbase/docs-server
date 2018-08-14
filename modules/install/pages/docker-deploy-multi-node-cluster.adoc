@@ -1,4 +1,3 @@
-[#topic_u21_zcf_3w]
 = Deploying Multi-node Cluster
 
 [abstract]
@@ -60,7 +59,6 @@ docker inspect --format '{{ .NetworkSettings.IPAddress }}' db2
 You are now connected to container named db3.
 If the container is up and running, you will see the Couchbase Server Setup Screen.
 +
-[#image_y3p_fgg_3w]
 image::setup-screen.png[,570]
 
 . Walk through the Setup wizard and accept the default values.
@@ -73,13 +71,11 @@ For detailed information on configuring the server, see xref:init-setup.adoc[Ini
 . Next, we need to add the db1 and db2 containers to the cluster.
  .. On the Web Console, go to the Server Nodes tab and click [.ui]*Add Server* and specify the IP address you captured for db1.
 +
-[#image_kxc_lgg_3w]
 image::cluster-setup-add-servers.png[,570]
 
  .. Click [.ui]*Add Server* again and specify the IP address you captured for db2
  .. Click [.ui]*Rebalance*.
 +
-[#image_ybp_2gg_3w]
 image::docker-single-node-rebalance.png[,570]
 
 This is all that is needed for a multi-node Couchbase Server cluster deployment using a single physical machine.
@@ -168,7 +164,6 @@ docker inspect --format '{{ .NetworkSettings.IPAddress }}' db
 . On one of the physical hosts, access the Web Console from the browser using [.path]_\http://node-ip:8091_.
 If the container is up and running, you will see the Couchbase Server Setup Screen.
 +
-[#image_v4x_zfg_3w]
 image::setup-screen.png[,570]
 +
 Click Setup, select the Start a new cluster option, and walk through the Setup wizard .
@@ -181,7 +176,6 @@ Click [.ui]*Setup*, select the [.ui]*Join a cluster* option, and walk through th
 
 . On the last physical host, after you join the cluster, switch to the Server Nodes tab and click [.ui]*Rebalance*.
 +
-[#image_kkp_wfg_3w]
 image::docker-multi-node-rebalance.png[,570]
 
 This all that is needed for a multi-node Couchbase Server cluster deployment across multiple physical machines.

@@ -1,4 +1,3 @@
-[#topic_v1t_trm_gv]
 = Flush a Bucket
 
 [abstract]
@@ -15,12 +14,10 @@ To flush a bucket using the Couchbase Web Console:
 . Go to the [.ui]*Data Buckets* tab and click the blue triangle next to the bucket name.
 . Click [.ui]*Flush*.
 +
-[#image_qmp_kpv_4v]
 image::admin/picts/bucket-flush-data.png[,720,align=left]
 
 . The warning message will appear before you flush the bucket.
 +
-[#image_u45_5pv_4v]
 image::admin/picts/flushing-error.png[,550,align=left]
 
 . Click the btn:[Flush] button to start flushing.

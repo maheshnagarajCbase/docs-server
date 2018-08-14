@@ -1,4 +1,3 @@
-[#reference_dxp_4p5_ls]
 = setting-xdcr
 :page-type: reference
 

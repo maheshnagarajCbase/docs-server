@@ -1,4 +1,3 @@
-[#concept_qqp_xfk_np]
 = SELECT clause
 :page-type: concept
 

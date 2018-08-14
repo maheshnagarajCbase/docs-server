@@ -1,4 +1,3 @@
-[#topic_fd5_vcf_3w]
 = Deploying a Single Node Cluster
 
 [abstract]
@@ -34,7 +33,6 @@ Ensure that you stop your local instance of Couchbase Server before running the 
 . From the browser, access the Web Console using [.path]_\http://localhost:8091_.
 If the container is up and running, you should see the Couchbase Server Setup Screen.
 +
-[#image_rq4_sgg_3w]
 image::setup-screen.png[,570]
 
 . Set up Couchbase Server.

@@ -31,12 +31,10 @@ Therefore, specify a value that can be supported by all nodes.
 +
 The default value is 60% of your total free RAM and is calculated to provide a RAM capacity for use by the operating system caching layer when accessing and using views.
 +
-[#image_ac2_2tf_x5]
 image::admin/picts/cluster-setup-01.png[,720,align=left]
 +
 For a new cluster, the following setup fields are displayed:
 
-[#ul_yqx_w5m_zv]
  ** RAM Available
  ** Services: Select one of the service types for the production environment; select one to three service types for the development environment.
  ** Data RAM Quota: 256 MB or more.
@@ -50,7 +48,6 @@ If, however, you are joining an existing cluster, click on the radio button [.ui
 +
 *Join a cluster now*
 +
-[#image_r3t_htm_zv]
 image::admin/picts/cluster-setup-01-join.png[,720,align=left]
 +
 If you are joining a cluster, the following setup fields will be displayed:
@@ -127,7 +124,6 @@ For more details about hostnames, see xref:hostnames.adoc[Using Hostnames].
 
 A screen appears where you can select the sample data buckets you want to install.
 
-[#image_f4x_rpy_dt]
 image::setup-02.png[,720,align=left]
 
 . Click the names of sample buckets to load to the Couchbase Server.
@@ -137,7 +133,6 @@ If you decide to install sample data, the installer creates one Couchbase bucket
 
 *Step 3: Create default bucket*
 
-[#image_st3_cqy_dt]
 image::setup-03.png[,720,align=left]
 
 For the default bucket, look also at the [.ui]*What's this?* pop-ups and configure the following:
@@ -167,7 +162,6 @@ Click [.ui]*Next*.
 
 *Step 4: Notifications*
 
-[#image_xnp_bry_dt]
 image::setup-04.png[,720,align=left]
 
 Update Notifications::
@@ -183,7 +177,6 @@ Product Registration:: Register your product with your information.
 [#setpass]
 *Step 5: Configure server*
 
-[#image_ox5_2sy_dt]
 image::setup-05.png[,720,align=left]
 
 To secure the server, you must create an administrative account and then use these credentials to join other servers and form a cluster.
@@ -195,12 +188,10 @@ To secure the server, you must create an administrative account and then use the
 
 The starting screen for the new Couchbase Server will appear.
 
-[#image_rhb_3sy_dt]
 image::setup-06.png[,720,align=left]
 
 Check the installation for example, whether you have properly installed the travel-sample application under [.ui]*Data buckets*.
 
-[#image_xpf_ksy_dt]
 image::setup-07.png[,720,align=left]
 
 [#initialize-cluster-cli]

@@ -1,4 +1,3 @@
-[#concept_rnt_zfk_np]
 = FROM clause
 :page-type: concept
 
@@ -385,7 +384,6 @@ SELECT projection-list FROM lhs-expression JOIN rhs-expression
 
 There are three important changes in the index scan syntax example above:
 
-[#ul_fky_g32_1v]
 * CREATE INDEX on the ON KEY expression [.param]`beer_brewery_id` to access beer documents using [.param]`brewery_id` (which are produced on the LHS).
 * The ON KEY [.param]`beer.brewery_id` FOR brewery.
 This enables N1QL to use the index [.param]`beer_brewery_id`.

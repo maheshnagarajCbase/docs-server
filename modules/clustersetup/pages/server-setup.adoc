@@ -1,4 +1,3 @@
-[#topic_sc2_crk_5s]
 = Cluster Operations
 
 [abstract]

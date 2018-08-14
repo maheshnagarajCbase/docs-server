@@ -1,4 +1,3 @@
-[#topic_a4q_vqn_vs]
 = Account Management Settings
 
 [abstract]

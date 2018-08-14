@@ -1,4 +1,3 @@
-[#reference_ggg_d45_ls]
 = node-init
 :page-type: reference
 

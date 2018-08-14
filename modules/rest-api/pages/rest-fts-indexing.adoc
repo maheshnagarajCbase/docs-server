@@ -1,4 +1,3 @@
-[#topic_hpd_2y4_1v]
 = Indexes
 
 == Index Definition

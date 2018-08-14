@@ -1,4 +1,3 @@
-[#topic_jzy_p5v_vv]
 = What's New in the Current Version?
 
 This section lists the Full Text Search features added in this release:

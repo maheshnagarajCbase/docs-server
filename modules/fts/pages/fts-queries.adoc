@@ -1,4 +1,3 @@
-[#topic_q2x_tl4_1v]
 = Queries
 
 *Queries Using the Web Console*
@@ -70,7 +69,6 @@ There are three types of queries: Numeric Range Facet, DateTime Range Facets, an
 For more information, see <<search-facets>>.
 The facets object contains the following fields:
 
-[#ul_bzz_p5z_bx]
 * total - the count of all results returned, regardless of which facet they are a part of.
 * count - the count of documents in a specific facet.
 * other - the count of results that don't fall into any defined facet.
@@ -117,7 +115,6 @@ Took:: Time taken to complete the query.
 The response headers can contain the following information:
 
 .Response Headers
-[#table_wcx_nw1_4v]
 |===
 | Code | Example | Valid Return Codes
 

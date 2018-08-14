@@ -1,4 +1,3 @@
-[#concept_uhg_2gk_np]
 = GROUP BY clause
 :page-type: concept
 

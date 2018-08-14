@@ -1,4 +1,3 @@
-[#topic_gbk_tyh_t5]
 = Release Notes
 
 Couchbase Server 4.5 leaps forward with simplified transitioning from RDBMS to NoSQL, advanced database performance and scale, and enhanced management and security controls on your data.
@@ -33,7 +32,7 @@ SELECT <field1>.<field2> FROM <bucket1>;
 This list covers some of the known problems with Couchbase Server 4.5.1.
 Please read this before reporting any new bugs, and watch for updates as new bugs are discovered.
 
-[#table_xtp_5qn_lx,cols="25,77"]
+[cols="25,77"]
 |===
 | Issue | Description
 
@@ -94,7 +93,7 @@ For more information, see xref:install:upgrade-matrix.adoc[Upgrade Matrix].
 *Fixed Issues*
 
 .Updated: October 18, 2016
-[#table_cc5_lvv_qx,cols="25,77"]
+[cols="25,77"]
 |===
 | Issue | Description
 
@@ -104,7 +103,7 @@ Get the Windows 10 Anniversary Edition Developer Preview build from the http://w
 |===
 
 .Released: October 04, 2016
-[#table_qhd_tsn_lx,cols="25,77"]
+[cols="25,77"]
 |===
 | Issue | Description
 
@@ -289,7 +288,7 @@ For the full list of issues fixed in release 4.5.1, check the following https://
 
 *N1QL Enhancements*
 
-[#table_dd3_ff4_lx,cols="25,77"]
+[cols="25,77"]
 |===
 | Issue | Description
 
@@ -385,7 +384,7 @@ After you restore the data into version 4.5, you can start using the `cbbackupmg
 * New network ports:
 +
 .New Network Ports in Couchbase Server 4.5
-[#table_gn4_rd1_cv,cols="1,2,1,1,1,1,1"]
+[cols="1,2,1,1,1,1,1"]
 |===
 | Port | Description | Node-to-node | Node-to-client | Cluster administration | XDCR v1 (CAPI) | XDCR v2 (XMEM)
 
@@ -403,7 +402,7 @@ After you restore the data into version 4.5, you can start using the `cbbackupmg
 This list covers some of the known problems with Couchbase Server 4.5.0.
 Please read this before reporting any new bugs, and watch for updates as new bugs are discovered.
 
-[#table_n1b_rv1_2t1,cols="25,77"]
+[cols="25,77"]
 |===
 | *Issue*
 | *Description*
@@ -517,7 +516,7 @@ Consider adjusting the ForestDB compaction settings to trigger more frequent com
 
 *Fixed Issues*
 
-[#table_n1b_rv1_2t2,cols="1,3"]
+[cols="1,3"]
 |===
 | *Issue*
 | *Description*
@@ -576,7 +575,7 @@ For the full list of issues, check the following https://issues.couchbase.com/is
 
 The following functionality is deprecated, will be deprecated or is unsupported.
 
-[#table_bl3_533_1v,cols="1,3"]
+[cols="1,3"]
 |===
 | Function | Description
 

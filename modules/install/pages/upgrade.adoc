@@ -1,4 +1,3 @@
-[#topic_g3h_r2q_fw]
 = Upgrading Couchbase Server
 
 [abstract]

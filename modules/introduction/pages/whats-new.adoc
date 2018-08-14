@@ -8,7 +8,6 @@ This page lists the new features and enhancements in the 4.5.x series of Couchba
 
 Couchbase Server version 4.5.1 includes several N1QL improvements in the following categories:
 
-[#ul_hpd_4pm_lx]
 * <<451-high-perf-data-access-query,Higher Performance Data Access and Query>>
 * <<451-transition-from-rdbms-nosql,Simplified Transitioning from RDBMS to NoSQL>>
 
@@ -86,7 +85,6 @@ For more information, see xref:n1ql:n1ql-language-reference/arrayfun.adoc#fn-arr
 
 Simplified Dynamic Object Construction:: N1QL simplifies dynamic object creation in the queries.
 
-[#ul_z12_cz5_lx]
 * When constructing objects in a N1QL query, the names of fields in the name-value pairs can be dynamically generated.
 Starting from release 4.5.1, both the names and values can be arbitrary expressions.
 If a name does not evaluate to a string, the result of the object construction is NULL.

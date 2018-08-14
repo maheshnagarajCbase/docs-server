@@ -1,4 +1,3 @@
-[#reference_llp_znv_sq]
 = bucket-create
 :page-type: reference
 

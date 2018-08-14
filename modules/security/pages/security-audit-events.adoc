@@ -1,4 +1,3 @@
-[#concept_h3h_sdm_gr]
 = Audit Events
 :page-type: concept
 

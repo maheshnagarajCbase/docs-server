@@ -14,12 +14,10 @@ http://packages.couchbase.com/clients/kafka/3.0.0/kafka-connect-couchbase-3.0.0.
 
 *What's new in Kafka Connector 3.0.0*
 
-[#ul_qfx_wq2_3y]
 * Kafka Connect - This release is based on http://docs.confluent.io/3.0.0/connect/intro.html[Kafka Connect^], a mechanism in Apache Kafka 0.9 and higher versions for scalably and reliably streaming data between Apache Kafka and other systems.
 +
 Here are some advantages for Ops teams:
 
-[#ul_ghy_s52_3y]
  ** Part of Kafka
  ** One service to manage with connector configuration handled internally.
  ** Unified connector control, monitoring, and metrics.
@@ -29,7 +27,6 @@ Here are some advantages for Ops teams:
 +
 Here are some advantages for application developers and ETL engineers:
 
-[#ul_mmf_bv2_3y]
  ** Configuration-only solution for copying large scale data to/from Kafka.
  ** Built for real-time ETL.
  ** Out of the box tools such as https://www.confluent.io/product/control-center/[Confluent Control Center^] dashboards can visualize the complete data pipeline.

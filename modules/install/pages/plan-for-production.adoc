@@ -1,4 +1,3 @@
-[#topic_tqm_rcx_fw]
 = Planning for Production
 
 [abstract]
@@ -10,7 +9,6 @@ Before you begin the actual installation, ensure that you go through the section
 
 For installation instructions on different platforms, see:
 
-[#ul_wv3_zbx_fw]
 * xref:install-intro.adoc[On-premises]
 * xref:getting-started-docker.adoc[Docker container]
 * xref:cloud-deployment.adoc[Virtualization platforms]

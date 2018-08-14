@@ -1,4 +1,3 @@
-[#topic_mfl_rmn_vs]
 = Change Bucket Settings
 
 [abstract]
@@ -11,12 +10,11 @@ To change the bucket settings using the Couchbase Web Console::
 . Under [.ui]*Data Buckets*, click the blue triangle preceding the bucket name.
 . Click [.ui]*Edit*.
 +
-[#image_wh4_mkk_3v]
 image::admin/picts/bucket-settings-edit.png[,720,align=left]
 +
 Once a bucket is created, you can update the following settings:
 +
-[#table_qhp_cvj_yx,cols="1,3"]
+[cols="1,3"]
 |===
 | Field | Description
 
@@ -52,7 +50,6 @@ IMPORTANT: Changing the I/O priority will invoke a bucket restart, resulting in 
 
 After the bucket creation, you cannot change the following settings:
 
-[#ul_xm5_xwj_yx]
 * Bucket Name - Once created, the bucket name cannot be changed.
 * Bucket Type - Once a `memcached` or `couchbase` bucket has been created, its type cannot be changed.
 * View index replicas - xref:indexes:mapreduce-view-replication.adoc[View index replicas] cannot be enabled/disabled once a bucket has been created.

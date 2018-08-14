@@ -1,4 +1,3 @@
-[#topic_wk1_5v3_t5]
 = Query Monitoring
 
 [abstract]
@@ -208,7 +207,6 @@ This information provides a general insight into the health and performance of t
 ====
 For Couchbase Server version 4.5, the following is true:
 
-[#ul_a3j_41q_j1b]
 * `completed_requests` lives completely in memory, and memory usage is about 1K per request, so even at 100k requests, memory consumption will be significantly lower than what N1QL uses to operate.
 * Adding every request to `completed_request` is likely to add only a few microseconds to the request duration, which are needed to assemble the entry.
 * The `completed_request` cache is fragmented across multiple buckets, so contention is not at issue.

@@ -1,4 +1,3 @@
-[#concept_npj_srf_2s]
 = USE INDEX clause
 :page-type: concept
 
