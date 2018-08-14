@@ -1,4 +1,3 @@
-[#topic_8_12]
 = String functions
 :page-type: concept
 

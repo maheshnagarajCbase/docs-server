@@ -1,4 +1,3 @@
-[#topic19310]
 = Upgrading Couchbase Server
 
 [abstract]

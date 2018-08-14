@@ -1,4 +1,3 @@
-[#rest-cluster-autofailover-enable]
 = Enabling and disabling auto-failover
 :page-type: reference
 

@@ -1,4 +1,3 @@
-[#topic_3_3]
 = Reserved words
 :page-type: concept
 

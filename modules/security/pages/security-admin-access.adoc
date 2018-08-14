@@ -1,4 +1,3 @@
-[#security-admin-access]
 = Secure administrative access
 :page-type: concept
 

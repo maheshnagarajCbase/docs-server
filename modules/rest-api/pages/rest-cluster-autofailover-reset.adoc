@@ -1,4 +1,3 @@
-[#rest-cluster-autofailover-reset]
 = Resetting auto-failover
 :page-type: reference
 

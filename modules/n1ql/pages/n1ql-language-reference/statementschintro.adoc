@@ -1,4 +1,3 @@
-[#topic_11]
 = Statements
 :page-type: concept
 

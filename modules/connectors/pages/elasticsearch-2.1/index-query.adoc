@@ -1,4 +1,3 @@
-[#topic2989]
 = Indexing and querying data
 
 The Couchbase Elasticsearch plug-in uses the cross data center replication (XDCR) feature in Couchbase Server.

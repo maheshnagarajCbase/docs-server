@@ -1,4 +1,3 @@
-[#couchbase-editions]
 = Couchbase Server editions
 
 [abstract]

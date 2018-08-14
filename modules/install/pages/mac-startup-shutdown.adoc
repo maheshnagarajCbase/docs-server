@@ -1,4 +1,3 @@
-[#topic2706]
 = Start-up and shutdown on Mac OS X
 
 [abstract]

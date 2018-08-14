@@ -1,4 +1,3 @@
-[#topic_10]
 = Boolean logic
 :page-type: concept
 

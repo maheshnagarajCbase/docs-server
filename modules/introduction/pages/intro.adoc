@@ -1,4 +1,3 @@
-[#couchbase-introduction]
 = Introduction
 :page-type: concept
 

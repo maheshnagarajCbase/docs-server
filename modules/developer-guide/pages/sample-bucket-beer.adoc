@@ -1,4 +1,3 @@
-[#topic5237]
 = Beer sample bucket
 
 [abstract]

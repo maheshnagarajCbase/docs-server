@@ -1,4 +1,3 @@
-[#rest-ddocs-get]
 = Getting design doc information
 :page-type: reference
 

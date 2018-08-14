@@ -1,4 +1,3 @@
-[#cbcli-servers]
 = server-info
 :page-type: reference
 

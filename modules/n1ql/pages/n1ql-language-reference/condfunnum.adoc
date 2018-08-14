@@ -1,4 +1,3 @@
-[#topic_8_5]
 = Conditional functions for numbers
 :page-type: concept
 

@@ -1,4 +1,3 @@
-[#rest-index-memory-quota]
 = Setting Index memory quota
 :page-type: reference
 

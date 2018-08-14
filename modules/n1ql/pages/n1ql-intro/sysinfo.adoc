@@ -1,4 +1,3 @@
-[#topic_2_4]
 = Getting system information
 :page-type: concept
 

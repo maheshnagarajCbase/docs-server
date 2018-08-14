@@ -1,4 +1,3 @@
-[#topic_8_2]
 = Array functions
 :page-type: concept
 

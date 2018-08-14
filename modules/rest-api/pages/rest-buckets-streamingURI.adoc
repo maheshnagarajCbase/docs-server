@@ -1,4 +1,3 @@
-[#rest-buckets-streamingURI]
 = Getting bucket streaming URI
 :page-type: reference
 

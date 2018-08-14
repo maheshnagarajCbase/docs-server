@@ -1,4 +1,3 @@
-[#rest-cluster-add-nodes]
 = Adding nodes to clusters
 :page-type: reference
 

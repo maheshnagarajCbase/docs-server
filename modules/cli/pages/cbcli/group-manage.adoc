@@ -1,4 +1,3 @@
-[#cbcli-rza]
 = group-manage
 :page-type: reference
 

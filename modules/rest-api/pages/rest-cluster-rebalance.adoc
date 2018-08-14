@@ -1,4 +1,3 @@
-[#rest-cluster-rebalance-nodes]
 = Rebalancing nodes
 :page-type: reference
 

@@ -1,4 +1,3 @@
-[#rest-cluster-removenode]
 = Removing nodes from clusters
 :page-type: reference
 

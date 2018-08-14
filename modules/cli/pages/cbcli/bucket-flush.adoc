@@ -1,4 +1,3 @@
-[#cbcli-bucket-flush]
 = bucket-flush
 :page-type: reference
 

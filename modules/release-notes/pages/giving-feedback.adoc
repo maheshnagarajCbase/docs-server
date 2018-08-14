@@ -1,4 +1,3 @@
-[#feedback]
 = Providing feedback
 :page-type: task
 

@@ -1,4 +1,3 @@
-[#rest-cluster-autofailover-settings]
 = Retrieving auto-failover settings
 :page-type: reference
 

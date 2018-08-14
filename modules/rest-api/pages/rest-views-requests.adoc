@@ -1,4 +1,3 @@
-[#rest-views-requests]
 = Limiting views requests
 :page-type: reference
 

@@ -1,4 +1,3 @@
-[#rest-ddocs-create]
 = Creating design documents
 :page-type: reference
 

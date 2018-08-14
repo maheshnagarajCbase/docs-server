@@ -1,4 +1,3 @@
-[#topic_3]
 = N1QL language structure
 :page-type: concept
 

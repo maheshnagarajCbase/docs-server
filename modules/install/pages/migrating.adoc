@@ -1,4 +1,3 @@
-[#topic9118]
 = Migrating to and from other databases
 
 [abstract]

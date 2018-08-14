@@ -1,4 +1,3 @@
-[#first-n1ql]
 = Running your first N1QL query
 :page-type: concept
 
