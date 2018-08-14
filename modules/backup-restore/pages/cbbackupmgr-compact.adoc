@@ -1,4 +1,3 @@
-[#cbbackupmgr-compact.1]
 = cbbackupmgr compact
 
 == Name

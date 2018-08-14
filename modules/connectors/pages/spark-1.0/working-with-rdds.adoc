@@ -1,4 +1,3 @@
-[#spark-working-with-rdds]
 = Working with RDDs
 :page-type: concept
 

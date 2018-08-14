@@ -1,4 +1,3 @@
-[#topic_8_8]
 = Meta and UUID Functions
 :page-type: concept
 

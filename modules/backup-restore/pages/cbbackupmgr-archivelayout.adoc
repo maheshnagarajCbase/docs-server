@@ -1,4 +1,3 @@
-[#cbbackupmgr-archivelayout.7]
 = Enterprise Backup Archive Layout
 
 [abstract]

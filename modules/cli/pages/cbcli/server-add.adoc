@@ -1,4 +1,3 @@
-[#cli-index]
 = server-add
 :page-type: reference
 

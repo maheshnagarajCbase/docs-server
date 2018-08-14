@@ -1,4 +1,3 @@
-[#elastic-release-notes]
 = Release Notes
 
 [abstract]

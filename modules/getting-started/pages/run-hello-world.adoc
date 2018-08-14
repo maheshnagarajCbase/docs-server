@@ -1,4 +1,3 @@
-[#runHelloWorld]
 = Run Hello World!
 
 [abstract]

@@ -1,4 +1,3 @@
-[#cbbackupmgr-config.1]
 = cbbackupmgr config
 
 [abstract]

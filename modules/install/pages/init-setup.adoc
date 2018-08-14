@@ -1,4 +1,3 @@
-[#topic12527]
 = Initialize the Cluster
 
 [abstract]

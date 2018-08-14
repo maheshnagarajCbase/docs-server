@@ -1,4 +1,3 @@
-[#topic3291]
 = Testing Couchbase Server
 
 [abstract]
