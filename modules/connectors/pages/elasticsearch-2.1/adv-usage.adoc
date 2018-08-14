@@ -1,4 +1,3 @@
-[#elastic-advanced]
 = Advanced Settings and Usage
 :page-type: concept
 

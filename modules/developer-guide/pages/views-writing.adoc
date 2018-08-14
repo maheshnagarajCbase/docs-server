@@ -1,4 +1,3 @@
-[#writing-views]
 = Writing views
 
 [abstract]

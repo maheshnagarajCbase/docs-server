@@ -1,4 +1,3 @@
-[#rest-cluster-join-nodes]
 = Joining nodes into clusters
 :page-type: reference
 

@@ -1,4 +1,3 @@
-[#topic2490]
 = Development and production views
 
 [abstract]

@@ -1,4 +1,3 @@
-[#n1ql-overview]
 = N1QL Reference
 :page-type: concept
 

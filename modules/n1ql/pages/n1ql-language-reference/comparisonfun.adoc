@@ -1,4 +1,3 @@
-[#topic_8_3]
 = Comparison functions
 :page-type: concept
 

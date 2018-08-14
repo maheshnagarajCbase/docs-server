@@ -1,4 +1,3 @@
-[#topic_8_1]
 = Aggregate functions
 :page-type: concept
 

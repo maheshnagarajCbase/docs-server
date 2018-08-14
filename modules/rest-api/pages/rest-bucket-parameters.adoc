@@ -1,4 +1,3 @@
-[#rest-bucket-change]
 = Changing bucket parameters
 :page-type: reference
 

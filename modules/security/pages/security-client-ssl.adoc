@@ -1,4 +1,3 @@
-[#security-client-ssl]
 = Secure Data Access
 :page-type: concept
 

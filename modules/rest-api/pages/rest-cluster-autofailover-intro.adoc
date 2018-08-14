@@ -1,4 +1,3 @@
-[#rest-cluster-autofailover]
 = Managing auto-failover
 :page-type: reference
 

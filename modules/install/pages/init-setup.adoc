@@ -1,4 +1,3 @@
-[#topic12527]
 = Initial Server Setup with UI
 
 [abstract]

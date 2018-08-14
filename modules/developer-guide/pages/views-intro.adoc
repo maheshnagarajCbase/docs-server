@@ -1,4 +1,3 @@
-[#topic2724]
 = Querying with MapReduce views
 
 [abstract]

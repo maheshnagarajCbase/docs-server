@@ -1,4 +1,3 @@
-[#travel-app]
 = Check out a Sample Web App
 :page-type: concept
 

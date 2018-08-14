@@ -1,4 +1,3 @@
-[#cbcli-intro]
 = couchbase-cli
 :page-type: reference
 

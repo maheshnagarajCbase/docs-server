@@ -1,4 +1,3 @@
-[#rest-buckets-summary]
 = Getting all bucket information
 :page-type: reference
 

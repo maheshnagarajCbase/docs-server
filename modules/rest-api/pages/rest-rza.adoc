@@ -1,4 +1,3 @@
-[#reference-rest-servergroups]
 = Server groups API
 :page-type: reference
 

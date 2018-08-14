@@ -1,4 +1,3 @@
-[#view-ops]
 = View operations
 
 [abstract]

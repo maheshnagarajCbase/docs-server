@@ -1,4 +1,3 @@
-[#rest-bucket-ejection]
 = Setting metadata ejection
 :page-type: reference
 

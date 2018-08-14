@@ -1,4 +1,3 @@
-[#rest-bucket-delete]
 = Deleting buckets
 :page-type: reference
 

@@ -1,4 +1,3 @@
-[#reference_rest_server]
 = Server nodes API
 :page-type: reference
 

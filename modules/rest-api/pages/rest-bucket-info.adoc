@@ -1,4 +1,3 @@
-[#rest-bucket-info]
 = Getting single bucket information
 :page-type: reference
 

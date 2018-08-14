@@ -1,4 +1,3 @@
-[#concept4021]
 = Handling temporary out of memory errors
 :page-type: concept
 

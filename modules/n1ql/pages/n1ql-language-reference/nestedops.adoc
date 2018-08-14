@@ -1,4 +1,3 @@
-[#topic_7_6]
 = Nested operators
 :page-type: concept
 

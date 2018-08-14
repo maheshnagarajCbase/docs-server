@@ -1,4 +1,3 @@
-[#rest-index-settings]
 = Managing Index parameters
 :page-type: reference
 

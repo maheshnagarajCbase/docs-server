@@ -1,4 +1,3 @@
-[#rest-bucket-flush]
 = Flushing buckets
 :page-type: reference
 

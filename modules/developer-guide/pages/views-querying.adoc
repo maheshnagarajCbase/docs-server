@@ -1,4 +1,3 @@
-[#query-views]
 = Querying views
 
 [abstract]

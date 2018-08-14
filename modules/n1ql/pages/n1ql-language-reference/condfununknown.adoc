@@ -1,4 +1,3 @@
-[#topic_8_4]
 = Conditional functions for unknowns
 :page-type: concept
 

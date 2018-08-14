@@ -1,4 +1,3 @@
-[#rest-dd0cs-delete]
 = Deleting design documents
 :page-type: reference
 

@@ -1,4 +1,3 @@
-[#rest-cluster-alerts]
 = Setting email notifications
 :page-type: reference
 

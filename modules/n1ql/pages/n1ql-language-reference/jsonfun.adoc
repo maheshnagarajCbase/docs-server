@@ -1,4 +1,3 @@
-[#topic_8_7]
 = JSON functions
 :page-type: concept
 

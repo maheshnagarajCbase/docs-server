@@ -1,4 +1,3 @@
-[#topic762]
 = Start-up and Shutdown on Linux
 
 [abstract]
