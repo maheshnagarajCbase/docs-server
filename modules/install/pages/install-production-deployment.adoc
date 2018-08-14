@@ -1,4 +1,3 @@
-[#concept_jgc_ddp_ts]
 = Sizing and Other Deployment Considerations
 :page-type: concept
 

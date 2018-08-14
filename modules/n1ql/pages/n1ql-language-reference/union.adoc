@@ -1,4 +1,3 @@
-[#concept_iy2_fgk_np]
 = UNION, INTERSECT, and EXCEPT
 :page-type: concept
 

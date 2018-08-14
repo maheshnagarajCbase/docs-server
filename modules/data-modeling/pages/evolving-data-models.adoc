@@ -1,4 +1,3 @@
-[#concept_eyp_kwt_dt]
 = Evolving Data Models
 :page-type: concept
 

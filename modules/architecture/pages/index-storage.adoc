@@ -1,7 +1,5 @@
-[#topic_ip2_cdf_p1b]
 = Global Secondary Index Storage
 
-[#section_dj1_3df_p1b]
 == Nitro
 
 Memory-Optimized Indexes use a totally in-memory storage engine designed for low-latency, high-throughput storage of indexes called Nitro.
@@ -10,7 +8,6 @@ Fast index scans of these datastructures are facilitated by skip lists, drastica
 
 Overlying the skiplist used to store the data is a powerful Multi Version Concurrency Control component designed to offer the following:
 
-[#ul_vhc_jdf_p1b]
 * *Immutable Snapshots*: Concurrent writers add or remove items into the skiplist simultaneously.
 A snapshot of the current items can be created to provide a point-in-time view of the skiplist.
 This is useful for providing repeatable stable scans.
@@ -32,7 +29,6 @@ The garbage collector is therefore efficient enough to keep up with high rates o
 The Nitro garbage collector is concurrent and scales linearly with the number of concurrent writers used by the system.
 
 .Nitro Architecture
-[#image_wvs_l2f_p1b]
 image::nitro.png[,30%]
 
 While Nitro is a memory-optimized storage engine, the index is also snapshotted to disk at regular intervals to allow the indexer to recover from a restart without needing to rebuild the entire index.

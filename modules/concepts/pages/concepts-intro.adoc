@@ -1,4 +1,3 @@
-[#concept_b5g_f5f_ps]
 = Overview
 :page-type: concept
 
@@ -9,7 +8,6 @@ Built with a strong emphasis on reliability, high availability, and simple manag
 
 Couchbase Server can be used as a
 
-[#ul_tqn_kj5_gv]
 * managed cache tier
 // add examples
 * a key-value store

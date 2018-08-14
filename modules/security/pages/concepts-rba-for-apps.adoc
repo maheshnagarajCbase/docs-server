@@ -646,12 +646,10 @@ For an account of limitations on CURL, see xref:n1ql:n1ql-language-reference/cur
 ^| image:introduction/images/no.png[]
 |===
 
-[#section_lkb_cnq_cbb]
 == System Keyspaces (Tables)
 
 In Couchbase Server 5.0, three new system keyspaces have been added:
 
-[#ul_dhf_qff_dbb]
 * system:applicable_roles
 * system:my_user_info
 * system:user_info
@@ -660,11 +658,10 @@ Along with these three keyspaces, meta data related to roles and user access has
 
 This brings the total number of system keyspaces up to 12:
 
-[#table_kzd_znt_51b,cols="1,3"]
+[cols="1,3"]
 |===
 | System Catalogs
 a|
-[#ul_kfc_wpt_51b]
 * xref:n1ql:n1ql-intro/sysinfo.adoc#querying-datastores[system:datastores]
 * xref:n1ql:n1ql-intro/sysinfo.adoc#querying-namespaces[system:namespaces]
 * xref:n1ql:n1ql-intro/sysinfo.adoc#querying-keyspaces[system:keyspaces]
@@ -672,7 +669,6 @@ a|
 
 | Monitoring Catalogs
 a|
-[#ul_rrk_bqt_51b]
 * xref:n1ql:n1ql-intro/sysinfo.adoc#querying-indexes[system:indexes]
 * <<topic_nvs_ghr_dz/sys-prepared,system:prepareds>>
 * <<topic_nvs_ghr_dz/sys-completed-req,system:completed_requests>>
@@ -681,7 +677,6 @@ a|
 
 | Security Catalogs
 a|
-[#ul_itg_rpt_51b]
 * <<topic_nvs_ghr_dz/system:user-info,system:user_info>>
 * system:nodes
 * <<topic_nvs_ghr_dz/system:applicable-roles,system:applicable_roles>>
@@ -691,5 +686,4 @@ a|
 
 All of the system keyspaces support SELECT operations and are divided into the below security levels:
 
-[#image_kyx_jzx_cbb]
 image::pict/concepts-rba-for-apps_table_SELECT.png[]

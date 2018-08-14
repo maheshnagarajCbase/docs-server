@@ -5,7 +5,6 @@
 Couchbase Web Console is supported on Mozilla Firefox, Apple Safari, Google Chrome, Microsoft Internet Explorer, and Microsoft Edge.
 
 .Supported Browsers for the Couchbase Web Console
-[#table_ck5_xfb_4z]
 |===
 | *Browser* | Operating System | *Version**
 

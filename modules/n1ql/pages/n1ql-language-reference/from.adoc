@@ -1,4 +1,3 @@
-[#topic_rnt_zfk_np]
 = FROM clause
 
 [abstract]
@@ -6,7 +5,6 @@ The `FROM` clause defines the keyspaces, input documents, or objects for the que
 
 _(Introduced in Couchbase Server 1.0)_
 
-[#section_afb_jnp_2cb]
 == Purpose
 
 In a `SELECT` query or subquery, the `FROM` clause defines the keyspaces and the source of input documents or objects for the query.
@@ -15,13 +13,11 @@ The first keyspace is called the primary keyspace and is an optional clause for 
 
 If the `FROM` clause is omitted, the input for the query is a single empty object that allows you to perform calculations with the `SELECT` statement.
 
-[#section_hgx_knp_2cb]
 == Prerequisites
 
 For you to select data from a document or keyspace, you must have the [.param]`query_select` privilege on the document or keyspace.
 For more details about user roles, see xref:security:security-authorization.adoc#authorization[Authorization].
 
-[#section_fwj_nnp_2cb]
 == Syntax
 
 ----
@@ -31,7 +27,6 @@ FROM from-keyspace [ [ AS ] alias1 ] [ USE KEYS use-clause ]
                     | from-term ( join-clause | nest-clause | unnest-clause )
 ----
 
-[#image_uy5_kzt_pz]
 image::n1ql-language-reference/images/from-term.png[]
 
 NOTE: Couchbase Server version 4.x supports only keyspace identifier or a subquery in the `from-term`, but not expressions.
@@ -184,7 +179,6 @@ Getting the input contents `SELECT *` produces the following result:
 [ { } ]
 ----
 
-[#section_yp1_dpf_bcb]
 == Omitted FROM Clause
 
 If the `FROM` clause is omitted, the data source is equivalent to an array containing a single empty object.
@@ -401,7 +395,6 @@ This results in:
 Couchbase Server version 4.6.2 adds support for generic xref:n1ql-language-reference/index.adoc#n1ql-lang-ref[expressions] in the `from-term`.
 This is a very powerful functionality as it enables usage of various N1QL functions, operators, path expressions, language constructs on constant expressions, variables, and subqueries.
 
-[#ul_jwy_fyx_mz]
 * When the `from-term` is an expression, `USE KEYS` or `USE INDEX` clauses are not allowed.
 * When using a `JOIN` clause, `NEST` clause, or `UNNEST` clause, the left-side keyspace can be an expression or subquery, but the right-side keyspace must be a keyspace identifier.
 *Independent Constant Expression*::
@@ -968,7 +961,6 @@ SELECT projection-list FROM lhs-expression
 
 There are three important changes in the index scan syntax example above:
 
-[#ul_fky_g32_1v]
 * `CREATE INDEX` on the `ON KEY` expression `route.airlineid` to access `route` documents using `airlineid` (which are produced on the LHS).
 * The `ON KEY route.airlineid FOR airline` enables N1QL to use the index `route.airlineid`.
 * Create any optional index such as `route.sourceairport` that can be used on route (LHS).
@@ -1251,7 +1243,6 @@ This means that for each result object produced, both the left and right source 
 The right-hand side result of `NEST` is always an array or `MISSING`.
 If there is no matching right source object, then the right source object is as follows:
 +
-[#table_kbj_2dr_ccb]
 |===
 | If the `ON KEYS` expression evaluates to | Then the right-side value is
 

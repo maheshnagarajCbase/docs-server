@@ -13,12 +13,10 @@ The [.ui]*Logs* tab displays available logs by the Event, Module Code, Server No
 
 == Collect Logs using the UI
 
-[#image_dmw_wmv_cz]
 image::ui-log-collect-info.png[,570]
 
 To collect logs using the Web Console:
 
-[#ol_tg1_2mv_cz]
 . From the [.ui]*Couchbase Web Console > Logs >* select the [.ui]*Collect Information* tab.
 . Select [.ui]*All nodes* or [.ui]*Selected Nodes* option from where you want to collect logs and diagnostic information.
 If you choose [.ui]*Selected Nodes*, select the appropriate check boxes of the nodes in a cluster.
@@ -223,7 +221,6 @@ curl -X POST -u adminName:adminPassword HOST:PORT/diag/eval \
 
 where,
 
-[#ul_end_pyp_cz]
 * `log_component` - The default log level (except `couchdb`) is `debug`; for example `ns_server`.
 The available loggers are `ns_server`, `couchdb`, `user`, `Menelaus`, `ns_doctor`, `stats`, `rebalance`, `cluster`, views, `mapreduce_errors` , xdcr and `error_logger`.
 * `logging_level` - The available log levels are `debug`, `info`, `warning`, and `error`.

@@ -1,4 +1,3 @@
-[#topic_uck_pmn_vs]
 = Flush a Bucket
 
 [abstract]

@@ -1,4 +1,3 @@
-[#concept_lzt_qr2_xs]
 = vBuckets and vBucket Maps: Bucket Partitions
 :page-type: concept
 
@@ -23,7 +22,6 @@ Consider a scenario where a cluster contains three servers.
 The following diagram shows how the Key to Server mapping (vBucket mapping) works when a client looks up the value of KEY using the GET operation.
 
 .vBucket mapping using the GET operation
-[#fig_ks5_dsm_xs]
 image::vbucket-partition-1.png[,600]
 
 . By hashing the key, the client calculates the vBucket which owns KEY.
@@ -37,7 +35,6 @@ The updated map is then sent to all the cluster participants including other nod
 The following diagram shows the vBucket mapping for the updated cluster containing four nodes.
 
 .vBucket mapping using the GET operation
-[#fig_olr_jwm_xs]
 image::vbucket-partitions-2.png[,600]
 
 When a client looks up the value of KEY using the GET operation in the updated cluster, the hashing algorithm still resolves to vBucket 8 (vB8).

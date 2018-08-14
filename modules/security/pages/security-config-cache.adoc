@@ -1,4 +1,3 @@
-[#topic_pws_syg_tq]
 = Configuration Cache-File
 
 [abstract]

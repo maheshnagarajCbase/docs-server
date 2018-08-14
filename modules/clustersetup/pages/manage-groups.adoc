@@ -24,7 +24,6 @@ Once the information is entered successfully, a new group is added in the [.ui]*
 
 To edit a server group name using the Web Console:
 
-[#ol_ef4_tlf_zz]
 . From the [.ui]*Couchbase Web Console > Servers > Groups* page, select the group that you want to edit.
 . Click [.ui]*edit name* to change the group name.
 . In the [.ui]*Edit Group* window, click [.ui]*Rename*.
@@ -37,7 +36,6 @@ Server groups are deleted by removing all nodes from the server group and then d
 
 To delete a server group using the Web Console:
 
-[#ol_uqn_clf_zz]
 . From the [.ui]*Couchbase Web Console > Servers > Groups* page, select the group that you want to delete.
 . Click [.ui]*delete group* to delete the group.
 . In the [.ui]*Confirm Delete Group* window, click [.ui]*Delete Group*.

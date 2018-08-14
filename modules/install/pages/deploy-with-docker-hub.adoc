@@ -1,4 +1,3 @@
-[#topic_lbj_vt2_3w]
 = Deployment with Docker Hub
 
 [abstract]

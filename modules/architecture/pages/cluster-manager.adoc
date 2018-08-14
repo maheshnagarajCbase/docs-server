@@ -1,4 +1,3 @@
-[#concept_ydh_lmj_vs]
 = Cluster Manager
 :page-type: concept
 
@@ -22,7 +21,6 @@ The Cluster Manager is responsible for the following operations:
  ** Authentication of connections to the cluster
 
 .Cluster Manager Architecture
-[#fig_qd5_4wj_ws]
 image::cluster-manager-internals.png[,600]
 
 The Cluster Manager consists of the following modules to perform the tasks above:
@@ -55,7 +53,6 @@ When there are no more vBuckets assigned to a node, the node is removed from the
 When adding or removing nodes from the indexing and query services, no data is moved and so their membership is simply added or removed from the cluster map.
 The client SDKs automatically begin load balancing across those services using the new cluster map.
 
-[#section_sv4_jgz_pz]
 == Node Failure Detection
 
 Each node within a Couchbase Server cluster communicates with one another via a heartbeating mechanism.
@@ -79,7 +76,6 @@ A node is only considered for automatic failover if every other node reports tha
 
 Currently the following services are monitored:
 
-[#ul_kqm_kgz_pz]
 * *Cluster Manager* - The cluster management process' health is assessed by monitoring the basic heartbeating that the cluster manager performs.
 If the cluster manager is not sending out its basic heartbeats to other nodes then it is considered unhealthy.
 * *Data Service* - The health of the Data service is monitored by inspecting the xref:high-availability-replication-architecture.adoc[DCP traffic] coming out of the node.

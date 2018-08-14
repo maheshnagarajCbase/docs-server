@@ -1,11 +1,10 @@
-[#topic_ezc_yyv_2bb]
 = Couchbase Server Installation Home
 
 There are multiple ways to install and get started with Couchbase Server.
 This page summarizes the available options.
 
 .Options to Get Started with Couchbase
-[%header#table_tht_sm5_gbb]
+[%header]
 |===
 ^| image:couchbase-logo.jpg[,20%,align=center] +
 Non-cloud On-Premises ^| image:couchbase-in-containers.jpg[,30%,align=center] +
@@ -17,15 +16,12 @@ Public Cloud
 | Deploy and manage Couchbase in a public cloud such as Amazon Web Services(AWS), Microsoft Azure, or Google Cloud Platform.
 
 a|
-[#ul_apx_4pp_qbb]
 * xref:plan-for-production.adoc[Software, Hardware, and Network Requirements]
 * xref:install-production-deployment.adoc[Sizing and Other Deployment Considerations]
 * xref:install-intro.adoc[Installing Couchbase Server]
 a|
-[#ul_wss_ypp_qbb]
 * xref:best-practices-vm.adoc[Deployment Considerations for Virtualized or Containerized Environments]
 * xref:running-couchbase-in-containers.adoc#run-couchbase-in-containers[Running Couchbase Server in Containers]
 a|
-[#ul_by5_hrp_qbb]
-* xref:cloud:couchbase-cloud-deployment.adoc#topic_a1v_5wg_5bb[Deploying Couchbase in the Cloud]
+* xref:cloud:couchbase-cloud-deployment.adoc[Deploying Couchbase in the Cloud]
 |===

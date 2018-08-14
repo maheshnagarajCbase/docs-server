@@ -9,7 +9,6 @@ The federated queries can leverage full querying capabilities of N1QL, including
 The `CURL()` function can be used in various N1QL expressions and in various clauses of the DML statements such as projection, WHERE predicates, FROM data source, and so on.
 For example, you can use the CURL function to integrate with Couchbase FTS and run fuzzy text searches in N1QL queries, or INSERT-SELECT statement to import external data into Couchbase Server.
 
-[#section_vm2_vcw_1z]
 == Syntax
 
 `CURL(url, [options])`
@@ -53,7 +52,6 @@ a|
 Specify CA signed certificate file name.
 Certificates should be stored on the local machine, on each query node within a cluster.
 
-[#ul_bjy_wvp_xz]
 * To store certificates, access [.path]_/Couchbase/var/lib/couchbase/n1qlcerts_.
 This is not visible to the user.
 * The file name cannot contain a path.
@@ -172,7 +170,6 @@ For more details on creating the whitelist and the structure of the whitelist fi
 
 The following security measures help control risks when using the `CURL()` function:
 
-[#ul_xmc_dl4_vz]
 * Enable the `CURL()` function only for the Full Administrator role.
 * For all other users, the RBAC role QUERY_EXTERNAL_ACCESS is required to run the `CURL()` function.
 Only the Full Administrator can assign the QUERY_EXTERNAL_ACCESS role to other users.
@@ -206,7 +203,7 @@ The CURL() function can access URLs that satisfy a prefix match, which means onl
 The whitelist file is specified as a JSON object with the fields described in the following table.
 
 .Structure of Whitelist for CURL()
-[#table_mtx_zrz_31b,cols="1,1,4,1"]
+[cols="1,1,4,1"]
 |===
 | Field | Type | Description | Default Value
 
@@ -242,7 +239,6 @@ If both [.param]`allowed_urls` and [.param]`disallowed_urls` fields are populate
 
 The following tables lists the `curl_whitelist.json` JSON object for different scenarios and CURL whitelist is enabled and
 
-[#table_wwm_hr2_n1b]
 |===
 | `curl_whitelist.json` | Example
 
@@ -315,7 +311,7 @@ If both [.param]`allowed_urls` and [.param]`disallowed_urls` fields are populate
 |===
 
 .CURL Whitelisting Errors
-[#table_p5n_tm2_n1b,cols="101,100"]
+[cols="101,100"]
 |===
 | Error Condition | Error Message
 
@@ -335,12 +331,10 @@ File [.path]_curl_whitelist.json_ contains invalid JSON.
 Contents have to be a JSON object.
 |===
 
-[#section_sjr_yk4_vz]
 == Design Considerations
 
 Here are some of the design considerations to keep in mind when using CURL:
 
-[#ul_kwk_vn4_vz]
 * The URL needs to point to a JSON endpoint.
 The redirection of URL is not allowed.
 * Only HTTP and HTTPS protocols are supported.
@@ -363,7 +357,6 @@ In the second argument, the string concatenation operator (||) cannot be evaluat
 
 * When using CURL whitelisting, the
 
-[#section_l3z_kdw_1z]
 == Examples
 
 The following examples are using CURL in the query projection list.
@@ -559,7 +552,6 @@ Results:
 *Example 3:* This N1QL query shows how to JOIN two buckets on different Couchbase clusters.
 It is same as explained in the xref:n1ql-language-reference/selectintro.adoc[JOIN Clause] example, but with the left and right side buckets for the JOIN are in two different Couchbase clusters.
 
-[#ul_cvg_fks_bz]
 * The left side bucket `route` is the `pass:c[`travel-sample`]` route documents from cluster running on `hostname`.
 If you don’t have a second cluster running, you should substitute the `hostname` with 127.0.0.1 or the IP-address of the local cluster.
 * The right side bucket `airline` is the `pass:c[`travel-sample`]` airline documents in the local cluster.

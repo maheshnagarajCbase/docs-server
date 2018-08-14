@@ -1,4 +1,3 @@
-[#concept_gfm_j5f_ps]
 = Architecture Overview
 :page-type: concept
 
@@ -13,7 +12,6 @@ The applications connect to a Couchbase Server cluster to perform read and write
 To understand the Couchbase Server’s architecture, it is important to understand both the core components of the system and the behavior of core run time capabilities.
 
 .Nodes, services, and cluster
-[#fig_bpd_dpn_vs]
 image::server-cluster-single-node-type.png[,600,align=left]
 
 The following are the core runtime systems within Couchbase Server:

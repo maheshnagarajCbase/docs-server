@@ -27,7 +27,6 @@ Couchbase Server 5.0 delivers the first production release of the Full Text Sear
 This includes the ability to index Couchbase documents and query them rapidly using a variety of indexing methods, text analyzers, and languages - without leaving the Couchbase data platform.
 Since the last Developer Preview, we’ve improved performance and added various new features including:
 
-[#ul_w2x_lbd_wz]
 * Full SDK support
 * Wide range of query types - term match, fuzzy search, date and numeric range query
 * Preview of a new geospatial and term range query
@@ -79,10 +78,8 @@ For example, it would be possible to use the index to efficiently find all expir
 [[perf-improvement]]*N1QL Performance Improvements*::
 In Couchbase Server 5.0, N1QL and GSI Indexes together enable many performance optimizations.
 For more details, see xref:performance:index_pushdowns.adoc#index_pushdowns[Index Pushdown Optimizations].
-[#ul_php_pzk_wz]
 * *Complex Predicate Pushdown*: Supports efficient and exact pushdown of complex AND/OR predicates to index.
 This helps in:
-[#ul_qhp_pzk_wz]
  ** avoiding spurious results from Indexer in certain queries where predicates have range scans on prefixing index-keys.
  ** efficiently using multiple indexes for different conditions of an OR predicate etc.
 * *Index Projection*: In the version 5.0, N1QL adds support to request only the required information from Index, and thus avoid any unnecessary processing.
@@ -149,7 +146,6 @@ This version delivers the first production release of the high performant data t
 For more information, see xref:tools:cbimport.adoc[cbimport] and xref:tools:cbexport.adoc[cbexport].
 
 *Query Workbench Enhancements*::
-[#ul_n1f_npd_wz]
 * *Visual Query Plan*
 +
 The Query Workbench now has an advanced feature that is visual query plan.
@@ -182,7 +178,6 @@ To build applications against the latest features of Couchbase Server, you shoul
 
 The latest SDK update supports many new critical features including:
 
-[#ul_xf2_g2d_wz]
 * Role-based access control
 * Querying the new Full Text Search (FTS) Service
 * Querying the Analytics Service
@@ -198,7 +193,6 @@ First stable release of 2.1.x series brings various improvements in the followin
 +
 *Spark Core*
 
-[#ul_p4t_k2d_wz]
 * Support for Apache Spark 2.1.x
 * Updated the Couchbase Java SDK to 2.4.2
 * Updated dcp-client to 0.8.0
@@ -206,14 +200,12 @@ First stable release of 2.1.x series brings various improvements in the followin
 +
 *Spark SQL*
 
-[#ul_q4t_k2d_wz]
 * Various fixes for custom nested schemas
 * Added `config` option to also store the document ID in the document instead of removing it proactively
 
 +
 *Spark Streaming*
 
-[#ul_r4t_k2d_wz]
 * Internals reworked for Structured Streaming, Adaptations for dcp-client 0.8.0
 
 +
