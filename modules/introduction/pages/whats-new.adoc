@@ -15,7 +15,7 @@ It also supports a wide ecosystem of big data and integration connectors.
 Building on the Role Based Access Control (RBAC) security model introduced in version 4.5 for Administrators, Couchbase Server 5.0 introduces RBAC for applications.
 This allows you to control, at both broad and granular levels, what administrators, end-users, and application services can do.
 By using RBAC, you can closely align the roles you assign users and administrators to the actual roles they hold within your organization, so that they have access to just the information they need, and therefore meet compliance requirements.
-For more information, see xref:security:security-authorization.adoc#authorization[RBAC].
+For more information, see xref:security:security-authorization.adoc[RBAC].
 
 [#query-index-search]
 == Powerful Querying, Indexing, and Search
@@ -47,12 +47,12 @@ Adaptive Indexes are special type of array indexes that can index all or a set o
 Unlike composite GSI indexes, such an index is generic in nature.
 Adaptive Indexes can efficiently lookup any of the index-key values without restrictions such as prefix index-key ordering.
 This enables efficient ad-hoc search queries that can use WHERE clause predicates on arbitrary fields without requiring to create multiple composite indexes or different combinations of index keys.
-For more details and examples, refer to the xref:n1ql:n1ql-language-reference/adaptive-indexing.adoc#untitled1[Adaptive Index] section.
+For more details and examples, refer to the xref:n1ql:n1ql-language-reference/adaptive-indexing.adoc[Adaptive Index] section.
 
 *RBAC for N1QL Statements*::
 N1QL adds support for using the Role Based Access Control (RBAC) feature.
 Statement level roles are added for executing various N1QL statements such as SELECT, UPDATE, INSERT, and to access system keyspaces.
-For more information, see xref:security:security-authorization.adoc#authorization[RBAC].
+For more information, see xref:security:security-authorization.adoc[RBAC].
 
 *External Data Access & Federated Queries using CURL*::
 Couchbase Server 5.0 adds a new N1QL function named as CURL() function, which implements a subset of https://en.wikipedia.org/wiki/CURL[cURL^] functionality and enables N1QL queries to interact and integrate with external JSON data sources available over HTTP/REST.
@@ -217,4 +217,4 @@ Code will continue to change until it becomes stable for production.
 
 *Elasticsearch Plug-in 2.2*::
 The latest updates include support for Elasticsearch including support for ES 2.4 and 5.3 as well as fixed multiple issues.
-Refer to the xref:connectors:elasticsearch/overview.adoc#topic1393[documentation] or follow installation and https://github.com/couchbaselabs/elasticsearch-transport-couchbase/blob/master/README.md[configuration walkthrough^].
+Refer to the xref:connectors:elasticsearch/overview.adoc[documentation] or follow installation and https://github.com/couchbaselabs/elasticsearch-transport-couchbase/blob/master/README.md[configuration walkthrough^].

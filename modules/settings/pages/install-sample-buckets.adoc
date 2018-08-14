@@ -10,7 +10,7 @@ Full Administrators and Cluster Administrators can install sample buckets.
 
 The sample buckets are located in the Couchbase installation directory as .zip files as well.
 On Linux, the default location would be [.path]_/opt/couchbase/samples_.
-The sample bucket Zip files can be loaded into the cluster by using the xref:cli:cbdocloader-tool.adoc#cbdocloader_tool[cbdocloader]tool.
+The sample bucket Zip files can be loaded into the cluster by using the xref:cli:cbdocloader-tool.adoc[cbdocloader]tool.
 Example:
 
 ----
