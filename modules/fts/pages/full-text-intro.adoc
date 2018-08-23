@@ -1,0 +1,39 @@
+= Full Text Search: Fundamentals
+
+[abstract]
+_Full Text Search_ (FTS) lets you create, manage, and query specially purposed _indexes_, defined on JSON documents within a Couchbase bucket.
+
+[#features-of-full-text-search]
+== Features of Full Text Search
+
+_Full Text Search_ provides extensive capabilities for natural-language querying.
+These include:
+
+* _Language-aware_ searching; allowing users to search for, say, the word `beauties`, and additionally obtain results for `beauty` and `beautiful`.
+* _Scoring_ of results, according to relevancy; allowing users to obtain result-sets that only contain documents awarded the highest scores.
+This keeps result-sets manageably small, even when the total number of documents returned is extremely large.
+* _Fast indexes_, which support a wide range of possible text-searches.
+
+Full Text Search is powered by http://www.blevesearch.com/[Bleve^], an open source search and indexing library written in _Go_.
+Full Text Search uses Bleve for the indexing of documents, and also makes available Bleve’s extensive range of _query types_.
+These include:
+
+* _Match_, _Match Phrase_, _Doc ID_, and _Prefix_ queries
+* _Conjunction_, _Disjunction_, and _Boolean field_ queries
+* _Numeric Range_ and _Date Range_ queries
+* _Geospatial_ queries
+* _Query String_ queries, which employ a special syntax to express the details of each query (see xref:fts-query-types.adoc#query-string-query-syntax[Query String Query] for information)
+
+Full Text Search includes pre-built _text analyzers_ for the following languages: Arabic, CJK characters (Chinese, Japanese, and Korean), English, French, Hindi, Italian, Kurdish, Persian, and Portuguese.
+Additional languages have been added to Couchbase Server 5.5.
+
+[#whats-new-in-this-release]
+== Recent Feature-Additions
+
+The following features have recently been added:
+
+== Authorization for Full Text Search
+
+To access Full Text Search, users require appropriate _roles_.
+The role *FTS Admin* must therefore be assigned to those who intend to create indexes; and the role *FTS Searcher* to those who intend to perform searches.
+For information on creating users and assigning roles, see xref:security:security-authorization.adoc[Authorization].

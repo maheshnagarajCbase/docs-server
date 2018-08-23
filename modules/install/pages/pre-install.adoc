@@ -1,0 +1,36 @@
+= System Resource Requirements
+
+[abstract]
+Although resource requirements will largely depend on the size and resource demands of your Couchbase deployment, there are some minimum and recommended specifications that you should follow.
+
+[cols="100,180,187"]
+|===
+| | Minimum Specifications | Recommended Specifications
+
+| *CPU*
+| 2 GHz dual core x86_64
+| 3 GHz quad core x86_64
+
+3 GHz six core x86_64 when using Cross Datacenter Replication (XDCR) and Views
+
+| *RAM*
+| 4 GB (physical)
+| 16 GB (physical)
+
+| *Storage*
+a|
+Block-based (HDD, SSD, EBS, iSCSI)
+
+NOTE: Network file systems such as CIFS and NFS are not supported.
+a|
+Block-based (HDD, SSD, EBS, iSCSI)
+
+NOTE: Network file systems such as CIFS and NFS are not supported.
+|===
+
+TIP: You can reduce the CPU and RAM resources below the minimum requirements for development and testing purposes.
+Resources can be as low as 1GB of free RAM beyond operating system requirements, and a single CPU core.
+However, you must use at least the minimum system requirements for production.
+
+The recommended specifications do not take into account your intended workload.
+You should follow the sizing guidelines detailed in xref:sizing-general.adoc[Sizing Guidelines] when deciding on machine specifications to run Couchbase Server.

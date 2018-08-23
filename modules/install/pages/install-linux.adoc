@@ -1,0 +1,21 @@
+= Installing on Linux
+:page-topic-type: concept
+
+[abstract]
+Couchbase Server runs on several Linux systems: Red Hat, CentOS, Ubuntu, Debian, SuSE Enterprise, and Oracle Enterprise.
+
+You can download Couchbase Server for your OS directly from https://www.couchbase.com/downloads[^].
+
+Links to the distribution-specific installation instructions for Linux can be found below:
+
+* xref:rhel-suse-install-intro.adoc[Red Hat Enterprise Linux and CentOS]
+* xref:ubuntu-debian-install.adoc[Ubuntu and Debian]
+* xref:install_suse.adoc[SUSE Enterprise Linux]
+* xref:install-oracle.adoc[Oracle Enterprise Linux]
+
+For information on installing Couchbase Server on IPv6 systems, see xref:ipv6-setup.adoc[IP Version 6: Set-Up Procedures].
+
+IMPORTANT: RHEL6 and other newer Linux distributions are known to have Transparent Huge Pages (THP) feature enabled by default.
+THP can cause issues in database software, including Couchbase Server.
+THP can cause nodes to lose cluster heartbeats, resulting in erroneous automatic failovers.
+xref:thp-disable.adoc[Disabling THP] prior to installing Couchbase Server is strongly encouraged.

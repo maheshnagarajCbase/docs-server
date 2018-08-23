@@ -1,0 +1,58 @@
+= OFFSET clause
+
+[abstract]
+The `OFFSET` clause specifies the number of resultset objects to skip in a `SELECT` query.
+
+_(Introduced in Couchbase Server 4.0)_
+
+== Purpose
+
+When you want the resultset to skip over the first few resulting objects, use the `OFFSET` clause to specify that number of objects to ignore.
+
+The LIMIT and OFFSET clauses are evaluated after the ORDER BY clause.
+
+If a `LIMIT` clause is also present, the `OFFSET` is applied prior to the `LIMIT`; that is, the specified number of objects is omitted from the result set before enforcing a specified `LIMIT`.
+
+== Syntax
+
+----
+OFFSET expr
+----
+
+image::n1ql-language-reference/images/offset-clause.png[]
+
+== Arguments
+
+expr:: Integer or an expression that evaluates to an integer which is non-negative.
+
+== Examples
+
+*Example 1: List 4 airport cities after skipping the first 200.*
+
+----
+SELECT DISTINCT city
+FROM `travel-sample`
+WHERE type = "airport"
+ORDER BY city
+LIMIT 4
+OFFSET 200;
+----
+
+Results:
+
+----
+[
+  {
+    "city": "Brownsville"
+  },
+  {
+    "city": "Brownwood"
+  },
+  {
+    "city": "Brunswick"
+  },
+  {
+    "city": "Bryan"
+  }
+]
+----

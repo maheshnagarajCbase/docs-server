@@ -1,0 +1,93 @@
+= LIMIT clause
+
+[abstract]
+The `LIMIT` clause specifies the maximum number of documents to be returned in a resultset by a `SELECT` statement.
+
+_(Introduced in Couchbase Server 4.0)_
+
+== Purpose
+
+When you don't need the entire resultset, use the `LIMIT` clause to specify the maximum number of documents to be returned in a resultset by a `SELECT` query.
+
+The LIMIT and OFFSET clauses are evaluated after the ORDER BY clause.
+
+A negative value is the same as `LIMIT 0`.
+
+NOTE: Starting from version 4.5, the `LIMIT` clause in INSERT, UPDATE, and DELETE statements is no longer a hint.
+It indicates that the actual number of mutations will be less than or equal to the specified `LIMIT`.
+
+== Syntax
+
+----
+LIMIT expr
+----
+
+image::n1ql-language-reference/images/limit-clause.png[]
+
+== Arguments
+
+expr:: Integer or an expression that evaluates to an integer representing the number of resulting documents.
+
+== Examples
+
+*Example 1: Get only 2 documents of hotels with an empty room.*
+
+----
+SELECT name, address, city, country, url
+FROM `travel-sample`
+WHERE type="hotel"
+  AND vacancy = true
+LIMIT 2;
+----
+
+Result:
+
+----
+[
+  {
+    "address": "Capstone Road, ME7 3JE",
+    "city": "Medway",
+    "country": "United Kingdom",
+    "name": "Medway Youth Hostel",
+    "url": "http://www.yha.org.uk"
+  },
+  {
+    "address": "6 rue aux Juifs",
+    "city": "Giverny",
+    "country": "France",
+    "name": "The Robins",
+    "url": "http://givernyguesthouse.com/robin.htm"
+  }
+]
+----
+
+*Example 2: Set the limit of Example 1 based on an equation.*
+
+----
+SELECT name, address, city, country, url
+FROM `travel-sample`
+WHERE type="hotel"
+  AND vacancy = true
+LIMIT (20/10);
+----
+
+Result:
+
+----
+[
+  {
+    "address": "Capstone Road, ME7 3JE",
+    "city": "Medway",
+    "country": "United Kingdom",
+    "name": "Medway Youth Hostel",
+    "url": "http://www.yha.org.uk"
+  },
+  {
+    "address": "6 rue aux Juifs",
+    "city": "Giverny",
+    "country": "France",
+    "name": "The Robins",
+    "url": "http://givernyguesthouse.com/robin.htm"
+  }
+]
+----

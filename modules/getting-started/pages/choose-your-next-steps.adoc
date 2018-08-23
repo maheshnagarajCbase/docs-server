@@ -1,0 +1,64 @@
+= Choose Your Next Steps
+
+[abstract]
+To complete the _Getting Started_ sequence, consider your options as to what to do next to continue improving your knowledge.
+The Couchbase documentation set provides detailed information on all aspects of the platform; and this topic lists some of the important areas you can visit.
+
+== Where to Learn More
+
+By navigating to the sections in this topic, you can increase your knowledge in the areas you've already looked at — installation, configuration, and N1QL — and also learn about new and (in some cases) quite advanced topics; such as multi-node clustering, failover, replication, and statistical analysis.
+
+== Installation and Configuration
+
+Couchbase Server can be deployed and installed in several different ways, including on traditional bare-metal servers, virtual machines, containers, and in the cloud.
+Take a look at the information provided in xref:install:get-started.adoc[Couchbase Server Deployment Options] to find the right deployment for you.
+
+Couchbase Server can be configured in a variety of ways.
+You can perform the configuration using the Couchbase Server Web Console, the Couchbase Command Line Interface (CLI), or with the Couchbase REST API.
+See xref:install:init-setup.adoc[Initializing the Cluster] for details.
+
+Periodically, you will need to stop and start individual server nodes.
+Information on doing this is provided in the section xref:install:startup-shutdown.adoc[Couchbase Server Startup and Shutdown].
+
+== Authorization
+
+Couchbase Server resources are protected by means of _role-based access control_ (RBAC).
+This means that different _roles_ are assigned to different _users_, each role being associated with a subset of _privileges_ on one or more resources.
+This makes it possible, for example, for one user to be granted read-access on a particular bucket, while another user is granted both read and write-access on the same bucket.
+For a detailed explanation, see xref:security:security-authorization.adoc[Authorization].
+
+== Querying with N1QL
+
+As you've already seen, you can query Couchbase Server manually, using the N1QL query language and the xref:tools:query-workbench.adoc[Query Workbench].
+A full introduction to N1QL can be found in the section xref:java-sdk::common/n1ql-query.adoc[Querying with N1QL], including information on using `cbq`, which allows N1QL queries to be entered at the command line.
+
+Additionally, N1QL queries can be specified by means of the Couchbase REST API.
+For information on doing so, see the section xref:n1ql:n1ql-rest-api/index.adoc[N1QL REST API].
+
+== Using the Couchbase SDK
+
+The Couchbase SDK is available for several different programming languages.
+Take a look at the section xref:nodejs-sdk::start-using-sdk.adoc[Start Using the SDK].
+You can select a language, and the page for that language provides information on installing supportive modules and libraries, and also includes code-examples to get you started with development.
+
+== Concepts and Architecture
+
+Your hands-on progress with Couchbase Server will be greatly helped by a good _conceptual_ knowledge.
+Start by looking at the xref:understanding-couchbase:understanding-couchbase.adoc[Overview], and then go from there.
+
+== Administration
+
+If you are an administrator, your priority will be to learn about system setup and cluster management.
+Start by reading an overview of administrative tasks in xref:clustersetup:server-setup.adoc[Cluster Operations].
+
+== Integration
+
+In some cases, you may wish to integrate Couchbase Server with another, different data-repository.
+For example, you might wish to continue using your current Elasticsearch database for the performance of free text searches, and extend these searches to Couchbase Server-data, so that Couchbase-documents can be retrieved.
+For this to be possible, data must be shared between the repositories, and your querying coordinated between them.
+
+See xref:connectors:intro.adoc[Connector Guides] for information about Elasticsearch and all other repositories with which you can integrate Couchbase Server.
+
+== Additional Reference Information
+
+When you start interacting with Couchbase in more advanced ways, make sure to explore some of the reference documentation, such as xref:rest-api:rest-intro.adoc[REST API reference] and  xref:cli:cli-intro.adoc[CLI Reference].

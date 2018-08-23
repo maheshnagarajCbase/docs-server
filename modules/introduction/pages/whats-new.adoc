@@ -1,0 +1,33 @@
+= What's New?
+
+Couchbase Server 6.0 Beta brings significant updates to the Analytics, Eventing and Full-text Search services.
+
+[IMPORTANT]
+====
+This Beta version is intended for development and testing purposes only.
+We consider Beta releases to have some rough edges and bugs, and may change significantly before the final GA release.
+This release is *not supported* in production.
+
+The Beta release does *not support* upgrading from an earlier version of Couchbase Server.
+====
+
+Take a look at the xref:release-notes:relnotes.adoc[release notes] for a list of known issues in this release.
+
+[#new-features]
+== New features
+
+*Couchbase Analytics [Beta]*
+
+Couchbase Analytics is now in Beta! Our Analytics service enables you to analyze your JSON data in real time without the need to extract, transform, load (ETL) your data into a separate system.
+It allows you to develop insight-driven applications quickly and easily using the same SDKs.
+It removes the need for ETL and the complexity of managing a separate analytics system.
+With this release, Analytics is fully integrated with Couchbase Server and no longer requires a separate installation.
+Couchbase’s unique architecture for Multi-Dimensional Scaling (MDS) allows operational and analytical queries to run concurrently without impacting one another, providing the workload isolation required for production deployments.
+To learn more about this service, see xref:analytics:introduction.adoc[Couchbase Analytics].
+
+*Support for Timers in Couchbase Functions*
+
+This release adds support for timers in Couchbase Functions.
+Timers enable asynchronous compute in reference to wall-clock events.
+They are constructs which developers can use to specify a routine (business logic) to be triggered at a future time.
+For more information, see xref:eventing:eventing-language-constructs.adoc#timers[Timers].

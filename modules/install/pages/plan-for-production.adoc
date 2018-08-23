@@ -1,0 +1,34 @@
+= System Requirements
+
+[abstract]
+Couchbase Server has a basic set of installation and networking requirements that apply to nearly every deployment.
+
+Deploying Couchbase Server into production requires that the hardware and software requirements are met, and that the deployment guidelines and security considerations are taken into account before installation.
+
+.Couchbase System Requirements
+[cols="1,3"]
+|===
+| Requirement | Description
+
+| *Platform support*
+| Ensure that you are deploying onto a platform that is supported.
+
+xref:install-platforms.adoc[Supported Operating Systems]
+
+xref:install-browsers.adoc[Supported Web Browsers]
+
+| *Hardware requirements*
+| Ensure that your production environment has adequate hardware and system resources to meet the needs of your deployment.
+
+xref:pre-install.adoc[System Resource Requirements]
+
+| *Networking requirements*
+| Review the Couchbase Server networking requirements to ensure that your environment can accommodate the various components that you plan to deploy.
+
+xref:install-ports.adoc[Network and Firewall Requirements]
+
+xref:ipv6-setup.adoc[Using IPv6 With Couchbase]
+
+| *Deployment-specific requirements*
+| Review xref:install-production-deployment.adoc[Deployment Guidelines] to make sure you are following the best practices for your deployment.
+|===
