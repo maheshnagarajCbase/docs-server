@@ -125,7 +125,7 @@
   *** xref:clustersetup:hard-failover.adoc[Using Hard Failover]
   *** xref:clustersetup:automatic-failover.adoc[Using Automatic Failover]
  ** xref:clustersetup:rebalance.adoc[Rebalancing a Cluster]
- ** xref:clustersetup:rejoin-cluster.adoc[Rejoining a Cluster]
+ ** xref:clustersetup:rejoin-cluster.adoc[Recovering a Node]
  ** xref:clustersetup:manage-groups.adoc[Manage Server Groups]
 * xref:clustersetup:bucket-setup.adoc[Setting Up Buckets]
  ** xref:clustersetup:create-bucket.adoc[Create a Bucket]
