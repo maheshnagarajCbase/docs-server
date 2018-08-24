@@ -3,7 +3,7 @@
 Couchbase Server 4.6 delivers some exciting capabilities for cross datacenter replication, security, query, tools, and application development.
 Take a look at xref:introduction:whats-new.adoc[What's new] for a list of new features and improvements that are available in this release.
 
-[#release-4.6.5]
+[[release-4.6.5]]
 == Release 4.6.5
 
 Couchbase Server 4.6.5 was released in June 2018.
@@ -69,7 +69,7 @@ During a rebalance, if the destination node for a particular vBucket already had
 | The [.cmd]`cbbackupmgr` utility failed to merge incremental backups.
 |===
 
-[#release-4.6.4]
+[[release-4.6.4]]
 == Release 4.6.4
 
 Couchbase Server 4.6.4, released in November 2017, is the fourth maintenance release in the 4.6.x series of Couchbase Server.
@@ -189,7 +189,7 @@ As a result, if a backup process was started when another backup process was per
 | When the source node was upgraded in a unidirectional replication from 4.1 to 4.6, the GoGC global setting was set to 0 instead of a higher number.
 |===
 
-[#release-4.6.3]
+[[release-4.6.3]]
 == Release 4.6.3
 
 Couchbase Server 4.6.3, released in August 2017, is the third maintenance release in the 4.6.x series of Couchbase Server.
@@ -418,7 +418,7 @@ For example,
 | Replication from a timestamp-based conflict resolution bucket to Elasticsearch node is not supported and sequence number based conflict resolution will be used instead.
 |===
 
-[#release-4.6.2]
+[[release-4.6.2]]
 == Release 4.6.2
 
 Couchbase Server 4.6.2, released in May 2017, is the second maintenance release in the 4.6.x series of Couchbase Server.
@@ -744,7 +744,7 @@ This will lead to longer backup times than performing incremental backups, but w
 | When any topology changes occur on source cluster, such as when a node is removed, in some cases the outbound XDCR mutation statistics show a negative number on the monitoring page.
 |===
 
-[#release-4.6.1]
+[[release-4.6.1]]
 == Release 4.6.1
 
 Couchbase Server 4.6.1, released in March 2017, is the first maintenance release in the 4.6.x series for Couchbase Server.
@@ -817,7 +817,7 @@ This will lead to longer backup times than performing incremental backups, but w
 | When any topology changes occur on source cluster such as ‘when a node is removed’, in some edge cases the outbound XDCR mutation statistics show a negative number on the Monitoring page.
 |===
 
-[#release-4.6.0]
+[[release-4.6.0]]
 == Release 4.6.0
 
 Couchbase Server 4.6.0 was released in February 2017.

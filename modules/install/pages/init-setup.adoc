@@ -174,7 +174,7 @@ This section allows the RAM quota for the default bucket to be determined.
 The interactive [.ui]*Per Node RAM Quota* text-field allows memory to be allocated to the default bucket.
 As you change the number of megabytes, the graphical display to the immediate right of the field changes spontaneously, to demonstrate how much memory for the full cluster is now allocated to this and to other buckets:
 +
-[#createDefaultBucketRAM230117.png]
+[#createDefaultBucketRAM230117]
 image::install-createDefaultBucketRAM230117.png[,480,align=left]
 +
 [.ui]*Total bucket size* is also dynamically recalculated.
