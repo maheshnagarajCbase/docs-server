@@ -217,4 +217,4 @@ Code will continue to change until it becomes stable for production.
 
 *Elasticsearch Plug-in 2.2*::
 The latest updates include support for Elasticsearch including support for ES 2.4 and 5.3 as well as fixed multiple issues.
-Refer to the xref:elasticsearch-transport::index.adoc[documentation] or follow installation and https://github.com/couchbaselabs/elasticsearch-transport-couchbase/blob/master/README.md[configuration walkthrough^].
+Refer to the xref:elasticsearch-connector::index.adoc[documentation] or follow installation and https://github.com/couchbaselabs/elasticsearch-transport-couchbase/blob/master/README.md[configuration walkthrough^].
