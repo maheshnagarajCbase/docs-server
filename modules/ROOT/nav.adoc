@@ -373,7 +373,7 @@
  ** xref:connectors:kafka-3.1/streams-sample.adoc[Couchbase Sample with Kafka Streams]
  ** xref:connectors:kafka-3.1/release-notes.adoc[Release Notes]
 * xref:spark-connector::index.adoc[Spark Connector]
-* xref:connectors:talend/talend.adoc[Talend Connector]
+* xref:talend-connector::index.adoc[Talend Connector]
 * xref:connectors:odbc-jdbc-drivers.adoc[Couchbase ODBC and JDBC Drivers]
 
 .Tools & API References
