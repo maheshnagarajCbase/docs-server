@@ -76,7 +76,7 @@ Ensure that you configure the script timeout value after carefully evaluating th
 As a best practice use a combination of try-catch block and the application log options.
 This way you can monitor, debug and troubleshoot errors during the Function execution.
 
-== *How to ensure triggering of timer within a specific time window?*
+== *How to ensure triggering of timers within a specific time window?*
 
 To handle delays during Function backlogs, you can program some additional time to allow triggering of timers. If your business logic is time-sensitive, then triggering of timers needs to be within this additional time window.
 
