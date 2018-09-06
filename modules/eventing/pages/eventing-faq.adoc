@@ -137,10 +137,3 @@ All changes from a document are always processed in order.
 +
 We block one of the mutations alone and hand it over to the debugger session.
 The rest of the mutations continue to be serviced by the event handler.
-
-* Are timers scalable?
-+
-Timers get automatically sharded across Eventing nodes and therefore are elastically scalable.
-Due to sharding, triggering of timers at or after a specified time interval is guaranteed.
-However, triggering of timers may either be on the same node where the time was created, or on a different node.
-Relative ordering between two specific timers cannot be maintained.

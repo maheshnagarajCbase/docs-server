@@ -113,7 +113,7 @@ function OnUpdate(doc, meta) {
     break;                   // Cancel streaming query by breaking out.
   }
 }
-
+----
 The Function handler code supports N1QL queries.
 Top level N1QL keywords, such as SELECT, UPDATE, and INSERT, are available as keywords in Functions.
 
@@ -279,6 +279,5 @@ Reserved words as a property bindings value
 
 image::reserved-words.png[,300]
 
-== *Support for N1QL in Function Handlers*
 
 ----
