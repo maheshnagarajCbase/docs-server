@@ -76,15 +76,11 @@ Ensure that you configure the script timeout value after carefully evaluating th
 As a best practice use a combination of try-catch block and the application log options.
 This way you can monitor, debug and troubleshoot errors during the Function execution.
 
-== What are a few best practices while passing timer related timestamps?
+== *How to ensure triggering of timer within a specific time window?*
 
-Perform a timestamp check to avoid triggering of timers during the stale-time period.
+To handle delays during Function backlogs, you can program some additional time to allow triggering of timers. If your business logic is time-sensitive, then triggering of timers needs to be within this additional time window.
 
-To handle delays during Function backlogs, in the Function handler code, you can program some additional time to allow triggering of timers.
-If this additional time period is also breached, then the time status is considered as stale-time.
-If your business logic is time-sensitive, then the Function handler code should refrain from triggering of timers during this stale-time period.
-
-The following code snippet ensures a valid timestamp check is performed before the Function handler code gets executed.
+The following code snippet ensures triggering of timers within a deadline.
 
 ----
 func callback(context)
