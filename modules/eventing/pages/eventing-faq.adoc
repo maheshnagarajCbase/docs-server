@@ -153,7 +153,7 @@ Timers cannot be debugged using the Visual Debugger.
 +
 When a Function handler code contains a timestamp in the past, upon a successful Function deployment, the system executes the code in the next available time slot.
 
-* What is the Timer behavior post reboot?
+
+* What should be the clock behavior while using timers?
 +
-During a boot operation, all clocks in the cluster nodes get synchronized.
-Post-startup, cluster nodes get periodically synchronized using clock synchronization tools such as Network Time Protocol (NTP).
+During system startup, all clocks in the cluster nodes need to be synchronized. Post-startup, cluster nodes must be periodically synchronized using clock synchronization tools such as Network Time Protocol (NTP).
